@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=8" /> -->
+    <link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
+
+    <title>De Anza Oaks</title>
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/aos.css">
+    <link rel="stylesheet" type="text/css" href="css/masterslider.main.css">
+    <link rel="stylesheet" type="text/css" href="css/ms-skin-sample.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+
+
+    <style>
+        html,body{
+            height: 100%;
+        }
+        .main{
+		   height: 1150px;;
+	    }
+        .breadcrumb{
+			width: 100%;
+			height: 75px;
+		}
+		.main .breadcrumb li{
+			float: left;
+			margin-right: 10px;
+			font-size:20px;
+			font-family:OpenSans-Regular;
+			font-weight:400;			
+			line-height:75px;
+			color:rgba(30,130,23,1);
+		}
+		.breadcrumb li a{
+			color:rgba(30,130,23,1);
+		}
+       
+        .content-1{
+            width:100%;
+            height:60px;
+            font-size:20px;
+            font-family:OpenSans-SemiBold;
+            font-weight:600;
+            color:rgba(57,61,68,1);
+            line-height:60px;         
+        }
+
+        .footer-p{    
+            font-size:16px;
+            font-family:OpenSans-SemiBold;
+            font-weight:600;
+            color:rgba(255,255,255,1);
+            line-height:70px;
+            text-align: center;
+        
+         }
+        .item{
+            display: none;
+        }
+
+        .show{
+            display: block;
+        }
+        .main .Volunteer_dec{
+			margin-top: 22px;
+			margin-bottom: 24px;
+			line-height: 33px;
+			font-size:24px;
+			font-family:OpenSans-SemiBold;
+			font-weight:600;
+			color:#393D44;
+		}
+		.main .committee-content li{
+			float: left;
+			width: 384px;				
+			margin-right: 15px;
+        }
+        .main .committee-content{
+            height: 1200px;
+        }
+        .part_1{
+			width: 100%;
+			height: 100%;
+			box-sizing: border-box;
+			padding: 32px;
+			margin-bottom: 15px;
+			box-shadow:0px 0px 8px 0px rgba(0,0,0,0.24);
+        }
+        .main h3{
+			font-size:30px;
+			font-family:OpenSans-Bold;
+			font-weight:600;
+			color:rgba(57,61,68,1);
+			line-height:41px;
+        }
+        .main h4{
+            font-size:30px;
+            font-family:OpenSans-Bold;
+            font-weight:bold;
+            color:rgba(57,61,68,1);
+            line-height: 30px;
+        }
+        .main .Volunteer_dec{
+			margin-top: 22px;
+			margin-bottom: 24px;
+			line-height: 33px;
+			font-size:24px;
+			font-family:OpenSans-SemiBold;
+			font-weight:600;
+			color:#393D44;
+        }
+      
+        .Volunteer_dec_title{
+			font-size:19px;
+			font-family:OpenSans-SemiBold;
+			font-weight:500;
+			color:rgba(57,61,68,1);
+			line-height:27px;
+			margin-bottom: 16px;
+        }
+        .committee_add{
+            width: 90px;
+            height: 40px;
+            background:rgba(106,166,102,1);
+            border-radius:20px; 
+            text-align: center;
+            color: #ffffff;    
+            line-height: 40px;
+            font-size: 16px;
+            margin-bottom: 16px;
+            display: none;
+        }
+        .admin-control{
+            width: 100%;
+            height: 40px;
+            display: none;
+        }
+        .admin-control span{
+            display: inline-block;
+            width: 90px;
+            height: 38px;
+            border-radius: 20px;
+            font-size: 16px;
+            border: 1px solid #6AA666;
+            color:#6AA666;
+            text-align: center;
+            line-height: 40px;
+            margin-right:17px; 
+         
+        }
+        .admin-control span:nth-child(2){
+            border: 1px solid #F94B5A;
+            color:#F94B5A;
+        }
+	</style>
+
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="header" style="box-shadow:0px 2px 7px 0px rgba(0,0,0,0.5);
+    border:1px solid rgba(151,151,151,1);">
+        <div class="w1200" style="height: 0;">
+            <a class="logo" href="index.html">
+                <img src="img/Combined Shape.png" alt="Combined Shape">
+                De Anza Oaks
+            </a>
+            <input type="text" placeholder="Search..." style="width: 188px;height: 37px;position: relative;top: 30px;left: 540px;border: solid 1px #393D44;padding-left: 10px;">
+            <div class="btns clearfix">
+                <img src="img/Shape.png" alt="Shape" style="position: relative;left: -140px;top: 40px;z-index: 100000;">
+                <img src="img/dropdown.png" alt="dropdown" style="position: relative;left: -50px;top: 36px;z-index: 100000;">
+                <a class="btns-search" href="javascript:;"> </a>
+                <a class="btns-language" href="javascript:;"></a>
+                <div class="langOv">
+                    <div class="profile">
+                        <a href="saveFile.html" style="border-bottom: 1px solid white;width: 100%;margin-left: -1px">My
+                            Profile</a>
+                        <a href="javascript:;" class="logout">Log Out</a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li class="curr">
+                        <a class="on" href="index.html">Home</a>
+                    </li>
+                    <li class="curr">
+                        <a class="on" href="about.html">About us</a>
+                    </li>
+                    <!-- <li class="curr">
+                        <a class="on" href="downloadFile.html">Docs</a>
+                    </li> -->
+                </ul>
+                <span class="navline"></span>
+            </div>
+        </div>
+        <!-- 二级导航背景 -->
+        <!-- <div class="innavbg"></div> -->
+        <div class="mask"></div>
+
+        <script src="js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="js/header.js"></script>
+        <script type="text/javascript" src="js/list=hk02007.js" charset="gb2312"></script>
+    </div>
+
+    <!-- 主体 -->
+    <div class="main" style="margin-bottom: 35px;height: 140%;"> 
+        <!-- <div class="main-top" style="margin-bottom: 35px;height: 100%;"> -->
+            <div class="w1200 pr" >
+                <ul class="breadcrumb" style="float: left">
+                    <li><a href="index.html">Home</a></li>
+                    <li>&nbsp;>&nbsp;</li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li>&nbsp;>&nbsp;</li>
+                    <li><a href="committee.html">Board/Committee</a></li>
+                </ul>
+                <!-- <div class="main-left" style="width:100%;height: 100%;"> -->
+                    <h4>Board / Committee</h4>
+                    <div class="content-1">
+                        A complete listing of Board Members, Committee Chairs and Association Management             
+                    </div>
+                    <div class="committee_add">Add</div>
+                    <ul class="committee-content">
+                        <li>
+                            <div class="part_1">
+                                <div class="Volunteer_dec_title" style="font-weight: 600;">Architecture</div>
+                                <div class="Volunteer_dec_title">
+                                    <div>Updated:7/14/2013</div>
+                                    <div>The Architectural Committee assists the Board of Directors in the CC&R
+                                         mandate that all changes to the exterior of your home must have prior
+                                          Board approval. The committee oversees the Architectural Change 
+                                          Application process.
+                                    </div>
+                                </div>
+                                <div class="Volunteer_dec_title">
+                                    <div>Chairperson:Louis Kim</div>
+                                </div>  
+                                <div class="admin-control">
+                                    <span>Edit</span>
+                                    <span>Delete</span>
+                                </div>   
+                            </div>
+                            <div class="part_1">
+                                <div class="Volunteer_dec_title" style="font-weight: 600;">DAO Emergency Response Committee</div>
+                                <div class="Volunteer_dec_title">
+                                    <div>Updated:2/21/2018</div>
+                                    <div>The DAO ERC meets quarterly to discuss how to best facilitate communication within 
+                                        DAO and the City of Cupertino in the event of an emergency. Co-Chairwomen are Alicia
+                                        Schober and Wynne Dobyns.
+                                    </div>
+                                </div>
+                                <div class="Volunteer_dec_title">
+                                    <div>Chairwoman:Alicia Schober</div>
+                                </div> 
+                                <div class="admin-control">
+                                    <span>Edit</span>
+                                    <span>Delete</span>
+                                </div>      
+                            </div>
+                            <div class="part_1">
+                                <div class="Volunteer_dec_title" style="font-weight: 600;">Events</div>
+                                <div class="Volunteer_dec_title">
+                                    <div>Updated:2/21/2018</div>
+                                    <div>The De Anza Oaks Events committee is responsible for organizing community wide
+                                         functions such as the Egg Hunt and Brunch in the Spring, the End of Summer Celebration,
+                                         and Holiday Potluck. For more information, contact Smita Sharma at smitavns@yahoo.com.
+                                    </div>
+                                </div>
+                                <div class="admin-control">
+                                    <span>Edit</span>
+                                    <span>Delete</span>
+                                </div>  
+                            </div>
+                        </li>
+                        <li>
+                            <div class="part_1">
+                                <div class="Volunteer_dec_title" style="font-weight: 600;">De Anza Oaks Board of Directors</div>
+                                <div class="Volunteer_dec_title">
+                                    <div>Updated:2/13/2018</div>                             
+                                    <div style="word-wrap:break-word;">
+                                        The DAO Board of Directors meets the 4th Tuesday 
+                                        of the month at 7:00 p.m. at the Clubhouse.
+                                    </div>
+                                </div>
+                                <div class="Volunteer_dec_title">
+                                    <div>DAO Board</div>
+                                </div>
+                                <div class="admin-control">
+                                    <span>Edit</span>
+                                    <span>Delete</span>
+                                </div>  
+                            </div>
+                            <div class="part_1">
+                                <div class="Volunteer_dec_title" style="font-weight: 600;">Association Manager</div>
+                                <div class="Volunteer_dec_title">
+                                    <div>Updated:2/17/2017</div>                             
+                                    <div style="word-wrap:break-word;">
+                                            Corresponding via mail: De Anza Oaks Homeowners Association c/o Grayson
+                                             Community Management 65 Washington Street, Suite 268 Santa Clara, 
+                                             CA 95050 
+                                    </div>
+                                    <div style="margin-top: 15px">Telephone: 888-277-5580 Press 1 during business hours Press
+                                            4 for after hours</div>
+                                    <div style="margin-top: 15px">
+                                        Email: www.helpdesk@graysoncm.com
+                                    </div>
+                                </div>
+                                <div class="Volunteer_dec_title">
+                                    <div>Grayson Community Management</div>
+                                </div>
+                                <div class="admin-control">
+                                    <span>Edit</span>
+                                    <span>Delete</span>
+                                </div>  
+                            </div>
+                            <div class="part_1">
+                                <div class="Volunteer_dec_title" style="font-weight: 600;">Parking</div>
+                                <div class="Volunteer_dec_title">
+                                    <div>Updated:1/29/2018</div>                             
+                                    <div style="word-wrap:break-word;">
+                                        The Parking Committee ensures that all residents and guests of the De Anza Oaks 
+                                        community adhere to the association's parking rules. Contact Grayson Community 
+                                        Management with parking related concerns: helpdesk@graysoncm.com
+                                    </div>                                  
+                                </div>
+                                <div class="admin-control">
+                                    <span>Edit</span>
+                                    <span>Delete</span>
+                                </div>                       
+                            </div>
+                        </li>
+                        <li>
+                            <div class="part_1">
+                                <div class="Volunteer_dec_title" style="font-weight: 600;">Clubhouse</div>
+                                <div class="Volunteer_dec_title">
+                                    <div>Updated:1/29/2018</div>
+                                    <div>
+                                        The Clubhouse committee facilitates the rental of our community clubhouse. 
+                                        Geeta Chavan is the Chairwoman and can be reached by email or (408) 480-7456.
+                                    </div>
+                                </div>
+                                <div class="admin-control">
+                                    <span>Edit</span>
+                                    <span>Delete</span>
+                                </div>  
+                            </div>
+                            <div class="part_1">
+                                <div class="Volunteer_dec_title" style="font-weight: 600;">Gate Directory</div>
+                                <div class="Volunteer_dec_title">
+                                    <div>Updated:1/29/2018</div>
+                                    <div>
+                                        Contact Grayson Community Management for Gate Directory and Gate Opener related matters: (888) 277-5580,
+                                        Press 1 during business hours, Press 4 for after hours. <br/>
+                                        helpdesk@graysoncm.com
+                                    </div>
+                                </div>
+                                <div class="admin-control">
+                                    <span>Edit</span>
+                                    <span>Delete</span>
+                                </div>  
+                            </div>
+                            <div class="part_1">
+                                <div class="Volunteer_dec_title" style="font-weight: 600;">Directory Booklet</div>
+                                <div class="Volunteer_dec_title">
+                                    <div>Updated:7/4/2010</div>
+                                    <div>
+                                        The De Anza Oaks Directory is provided by the Association for residents. 
+                                        Georgia Sutherland is the chairperson.
+                                    </div>
+                                   
+                                </div>
+                                <div class="Volunteer_dec_title">Committee Chair : Georgia Sutherland</div>
+                                <div class="admin-control">
+                                    <span>Edit</span>
+                                    <span>Delete</span>
+                                </div>  
+                            </div>
+                            <div class="part_1">
+                                <div class="Volunteer_dec_title" style="font-weight: 600;">Playground</div>
+                                <div class="Volunteer_dec_title">
+                                    <div>Updated:2/21/2018</div>
+                                    <div>
+                                        The Playground Committee assists with decisions on equipment and maintenance.
+                                    </div>
+                                    
+                                </div>
+                                <div class="admin-control">
+                                    <span>Edit</span>
+                                    <span>Delete</span>
+                                </div>  
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            <!-- </div> -->
+        <!-- </div> -->
+    </div>
+
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/aos.js"></script>
+    <script type="text/javascript" src="js/masterslider.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <!-- 日历插件 -->
+    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <script src="js/calendar.js"></script>
+    <script>
+        //首页滑块
+
+        // var slip3=$(".switch-navslip"),li3=$(".main-switch-top a"),a3=$(".main-switch-top a.curr"),i3="",left3="0",animatetime3=300;
+        // 	var Slider3 =new Slider(slip3,li3,a3,i3,left3,animatetime3);
+
+        var slider = new MasterSlider();
+        slider.setup('masterslider', {
+            width: 1920, // slider standard width
+            height: 500, // slider standard height
+            mouse: false,
+            autoplay: false,
+            loop: true,
+            overPause: false,
+            speed: 13
+        });
+        MSScrollParallax.setup(slider, 60, 100, true);
+        slider.control('arrows');
+        var i = 1,
+            ileng = $('.ms-slide').length;
+        setInterval('timebar()', 6000);
+        $('.ban-len span').html(ileng);
+        clickReduce();
+        clickAdd();
+    </script>
+
+
+
+    <script>
+        $(function () {
+            $('#tabs a').click(function (e) {
+                e.preventDefault();
+                $('#tabs li').removeClass("current").removeClass("hoverItem");
+                $(this).parent().addClass("current");
+                $(".choose-right ul").removeClass("show");
+                $('#' + $(this).attr('title')).addClass('show');
+
+
+            });
+
+            $('#tabs a').hover(function () {
+                if (!$(this).parent().hasClass("current")) {
+                    $(this).parent().addClass("hoverItem");
+                }
+            }, function () {
+                $(this).parent().removeClass("hoverItem");
+            });
+
+            // admin
+            var storage = window.localStorage;
+            if (storage.getItem('username') === 'admin') {
+                $('.choose-right').css('margin-top', '50px')
+                $('.committee_add').css('display', 'block')
+                $('.admin-control').css('display', 'block')
+            }
+
+            var username = storage.getItem('username')
+            $(".btns-language").text(username);
+
+            $('.logout').click(function () {
+                window.localStorage.setItem('username', '')
+                 window.location.href = "http://tfire.net/index.html"
+	
+            })
+        });
+
+    </script>
+    <!-- 底部 -->
+    <div class="footer">
+        <p>
+           Copyright © 2019 Tellus, Inc. All Rights Reserved.
+        </p>
+    </div>
+
+</body>
+
+
+
+</html>

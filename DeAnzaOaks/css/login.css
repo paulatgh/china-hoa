@@ -1,0 +1,91 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+html,body{height:100%}
+#login{
+background: url(../img/dao5.png) no-repeat;
+background-size: 100% 100%;
+/*border:1px solid rgba(151,151,151,1);*/
+height: 100%;
+width: 100%;
+}
+.information {
+width:330px;
+height:310px;
+padding:0 35px;
+box-sizing: border-box;
+margin: 0 auto;
+background:rgba(255,255,255,1);
+border-radius:7px;
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%,-50%);
+}
+.inta{
+width:96%;
+height:42px;
+background:rgba(245,248,249,1);
+border-radius:4px;
+border: none;
+margin-bottom: 14px;
+font-size:14px;
+font-family:SourceHanSansSC-Medium;
+font-weight:500;
+padding-left: 13px;
+}
+.inta::-webkit-input-placeholder{
+       color:rgba(136,147,153,1);
+}
+.information-p{
+height:90px;
+font-size:24px;
+font-family:SourceHanSansSC-Medium;
+font-weight:500;
+color:rgba(136,147,153,1);
+line-height:90px;
+}
+#submit{
+width:100%;
+height:42px;
+background:rgba(106,166,102,1);
+border-radius:4px;
+text-align: center;
+line-height: 42px;
+margin-top: 10px;
+color: #FFFFFF;
+font-size:16px;
+font-family:SourceHanSansSC-Medium;
+cursor: pointer;
+
+}
+.forgot a{
+float: right;
+font-size:14px;
+font-family:SourceHanSansSC-Regular;
+font-weight:400;
+height: 28px;
+line-height: 28px;
+color:rgba(189,195,198,1);
+line-height: 53px;
+}
+.username{
+	display: none;		
+}
+.userp{
+	display: none;
+}
+.bg {
+	display: block;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	top: 0;
+	left: 0;
+	opacity: 0.3;
+}

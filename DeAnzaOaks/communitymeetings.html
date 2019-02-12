@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<!-- <meta http-equiv="X-UA-Compatible" content="IE=8" /> -->
+	<link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
+
+	<title>De Anza Oaks</title>
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/aos.css">
+	<link rel="stylesheet" type="text/css" href="css/masterslider.main.css">
+	<link rel="stylesheet" type="text/css" href="css/ms-skin-sample.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/public.css">
+	<style>
+		html,body{
+		height:100%;
+		}
+		.main{
+			height: 1150px;
+		}
+		.main-left h2{
+			text-align: center;
+			height: 120px;
+			line-height: 120px;
+			font-size:34px;
+			font-family:SourceHanSansSC-Bold;
+			font-weight:bold;
+			color:rgba(57,61,68,1);
+		}
+		.breadcrumb{
+			width: 100%;
+			height: 75px;
+		}
+		.breadcrumb li{
+			float: left;
+			margin-right: 10px;
+			font-size:20px;
+			font-family:OpenSans-Regular;
+			font-weight:400;			
+			line-height:75px;
+			color:rgba(30,130,23,1);
+		}
+		.breadcrumb li a{
+			color:rgba(30,130,23,1);
+		}
+		.form_1{
+			width: 1150px;		
+			box-shadow:0px 0px 8px 0px rgba(0,0,0,0.24);
+			height: 334px;
+			
+			box-sizing: border-box;			
+		}
+		
+		.form_1 ul::-webkit-scrollbar { width: 0 !important }
+		.form_1 .form_title{
+			width: 1154px;
+			height: 62px;
+			background: #6AA666;
+			font-size:30px;
+			font-family:OpenSans-Bold;
+			font-weight:bold;
+			color:rgba(255,255,255,1);
+			line-height: 64px;
+			padding: 0 32px;
+			box-sizing: border-box;
+		}
+		.author{
+            width:100%;
+            height:418px ;
+            background:rgba(255,255,255,1);
+            border:2px solid rgba(106,166,102,1);
+			display: flex;
+        }
+		.author-1{
+			width:166px ;
+			height:418px ;
+			border-right:2px solid rgba(106,166,102,1);
+		}
+		.author-2{
+			width:984px ;
+			height:418px ;
+			/* border:1px solid rgba(106,166,102,1); */
+		}
+		.form_title span{
+			margin-left: 109px;
+		}
+		.author-1 li{
+			
+             text-align: center;
+			 font-size:16px;
+			font-family:OpenSans-Regular;
+			font-weight:400;
+			color:rgba(51,51,51,1);
+		}
+		.author-1 li img{
+			margin-top:34px ;
+		}
+		.author-1 li a:hover{
+            color: #6AA666;
+			text-decoration: underline;
+		}
+		.author-2 li:nth-child(1){
+            border-bottom: 2px solid rgba(106,166,102,1);
+			height:26px;
+			font-size:12px;
+			font-family:OpenSans-Regular;
+			font-weight:400;
+			color:rgba(51,51,51,1);
+			line-height:26px;
+			padding-left: 10px;
+		}
+		.author-2 li{
+			padding: 0 10px;
+			margin-bottom: 4px;
+		}
+		.buttona{
+			display: none;
+			width:100%;
+			height:40px;
+			margin-top: 24px
+		}
+		.buttonb{
+			width: 100px;
+			height: 40px;
+			background: rgba(131,191,129,1);
+			border-radius:20px;
+			border:1px solid rgba(68,159,65,1);
+			text-align: center;
+			line-height: 40px;
+			font-size: 18px;
+			font-weight: 400;
+			font-family:OpenSans-Regular;
+			color:rgba(255,255,255,1);
+		}
+		.buttonb:hover{
+			color: white;
+		}
+		.buttonaa{
+			width: 240px;
+			margin: 0 auto;
+			display: flex;
+			height: 40px;
+			justify-content: space-between;
+		}
+	</style>
+
+</head>
+
+<body>
+	<!-- 头部 -->
+	<div class="header" style="box-shadow:0 2px 7px 0px rgba(0,0,0,0.5); border:1px solid rgba(151,151,151,1)">
+		<div class="w1200" style="height: 0">
+			<a class="logo" href="index.html">
+				<img src="img/Combined Shape.png" alt="Combined Shape">
+				De Anza Oaks
+			</a>
+			<input type="text" placeholder="Search..." style="width: 188px;height: 37px;position: relative;top: 30px;left: 540px;border: solid 1px #393D44;padding-left: 10px;">
+
+			<div class="btns clearfix">
+				<img src="img/Shape.png" alt="Shape" style="position: relative;left: -140px;top: 40px;z-index: 100000;">
+				<img src="img/dropdown.png" alt="dropdown" style="position: relative;left: -50px;top: 36px;z-index: 100000;">
+				<a class="btns-search" href="javascript:;"> </a>
+				<a class="btns-language" href="javascript:;"></a>
+				<div class="langOv">
+					<div class="profile">
+						<a href="saveFile.html" style="border-bottom: 1px solid white;width: 100%;margin-left: -1px">My Profile</a>
+						<a href="javascript:;" class="logout">Log Out</a>
+					</div>
+				</div>
+			</div>
+			<div class="nav">
+				<ul>
+					<li class="curr">
+						<a class="on" href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="about.html">About us</a>
+						<div class="sideNav sN1">
+						</div>
+					</li>
+					<!-- <li>
+						<a href="downloadFile.html">Docs</a>
+					</li> -->
+
+				</ul>
+				<span class="navline"></span>
+			</div>
+		</div>
+		<div class="mask"></div>
+
+		<script src="js/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="js/header.js"></script>
+	</div>
+	<!-- 主体 -->
+	<div class="main">
+		<div class="main-top clearfix" style="margin-bottom: 35px;height: 100%;">
+
+			<div class="w1200 pr">
+				<ul class="breadcrumb">
+					<li><a href="index.html" rel="noopener noreferrer">Home</a></li>
+					<li>&nbsp;>&nbsp;</li>
+					<li><a href="news.html" rel="noopener noreferrer"> News </a></li>
+					<li>&nbsp;>&nbsp;</li>
+					<li><a href="messageboard.html" rel="noopener noreferrer">Message Board</a></li>
+					<li>&nbsp;>&nbsp;</li>
+					<li><a href="communitymeetings.html" rel="noopener noreferrer">Community Meetings - The Oaks</a></li>
+				</ul>
+				<div class="main-left" style="width:100%;height: 100%;">
+					<div class="form_1">
+						<div class="form_title">Author <span>Message</span></div>
+						<div class="author">
+							<ul class="author-1">
+								<li><img src="img/lee.png"></li>
+								<li><a href="#">Lee</a></li>
+								<li>Topic Creator</li>
+							</ul>
+							<ul class="author-2">
+								<li>01/24/2019 05:56:31 PM</li>
+								<li>The owners of The Oaks Shopping are holding a number of community meetings. If you're interested in
+									participating, please see information below. Please come to a Community Meeting! </li>
+								<li>The Oaks Shopping Center is about to undergo an exciting transformation. </li>
+								<li>You are invited to attend a community meeting to learn more about plans for revitalizing The Oaks Shopping
+									Center and to provide your input to help ensure its success moving ahead.</li>
+								<li>When:</li>
+								<li>* Wednesday August 12 at 5:00 pm | 6:00 pm | 7:00 pm<br>
+									* Thursday August 13 at 5:00 pm | 6:00 pm | 7:00 pm<br>
+									* Wednesday August 19 at 5:00 pm | 6:00 pm | 7:00 pm</li>
+								<li>Where: The Oaks Shopping Center (former 24 Hour Fitness) 21267 Stevens Creek Blvd. Cupertino</li>
+								<li>RSVP: (408) 252-6823 ex.108<br>
+									or visit<br>
+									OaksGateway.com/community-outreach.html<br>
+									Thanks,<br>
+									Wynne</li>
+							</ul>
+						</div>
+						<div class="buttona">
+							<div class="buttonaa">
+								<a class="buttonb">Save</a>
+								<a class="buttonb">Edit</a>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="js/aos.js"></script>
+		<script type="text/javascript" src="js/masterslider.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<div class="clearfix"></div>
+	</div>
+	<!-- 底部 -->
+	<div class="footer">
+		<p >
+			Copyright © 2019 Tellus, Inc. All Rights Reserved.
+		</p>
+	</div>
+</body>
+
+<script>
+	// admin
+	var storage = window.localStorage;
+	if (storage.getItem('username') === 'admin') {
+		$('.buttona').css('display', 'block')
+	}
+
+
+	var username = storage.getItem('username')
+	$(".btns-language").text(username);
+
+	$('.logout').click(function () {
+		window.localStorage.setItem('username', '')
+	    window.location.href = "http://tfire.net/index.html"
+	
+
+	})
+</script>
+
+</html>

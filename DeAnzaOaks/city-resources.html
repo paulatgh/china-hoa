@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<!-- <meta http-equiv="X-UA-Compatible" content="IE=8" /> -->
+	<link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
+
+	<title>De Anza Oaks</title>
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/aos.css">
+	<link rel="stylesheet" type="text/css" href="css/masterslider.main.css">
+	<link rel="stylesheet" type="text/css" href="css/ms-skin-sample.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/public.css">
+	<!-- 日历插件 -->
+	<link rel="stylesheet" href="css/calendar.css">
+
+	<style>
+		html,body{
+		height:100%;
+		}
+		.main{
+			height: 1920px;
+		}
+        .main-center{
+            width:920px;
+            height:auto;
+            margin:40px auto;
+            
+        }
+		.breadcrumb li{
+            color:rgba(30,130,23,1);
+            height:27px;
+         font-size:20px;
+         font-family:OpenSans-Regular;
+         font-weight:400;
+         line-height:27px;
+        
+        }
+        .breadcrumb li a{
+            color:rgba(30,130,23,1);
+        
+        }
+        .breadcrumb{
+            width:293px;
+            display: flex;
+            position: relative;
+            top:24px;
+        }
+        .main-breadcrumb{
+            width: 100%;
+            height: 50px;
+        }
+        .main-center p{
+            width:100%;
+            height:51px;
+            font-size:34px;   
+            font-family:OpenSans-Bold;
+            font-weight:bold;
+            color:rgba(57,61,68,1);
+            line-height:46px;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .content-1{
+            width:100% ;
+            padding:20px 0;
+        }
+        .content-1 li:nth-of-type(1){
+            font-size:26px;
+			font-family:OpenSans-Regular;
+			font-weight:400;
+			color:rgba(57,61,68,1);
+			line-height:34px;
+			text-align: left;
+			margin: 0 8px;
+        }
+        .content-1 li:nth-of-type(2){    
+			font-size:24px;
+			font-family:OpenSans-SemiBold;
+			font-weight:600;
+			color:rgba(57,61,68,1);
+			line-height:34px;
+			text-align: left;
+			margin: 28px 8px;
+        }
+        .content-1 li:nth-of-type(3){      
+			font-size:24px;
+			font-family:OpenSans-SemiBold;
+			font-weight:600;
+			color:rgba(57,61,68,1);
+			line-height:34px;
+			text-align: left;
+			margin: 28px 8px;
+        }
+        .content-1 li:nth-of-type(4){      
+			font-size:24px;
+			font-family:OpenSans-SemiBold;
+			font-weight:600;
+			color:rgba(57,61,68,1);
+			line-height:34px;
+			margin: 28px 8px;
+        }
+		.content-1 li:nth-of-type(5){      
+			font-size:24px;
+			font-family:OpenSans-SemiBold;
+			font-weight:600;
+			color:rgba(57,61,68,1);
+			line-height:34px;
+			margin: 0 8px;
+        }
+		.content-1 li .addresses li{
+			list-style: disc;
+			margin: 0;
+			margin-left: 20px;
+			box-sizing: border-box;
+			line-height: 34px;
+			font-size: 18px;
+			font-family: SourceHanSansSC-Normal;
+   			font-weight: 400;
+		}
+        .content-img{
+            width: 100%;
+            height: 250px;
+		}
+		.content-img img{
+			height: 250px;
+		}
+        .footer-p{
+			font-size:16px;
+			font-family:OpenSans-SemiBold;
+			font-weight:600;
+			color:rgba(255,255,255,1);
+			line-height:70px;
+			text-align: center;
+         }
+		.main-left-content{
+			width: 421px;
+			height: 225px;
+			box-shadow:  0 0 8px;
+			margin-top: 15px;
+		}
+		.main-right-content{
+			width: 759px;
+			height: 225px;
+			box-shadow:  0 0 8px;
+			margin-top: 15px;
+			margin-left: 24px
+		}
+		.calendar-right{
+			width: 478px;
+			height: 100%;
+			box-sizing: border-box;
+			display: flex;
+			flex-wrap: wrap;
+			background: #F1F1F1;
+			overflow: overlay;
+		}
+		.calendar-right::-webkit-scrollbar {
+			display: none;
+		}
+		.calendar-right div{
+			width: 100%;
+			height: 33.3%;
+			padding: 0 25px;
+		}
+		.calendar-right p{
+			height: 22px;
+			line-height: 22px;
+			margin:20px 0 0 0;
+			font-size: 16px;
+			font-family:PingFangSC-Regular;
+		}
+		.calendar-right p span{
+			float: left;
+		}
+		.calendar-right p a{
+			float: right;
+			color: black;
+		}
+		.calendar-right .active{
+			background-color: #6AA666;
+			color:#FFFFFF;
+		}
+		.announcement-tips{
+			height: 20px;
+			box-sizing: border-box;
+			margin-left: 140px;
+			margin-top: 15px;
+		}
+		.announcement-tips span{
+			display: inline-block;
+			width: 16px;
+			height: 16px;
+			border-radius: 50%;
+			background-color: #A0C79F;
+			margin-left:16px; 		
+		}
+		.langOv{
+			display: none;
+		}
+		.addresses li a{
+			text-decoration: underline;
+		}
+		.addresses{
+			margin: 10px;
+		}
+	</style>
+
+</head>
+
+<body>
+	<!-- 头部 -->
+	<div class="header" style="box-shadow:0px 2px 7px 0px rgba(0,0,0,0.5);
+    border:1px solid rgba(151,151,151,1);">
+		<div class="w1200" style="height: 0">
+			<a class="logo" href="index.html">
+				<img src="img/Combined Shape.png" alt="Combined Shape">
+				De Anza Oaks
+			</a>
+			<input type="text" placeholder="Search..." style="width: 188px;height: 37px;position: relative;top: 30px;left: 540px;border: solid 1px #393D44;padding-left: 10px;">
+
+			<div class="btns clearfix">
+				<img src="img/Shape.png" alt="Shape" style="position: relative;left: -140px;top: 40px;z-index: 100000;">
+				<img src="img/dropdown.png" alt="dropdown" style="position: relative;left: -50px;top: 36px;z-index: 100000;">
+				<a class="btns-search" href="javascript:;"> </a>
+				<a class="btns-language" href="javascript:;">Login</a>
+				<div class="langOv">
+					<div class="profile">
+						<a href="saveFile.html" style="border-bottom: 1px solid white;width: 100%;margin-left: -1px">My Profile</a>
+						<a href="javascript:;" class="logout">Log Out</a>
+					</div>
+				</div>
+			</div>
+			<div class="nav">
+				<ul>
+					<li>
+						<a class="on" href="index.html">Home</a>
+					</li>
+					<li class="curr">
+						<a class="on" href="about.html">About us</a>
+					</li>
+					<!-- <li class="curr">
+						<a class="on jump" data="downloadFile.html" href="javascript:;">Docs</a>
+					</li> -->
+				</ul>
+				<span class="navline"></span>
+			</div>
+		</div>
+		<div class="mask"></div>
+
+		<script src="js/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="js/header.js"></script>
+	</div>
+
+	<div class="main">
+		<div class="main-breadcrumb" style="width: 1200px;margin: 0 auto">
+			<ul class="breadcrumb" style="float: left">
+				<li><a href="index.html">Home</a></li>
+				<li>&nbsp;>&nbsp;</li>
+				<li><a href="city-resources.html">City Resources</a></li>
+			</ul>
+		</div>
+		<div class="main-center">
+			<div class="content-img">
+				<img src="img/city resources.jpeg" style="width:100%">
+			</div>
+			<p>Cupertino City Resources</p>
+			<div class="content-1">
+				<ul>
+					<li>De Anza Oaks is located in the city of Cupertino in Santa
+						fClara County. This city is home to Apple Headquarters,
+						De Anza College, and a wide variety of businesses and
+						great public schools. Cupertino has a population of 64,000
+						people within 13 square miles. It is 42 miles south of San
+						Francisco and is on the western side of Silicon Valley,
+						next to the Santa Cruz Mountains.
+					</li>
+					<li>
+						Helpful addresses:
+						<ul class="addresses">
+							<li>Cupertino city hall: 10300 Torre Avenue</li>
+							<li>Cupertino public library: 10800 Torre Avenue, across the plaza from City Hall</li>
+							<li>Cupertino post office: 21701 Stevens Creek Blvd. </li>
+							<li>Santa Clara County Sheriff’s Office: 1601 S. De Anza Blvd., Suite #148</li>
+						</ul>
+					</li>
+					<li>
+						Here are some links to help you learn more about our city resources:
+						<ul class="addresses">
+							<li>Elementary and Middle Schools are part of the Cupertino Union School District. There are 19 elementary
+								schools and 4 middle schools within the district: <a href="https://www.cusdk8.org/ " target="_blank">https://www.cusdk8.org/ </a></li>
+							<li>High Schools are part of the Fremont Union High School District: <a href=" https://www.fuhsd.org/" target="_blank">https://www.fuhsd.org/</a> </li>
+							<li>Cupertino is home to De Anza College, a 112-acre community college that serves over 25,000 students each
+								year. De Anza is ranked among the top 3 community colleges in the United States for the number of Associate in
+								Arts or Associate in Science degrees awarded: <a href="http://deanza.edu/" target="_blank" >http://deanza.edu/</a> </li>
+						</ul>
+					</li>
+					<li>
+						Which schools do De Anza Oaks residents attend?
+						<ul class="addresses">
+							<li>Welcome letter from the City Manager of Cupertino: <a href="https://www.cupertino.org/home/showdocument?id=8620" target="_blank" >https://www.cupertino.org/home/showdocument?id=8620</a> </li>
+							<li>City of Cupertino website for residents: <a href=" https://www.cupertino.org/residents" target="_blank" > https://www.cupertino.org/residents</a></li>
+							<li>Things to see and do: <a href="https://www.cupertino.org/visitors/visiting-cupertino/what-to-see " target="_blank" > https://www.cupertino.org/visitors/visiting-cupertino/what-to-see </a></li>
+							<li>History of Cupertino: <a href="https://www.cupertino.org/our-city/about-cupertino/history" target="_blank">https://www.cupertino.org/our-city/about-cupertino/history</a></li>
+						</ul>
+					</li>
+					<li>
+						Utilities:
+						<ul class="addresses">
+							<li>Residential Garbage Service: <a href="https://www.cupertino.org/our-city/departments/environment-sustainability/waste" target="_blank">https://www.cupertino.org/our-city/departments/environment-sustainability/waste</a></li>
+							<li>San Jose Water Company: <a href="https://www.sjwater.com/" target="_blank">https://www.sjwater.com/</a></li>
+							<li>California Water Service Company: <a href="https://www.calwater.com/" target="_blank">https://www.calwater.com/</a> </li>
+						</ul>
+					</li>
+				</ul>
+
+			</div>
+			
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/aos.js"></script>
+	<script type="text/javascript" src="js/masterslider.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<!-- 日历插件 -->
+	<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+	<script src="js/calendar.js"></script>
+	<script>
+		var slider = new MasterSlider();
+		slider.setup('masterslider', {
+			width: 1920, // slider standard width
+			height: 500, // slider standard height
+			mouse: false,
+			autoplay: false,
+			loop: true,
+			overPause: false,
+			speed: 13
+		});
+		MSScrollParallax.setup(slider, 60, 100, true);
+		slider.control('arrows');
+		var i = 1,
+			ileng = $('.ms-slide').length;
+		setInterval('timebar()', 6000);
+		$('.ban-len span').html(ileng);
+		clickReduce();
+		clickAdd();
+
+	</script>
+
+	<!-- 底部 -->
+	<div class="footer">
+		<p>
+			Copyright © 2019 Tellus, Inc. All Rights Reserved.
+		</p>
+	</div>
+	<script>
+		$(function () {
+			var str = `<div class="db">
+					<div class="login">
+						<h3 class="login-H3">De Anza Oaks HOA</h3>
+						<p class="return"><img src="img/Bounced.png" alt="Bounced"></p>
+						<input class="login-int" type="text" placeholder="Name"><br />
+						<p class="username">Please enter your user name</p>
+						<input class="login-int-a" type="password" placeholder="Password">
+						<p class="userp">Please enter your password</p>
+						<button class="login-button">Login</button>
+						<div class="login-div">
+							<p class="login-a">Forgot your Password?</p>
+						</div>
+					</div>
+				</div>`;
+
+			let storage = window.localStorage;
+			if (storage.getItem('username')) {
+				$(".btns-language").click(function (event) {
+					event.preventDefault();
+				})
+				var username = storage.getItem('username')
+				$(".btns-language").text(username);
+				$(".langOv").css("display", "block")
+				$('.jump').click(function () {
+					var arr = $(this).attr('data')
+					if (arr) {
+						window.location.href = `http://tfire.net/${arr}`;
+					} else {
+						window.location.href = "http://tfire.net/about.html";
+					}
+				})
+			} else {
+				$('.jump').click(function () {
+					var _this = $(this)
+					$('body').append(str);
+					$('.login-button').click(function () {
+						if ($('.login-int').val() === 'Test' && $('.login-int-a').val() === '1215' || $('.login-int').val() === 'admin' && $('.login-int-a').val() === '1215') {
+							var userValue = $('.login-int').val();
+							storage.setItem('username', userValue)
+							var hrefHtml = _this.attr('data')
+							window.location.href = `http://tfire.net/${hrefHtml}`;
+						} else {
+							if (!$('.login-int').val() && !$('.login-int-a').val()) {
+								$('.userp').css('display', 'block');
+								$('.username').css('display', 'block')
+								$('.login').css('height', '360')
+							} else if ($('.login-int').val() === 'Test' && $('.login-int-a').val() !== '1215' || $('.login-int').val() === 'admin' && $('.login-int-a').val() !== '1215') {
+								$('.username').css('display', 'none')
+								$('.userp').css('display', 'block')
+								$('.login').css('height', '330')
+							} else if ($('.login-int-a').val() === '1215' && $('.login-int').val() !== 'Test' || $('.login-int-a').val() === '1215' && $('.login-int').val() !== 'admin') {
+								$('.username').css('display', 'block');
+								$('.userp').css('display', 'none');
+								$('.login').css('height', '330')
+							} else if ($('.login-int').val() !== "Test" && $('.login-int-a').val() === " " || $('.login-int').val() !== "admin" && $('.login-int-a').val() === " ") {
+								$('.login').css('height', '360')
+							} else if ($('.login-int').val() !== "Test" && $('.login-int-a').val() !== "1215" || $('.login-int').val() !== "admin" && $('.login-int-a').val() !== "1215") {
+								$('.username').css('display', 'block');
+								$('.userp').css('display', 'block');
+								$('.login').css('height', '360')
+							} else if ($('.login-int').val() === " " && $('.login-int-a').val() !== "1215") {
+								$('.login').css('height', '360')
+							} else {
+								if ($('.login-int').val() !== 'Test' || $('.login-int').val() !== 'admin') {
+									$('.username').css('display', 'block')
+									$('.login').css('height', '330')
+								} else if ($('.login-int-a').val() !== '1215') {
+									$('.userp').css('display', 'block')
+									$('.login').css('height', '330')
+								}
+							}
+						}
+
+					})
+					$('.return').click(function () {
+						$('.db').remove();
+					})
+				})
+				$(".btns-language").click(function () {
+					$('body').append(str);
+					var _this = $(this);
+					$('.login-button').click(function () {
+						if ($('.login-int').val() === 'Test' && $('.login-int-a').val() === '1215' || $('.login-int').val() === 'admin' && $('.login-int-a').val() === '1215') {
+							var userValue = $('.login-int').val();
+							storage.setItem('username', userValue)
+							_this.text('Test');
+							$('.db').remove();
+							window.location.reload()
+						} else if (!$('.login-int').val() && !$('.login-int-a').val()) {
+							$('.userp').css('display', 'block');
+							$('.username').css('display', 'block')
+							$('.login').css('height', '360')
+						} else if ($('.login-int').val() === 'Test' && $('.login-int-a').val() !== '1215' || $('.login-int').val() === 'admin' && $('.login-int-a').val() !== '1215') {
+							$('.username').css('display', 'none')
+							$('.userp').css('display', 'block')
+							$('.login').css('height', '330')
+						} else if ($('.login-int-a').val() === '1215' && $('.login-int').val() !== 'Test' || $('.login-int-a').val() === '1215' && $('.login-int').val() !== 'admin') {
+							$('.username').css('display', 'block');
+							$('.userp').css('display', 'none');
+							$('.login').css('height', '330')
+						} else if ($('.login-int').val() !== "Test" && $('.login-int-a').val() === " " || $('.login-int').val() !== "admin" && $('.login-int-a').val() === " ") {
+							$('.login').css('height', '360')
+						} else if ($('.login-int').val() !== "Test" && $('.login-int-a').val() !== "1215" || $('.login-int').val() !== "admin" && $('.login-int-a').val() !== "1215") {
+							$('.username').css('display', 'block');
+							$('.userp').css('display', 'block');
+							$('.login').css('height', '360')
+						} else if ($('.login-int').val() === " " && $('.login-int-a').val() !== "1215") {
+							$('.login').css('height', '360')
+						} else {
+							if ($('.login-int').val() !== 'Test' || $('.login-int').val() !== 'admin') {
+								$('.username').css('display', 'block')
+								$('.login').css('height', '330')
+							} else if ($('.login-int-a').val() !== '1215') {
+								$('.userp').css('display', 'block')
+								$('.login').css('height', '330')
+							}
+						}
+					})
+					$('.return').click(function () {
+						$('.db').remove();
+					})
+				})
+			}
+		})
+	</script>
+	<script>
+		// admin
+		var storage = window.localStorage;
+
+		var username = storage.getItem('username')
+		$(".btns-language").text(username);
+
+
+		$('.logout').click(function () {
+			window.localStorage.setItem('username', '')
+			 window.location.href = "http://tfire.net/index.html"
+	
+		})
+	</script>
+</body>
+
+
+</html>

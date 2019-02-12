@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
+
+    <title>De Anza Oaks</title>
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/aos.css">
+    <link rel="stylesheet" type="text/css" href="css/masterslider.main.css">
+    <link rel="stylesheet" type="text/css" href="css/ms-skin-sample.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap /3.3.7/css/bootstrap.min.css">
+    <!-- 日历插件 -->
+    <link rel="stylesheet" href="css/calendar.css">
+    <style>
+
+        .breadcrumb li{
+            color:rgba(30,130,23,1);
+            height:27px;
+         font-size:20px;
+         font-family:OpenSans-Regular;
+         font-weight:400;
+         line-height:27px;
+         color:rgba(30,130,23,1);
+        }
+        .breadcrumb li a{
+            color:rgba(30,130,23,1);
+        }
+        .breadcrumb{
+            width:293px;
+            display: flex;
+            /* border: solid 1px red; */
+            position: relative;
+            top:24px;
+        }
+        .main-breadcrumb{
+            width: 100%;
+            height: 50px;
+        }
+        .main-center{
+            width:1200px;
+            height:100%;
+            margin: auto;
+            margin-top: 18px;
+        }
+        
+        .content-1{
+            width:100% ;
+            height: auto;
+            
+        }
+        
+        
+        .footer-p{
+          
+font-size:16px;
+font-family:OpenSans-SemiBold;
+font-weight:600;
+color:rgba(255,255,255,1);
+line-height:70px;
+text-align: center;
+        
+         }
+		.main-left-content{
+			width: 421px;
+			height: 225px;
+			box-shadow:  0 0 8px;
+			margin-top: 15px;
+		}
+		.main-right-content{
+			width: 759px;
+			height: 225px;
+			box-shadow:  0 0 8px;
+			margin-top: 15px;
+			margin-left: 24px
+		}
+		.calendar-right{
+			width: 478px;
+			height: 100%;
+			box-sizing: border-box;
+			display: flex;
+			flex-wrap: wrap;
+			background: #F1F1F1;
+			overflow: overlay;
+		}
+		.calendar-right::-webkit-scrollbar {
+			display: none;
+		}
+		.calendar-right div{
+			width: 100%;
+			height: 33.3%;
+			padding: 0 25px;
+		}
+		.calendar-right p{
+			height: 22px;
+			line-height: 22px;
+			margin:20px 0 0 0;
+			font-size: 16px;
+			font-family:PingFangSC-Regular;
+		}
+		.calendar-right p span{
+			float: left;
+		}
+		.calendar-right p a{
+			float: right;
+			color: black;
+		}
+		.calendar-right .active{
+			background-color: #6AA666;
+			color:#FFFFFF;
+		}
+		.announcement-tips{
+			height: 20px;
+			box-sizing: border-box;
+			margin-left: 140px;
+			margin-top: 15px;
+		}
+		.announcement-tips span{
+			display: inline-block;
+			width: 16px;
+			height: 16px;
+			border-radius: 50%;
+			background-color: #A0C79F;
+			margin-left:16px; 		
+        }
+        .garbage-left ul li{
+            font-size: 20px;
+            color: rgba(57,61,68,1);;
+            line-height: 28px;
+            font-weight: 400;
+        }
+	</style>
+
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="header" style="box-shadow:0px 2px 7px 0px rgba(0,0,0,0.5);
+    border:1px solid rgba(151,151,151,1);">
+        <div class="w1200">
+            <a class="logo" href="index.html">
+                <img src="img/Combined Shape.png" alt="Combined Shape">
+                De Anza Oaks
+            </a>
+            <input type="text" placeholder="Search..." style="width: 188px;height: 37px;position: relative;top: 30px;left: 540px;border: solid 1px #393D44;padding-left: 10px;">
+            <div class="btns clearfix">
+                <img src="img/Shape.png" alt="Shape" style="position: relative;left: -140px;top: 40px;z-index: 100000;">
+                <img src="img/dropdown.png" alt="dropdown" style="position: relative;left: -50px;top: 36px;z-index: 100000;">
+                <a class="btns-search" href="javascript:;"> </a>
+                <a class="btns-language" href="javascript:;"></a>
+                <div class="langOv">
+                    <div class="profile">
+                        <a href="saveFile.html" style="border-bottom: 1px solid white;width: 100%;margin-left: -1px">My
+                            Profile</a>
+                        <a href="javascript:;" class="logout">Log Out</a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li class="curr">
+                        <a class="on" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About us</a>
+                    </li>
+                    <!-- <li>
+                        <a href="downloadFile.html">Docs</a>
+                    </li> -->
+
+                </ul>
+                <span class="navline"></span>
+            </div>
+        </div>
+        <!-- 二级导航背景 -->
+        <!-- <div class="innavbg"></div> -->
+        <div class="mask"></div>
+
+        <script src="js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="js/header.js"></script>
+    </div>
+
+
+    <!-- 主体 -->
+    <div class="main" style="height:100%">
+        <div class="main-breadcrumb" style="width: 1200px;margin: 0 auto">
+            <ul class="breadcrumb" style="float: left">
+                <li><a href="index.html">Home</a></li>
+                <li>&nbsp;>&nbsp;</li>
+                <li><a href="garbage.html">Garbage</a></li>
+            </ul>
+        </div>
+
+        <div class="main-center">
+
+            <div class="content-1">
+                <div class="img-1">
+                    <img src="img/garbage-1.png">
+                </div>
+                <p style="color:rgba(57,61,68,1);font-size: 24px;font-weight: 600;line-height: 32px">All three carts
+                    are picked up in your neighborhood one day a week, Monday through Friday. Three different
+                    collection vehicles will pick up your carts between 6 a.m. and 6 p.m.</p>
+
+            </div>
+            <div style="display: flex;flex-wrap: wrap;justify-content: space-between;width: 100%;height: 100%;margin-top: 60px">
+                <div style="width: 49%;height: 600px;display: flex;justify-content: space-between;">
+                    <img src="img/garbage-collection1.png" alt="garbage-collection" style="width: 160px;height:160px;border:1px solid rgba(151,151,151,1);">
+                    <div class="garbage-left" style="width: 70%">
+                        <p style="font-size: 24px;font-weight: 600;color: #393D44;font-family: OpenSans-SemiBold;">What's
+                            Garbage?</p>
+                        <ul style="margin-top:20px;">
+                            <li>Diapers</li>
+                            <li>Disposable razors</li>
+                            <li>Cactus & palm branches</li>
+                            <li>Cat litter & pet feces</li>
+                            <li>Glassware & ceramic dishes/cups</li>
+                            <li>Hoses & wire</li>
+                            <li>juice boxes/pouches</li>
+                            <li>Non-fluorescent light bulbs</li>
+                            <li>Sheet glass(windows,mirrors,etc.)</li>
+                            <li>Foam cups or packing materials</li>
+                            <li>Treated wood (painted,stainied,etc.)</li>
+                        </ul>
+                        <p style="font-size: 24px;font-weight: 600;color: #393D44;font-family: OpenSans-SemiBold;margin: 24px 0">What's
+                            Not Garbage?</p>
+                        <ul>
+                            <li>Batteries</li>
+                            <li>Electronics</li>
+                            <li>Fluorescent light bulbs</li>
+                            <li>Paint cans</li>
+                            <li>Used motor oil & filters</li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="width: 49%;height: 500px;">
+                    <div style="width: 100%;height: 600px;display: flex;justify-content: space-between;">
+                        <img src="img/garbage-collection2.png" alt="garbage-collection" style="width: 160px;height:160px;border:1px solid rgba(151,151,151,1);">
+                        <div class="garbage-left" style="width: 70%">
+                            <p style="font-size: 24px;font-weight: 600;color: #393D44;font-family: OpenSans-SemiBold;">What's
+                                Recyclable?</p>
+                            <ul style="margin-top:20px;">
+                                <li>All plastics #1-7(except Foam cups or packing materials)</li>
+                                <li>Aluminum foil products(cans,baking tins & foil)</li>
+                                <li>Bundled plastic bags/wrap</li>
+                                <li>Cardboard</li>
+                                <li>Clean paper</li>
+                                <li>Glass containers</li>
+                                <li>Metal containers(including empty aerosol cans)</li>
+                                <li>Scrap metal (cookie sheets,utensils)</li>
+                            </ul>
+                            <p style="font-size: 24px;font-weight: 600;color: #393D44;font-family: OpenSans-SemiBold;margin: 24px 0">What's
+                                Not Recyclable?</p>
+                            <ul>
+                                <li>Ceramic dishes,cups & glassware</li>
+                                <li>juice boxes/juice pouches</li>
+                                <li>Foam cups or packing materials</li>
+                                <li>Windows,mirrors,sheet glass</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div style="width: 50%;height: 900px;">
+                    <div style="width: 100%;height: 800px;display: flex;justify-content: space-between;">
+                        <img src="img/garbage-collection3.png" alt="garbage-collection" style="width: 160px;height:160px;border:1px solid rgba(151,151,151,1);">
+                        <div class="garbage-left" style="width: 70%">
+                            <p style="font-size: 24px;font-weight: 600;color: #393D44;font-family: OpenSans-SemiBold;">What's
+                                Green Waste?</p>
+                            <ul style="margin-top:20px;">
+                                <li>All meat,bones,dairy & egg shells</li>
+                                <li>Bread,rice,beans & pasta</li>
+                                <li>Coffee groyunds,filters,tea leaves & bags</li>
+                                <li>Food-soiled paper containers</li>
+                                <li>Fruits,vegetables & leftovers</li>
+                                <li>Paper towels,plates,napkins & cups</li>
+                                <li>Shredded paper conained in paper bage</li>
+                                <li>Waxed paper cartons</li>
+                                <li>(milk,ice cream,juice,etc.)</li>
+                                <li style="margin: 20px 0">Plus,Yard Trimmings,such as:</li>
+                                <li>Branches & twigs</li>
+                                <li>Flowers,weeds & roots</li>
+                                <li>Leaves,grass & plant clippings</li>
+                                <li>Uncoated wood & chips</li>
+                            </ul>
+                            <p style="font-size: 24px;font-weight: 600;color: #393D44;font-family: OpenSans-SemiBold;margin: 24px 0">What's
+                                Not Green Waste?</p>
+                            <p style="width: 259px;font-size: 22px;font-weight: 400;color: #393D44;line-height: 28px">Cactus
+                                or palm branches Glass, metal, aluminum Plastic (bags, flower pots) Rocks, dirt
+                                concrete Treated or coated wood (painted, stained, oiled)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/aos.js"></script>
+    <script type="text/javascript" src="js/masterslider.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <!-- 日历插件 -->
+    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <script src="js/calendar.js"></script>
+    <script>
+
+        var slider = new MasterSlider();
+        slider.setup('masterslider', {
+            width: 1920, // slider standard width
+            height: 500, // slider standard height
+            mouse: false,
+            autoplay: false,
+            loop: true,
+            overPause: false,
+            speed: 13
+        });
+        MSScrollParallax.setup(slider, 60, 100, true);
+        slider.control('arrows');
+        var i = 1,
+            ileng = $('.ms-slide').length;
+        setInterval('timebar()', 6000);
+        $('.ban-len span').html(ileng);
+        clickReduce();
+        clickAdd();
+    </script>
+
+    <!-- 底部 -->
+    <div class="footer" style="margin-bottom: -24px">
+        <p>
+           Copyright © 2019 Tellus, Inc. All Rights Reserved.
+        </p>
+    </div>
+
+    <script>
+        // admin
+        var storage = window.localStorage;
+        if (storage.getItem('username') === 'admin') {
+            $('.buttona').css('display', 'none')
+        }
+
+        var username = storage.getItem('username')
+        $(".btns-language").text(username);
+        $('.logout').click(function () {
+            window.localStorage.setItem('username', '')
+            window.location.href = "http://tfire.net/index.html"
+		
+
+        })
+    </script>
+
+
+</body>
+
+</html>

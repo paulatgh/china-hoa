@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=8" /> -->
+    <link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
+
+    <title>De Anza Oaks</title>
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/aos.css">
+    <link rel="stylesheet" type="text/css" href="css/masterslider.main.css">
+    <link rel="stylesheet" type="text/css" href="css/ms-skin-sample.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        .main {
+            height: 1500px;
+        }
+
+        .w838 {
+            width: 100%;
+            border-left: none;
+            height: 1051px;
+        }
+
+        .investor-right {
+            width: 100%;
+        }
+
+        .breadcrumb li {
+            color: rgba(30, 130, 23, 1);
+            height: 27px;
+            font-size: 20px;
+            font-family: OpenSans-Regular;
+            font-weight: 400;
+            line-height: 27px;
+
+        }
+
+        .breadcrumb li a {
+            color: rgba(30, 130, 23, 1);
+
+        }
+
+        .breadcrumb {
+            width: 293px;
+            display: flex;
+            /* border: solid 1px red; */
+            position: relative;
+            top: 24px;
+        }
+
+        .main-breadcrumb {
+            width: 100%;
+            height: 50px;
+        }
+
+        .investor-pdf li {
+            width: 185px;
+            height: 40px;
+        }
+
+        .nav_user {
+            width: 163px;
+            height: 40px;
+            background: #393D44;
+        }
+
+        .news-page a {
+            display: inline-block;
+            width: 42px;
+            height: 42px;
+            border: 1px solid #449F41;
+            line-height: 42px;
+            font-size: 23px;
+        }
+
+        .main-center {
+            width: 1200px;
+            height: auto;
+            margin: auto;
+        }
+
+        .main-center h4 {
+            height: 41px;
+            font-size: 30px;
+            font-family: OpenSans-Bold;
+            font-weight: bold;
+            color: rgba(57, 61, 68, 1);
+            line-height: 41px;
+            margin: 22px 0;
+        }
+
+        .content-1 {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .choose {
+            width: 1172px;
+            height: 810px;
+            display: flex;
+            position: relative;
+        }
+
+        .choose-left {
+            width: 280px;
+            height: 230px;
+            padding: 25px;
+            margin-right: 10px;
+            box-sizing: border-box;
+            box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.24);
+        }
+
+        .choose-right {
+            width: 890px;
+            height: 790px;
+            /* border: solid 1px; */
+            overflow: auto;
+            margin-left: 10px;
+        }
+
+        .choose-right ul>li {
+            width: 176px;
+            height: 240px;
+            background: rgba(241, 241, 241, 1);
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            position: relative;
+            margin-right: 51px;
+        }
+
+        .choose-right li:nth-child(2n) .announcements_permission span {
+            color: #ffffff;
+        }
+
+        .choose-left h5 {
+            font-size: 20px;
+            font-family: OpenSans-Bold;
+            font-weight: bold;
+            color: rgba(57, 61, 68, 1);
+            line-height: 36px;
+        }
+
+        .choose-left ul {
+            margin-top: 8px;
+        }
+
+        .choose-left ul li {
+            width: 100%;
+        }
+
+        .choose-left ul li a {
+            font-size: 17px;
+            font-family: OpenSans-Regular;
+            font-weight: 400;
+            color: rgba(106, 166, 102, 1);
+            line-height: 30px;
+        }
+
+        #tab1 li:nth-child(4n) {
+            margin-right: 0;
+        }
+
+        .choose-right>li>h5 {
+
+            height: 22px;
+            font-size: 16px;
+            font-family: OpenSans-SemiBold;
+            font-weight: 600;
+            color: rgba(30, 30, 30, 1);
+            line-height: 22px;
+        }
+
+        .choose-right>li>div {
+            font-size: 16px;
+            font-family: OpenSans-Regular;
+            font-weight: 400;
+            color: rgba(30, 30, 30, 1);
+            line-height: 22px;
+        }
+
+        .item {
+            display: none;
+        }
+
+        .show {
+            display: block;
+        }
+
+        .choose-left .choose-left .tabs li {
+            margin-left: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="header" style="box-shadow:0px 2px 7px 0px rgba(0,0,0,0.5);
+        border:1px solid rgba(151,151,151,1)">
+        <div class="w1200" style="height: 0">
+            <a class="logo" href="index.html">
+                <img src="img/Combined Shape.png" alt="Combined Shape">
+                De Anza Oaks
+            </a>
+            <input type="text" placeholder="Search..."
+                style="width: 188px;height: 37px;position: relative;top: 30px;left: 540px;border: solid 1px #393D44;padding-left: 10px;">
+            <div class="btns clearfix">
+                <img src="img/Shape.png" alt="Shape" style="position: relative;left: -140px;top: 40px;z-index: 100000;">
+                <img src="img/dropdown.png" alt="dropdown"
+                    style="position: relative;left: -50px;top: 36px;z-index: 100000;">
+                <a class="btns-search" href="javascript:;"> </a>
+                <a class="btns-language" href="javascript:;"></a>
+                <div class="langOv">
+                    <div class="profile">
+                        <a href="saveFile.html" style="border-bottom: 1px solid white;width: 100%;margin-left: -1px">My
+                            Profile</a>
+                        <a href="javascript:;" class="logout">Log Out</a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>
+                        <a class="on" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="on" href="about.html">About us</a>
+                    </li>
+                    <!-- <li class="curr">
+                        <a class="on" href="downloadFile.html">Docs</a>
+                    </li> -->
+                </ul>
+                <span class="navline"></span>
+            </div>
+        </div>
+        <div class="mask"></div>
+        <!-- 侧边栏 -->
+
+        <script src="js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="js/header.js"></script>
+        <script type="text/javascript" src="js/list=hk02007.js" charset="gb2312"></script>
+
+    </div>
+
+    <!-- 主体 -->
+    <div class="investor clearfix">
+        <div class="main-breadcrumb" style="width: 1200px;margin: 0 auto">
+            <ul class="breadcrumb" style="float: left">
+                <li><a href="index.html">Home</a></li>
+                <li>&nbsp;>&nbsp;</li>
+                <li><a href="resources.html">Resources</a></li>
+                <li>&nbsp;>&nbsp;</li>
+                <li><a href="downloadFile.html">Docs</a></li>
+            </ul>
+        </div>
+        <div class="w1200">
+
+            <div class="w838">
+                <div class="investor-pdf">
+                    <div class="main-center">
+                        <div class="content-1">
+                            <div class="choose">
+                                <div class="choose-left">
+                                    <h5>CHOOSE A CATEGORY</h5>
+                                    <ul id="tabs">
+                                        <li><a href="#" title="tab1">Homeowners Association </a></li>
+                                        <li><a href="#" title="tab2">De Anza Oaks Paint Colors</a></li>
+                                    </ul>
+                                </div>
+                                <div class="choose-right">
+                                    <!-- -----------------------------------------华丽的分割线---------------------------------------------- -->
+                                    <ul id="tab1" class="item show clearfix">
+                                        <li>
+                                            <div class="investor-pdfhov">
+                                                <div class="investor-pdf-img">
+                                                    <img src="img/Homeowners Association.png" alt=""
+                                                        style="height: 214px">
+                                                </div>
+                                                <div class="investor-pdf-con"><a target="_blank"
+                                                        href="pdf/8181085daohoa122_cc_rs.pdf">View</a>
+                                                </div>
+                                            </div>
+                                            <p>Homeowners Association</p>
+                                        </li>
+                                        <li>
+                                            <div class="investor-pdfhov">
+                                                <div class="investor-pdf-img">
+                                                    <img src="img/Architectural Satndards.png" alt=""
+                                                        style="height: 214px">
+                                                </div>
+                                                <div class="investor-pdf-con"><a target="_blank"
+                                                        href="pdf/21112002703_001.pdf">View</a>
+                                                </div>
+                                            </div>
+                                            <p>Homeowners Association(2)</p>
+                                        </li>
+                                        <li>
+                                            <div class="investor-pdfhov">
+                                                <div class="investor-pdf-img">
+                                                    <img src="img/Homeowners Association.png" alt=""
+                                                        style="height: 214px">
+                                                </div>
+                                                <div class="investor-pdf-con"><a target="_blank"
+                                                        href="pdf/8181085daohoa122_cc_rs.pdf">View</a>
+                                                </div>
+                                            </div>
+                                            <p>Homeowners Association</p>
+                                        </li>
+                                        <li>
+                                            <div class="investor-pdfhov">
+                                                <div class="investor-pdf-img">
+                                                    <img src="img/Architectural Satndards.png" alt=""
+                                                        style="height: 214px">
+                                                </div>
+                                                <div class="investor-pdf-con"><a target="_blank"
+                                                        href="pdf/21112002703_001.pdf">View</a>
+                                                </div>
+                                            </div>
+                                            <p>Homeowners Association(2)</p>
+                                        </li>
+
+                                    </ul>
+
+                                    <!-- ------------------------------华丽的分割线----------------------------------------->
+                                    <ul id="tab2" class="item">
+                                        <li>
+                                            <div class="investor-pdfhov">
+                                                <div class="investor-pdf-img">
+                                                    <img src="img/DE ANZA OAKS PAINT COLORS.png" alt=""
+                                                        style="height: 214px">
+                                                </div>
+                                                <div class="investor-pdf-con"><a target="_blank"
+                                                        href="pdf/2174420paint_colors_-_2007.pdf">View</a>
+                                                </div>
+                                            </div>
+                                            <p>De Anza Oaks Pait Colors</p>
+                                        </li>
+                                        <li>
+                                            <div class="investor-pdfhov">
+                                                <div class="investor-pdf-img">
+                                                    <img src="img/DE ANZA OAKS PAINT COLORS.png" alt=""
+                                                        style="height: 214px">
+                                                </div>
+                                                <div class="investor-pdf-con"><a target="_blank"
+                                                        href="pdf/2174420paint_colors_-_2007.pdf">View</a>
+                                                </div>
+                                            </div>
+                                            <p>De Anza Oaks Pait Colors</p>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <!-- </div> -->
+
+            <script type="text/javascript" src="list=hk02007.js" tppabs="http://hq.sinajs.cn/list=hk02007"
+                charset="gb2312"></script>
+
+        </div>
+    </div>
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/aos.js"></script>
+    <script type="text/javascript" src="js/masterslider.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
+    <script>
+        // admin
+        var storage = window.localStorage;
+        if (storage.getItem('username') === 'admin') {
+            // $('.choose-right').css('margin-top', '50px')
+            $('.announcements_add').css('display', 'block')
+            $('.announcements_permission').css('display', 'block')
+        }
+
+        var username = storage.getItem('username')
+        $(".btns-language").text(username);
+
+        $('.logout').click(function () {
+            window.localStorage.setItem('username', '')
+            window.location.href = "http://tfire.net/index.html"
+        })
+
+    </script>
+    <script>
+        $(function () {
+            $('#tabs a').click(function (e) {
+                e.preventDefault();
+                $('#tabs li').removeClass("current").removeClass("hoverItem");
+                $(this).parent().addClass("current");
+                $(".choose-right ul").removeClass("show");
+                $('#' + $(this).attr('title')).addClass('show');
+            });
+
+            $('#tabs a').hover(function () {
+                if (!$(this).parent().hasClass("current")) {
+                    $(this).parent().addClass("hoverItem");
+                }
+            }, function () {
+                $(this).parent().removeClass("hoverItem");
+            });
+
+        });
+
+    </script>
+    <!-- 底部 -->
+    <div class="footer">
+        <p>
+            Copyright © 2019 Tellus, Inc. All Rights Reserved.
+        </p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<!-- <meta http-equiv="X-UA-Compatible" content="IE=8" /> -->
+	<link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
+
+	<title>De Anza Oaks</title>
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/aos.css">
+	<link rel="stylesheet" type="text/css" href="css/masterslider.main.css">
+	<link rel="stylesheet" type="text/css" href="css/ms-skin-sample.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/public.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+	<style>
+		html,body{
+		height:100%;
+		}
+		.main-left h2{
+			text-align: center;
+			height: 120px;
+			line-height: 120px;
+			font-size:34px;
+			font-family:SourceHanSansSC-Bold;
+			font-weight:bold;
+			color:rgba(57,61,68,1);
+		}
+		.Carousel{
+			position: relative;
+		}
+		.Carousel_tips{
+			padding: 0 0 25px;
+			box-sizing: border-box;
+			height: 44px;
+			line-height: 24px;
+			font-size:24px;
+			font-family:SourceHanSansSC-Medium;
+			font-weight:500;
+			border-bottom: 2px solid #333333;
+			color:rgba(51,51,51,1);
+			position: absolute;
+			top:0;
+			left: 0;
+			width: 44px;
+		}
+		.Carousel_img{
+			width: 922px;
+			height: 300px;
+			padding-top: 70px;
+			box-sizing: border-box;
+			margin-bottom: 90px;
+		}
+		.Carousel_img li:first-child{
+			background: url('img/1.png') no-repeat;
+			background-size: 100%;
+		}
+		.Carousel_img li:nth-child(2){
+			background: url('img/2.png') no-repeat;
+			background-size: 100%;
+		}
+		.Carousel_img li:nth-child(3){
+			background: url('img/3.png') no-repeat;
+			background-size: 100%;
+		}
+		.swiper-button-next{
+			background: url('img/lefta.png') no-repeat ;	
+			background-size: 100%;
+			top:190px;
+			right:23px;
+			
+		}
+		.swiper-button-prev{			
+			background: url('img/right2.png') no-repeat;
+			background-size: 100%;
+			top:190px;
+			left:23px;
+		}
+		.Carousel p{
+			line-height: 70px;
+		}
+		.Information_list{
+			margin-top: 20px;
+		}
+		.Information_list>li>a{
+			font-size:26px;
+			font-family:SourceHanSansSC-Normal;
+			font-weight:400;
+			color:rgba(106,166,102,1);
+			line-height:60px; 
+			text-decoration: underline;
+		}
+		.Information_desc{
+			height:376px;
+			margin-top: 30px;
+			background:rgba(255,255,255,1);
+			border:1px solid rgba(68,159,65,1);
+			padding: 0 46px 46px;
+			box-sizing: border-box;
+		}
+		.Information_desc ul li{
+			font-size:26px;
+			font-family:SourceHanSansSC-Normal;
+			font-weight:400;
+			color:rgba(106,166,102,1);
+			line-height:60px;
+		}
+		.Information_desc h3{
+			text-align: center;
+			line-height: 75px;
+			font-size:26px;
+			font-family:SourceHanSansSC-Medium;
+			font-weight:500;
+			color:rgba(106,166,102,1);
+
+		}
+		.breadcrumb{
+			width: 1200px;
+			height: 75px;
+			margin: 0 auto;
+		}
+		.breadcrumb li{
+			float: left;
+			margin-right: 10px;
+			font-size:20px;
+			font-family:OpenSans-Regular;
+			font-weight:400;			
+			line-height:75px;
+		}
+		.breadcrumb li a{
+			color:rgba(30,130,23,1);
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<!-- 头部 -->
+	<div class="header" style="box-shadow:0px 2px 7px 0px rgba(0,0,0,0.5);
+	border:1px solid rgba(151,151,151,1)">
+		<div class="w1200" style="height: 0">
+			<a class="logo" href="index.html">
+				<img src="img/Combined Shape.png" alt="Combined Shape">
+				De Anza Oaks
+			</a>
+			<input type="text" placeholder="Search..." style="width: 188px;height: 37px;position: relative;top: 30px;left: 540px;border: solid 1px #393D44;padding-left: 10px;">
+
+			<div class="btns clearfix">
+				<img src="img/Shape.png" alt="Shape" style="position: relative;left: -140px;top: 40px;z-index: 100000;">
+				<img src="img/dropdown.png" alt="dropdown" style="position: relative;left: -50px;top: 36px;z-index: 100000;">
+				<a class="btns-search" href="javascript:;"> </a>
+				<a class="btns-language" href="javascript:;"></a>
+				<div class="langOv">
+					<div class="profile">
+						<a href="saveFile.html" style="border-bottom: 1px solid white;width: 100%;margin-left: -1px">My Profile</a>
+						<a href="javascript:;" class="logout">Log Out</a>
+					</div>
+				</div>
+			</div>
+			<div class="nav">
+				<ul>
+					<li class="curr">
+						<a class="on" href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="about.html">About us</a>
+					</li>
+					<!-- <li>
+						<a href="downloadFile.html">Docs</a>
+					</li> -->
+
+				</ul>
+				<span class="navline"></span>
+			</div>
+		</div>
+	</div>
+	<!-- 二级导航背景 -->
+	<div class="innavbg"></div>
+	<div class="mask"></div>
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/header.js"></script>
+	<script type="text/javascript" src="js/list=hk02007.js" charset="gb2312"></script>
+	<!-- 主体 -->
+	<div class="main">
+		<ul class="breadcrumb">
+			<li><a href="index.html" rel="noopener noreferrer">Home</a></li>
+			<li><a href="#" rel="noopener noreferrer"> > </a></li>
+			<li><a href="events.html" rel="noopener noreferrer">Events</a></li>
+			<li><a href="#" rel="noopener noreferrer"> > </a></li>
+			<li><a href="#" rel="noopener noreferrer">Facilities</a></li>
+		</ul>
+		<div class="main-top clearfix" style="margin-bottom: 35px;height: 100%;">
+
+			<div class="w1200 pr">
+				<div class="main-left" style="width:100%;height: 100%;">
+					<h2>Facilities</h2>
+					<div style="padding:0 140px;box-sizing:border-box;font-size:26px;font-family:SourceHanSansSC-Normal;margin-bottom:120px;font-weight:400;color:rgba(57,61,68,1);	line-height:34px;">
+						De Anza Oaks offers a playground and plenty of green space for families as well as a 25 yard heated swimming
+						pool and children's pool. Bathrooms equipped with hot showers are located near the pool. Our clubhouse is perfect
+						for entertaining with it's newly remodeled interior. For further information, please go to the Clubhouse
+						description in Facilities.
+					</div>
+					<div class="Carousel">
+						<div class="Carousel_tips">Image</div>
+						<div class="Carousel_img swiper-container">
+							<ul class="swiper-wrapper" style="height: 280px;width:1200px;">
+								<li class="swiper-slide ">
+									<div>
+									</div>
+								</li>
+								<li class="swiper-slide">
+								</li>
+								<li class="swiper-slide">
+								</li>
+							</ul>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+					</div>
+					<div class="Carousel">
+						<div class="Carousel_tips">Clubhouse</div>
+						<div style="padding:40px 140px 0;box-sizing:border-box;font-size:26px;font-family:SourceHanSansSC-Normal;margin-bottom:120px;font-weight:400;color:rgba(57,61,68,1);	line-height:34px;">
+							<div>
+								The clubhouse has a kitchen, formal area, electric fireplace and two bathrooms and deck. It can seat a maximum
+								of 72 people as established by the fire department. There is a $100 deposit which will be returned to the
+								renter if no damage has occurred and if the clubhouse has been cleaned in a satisfactory manner, subject to the
+								criteria of the clubhouse chairperson.
+							</div>
+							<p>For further inquiry, you may do the following:</p>
+							<p>
+								*Review the Events Calendar to check Clubhouse availability
+							</p>
+							<p>
+								*Submit the Clubhouse Reservation Request eForm Click the first link
+							</p>
+							<div>
+								below to see the Clubhouse Information sheet. Click the second link below to see the Clubhouse Rules. Click on
+								the third link to see Pool & Restroom Building Rules.
+							</div>
+							<!-- <ul class="Information_list">
+								<li>
+									<a href="#">Click here for more information</a>
+								</li>
+								<li>
+									<a href="#">Click here for more information</a>
+								</li>
+								<li>
+									<a href="#">Click here for more information</a>
+								</li>
+							</ul> -->
+							<div class="Information_desc">
+								<h3>Important Information</h3>
+								<ul>
+									<li>Location: 22970 Surrey Circle </li>
+									<li>Hours: 6:00 a.m. - 1:00 a.m. </li>
+									<li>Phone: 408-725-9576</li>
+									<li>Costs: $40 for up to 35 people, $60 for over 35 people.</li>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+					<div class="Carousel">
+						<div class="Carousel_tips" style="border: 0;width: 250px;">De Anza Oaks Pools
+							<hr style="background:#333333;height: 1px;margin-top: 14px;width: 44px" />
+						</div>
+						<div class="Carousel_img swiper-container" style="margin-bottom: 40px">
+							<ul class="swiper-wrapper" style="height: 280px;width:1200px;">
+								<li class="swiper-slide ">
+									<div>
+									</div>
+								</li>
+								<li class="swiper-slide">
+								</li>
+								<li class="swiper-slide">
+								</li>
+							</ul>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+						<div style="padding:0 140px;box-sizing:border-box;font-size:26px;font-family:SourceHanSansSC-Normal;margin-bottom:120px;font-weight:400;color:rgba(57,61,68,1);	line-height:34px;">
+							<div>De Anza Oaks has a heated 25 yard pool and a heated children's pool available for the enjoyment of the
+								homeowners and their tenants. Admittance to the pool is with a key card and lot identification tag only.</div>
+							<p> Click the link below to view the Pool and Restroom Building Rules</p>
+							<!-- <ul class="Information_list">
+								<li>
+									<a href="#">Click here for more information</a>
+								</li>
+							</ul> -->
+							<div class="Information_desc">
+								<h3>Important Information</h3>
+								<ul>
+									<li>Location: 22970 Surrey Circle </li>
+									<li>Hours: 6:00 a.m. - 1:00 a.m. </li>
+									<li>Phone: 408-725-9576</li>
+									<li>Costs: $40 for up to 35 people, $60 for over 35 people.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+		<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="js/aos.js"></script>
+		<script type="text/javascript" src="js/masterslider.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<!-- 底部 -->
+		<div class="footer" style="margin-bottom: -24px">
+			<p>
+				Copyright © 2019 Tellus, Inc. All Rights Reserved.
+			</p>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<script src="js/swiper.min.js"></script>
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+			spaceBetween: 30,
+			centeredSlides: true,
+			autoplay: {
+				delay: 2500,
+				disableOnInteraction: false,
+			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});
+
+	</script>
+	<script>
+		// admin
+		var storage = window.localStorage;
+		if (storage.getItem('username') === 'admin') {
+			$('.buttona').css('display', 'none')
+		}
+
+		var username = storage.getItem('username')
+		$(".btns-language").text(username);
+
+
+		$('.logout').click(function () {
+			window.localStorage.setItem('username', '')
+			window.location.href = "http://tfire.net/index.html"
+		
+		})
+	</script>
+</body>
+
+
+</html>

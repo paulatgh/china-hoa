@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<!-- <meta http-equiv="X-UA-Compatible" content="IE=8" /> -->
+	<link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
+
+	<title>De Anza Oaks</title>
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/aos.css">
+	<link rel="stylesheet" type="text/css" href="css/masterslider.main.css">
+	<link rel="stylesheet" type="text/css" href="css/ms-skin-sample.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/public.css">
+	<style>
+		html,body{
+		height:100%;
+		}
+		.main{
+			height: 1150px;
+		}
+		.main-left h2{
+			text-align: center;
+			height: 120px;
+			line-height: 120px;
+			font-size:34px;
+			font-family:SourceHanSansSC-Bold;
+			font-weight:bold;
+			color:rgba(57,61,68,1);
+		}
+		.breadcrumb{
+			width: 100%;
+			height: 75px;
+		}
+		.breadcrumb li{
+			float: left;
+			margin-right: 10px;
+			font-size:20px;
+			font-family:OpenSans-Regular;
+			font-weight:400;			
+			line-height:75px;
+			color:rgba(30,130,23,1);
+		}
+		.breadcrumb li a{
+			color:rgba(30,130,23,1);
+		}
+		#form_1{
+			width: 100%;		
+			box-shadow:0px 0px 8px 0px rgba(0,0,0,0.24);
+			height: 334px;
+			margin-bottom: 32px;
+			box-sizing: border-box;			
+		}
+		#form_1 ul{
+			width: 100%;
+			height: 270px;
+			overflow-y:scroll;
+		
+		}
+		#form_1 ul::-webkit-scrollbar { width: 0 !important }
+		#form_1 li{
+			height: 54px;
+			padding: 0 24px;
+			box-sizing: border-box;	
+			font-size:20px;
+			font-family:OpenSans-Regular;
+			font-weight:400;
+			color:rgba(57,61,68,1);
+			line-height:54px;	
+			color:#393D44;
+			background:rgba(255,255,255,1);
+        }
+        .form_2 li p{
+            width: 98%;
+            font-size:16px;
+			font-family:OpenSans-SemiBold;
+			font-weight:400;
+			color:rgba(30,30,30,1);
+			text-decoration: none;
+		}
+		/* .form_1 li span a{
+			height:22px;
+			font-size:16px;
+			font-family:OpenSans-Regular;
+			font-weight:400;
+					} */
+        #form_1 li:nth-child(2n){
+			background:rgba(241,241,241,1);
+        }
+        #form_1 li:hover{
+            color:rgba(106,166,102,1);
+            text-decoration: underline;
+            cursor: pointer;
+		}
+		.form_2{
+			width: 100%;		
+			box-shadow:0px 0px 8px 0px rgba(0,0,0,0.24);
+			height: 100%;
+			margin-bottom: 32px;
+			box-sizing: border-box;			
+		}
+		.form_2 ul{
+			width: 100%;
+			height: height;
+			/* overflow-y:scroll; */
+		
+		}
+		.form_2 ul::-webkit-scrollbar { width: 0 !important }
+		.form_2 li{
+			height: 158px;
+			padding: 0 24px;
+			box-sizing: border-box;	
+			font-size:20px;
+			font-family:OpenSans-Regular;
+			font-weight:400;
+			color:rgba(57,61,68,1);
+			line-height:46px;	
+			/* color:#393D44; */
+			background:rgba(255,255,255,1);
+        }
+        .form_2 .form_title {
+			height: 64px;
+			background: #6AA666;
+			font-size: 30px;
+			font-family: OpenSans-Bold;
+			font-weight: bold;
+			color: rgba(255,255,255,1);
+			line-height: 64px;
+			padding: 0 12px;
+			box-sizing: border-box;
+		}
+        .form_2 li span a{
+            text-decoration: underline;
+            color:rgba(106,166,102,1);
+			
+        }
+        
+		
+        .form_2 li:nth-child(2n){
+			background:rgba(241,241,241,1);
+		}
+	
+		#form_1 .form_title{
+			height: 64px;
+			background: #6AA666;
+			font-size:30px;
+			font-family:OpenSans-Bold;
+			font-weight:bold;
+			color:rgba(255,255,255,1);
+			line-height: 64px;
+			padding: 0 24px;
+			box-sizing: border-box;
+		}
+		.form_title_left{
+			float: left;
+		}
+		#form_1	.form_title_right{
+			float: right;
+			width:91px;
+			margin-top: 13px;
+			height:40px;
+			line-height: 40px;
+			border-radius:20px;
+			text-align: center;
+			border:1px solid rgba(255,255,255,1);
+			font-size:16px;
+			font-family:OpenSans-Regular;
+			font-weight:400;
+			color:rgba(255,255,255,1);
+		}
+		#form_1 ul li>.form_content_left {
+			float: left;
+			width:80%;
+			height: 100%;
+			font-size:20px;
+			font-family:OpenSans-Regular;
+			font-weight:400;
+			line-height:54px;	
+			color:#393D44;
+		}
+		/* .form_1 ul li>.form_content_right{
+			float: right;
+			width: 18%;
+		} */
+		.form_content_right span{
+			margin-left: 24px;
+			box-sizing: border-box;
+			font-size:16px;
+			font-family:OpenSans-Regular;
+			font-weight:400;
+			color:rgba(106,166,102,1);
+			line-height:25px;
+			text-align: right;
+		}
+		#form_1 ul li em{
+			color:#6AA666;
+		}
+	</style>
+
+</head>
+
+<body>
+	<!-- 头部 -->
+	<div class="header" style="box-shadow:0 2px 7px 0px rgba(0,0,0,0.5); border:1px solid rgba(151,151,151,1)">
+		<div class="w1200">
+			<a class="logo" href="index.html">
+				<img src="img/Combined Shape.png" alt="Combined Shape">
+				De Anza Oaks
+			</a>
+			<input type="text" placeholder="Search..." style="width: 188px;height: 37px;position: relative;top: 30px;left: 540px;border: solid 1px #393D44;padding-left: 10px;">
+
+			<div class="btns clearfix">
+				<img src="img/Shape.png" alt="Shape" style="position: relative;left: -140px;top: 40px;z-index: 100000;">
+				<img src="img/dropdown.png" alt="dropdown" style="position: relative;left: -50px;top: 36px;z-index: 100000;">
+				<a class="btns-search" href="javascript:;"> </a>
+				<a class="btns-language" href="javascript:;"></a>
+				<div class="langOv">
+					<div class="profile">
+						<a href="saveFile.html" style="border-bottom: 1px solid white;width: 100%;margin-left: -1px">My Profile</a>
+						<a href="javascript:;" class="logout">Log Out</a>
+					</div>
+				</div>
+			</div>
+			<div class="nav">
+				<ul>
+					<li class="curr">
+						<a class="on" href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="about.html">About us</a>
+					</li>
+					<!-- <li>
+						<a href="downloadFile.html">Docs</a>
+					</li> -->
+
+				</ul>
+				<span class="navline"></span>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/header.js"></script>
+	<!-- 主体 -->
+	<div class="main">
+		<div class="main-top clearfix" style="margin-bottom: 35px;height: 100%;">
+			<div class="w1200 pr">
+				<ul class="breadcrumb">
+					<li><a href="index.html" rel="noopener noreferrer">Home</a></li>
+					<li>&nbsp;>&nbsp;</li>
+					<li><a href="resources.html" rel="noopener noreferrer"> Resources </a></li>
+					<li>&nbsp;>&nbsp;</li>
+					<li><a href="FAQ.html" rel="noopener noreferrer"> FAQ's</a></li>
+				</ul>
+				<div class="main-left" style="width:100%;height: 100%;">
+					<div class="form_2">
+						<div class="form_title">
+							<div class="form_title">Frequently Asked Questions</div>
+							<!-- <div class="form_title_right">Add</div> -->
+						</div>
+						<ul>
+							<li>
+
+								<h3>Question: I forgot my password. Is there a way to retrieve my password information from the site?</h3>
+								<p><strong>Answer:</strong>Yes.On the Login Screen, there is a link labeled 'Forgot your Password?'. Click on
+									that. On the next screen, either enter your name as if appears in the profile or enter your email address as
+									it appears in the profile. NOTE: The 'Forgot my Password' function will not work unless you have a valid email
+									address listed in your User Profile. </p>
+								<!-- <span><a href="#form_1">Back to top</a></span> -->
+
+
+							</li>
+							<li>
+
+								<h3>Question: I forgot my password. Is there a way to retrieve my password information from the site?</h3>
+								<p><strong>Answer:</strong>Yes.On the Login Screen, there is a link labeled 'Forgot your Password?'. Click on
+									that. On the next screen, either enter your name as if appears in the profile or enter your email address as
+									it appears in the profile. NOTE: The 'Forgot my Password' function will not work unless you have a valid email
+									address listed in your User Profile. </p>
+								<!-- <span><a href="#form_1">Back to top</a></span> -->
+
+
+							</li>
+							<li>
+
+								<h3>Question: I forgot my password. Is there a way to retrieve my password information from the site?</h3>
+								<p><strong>Answer:</strong>Yes.On the Login Screen, there is a link labeled 'Forgot your Password?'. Click on
+									that. On the next screen, either enter your name as if appears in the profile or enter your email address as
+									it appears in the profile. NOTE: The 'Forgot my Password' function will not work unless you have a valid email
+									address listed in your User Profile. </p>
+								<!-- <span><a href="#form_1">Back to top</a></span> -->
+
+
+							</li>
+							<li>
+
+								<h3>Question: I forgot my password. Is there a way to retrieve my password information from the site?</h3>
+								<p><strong>Answer:</strong>Yes.On the Login Screen, there is a link labeled 'Forgot your Password?'. Click on
+									that. On the next screen, either enter your name as if appears in the profile or enter your email address as
+									it appears in the profile. NOTE: The 'Forgot my Password' function will not work unless you have a valid email
+									address listed in your User Profile. </p>
+								<!-- <span><a href="#form_1">Back to top</a></span> -->
+
+
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="js/aos.js"></script>
+		<script type="text/javascript" src="js/masterslider.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<!-- 底部 -->
+		<div class="footer">
+			<p>
+				Copyright © 2019 Tellus, Inc. All Rights Reserved.
+			</p>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</body>
+<script>
+	// admin
+	var storage = window.localStorage;
+	if (storage.getItem('username') === 'admin') {
+		$('.buttona').css('display', 'none')
+	}
+
+	var username = storage.getItem('username')
+	$(".btns-language").text(username);
+
+	$('.logout').click(function () {
+		window.localStorage.setItem('username', '')
+		window.location.href = "http://tfire.net/index.html"
+	
+
+	})
+</script>
+
+</html>

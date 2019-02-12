@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+    <link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=8" /> -->
+
+    <title>De Anza Oaks</title>
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/aos.css">
+    <link rel="stylesheet" type="text/css" href="css/masterslider.main.css">
+    <link rel="stylesheet" type="text/css" href="css/ms-skin-sample.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+
+
+    <style>
+        html,body{
+            height: 100%;
+        }
+        .main{
+		height: 1150px;;
+	}
+      
+        .breadcrumb li{
+            color:rgba(30,130,23,1);
+            height:27px;
+         font-size:20px;
+         font-family:OpenSans-Regular;
+         font-weight:400;
+         line-height:27px;
+        
+        }
+        .breadcrumb li a{
+            color:rgba(30,130,23,1);
+        
+        }
+        .breadcrumb{
+            width:293px;
+            display: flex;
+            /* border: solid 1px red; */
+            position: relative;
+            top:24px;
+        }
+        .main-breadcrumb{
+            width: 100%;
+            height: 50px;
+        }
+        .main-center{
+            width:1200px;
+            height:auto;
+            margin: auto;
+        }
+        .main-center h4{
+            height:41px;
+font-size:30px;
+font-family:OpenSans-Bold;
+font-weight:bold;
+color:rgba(57,61,68,1);
+line-height:41px;
+margin: 22px 0;
+        }
+        .content-1{
+            width:100% ;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+           
+        }
+        .content-1 p{
+            width:1152px;
+            height:66px;
+            font-size:20px;
+            font-family:OpenSans-SemiBold;
+            font-weight:600;
+             color:rgba(57,61,68,1);
+             line-height:33px;
+              margin-bottom: 32px;
+        }
+       
+        .choose{
+            width:1172px ;
+            height:910px ;
+            /* border: solid 1px; */
+            display: flex;
+        }
+        .address_book_left{
+			float: left;
+			width: 23%;
+			
+		}
+		
+		.address_book_right{
+			float: left;
+			width: 72%;
+			overflow-y: scroll;
+			height: 810px;
+			box-sizing: border-box;
+			margin-left: 16px;
+            margin-top: 30px;
+		}
+	
+		.address_book_right::-webkit-scrollbar { width: 0 !important }
+		.search-click>.search>input{
+			height: 40px;
+			border:none;
+			width: 100%;
+			border:1px solid rgba(57,61,68,1);
+            padding-left: 5px;
+		}
+        .search-click{
+            width: 94%;
+            height: 40px;
+            /* border: solid 1px; */
+            display: flex;
+            justify-content: space-between;
+        }
+		.search{
+			position: relative;
+			width: 21%;
+		}
+		.address_categories{
+            width: 290px;
+             height: 100%;
+		}
+		.address_categories h5{
+			font-size:20px;
+            font-family:OpenSans-Bold;
+            font-weight:bold;
+            color:rgba(57,61,68,1);
+            line-height: 36px;
+            margin-top:24px ;
+		}
+        .address_categories ul{
+            width: 260px;
+            height: 190px;
+            /* border: solid 1px; */
+
+        }
+		.address_categories li a{
+			font-size:14px;
+            font-family:OpenSans-Regular;
+            font-weight:400;
+            color:rgba(106,166,102,1);
+            line-height:30px;
+		}
+		.address_categories li a:hover{
+			color:rgba(57,61,68,1);
+		}
+       
+		.address_book_click_content{
+			display: none;
+		}
+		.address_book_click_content li{
+			font-size:16px;
+			font-family:OpenSans-Regular;
+			font-weight:400;
+			color:rgba(106,166,102,1);
+			line-height:35px;
+		}
+		.address_book_click_content li:hover{
+			color:#393D44;
+		}
+		.address_book_right ul li{
+			height: 84px;
+			/* line-height: 30px; */
+			background:rgba(255,255,255,1);
+			padding-left: 24px;
+            padding-top:16px ;
+			box-sizing: border-box;
+			font-size:16px;
+font-family:OpenSans-SemiBold;
+font-weight:600;
+color:rgba(30,30,30,1);
+		
+		}
+        .address_book_right .s-img{
+            display: inline-block;
+            width:81px;
+            height:16px;
+            line-height: 16px;
+           
+            margin-left: 8px;
+            vertical-align: middle;
+                    }
+                
+        .address_book_right ul li>p{
+            font-size:16px;
+font-family:OpenSans-Regular;
+font-weight:400;
+color:rgba(30,30,30,1);
+
+        }
+		.address_book_right ul li span{
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			background: url('img/paizhao_g.png') no-repeat right bottom;
+		}
+		.address_book_right ul li span:hover{
+			background: url('img/paizhao_g (1).png') no-repeat right bottom;
+		}
+
+		.address_book_right ul li:hover{
+			color:#6AA666;
+			cursor: pointer;
+           
+		}
+	       
+		.address_book_right ul li:first-child{
+            height: 54px;
+            line-height: 54px;
+			background:#6AA666!important;
+			font-size:24px;
+			font-family:OpenSans-SemiBold;
+			font-weight:600;
+			color:rgba(255,255,255,1);
+			padding-left: 16px;
+            padding-top: 0;
+			box-sizing: border-box;
+		}
+		
+		.address_book_right ul li:nth-child(odd){
+			background:rgba(241,241,241,1);
+		}
+		.address_book_click{
+			height:40px;
+			width: 21%;
+			border-radius:20px;
+			background:rgba(106,166,102,1);
+			font-size:16px;
+			font-family:OpenSans-Regular;
+			font-weight:400;
+			color:rgba(255,255,255,1);
+			line-height: 40px;
+			padding-left: 30px;
+			box-sizing: border-box;
+							
+		}	
+		.address_book_click:hover{
+			cursor: pointer;
+		}
+		.search_img{
+			width: 45px;
+			height: 40px;
+			position: absolute;
+			top:0;
+			right: 0;
+			background-color: #393D44;
+		}
+		.search_img img{
+			margin: 13px;
+		}
+        
+        .footer-p{
+          
+            font-size:16px;
+            font-family:OpenSans-SemiBold;
+            font-weight:600;
+            color:rgba(255,255,255,1);
+            line-height:70px;
+            text-align: center;
+        
+         }
+		.main-left-content{
+			width: 421px;
+			height: 225px;
+			box-shadow:  0 0 8px;
+			margin-top: 15px;
+		}
+		.main-right-content{
+			width: 759px;
+			height: 225px;
+			box-shadow:  0 0 8px;
+			margin-top: 15px;
+			margin-left: 24px
+		}
+		.calendar-right{
+			width: 478px;
+			height: 100%;
+			box-sizing: border-box;
+			display: flex;
+			flex-wrap: wrap;
+			background: #F1F1F1;
+			overflow: overlay;
+		}
+		.calendar-right::-webkit-scrollbar {
+			display: none;
+		}
+		.calendar-right div{
+			width: 100%;
+			height: 33.3%;
+			padding: 0 25px;
+		}
+		.calendar-right p{
+			height: 22px;
+			line-height: 22px;
+			margin:20px 0 0 0;
+			font-size: 16px;
+			font-family:PingFangSC-Regular;
+		}
+		.calendar-right p span{
+			float: left;
+		}
+		.calendar-right p a{
+			float: right;
+			color: black;
+		}
+		.calendar-right .active{
+			background-color: #6AA666;
+			color:#FFFFFF;
+		}
+		.announcement-tips{
+			height: 20px;
+			box-sizing: border-box;
+			margin-left: 140px;
+			margin-top: 15px;
+		}
+		.announcement-tips span{
+			display: inline-block;
+			width: 16px;
+			height: 16px;
+			border-radius: 50%;
+			background-color: #A0C79F;
+			margin-left:16px; 		
+		}
+       
+        .item{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+.star{
+    margin-left: -5px
+}	
+</style>
+
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="header" style="box-shadow:0px 2px 7px 0px rgba(0,0,0,0.5);
+    border:1px solid rgba(151,151,151,1);">
+        <div class="w1200" style="height: 0;">
+            <a class="logo" href="index.html">
+                <img src="img/Combined Shape.png" alt="Combined Shape">
+                De Anza Oaks
+            </a>
+            <input type="text" placeholder="Search..." style="width: 188px;height: 37px;position: relative;top: 30px;left: 540px;border: solid 1px #393D44;padding-left: 10px;">
+            <div class="btns clearfix">
+                <img src="img/Shape.png" alt="Shape" style="position: relative;left: -140px;top: 40px;z-index: 100000;">
+                <img src="img/dropdown.png" alt="dropdown" style="position: relative;left: -50px;top: 36px;z-index: 100000;">
+                <a class="btns-search" href="javascript:;"> </a>
+                <a class="btns-language" href="javascript:;"></a>
+                <div class="langOv">
+                    <div class="profile">
+                        <a href="saveFile.html" style="border-bottom: 1px solid white;width: 100%;margin-left: -1px">My
+                            Profile</a>
+                        <a href="javascript:;" class="logout">Log Out</a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li class="curr">
+                        <a class="on" href="index.html">Home</a>
+                    </li>
+                    <li class="curr">
+                        <a class="on" href="about.html">About us</a>
+                    </li>
+                    <!-- <li class="curr">
+                        <a class="on" href="downloadFile.html">Docs</a>
+                    </li> -->
+                </ul>
+                <span class="navline"></span>
+            </div>
+        </div>
+        <div class="mask"></div>
+
+        <script src="js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="js/header.js"></script>
+        <script type="text/javascript" src="js/list=hk02007.js" charset="gb2312"></script>
+    </div>
+
+    <!-- 主体 -->
+    <div class="main">
+        <div class="main-breadcrumb" style="width: 1200px;margin: 0 auto">
+            <ul class="breadcrumb" style="float: left">
+                <li><a href="index.html">Home</a></li>
+                <li>&nbsp;>&nbsp;</li>
+                <li><a href="feedback.html">Emergency Preparedness</a></li>
+                <li>&nbsp;>&nbsp;</li>
+                <li><a href="reviews.html">Reviews</a></li>
+            </ul>
+        </div>
+
+        <div class="main-center">
+            <h4>Reviews</h4>
+            <div class="content-1">
+
+                <p>A list of community member contractor recommendations. The Board of Directors does not endorse any
+                    of these businesses.</p>
+                <div class="search-click">
+                    <div class="search">
+                        <input type="search" name="" id="" placeholder="Search Reviews..." style="padding-left: 10px">
+                        <div class="search_img"><img src="img/pro-search.png" /></div>
+                    </div>
+                    <div class="address_book_click">Post a Review for a New Item</div>
+                </div>
+                <div class="choose">
+                    <div class="address_book_left">
+
+                        <div class="address_categories">
+                            <h5>Top Categories</h5>
+                            <ul id="tabs">
+                                <li class="current"><a href="#" title="tab1">All (16)</a></li>
+                                <li><a href="#" title="tab2">Auto Repair (2)</a></li>
+                                <li><a href="#" title="tab3">Business/Mailing Centers (1)</a></li>
+                                <li><a href="#" title="tab4">Carpets (2)</a></li>
+                                <li><a href="#" title="tab5">Electricians (1)</a></li>
+                                <li><a href="#" title="tab6">Flooring (0)</a></li>
+                                <li><a href="#" title="tab7">Garage Door (2)</a></li>
+                                <li><a href="#" title="tab8">Handyman Services (2)</a></li>
+                                <li><a href="#" title="tab9">Heating & A/C (3)</a></li>
+                                <li><a href="#" title="tab10">Home Improvement/General Contracting (5)</a></li>
+                                <li><a href="#" title="tab11">Landscaping (1)</a></li>
+                                <li><a href="#" title="tab12">Painters (3)</a></li>
+                                <li><a href="#" title="tab13">Pest Control (2)</a></li>
+                                <li><a href="#" title="tab14">Plumbers (1)</a></li>
+                                <li><a href="#" title="tab15">Roofing (0)</a></li>
+                                <li><a href="#" title="tab16">Window Treatments (1)</a></li>
+                                <li><a href="#" title="tab17">Windows/Screens (3)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="address_book_right">
+                        <div id="tab1" class="item show">
+                            <ul>
+                                <li>Auto Repair</li>
+                                <li>Cupertino Auto Care, Inc Average Rating: 4 (1 Review)<span class="s-img"><img src="img/4star.gif"
+                                            class="star"></span>
+                                    <p>Last Review: 3/19/2011</p>
+                                </li>
+                                <li>Cupertino Auto Care, Inc Average Rating: 4 (1 Review)
+                                    <p>Last Review: 3/19/2011</p>
+                                </li>
+
+                            </ul>
+                            <ul>
+                                <li>Business/Mailing Centers</li>
+                                <li>Modi's Business Center<p>Not Yet Reviewed</p>
+                                </li>
+
+                            </ul>
+                            <ul>
+                                <li>Carpets</li>
+                                <li>Genesis Carpet Cleaning Average Rating: 5 (1 Review)<p>Not Yet Reviewed</p>
+                                </li>
+
+                                <li>Graham Carpet Care<p>Not Yet Reviewed</p>
+                                </li>
+
+                            </ul>
+                            <ul>
+                                <li>Electricians</li>
+                                <li>Apollo Electric Average Rating: 5 (1 Review)<p>Last Review: 3/19/2011</p>
+                                </li>
+
+
+                            </ul>
+                            <ul>
+                                <li>Fireplaces & Chimneys</li>
+                                <li>Apollo Electric Average Rating: 5 (1 Review)<p>Last Review: 3/19/2011</p>
+                                </li>
+
+
+                            </ul>
+                            <ul>
+                                <li>Auto Repair</li>
+                                <li>Cupertino Auto Care, Inc Average Rating: 4 (1 Review)<span class="s-img"><img src="img/4star.gif"
+                                            class="star" /></span>
+                                    <p>Last Review: 3/19/2011</p>
+                                </li>
+                                <li>Cupertino Auto Care, Inc Average Rating: 4 (1 Review)
+                                    <p>Last Review: 3/19/2011</p>
+                                </li>
+
+                            </ul>
+                            <ul>
+                                <li>Business/Mailing Centers</li>
+                                <li>Modi's Business Center<p>Not Yet Reviewed</p>
+                                </li>
+
+                            </ul>
+                            <ul>
+                                <li>Carpets</li>
+                                <li>Genesis Carpet Cleaning Average Rating: 5 (1 Review)<p>Not Yet Reviewed</p>
+                                </li>
+
+                                <li>Graham Carpet Care<p>Not Yet Reviewed</p>
+                                </li>
+
+                            </ul>
+                            <ul>
+                                <li>Electricians</li>
+                                <li>Apollo Electric Average Rating: 5 (1 Review)<p>Last Review: 3/19/2011</p>
+                                </li>
+
+
+                            </ul>
+                            <ul>
+                                <li>Fireplaces & Chimneys</li>
+                                <li>Apollo Electric Average Rating: 5 (1 Review)<p>Last Review: 3/19/2011</p>
+                                </li>
+
+
+                            </ul>
+                            <ul>
+                                <li>Auto Repair</li>
+                                <li>Cupertino Auto Care, Inc Average Rating: 4 (1 Review)<span class="s-img"><img src="img/4star.gif"
+                                            class="star"></span>
+                                    <p>Last Review: 3/19/2011</p>
+                                </li>
+                                <li>Cupertino Auto Care, Inc Average Rating: 4 (1 Review)
+                                    <p>Last Review: 3/19/2011</p>
+                                </li>
+
+                            </ul>
+                            <ul>
+                                <li>Business/Mailing Centers</li>
+                                <li>Modi's Business Center<p>Not Yet Reviewed</p>
+                                </li>
+
+                            </ul>
+                            <ul>
+                                <li>Carpets</li>
+                                <li>Genesis Carpet Cleaning Average Rating: 5 (1 Review)<p>Not Yet Reviewed</p>
+                                </li>
+
+                                <li>Graham Carpet Care<p>Not Yet Reviewed</p>
+                                </li>
+
+                            </ul>
+                            <ul>
+                                <li>Electricians</li>
+                                <li>Apollo Electric Average Rating: 5 (1 Review)<p>Last Review: 3/19/2011</p>
+                                </li>
+
+
+                            </ul>
+                            <ul>
+                                <li>Fireplaces & Chimneys</li>
+                                <li>Apollo Electric Average Rating: 5 (1 Review)<p>Last Review: 3/19/2011</p>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                        <!-------------------------- 华丽的分割线 ------------------------------------------------------------------------>
+                        <div id="tab2" class="item ">
+                            <ul>
+                                <li>Auto Repair</li>
+                                <li>Cupertino Auto Care, Inc Average Rating: 4 (1 Review)<span class="s-img"><img src="img/4star.gif"
+                                            class="star"></span>
+                                    <p>Last Review: 3/19/2011</p>
+                                </li>
+                                <li>Cupertino Auto Care, Inc Average Rating: 4 (1 Review)
+                                    <p>Last Review: 3/19/2011</p>
+                                </li>
+
+                            </ul>
+                            <ul>
+                                <li>Business/Mailing Centers</li>
+                                <li>Modi's Business Center<p>Not Yet Reviewed</p>
+                                </li>
+
+                                <li>Modi's Business Center<p>Not Yet Reviewed</p>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div id="tab3" class="item ">
+                            <ul>
+                                <li>Auto Repair</li>
+                                <li>Cupertino Auto Care, Inc Average Rating: 4 (1 Review)<span class="s-img"><img src="img/4star.gif"
+                                            class="star"></span>
+                                    <p>Last Review: 3/19/2011</p>
+                                </li>
+                                <li>Cupertino Auto Care, Inc Average Rating: 4 (1 Review)
+                                    <p>Last Review: 3/19/2011</p>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div id="tab4" class="item ">
+                            <ul>
+                                <li>Auto Repair</li>
+                                <li>Cupertino Auto Care, Inc Average Rating: 4 (1 Review)<span class="s-img"><img src="img/4star.gif"
+                                            class="star"></span>
+                                    <p>Last Review: 3/19/2011</p>
+                                </li>
+                                <li>Cupertino Auto Care, Inc Average Rating: 4 (1 Review)
+                                    <p>Last Review: 3/19/2011</p>
+                                </li>
+
+                            </ul>
+                            <ul>
+                                <li>Business/Mailing Centers</li>
+                                <li>Modi's Business Center<p>Not Yet Reviewed</p>
+                                </li>
+
+                                <li>Modi's Business Center<p>Not Yet Reviewed</p>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div id="tab5" class="item ">
+                            <ul>
+                                <li>Auto Repair</li>
+                                <li>Cupertino Auto Care, Inc Average Rating: 4 (1 Review)<span class="s-img"><img src="img/4star.gif"
+                                            class="star"></span>
+                                    <p>Last Review: 3/19/2011</p>
+                                </li>
+                                <li>Cupertino Auto Care, Inc Average Rating: 4 (1 Review)
+                                    <p>Last Review: 3/19/2011</p>
+                                </li>
+
+                            </ul>
+                            <ul>
+                                <li>Business/Mailing Centers</li>
+                                <li>Modi's Business Center<p>Not Yet Reviewed</p>
+                                </li>
+
+                                <li>Modi's Business Center<p>Not Yet Reviewed</p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="js/aos.js"></script>
+        <script type="text/javascript" src="js/masterslider.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <!-- 日历插件 -->
+        <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+        <script src="js/calendar.js"></script>
+        <script>
+            var slider = new MasterSlider();
+            slider.setup('masterslider', {
+                width: 1920, // slider standard width
+                height: 500, // slider standard height
+                mouse: false,
+                autoplay: false,
+                loop: true,
+                overPause: false,
+                speed: 13
+            });
+            MSScrollParallax.setup(slider, 60, 100, true);
+            slider.control('arrows');
+            var i = 1,
+                ileng = $('.ms-slide').length;
+            setInterval('timebar()', 6000);
+            $('.ban-len span').html(ileng);
+            clickReduce();
+            clickAdd();
+        </script>
+
+
+
+
+        <!-- 切换 -->
+        <script>
+            $(function () {
+                $('#tabs a').click(function (e) {
+                    e.preventDefault();
+                    $('#tabs li').removeClass("current").removeClass("hoverItem");
+                    $(this).parent().addClass("current");
+                    $(".address_book_right div").removeClass("show");
+                    $('#' + $(this).attr('title')).addClass('show');
+
+
+                });
+
+                $('#tabs a').hover(function () {
+                    if (!$(this).parent().hasClass("current")) {
+                        $(this).parent().addClass("hoverItem");
+                    }
+                }, function () {
+                    $(this).parent().removeClass("hoverItem");
+                });
+
+                // admin
+                var storage = window.localStorage;
+                if (storage.getItem('username') === 'admin') {
+                    $('.buttona').css('display', 'none')
+                }
+                var username = storage.getItem('username')
+                $(".btns-language").text(username);
+
+
+                $('.logout').click(function () {
+                    window.localStorage.setItem('username', '')
+                    window.location.href = "http://tfire.net/index.html"
+				
+
+                })
+            });
+
+        </script>
+        <!-- 底部 -->
+        <div class="footer">
+            <p>
+               Copyright © 2019 Tellus, Inc. All Rights Reserved.
+            </p>
+        </div>
+
+</body>
+
+
+
+</html>
