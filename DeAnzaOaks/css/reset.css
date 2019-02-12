@@ -284,6 +284,53 @@ p{line-height:22px;max-width: 1190px;}
 	top: 0;
 	z-index: 1000;
 }
+.delete{
+    width: 396px;
+    height: 287px;
+    background: #ffffff;
+    border-radius:9px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px 57px 48px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.delete h5{
+    height:36px;
+    font-size:25px;
+    font-family:OpenSans-Regular;
+    font-weight:400;
+    color:rgba(57,61,68,1);
+    line-height:36px;
+}
+.delete .delelte_content{
+    height: 121px;
+    line-height: 121px;
+    font-size:19px;
+    font-family:OpenSans-Regular;
+    font-weight:400;
+    color:rgba(57,61,68,1);
+    text-align: center;
+}
+.delete .oper span{
+    display: inline-block;
+    width: 129px;
+    height: 42px;
+    background:rgba(106,166,102,1);
+    border-radius:4px;
+    font-size:15px;
+    font-family:OpenSans-SemiBold;
+    line-height: 42px;
+    color:#ffffff;
+	margin-right: 20px;
+	cursor: pointer;
+}
+.delete .oper span:nth-child(2){
+    background:rgba(249,75,90,1);
+    margin-right: 0;
+}
 .return{
 	position: absolute;
 	top: 0;

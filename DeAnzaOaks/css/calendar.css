@@ -36,7 +36,7 @@ ul, li { list-style: none; }
 .calendar-title .arrow {
   position: absolute;
   top: 10px;
-  right: 0;
+  right: 10px;
   width: 50px;
 }
 .calendar-title .arrow span {

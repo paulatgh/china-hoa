@@ -19,478 +19,550 @@
     <link rel="stylesheet" href="css/calendar.css">
 
     <style>
-        .breadcrumb li{
-            color:rgba(30,130,23,1);
-            height:27px;
-         font-size:20px;
-         font-family:OpenSans-Regular;
-         font-weight:400;
-         line-height:27px;
-        
+        .breadcrumb li {
+            color: rgba(30, 130, 23, 1);
+            height: 27px;
+            font-size: 20px;
+            font-family: OpenSans-Regular;
+            font-weight: 400;
+            line-height: 27px;
+
         }
-        .breadcrumb li a{
-            color:rgba(30,130,23,1);
-        
+
+        .breadcrumb li a {
+            color: rgba(30, 130, 23, 1);
+
         }
-        .breadcrumb{
+
+        .breadcrumb {
             display: flex;
             /* border: solid 1px red; */
             position: relative;
-            top:24px;
+            top: 24px;
         }
-        .main-breadcrumb{
+
+        .main-breadcrumb {
             width: 100%;
             height: 50px;
         }
-        .main-center{
-            width:1200px;
-            height:auto;
+
+        .main-center {
+            width: 1200px;
+            height: auto;
             margin: auto;
         }
-        .address_book_click{
-			width:100%;
-            height:40px;
+
+        .address_book_click {
+            width: 100%;
+            height: 40px;
             /* border: solid 1px; */
-			box-sizing: border-box;
-							
-		}
-        .address_book_click button:nth-child(1){
-            width:89px;
-            height:34px;
-            background:rgba(106,166,102,1);
-            border-radius:20px;
-            border: none;
-            font-size:16px;
-            font-family:OpenSans-Regular;
-            font-weight:400;
-            line-height: 34px;
-            color:rgba(255,255,255,1);
+            box-sizing: border-box;
+
         }
-        .address_book_click button:nth-child(2){
-            width:150px;
-            height:34px;
-            background:rgba(245,166,35,1);
-            border-radius:20px;
+
+        .address_book_click button:nth-child(1) {
+            width: 89px;
+            height: 34px;
+            background: rgba(106, 166, 102, 1);
+            border-radius: 20px;
             border: none;
-            font-size:16px;
-            font-family:OpenSans-Regular;
-            font-weight:400;
+            font-size: 16px;
+            font-family: OpenSans-Regular;
+            font-weight: 400;
+            line-height: 34px;
+            color: rgba(255, 255, 255, 1);
+        }
+
+        .address_book_click button:nth-child(2) {
+            width: 150px;
+            height: 34px;
+            background: rgba(245, 166, 35, 1);
+            border-radius: 20px;
+            border: none;
+            font-size: 16px;
+            font-family: OpenSans-Regular;
+            font-weight: 400;
             line-height: 34px;
             margin-left: 16px;
-           
-            color:rgba(255,255,255,1);
+
+            color: rgba(255, 255, 255, 1);
         }
-		
-        .photo-albums{
-            height:41px;
-            font-size:24px;
-            font-family:OpenSans-Bold;
-            font-weight:600;
-            color:rgba(57,61,68,1);
-            line-height:41px;
-            margin:16px 0;
+
+        .photo-albums {
+            height: 41px;
+            font-size: 24px;
+            font-family: OpenSans-Bold;
+            font-weight: 600;
+            color: rgba(57, 61, 68, 1);
+            line-height: 41px;
+            margin: 16px 0 0 0;
         }
-        .Events-Calendar{
-            width:282px;
-            height:272px;
+
+        .Events-Calendar {
+            width: 282px;
+            height: 272px;
             /* background:rgba(255,255,255,1); */
             /* box-shadow:0px 0px 10px 0px rgba(0,0,0,0.24);  */
-            margin-top: 21px ;
-            margin-right: 8px; 
+            margin-top: 21px;
+            margin-right: 8px;
         }
-        .Events-Calendar:nth-of-type(1) div{
-            width:282px;
-            height:272px;
+
+        .Events-Calendar:nth-of-type(1) div {
+            width: 282px;
+            height: 272px;
             background: url('img/fly.jpg') no-repeat;
-            background-size:100%;
-            margin:16px auto;
+            background-size: 100%;
+            margin: 16px auto;
             /* cursor: pointer; */
         }
-        .Events-Calendar:nth-child(2) div{
-            width:282px;
-            height:272px;
+
+        .Events-Calendar:nth-child(2) div {
+            width: 282px;
+            height: 272px;
             /* border: solid 1px; */
             background: url('img/thumbnail.jpg') no-repeat;
-            background-size:100% 100%;
-            margin:16px auto;
+            background-size: 100% 100%;
+            margin: 16px auto;
             /* cursor: pointer; */
         }
-        .Events-Calendar:nth-child(3) div{
-            width:282px;
-            height:272px;
+
+        .Events-Calendar:nth-child(3) div {
+            width: 282px;
+            height: 272px;
             /* border: solid 1px; */
             background: url('img/thumbnail_1.jpg') no-repeat;
-
-            background-size:100%;
-            margin:16px auto;
-
+            background-size: 100%;
+            margin: 16px auto;
         }
-        .Events-Calendar:nth-child(4) div{
-            width:282px;
-            height:272px;
+
+        .Events-Calendar:nth-child(4) div {
+            width: 282px;
+            height: 272px;
             /* border: solid 1px; */
             background: url('img/thumbnail_2.jpg') no-repeat;
-
-            background-size:100%;
-            margin:16px auto;
-
+            background-size: 100%;
+            margin: 16px auto;
         }
-        .Events-Calendar:nth-child(5) div{
-            width:282px;
-            height:272px;
+
+        .Events-Calendar:nth-child(5) div {
+            width: 282px;
+            height: 272px;
             /* border: solid 1px; */
             background: url('img/thumbnail_3.jpg') no-repeat;
 
-            background-size:100%;
-            margin:16px auto;
+            background-size: 100%;
+            margin: 16px auto;
 
         }
-        .Events-Calendar:nth-child(6) div{
-            width:282px;
-            height:272px;
+
+        .Events-Calendar:nth-child(6) div {
+            width: 282px;
+            height: 272px;
             /* border: solid 1px; */
             background: url('img/thumbnail_4.jpg') no-repeat;
 
-            background-size:100%;
-            margin:16px auto;
+            background-size: 100%;
+            margin: 16px auto;
 
         }
-        .Events-Calendar:nth-child(7) div{
-            width:282px;
-            height:272px;
+
+        .Events-Calendar:nth-child(7) div {
+            width: 282px;
+            height: 272px;
             /* border: solid 1px; */
             background: url('img/thumbnail_5.jpg') no-repeat;
 
-            background-size:100%;
-            margin:16px auto;
+            background-size: 100%;
+            margin: 16px auto;
 
         }
-        .Events-Calendar:nth-child(8) div{
-            width:282px;
-            height:272px;
+
+        .Events-Calendar:nth-child(8) div {
+            width: 282px;
+            height: 272px;
             /* border: solid 1px; */
             background: url('img/thumbnail_6.jpg') no-repeat;
 
-            background-size:100% ;
-            margin:16px auto;
+            background-size: 100%;
+            margin: 16px auto;
 
         }
-        .Events-Calendar:nth-child(9) div{
-            width:282px;
-            height:272px;
+
+        .Events-Calendar:nth-child(9) div {
+            width: 282px;
+            height: 272px;
             /* border: solid 1px; */
             background: url('img/thumbnail_8.jpg') no-repeat;
 
-            background-size:100% 100%;
-            margin:16px auto;
+            background-size: 100% 100%;
+            margin: 16px auto;
 
         }
-        .Events-Calendar:nth-child(10) div{
-            width:282px;
-            height:272px;
+
+        .Events-Calendar:nth-child(10) div {
+            width: 282px;
+            height: 272px;
             /* border: solid 1px; */
             background: url('img/thumbnail_9.jpg') no-repeat;
 
-            background-size:100% ;
-            margin:16px auto;
+            background-size: 100%;
+            margin: 16px auto;
 
         }
-        .Events-Calendar:nth-child(11) div{
-            width:282px;
-            height:272px;
+
+        .Events-Calendar:nth-child(11) div {
+            width: 282px;
+            height: 272px;
             /* border: solid 1px; */
             background: url('img/thumbnail_10.jpg') no-repeat;
 
-            background-size:100% ;
-            margin:16px auto;
+            background-size: 100%;
+            margin: 16px auto;
 
         }
-        .Events-Calendar:nth-child(12) div{
-            width:282px;
-            height:272px;
+
+        .Events-Calendar:nth-child(12) div {
+            width: 282px;
+            height: 272px;
             /* border: solid 1px; */
             background: url('img/thumbnail_11.jpg') no-repeat;
-            background-size:100%;
-            margin:16px auto;
+            background-size: 100%;
+            margin: 16px auto;
 
         }
 
-        .Events-Calendar h5{
-            font-size:20px;
-            font-family:OpenSans-Bold;
-            font-weight:bold;
-            color:rgba(57,61,68,1);
+        .Events-Calendar h5 {
+            font-size: 20px;
+            font-family: OpenSans-Bold;
+            font-weight: bold;
+            color: rgba(57, 61, 68, 1);
             margin-left: 16px;
         }
-        .content-img p{
-           width:268x;
-            height:31px;
-            background:rgba(0,0,0,0.4);
-            font-size:16px;
-            font-family:OpenSans-Regular;
-            font-weight:400;
-            color:rgba(255,255,255,1);
+
+        .content-img p {
+            width: 268x;
+            height: 31px;
+            background: rgba(0, 0, 0, 0.4);
+            font-size: 16px;
+            font-family: OpenSans-Regular;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 1);
             line-height: 30px;
             /* text-align: center; */
             position: relative;
-            top:241px;
+            top: 241px;
             padding: 0 8px;
-       }
-       .content-img p img{
-           width:16px;
-           height:10px;
-       }
-       .content-img p span{
-           display: inline-block;
-           font-size:14px;
-            font-family:OpenSans-Regular;
-            font-weight:400;
-            color:rgba(255,255,255,1);
-            margin:0 10px ;
-       }
-        .content-1{
-            width:100% ;
+        }
+
+        .content-img p img {
+            width: 16px;
+            height: 10px;
+        }
+
+        .content-img p span {
+            display: inline-block;
+            font-size: 14px;
+            font-family: OpenSans-Regular;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 1);
+            margin: 0 10px;
+        }
+
+        .content-1 {
+            width: 100%;
             height: auto;
             display: flex;
             flex-wrap: wrap;
-          
+
             padding-bottom: 80px;
         }
-        
-        .footer-p{
-            font-size:16px;
-            font-family:OpenSans-SemiBold;
-            font-weight:600;
-            color:rgba(255,255,255,1);
-            line-height:70px;
+
+        .footer-p {
+            font-size: 16px;
+            font-family: OpenSans-SemiBold;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 1);
+            line-height: 70px;
             text-align: center;
-        
-         }
-		.main-left-content{
-			width: 421px;
-			height: 225px;
-			box-shadow:  0 0 8px;
-			margin-top: 15px;
-		}
-		.main-right-content{
-			width: 759px;
-			height: 225px;
-			box-shadow:  0 0 8px;
-			margin-top: 15px;
-			margin-left: 24px
-		}
-		.calendar-right{
-			width: 478px;
-			height: 100%;
-			box-sizing: border-box;
-			display: flex;
-			flex-wrap: wrap;
-			background: #F1F1F1;
-			overflow: overlay;
-		}
-		.calendar-right::-webkit-scrollbar {
-			display: none;
-		}
-		.calendar-right div{
-			width: 100%;
-			height: 33.3%;
-			padding: 0 25px;
-		}
-		.calendar-right p{
-			height: 22px;
-			line-height: 22px;
-			margin:20px 0 0 0;
-			font-size: 16px;
-			font-family:PingFangSC-Regular;
-		}
-		.calendar-right p span{
-			float: left;
-		}
-		.calendar-right p a{
-			float: right;
-			color: black;
-		}
-		.calendar-right .active{
-			background-color: #6AA666;
-			color:#FFFFFF;
-		}
-		.announcement-tips{
-			height: 20px;
-			box-sizing: border-box;
-			margin-left: 140px;
-			margin-top: 15px;
-		}
-		.announcement-tips span{
-			display: inline-block;
-			width: 16px;
-			height: 16px;
-			border-radius: 50%;
-			background-color: #A0C79F;
-			margin-left:16px; 		
-		}
-       
+
+        }
+
+        .main-left-content {
+            width: 421px;
+            height: 225px;
+            box-shadow: 0 0 8px;
+            margin-top: 15px;
+        }
+
+        .main-right-content {
+            width: 759px;
+            height: 225px;
+            box-shadow: 0 0 8px;
+            margin-top: 15px;
+            margin-left: 24px
+        }
+
+        .calendar-right {
+            width: 478px;
+            height: 100%;
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+            background: #F1F1F1;
+            overflow: overlay;
+        }
+
+        .calendar-right::-webkit-scrollbar {
+            display: none;
+        }
+
+        .calendar-right div {
+            width: 100%;
+            height: 33.3%;
+            padding: 0 25px;
+        }
+
+        .calendar-right p {
+            height: 22px;
+            line-height: 22px;
+            margin: 20px 0 0 0;
+            font-size: 16px;
+            font-family: PingFangSC-Regular;
+        }
+
+        .calendar-right p span {
+            float: left;
+        }
+
+        .calendar-right p a {
+            float: right;
+            color: black;
+        }
+
+        .calendar-right .active {
+            background-color: #6AA666;
+            color: #FFFFFF;
+        }
+
+        .announcement-tips {
+            height: 20px;
+            box-sizing: border-box;
+            margin-left: 140px;
+            margin-top: 15px;
+        }
+
+        .announcement-tips span {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: #A0C79F;
+            margin-left: 16px;
+        }
+
         .bg {
             display: none;
             position: fixed;
             width: 100%;
             height: 100%;
-            background: rgba(0,0,0,0.8);
+            background: rgba(0, 0, 0, 0.8);
             z-index: 100002;
             top: 0;
             left: 0;
-            }            
-            .bg-a{
-                width: 1200px;
-                /* border: solid 1px; */
-                margin: 0 auto;
-                margin-top: 12%;
-                display: flex;
-            }
-            .bg-left{
-                width: 100%;
-                height: 100%;
-                display: flex;
-            }
-            .bg-right{
-                width: 340px;
-                height: 531px;
-                background:rgba(255,255,255,1); 
-                padding: 10px;
-            }
-            .size-p{
-                color: black;
-                font-size: 20px;
-                font-weight:bold;
-                font-family:OpenSans-Bold;
-                margin-right: 10px;
-            }
-            .size-p2{
-                color: black;
-                font-size: 14px;
-                margin-left: 16px;
-                margin-right: 20px;
-                margin-top: 12px
-            }
-            .size-p2 span{
-                color:#449F41;
-            }
-            .size-p2 span:hover{
-                text-decoration: underline;
-                cursor: pointer;
-            }
-            .bg-int{
-                width: 90%;
-                height: 40px;
-                margin-left: 11px;
-                border-radius: 4px;
-                border: 1px solid rgba(106,166,102,1);
-                padding-left: 10px;
+        }
 
-            }
-            .bg-click{
-                width: 89px;
-                height: 38px;
-                background:rgba(106,166,102,1);
-                text-align: center;
-                line-height: 38px;
-                color: white;
-                border-radius: 20px;
-                font-size: 16px;
-                margin-left: 232px;
-                margin-top: 18px;
-                border: none;
-                cursor: pointer;
-            }
- 
-            .bg-img{
-                position: relative;
-                right: -309px;
-                top: -26px;
-                cursor: pointer;
-            }
-            .bg-left-img{
-                width: 142px;
-                height:300px;
-                margin-top: 90px;
-            }
-            .bg-left-img img{
-                margin-top: 147px;
-            }
-            .imga{
-                cursor: pointer;
-                margin-left: -51px;
-            }
-            .imgaa{
-                display: none;
-                cursor: pointer;
-                margin-left: -51px;
-            }
-            .imga-2{
-                cursor: pointer;
-                margin-left: 128px;
-            }
-            .imga-2-2{
-                display: none;
-                cursor: pointer;
-                margin-left: 128px;
-            }
-            .imgb{
-                max-width:666px ;
-                max-height: 830px;
-            }
-            .imgc{
-                display: none;
-                max-width:666px ;
-                max-height: 830px;
-            }
-            .imgd{
-                display: none;
-            }
-            .imge{
-                display: none;
-            }
-            .imgf{
-                display: none;
-            }
-            .imgg{
-                display: none;
-            }
-            .imgh{
-                display: none;
-            }
-            .usernamea{
-                color: #449F41;
-                margin-left: 26px;
-            }
-            #msg_c{
-                color: black;
-                max-height: 150px;
-                overflow-y: scroll;
-            }
-            .Date{
-                margin-left: 185px;
-                color: black
-            }
-            .liuyan{
-                width: 40px;
-                float: right;
-                color: #6AA666;
-                position: relative;
-                top: 15px;
-            }
-            .liuyan:hover{
-                color: red;
-            }
-            #msg_c::-webkit-scrollbar { width:6px; height:2px; background:#ccc; border-radius:10px;}
-            #msg_c::-webkit-scrollbar-thumb{ display:block; width:6px; margin:0 auto; border-radius: 10px; background:darkgrey;}
-            .admin-logo{
-                position: relative;
-                left: 15px;
-                width: 36px;
-                height: 36px;
-                top: 20px;
-            }
-	</style>
+        .bg-a {
+            width: 1200px;
+            /* border: solid 1px; */
+            margin: 0 auto;
+            margin-top: 12%;
+            display: flex;
+        }
+
+        .bg-left {
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
+
+        .bg-right {
+            width: 340px;
+            height: 531px;
+            background: rgba(255, 255, 255, 1);
+            padding: 10px;
+        }
+
+        .size-p {
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: OpenSans-Bold;
+            margin-right: 10px;
+        }
+
+        .size-p2 {
+            color: black;
+            font-size: 14px;
+            margin-left: 16px;
+            margin-right: 20px;
+            margin-top: 12px
+        }
+
+        .size-p2 span {
+            color: #449F41;
+        }
+
+        .size-p2 span:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .bg-int {
+            width: 90%;
+            height: 40px;
+            margin-left: 11px;
+            border-radius: 4px;
+            border: 1px solid rgba(106, 166, 102, 1);
+            padding-left: 10px;
+
+        }
+
+        .bg-click {
+            width: 89px;
+            height: 38px;
+            background: rgba(106, 166, 102, 1);
+            text-align: center;
+            line-height: 38px;
+            color: white;
+            border-radius: 20px;
+            font-size: 16px;
+            margin-left: 232px;
+            margin-top: 18px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .bg-img {
+            position: relative;
+            right: -309px;
+            top: -26px;
+            cursor: pointer;
+        }
+
+        .bg-left-img {
+            width: 142px;
+            height: 300px;
+            margin-top: 90px;
+        }
+
+        .bg-left-img img {
+            margin-top: 147px;
+        }
+
+        .imga {
+            cursor: pointer;
+            margin-left: -51px;
+        }
+
+        .imgaa {
+            display: none;
+            cursor: pointer;
+            margin-left: -51px;
+        }
+
+        .imga-2 {
+            cursor: pointer;
+            margin-left: 128px;
+        }
+
+        .imga-2-2 {
+            display: none;
+            cursor: pointer;
+            margin-left: 128px;
+        }
+
+        .imgb {
+            max-width: 666px;
+            max-height: 830px;
+        }
+
+        .imgc {
+            display: none;
+            max-width: 666px;
+            max-height: 830px;
+        }
+
+        .imgd {
+            display: none;
+        }
+
+        .imge {
+            display: none;
+        }
+
+        .imgf {
+            display: none;
+        }
+
+        .imgg {
+            display: none;
+        }
+
+        .imgh {
+            display: none;
+        }
+
+        .usernamea {
+            color: #449F41;
+            margin-left: 26px;
+        }
+
+        #msg_c {
+            color: black;
+            max-height: 150px;
+            overflow-y: scroll;
+        }
+
+        .Date {
+            margin-left: 185px;
+            color: black
+        }
+
+        .liuyan {
+            width: 40px;
+            float: right;
+            color: #6AA666;
+            position: relative;
+            top: 15px;
+        }
+
+        .liuyan:hover {
+            color: red;
+        }
+
+        #msg_c::-webkit-scrollbar {
+            width: 6px;
+            height: 2px;
+            background: #ccc;
+            border-radius: 10px;
+        }
+
+        #msg_c::-webkit-scrollbar-thumb {
+            display: block;
+            width: 6px;
+            margin: 0 auto;
+            border-radius: 10px;
+            background: darkgrey;
+        }
+
+        .admin-logo {
+            position: relative;
+            left: 15px;
+            width: 36px;
+            height: 36px;
+            top: 20px;
+        }
+    </style>
 
 </head>
 
@@ -503,10 +575,12 @@
                 <img src="img/Combined Shape.png" alt="Combined Shape">
                 De Anza Oaks
             </a>
-            <input type="text" placeholder="Search..." style="width: 188px;height: 37px;position: relative;top: 30px;left: 540px;border: solid 1px #393D44;padding-left: 10px;">
+            <input type="text" placeholder="Search..."
+                style="width: 188px;height: 37px;position: relative;top: 30px;left: 540px;border: solid 1px #393D44;padding-left: 10px;">
             <div class="btns clearfix">
                 <img src="img/Shape.png" alt="Shape" style="position: relative;left: -140px;top: 40px;z-index: 100000;">
-                <img src="img/dropdown.png" alt="dropdown" style="position: relative;left: -50px;top: 36px;z-index: 100000;">
+                <img src="img/dropdown.png" alt="dropdown"
+                    style="position: relative;left: -50px;top: 36px;z-index: 100000;">
                 <a class="btns-search" href="javascript:;"> </a>
                 <a class="btns-language" href="javascript:;"></a>
                 <div class="langOv">
@@ -559,10 +633,10 @@
 
         <div class="main-center">
             <p class="photo-albums">2012 Fourth of July Activities</p>
-            <div class="address_book_click">
-                <button>Edit</button>
-                <button>View Slideshow </button>
-            </div>
+            <!-- <div class="address_book_click"> -->
+            <!-- <button>Edit</button>
+                <button>View Slideshow </button> -->
+            <!-- </div> -->
 
             <div class="content-1">
                 <div class="Events-Calendar ">
@@ -676,10 +750,12 @@
                     <p class="size-p" style="margin-left: 16px">Parade on the green for kids and pets.</p>
                     <p class="size-p2">Picture added on 7/4/2012 06:05:03PM by <span>Georgia Sutherland</span></p>
                     <p class="size-p" style="margin-top: 20px;margin-left: 16px">Comments</p>
-                    <div style="width: 106%;border-top: 1px solid #449F41;border-bottom: 1px solid #449F41;margin-top: 8px;margin-bottom: 16px;padding-top: 10px;padding-bottom: 10px;margin-left: -9px">
+                    <div
+                        style="width: 106%;border-top: 1px solid #449F41;border-bottom: 1px solid #449F41;margin-top: 8px;margin-bottom: 16px;padding-top: 10px;padding-bottom: 10px;margin-left: -9px">
                         <div style="display: flex">
                             <img src="img/Amy.png" style="position: relative;left: 15px">
-                            <p style="color:#449F41;margin-left: 26px">Amy:<span style="color: black">&nbsp;&nbsp;&nbsp;Good
+                            <p style="color:#449F41;margin-left: 26px">Amy:<span
+                                    style="color: black">&nbsp;&nbsp;&nbsp;Good
                                     Picture!</span></p>
                         </div>
                         <p style="margin-left: 185px;color: black">01/28/2019 04:35:10 AM</p>
@@ -704,7 +780,7 @@
         <!-- 底部 -->
         <div class="footer" style="margin-top: 26px;">
             <p>
-               Copyright © 2019 Tellus, Inc. All Rights Reserved.
+                Copyright © 2019 Tellus, Inc. All Rights Reserved.
             </p>
         </div>
 
@@ -723,56 +799,10 @@
 
             $('.logout').click(function () {
                 window.localStorage.setItem('username', '')
-                 window.location.href = "http://tfire.net/index.html"		
+                window.location.href = "http://tfire.net/index.html"
             })
         </script>
-        <!-- <script>
 
-            $(".Events-Calendar:nth-child(1)").click(function () {
-                $(".bg").css("display", "block")
-                $(".imgb").css("display", "block")
-                $(".imgc").css("display", "none")
-            })
-            $(".Events-Calendar:nth-child(2)").click(function () {
-                $(".bg").css("display", "block")
-                $(".imgb").css("display", "none")
-                $(".imgc").css("display", "block")
-
-            })
-
-            $(".imga").mouseenter(function () {
-                $(".imga").css("display", "none")
-                $(".imgaa").css("display", "block")
-            })
-            $(".imgaa").mouseleave(function () {
-                $(".imga").css("display", "block")
-                $(".imgaa").css("display", "none")
-            })
-
-
-            $(".imga-2").mouseenter(function () {
-                $(".imga-2").css("display", "none")
-                $(".imga-2-2").css("display", "block")
-            })
-            $(".imga-2-2").mouseleave(function () {
-                $(".imga-2").css("display", "block")
-                $(".imga-2-2").css("display", "none")
-            })
-
-
-            $(".bg-img").click(function () {
-                $(".bg").css("display", "none")
-            })
-            $(".imgaa").click(function () {
-                $(".imgb").css("display", "block")
-                $(".imgc").css("display", "none")
-            })
-            $(".imga-2-2").click(function () {
-                $(".imgb").css("display", "none")
-                $(".imgc").css("display", "block")
-            })
-
-        </script> -->
         <script type="text/javascript">
             var count = 0;
             window.onload = function () {

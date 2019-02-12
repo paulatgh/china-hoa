@@ -89,6 +89,9 @@ $(function () {
         var allDay_str = returnDateStr(allDay);
 
         $(this).text(allDay.getDate()).attr('data', allDay_str);
+        // $('.item-curMonth').eq(5).addClass(' active-red')
+        $('.item-curMonth').eq(15).addClass(' active-red')
+        $('.item-curMonth').eq(18).addClass(' active-red')
 
         if (returnDateStr(new Date()) === allDay_str) {
           $(this).attr('class', 'item item-curDay');
@@ -97,7 +100,7 @@ $(function () {
         } else {
           $(this).attr('class', 'item');
         }
-       
+
       });
       // 已选择的情况下，切换日期也不会改变
       if (self.selected_data) {
@@ -120,15 +123,15 @@ $(function () {
         '<span class="arrow-prev"><</span>' +
         '<span class="arrow-next">></span>' +
         '</div>';
-      var _weekStr = '<li class="item">S</li>' +
-        '<li class="item">M</li>' +
-        '<li class="item">T</li>' +
-        '<li class="item">W</li>' +
-        '<li class="item">T</li>' +
-        '<li class="item">F</li>' +
-        '<li class="item">S</li>';
+      var _weekStr = '<li class="item">Sun</li>' +
+        '<li class="item">Mon</li>' +
+        '<li class="item">Tur</li>' +
+        '<li class="item">Wed</li>' +
+        '<li class="item">Thu</li>' +
+        '<li class="item">Fri</li>' +
+        '<li class="item">Sat</li>';
       var _dateStr = '';
-    
+
       var _dayStr = `<i class="triangle"></i>
                     <p class="date"></p>
                     <p class="week"></p>`
@@ -170,7 +173,7 @@ $(function () {
 
       this.showCalendar();
       if (this.opts.ifSwitch) {
-      
+
         this.$arrow_prev.bind('click', function () {
           var _date = dateObj.getDate();
 
@@ -187,7 +190,7 @@ $(function () {
           self.showCalendar();
         });
       }
-      $('.item-curMonth').eq(5).addClass(' active-red')
+      // $('.item-curMonth').eq(5).addClass(' active-red')
       $('.item-curMonth').eq(15).addClass(' active-red')
       $('.item-curMonth').eq(18).addClass(' active-red')
       if (this.opts.backToday) {
@@ -195,7 +198,7 @@ $(function () {
 
         this.$backToday.bind('click', function () {
           var item_month = $('.item-curMonth').eq(0).attr('data').substr(4, 2);
-         
+
           var if_lastDay = (item_month != cur_month) ? true : false;
 
           if (!self.$calendarDate_item.hasClass('item-curDay') || if_lastDay) {
@@ -255,7 +258,7 @@ $(function () {
 
 
   // ========== 使用到的方法 ==========
- 
+
   var dateObj = (function () {
     var _date = new Date();
 

@@ -20,34 +20,41 @@
 	<link rel="stylesheet" href="css/calendar.css">
 
 	<style>
-		.main{
-		height: 1150px;;
-	}
-		.main-left-content{
+		.main {
+			height: 1150px;
+			;
+		}
+
+		.main-left-content {
 			width: 421px;
 			height: 225px;
-			box-shadow:  0 0 8px;
+			box-shadow: 0 0 8px;
 			margin-top: 15px;
 		}
-		.main-right-content{
+
+		.main-right-content {
 			width: 759px;
 			height: 225px;
 		}
-		.calendar{
+
+		.calendar {
 			width: 695px;
 			box-sizing: border-box;
-			padding:50px;
-			box-shadow:0px 0px 9px 0px rgba(0,0,0,0.24);
+			padding: 50px;
+			box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.24);
 		}
-		.calendar-title .arrow{
-			top:10px;
+
+		.calendar-title .arrow {
+			top: 10px;
 			width: 90px;
-			right:17px;
+			right: 17px;
 		}
-		.calendar-title .arrow span{
+
+		.calendar-title .arrow span {
 			font-size: 40px;
 		}
-		.calendar-right{
+
+		.calendar-right {
 			width: 476px;
 			height: 100%;
 			box-sizing: border-box;
@@ -55,247 +62,290 @@
 			flex-wrap: wrap;
 			overflow: overlay;
 		}
-		.calendar-title{
-			padding:10px 0;
+
+		.calendar-title {
+			padding: 10px 0;
 		}
+
 		.calendar-right::-webkit-scrollbar {
 			display: none;
 		}
-		.calendar-right ul{
+
+		.calendar-right ul {
 			width: 100%;
 			background: #F1F1F1;
-			padding: 6px 16px;			
+			padding: 6px 16px;
 			box-sizing: border-box;
 			position: relative;
 		}
 
-/*  */
-		.calendar-right ul:nth-child(4){
+		/*  */
+		.calendar-right ul:nth-child(4) {
 			margin-bottom: 0;
 		}
-/*  */
 
-		.calendar-right ul:nth-child(2n){
+		/*  */
+
+		.calendar-right ul:nth-child(2n) {
 			background: #6AA666;
 		}
-		.calendar-right ul:nth-child(2n) li{
-			color:#ffffff;
+
+		.calendar-right ul:nth-child(2n) li {
+			color: #ffffff;
 		}
-		.calendar-right ul li{
+
+		.calendar-right ul li {
 			height: 32px;
 			line-height: 32px;
 			font-size: 16px;
-			font-family:PingFangSC-Regular;
+			font-family: PingFangSC-Regular;
 		}
-	 .calendar-week {
+
+		.calendar-week {
 			padding: 20px 10px 10px;
 			border: 0;
 		}
+
 		.calendar-date {
 			padding: 10px;
 		}
-		.calendar-week .item{
-			width:39px;
+
+		.calendar-week .item {
+			width: 39px;
 			height: 40px;
 			font-size: 27px;
 			margin-right: 50px;
 			text-align: center;
-			color:rgba(52,72,94,0.54);
+			color: rgba(52, 72, 94, 0.54);
 		}
-		.calendar-week li:last-child{
+
+		.calendar-week li:last-child {
 			margin-right: 0;
 		}
-		.calendar-date .item{
+
+		.calendar-date .item {
 			width: 39px;
 			height: 40px;
 			font-size: 25px;
 			color: #E1E4E7;
 			margin: 20px 50px 0 0;
-		} 
-		.calendar-date .item.item-curMonth.active-red{
+		}
+
+		.calendar-date .item.item-curMonth.active-red {
 			border: 1px solid red;
 			box-sizing: border-box;
 		}
-		.calendar-date .item:nth-child(7n+7){
+
+		.calendar-date .item:nth-child(7n+7) {
 			margin-right: 0;
 		}
-		.calendar-date .item-curMonth{
-			color:#7C86A2;
+
+		.calendar-date .item-curMonth {
+			color: #7C86A2;
 		}
-		.calendar-date  .item-curDay{
+
+		.calendar-date .item-curDay {
 			background: #6AA666;
 		}
-		.breadcrumb{
+
+		.breadcrumb {
 			width: 100%;
 			height: 75px;
 		}
-		.breadcrumb li{
+
+		.breadcrumb li {
 			float: left;
 			margin-right: 10px;
-			font-size:20px;
-			font-family:OpenSans-Regular;
-			font-weight:400;			
-			line-height:75px;
+			font-size: 20px;
+			font-family: OpenSans-Regular;
+			font-weight: 400;
+			line-height: 75px;
 		}
-		.breadcrumb li a{
-			color:rgba(30,130,23,1);
+
+		.breadcrumb li a {
+			color: rgba(30, 130, 23, 1);
 		}
-		.calendar-right .tips{
-			width:103px;
+
+		.calendar-right .tips {
+			width: 103px;
 			height: 144px;
 			/* display:none; */
 			position: absolute;
-			top:0;
-			right:0;
+			top: 0;
+			right: 0;
 		}
-		.calendar-right .tips ul{
+
+		.calendar-right .tips ul {
 			padding: 10px 0;
-			background:rgba(0,0,0,0.6) !important; 
+			background: rgba(0, 0, 0, 0.6) !important;
 		}
-		.calendar-right .tips ul li{
-			height:24px;
-			margin-bottom:8px;
+
+		.calendar-right .tips ul li {
+			height: 24px;
+			margin-bottom: 8px;
 			text-align: center;
 		}
-		.calendar-right .tips a{
+
+		.calendar-right .tips a {
 			display: inline-block;
 			height: 24px;
-			padding:0 8px;
+			padding: 0 8px;
 			line-height: 24px;
-			font-family:OpenSans-SemiBold;
-			color:rgba(255,255,255,1);
-			border-radius:14px;
-			border:1px solid rgba(255,255,255,1);
+			font-family: OpenSans-SemiBold;
+			color: rgba(255, 255, 255, 1);
+			border-radius: 14px;
+			border: 1px solid rgba(255, 255, 255, 1);
 		}
-		.tips_hover_yes{
-		    border:1px solid transparent !important;
+
+		.tips_hover_yes {
+			border: 1px solid transparent !important;
 			background-color: #6AA666;
 		}
-		.tips_hover_no{
-		    border:1px solid transparent !important;
+
+		.tips_hover_no {
+			border: 1px solid transparent !important;
 			background-color: #F94B5A;
 		}
-		.tips_hover_maybe{
-		    border:1px solid transparent !important;
+
+		.tips_hover_maybe {
+			border: 1px solid transparent !important;
 			background-color: #F5A623;
 		}
-		.tips_hover_notes{
-		    border:1px solid transparent !important;
+
+		.tips_hover_notes {
+			border: 1px solid transparent !important;
 			background-color: #393D44;
 		}
-		.db{
-            width: 100%;
-            height: 100%;
-            display: none;
-            background: rgba(0,0,0,0.4);
-            position: fixed;
-            top: 0;
-            z-index: 1000;
-        }
-        .notes{
-            width: 330px;
-            height: 430px;
-            background: rgba(255,255,255,1);
-            border-radius: 7px;
-            position: fixed;
-            top: 30%;
-            left: 40%;
+
+		.db1 {
+			width: 100%;
+			height: 100%;
+			display: none;
+			background: rgba(0, 0, 0, 0.4);
+			position: fixed;
+			top: 0;
+			z-index: 1000;
+		}
+
+		.notes {
+			width: 330px;
+			height: 430px;
+			background: rgba(255, 255, 255, 1);
+			border-radius: 7px;
+			position: fixed;
+			top: 30%;
+			left: 40%;
 			z-index: 1001;
 			/* display: block; */
-        }
-
-        .notes-h3{
-			margin-top: 0;
-            font-size: 26px;
-            font-weight: 500;
-            color: rgba(57,61,68,1);
-            line-height: 77px;
-            text-align: center;
-			height: 77px;
-        }
-        .notes textarea{
-            background: #F5F8F9;
-            margin-left: 33px;
-            border: none;
-            width: 260px;
-            height: 257px;
-            padding: 19px 16px;
-            box-sizing: border-box;
-        }
-        .notes input{
-            display: inline-block;
-            border: none;
-            width: 260px;
-            height: 42px;
-            margin-left: 33px;
-            margin-top: 24px;
-            background: #6AA666;
-            border-radius: 4px;
-            color: #ffffff;
-            font-size: 16px;    
-        }
-        .notes textarea::-webkit-input-placeholder{
-            color:#889399;
 		}
-		.Add-top{
+
+		.notes-h3 {
+			margin-top: 0;
+			font-size: 26px;
+			font-weight: 500;
+			color: rgba(57, 61, 68, 1);
+			line-height: 77px;
+			text-align: center;
+			height: 77px;
+		}
+
+		.notes textarea {
+			background: #F5F8F9;
+			margin-left: 33px;
+			border: none;
+			width: 260px;
+			height: 257px;
+			padding: 19px 16px;
+			box-sizing: border-box;
+		}
+
+		.notes input {
+			display: inline-block;
+			border: none;
+			width: 260px;
+			height: 42px;
+			margin-left: 33px;
+			margin-top: 24px;
+			background: #6AA666;
+			border-radius: 4px;
+			color: #ffffff;
+			font-size: 16px;
+		}
+
+		.notes textarea::-webkit-input-placeholder {
+			color: #889399;
+		}
+
+		.Add-top {
 			width: 100%;
 			margin-bottom: 11px;
 			display: none;
 		}
-		.Add-top-a{
+
+		.Add-top-a {
 			width: 90px;
 			height: 40px;
-			background:rgba(106,166,102,1);
-			border-radius:20px;
+			display: inline-block;
+			background: rgba(106, 166, 102, 1);
+			border-radius: 20px;
 			text-align: center;
-			font-size:16px;
-			font-family:OpenSans-Regular;
-			font-weight:400;
-			color:rgba(255,255,255,1);
-			line-height:40px;
+			font-size: 16px;
+			font-family: OpenSans-Regular;
+			font-weight: 400;
+			color: rgba(255, 255, 255, 1);
+			line-height: 40px;
 		}
-		.Add-top-a:hover{
+
+		.Add-top-a a {
 			color: white;
 		}
-		.top-right{
+
+		.Add-top-a:hover {
+			color: white;
+		}
+
+		.top-right {
 			width: 91px;
 			float: right;
-			display: flex;
-			justify-content: space-between;
-			position: relative;
-			top: 0;
-		}
-		.calendar-right ul:nth-child(2n) .right-a,.calendar-right ul:nth-child(2n) .right-b{
-			color:#ffffff;
-		}
-		.right-a{
-			color:rgba(106,166,102,1);
-			font-size:16px;
-			font-family:OpenSans-Regular;
-			font-weight:400;
-			line-height:22px;
 			display: none;
-		}		
-		.right-a:hover{
-			text-decoration: underline;
 		}
-		.right-b:hover{
-			text-decoration: underline;
+
+		.calendar-right ul:nth-child(odd) .top-right a {
+			color: #6AA666;
 		}
-		.right-b{
-			color:rgba(106,166,102,1);
-			font-size:16px;
-			font-family:OpenSans-Regular;
-			font-weight:400;
-			line-height:22px;
-			display: none;
+
+		.calendar-right ul:nth-child(even) .top-right a {
+			color: white;
+		}
+
+		.calendar-right ul:nth-child(2n) .right-a,
+		.calendar-right ul:nth-child(2n) .right-b {
+			color: #ffffff;
+		}
+
+		.top-right span {
+			color: rgba(106, 166, 102, 1);
+			display: inline-block;
+			margin-right: 7px;
+			font-size: 16px;
+			font-family: OpenSans-Regular;
+			font-weight: 400;
+			line-height: 22px;
+		}
+
+		.top-right span:nth-child(2) {
+			margin-right: 0;
+		}
+
+		.right-b {
+			cursor: pointer;
 		}
 	</style>
 
 </head>
 
 <body>
-	<div class="db">
+	<div class="db1">
 		<div class="notes">
 			<p class="return"><img src="img/Bounced.png" alt="Bounced"></p>
 			<h3 class="notes-h3">Leave a Note</h3>
@@ -311,16 +361,19 @@
 				<img src="img/Combined Shape.png" alt="Combined Shape">
 				De Anza Oaks
 			</a>
-			<input type="text" placeholder="Search..." style="width: 188px;height: 37px;position: relative;top: 30px;left: 540px;border: solid 1px #393D44;padding-left: 10px;">
+			<input type="text" placeholder="Search..."
+				style="width: 188px;height: 37px;position: relative;top: 30px;left: 540px;border: solid 1px #393D44;padding-left: 10px;">
 
 			<div class="btns clearfix">
 				<img src="img/Shape.png" alt="Shape" style="position: relative;left: -140px;top: 40px;z-index: 100000;">
-				<img src="img/dropdown.png" alt="dropdown" style="position: relative;left: -50px;top: 36px;z-index: 100000;">
+				<img src="img/dropdown.png" alt="dropdown"
+					style="position: relative;left: -50px;top: 36px;z-index: 100000;">
 				<a class="btns-search" href="javascript:;"> </a>
 				<a class="btns-language" href="javascript:;"></a>
 				<div class="langOv">
 					<div class="profile">
-						<a href="saveFile.html" style="border-bottom: 1px solid white;width: 100%;margin-left: -1px">My Profile</a>
+						<a href="saveFile.html" style="border-bottom: 1px solid white;width: 100%;margin-left: -1px">My
+							Profile</a>
 						<a href="javascript:;" class="logout">Log Out</a>
 					</div>
 				</div>
@@ -333,10 +386,6 @@
 					<li>
 						<a href="about.html">About us</a>
 					</li>
-					<!-- <li>
-						<a href="downloadFile.html">Docs</a>
-					</li> -->
-
 				</ul>
 				<span class="navline"></span>
 			</div>
@@ -378,34 +427,35 @@
 					<li><a href="#" rel="noopener noreferrer"> Events Calendar</a></li>
 				</ul>
 				<div class="Add-top">
-					<a href="#" class="Add-top-a">Add</a>
+					<span class="Add-top-a"><a href="addnewevents.html">Add</a></span>
 				</div>
 				<div class="main-left" style="width:100%;height: 100%;">
-					<div class="main-right-content" style="width:100%;height: 626px;display: flex;justify-content: space-between">
+					<div class="main-right-content"
+						style="width:100%;height: 626px;display: flex;justify-content: space-between">
 						<div id="calendar" class="calendar"></div>
 						<div class="calendar-right">
 							<ul>
-								<li>01/21/2019
+								<li>02/17/2019
 									<div class="top-right">
-										<a href="#" class="right-a">Edit</a>
-										<a href="#" class="right-b">Delete</a>
+										<span class="right-a"><a href="editevents.html">Edit</a></span>
+										<span class="right-b">Delete</span>
 									</div>
 								</li>
 
 								<li>
 									Clubhouse Booking (Confirmed) Priya Balijepalli
 								</li>
-								<li>Location: &nbsp;Clubhouse</li>
+								<li>Location: Clubhouse</li>
 								<li>
-									Event Added By: &nbsp;Geeta Chavan
+									Event Added By:Geeta Chavan
 								</li>
 							</ul>
 							<ul>
-									
-								<li>01/21/2019
+
+								<li>02/17/2019
 									<div class="top-right">
-										<a href="#" class="right-a">Edit</a>
-										<a href="#" class="right-b">Delete</a>
+										<span class="right-a"><a href="editevents.html">Edit</a></span>
+										<span class="right-b">Delete</span>
 									</div>
 								</li>
 								<li>
@@ -417,10 +467,10 @@
 								</li>
 							</ul>
 							<ul>
-								<li>01/21/2019
+								<li>02/17/2019
 									<div class="top-right">
-										<a href="#" class="right-a">Edit</a>
-										<a href="#" class="right-b">Delete</a>
+										<span class="right-a"><a href="editevents.html">Edit</a></span>
+										<span class="right-b">Delete</span>
 									</div>
 								</li>
 								<li>
@@ -432,10 +482,10 @@
 								</li>
 							</ul>
 							<ul>
-								<li>01/21/2019
+								<li>02/17/2019
 									<div class="top-right">
-										<a href="#" class="right-a">Edit</a>
-										<a href="#" class="right-b">Delete</a>
+										<span class="right-a"><a href="editevents.html">Edit</a></span>
+										<span class="right-b">Delete</span>
 									</div>
 								</li>
 								<li>
@@ -447,10 +497,10 @@
 								</li>
 							</ul>
 							<ul>
-								<li>01/21/2019
+								<li>02/17/2019
 									<div class="top-right">
-										<a href="#" class="right-a">Edit</a>
-										<a href="#" class="right-b">Delete</a>
+										<span class="right-a"><a href="editevents.html">Edit</a></span>
+										<span class="right-b">Delete</span>
 									</div>
 								</li>
 								<li>
@@ -462,10 +512,10 @@
 								</li>
 							</ul>
 							<ul>
-								<li>01/21/2019
+								<li>02/17/2019
 									<div class="top-right">
-										<a href="#" class="right-a">Edit</a>
-										<a href="#" class="right-b">Delete</a>
+										<span class="right-a"><a href="editevents.html">Edit</a></span>
+										<span class="right-b">Delete</span>
 									</div>
 								</li>
 								<li>
@@ -477,10 +527,10 @@
 								</li>
 							</ul>
 							<ul>
-								<li>01/21/2019
+								<li>02/20/2019
 									<div class="top-right">
-										<a href="#" class="right-a">Edit</a>
-										<a href="#" class="right-b">Delete</a>
+										<span class="right-a"><a href="editevents.html">Edit</a></span>
+										<span id="right-b">Delete</span>
 									</div>
 								</li>
 								<li>
@@ -492,10 +542,10 @@
 								</li>
 							</ul>
 							<ul>
-								<li>01/21/2019
+								<li>02/20/2019
 									<div class="top-right">
-										<a href="#" class="right-a">Edit</a>
-										<a href="#" class="right-b">Delete</a>
+										<span class="right-a"><a href="editevents.html">Edit</a></span>
+										<span class="right-b">Delete</span>
 									</div>
 								</li>
 								<li>
@@ -507,10 +557,10 @@
 								</li>
 							</ul>
 							<ul>
-								<li>01/21/2019
+								<li>02/20/2019
 									<div class="top-right">
-										<a href="#" class="right-a">Edit</a>
-										<a href="#" class="right-b">Delete</a>
+										<span class="right-a"><a href="editevents.html">Edit</a></span>
+										<span class="right-b">Delete</span>
 									</div>
 								</li>
 								<li>
@@ -527,22 +577,33 @@
 			</div>
 		</div>
 	</div>
+	<!-- 底部 -->
+	<div class="footer">
+		<p>
+			Copyright © 2019 Tellus, Inc. All Rights Reserved.
+		</p>
+	</div>
 	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="js/aos.js"></script>
 	<script type="text/javascript" src="js/masterslider.min.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
+	<!-- <script type="text/javascript" src="js/public.js"></script> -->
 	<!-- 日历插件 -->
 	<script src="https://cdn.bootcss.com/jquery/3.3.0/jquery.min.js"></script>
 	<script src="js/calendar.js"></script>
-	<script type="text/javascript">
-		// admin
-		var storage = window.localStorage;
-		if (storage.getItem('username') === 'admin') {
-			$(".Add-top").css("display","block")
-			$(".right-a").css("display","block")
-			$(".right-b").css("display","block")
-		}else{
-			var str = `<li class="tips">
+	<script type="text/javascript" src="js/public.js"></script>
+	<script>
+		$(function () {
+			// admin
+			var storage = window.localStorage;
+			if (storage.getItem('username') === 'admin') {
+				$(".Add-top").css("display", "block")
+				$(".top-right").css("display", "block")
+				$(".right-b").click(function () {
+					deleteLog()
+				})
+			} else {
+				var str = `<li class="tips">
 						<ul>
 							<li><a href="#" class="Yes">Yes</a></li>
 							<li><a href="#" class="No">No</a></li>
@@ -550,59 +611,53 @@
 							<li><a class="Notes">Notes</a></li>
 						</ul>					
 					</li>`;
-			$('.calendar-right ul').mouseenter(function () {
-				$(this).append(str)
-				$('.Yes').hover(function () {
-					$(this).addClass('tips_hover_yes')
-				}, function () {
-					$(this).removeClass('tips_hover_yes')
-				})
-				$('.No').hover(function () {
-					$(this).addClass('tips_hover_no')
-				}, function () {
-					$(this).removeClass('tips_hover_no')
-				})
-				$('.Maybe').hover(function () {
-					$(this).addClass('tips_hover_maybe')
-				}, function () {
-					$(this).removeClass('tips_hover_maybe')
-				})
-				$('.Notes').hover(function () {
-					$(this).addClass('tips_hover_notes')
-				}, function () {
-					$(this).removeClass('tips_hover_notes')
-				})
-				$('.Notes').click(function (e) {
-					$('.db').show();
+				$('.calendar-right ul').mouseenter(function () {
+					$(this).append(str)
+					$('.Yes').hover(function () {
+						$(this).addClass('tips_hover_yes')
+					}, function () {
+						$(this).removeClass('tips_hover_yes')
+					})
+					$('.No').hover(function () {
+						$(this).addClass('tips_hover_no')
+					}, function () {
+						$(this).removeClass('tips_hover_no')
+					})
+					$('.Maybe').hover(function () {
+						$(this).addClass('tips_hover_maybe')
+					}, function () {
+						$(this).removeClass('tips_hover_maybe')
+					})
+					$('.Notes').hover(function () {
+						$(this).addClass('tips_hover_notes')
+					}, function () {
+						$(this).removeClass('tips_hover_notes')
+					})
+					$('.Notes').click(function (e) {
+						$('.db1').show();
+						return false;
+					})
+					$('.return').click(function () {
+						$('.db1').hide();
+					})
 					return false;
 				})
-				$('.return').click(function () {
-					$('.db').hide();
+				$('.calendar-right ul').mouseleave(function () {
+					$('.tips').remove()
 				})
-				return false;
-			})
-			$('.calendar-right ul').mouseleave(function () {
-				$('.tips').remove()
-			})
-			
-		}
 
-		var username = storage.getItem('username')
-		$(".btns-language").text(username);
-		$('.logout').click(function () {
-			window.localStorage.setItem('username', '')
-		    window.location.href = "http://tfire.net/index.html"
-	
+			}
 
+			var username = storage.getItem('username')
+			$(".btns-language").text(username);
+			$('.logout').click(function () {
+				window.localStorage.setItem('username', '')
+				window.location.href = "http://tfire.net/index.html"
+			})
 		})
 	</script>
-	
-	<!-- 底部 -->
-	<div class="footer">
-		<p>
-			Copyright © 2019 Tellus, Inc. All Rights Reserved.
-		</p>
-	</div>
+
+
 </body>
 
 

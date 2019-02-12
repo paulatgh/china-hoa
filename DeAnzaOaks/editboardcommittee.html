@@ -99,7 +99,6 @@
             font-family:OpenSans-Regular;
             font-weight:400;
             color:rgba(255,255,255,1);
-            cursor: pointer;
         }
         .add_volunteer_title{
             width: 100%;
@@ -145,10 +144,7 @@
                     <li>
                         <a href="about.html">About us</a>
                     </li>
-                    <!-- <li>
-                        <a href="downloadFile.html">Docs</a>
-                    </li> -->
-
+     
                 </ul>
                 <span class="navline"></span>
             </div>
@@ -164,9 +160,15 @@
     <div class="investor clearfix" style="margin-top: 30px;">
         <div class="w1200"  style="height: 1100px;">
                 <ul class="breadcrumb">
-                                       
+                    <li><a href="index.html" rel="noopener noreferrer">Home</a></li>
+                    <li>&nbsp;>&nbsp;</li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li>&nbsp;>&nbsp;</li>
+                    <li><a href="committee.html">Board/Committee</a></li> 
+                    <li>&nbsp;>&nbsp;</li>
+                    <li><a href="#">Edit Board/Committee</a></li>                    
                 </ul>
-                <div class="add_volunteer_title">Volunteer Needs</div>
+                <div class="add_volunteer_title">Board / Committee</div>
             <table style="background-color: #ffffff; margin-top:20px;" background="" border="0" width="100%"
                 cellpadding="10" cellspacing="0">
                 <tbody>
@@ -182,23 +184,15 @@
                                                 <tbody>
                                                     <tr>
                                                         <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
-                                                            <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;Form
-                                                                Title/Name:</font>
+                                                            <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;Brief Topic Description:</font>
                                                         </td>
                                                         <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6"><input
                                                                 type="text" name="short_desc" size="40" maxlength="50"
                                                                 style="font-family: Tahoma; font-size: 11"></td>
                                                     </tr>
                                                     <tr>
-                                                        <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6" valign="top">
-                                                                <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;
-                                                                       When:</font>
-                                                        </td>
-                                                        <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
-                                                                <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;
-                                                                    Where:</font>
-                                                        </td>
-                                                    </tr>
+                                                            <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6" valign="top" colspan="2" height="20px" style="width: 90%">&nbsp;</td>
+                                                        </tr>
                                                     <tr height="37px">
                                                         <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6" valign="top">
                                                             <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;Full
@@ -247,17 +241,17 @@
                                         </center>
                                     </div>
                                 </form>
-
                                     <table border="0" width="100%">
                                         <tbody>
                                             <tr>
                                                 <td width="10%" align="right">
                                                     <input type="Submit" value="Submit" name="action" class="continue">
-                                                    <input type="Submit" value="Cancel" onclick="location.href='volunteer-needs.html'" class="cancel">
+                                                    <input type="Submit" value="Cancel" onclick="location.href='committee.html'" class="cancel">
                                                 </td>
                                             </tr>
                                         </tbody>
                                     </table>                                                        
+                                
                             </font>
                         </td>
                     </tr>
@@ -293,39 +287,20 @@
 </script>
 
 <script>
-   $(function(){
-        // admin
-        var storage = window.localStorage;
-        if (storage.getItem('username') === 'admin') {
-            $('.buttona').css('display', 'none')
-        }
-        var query = window.location.search.substring(1);
-        if(query==="Board/Committee"){
-            $('.add_volunteer_title').text(query)
-            var str = `<li><a href="index.html" rel="noopener noreferrer">Home</a></li>
-            <li>&nbsp;>&nbsp;</li>
-            <li><a href="resources.html" rel="noopener noreferrer"> Resources </a></li>
-            <li>&nbsp;>&nbsp;</li>
-            <li><a href="committee.html" rel="noopener noreferrer">${query}</a></li>  `
-           $('.breadcrumb').append(str)
-        }else{
-            $('.add_volunteer_title').text('Volunteer Needs')
-            var str = `<li><a href="index.html" rel="noopener noreferrer">Home</a></li>
-            <li>&nbsp;>&nbsp;</li>
-            <li><a href="news.html" rel="noopener noreferrer"> News </a></li>
-            <li>&nbsp;>&nbsp;</li>
-            <li><a href="volunteer-needs.html" rel="noopener noreferrer">Volunteer Needs</a></li>  `
-           $('.breadcrumb').append(str)
-        }
-        var username = storage.getItem('username')
-        $(".btns-language").text(username);
+    // admin
+    var storage = window.localStorage;
+    if (storage.getItem('username') === 'admin') {
+        $('.buttona').css('display', 'none')
+    }
 
-        $('.logout').click(function () {
-            window.localStorage.setItem('username', '')
-            window.location.href = "http://tfire.net/index.html"
-        
-        })
-   })
+    var username = storage.getItem('username')
+    $(".btns-language").text(username);
+
+    $('.logout').click(function () {
+        window.localStorage.setItem('username', '')
+        window.location.href = "http://tfire.net/index.html"
+	
+    })
 </script>
 
 </html>

@@ -62,9 +62,7 @@
             background:rgba(255,255,255,1);
             border-radius:20px;
             border:1px solid rgba(53,149,50,1);
-            font-size:16px;
-            font-family:OpenSans;
-            color:rgba(53,149,50,1);
+           
 
         }
         .address_book_click button:nth-child(2){
@@ -76,10 +74,11 @@
             font-size:16px;
             font-family:OpenSans;
             color:rgba(53,149,50,1);
-           margin: 0 16px;
+           margin: 0 20px;
         }	
+       
         .address_book_click button:nth-child(3){
-            width:190px;
+            width:180px;
             height:30px;
             background:rgba(255,255,255,1);
             border-radius:20px;
@@ -88,30 +87,8 @@
             font-family:OpenSans;
             color:rgba(53,149,50,1);
            
-        }	
+        }
         .address_book_click button:nth-child(4){
-            width:180px;
-            height:30px;
-            background:rgba(255,255,255,1);
-            border-radius:20px;
-            border:1px solid rgba(53,149,50,1);
-            font-size:16px;
-            font-family:OpenSans;
-            color:rgba(53,149,50,1);
-            margin: 0 16px;
-        }
-        .address_book_click button:nth-child(5){
-            width:180px;
-            height:30px;
-            background:rgba(255,255,255,1);
-            border-radius:20px;
-            border:1px solid rgba(53,149,50,1);
-            font-size:16px;
-            font-family:OpenSans;
-            color:rgba(53,149,50,1);
-           
-        }
-        .address_book_click button:nth-child(6){
             width:200px;
             height:30px;
             background:rgba(255,255,255,1);
@@ -120,7 +97,12 @@
             font-size:16px;
             font-family:OpenSans;
             color:rgba(53,149,50,1);
-            margin: 0 16px;
+            margin: 0 20px;
+        }
+        .address_book_click button a{
+            font-size:16px;
+            font-family:OpenSans;
+            color:rgba(53,149,50,1);
         }
 		/* .address_book_click:hover{
 			cursor: pointer;
@@ -427,12 +409,11 @@
         <div class="main-center">
             <p class="photo-albums">Send an Email Bulletin</p>
             <div class="address_book_click">
-                <button>Send HTML</button>
-                <button>Send Plain Text</button>
-                <button>Email Bulletin Status</button>
-                <button>Edit Subscriptions</button>
-                <button>Check Subscribers</button>
-                <button>Edit Custom Templates</button>
+                <button><a href="sendhtml.html">Send HTML</a></button>
+                <button><a href="sendplaintext.html">Send Plain Text</a></button>
+                
+                <button><a href="checksubscribers.html">Check Subscribers</a></button>
+                <button><a href="editcustomtemplates.html">Edit Custom Templates</a></button>
             </div>
             <p class="newest">NEWEST EMAIL BULLETIN TEMPLATES</p>
             <div class="content-1">
@@ -442,7 +423,7 @@
                     <div class="address_book_left">
                         <div class="search-click">
                             <div class="search">
-                                <input type="search" name="" id="" placeholder="search..." style="padding-left:10px">
+                                <input type="search" name="" id="" placeholder="Search..." style="padding-left:10px">
                                 <div class="search_img"><img src="img/pro-search.png" /></div>
                             </div>
 
