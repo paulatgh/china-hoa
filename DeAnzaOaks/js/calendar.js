@@ -218,10 +218,10 @@ $(function () {
       //     self.$calendar_today.css({ left: 0, top: 0 }).hide();
       //   }
       // });
-      this.$calendarDate_item.bind("click", function () {
-        isMouseOver = false;
-        self.showHoverInfo($(this));
-      });
+      // this.$calendarDate_item.bind("click", function () {
+      //   isMouseOver = false;
+      //   self.showHoverInfo($(this));
+      // });
 
 
       this.$calendarDate_item.click(function () {

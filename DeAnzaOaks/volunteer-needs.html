@@ -150,6 +150,27 @@
 		.part {
 			display: none;
 		}
+
+		.edit_inp {
+			width: 82%;
+			height: 36px;
+			padding-left: 10px;
+			border: 0;
+			box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+		}
+
+		.save,
+		.form_content_right span {
+			margin-left: 24px;
+			box-sizing: border-box;
+			font-size: 16px;
+			font-family: OpenSans-Regular;
+			font-weight: 400;
+			color: rgba(106, 166, 102, 1);
+			line-height: 25px;
+			text-align: right;
+			cursor: pointer;
+		}
 	</style>
 
 </head>
@@ -239,7 +260,7 @@
 								</div>
 								<div class="part">
 									<div class="part-a">
-										<a class="part-a1" href="add-volunteer-needs.html">Edit</a>
+										<a class="part-a1">Edit</a>
 										<a class="part-a2">Delete</a>
 									</div>
 								</div>
@@ -271,7 +292,7 @@
 								<div class="part">
 
 									<div class="part-a">
-										<a class="part-a1" href="add-volunteer-needs.html">Edit</a>
+										<a class="part-a1">Edit</a>
 
 										<a class="part-a2">Delete</a>
 									</div>
@@ -302,7 +323,7 @@
 								</div>
 								<div class="part">
 									<div class="part-a">
-										<a class="part-a1" href="add-volunteer-needs.html">Edit</a>
+										<a class="part-a1">Edit</a>
 
 										<a class="part-a2">Delete</a>
 									</div>
@@ -325,8 +346,7 @@
 								</div>
 								<div class="part">
 									<div class="part-a">
-										<a class="part-a1" href="add-volunteer-needs.html">Edit</a>
-
+										<a class="part-a1">Edit</a>
 										<a class="part-a2">Delete</a>
 									</div>
 								</div>
@@ -369,6 +389,69 @@
 		$('.logout').click(function () {
 			window.localStorage.setItem('username', '')
 			window.location.href = "http://tfire.net/index.html";
+
+		})
+
+		$('.part-a1').click(function () {
+			var val = $(this).parents('.part_1').find('.Volunteer_dec_title')
+			val.each(function(index,item){	
+				var value = $(item).text().trim();
+				console.log( $(item).text())
+				var inp = `<input type="text" value="${value}"/>`;
+				val.empty().append(inp)
+			})
+		// 	var data = $(this).parent().prev().text();
+		// 	var str = `<div class="part_1">
+		// 						<div class="Volunteer_dec_title" style="font-weight: 600;"><input value='${data}' type="text" class="edit_inp"/></div>
+		// 						<div class="Volunteer_dec_title">
+		// 							<h4><input value='${data}' type="text" class="edit_inp"/></h4>
+		// 							<div>
+		// 									<input value='${data}' type="text" class="edit_inp"/>
+		// 							</div>
+		// 						</div>
+		// 						<div class="Volunteer_dec_title">
+		// 							<h4><input value='${data}' type="text" class="edit_inp"/></h4>
+		// 							<div><input value='${data}' type="text" class="edit_inp"/></div>
+		// 						</div>
+		// 						<div class="part">
+		// 							<div class="part-a">
+		// 								<a class="part-a1">Edit</a>
+		// 								<a class="part-a2">Delete</a>
+		// 							</div>
+		// 						</div>
+		// <span class="save">Save Changes</span>
+		// 					</div>`
+			
+			$('.save').click(function () {
+				var val = $(this).prev().val()
+				var valStr = ` 
+								<div class="Volunteer_dec_title" style="font-weight: 600;">Architectural Committee</div>
+								<div class="Volunteer_dec_title">
+									<h4>Description:</h4>
+									<div>
+										Help to manage the DAO website to keep it up to date and maximize timely
+										communication within our community.
+									</div>
+								</div>
+								<div class="Volunteer_dec_title">
+									<h4>Contact:</h4>
+									<div>Dave Clark</div>
+								</div>
+
+								
+                                    <div class="part-a">
+										<span class="part-a1">Edit</span>
+										<span class="part-a2">Delete</span>                                    
+									</div>
+									`
+				$(this).parent().empty().append(valStr)
+				$('.del').click(function () {
+					deleteLog()
+					$('.delete_button').click(function () {
+						console.log('1111')
+					})
+				})
+			})
 
 		})
 	});

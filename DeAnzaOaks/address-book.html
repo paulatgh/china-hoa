@@ -247,7 +247,7 @@
 
 		.user {
 			width: 386px;
-			height: 1233px;
+			height: 943px;
 			background: #ffffff;
 			border-radius: 10px;
 			position: absolute;
@@ -262,7 +262,46 @@
 			background: url('img/close-circle.png') no-repeat;
 			position: absolute;
 			top: -19px;
-			right: -19px
+			right: -19px;
+			cursor: pointer;
+		}
+		.user-img{
+			width:100%;
+            height:207px;
+			/* border: solid 1px; */
+			/* display: flex; */
+			
+		}
+		.user-img img{
+			width: 100%;
+		height: 100%;
+
+		}
+		/* .user-img img:nth-child(2){
+			width: 186px;
+			
+
+		} */
+		.user-content{
+			width:338px;
+
+line-height:27px;
+margin: 5px 20px;
+		}
+		.user-content h5{
+			font-size:18px;
+font-family:OpenSans-Bold;
+
+color:rgba(57,61,68,1);
+
+		}
+		.user-content p{
+			height: 27px;
+font-size:16px;
+font-family:OpenSans-Regular;
+font-weight:400;
+color:rgba(57,61,68,1);
+line-height:27px;
 		}
 	</style>
 
@@ -469,6 +508,50 @@
 		var str = `<div class="db">
 						<div class="user">
 							<div class="close"></div>
+							<div class="user-img">
+								<img src="img/man.jpg">
+								
+							</div>
+							<div class="user-content">
+                                 <h5>Resident</h5>
+								 <h5>Allan, Joan </h5>
+								 <p>Birth date: January 26</p>
+								 <p>Email:johnkrischer@gmail.com</p>
+								 <p>Phone:408-550-6114</p>
+								 <p>Occupation: Tech Dork</p>
+							</div>
+							
+							<div class="user-content">
+                                 
+								 <h5>De Anza Oaks</h5>
+								 <p>Address: </p>
+								 <p>22806 Poplar Grove Square</p>
+								 <p>Cupertino CA 95014</p>
+								 <p>Lot #/Unit #: 056</p>
+							</div>
+							<div class="user-content">
+                                 
+								 <h5>Children:</h5>
+								 <p>Sabrina - Birth date: 8/27/1998</p>
+								 <p>Samantha - Birth date: 1/11/2001</p>
+								 <p>Tyler - Birth date: 6/18/2003</p>
+								
+							</div>
+							<div class="user-content">
+                                 
+								 <h5>Here From:</h5>
+								 <p> Aptos, CA </p>
+								 <h5>Move-In Date:</h5>
+								 <p> 8/5/2005 </p>
+								 <h5>Computer Type: </h5>
+								 <p>Windows, Apple,Linux </p>
+								<h5>Hobbies:</h5>
+								<p> Travel, languages, Classic cars,</p>
+								<p>anything ocean related </p>
+								<h5>Personal Website:</h5>
+								<p> http://www.johnkrischer.com </p>
+							</div>
+							
 						</div>
 					</div>`
 
@@ -482,7 +565,9 @@
 				$('.address_book_letter').css('display', 'none')
 				$('.street_name').css('display', 'none')
 				$('.a_z').css('display', 'block')
+
 				show = false;
+
 			} else {
 				//按街道搜索
 				$('.address_book_click_content').css('display', 'none')
@@ -490,11 +575,15 @@
 				$('.address_book_letter').css('display', 'block')
 				$('.street_name').css('display', 'block')
 				$('.a_z').css('display', 'none')
-				$('.street_name .user_desc').click(function () {
-					$('body').append(str);
-				})
+				
 				show = true;
 			}
+		})
+		$('.street_name .user_desc, .a_z .user_desc').click(function () {
+			$('body').append(str);
+			$('.close').click(function(){
+				$('.db').remove()
+			})
 		})
 	})
 </script>
