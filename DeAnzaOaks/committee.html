@@ -24,7 +24,7 @@
         }
 
         .main {
-            height: 1150px;
+            height: 1675px;
             ;
         }
 
@@ -158,8 +158,9 @@
             height: 40px;
             display: none;
         }
-        .admin-control span a{
-            color:rgba(106, 166, 102, 1);
+
+        .admin-control span a {
+            color: rgba(106, 166, 102, 1);
         }
 
         .admin-control span {
@@ -180,7 +181,8 @@
             border: 1px solid #F94B5A;
             color: #F94B5A;
         }
-        .del{
+
+        .del {
             cursor: pointer;
         }
     </style>
@@ -237,7 +239,7 @@
     </div>
 
     <!-- 主体 -->
-    <div class="main" style="margin-bottom: 35px;height: 140%;">
+    <div class="main">
         <!-- <div class="main-top" style="margin-bottom: 35px;height: 100%;"> -->
         <div class="w1200 pr">
             <ul class="breadcrumb" style="float: left">
@@ -497,7 +499,7 @@
                     var data = 'Board/Committee';
                     window.location.href = `http://tfire.net/add-volunteer-needs.html?${data}`
                 })
-                $(".del").click(function(){
+                $(".del").click(function () {
                     deleteLog()
                 })
             }
