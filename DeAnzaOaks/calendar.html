@@ -99,6 +99,7 @@
 			line-height: 32px;
 			font-size: 16px;
 			font-family: PingFangSC-Regular;
+			
 		}
 
 		.calendar-week {
@@ -322,7 +323,9 @@
 		.calendar-right ul:nth-child(2n) .right-b {
 			color: #ffffff;
 		}
-
+		.right-a{
+			cursor: pointer;
+		}
 		.top-right span {
 			color: rgba(106, 166, 102, 1);
 			display: inline-block;
@@ -339,6 +342,20 @@
 
 		.right-b {
 			cursor: pointer;
+		}
+		.saveChange{
+			width: 80px;
+			height: 40px;
+			display: inline-block;
+			position: absolute;
+			top:40%;
+			color:#ffffff;
+			background:rgba(249,75,90,1);
+			border-radius: 20px;
+			font-size: 16px;
+			text-align: center;
+			line-height: 40px;
+			right: 10px;
 		}
 	</style>
 
@@ -437,7 +454,7 @@
 							<ul>
 								<li>02/17/2019
 									<div class="top-right">
-										<span class="right-a"><a href="editevents.html">Edit</a></span>
+										<span class="right-a">Edit</span>
 										<span class="right-b">Delete</span>
 									</div>
 								</li>
@@ -454,7 +471,7 @@
 
 								<li>02/17/2019
 									<div class="top-right">
-										<span class="right-a"><a href="editevents.html">Edit</a></span>
+										<span class="right-a">Edit</span>
 										<span class="right-b">Delete</span>
 									</div>
 								</li>
@@ -469,7 +486,7 @@
 							<ul>
 								<li>02/17/2019
 									<div class="top-right">
-										<span class="right-a"><a href="editevents.html">Edit</a></span>
+										<span class="right-a">Edit</span>
 										<span class="right-b">Delete</span>
 									</div>
 								</li>
@@ -484,7 +501,7 @@
 							<ul>
 								<li>02/17/2019
 									<div class="top-right">
-										<span class="right-a"><a href="editevents.html">Edit</a></span>
+										<span class="right-a">Edit</span>
 										<span class="right-b">Delete</span>
 									</div>
 								</li>
@@ -499,7 +516,7 @@
 							<ul>
 								<li>02/17/2019
 									<div class="top-right">
-										<span class="right-a"><a href="editevents.html">Edit</a></span>
+										<span class="right-a">Edit</span>
 										<span class="right-b">Delete</span>
 									</div>
 								</li>
@@ -514,7 +531,7 @@
 							<ul>
 								<li>02/17/2019
 									<div class="top-right">
-										<span class="right-a"><a href="editevents.html">Edit</a></span>
+										<span class="right-a">Edit</span>
 										<span class="right-b">Delete</span>
 									</div>
 								</li>
@@ -529,7 +546,7 @@
 							<ul>
 								<li>02/20/2019
 									<div class="top-right">
-										<span class="right-a"><a href="editevents.html">Edit</a></span>
+										<span class="right-a">Edit</span>
 										<span id="right-b">Delete</span>
 									</div>
 								</li>
@@ -544,7 +561,7 @@
 							<ul>
 								<li>02/20/2019
 									<div class="top-right">
-										<span class="right-a"><a href="editevents.html">Edit</a></span>
+										<span class="right-a">Edit</span>
 										<span class="right-b">Delete</span>
 									</div>
 								</li>
@@ -559,7 +576,7 @@
 							<ul>
 								<li>02/20/2019
 									<div class="top-right">
-										<span class="right-a"><a href="editevents.html">Edit</a></span>
+										<span class="right-a">Edit</span>
 										<span class="right-b">Delete</span>
 									</div>
 								</li>
@@ -598,7 +615,43 @@
 			var storage = window.localStorage;
 			if (storage.getItem('username') === 'admin') {
 				$(".Add-top").css("display", "block")
-				$(".top-right").css("display", "block")
+				$(".top-right").css("display", "block")							
+				$(".right-a").click(function () { 
+					var val = $(this).parents('ul').find('li');
+					var saveButton = `<span class="saveChange">Save</span>`;
+					val.each(function (index,item) { 					
+						if($(item).find('.top-right')){
+							$(item).find('.top-right').remove();	
+						}
+						var value = $(item).text().trim();
+						var inp = `<input type="text" style="width:80%" value="${value}"/>`;										
+						$(item).empty().append(inp)
+					 })
+					 val.parent().append(saveButton)
+					
+				
+					
+					// $(this).parents('ul').insertAfter(saveButton)
+					// $(this).parents('ul').find('li').empty();
+
+					// <ul>
+					// 	<li>02/17/2019
+					// 		<div class="top-right">
+					// 			<span class="right-a">Edit</span>
+					// 			<span class="right-b">Delete</span>
+					// 		</div>
+					// 	</li>
+
+					// 	<li>
+					// 		Clubhouse Booking (Confirmed) Priya Balijepalli
+					// 	</li>
+					// 	<li>Location: Clubhouse</li>
+					// 	<li>
+					// 		Event Added By:Geeta Chavan
+					// 	</li>
+					// </ul>
+				
+				 })
 				$(".right-b").click(function () {
 					deleteLog()
 				})
