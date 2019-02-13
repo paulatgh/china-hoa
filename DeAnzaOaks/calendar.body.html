@@ -1,0 +1,113 @@
+    <div class="db1">
+        <div class="notes">
+            <p class="return"><img src="img/Bounced.png" alt="Bounced"></p>
+            <h3 class="notes-h3">Leave a Note</h3>
+            <textarea name="" id="" cols="30" rows="10" placeholder="No more than 100 words" maxlength="100"></textarea>
+            <input type="button" value="Submit">
+        </div>
+    </div>
+    <!-- 头部 -->
+    <div class="header" style="box-shadow:0px 2px 7px 0px rgba(0,0,0,0.5);
+    border:1px solid rgba(151,151,151,1)">
+        <div class="w1200" style="height: 0">
+            <a class="logo" href="index.html">
+                <img src="img/Combined Shape.png" alt="Combined Shape">
+                De Anza Oaks
+            </a>
+            <input type="text" placeholder="Search..." style="width: 188px;height: 37px;position: relative;top: 30px;left: 540px;border: solid 1px #393D44;padding-left: 10px;">
+
+            <div class="btns clearfix">
+                <img src="img/Shape.png" alt="Shape" style="position: relative;left: -140px;top: 40px;z-index: 100000;">
+                <img src="img/dropdown.png" alt="dropdown" style="position: relative;left: -50px;top: 36px;z-index: 100000;">
+                <a class="btns-search" href="javascript:;"> </a>
+                <a class="btns-language" href="javascript:;"></a>
+                <div class="langOv">
+                    <div class="profile">
+                        <a href="saveFile.html" style="border-bottom: 1px solid white;width: 100%;margin-left: -1px">My
+                            Profile</a>
+                        <a href="javascript:;" class="logout">Log Out</a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li class="curr">
+                        <a class="on" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About us</a>
+                    </li>
+                </ul>
+                <span class="navline"></span>
+            </div>
+        </div>
+        <!-- 二级导航背景 -->
+        <div class="innavbg"></div>
+        <div class="mask"></div>
+        <!-- 侧边栏 -->
+        <script src="js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="js/header.js"></script>
+        <script type="text/javascript">
+            var loc = window.location.href.toLowerCase();
+
+            $('.nav li a').each(function (i) {
+                if ($(this).attr("href") == "/") {
+                    $(this).parent("li").addClass("curr").siblings("li").removeClass("curr");
+                    return false;
+                } else if (loc.indexOf($(this).attr("href").replace(/\..*/, "")) > 0) {
+                    $(this).parent("li").addClass("curr").siblings("li").removeClass("curr");
+                    return false;
+                }
+            });
+        </script>
+
+
+        <script type="text/javascript" src="js/list=hk02007.js" charset="gb2312"></script>
+    </div>
+    <!-- 主体 -->
+    <div class="main">
+
+        <div class="main-top" style="margin-bottom: 35px;height: 100%;">
+
+            <div class="w1200 pr">
+                <ul class="breadcrumb">
+                    <li><a href="index.html" rel="noopener noreferrer">Home</a></li>
+                    <li><span rel="noopener noreferrer" style="color:rgba(30,130,23,1)"> > </span></li>
+                    <li><a href="events.html" rel="noopener noreferrer">Events</a></li>
+                    <li><span rel="noopener noreferrer" style="color:rgba(30,130,23,1)"> > </span></li>
+                    <li><a href="#" rel="noopener noreferrer"> Events Calendar</a></li>
+                </ul>
+                <div class="Add-top">
+                    <span class="Add-top-a"><a href="addnewevents.html">Add</a></span>
+                </div>
+                <div class="main-left" style="width:100%;height: 100%;">
+                    <div class="main-right-content" style="width:100%;height: 626px;display: flex;justify-content: space-between">
+                        <div id="calendar" class="calendar"></div>
+                        <div id="calendar_events" class="calendar-right">
+                            <script id="event_template" type="txt/template">
+                                <ul>
+                                    <li>{{date}}
+                                        <div class="top-right">
+                                            <span class="right-a"><a href="calendar/event/edit.html?id={{id}}">Edit</a></span>
+                                            <span class="right-b"><a href="calendar/event/delete.html?id={{id}}">Delete</a></span>
+                                        </div>
+                                    </li>
+                                    <li>{{title}}</li>
+                                    <li>Location:&nbsp;{{location}}</li>
+                                    <li>
+                                        Event Added By:&nbsp;{{host}}
+                                    </li>
+                                </ul>
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <div class="footer">
+        <p>
+            Copyright © 2019 Tellus, Inc. All Rights Reserved.
+        </p>
+    </div>
