@@ -2,660 +2,561 @@
 <html lang="en">
 
 <head>
-	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<!-- <meta http-equiv="X-UA-Compatible" content="IE=8" /> -->
-	<link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=8" /> -->
+    <link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
 
-	<title>De Anza Oaks</title>
-	<link rel="stylesheet" type="text/css" href="css/animate.css">
-	<link rel="stylesheet" type="text/css" href="css/aos.css">
-	<link rel="stylesheet" type="text/css" href="css/masterslider.main.css">
-	<link rel="stylesheet" type="text/css" href="css/ms-skin-sample.css">
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/public.css">
+    <title>De Anza Oaks</title>
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/aos.css">
+    <link rel="stylesheet" type="text/css" href="css/masterslider.main.css">
+    <link rel="stylesheet" type="text/css" href="css/ms-skin-sample.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/public.css">
 
-	<!-- 日历插件 -->
-	<link rel="stylesheet" href="css/calendar.css">
+    <!-- 日历插件 -->
+    <link rel="stylesheet" href="css/calendar.css">
 
-	<style>
-		.main {
-			height: 1150px;
-			;
-		}
+    <style>
+        .main {
+            height: 1150px;
+            ;
+        }
 
-		.main-left-content {
-			width: 421px;
-			height: 225px;
-			box-shadow: 0 0 8px;
-			margin-top: 15px;
-		}
+        .main-left-content {
+            width: 421px;
+            height: 225px;
+            box-shadow: 0 0 8px;
+            margin-top: 15px;
+        }
 
-		.main-right-content {
-			width: 759px;
-			height: 225px;
-		}
+        .main-right-content {
+            width: 759px;
+            height: 225px;
+        }
 
-		.calendar {
-			width: 695px;
-			box-sizing: border-box;
-			padding: 50px;
-			box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.24);
-		}
+        .calendar {
+            width: 695px;
+            box-sizing: border-box;
+            padding: 50px;
+            box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.24);
+        }
 
-		.calendar-title .arrow {
-			top: 10px;
-			width: 90px;
-			right: 17px;
-		}
+        .calendar-title .arrow {
+            top: 10px;
+            width: 90px;
+            right: 17px;
+        }
 
-		.calendar-title .arrow span {
-			font-size: 40px;
-		}
+        .calendar-title .arrow span {
+            font-size: 40px;
+        }
 
-		.calendar-right {
-			width: 476px;
-			height: 100%;
-			box-sizing: border-box;
-			display: flex;
-			flex-wrap: wrap;
-			overflow: overlay;
-		}
+        .calendar-right {
+            width: 476px;
+            height: 100%;
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+            overflow: overlay;
+        }
 
-		.calendar-title {
-			padding: 10px 0;
-		}
+        .calendar-title {
+            padding: 10px 0;
+        }
 
-		.calendar-right::-webkit-scrollbar {
-			display: none;
-		}
+        .calendar-right::-webkit-scrollbar {
+            display: none;
+        }
 
-		.calendar-right ul {
-			width: 100%;
-			background: #F1F1F1;
-			padding: 6px 16px;
-			box-sizing: border-box;
-			position: relative;
-		}
+        .calendar-right ul {
+            width: 100%;
+            background: #F1F1F1;
+            padding: 6px 16px;
+            box-sizing: border-box;
+            position: relative;
+        }
 
-		/*  */
-		.calendar-right ul:nth-child(4) {
-			margin-bottom: 0;
-		}
+        /*  */
+        .calendar-right ul:nth-child(4) {
+            margin-bottom: 0;
+        }
 
-		/*  */
+        /*  */
 
-		.calendar-right ul:nth-child(2n) {
-			background: #6AA666;
-		}
+        .calendar-right ul:nth-child(2n) {
+            background: #6AA666;
+        }
 
-		.calendar-right ul:nth-child(2n) li {
-			color: #ffffff;
-		}
+        .calendar-right ul:nth-child(2n) li {
+            color: #ffffff;
+        }
 
-		.calendar-right ul li {
-			height: 32px;
-			line-height: 32px;
-			font-size: 16px;
-			font-family: PingFangSC-Regular;
-		}
+        .calendar-right ul li {
+            height: 32px;
+            line-height: 32px;
+            font-size: 16px;
+            font-family: PingFangSC-Regular;
+        }
 
-		.calendar-week {
-			padding: 20px 10px 10px;
-			border: 0;
-		}
+        .calendar-week {
+            padding: 20px 10px 10px;
+            border: 0;
+        }
 
-		.calendar-date {
-			padding: 10px;
-		}
+        .calendar-date {
+            padding: 10px;
+        }
 
-		.calendar-week .item {
-			width: 39px;
-			height: 40px;
-			font-size: 27px;
-			margin-right: 50px;
-			text-align: center;
-			color: rgba(52, 72, 94, 0.54);
-		}
+        .calendar-week .item {
+            width: 39px;
+            height: 40px;
+            font-size: 27px;
+            margin-right: 50px;
+            text-align: center;
+            color: rgba(52, 72, 94, 0.54);
+        }
 
-		.calendar-week li:last-child {
-			margin-right: 0;
-		}
+        .calendar-week li:last-child {
+            margin-right: 0;
+        }
 
-		.calendar-date .item {
-			width: 39px;
-			height: 40px;
-			font-size: 25px;
-			color: #E1E4E7;
-			margin: 20px 50px 0 0;
-		}
+        .calendar-date .item {
+            width: 39px;
+            height: 40px;
+            font-size: 25px;
+            color: #E1E4E7;
+            margin: 20px 50px 0 0;
+        }
 
-		.calendar-date .item.item-curMonth.active-red {
-			border: 1px solid red;
-			box-sizing: border-box;
-		}
+        .calendar-date .item.item-curMonth.active-red {
+            border: 1px solid red;
+            box-sizing: border-box;
+        }
 
-		.calendar-date .item:nth-child(7n+7) {
-			margin-right: 0;
-		}
+        .calendar-date .item:nth-child(7n+7) {
+            margin-right: 0;
+        }
 
-		.calendar-date .item-curMonth {
-			color: #7C86A2;
-		}
+        .calendar-date .item-curMonth {
+            color: #7C86A2;
+        }
 
-		.calendar-date .item-curDay {
-			background: #6AA666;
-		}
+        .calendar-date .item-curDay {
+            background: #6AA666;
+        }
 
-		.breadcrumb {
-			width: 100%;
-			height: 75px;
-		}
+        .breadcrumb {
+            width: 100%;
+            height: 75px;
+        }
 
-		.breadcrumb li {
-			float: left;
-			margin-right: 10px;
-			font-size: 20px;
-			font-family: OpenSans-Regular;
-			font-weight: 400;
-			line-height: 75px;
-		}
+        .breadcrumb li {
+            float: left;
+            margin-right: 10px;
+            font-size: 20px;
+            font-family: OpenSans-Regular;
+            font-weight: 400;
+            line-height: 75px;
+        }
 
-		.breadcrumb li a {
-			color: rgba(30, 130, 23, 1);
-		}
+        .breadcrumb li a {
+            color: rgba(30, 130, 23, 1);
+        }
 
-		.calendar-right .tips {
-			width: 103px;
-			height: 144px;
-			/* display:none; */
-			position: absolute;
-			top: 0;
-			right: 0;
-		}
+        .calendar-right .tips {
+            width: 103px;
+            height: 144px;
+            /* display:none; */
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
 
-		.calendar-right .tips ul {
-			padding: 10px 0;
-			background: rgba(0, 0, 0, 0.6) !important;
-		}
+        .calendar-right .tips ul {
+            padding: 10px 0;
+            background: rgba(0, 0, 0, 0.6) !important;
+        }
 
-		.calendar-right .tips ul li {
-			height: 24px;
-			margin-bottom: 8px;
-			text-align: center;
-		}
+        .calendar-right .tips ul li {
+            height: 24px;
+            margin-bottom: 8px;
+            text-align: center;
+        }
 
-		.calendar-right .tips a {
-			display: inline-block;
-			height: 24px;
-			padding: 0 8px;
-			line-height: 24px;
-			font-family: OpenSans-SemiBold;
-			color: rgba(255, 255, 255, 1);
-			border-radius: 14px;
-			border: 1px solid rgba(255, 255, 255, 1);
-		}
+        .calendar-right .tips a {
+            display: inline-block;
+            height: 24px;
+            padding: 0 8px;
+            line-height: 24px;
+            font-family: OpenSans-SemiBold;
+            color: rgba(255, 255, 255, 1);
+            border-radius: 14px;
+            border: 1px solid rgba(255, 255, 255, 1);
+        }
 
-		.tips_hover_yes {
-			border: 1px solid transparent !important;
-			background-color: #6AA666;
-		}
+        .tips_hover_yes {
+            border: 1px solid transparent !important;
+            background-color: #6AA666;
+        }
 
-		.tips_hover_no {
-			border: 1px solid transparent !important;
-			background-color: #F94B5A;
-		}
+        .tips_hover_no {
+            border: 1px solid transparent !important;
+            background-color: #F94B5A;
+        }
 
-		.tips_hover_maybe {
-			border: 1px solid transparent !important;
-			background-color: #F5A623;
-		}
+        .tips_hover_maybe {
+            border: 1px solid transparent !important;
+            background-color: #F5A623;
+        }
 
-		.tips_hover_notes {
-			border: 1px solid transparent !important;
-			background-color: #393D44;
-		}
+        .tips_hover_notes {
+            border: 1px solid transparent !important;
+            background-color: #393D44;
+        }
 
-		.db1 {
-			width: 100%;
-			height: 100%;
-			display: none;
-			background: rgba(0, 0, 0, 0.4);
-			position: fixed;
-			top: 0;
-			z-index: 1000;
-		}
+        .db1 {
+            width: 100%;
+            height: 100%;
+            display: none;
+            background: rgba(0, 0, 0, 0.4);
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
 
-		.notes {
-			width: 330px;
-			height: 430px;
-			background: rgba(255, 255, 255, 1);
-			border-radius: 7px;
-			position: fixed;
-			top: 30%;
-			left: 40%;
-			z-index: 1001;
-			/* display: block; */
-		}
+        .notes {
+            width: 330px;
+            height: 430px;
+            background: rgba(255, 255, 255, 1);
+            border-radius: 7px;
+            position: fixed;
+            top: 30%;
+            left: 40%;
+            z-index: 1001;
+            /* display: block; */
+        }
 
-		.notes-h3 {
-			margin-top: 0;
-			font-size: 26px;
-			font-weight: 500;
-			color: rgba(57, 61, 68, 1);
-			line-height: 77px;
-			text-align: center;
-			height: 77px;
-		}
+        .notes-h3 {
+            margin-top: 0;
+            font-size: 26px;
+            font-weight: 500;
+            color: rgba(57, 61, 68, 1);
+            line-height: 77px;
+            text-align: center;
+            height: 77px;
+        }
 
-		.notes textarea {
-			background: #F5F8F9;
-			margin-left: 33px;
-			border: none;
-			width: 260px;
-			height: 257px;
-			padding: 19px 16px;
-			box-sizing: border-box;
-		}
+        .notes textarea {
+            background: #F5F8F9;
+            margin-left: 33px;
+            border: none;
+            width: 260px;
+            height: 257px;
+            padding: 19px 16px;
+            box-sizing: border-box;
+        }
 
-		.notes input {
-			display: inline-block;
-			border: none;
-			width: 260px;
-			height: 42px;
-			margin-left: 33px;
-			margin-top: 24px;
-			background: #6AA666;
-			border-radius: 4px;
-			color: #ffffff;
-			font-size: 16px;
-		}
+        .notes input {
+            display: inline-block;
+            border: none;
+            width: 260px;
+            height: 42px;
+            margin-left: 33px;
+            margin-top: 24px;
+            background: #6AA666;
+            border-radius: 4px;
+            color: #ffffff;
+            font-size: 16px;
+        }
 
-		.notes textarea::-webkit-input-placeholder {
-			color: #889399;
-		}
+        .notes textarea::-webkit-input-placeholder {
+            color: #889399;
+        }
 
-		.Add-top {
-			width: 100%;
-			margin-bottom: 11px;
-			display: none;
-		}
+        .Add-top {
+            width: 100%;
+            margin-bottom: 11px;
+            display: none;
+        }
 
-		.Add-top-a {
-			width: 90px;
-			height: 40px;
-			display: inline-block;
-			background: rgba(106, 166, 102, 1);
-			border-radius: 20px;
-			text-align: center;
-			font-size: 16px;
-			font-family: OpenSans-Regular;
-			font-weight: 400;
-			color: rgba(255, 255, 255, 1);
-			line-height: 40px;
-		}
+        .Add-top-a {
+            width: 90px;
+            height: 40px;
+            display: inline-block;
+            background: rgba(106, 166, 102, 1);
+            border-radius: 20px;
+            text-align: center;
+            font-size: 16px;
+            font-family: OpenSans-Regular;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 1);
+            line-height: 40px;
+        }
 
-		.Add-top-a a {
-			color: white;
-		}
+        .Add-top-a a {
+            color: white;
+        }
 
-		.Add-top-a:hover {
-			color: white;
-		}
+        .Add-top-a:hover {
+            color: white;
+        }
 
-		.top-right {
-			width: 91px;
-			float: right;
-			display: none;
-		}
+        .top-right {
+            width: 91px;
+            float: right;
+            display: none;
+        }
 
-		.calendar-right ul:nth-child(odd) .top-right a {
-			color: #6AA666;
-		}
+        .calendar-right ul:nth-child(odd) .top-right a {
+            color: #6AA666;
+        }
 
-		.calendar-right ul:nth-child(even) .top-right a {
-			color: white;
-		}
+        .calendar-right ul:nth-child(even) .top-right a {
+            color: white;
+        }
 
-		.calendar-right ul:nth-child(2n) .right-a,
-		.calendar-right ul:nth-child(2n) .right-b {
-			color: #ffffff;
-		}
+        .calendar-right ul:nth-child(2n) .right-a,
+        .calendar-right ul:nth-child(2n) .right-b {
+            color: #ffffff;
+        }
 
-		.top-right span {
-			color: rgba(106, 166, 102, 1);
-			display: inline-block;
-			margin-right: 7px;
-			font-size: 16px;
-			font-family: OpenSans-Regular;
-			font-weight: 400;
-			line-height: 22px;
-		}
+        .top-right span {
+            color: rgba(106, 166, 102, 1);
+            display: inline-block;
+            margin-right: 7px;
+            font-size: 16px;
+            font-family: OpenSans-Regular;
+            font-weight: 400;
+            line-height: 22px;
+        }
 
-		.top-right span:nth-child(2) {
-			margin-right: 0;
-		}
+        .top-right span:nth-child(2) {
+            margin-right: 0;
+        }
 
-		.right-b {
-			cursor: pointer;
-		}
-	</style>
+        .right-b {
+            cursor: pointer;
+        }
+    </style>
 
 </head>
 
 <body>
-	<div class="db1">
-		<div class="notes">
-			<p class="return"><img src="img/Bounced.png" alt="Bounced"></p>
-			<h3 class="notes-h3">Leave a Note</h3>
-			<textarea name="" id="" cols="30" rows="10" placeholder="No more than 100 words" maxlength="100"></textarea>
-			<input type="button" value="Submit">
-		</div>
-	</div>
-	<!-- 头部 -->
-	<div class="header" style="box-shadow:0px 2px 7px 0px rgba(0,0,0,0.5);
-	border:1px solid rgba(151,151,151,1)">
-		<div class="w1200" style="height: 0">
-			<a class="logo" href="index.html">
-				<img src="img/Combined Shape.png" alt="Combined Shape">
-				De Anza Oaks
-			</a>
-			<input type="text" placeholder="Search..."
-				style="width: 188px;height: 37px;position: relative;top: 30px;left: 540px;border: solid 1px #393D44;padding-left: 10px;">
+    <div class="db1">
+        <div class="notes">
+            <p class="return"><img src="img/Bounced.png" alt="Bounced"></p>
+            <h3 class="notes-h3">Leave a Note</h3>
+            <textarea name="" id="" cols="30" rows="10" placeholder="No more than 100 words" maxlength="100"></textarea>
+            <input type="button" value="Submit">
+        </div>
+    </div>
+    <!-- 头部 -->
+    <div class="header" style="box-shadow:0px 2px 7px 0px rgba(0,0,0,0.5);
+    border:1px solid rgba(151,151,151,1)">
+        <div class="w1200" style="height: 0">
+            <a class="logo" href="index.html">
+                <img src="img/Combined Shape.png" alt="Combined Shape">
+                De Anza Oaks
+            </a>
+            <input type="text" placeholder="Search..." style="width: 188px;height: 37px;position: relative;top: 30px;left: 540px;border: solid 1px #393D44;padding-left: 10px;">
 
-			<div class="btns clearfix">
-				<img src="img/Shape.png" alt="Shape" style="position: relative;left: -140px;top: 40px;z-index: 100000;">
-				<img src="img/dropdown.png" alt="dropdown"
-					style="position: relative;left: -50px;top: 36px;z-index: 100000;">
-				<a class="btns-search" href="javascript:;"> </a>
-				<a class="btns-language" href="javascript:;"></a>
-				<div class="langOv">
-					<div class="profile">
-						<a href="saveFile.html" style="border-bottom: 1px solid white;width: 100%;margin-left: -1px">My
-							Profile</a>
-						<a href="javascript:;" class="logout">Log Out</a>
-					</div>
-				</div>
-			</div>
-			<div class="nav">
-				<ul>
-					<li class="curr">
-						<a class="on" href="index.html">Home</a>
-					</li>
-					<li>
-						<a href="about.html">About us</a>
-					</li>
-				</ul>
-				<span class="navline"></span>
-			</div>
-		</div>
-		<!-- 二级导航背景 -->
-		<div class="innavbg"></div>
-		<div class="mask"></div>
-		<!-- 侧边栏 -->
-		<script src="js/jquery-1.11.0.min.js"></script>
-		<script type="text/javascript" src="js/header.js"></script>
-		<script type="text/javascript">
-			var loc = window.location.href.toLowerCase();
+            <div class="btns clearfix">
+                <img src="img/Shape.png" alt="Shape" style="position: relative;left: -140px;top: 40px;z-index: 100000;">
+                <img src="img/dropdown.png" alt="dropdown" style="position: relative;left: -50px;top: 36px;z-index: 100000;">
+                <a class="btns-search" href="javascript:;"> </a>
+                <a class="btns-language" href="javascript:;"></a>
+                <div class="langOv">
+                    <div class="profile">
+                        <a href="saveFile.html" style="border-bottom: 1px solid white;width: 100%;margin-left: -1px">My
+                            Profile</a>
+                        <a href="javascript:;" class="logout">Log Out</a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li class="curr">
+                        <a class="on" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About us</a>
+                    </li>
+                </ul>
+                <span class="navline"></span>
+            </div>
+        </div>
+        <!-- 二级导航背景 -->
+        <div class="innavbg"></div>
+        <div class="mask"></div>
+        <!-- 侧边栏 -->
+        <script src="js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="js/header.js"></script>
+        <script type="text/javascript">
+            var loc = window.location.href.toLowerCase();
 
-			$('.nav li a').each(function (i) {
-				if ($(this).attr("href") == "/") {
-					$(this).parent("li").addClass("curr").siblings("li").removeClass("curr");
-					return false;
-				} else if (loc.indexOf($(this).attr("href").replace(/\..*/, "")) > 0) {
-					$(this).parent("li").addClass("curr").siblings("li").removeClass("curr");
-					return false;
-				}
-			});
-		</script>
+            $('.nav li a').each(function (i) {
+                if ($(this).attr("href") == "/") {
+                    $(this).parent("li").addClass("curr").siblings("li").removeClass("curr");
+                    return false;
+                } else if (loc.indexOf($(this).attr("href").replace(/\..*/, "")) > 0) {
+                    $(this).parent("li").addClass("curr").siblings("li").removeClass("curr");
+                    return false;
+                }
+            });
+        </script>
 
 
-		<script type="text/javascript" src="js/list=hk02007.js" charset="gb2312"></script>
-	</div>
-	<!-- 主体 -->
-	<div class="main">
+        <script type="text/javascript" src="js/list=hk02007.js" charset="gb2312"></script>
+    </div>
+    <!-- 主体 -->
+    <div class="main">
 
-		<div class="main-top" style="margin-bottom: 35px;height: 100%;">
+        <div class="main-top" style="margin-bottom: 35px;height: 100%;">
 
-			<div class="w1200 pr">
-				<ul class="breadcrumb">
-					<li><a href="index.html" rel="noopener noreferrer">Home</a></li>
-					<li><span rel="noopener noreferrer" style="color:rgba(30,130,23,1)"> > </span></li>
-					<li><a href="events.html" rel="noopener noreferrer">Events</a></li>
-					<li><span rel="noopener noreferrer" style="color:rgba(30,130,23,1)"> > </span></li>
-					<li><a href="#" rel="noopener noreferrer"> Events Calendar</a></li>
-				</ul>
-				<div class="Add-top">
-					<span class="Add-top-a"><a href="addnewevents.html">Add</a></span>
-				</div>
-				<div class="main-left" style="width:100%;height: 100%;">
-					<div class="main-right-content"
-						style="width:100%;height: 626px;display: flex;justify-content: space-between">
-						<div id="calendar" class="calendar"></div>
-						<div class="calendar-right">
-							<ul>
-								<li>02/17/2019
-									<div class="top-right">
-										<span class="right-a"><a href="editevents.html">Edit</a></span>
-										<span class="right-b">Delete</span>
-									</div>
-								</li>
+            <div class="w1200 pr">
+                <ul class="breadcrumb">
+                    <li><a href="index.html" rel="noopener noreferrer">Home</a></li>
+                    <li><span rel="noopener noreferrer" style="color:rgba(30,130,23,1)"> > </span></li>
+                    <li><a href="events.html" rel="noopener noreferrer">Events</a></li>
+                    <li><span rel="noopener noreferrer" style="color:rgba(30,130,23,1)"> > </span></li>
+                    <li><a href="#" rel="noopener noreferrer"> Events Calendar</a></li>
+                </ul>
+                <div class="Add-top">
+                    <span class="Add-top-a"><a href="addnewevents.html">Add</a></span>
+                </div>
+                <div class="main-left" style="width:100%;height: 100%;">
+                    <div class="main-right-content" style="width:100%;height: 626px;display: flex;justify-content: space-between">
+                        <div id="calendar" class="calendar"></div>
+                        <div id="calendar_events" class="calendar-right">
+                            <script id="event_template" type="txt/template">
+                                <ul>
+                                    <li>{{date}}
+                                        <div class="top-right">
+                                            <span class="right-a"><a href="calendar/event/edit.html?id={{id}}">Edit</a></span>
+                                            <span class="right-b"><a href="calendar/event/delete.html?id={{id}}">Delete</a></span>
+                                        </div>
+                                    </li>
+                                    <li>{{title}}</li>
+                                    <li>Location:&nbsp;{{location}}</li>
+                                    <li>
+                                        Event Added By:&nbsp;{{host}}
+                                    </li>
+                                </ul>
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <div class="footer">
+        <p>
+            Copyright © 2019 Tellus, Inc. All Rights Reserved.
+        </p>
+    </div>
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/aos.js"></script>
+    <script type="text/javascript" src="js/masterslider.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <!-- <script type="text/javascript" src="js/public.js"></script> -->
+    <!-- 日历插件 -->
+    <script src="https://cdn.bootcss.com/jquery/3.3.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+    <script src="js/calendar.js"></script>
+    <script type="text/javascript" src="js/public.js"></script>
+    <script>
+        var data = {
+            events: [{
+                id: 1,
+                title: "Clubhouse Booking (Confirmed) Priya Balijepalli",
+                location: "Clubhouse",
+                host: "Geeta Chavan",
+                date: "2019-02-20"
+            }, {
+                id: 2,
+                title: "Playground Booking (Confirmed) Priya Balijepalli",
+                location: "Playground",
+                host: "Geeta Chavan",
+                date: "2019-02-22"
+            }]
+        };
+    </script>
+    <script>
+        var event_template = $('#event_template').html();
+        Mustache.parse(event_template);
+        $.each(data.events, function() {
+            $('#calendar_events').append(Mustache.render(event_template, this));
+        });
+    </script>
+    <script>
+        $(function () {
+            // admin
+            var storage = window.localStorage;
+            if (storage.getItem('username') === 'admin') {
+                $(".Add-top").css("display", "block")
+                $(".top-right").css("display", "block")
+                $(".right-b").click(function () {
+                    deleteLog()
+                })
+            } else {
+                var str =
+                    `<li class="tips">
+                        <ul>
+                            <li><a href="#" class="Yes">Yes</a></li>
+                            <li><a href="#" class="No">No</a></li>
+                            <li><a href="#" class="Maybe">Maybe</a></li>
+                            <li><a class="Notes">Notes</a></li>
+                        </ul>					
+                    </li>`;
+                $('.calendar-right ul').mouseenter(function () {
+                    $(this).append(str)
+                    $('.Yes').hover(function () {
+                        $(this).addClass('tips_hover_yes')
+                    }, function () {
+                        $(this).removeClass('tips_hover_yes')
+                    })
+                    $('.No').hover(function () {
+                        $(this).addClass('tips_hover_no')
+                    }, function () {
+                        $(this).removeClass('tips_hover_no')
+                    })
+                    $('.Maybe').hover(function () {
+                        $(this).addClass('tips_hover_maybe')
+                    }, function () {
+                        $(this).removeClass('tips_hover_maybe')
+                    })
+                    $('.Notes').hover(function () {
+                        $(this).addClass('tips_hover_notes')
+                    }, function () {
+                        $(this).removeClass('tips_hover_notes')
+                    })
+                    $('.Notes').click(function (e) {
+                        $('.db1').show();
+                        return false;
+                    })
+                    $('.return').click(function () {
+                        $('.db1').hide();
+                    })
+                    return false;
+                })
+                $('.calendar-right ul').mouseleave(function () {
+                    $('.tips').remove()
+                })
 
-								<li>
-									Clubhouse Booking (Confirmed) Priya Balijepalli
-								</li>
-								<li>Location: Clubhouse</li>
-								<li>
-									Event Added By:Geeta Chavan
-								</li>
-							</ul>
-							<ul>
+            }
 
-								<li>02/17/2019
-									<div class="top-right">
-										<span class="right-a"><a href="editevents.html">Edit</a></span>
-										<span class="right-b">Delete</span>
-									</div>
-								</li>
-								<li>
-									Clubhouse Booking (Confirmed) Priya Balijepalli
-								</li>
-								<li>Location: &nbsp; Clubhouse</li>
-								<li>
-									Event Added By: &nbsp;Geeta Chavan
-								</li>
-							</ul>
-							<ul>
-								<li>02/17/2019
-									<div class="top-right">
-										<span class="right-a"><a href="editevents.html">Edit</a></span>
-										<span class="right-b">Delete</span>
-									</div>
-								</li>
-								<li>
-									Clubhouse Booking (Confirmed) Priya Balijepalli
-								</li>
-								<li>Location: &nbsp;Clubhouse</li>
-								<li>
-									Event Added By: &nbsp;Geeta Chavan
-								</li>
-							</ul>
-							<ul>
-								<li>02/17/2019
-									<div class="top-right">
-										<span class="right-a"><a href="editevents.html">Edit</a></span>
-										<span class="right-b">Delete</span>
-									</div>
-								</li>
-								<li>
-									Clubhouse Booking (Confirmed) Priya Balijepalli
-								</li>
-								<li>Location: &nbsp;Clubhouse</li>
-								<li>
-									Event Added By: &nbsp;Geeta Chavan
-								</li>
-							</ul>
-							<ul>
-								<li>02/17/2019
-									<div class="top-right">
-										<span class="right-a"><a href="editevents.html">Edit</a></span>
-										<span class="right-b">Delete</span>
-									</div>
-								</li>
-								<li>
-									Clubhouse Booking (Confirmed) Priya Balijepalli
-								</li>
-								<li>Location: &nbsp;Clubhouse</li>
-								<li>
-									Event Added By: &nbsp;Geeta Chavan
-								</li>
-							</ul>
-							<ul>
-								<li>02/17/2019
-									<div class="top-right">
-										<span class="right-a"><a href="editevents.html">Edit</a></span>
-										<span class="right-b">Delete</span>
-									</div>
-								</li>
-								<li>
-									Clubhouse Booking (Confirmed) Priya Balijepalli
-								</li>
-								<li>Location: &nbsp;Clubhouse</li>
-								<li>
-									Event Added By: &nbsp;Geeta Chavan
-								</li>
-							</ul>
-							<ul>
-								<li>02/20/2019
-									<div class="top-right">
-										<span class="right-a"><a href="editevents.html">Edit</a></span>
-										<span id="right-b">Delete</span>
-									</div>
-								</li>
-								<li>
-									Clubhouse Booking (Confirmed) Priya Balijepalli
-								</li>
-								<li>Location: &nbsp;Clubhouse</li>
-								<li>
-									Event Added By: &nbsp;Geeta Chavan
-								</li>
-							</ul>
-							<ul>
-								<li>02/20/2019
-									<div class="top-right">
-										<span class="right-a"><a href="editevents.html">Edit</a></span>
-										<span class="right-b">Delete</span>
-									</div>
-								</li>
-								<li>
-									Clubhouse Booking (Confirmed) Priya Balijepalli
-								</li>
-								<li>Location: &nbsp;Clubhouse</li>
-								<li>
-									Event Added By: &nbsp;Geeta Chavan
-								</li>
-							</ul>
-							<ul>
-								<li>02/20/2019
-									<div class="top-right">
-										<span class="right-a"><a href="editevents.html">Edit</a></span>
-										<span class="right-b">Delete</span>
-									</div>
-								</li>
-								<li>
-									Clubhouse Booking (Confirmed) Priya Balijepalli
-								</li>
-								<li>Location: &nbsp;Clubhouse</li>
-								<li>
-									Event Added By: &nbsp;Geeta Chavan
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- 底部 -->
-	<div class="footer">
-		<p>
-			Copyright © 2019 Tellus, Inc. All Rights Reserved.
-		</p>
-	</div>
-	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-	<script type="text/javascript" src="js/aos.js"></script>
-	<script type="text/javascript" src="js/masterslider.min.js"></script>
-	<script type="text/javascript" src="js/index.js"></script>
-	<!-- <script type="text/javascript" src="js/public.js"></script> -->
-	<!-- 日历插件 -->
-	<script src="https://cdn.bootcss.com/jquery/3.3.0/jquery.min.js"></script>
-	<script src="js/calendar.js"></script>
-	<script type="text/javascript" src="js/public.js"></script>
-	<script>
-		$(function () {
-			// admin
-			var storage = window.localStorage;
-			if (storage.getItem('username') === 'admin') {
-				$(".Add-top").css("display", "block")
-				$(".top-right").css("display", "block")
-				$(".right-b").click(function () {
-					deleteLog()
-				})
-			} else {
-				var str = `<li class="tips">
-						<ul>
-							<li><a href="#" class="Yes">Yes</a></li>
-							<li><a href="#" class="No">No</a></li>
-							<li><a href="#" class="Maybe">Maybe</a></li>
-							<li><a class="Notes">Notes</a></li>
-						</ul>					
-					</li>`;
-				$('.calendar-right ul').mouseenter(function () {
-					$(this).append(str)
-					$('.Yes').hover(function () {
-						$(this).addClass('tips_hover_yes')
-					}, function () {
-						$(this).removeClass('tips_hover_yes')
-					})
-					$('.No').hover(function () {
-						$(this).addClass('tips_hover_no')
-					}, function () {
-						$(this).removeClass('tips_hover_no')
-					})
-					$('.Maybe').hover(function () {
-						$(this).addClass('tips_hover_maybe')
-					}, function () {
-						$(this).removeClass('tips_hover_maybe')
-					})
-					$('.Notes').hover(function () {
-						$(this).addClass('tips_hover_notes')
-					}, function () {
-						$(this).removeClass('tips_hover_notes')
-					})
-					$('.Notes').click(function (e) {
-						$('.db1').show();
-						return false;
-					})
-					$('.return').click(function () {
-						$('.db1').hide();
-					})
-					return false;
-				})
-				$('.calendar-right ul').mouseleave(function () {
-					$('.tips').remove()
-				})
-
-			}
-
-			var username = storage.getItem('username')
-			$(".btns-language").text(username);
-			$('.logout').click(function () {
-				window.localStorage.setItem('username', '')
-				window.location.href = "http://tfire.net/index.html"
-			})
-		})
-	</script>
+            var username = storage.getItem('username')
+            $(".btns-language").text(username);
+            $('.logout').click(function () {
+                window.localStorage.setItem('username', '')
+                window.location.href = "http://tfire.net/index.html"
+            })
+        })
+    </script>
 
 
 </body>
