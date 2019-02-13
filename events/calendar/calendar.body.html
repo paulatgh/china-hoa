@@ -1,6 +1,6 @@
 <div class="db1">
     <div class="notes">
-        <p class="return"><img src="img/Bounced.png" alt="Bounced"></p>
+        <p class="return"><img src="../img/Bounced.png" alt="Bounced"></p>
         <h3 class="notes-h3">Leave a Note</h3>
         <textarea name="" id="" cols="30" rows="10" placeholder="No more than 100 words" maxlength="100"></textarea>
         <input type="button" value="Submit">
@@ -11,14 +11,14 @@
     border:1px solid rgba(151,151,151,1)">
     <div class="w1200" style="height: 0">
         <a class="logo" href="index.html">
-            <img src="img/Combined Shape.png" alt="Combined Shape">
+            <img src="../../img/Combined Shape.png" alt="Combined Shape">
             De Anza Oaks
         </a>
         <input type="text" placeholder="Search..." style="width: 188px;height: 37px;position: relative;top: 30px;left: 540px;border: solid 1px #393D44;padding-left: 10px;">
 
         <div class="btns clearfix">
-            <img src="img/Shape.png" alt="Shape" style="position: relative;left: -140px;top: 40px;z-index: 100000;">
-            <img src="img/dropdown.png" alt="dropdown" style="position: relative;left: -50px;top: 36px;z-index: 100000;">
+            <img src="../../img/Shape.png" alt="Shape" style="position: relative;left: -140px;top: 40px;z-index: 100000;">
+            <img src="../../img/dropdown.png" alt="dropdown" style="position: relative;left: -50px;top: 36px;z-index: 100000;">
             <a class="btns-search" href="javascript:;"> </a>
             <a class="btns-language" href="javascript:;"></a>
             <div class="langOv">
@@ -41,28 +41,6 @@
             <span class="navline"></span>
         </div>
     </div>
-    <!-- 二级导航背景 -->
-    <div class="innavbg"></div>
-    <div class="mask"></div>
-    <!-- 侧边栏 -->
-    <script src="js/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="js/header.js"></script>
-    <script type="text/javascript">
-        var loc = window.location.href.toLowerCase();
-
-        $('.nav li a').each(function (i) {
-            if ($(this).attr("href") == "/") {
-                $(this).parent("li").addClass("curr").siblings("li").removeClass("curr");
-                return false;
-            } else if (loc.indexOf($(this).attr("href").replace(/\..*/, "")) > 0) {
-                $(this).parent("li").addClass("curr").siblings("li").removeClass("curr");
-                return false;
-            }
-        });
-    </script>
-
-
-    <script type="text/javascript" src="js/list=hk02007.js" charset="gb2312"></script>
 </div>
 <!-- 主体 -->
 <div class="main">
@@ -88,8 +66,8 @@
                             <ul>
                                 <li>{{date}}
                                     <div class="top-right">
-                                        <span class="right-a"><a href="events/edit.html?id={{id}}">Edit</a></span>
-                                        <span class="right-b"><a href="events/delete.html?id={{id}}">Delete</a></span>
+                                        <span class="right-a">Edit</span>
+                                        <span class="right-b">Delete</span>
                                     </div>
                                 </li>
                                 <li>{{title}}</li>
@@ -111,9 +89,8 @@
         Copyright © 2019 Tellus, Inc. All Rights Reserved.
     </p>
 </div>
-
-<script type="text/javascript" src="../js/aos.js"></script>
-<script type="text/javascript" src="../js/masterslider.min.js"></script>
-<script type="text/javascript" src="../js/index.js"></script>
-<script type="text/javascript" src="../js/events/calendar_plugin.js"></script>
-<script type="text/javascript" src="../js/public.js"></script>
+<script type="text/javascript" src="../../js/masterslider.min.js"></script>
+<script type="text/javascript" src="../../js/index.js"></script>
+<script type="text/javascript" src="../../js/events/calendar_plugin.js"></script>
+<script type="text/javascript" src="../../js/public.js"></script>
+<script type="text/javascript" src="../../js/header.js"></script>

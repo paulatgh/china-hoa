@@ -22,7 +22,7 @@
 	<style>
 		.main {
 			height: 1150px;
-			;
+			
 		}
 
 		.main-left-content {
@@ -378,13 +378,11 @@
 				<img src="img/Combined Shape.png" alt="Combined Shape">
 				De Anza Oaks
 			</a>
-			<input type="text" placeholder="Search..."
-				style="width: 188px;height: 37px;position: relative;top: 30px;left: 540px;border: solid 1px #393D44;padding-left: 10px;">
+			<input type="text" placeholder="Search..." style="width: 188px;height: 37px;position: relative;top: 30px;left: 540px;border: solid 1px #393D44;padding-left: 10px;">
 
 			<div class="btns clearfix">
 				<img src="img/Shape.png" alt="Shape" style="position: relative;left: -140px;top: 40px;z-index: 100000;">
-				<img src="img/dropdown.png" alt="dropdown"
-					style="position: relative;left: -50px;top: 36px;z-index: 100000;">
+				<img src="img/dropdown.png" alt="dropdown" style="position: relative;left: -50px;top: 36px;z-index: 100000;">
 				<a class="btns-search" href="javascript:;"> </a>
 				<a class="btns-language" href="javascript:;"></a>
 				<div class="langOv">
@@ -447,8 +445,7 @@
 					<span class="Add-top-a"><a href="addnewevents.html">Add</a></span>
 				</div>
 				<div class="main-left" style="width:100%;height: 100%;">
-					<div class="main-right-content"
-						style="width:100%;height: 626px;display: flex;justify-content: space-between">
+					<div class="main-right-content" style="width:100%;height: 626px;display: flex;justify-content: space-between">
 						<div id="calendar" class="calendar"></div>
 						<div class="calendar-right">
 							<ul>
@@ -615,48 +612,26 @@
 			var storage = window.localStorage;
 			if (storage.getItem('username') === 'admin') {
 				$(".Add-top").css("display", "block")
-				$(".top-right").css("display", "block")							
-				$(".right-a").click(function () { 
+				$(".top-right").css("display", "block")
+				$(".right-a").click(function () {
 					var val = $(this).parents('ul').find('li');
 					var saveButton = `<span class="saveChange">Save</span>`;
-					val.each(function (index,item) { 					
-						if($(item).find('.top-right')){
-							$(item).find('.top-right').remove();	
+					val.each(function (index, item) {
+						if ($(item).find('.top-right')) {
+							$(item).find('.top-right').remove();
 						}
 						var value = $(item).text().trim();
-						var inp = `<input type="text" style="width:80%" value="${value}"/>`;										
+						var inp = `<input type="text" style="width:80%" value="${value}"/>`;
 						$(item).empty().append(inp)
-					 })
-					 val.parent().append(saveButton)
-					
-				
-					
-					// $(this).parents('ul').insertAfter(saveButton)
-					// $(this).parents('ul').find('li').empty();
-
-					// <ul>
-					// 	<li>02/17/2019
-					// 		<div class="top-right">
-					// 			<span class="right-a">Edit</span>
-					// 			<span class="right-b">Delete</span>
-					// 		</div>
-					// 	</li>
-
-					// 	<li>
-					// 		Clubhouse Booking (Confirmed) Priya Balijepalli
-					// 	</li>
-					// 	<li>Location: Clubhouse</li>
-					// 	<li>
-					// 		Event Added By:Geeta Chavan
-					// 	</li>
-					// </ul>
-				
-				 })
+					})
+					val.parent().append(saveButton)
+				})
 				$(".right-b").click(function () {
 					deleteLog()
 				})
 			} else {
-				var str = `<li class="tips">
+				var str =
+					`<li class="tips">
 						<ul>
 							<li><a href="#" class="Yes">Yes</a></li>
 							<li><a href="#" class="No">No</a></li>

@@ -1,6 +1,5 @@
 .main {
-    height: 1150px;
-    ;
+    height: 1150px;   
 }
 
 .main-left-content {
@@ -64,11 +63,11 @@
 
 /*  */
 
-.calendar-right ul:nth-child(2n) {
+.calendar-right ul:nth-child(odd) {
     background: #6AA666;
 }
 
-.calendar-right ul:nth-child(2n) li {
+.calendar-right ul:nth-child(odd) li {
     color: #ffffff;
 }
 
@@ -288,21 +287,16 @@
     display: none;
 }
 
-.calendar-right ul:nth-child(odd) .top-right a {
+.calendar-right ul:nth-child(odd) .top-right span{
     color: #6AA666;
 }
 
-.calendar-right ul:nth-child(even) .top-right a {
+.calendar-right ul:nth-child(odd) .top-right span{
     color: white;
 }
 
-.calendar-right ul:nth-child(2n) .right-a,
-.calendar-right ul:nth-child(2n) .right-b {
-    color: #ffffff;
-}
-
 .top-right span {
-    color: rgba(106, 166, 102, 1);
+    color: rgba(106, 166, 102, 1) ;
     display: inline-block;
     margin-right: 7px;
     font-size: 16px;
@@ -310,6 +304,12 @@
     font-weight: 400;
     line-height: 22px;
 }
+.calendar-right ul:nth-child(odd) .right-a,
+.calendar-right ul:nth-child(odd) .right-b {
+    color: #ffffff;
+}
+
+
 
 .top-right span:nth-child(2) {
     margin-right: 0;
