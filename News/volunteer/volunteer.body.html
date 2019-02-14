@@ -1,0 +1,157 @@
+<!-- 头部 -->
+<div class="header" style="box-shadow:0px 2px 7px 0px rgba(0,0,0,0.5);
+border:1px solid rgba(151,151,151,1)">
+    <div class="w1200" style="height: 0">
+        <a class="logo" href="index.html">
+            <img src="../../img/Combined Shape.png" alt="Combined Shape">
+            De Anza Oaks
+        </a>
+        <input type="text" placeholder="Search..." style="width: 188px;height: 37px;position: relative;top: 30px;left: 540px;border: solid 1px #393D44;padding-left: 10px;">
+
+        <div class="btns clearfix">
+            <img src="../../img/Shape.png" alt="Shape" style="position: relative;left: -140px;top: 40px;z-index: 100000;">
+            <img src="../../img/dropdown.png" alt="dropdown" style="position: relative;left: -50px;top: 36px;z-index: 100000;">
+            <a class="btns-search" href="javascript:;"> </a>
+            <a class="btns-language" href="javascript:;"></a>
+            <div class="langOv">
+                <div class="profile">
+                    <a href="../../saveFile.html" style="border-bottom: 1px solid white;width: 100%;margin-left: -1px">My
+                        Profile</a>
+                    <a href="javascript:;" class="logout">Log Out</a>
+                </div>
+            </div>
+        </div>
+        <div class="nav">
+            <ul>
+                <li class="curr">
+                    <a class="on" href="../../index.html">Home</a>
+                </li>
+                <li class="curr">
+                    <a class="on" href="../../about.html">About us</a>
+                </li>
+                <!-- <li class="curr">
+                    <a class="on" href="downloadFile.html">Docs</a>
+                </li> -->
+            </ul>
+            <span class="navline"></span>
+        </div>
+    </div>
+    <!-- 二级导航背景 -->
+    <div class="innavbg"></div>
+    <div class="mask"></div>
+    <!-- 侧边栏 -->
+   
+    <script type="text/javascript" src="../../js/header.js"></script>
+   
+</div>
+<!-- 主体 -->
+<div class="main">
+    <div class="main-top" style="margin-bottom: 35px;height: 100%;">
+        <div class="w1200 pr" style="height: 100%;">
+            <ul class="breadcrumb">
+                <li><a href="../../index.html" rel="noopener noreferrer">Home</a></li>
+                <li>&nbsp;>&nbsp;</li>
+                <li><a href="../../News/news.html" rel="noopener noreferrer">News</a></li>
+                <li>&nbsp;>&nbsp;</li>
+                <li><a href="#" rel="noopener noreferrer">Volunteer Needs</a></li>
+            </ul>
+            <div class="main-left" style="width:100%;height: 100%;">
+                <h3>Volunteer in De Anza Oaks!</h3>
+                <div class="Volunteer_dec">Volunteering in our community allows it to thrive. There are many
+                    opportunities to lend
+                    your talents within De Anza Oaks. Please consider being an active part of our wonderful
+                    community.</div>
+                <div style="width: 100%;margin-bottom: 16px"><a class="top-Add" href="add.html">Add</a> </div>
+                <div class="calendar-right">
+                    <ul>
+                        <li id="calendar_events">
+                            <script id="event_template" type="txt/template">
+                                <div class="part_1">
+                                        <div class="Volunteer_dec_title" style="font-weight: 600;">{{title}}
+                                        </div>
+                                        <div class="Volunteer_dec_title">
+                                            <h4>Description:</h4>
+                                            <div>{{description}}</div>
+                                        </div>
+                                        <div class="Volunteer_dec_title">
+                                            <h4>{{When}}</h4>
+                                                <div>{{time}}</div>
+                                            </div>
+                                            <div class="Volunteer_dec_title">
+                                                <h4>{{Where}}</h4>
+                                                    <div>{{address}}</div>
+                                                </div>
+                                        <div class="Volunteer_dec_title">
+                                            <h4>Contact:</h4>
+                                            <div>{{contact}}</div>
+                                        </div>
+                                        <div class="part">
+                                            <div class="part-a">
+                                                <a class="part-a1">Edit</a>
+                                                <a class="part-a2">Delete</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </script>
+                        </li>
+                        <li id="calendar_events2">
+                                <script id="event_template2" type="txt/template">
+                                    <div class="part_1">
+                                            <div class="Volunteer_dec_title" style="font-weight: 600;">{{title}}
+                                            </div>
+                                            <div class="Volunteer_dec_title">
+                                                <h4>Description:</h4>
+                                                <div>{{description}}</div>
+                                            </div>
+                                            <div class="Volunteer_dec_title">
+                                                <h4>Contact:</h4>
+                                                <div>{{contact}}</div>
+                                            </div>
+                                            <div class="part">
+                                                <div class="part-a">
+                                                    <a class="part-a1">Edit</a>
+                                                    <a class="part-a2">Delete</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </script>
+                            </li>
+                            <li id="calendar_events3">
+                                    <script id="event_template3" type="txt/template">
+                                        <div class="part_1">
+                                                <div class="Volunteer_dec_title" style="font-weight: 600;">{{title}}
+                                                </div>
+                                                <div class="Volunteer_dec_title">
+                                                    <h4>Description:</h4>
+                                                    <div>{{description}}</div>
+                                                </div>
+                                                <div class="Volunteer_dec_title">
+                                                    <h4>Contact:</h4>
+                                                    <div>{{contact}}</div>
+                                                </div>
+                                                <div class="part">
+                                                    <div class="part-a">
+                                                        <a class="part-a1">Edit</a>
+                                                        <a class="part-a2">Delete</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </script>
+                                </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 底部 -->
+<div class="footer">
+    <p>
+        Copyright © 2019 Tellus, Inc. All Rights Reserved.
+    </p>
+</div>
+<script type="text/javascript" src="../../js/jquery-1.11.0.min.js"></script>
+
+<script type="text/javascript" src="../../js/masterslider.min.js"></script>
+<script type="text/javascript" src="../../js/index.js"></script>
+<script src="../../js/public.js"></script>

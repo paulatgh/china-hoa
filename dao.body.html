@@ -1,0 +1,189 @@
+<!-- 头部 -->
+<div class="header">
+    <div class="w1200">
+        <a class="logo" href="#">
+            <img src="img/Combined Shape.png" alt="Combined Shape">
+            De Anza Oaks
+        </a>
+        <input type="text" placeholder="Search..." style="width: 188px;height: 37px;position: relative;top: 30px;left: 540px;border: solid 1px #393D44;padding-left: 10px;">
+        <div class="btns clearfix">
+            <img src="img/Shape.png" alt="Shape" style="position: relative;left: -140px;top: 40px;z-index: 100000;">
+            <img src="img/dropdown.png" alt="dropdown" style="position: relative;left: -50px;top: 36px;z-index: 100000;">
+            <a class="btns-search" href="javascript:;"> </a>
+            <a class="btns-language" href="javascript:;">Login</a>
+            <div class="langOv">
+                <div class="profile">
+                    <a href="saveFile.html" style="border-bottom: 1px solid white;width: 100%;margin-left: -1px">My
+                        Profile</a>
+                    <a href="javascript:;" class="logout">Log Out</a>
+                </div>
+            </div>
+        </div>
+        <div class="nav">
+            <ul>
+                <li class="curr">
+                    <a class="on jump" target="_blank" data="index.html" href="javascript:;">Home</a>
+                </li>
+                <li class="curr">
+                    <a class="on " href="about.html">About us</a>
+                </li>
+            </ul>
+            <span class="navline"></span>
+        </div>
+    </div>
+</div>
+
+<!-- swiper -->
+<div class="master-slider ms-skin-default" id="masterslider">
+    <div class="ms-slide"><img src="img/doorway.png" /> </div>
+    <div class="ms-slide"><img src="img/club.png" /> </div>
+    <div class="ms-slide"><img src="img/swimmingpool.png" /> </div>
+    <div class="mas-ab">
+        <div class="w1200 pr">
+            <div class="mas-lbg"></div>
+            <div class="mas-timebar"></div>
+            <div class="mas-tib"></div>
+            <div class="ban-len"> <i>1</i> / <span>3</span></div>
+            <img src="img/tellus.png" alt="Powered-by-Tellus" style="width:178px;height:49px;position:absolute;right:0;bottom: 0">
+        </div>
+    </div>
+</div>
+<div class="main">
+    <!-- body-1 -->
+    <div class="main-top" style="height: 250px">
+        <div class="w1200 pr">
+            <div class="main-left" style="display: flex;justify-content: space-between;width: 100%;margin-top: 10px">
+                <div class="main-left-content" style="padding: 30px;box-sizing: border-box">
+                    <p style="font-size: 20px;font-weight:600;color: black;margin-top: 5px">WHAT'S NEW AT DE ANZA
+                        OAKS</p>
+                    <ul style="margin-top:20px;" id="events_photo">
+                        <script id="event_template" type="txt/template">
+                            <li class="main-left-content-list" >
+                                <a class="body1-a jump" data={{link}} href="javascript:;">
+                               <p> {{title}}&nbsp;({{num}})</p></a>
+                            </li>
+                        </script>
+                    </ul>
+                </div>
+                <div class="main-right-content" style="width: 779px">
+                    <div class="main-list">
+                        <ul style="width: 100%;" id="featureList">
+                            <script id="featureList_template" type="txt/template">
+                                <li class="main-list" animated zoomIn">
+                                    <a data={{link}} href="javascript:;" target="_blank" class="main-list-a jump">
+                                        <p style="background:url('{{img}}') no-repeat  center 50px">{{category}}</p>
+                                    </a>
+                                </li>
+                            </script>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- body-2 -->
+    <div class="main-top" style="margin-bottom: 15px">
+        <div class="w1200 pr">
+            <div class="main-left" style="display: flex;justify-content: space-between;width: 100%;">
+                <div class="main-left-content swiper-container jump" data="amenities.html" style="height: 316px; box-sizing: border-box;overflow: hidden;position: relative;cursor: pointer;">
+                    <div style="color: #1E1E1E;font-size: 16px;line-height:41px;height:41px;font-weight: 400">
+                        Amenities</div>
+                    <ul class="Carousel swiper-wrapper" style="height: 280px;width:5000px;">
+                        <li class="swiper-slide">
+                            <div>
+                                <h6>Gated Community</h6>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div>
+                                <h6>Junior Olympic Pool</h6>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div>
+                                <h6>Clubhouse</h6>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div>
+                                <h6>Playground</h6>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div>
+                                <h6>Green Fields</h6>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="announcement-tips swiper-pagination">
+                        <span style="background: #359532"></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="main-right-content" style="height: 316px;display: flex;justify-content: space-between;cursor: pointer;">
+                    <div id="calendar" class="calendar"></div>
+                    <div class="calendar-right" id="date">
+                        <script id="date_template" type="txt/template">
+                            <div class="jump" data={{link}}>
+                                <p>{{date}}</p>
+                                <p>
+                                    <span>{{title}}</span>
+                                    <a href="javascript:;">more</a>
+                                </p>
+                            </div>
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- body-3 -->
+    <div class="main-top" style="height: 250px;">
+        <div class="w1200 pr" style="position: relative">
+            <img src="img/Rectangle (4).png" alt="Rectangle" style="width:100%;">
+            <div class="Clubhouse" style="position: absolute;background: rgba(53,149,50,0.6);height: 84px;width: 579px;top: 77px;left: 314px;">
+                <a data="reserve-the-clubhouse.html" class="jump" href="javascript:;">
+                    <p style="text-align: center;font-size:25px;font-family:OpenSans-Bold;font-weight:bold;color:rgba(255,255,255,1);line-height: 84px">
+                        Click Here To Book The Clubhouse</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="main-top" style="height: 250px;">
+        <div class="w1200 pr" style="position: relative;overflow: scroll;height: 233px;">
+            <img src="img/dao5.png" alt="Aerial view of the residential area" style="width:100%;margin-top: -80px">
+            <div style="position: absolute;background:rgba(255,255,255,0.6);height: 69px;width: 376px;top:0;left:0;">
+                <p style="text-align: center;font-size:25px;font-family:OpenSans-Bold;font-weight:bold;color:#1E1E1E;line-height: 69px;">
+                    De
+                    Anza Oaks From The Air</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="login-2">
+    <h3 class="login-H3-2">Lost Password Help</h3>
+    <p class="return"><img src="img/Bounced.png" alt="Bounced"></p>
+    <p class="login2-p">Fill out the below information and your username and password will be sent to your
+        originally
+        specified email address</p>
+    <input class="login-int2" type="text" placeholder="Name"><br />
+    <p class="login-Or">Or</p>
+    <input class="login-int-a2" type="text" placeholder="Password">
+    <input class="login-int-a3" type="text" placeholder="Password">
+    <button class="login-button2">Submit</button>
+</div>
+<!-- 底部 -->
+<div class="footer" style="margin-bottom: -24px">
+    <p>
+        Copyright © 2019 Tellus, Inc. All Rights Reserved.
+    </p>
+</div>
+<script type="text/javascript" src="js/masterslider.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/actives/calendar_plugin.js"></script>
+<script type="text/javascript" src="js/public.js"></script>
+<script type="text/javascript" src="js/header.js"></script>

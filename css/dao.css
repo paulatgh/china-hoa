@@ -1,0 +1,167 @@
+.main-right-content {
+    width: 764px;
+    height: 225px;
+    box-shadow: 0 0 8px;
+    margin-top: 15px;
+    margin-left: 24px
+}
+
+.calendar-right {
+    width: 478px;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    background: #F1F1F1;
+    overflow: overlay;
+}
+
+.calendar-right::-webkit-scrollbar {
+    display: none;
+}
+
+.calendar-right div {
+    width: 100%;
+    height: 33.3%;
+    padding: 0 25px;
+}
+
+.calendar-right p {
+    height: 22px;
+    line-height: 22px;
+    margin: 20px 0 0 0;
+    font-size: 16px;
+    font-family: PingFangSC-Regular;
+}
+
+.calendar-right p span {
+    float: left;
+}
+
+.calendar-right p a {
+    float: right;
+    color: #666666;
+}
+
+.calendar-date .item.item-curMonth.active-red {
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+
+.calendar-right div:nth-child(odd){
+    background-color: #6AA666;
+    color: #FFFFFF;
+}
+
+.calendar-right div:nth-child(odd) p a {
+    color: white;
+}
+
+.body1-a:hover {
+    color: #359532;
+    text-decoration: underline;
+}
+
+.body1-a {
+    color: #359532;
+}
+
+.announcement-tips {
+    height: 20px;
+    position: absolute !important;
+    box-sizing: border-box;
+    top: 286px;
+    left: 125px;
+}
+
+.announcement-tips span {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #A0C79F;
+    margin-left: 16px;
+}
+
+.main-left-content .Carousel li {
+    height: 236px;
+    position: relative;
+    background-size: 100% 100%;
+    float: left;
+}
+
+.main-left-content .Carousel li:first-child {
+    background: url('../img/Gated Community Photo.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.main-left-content .Carousel li:nth-child(2) {
+    background: url('../img/pool.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.main-left-content .Carousel li:nth-child(3) {
+    background: url('../img/clubhouse.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.main-left-content .Carousel li:nth-child(4) {
+    background: url('../img/playground.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.main-left-content .Carousel li:nth-child(5) {
+    background: url('../img/green fields.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.main-left-content .Carousel div {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 93.7%;
+    background: rgba(0, 0, 0, 0.6);
+    font-size: 14px;
+    color: #FFFFFF;
+    padding: 0 12px;
+}
+
+.Carousel div h6 {
+    font-size: 16px;
+    line-height: 50px;
+    font-weight: 500;
+}
+
+.main-left-content {
+    width: 421px;
+    height: 225px;
+    box-shadow: 0 0 8px;
+    margin-top: 15px;
+    padding: 0 16px;
+}
+
+.calendar {
+    padding: 0;
+}
+
+.calendar-week .item,
+.calendar-date .item {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    margin-left: 6px;
+}
+
+.calendar-week .item {
+    color: #34485E;
+}
+
+.main-left-content-list {
+    line-height: 35px;
+    font-size: 19px;
+    margin-top: 7px;
+}
+
+.langOv {
+    display: none;
+}
