@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=8" /> -->
+    <link rel="shortcut icon" type="image/ico" href="../../img/favicon.ico" />
+
+    <title>De Anza Oaks</title>
+    <link rel="stylesheet" type="text/css" href="../../css/animate.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../../css/aos.css"> -->
+    <link rel="stylesheet" type="text/css" href="../../css/masterslider.main.css">
+    <link rel="stylesheet" type="text/css" href="../../css/ms-skin-sample.css">
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../css/public.css">
+    <link rel="stylesheet" href="../../css/News/volunteer.css">
+    <script src="https://cdn.bootcss.com/jquery/3.3.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+</head>
+
+<body>
+    <div id="content"></div>
+    <script>
+        var data = {
+            volunteer: [{
+                    id: 1,
+                    title: "DAO Website Co-Administrator",
+                    description: "Help to manage the DAO website to keep it up to date and maximize timely communication within our community.",
+                    contact: "Alicia Schober or John Krischer - Co-Administrators."
+                },
+                {
+                    id: 2,
+                    title: "Landscape Committee",
+                    description: "This committee works closely with our Community Manager and our Landscape contractor in all aspects of landscape management. Decisions are made on plants, trees, irrigation and fire clearance among others.",
+                    When:'When:',
+                    time: "Meets monthly",
+                    Where:'Where:',
+                    address: "Rotates among members homes",
+                    contact: "Bill Milam or Lani Harriman"
+                }
+
+            ],
+            volunteer2: [{
+                id: 3,
+                title: "DAO Block Leaders",
+                description: "De Anza Oaks residents who wish to improve communication and increase public safety in the neighborhood are encouraged to sign up for Block Leader training through the City of Cupertino. In De Anza Oaks, we would like to see one Block Leader for every 30 households. These Leaders would serve as an important liaison to the Board and community for matters from social events to emergency response. To register for Block Leader training,e-mail www.communityrelations @cupertino.org or call 408-777-3331.",
+                contact: "Alicia Schober or John Krischer - Co-Administrators."
+            }],
+            volunteer3: [{
+                id: 4,
+                title: "DAO Website Co-Administrator",
+                description: "Help to manage the DAO website to keep it up to date and maximize timely communication within our community.",
+                contact: "Alicia Schober or John Krischer - Co-Administrators."
+
+            }]
+        }
+    </script>
+    <script type="text/javascript" src="../../js/News/volunteer.js"></script>
+    <script>
+        // This script block stays in this wrapper html file
+        $(function () {
+            $('#content').load("volunteer.body.html", function () {
+                render();
+            });
+        });
+    </script>
+</body>
