@@ -1,0 +1,161 @@
+<!-- 头部 -->
+<div class="header" style="box-shadow:0 2px 7px 0px rgba(0,0,0,0.5); border:1px solid rgba(151,151,151,1)">
+    <div class="w1200" style="height: 0">
+        <a class="logo" href="../../dao.html">
+            <img src="../../img/Combined Shape.png" alt="Combined Shape">
+            De Anza Oaks
+        </a>
+        <input type="text" placeholder="Search..." style="width: 188px;height: 37px;position: relative;top: 30px;left: 540px;border: solid 1px #393D44;padding-left: 10px;">
+
+        <div class="btns clearfix">
+            <img src="../../img/Shape.png" alt="Shape" style="position: relative;left: -140px;top: 40px;z-index: 100000;">
+            <img src="../../img/dropdown.png" alt="dropdown" style="position: relative;left: -50px;top: 36px;z-index: 100000;">
+            <a class="btns-search" href="javascript:;"> </a>
+            <a class="btns-language" href="javascript:;"></a>
+            <div class="langOv">
+                <div class="profile">
+                    <a href="../../saveFile.html" style="border-bottom: 1px solid white;width: 100%;margin-left: -1px">My
+                        Profile</a>
+                    <a href="javascript:;" class="logout">Log Out</a>
+                </div>
+            </div>
+        </div>
+        <div class="nav">
+            <ul>
+                <li class="curr">
+                    <a class="on" href="../../dao.html">Home</a>
+                </li>
+                <li>
+                    <a href="../../about.html">About us</a>
+                </li>
+            </ul>
+            <span class="navline"></span>
+        </div>
+    </div>
+    <script src="../../js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../../js/header.js"></script>
+</div>
+<!-- 主体 -->
+<div class="main">
+    <div class="main-top clearfix" style="margin-bottom: 35px;height: 100%;">
+
+        <div class="w1200 pr">
+            <ul class="breadcrumb">
+                <li><a href="../../dao.html" rel="noopener noreferrer">Home</a></li>
+                <li><span target="_blank" rel="noopener noreferrer" style="color: #6AA666"> > </span></li>
+                <li><a href="../../Resources/resources.html" rel="noopener noreferrer"> Resources </a></li>
+                <li><span target="_blank" rel="noopener noreferrer" style="color:#6AA666"> > </span></li>
+                <li><a href="#" rel="noopener noreferrer">eForms</a></li>
+            </ul>
+            <div class="main-left" style="width:100%;height: 100%;">
+                <div class="form_1">
+                    <div class="form_title">eForms</div>
+                    <ul id="calendar_events">
+                        <script id="event_template" type="txt/template">
+                            <li><a href="{{link}}">{{title}}</a></li>
+                        </script>
+                        <!-- <li><a href="../eForms/architectural_application.html">Architectural Application</a></li>
+                        <li><a href="../eForms/reserve-the-clubhouse.html">Clubhouse Reservation Request Form</a></li>
+                        <li><a href="../eForms/RSVP_summer_party.html">RSVP for DAO End of Summer Party</a></li>
+                        <li><a href="../eForms/RSVP_summer_party.html">RSVP for DAO Holiday Party</a></li>
+                        <li><a href="../eForms/RSVP_summer_party.html">RSVP for Easter Brunch</a></li>
+                        <li>Architectural Application</li>
+                        <li>Clubhouse Reservation Request Form</li>
+                        <li>RSVP for DAO End of Summer Party</li>
+                        <li>RSVP for DAO Holiday Party</li> -->
+                    </ul>
+                </div>
+                <div class="form_1">
+                    <div class="form_title">
+                        <div class="form_title_left">eForms Edit</div>
+                        <a href="../../Resources/eForms/add.html">
+                            <div class="form_title_right">Add</div>
+                        </a>
+                    </div>
+                    <ul id="calendar_events2">
+                        <script id="event_template2" type="txt/template">
+                            <li>
+                                    <div class="form_content_left">{{title}}</div>
+                                    <div class="form_content_right">
+                                        <span class="edi">Edit</span>
+                                        <span class="del">Delete</span>
+                                    </div>
+                                </li>
+                        </script>
+                        <!-- <li>
+                            <div class="form_content_left">Earthquake/Disaster Program (* NO RECEIVERS)</div>
+                            <div class="form_content_right">
+                                <span class="edi">Edit</span>
+                                <span class="del">Delete</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form_content_left">Clubhouse Reservation Request Form</div>
+                            <div class="form_content_right">
+                                <span class="edi">Edit</span>
+                                <span class="del">Delete</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form_content_left">RSVP for DAO End of Summer Party</div>
+                            <div class="form_content_right">
+                                <span class="edi">Edit</span>
+                                <span class="del">Delete</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form_content_left">RSVP for DAO Holiday Party</div>
+                            <div class="form_content_right">
+                                <span class="edi">Edit</span>
+                                <span class="del">Delete</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form_content_left">RSVP for Easter Brunch</div>
+                            <div class="form_content_right">
+                                <span class="edi">Edit</span>
+                                <span class="del">Delete</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form_content_left">RSVP for Easter Brunch</div>
+                            <div class="form_content_right">
+                                <span class="edi">Edit</span>
+                                <span class="del">Delete</span>
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+                <div class="form_1">
+                    <div class="form_title">View/Export Submitted eForms</div>
+                    <ul id="calendar_events3">
+                        <script id="event_template3" type="txt/template">
+                            <li>{{title}} &nbsp;<em>({{number}})</em></li>
+                          </script>
+                        <!-- <li>Architectural Application &nbsp;<em>(1)</em></li>
+                        <li>Clubhouse Reservation Request Form &nbsp;<em>(18)</em></li>
+                        <li>RSVP for DAO End of Summer Party &nbsp;<em>(3)</em></li>
+                        <li>RSVP for DAO Holiday Party &nbsp;<em>(49)</em></li>
+                        <li>RSVP for Easter Brunch &nbsp;<em>(3)</em></li>
+                        <li>Architectural Application &nbsp;<em>(3)</em></li>
+                        <li>Clubhouse Reservation Request Form &nbsp;<em>(3)</em></li>
+                        <li>RSVP for DAO End of Summer Party &nbsp;<em>(3)</em></li>
+                        <li>RSVP for DAO Holiday Party &nbsp;<em>(3)</em></li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</div>
+<!-- 底部 -->
+<div class="footer">
+    <p>
+        Copyright © 2019 Tellus, Inc. All Rights Reserved.
+    </p>
+</div>
+<script type="text/javascript" src="../../js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../../js/aos.js"></script>
+<script type="text/javascript" src="../../js/masterslider.min.js"></script>
+<script type="text/javascript" src="../../js/index.js"></script>
+<script src="../../js/public.js"></script>

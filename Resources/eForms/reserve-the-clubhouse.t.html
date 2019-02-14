@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/ico" href="../../img/favicon.ico" />
+
+    <title>De Anza Oaks</title>
+    <link rel="stylesheet" type="text/css" href="../../css/animate.css">
+    <link rel="stylesheet" type="text/css" href="../../css/aos.css">
+    <link rel="stylesheet" type="text/css" href="../../css/masterslider.main.css">
+    <link rel="stylesheet" type="text/css" href="../../css/ms-skin-sample.css">
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../css/public.css">
+    <link rel="stylesheet" href="../../css/Resources/eForms/reserve-the-clubhouse.css">
+    <script src="https://cdn.bootcss.com/jquery/3.3.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+
+</head>
+
+<body>
+    <div id="content"></div>
+    <script>
+        var data = {
+
+        }
+    </script>
+
+    <script src="../../js/Resources/eForms/reserve-the-clubhouse.js"></script>
+    <script>
+        // This script block stays in this wrapper html file
+        $(function () {
+            $('#content').load("reserve-the-clubhouse.body.html", function () {
+                render();
+            });
+        });
+    </script>
+</body>
+
+</html>

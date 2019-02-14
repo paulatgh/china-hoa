@@ -1,0 +1,394 @@
+<!-- 头部 -->
+<div class="header" style="box-shadow:0px 2px 7px 0px rgba(0,0,0,0.5);
+        border:1px solid rgba(151,151,151,1)">
+    <div class="w1200">
+        <a class="logo" href="../../dao.html">
+            <img src="../../img/Combined Shape.png" alt="Combined Shape">
+            De Anza Oaks
+        </a>
+        <input type="text" placeholder="Search..." style="width: 188px;height: 37px;position: relative;top: 30px;left: 540px;border: solid 1px #393D44;padding-left: 10px;">
+        <div class="btns clearfix">
+            <img src="../../img/Shape.png" alt="Shape" style="position: relative;left: -140px;top: 40px;z-index: 100000;">
+            <img src="../../img/dropdown.png" alt="dropdown" style="position: relative;left: -50px;top: 36px;z-index: 100000;">
+            <a class="btns-search" href="javascript:;"> </a>
+            <a class="btns-language" href="javascript:;"></a>
+            <div class="langOv">
+                <div class="profile">
+                    <a href="../../saveFile.html" style="border-bottom: 1px solid white;width: 100%;margin-left: -1px">My
+                        Profile</a>
+                    <a href="javascript:;" class="logout">Log Out</a>
+                </div>
+            </div>
+        </div>
+        <div class="nav">
+            <ul>
+                <li class="curr">
+                    <a class="on" href="../../dao.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About us</a>
+                </li>
+            </ul>
+            <span class="navline"></span>
+        </div>
+    </div>
+    <!-- 二级导航背景 -->
+    <div class="innavbg"></div>
+    <div class="mask"></div>
+    <!-- 侧边栏 -->
+
+    <script src="../../js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../../js/header.js"></script>
+</div>
+
+<!-- 主体 -->
+<div style="height:100%">
+
+    <div class="w1200" style="margin-bottom:60px">
+        <ul class="breadcrumb">
+            <li><a href="../../dao.html">Home</a></li>
+            <li><span rel="noopener noreferrer" style="color:rgba(30,130,23,1)"> > </span></li>
+            <li><a href="../resources.html">Resources</a></li>
+            <li><span rel="noopener noreferrer" style="color:rgba(30,130,23,1)"> > </span></li>
+            <li><a href="../eForms/eforms.html">eForms</a></li>
+            <li><span rel="noopener noreferrer" style="color:rgba(30,130,23,1)"> > </span></li>
+            <li><a href="#">Edit eForms</a></li>
+        </ul>
+        <table style="background-color: #ffffff" background="" border="0" width="100%" cellpadding="10" cellspacing="0">
+            <tbody>
+                <tr>
+                    <td>
+                        <font size="2" face="Verdana, Arial, Helvetica" color="#222311">
+                            <table class="std-table" border="0" width="100%">
+                                <tr style="font-Weight:800">
+                                    <td align="left" style="height: 64px">
+                                        <font size="5" face="Verdana, Arial, Helvetica" color="#393D44">
+                                            Edit eForms
+                                        </font>
+                                    </td>
+                                </tr>
+                            </table>
+                        </font>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <script src="https://cdn.ckeditor.com/ckeditor5/11.2.0/classic/ckeditor.js"></script>
+        <table style="background-color: #ffffff" background="" border="0" width="100%" cellpadding="10" cellspacing="0">
+            <tbody>
+                <tr>
+                    <td>
+                        <font size="2" face="Verdana, Arial, Helvetica" color="#222311">
+                            <center>
+                                <form method="POST" enctype="multipart/form-data" action="announcement_save.asp?id=318&amp;a=2"
+                                    name="daForm">
+
+                                    <div align="center">
+                                        <table class="std-table" border="3" width="100%" cellspacing="0" bordercolor="#008000">
+
+
+                                            <tbody>
+                                                <tr>
+                                                    <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
+                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;Category:</font>
+                                                    </td>
+                                                    <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
+                                                        <select size="1" name="announcement_category_id" style="font-family: Verdana, Arial, Helvetica; font-size: 11">
+                                                            <option selected="" value="0">
+
+                                                            </option>
+                                                            <option selected="" value="2">
+                                                                Board Announcements
+                                                            </option>
+
+                                                            <option value="7">
+                                                                Clubhouse
+                                                            </option>
+
+                                                            <option value="8">
+                                                                DAO Emergency Response Committee
+                                                            </option>
+
+                                                            <option value="6">
+                                                                From the Web Administrator
+                                                            </option>
+
+                                                            <option value="10">
+                                                                Maintenance
+                                                            </option>
+
+                                                            <option value="9">
+                                                                Parking
+                                                            </option>
+
+                                                            <option value="5">
+                                                                Recent eMail Bulletins
+                                                            </option>
+
+                                                            <option value="3">
+                                                                Social Events
+                                                            </option>
+
+                                                            <option value="11">
+                                                                Various Meetings
+                                                            </option>
+
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
+                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;Date:</font>
+                                                    </td>
+                                                    <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6"><input type="text"
+                                                            name="dt" class="datepicker hasDatepicker" value="9/18/2018"
+                                                            size="10" maxlength="10" style="font-family: Tahoma; font-size: 11"
+                                                            id="dp1549972677296"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
+                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;Expire
+                                                            Date:</font>
+                                                    </td>
+                                                    <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6"><input type="text"
+                                                            name="expire_dt" class="datepicker hasDatepicker" value=""
+                                                            size="10" maxlength="10" style="font-family: Tahoma; font-size: 11"
+                                                            id="dp1549972677297">
+                                                        <font size="1">(optional)</font>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
+                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;Title:</font>
+                                                    </td>
+                                                    <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6"><input type="text"
+                                                            name="short_desc" value="DAO Board Elections 2018 - Urgent appeal"
+                                                            size="40" maxlength="100" style="font-family: Tahoma; font-size: 11"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
+                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;Details:</font>
+                                                    </td>
+                                                    <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
+                                                        <!-- CuteEditor Editor1 End 0.1035156s-->
+                                                        <table id="CE_full_desc_ID" _iscuteeditor="True" cellspacing="0"
+                                                            cellpadding="0" style="background-color: rgb(244, 244, 243); border-color: rgb(221, 221, 221); border-width: 1px; border-style: solid; table-layout: auto; height: 450px; width: 100%;">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="CuteEditorToolBarContainer" unselectable="on"
+                                                                        valign="top">
+                                                                        <textarea name="content" id="editor" style="display: none;"></textarea>
+                                                                        <div class="ck ck-reset ck-editor ck-rounded-corners"
+                                                                            role="application" dir="ltr" lang="en"
+                                                                            aria-labelledby="ck-editor__aria-label_efd7fb5a63c76c1822093b098bfe66a5f">
+                                                                            <label class="ck ck-label ck-voice-label"
+                                                                                id="ck-editor__aria-label_efd7fb5a63c76c1822093b098bfe66a5f">Rich
+                                                                                Text Editor</label>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
+                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;Picture
+                                                            or Document File:</font>
+                                                    </td>
+                                                    <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
+                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">
+                                                            <i>
+                                                                <font size="1">- None -</font>
+                                                            </i><br>
+                                                            <input type="FILE" name="docfile" size="30" maxlength="200"
+                                                                style="font-family: Tahoma; font-size: 11">
+                                                            <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;<input
+                                                                    type="checkbox" name="delimg"> Check to Delete</font>
+                                                        </font>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
+                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;Favorite?:</font>
+                                                    </td>
+                                                    <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
+                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311"><input
+                                                                type="checkbox" value="1" name="favorite" style="font-family: Tahoma; font-size: 11"></font>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
+                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;Allow
+                                                            RSVP?:</font>
+                                                    </td>
+
+                                                    <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
+                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311"><input
+                                                                type="checkbox" value="1" name="rsvp" style="font-family: Tahoma; font-size: 11">
+                                                            - Email
+                                                            to use: <input type="text" name="rsvp_email" value="" size="40"
+                                                                maxlength="50" style="font-family: Tahoma; font-size: 11"></font>
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
+                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">
+                                                            <hr>
+                                                        </font>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
+                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">You
+                                                            can have a link to an existing eForm
+                                                            in your Announcement by selecting an eForm to the right
+                                                            and entering text for the hyperlink below.</font>
+                                                    </td>
+                                                    <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
+                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">
+
+                                                            <select size="1" name="eform_id" style="font-family: Tahoma; font-size: 11">
+                                                                <option value="0">None</option>
+
+                                                                <option value="36">
+
+                                                                </option>
+
+                                                                <option value="34">
+
+                                                                </option>
+
+                                                                <option value="33">
+
+                                                                </option>
+
+                                                                <option value="6">
+
+                                                                </option>
+
+                                                                <option value="20">
+                                                                    Architectural Application
+                                                                </option>
+
+                                                                <option value="5">
+                                                                    Clubhouse Reservation Request Form
+                                                                </option>
+
+                                                                <option value="11">
+                                                                    Earthquake/Disaster Program
+                                                                </option>
+
+                                                                <option value="19">
+                                                                    Electronic Communication Consent Form
+                                                                </option>
+
+                                                                <option value="29">
+                                                                    RSVP for DAO End of Summer Party
+                                                                </option>
+
+                                                                <option value="23">
+                                                                    RSVP for DAO Holiday Party
+                                                                </option>
+
+                                                                <option value="26">
+                                                                    RSVP for Easter Brunch
+                                                                </option>
+
+                                                            </select>
+                                                        </font>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
+                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;Text
+                                                            for eForm Hyperlink:</font>
+                                                    </td>
+                                                    <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6"><input type="text"
+                                                            name="eform_hyperlink_text" value="" size="40" maxlength="50"
+                                                            style="font-family: Tahoma; font-size: 11"></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td colspan="2" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
+                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">
+                                                            <hr>
+                                                        </font>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
+                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">If
+                                                            you wish to have an eMail Bulletin
+                                                            automatically sent out for this Announcement, choose an
+                                                            eMail Bulletin Category to the right. If not, select
+                                                            "None"</font>
+                                                    </td>
+                                                    <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
+                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">
+                                                            <select size="1" name="maillist_id" style="font-family: Tahoma; font-size: 11">
+                                                                <option value="0">None</option>
+                                                                <option value="-99">** Send to All **</option>
+                                                                <option value="7">Clubhouse Committee eMail
+                                                                    Bulletin
+                                                                    Test</option>
+                                                                <option value="6">Events Committee eMail Bulletin
+                                                                    Test</option>
+                                                                <option value="2">Web Admin eMail Bulletin Test
+                                                                </option>
+                                                            </select>
+                                                        </font>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
+                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">
+                                                            <hr>
+                                                        </font>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
+                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">Contact
+                                                            Person:</font>
+                                                    </td>
+                                                    <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6"><br>
+                                                        <select size="1" name="contact_person_id" style="font-family: Tahoma; font-size: 11">
+                                                        </select>
+
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </form>
+                            </center>
+                        </font>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- 底部 -->
+<div class="footer">
+    <p>
+        Copyright © 2019 Tellus, Inc. All Rights Reserved.
+    </p>
+</div>
+
+
+
+<script type="text/javascript" src="list=hk02007.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/aos.js"></script>
+<script type="text/javascript" src="js/masterslider.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
