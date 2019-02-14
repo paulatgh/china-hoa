@@ -159,12 +159,12 @@
 
 .address_book_right{
     float: left;
-    width: 72%;
-    height: 810px;
+    width: 73%;
+    height: 910px;
     box-sizing: border-box;
     margin-left: 16px;
     
-    /* border: solid 1px; */
+   border: solid 2px #6AA666;
 }
 
 .address_book_right::-webkit-scrollbar { width: 0 !important }
@@ -197,7 +197,7 @@
     color:rgba(57,61,68,1);
 }
 .templates{
-    width:850px;
+    width:836px;
     height:54px;
     background:rgba(106,166,102,1);
     font-size:24px;
@@ -209,8 +209,8 @@
 }
 .email-template{
     width:862px;
-    /* height:750px; */
-    border: solid 2px #6AA666;
+    height:750px;
+    /* border: solid 2px #6AA666; */
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -225,7 +225,7 @@
     width:142px ;
     height:188px;
     border: solid 1px white ;
-    margin-top: 40px;
+    margin-top: 30px;
     padding: 12px 0;
     
 }

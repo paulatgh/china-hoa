@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/public.css">
     <link rel="stylesheet" href="../../css/News/bulletins.css">
 
-
+    
 
 </head>
 
@@ -25,7 +25,7 @@
     <div class="header" style="box-shadow:0px 2px 7px 0px rgba(0,0,0,0.5);
     border:1px solid rgba(151,151,151,1);">
         <div class="w1200" style="height: 0">
-            <a class="logo" href="../../index.html">
+            <a class="logo" href="../../dao.html">
                 <img src="../../img/Combined Shape.png" alt="Combined Shape">
                 De Anza Oaks
             </a>
@@ -46,10 +46,10 @@
             <div class="nav">
                 <ul>
                     <li class="curr">
-                        <a class="on" href="../../index.html">Home</a>
+                        <a class="on" href="../../dao.html">Home</a>
                     </li>
                     <li>
-                        <a href="../../about.html">About us</a>
+                        <a href="../../aboutus/aboutus.html">About us</a>
 
                     </li>
                     <!-- <li>
@@ -64,7 +64,7 @@
         <script src="../../js/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="../../js/header.js"></script>
 
-
+        
 
     </div>
 
@@ -73,7 +73,7 @@
     <div class="main" style="height:100%">
         <div class="main-breadcrumb" style="width: 1200px;margin: 0 auto">
             <ul class="breadcrumb" style="float: left">
-                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../dao.html">Home</a></li>
                 <li>&nbsp;>&nbsp;</li>
                 <li><a href="../../News/news.html">News</a></li>
                 <li>&nbsp;>&nbsp;</li>
@@ -86,7 +86,7 @@
             <div class="address_book_click">
                 <button><a href="page.html">Send HTML</a></button>
                 <button><a href="text.html">Send Plain Text</a></button>
-
+                
                 <button><a href="subscribers.html">Check Subscribers</a></button>
                 <button><a href="templates.html">Edit Custom Templates</a></button>
             </div>
@@ -252,13 +252,13 @@
     <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../../js/jquery-1.11.0.min.js"></script>
-
+    
     <script type="text/javascript" src="../../js/masterslider.min.js"></script>
     <script type="text/javascript" src="../../js/index.js"></script>
     <!-- 底部 -->
     <div class="footer">
         <p>
-            Copyright © 2019 Tellus, Inc. All Rights Reserved.
+           Copyright © 2019 Tellus, Inc. All Rights Reserved.
         </p>
     </div>
 
@@ -267,20 +267,22 @@
         var storage = window.localStorage;
         var username = storage.getItem('username')
         $(".btns-language").text(username);
-        if (username === 'admin') {
-            $('.address_book_click').css('display', 'block')
-            $('.photo-albums').css('display', 'block')
+        if(username === 'admin'){
+            $('.address_book_click').css('display','block')
+            $('.photo-albums').css('display','block')
         }
 
         $('.logout').click(function () {
             window.localStorage.setItem('username', '')
-            window.location.href = "http://tfire.net/index.html";
-
+             window.location.href = "http://tfire.net/index.html";
+			
 
         })
 
         var username = storage.getItem('username')
         $(".btns-language").text(username);
+
+
     </script>
 
 

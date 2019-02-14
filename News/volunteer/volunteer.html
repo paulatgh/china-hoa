@@ -24,17 +24,15 @@
 	<div class="header" style="box-shadow:0px 2px 7px 0px rgba(0,0,0,0.5);
 	border:1px solid rgba(151,151,151,1)">
 		<div class="w1200" style="height: 0">
-			<a class="logo" href="index.html">
+			<a class="logo" href="../../dao.html">
 				<img src="../../img/Combined Shape.png" alt="Combined Shape">
 				De Anza Oaks
 			</a>
-			<input type="text" placeholder="Search..."
-				style="width: 188px;height: 37px;position: relative;top: 30px;left: 540px;border: solid 1px #393D44;padding-left: 10px;">
+			<input type="text" placeholder="Search..." style="width: 188px;height: 37px;position: relative;top: 30px;left: 540px;border: solid 1px #393D44;padding-left: 10px;">
 
 			<div class="btns clearfix">
 				<img src="../../img/Shape.png" alt="Shape" style="position: relative;left: -140px;top: 40px;z-index: 100000;">
-				<img src="../../img/dropdown.png" alt="dropdown"
-					style="position: relative;left: -50px;top: 36px;z-index: 100000;">
+				<img src="../../img/dropdown.png" alt="dropdown" style="position: relative;left: -50px;top: 36px;z-index: 100000;">
 				<a class="btns-search" href="javascript:;"> </a>
 				<a class="btns-language" href="javascript:;"></a>
 				<div class="langOv">
@@ -48,10 +46,10 @@
 			<div class="nav">
 				<ul>
 					<li class="curr">
-						<a class="on" href="../../index.html">Home</a>
+						<a class="on" href="../../dao.html">Home</a>
 					</li>
 					<li class="curr">
-						<a class="on" href="../../about.html">About us</a>
+						<a class="on" href="../../aboutus/aboutus.html">About us</a>
 					</li>
 					<!-- <li class="curr">
 						<a class="on" href="downloadFile.html">Docs</a>
@@ -73,7 +71,7 @@
 		<div class="main-top" style="margin-bottom: 35px;height: 100%;">
 			<div class="w1200 pr" style="height: 100%;">
 				<ul class="breadcrumb">
-					<li><a href="../../index.html" rel="noopener noreferrer">Home</a></li>
+					<li><a href="../../dao.html" rel="noopener noreferrer">Home</a></li>
 					<li>&nbsp;>&nbsp;</li>
 					<li><a href="../../News/news.html" rel="noopener noreferrer">News</a></li>
 					<li>&nbsp;>&nbsp;</li>
@@ -85,8 +83,7 @@
 						opportunities to lend
 						your talents within De Anza Oaks. Please consider being an active part of our wonderful
 						community.</div>
-					<div style="width: 100%;margin-bottom: 16px"><a class="top-Add"
-							href="add.html">Add</a> </div>
+					<div style="width: 100%;margin-bottom: 16px"><a class="top-Add" href="add.html">Add</a> </div>
 					<ul>
 						<li>
 							<div class="part_1">
@@ -208,7 +205,7 @@
 		</p>
 	</div>
 	<script type="text/javascript" src="../../js/jquery-1.11.0.min.js"></script>
-	
+
 	<script type="text/javascript" src="../../js/masterslider.min.js"></script>
 	<script type="text/javascript" src="../../js/index.js"></script>
 	<script src="../../js/public.js"></script>
@@ -238,37 +235,38 @@
 
 		$('.part-a1').click(function () {
 			var val = $(this).parents('.part_1').find('.Volunteer_dec_title')
-			val.each(function(index,item){	
+			val.each(function (index, item) {
 				var value = $(item).text().trim();
-				console.log( $(item).text())
+				console.log($(item).text())
 				var inp = `<input type="text" value="${value}"/>`;
 				val.empty().append(inp)
 			})
-		// 	var data = $(this).parent().prev().text();
-		// 	var str = `<div class="part_1">
-		// 						<div class="Volunteer_dec_title" style="font-weight: 600;"><input value='${data}' type="text" class="edit_inp"/></div>
-		// 						<div class="Volunteer_dec_title">
-		// 							<h4><input value='${data}' type="text" class="edit_inp"/></h4>
-		// 							<div>
-		// 									<input value='${data}' type="text" class="edit_inp"/>
-		// 							</div>
-		// 						</div>
-		// 						<div class="Volunteer_dec_title">
-		// 							<h4><input value='${data}' type="text" class="edit_inp"/></h4>
-		// 							<div><input value='${data}' type="text" class="edit_inp"/></div>
-		// 						</div>
-		// 						<div class="part">
-		// 							<div class="part-a">
-		// 								<a class="part-a1">Edit</a>
-		// 								<a class="part-a2">Delete</a>
-		// 							</div>
-		// 						</div>
-		// <span class="save">Save Changes</span>
-		// 					</div>`
-			
+			// 	var data = $(this).parent().prev().text();
+			// 	var str = `<div class="part_1">
+			// 						<div class="Volunteer_dec_title" style="font-weight: 600;"><input value='${data}' type="text" class="edit_inp"/></div>
+			// 						<div class="Volunteer_dec_title">
+			// 							<h4><input value='${data}' type="text" class="edit_inp"/></h4>
+			// 							<div>
+			// 									<input value='${data}' type="text" class="edit_inp"/>
+			// 							</div>
+			// 						</div>
+			// 						<div class="Volunteer_dec_title">
+			// 							<h4><input value='${data}' type="text" class="edit_inp"/></h4>
+			// 							<div><input value='${data}' type="text" class="edit_inp"/></div>
+			// 						</div>
+			// 						<div class="part">
+			// 							<div class="part-a">
+			// 								<a class="part-a1">Edit</a>
+			// 								<a class="part-a2">Delete</a>
+			// 							</div>
+			// 						</div>
+			// <span class="save">Save Changes</span>
+			// 					</div>`
+
 			$('.save').click(function () {
 				var val = $(this).prev().val()
-				var valStr = ` 
+				var valStr =
+					` 
 								<div class="Volunteer_dec_title" style="font-weight: 600;">Architectural Committee</div>
 								<div class="Volunteer_dec_title">
 									<h4>Description:</h4>
@@ -299,5 +297,4 @@
 
 		})
 	});
-
 </script>
