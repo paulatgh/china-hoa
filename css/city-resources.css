@@ -3,7 +3,16 @@ body {
     height: 100%;
 }
 
+.main {
+    height: 2020px;
+}
 
+.main-center {
+    width: 920px;
+    height: auto;
+    margin: 40px auto;
+
+}
 
 .breadcrumb li {
     color: rgba(30, 130, 23, 1);
@@ -17,6 +26,7 @@ body {
 
 .breadcrumb li a {
     color: rgba(30, 130, 23, 1);
+
 }
 
 .breadcrumb {
@@ -31,88 +41,98 @@ body {
     height: 50px;
 }
 
-.main-center {
-    width: 1200px;
-    height: auto;
-    margin: auto;
+.main-center p {
+    width: 100%;
+    height: 51px;
+    font-size: 34px;
+    font-family: OpenSans-Bold;
+    font-weight: bold;
+    color: rgba(57, 61, 68, 1);
+    line-height: 46px;
+    text-align: center;
+    margin-top: 50px;
 }
 
 .content-1 {
     width: 100%;
-    height: auto;
-
-    /* border: solid 1px; */
-    display: flex;
-    flex-wrap: wrap;
-
+    padding: 20px 0;
 }
 
-.Events-Calendar {
-    width: 368px;
-    height: 234px;
-    background: rgba(255, 255, 255, 1);
-    /* box-shadow:0px 0px 8px 0px rgba(0,0,0,0.24); */
-    margin: 24px 24px 24px 0;
-    /* border: 3px solid #6AA666; */
+.content-1 li:nth-of-type(1) {
+    font-size: 24px;
+    font-family: OpenSans-Regular;
+    font-weight: 400;
+    color: rgba(57, 61, 68, 1);
+    line-height: 34px;
+    text-align: left;
+    margin: 0 8px;
 }
 
-.Events-Calendar:nth-child(2) {
-    background-image: url("../../img/news-volunteerneeds.png");
-
+.content-1 li:nth-of-type(2) {
+    font-size: 24px;
+    font-family: OpenSans-SemiBold;
+    font-weight: 600;
+    color: rgba(57, 61, 68, 1);
+    line-height: 34px;
+    text-align: left;
+    margin: 28px 8px;
 }
 
-.Events-Calendar:nth-child(3) {
-    background-image: url('../../img/news-announcements.png')
+.content-1 li:nth-of-type(3) {
+    font-size: 24px;
+    font-family: OpenSans-SemiBold;
+    font-weight: 600;
+    color: rgba(57, 61, 68, 1);
+    line-height: 34px;
+    text-align: left;
+    margin: 28px 8px;
 }
 
-.Events-Calendar:nth-child(4) {
-    background-image: url('../../img/news-emailbulletins.png')
+.content-1 li:nth-of-type(4) {
+    font-size: 24px;
+    font-family: OpenSans-SemiBold;
+    font-weight: 600;
+    color: rgba(57, 61, 68, 1);
+    line-height: 34px;
+    margin: 28px 8px;
 }
 
-.calendar-img {
-    width: 250px;
-    height: 84px;
-    background: rgba(106, 166, 102, 0.9);
-    position: relative;
-    top: 76px;
-    left: 59px;
+.content-1 li:nth-of-type(5) {
+    font-size: 24px;
+    font-family: OpenSans-SemiBold;
+    font-weight: 600;
+    color: rgba(57, 61, 68, 1);
+    line-height: 34px;
+    margin: 0 8px;
 }
 
-/* .calendar-img img{
-    width: 90px;
-    height:90px;
-    position: relative;
-    top:-10px ;
-    left:81px ;
-    transition:top 1s;
--webkit-transition:top 1s; 
+.content-1 li .addresses li {
+    list-style: disc;
+    margin: 0;
+    margin-left: 20px;
+    box-sizing: border-box;
+    line-height: 34px;
+    font-size: 22px;
+    font-family: SourceHanSansSC-Normal;
+    font-weight: 400;
 }
-.calendar-img img:hover{
-    position: relative;
-    top:-20px ;
-    left:81px ;
-    cursor: pointer;
-} */
-.calendar-img p {
 
-    font-size: 25px;
-    font-family: OpenSans-Bold;
-    font-weight: bold;
-    color: rgba(255, 255, 255, 1);
-    line-height: 80px;
-    text-align: center;
-    /* margin-top: 88px; */
+.content-img {
+    width: 100%;
+    height: 250px;
+}
+
+.content-img img {
+    height: 250px;
 }
 
 .footer-p {
-
     font-size: 16px;
     font-family: OpenSans-SemiBold;
     font-weight: 600;
     color: rgba(255, 255, 255, 1);
     line-height: 70px;
     text-align: center;
-
 }
 
 .main-left-content {
@@ -186,4 +206,16 @@ body {
     border-radius: 50%;
     background-color: #A0C79F;
     margin-left: 16px;
+}
+
+.langOv {
+    display: none;
+}
+
+.addresses li a {
+    text-decoration: underline;
+}
+
+.addresses {
+    margin: 10px;
 }
