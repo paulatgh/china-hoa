@@ -1,7 +1,7 @@
 var render = function() {
     var event_template = $('#event_template').html();
     Mustache.parse(event_template);
-    $.each(data.events, function() {
+    $.each(data.date, function() {
         $('#calendar_events').append(Mustache.render(event_template, this));
     });
 };
