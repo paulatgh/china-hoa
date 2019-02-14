@@ -10,385 +10,45 @@
 
     <title>De Anza Oaks</title>
     <link rel="stylesheet" type="text/css" href="../../css/animate.css">
-    <link rel="stylesheet" type="text/css" href="../../css/aos.css">
     <link rel="stylesheet" type="text/css" href="../../css/masterslider.main.css">
     <link rel="stylesheet" type="text/css" href="../../css/ms-skin-sample.css">
     <link rel="stylesheet" type="text/css" href="../../css/reset.css">
     <link rel="stylesheet" type="text/css" href="../../css/public.css">
     <link rel="stylesheet" href="../../css/Resources/eForms/add.css">
+    <script src="https://cdn.bootcss.com/jquery/3.3.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+
 </head>
 
 <body>
-    <!-- 头部 -->
-    <div class="header" style="box-shadow:0px 2px 7px 0px rgba(0,0,0,0.5);
-        border:1px solid rgba(151,151,151,1)">
-        <div class="w1200">
-            <a class="logo" href="index.html">
-                <img src="../../img/Combined Shape.png" alt="Combined Shape">
-                De Anza Oaks
-            </a>
-            <input type="text" placeholder="Search..." style="width: 188px;height: 37px;position: relative;top: 30px;left: 540px;border: solid 1px #393D44;padding-left: 10px;">
+    <div id="content"></div>
+    <script>
+        var data = {
+            add: 1
+        }
+    </script>
 
-            <div class="btns clearfix">
-                <img src="../../img/Shape.png" alt="Shape" style="position: relative;left: -140px;top: 40px;z-index: 100000;">
-                <img src="../../img/dropdown.png" alt="dropdown" style="position: relative;left: -50px;top: 36px;z-index: 100000;">
-                <a class="btns-search" href="javascript:;"> </a>
-                <a class="btns-language" href="javascript:;"></a>
-                <div class="langOv">
-                    <div class="profile">
-                        <a href="saveFile.html" style="border-bottom: 1px solid white;width: 100%;margin-left: -1px">My
-                            Profile</a>
-                        <a href="javascript:;" class="logout">Log Out</a>
-                    </div>
-                </div>
-            </div>
-            <div class="nav">
-                <ul>
-                    <li class="curr">
-                        <a class="on" href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="about.html">About us</a>
-                    </li>
-                    <!-- <li>
-                        <a href="downloadFile.html">Docs</a>
-                    </li> -->
-
-                </ul>
-                <span class="navline"></span>
-            </div>
-        </div>
-        <!-- 二级导航背景 -->
-        <div class="innavbg"></div>
-        <div class="mask"></div>
-        <script src="../../js/jquery-1.11.0.min.js"></script>
-        <script type="text/javascript" src="../../js/header.js"></script>
-    </div>
-
-    <!-- 主体 -->
-    <div class="investor clearfix" style="margin-top: 30px;">
-        <div class="w1200">
-            <ul class="breadcrumb">
-                <li><a href="../../index.html" rel="noopener noreferrer">Home</a></li>
-                <li>&nbsp;>&nbsp;</li>
-                <li><a href="../resources.html" rel="noopener noreferrer"> Resources </a></li>
-                <li>&nbsp;>&nbsp;</li>
-                <li><a href="../eForms/eforms.html" rel="noopener noreferrer"> eForms</a></li>
-                <li>&nbsp;>&nbsp;</li>
-                <li><a href="#" rel="noopener noreferrer"> eForm Add</a></li>
-            </ul>
-            <table style="background-color: #ffffff; margin-top:20px;" background="" border="0" width="100%"
-                cellpadding="10" cellspacing="0">
-                <tbody>
-                    <tr>
-                        <td>
-                            <font size="2" face="Verdana, Arial, Helvetica" color="#222311">
-                                <table border="0" width="100%" bgcolor="#222311">
-                                    <tbody>
-                                        <tr style="height:50px">
-                                            <td width="25"> </td>
-                                            <td align="center">
-                                                <font size="4" face="Verdana, Arial, Helvetica" color="#f1e8c6">
-                                                    eForm Add
-                                                </font>
-                                            </td>
-                                            <!-- <td width="25">
-                                                <a href="#" onclick="openHelp('h9');"> <img src="img/help-button.gif"
-                                                        alt="Help" align="right" border="0"></a></td> -->
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <script src="https://cdn.ckeditor.com/ckeditor5/11.2.0/classic/ckeditor.js"></script>
-                                <form>
-
-                                    <div align="center">
-                                        <center>
-                                            <table class="std-table" border="3" width="100%" cellspacing="0"
-                                                bordercolor="#008000">
-                                                <tbody>
-                                                    <tr>
-                                                        <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
-                                                            <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;Form
-                                                                Title/Name:</font>
-                                                        </td>
-                                                        <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6"><input
-                                                                type="text" name="short_desc" size="40" maxlength="50"
-                                                                style="font-family: Tahoma; font-size: 11"></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6" valign="top"
-                                                            colspan="2" height="20px" style="width: 90%">&nbsp;</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6" valign="top">
-                                                            <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;Full
-                                                                Description:</font>
-                                                        </td>
-                                                        <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">&nbsp;</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td colspan="2" align="center" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
-                                                            <!-- CuteEditor Version 6.7 full_desc Begin -->
-                                                            <textarea name="full_desc" id="full_desc" rows="13" cols="50"
-                                                                class="CuteEditorTextArea" style="DISPLAY: none; WIDTH: 100%; HEIGHT: 100%"></textarea>
-
-                                                            <link href="Editor/Themes/Office2007/style.asp?EditorID=CE_full_desc_ID"
-                                                                type="text/css" rel="stylesheet">
-                                                            <input type="hidden" name="full_desc$ClientState" value="ToggleBorder=b:true;FullPage=b:false">
-                                                            <table id="CE_full_desc_ID" _iscuteeditor="True"
-                                                                cellspacing="0" cellpadding="0" style="background-color: rgb(244, 244, 243); border-color: rgb(221, 221, 221); border-width: 1px; border-style: solid; table-layout: auto; height: 450px; width: 100%;">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td class="CuteEditorToolBarContainer"
-                                                                            unselectable="on" valign="top">
-                                                                            <textarea name="content" id="editor"></textarea>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-
-                                                            <script>
-                                                                function CuteEditor_FilterCode(editor, code) {
-                                                                    return code.replace(/(<\/*)(script)([^\>]*\>)/ig,
-                                                                        "$1script$3").replace(/(['"][^\n\r']*)([\n\r]+)([^\n\r']*)([\n\r]*)(['"])/ig,
-                                                                            "$1$3$5");
-                                                                }
-                                                            </script>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6" colspan="2"
-                                                            height="20px" style="width: 90%" valign="top">&nbsp;</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6" valign="top">
-                                                            <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;Auto
-                                                                Reply Email Message:</font>
-                                                        </td>
-                                                        <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">&nbsp;</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td colspan="2" align="center" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
-                                                            <!-- CuteEditor Version 6.7 auto_reply Begin -->
-                                                            <textarea name="auto_reply" id="auto_reply" rows="13" cols="50"
-                                                                class="CuteEditorTextArea" style="DISPLAY: none; WIDTH: 100%; HEIGHT: 100%"></textarea>
-
-                                                            <link href="Editor/Themes/Office2007/style.asp?EditorID=CE_auto_reply_ID"
-                                                                type="text/css" rel="stylesheet"><input type="hidden"
-                                                                name="auto_reply$ClientState" value="ToggleBorder=b:true;FullPage=b:false">
-                                                            <table id="CE_auto_reply_ID" _iscuteeditor="True"
-                                                                cellspacing="0" cellpadding="0" style="background-color: rgb(244, 244, 243); border-color: rgb(221, 221, 221); border-width: 1px; border-style: solid; table-layout: auto; height: 450px; width: 100%;">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td class="CuteEditorToolBarContainer"
-                                                                            unselectable="on" valign="top">
-                                                                            <textarea name="content" id="editor1"></textarea>
-                                                                        </td>
-                                                                    </tr>
-
-                                                                    <tr>
-                                                                        <td class="CuteEditorBottomBarContainer">
-                                                                            <table border="0" cellspacing="0"
-                                                                                cellpading="0" style="width:100%;">
-                                                                                <tbody>
-                                                                                    <tr>
-                                                                                        <td>
-                                                                                            <div id="CE_auto_reply_ID_TagListContainer"
-                                                                                                class="CuteEditorTagListContainer">
-                                                                                                <table border="0"
-                                                                                                    cellspacing="0"
-                                                                                                    cellpadding="0">
-                                                                                                    <tbody>
-                                                                                                        <tr></tr>
-                                                                                                    </tbody>
-                                                                                                </table>
-                                                                                            </div>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                </tbody>
-                                                                            </table>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-
-
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6" colspan="2"
-                                                            height="20px" style="width: 90%" valign="top">&nbsp;</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
-                                                            <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;Send
-                                                                eForm in Rich Format?</font>
-                                                        </td>
-                                                        <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6"><input
-                                                                type="checkbox" name="rich_format" style="font-family: Tahoma; font-size: 11"></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
-                                                            <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;Screen
-                                                                Message after Submission:</font>
-                                                        </td>
-                                                        <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6"><textarea
-                                                                wrap="virtual" name="submit_message" cols="50" rows="5"></textarea></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
-                                                            <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;View
-                                                                Security Level?:<br>&nbsp;&nbsp;&nbsp;Public = 100<br>&nbsp;&nbsp;&nbsp;Resident
-                                                                = 50<br>&nbsp;&nbsp;&nbsp;Administrator = 1</font>
-                                                        </td>
-                                                        <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6"><input
-                                                                type="text" name="sec_level" size="3" maxlength="3"
-                                                                style="font-family: Tahoma; font-size: 11"></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td bgcolor="#f1e8c6" bordercolor="#f1e8c6" colspan="2">
-                                                            <hr>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
-                                                            <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;Only
-                                                                allow 1 submission per profile?</font>
-                                                        </td>
-                                                        <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6"><input
-                                                                type="checkbox" name="single_submit" style="font-family: Tahoma; font-size: 11"
-                                                                onclick="ShowHideViewResultsSecurityLevel(this);"></td>
-                                                    </tr>
-                                                    <tr id="tr-view-results-security-level" style="display:none;">
-                                                        <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
-                                                            <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;View
-                                                                Results Security Level? (displays after submission)<br>&nbsp;&nbsp;&nbsp;Public
-                                                                = 100<br>&nbsp;&nbsp;&nbsp;Resident = 50<br>&nbsp;&nbsp;&nbsp;Administrator
-                                                                = 1</font>
-                                                        </td>
-                                                        <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6"><input
-                                                                type="text" name="view_results_sec_level" size="3"
-                                                                maxlength="3" style="font-family: Tahoma; font-size: 11"></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td bgcolor="#f1e8c6" bordercolor="#f1e8c6" colspan="2">
-                                                            <hr>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
-                                                            <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;Authenticate
-                                                                eForm Submissions?</font>
-                                                        </td>
-                                                        <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6"><input
-                                                                type="checkbox" name="authenticate_form" style="font-family: Tahoma; font-size: 11"></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
-                                                            <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;Make
-                                                                eForm free-form (no box container)?</font>
-                                                        </td>
-                                                        <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6"><input
-                                                                type="checkbox" name="free_form" style="font-family: Tahoma; font-size: 11"></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
-                                                            <font face="Verdana, Arial, Helvetica" size="2" color="#222311">Auto-post
-                                                                submitted forms to the Task Manager under this
-                                                                category:</font>
-                                                        </td>
-                                                        <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
-                                                            <font face="Verdana, Arial, Helvetica" size="2" color="#222311">
-
-                                                                <select size="1" name="task_category_id" style="font-family: Tahoma; font-size: 11">
-                                                                    <option value="0">None</option>
-
-                                                                </select>
-                                                            </font>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </center>
-                                    </div>
-
-                                    <p>
-                                    </p>
-                                    <table border="0" width="100%">
-                                        <tbody>
-                                            <tr>
-                                                <td width="10%" align="right">
-                                                    <input type="Submit" value="Continue" name="action" class="continue">
-                                                    <input type="Submit" value="Cancel" name="action" class="cancel">
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <p></p>
-                                </form>
-
-                                <!-- End Content Begin Footer -->
-
-
-                                <p align="center">
-                                    <font color="#222311" face="Verdana, Arial, Helvetica" size="1">
-                                    </font>
-                                </p>
-                                <font color="#222311" face="Verdana, Arial, Helvetica" size="1">
-                                </font>
-                            </font>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <div class="clearfix"></div>
-        </div>
-    </div>
-
-    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../../js/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="../../js/aos.js"></script>
-    <script type="text/javascript" src="../../js/masterslider.min.js"></script>
-    <script type="text/javascript" src="../../js/index.js"></script>
-    <script type="text/javascript" src="list=hk02007.js"></script>
-    <!-- 底部 -->
-    <div class="footer" style="margin-top: 40px;">
-        <p>
-            Copyright © 2019 Tellus, Inc. All Rights Reserved.
-        </p>
-    </div>
-
+    <script src="https://cdn.ckeditor.com/ckeditor5/11.2.0/classic/ckeditor.js"></script>
+    <script src="../../js/Resources/eForms/add.js"></script>
+    <script>
+        // This script block stays in this wrapper html file
+        $(function () {
+            $('#content').load("add.body.html", function () {
+                render();
+                ClassicEditor
+                    .create(document.querySelector('#editor'))
+                    .catch(error => {
+                        console.error(error);
+                    });
+                ClassicEditor
+                    .create(document.querySelector('#editor1'))
+                    .catch(error => {
+                        console.error(error);
+                    });
+            });
+        });
+    </script>
 
 </body>
-<script>
-    ClassicEditor
-        .create(document.querySelector('#editor'))
-        .catch(error => {
-            console.error(error);
-        });
-    ClassicEditor
-        .create(document.querySelector('#editor1'))
-        .catch(error => {
-            console.error(error);
-        });
-</script>
-
-<script>
-    // admin
-    var storage = window.localStorage;
-    if (storage.getItem('username') === 'admin') {
-        $('.buttona').css('display', 'none')
-    }
-
-    var username = storage.getItem('username')
-    $(".btns-language").text(username);
-
-    $('.logout').click(function () {
-        window.localStorage.setItem('username', '')
-        window.location.href = "http://tfire.net/index.html"
-
-    })
-</script>
 
 </html>

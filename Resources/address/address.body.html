@@ -1,4 +1,4 @@
-<!-- 头部 -->
+<!-- header -->
 <div class="header" style="box-shadow:0 2px 7px 0px rgba(0,0,0,0.5); border:1px solid rgba(151,151,151,1)">
     <div class="w1200">
         <a class="logo" href="../../dao.html">
@@ -26,19 +26,18 @@
                     <a class="on" href="../../dao.html">Home</a>
                 </li>
                 <li>
-                    <a href="../../about.html">About us</a>
+                    <a href="../../aboutus/aboutus.html">About us</a>
                 </li>
             </ul>
             <span class="navline"></span>
         </div>
     </div>
-    <!-- 二级导航背景 -->
     <div class="innavbg"></div>
     <div class="mask"></div>
     <script src="../../js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="../../js/header.js"></script>
 </div>
-<!-- 主体 -->
+<!-- main body -->
 <div class="main">
     <div class="main-top clearfix" style="margin-bottom: 35px;height: 100%;">
 
@@ -60,18 +59,10 @@
                         <div class="search_img"><img src="../../img/search2.png" /></div>
                     </div>
                     <div class="address_book_click">Click here to list by Street Name</div>
-                    <ul class="address_book_click_content">
-                        <li>No Street Name (1)</li>
-                        <li>Camberley Lane (19)</li>
-                        <li>Cricket Hill Road (43)</li>
-                        <li>Firwood Drive (43)</li>
-                        <li>Lamplighter Square (18)</li>
-                        <li>Longdown Road (46)</li>
-                        <li>N/A (1)</li>
-                        <li>Poplar Grove Square (15)</li>
-                        <li>Potters Hatch Common (15)</li>
-                        <li>Ridgeway Drive (20)</li>
-                        <li>washington Street (1)</li>
+                    <ul class="address_book_click_content" id="events_photo4">
+                        <script id="event_template4" type="txt/template">
+                            <li>{{title}} ({{number}})</li>
+                        </script>
                     </ul>
                     <div class="address_categories">
                         <h4>Address Book Categories</h4>
@@ -100,60 +91,24 @@
                             <li class="user_desc">{{name}}</li>
                                     </script>
                     </ul>
-                    <!-- <ul>
-                            <li>A</li>
-                            <li class="user_desc">Allan, Joan <span></span></li>
-                            <li class="user_desc">allen, christina</li>
-                            <li class="user_desc">An, Jeonghwan(James) <span></span> </li>
-                            <li class="user_desc">Anand, Prema</li>
-                            <li class="user_desc">Angne, Shweta</li>
-                            <li class="user_desc">Angani, Raju & Tekkali, Janaki</li>
-                            <li class="user_desc">Arora, Kiran & Patel, Ketan</li>
-                            <li class="user_desc">Arramreddy, Vasudeva & Rohini</li>
-                            <li class="user_desc">Arumugam, Ramabathiran & Ramabathiran, Selvi</li>
-                            <li class="user_desc">Asawa, Vanita</li>
-                        </ul>
-                        <ul>
-                            <li>B</li>
-                            <li class="user_desc">Baines, Joan & Mike</li>
-                            <li class="user_desc">Balachander, Needamangalam</li>
-                            <li class="user_desc">Balijepalli, Priya</li>
-                            <li class="user_desc">Beekley, Karen</li>
-                            <li class="user_desc">berry, susan</li>
-
-                        </ul>
-                        <ul>
-                            <li>C</li>
-                            <li class="user_desc">Cantley, Nancy</li>
-                            <li class="user_desc">Carlson, Madge Ann</li>
-                        </ul> -->
                     <div class="a_z">
-                        <ul>
+                        <ul id="events_photo">
                             <li>(No Street Name)</li>
-                            <li class="user_desc">Allan, Joan <span></span></li>
-                            <li class="user_desc">allen, christina</li>
-                            <li class="user_desc">An, Jeonghwan(James) <span></span> </li>
-                            <li class="user_desc">Anand, Prema</li>
-                            <li class="user_desc">Angne, Shweta</li>
-                            <li class="user_desc">Angani, Raju & Tekkali, Janaki</li>
-                            <li class="user_desc">Arora, Kiran & Patel, Ketan</li>
-                            <li class="user_desc">Arramreddy, Vasudeva & Rohini</li>
-                            <li class="user_desc">Arumugam, Ramabathiran & Ramabathiran, Selvi</li>
-                            <li class="user_desc">Asawa, Vanita</li>
+                            <script id="event_template" type="txt/template">
+                                <li class="user_desc">{{title}} <span></span></li>
+                            </script>
                         </ul>
-                        <ul>
+                        <ul id="events_photo2">
                             <li class="user_desc">Camberley Lane</li>
-                            <li class="user_desc">Baines, Joan & Mike</li>
-                            <li class="user_desc">Balachander, Needamangalam</li>
-                            <li class="user_desc">Balijepalli, Priya</li>
-                            <li class="user_desc">Beekley, Karen</li>
-                            <li class="user_desc">berry, susan</li>
-
+                            <script id="event_template2" type="txt/template">
+                                <li class="user_desc">{{title}}</li>
+                            </script>
                         </ul>
-                        <ul>
+                        <ul id="events_photo3">
                             <li class="user_desc">Cricket Hill Road</li>
-                            <li class="user_desc">Cantley, Nancy</li>
-                            <li class="user_desc">Carlson, Madge Ann</li>
+                            <script id="event_template3" type="txt/template">
+                                <li class="user_desc">{{title}}</li>
+                            </script>
                         </ul>
                     </div>
                 </div>
@@ -189,7 +144,7 @@
         </div>
     </div>
 
-    <!-- 底部 -->
+    <!-- fotter -->
     <div class="footer" style="margin-bottom: -24px">
         <p>
             Copyright © 2019 Tellus, Inc. All Rights Reserved.
@@ -197,7 +152,7 @@
     </div>
     <div class="clearfix"></div>
 </div>
+<script src="../../js/Resources/address/address.js"></script>
 <script type="text/javascript" src="../../js/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="../../js/aos.js"></script>
 <script type="text/javascript" src="../../js/masterslider.min.js"></script>
 <script type="text/javascript" src="../../js/index.js"></script>

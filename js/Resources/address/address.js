@@ -2,19 +2,20 @@ var render = function () {
     var event_template = $('#event_template').html();
     var event_template2 = $('#event_template2').html();
     var event_template3 = $('#event_template3').html();
+    var event_template4 = $('#event_template4').html();
 
     Mustache.parse(event_template);
     var a = []
     $.each(data.user, function (index, item) {
-        a = item.username.filter((val) => val.name.substr(0, 1) === 'A')
+        a = item.username.filter((val) => val.name.substr(0, 1) === 'A' || val.name.substr(0, 1) === 'a')
     });
     var b = []
     $.each(data.user, function (index, item) {
-        b = item.username.filter((val) => val.name.substr(0, 1) === 'B')
+        b = item.username.filter((val) => val.name.substr(0, 1) === 'B' || val.name.substr(0, 1) === 'b')
     });
     var c = []
     $.each(data.user, function (index, item) {
-        c = item.username.filter((val) => val.name.substr(0, 1) === 'C')
+        c = item.username.filter((val) => val.name.substr(0, 1) === 'C' || val.name.substr(0, 1) === 'c')
     });
     $.each(a, function () {
         $('#events_photo').append(Mustache.render(event_template, this));
@@ -25,6 +26,12 @@ var render = function () {
     $.each(c, function () {
         $('#events_photo3').append(Mustache.render(event_template3, this));
     })
+
+    Mustache.parse(event_template4);
+    $.each(data, function () {
+        $('#calendar_events4').append(Mustache.render(event_template4, this));
+    });
+
 };
 
 // admin
@@ -37,7 +44,7 @@ if (storage.getItem('username') === 'admin') {
 
 $('.logout').click(function () {
     window.localStorage.setItem('username', '')
-    window.location.href = "http://tfire.net/index.html"
+    window.location.href = "http://tfire.net/dao.html"
 
 })
 
@@ -96,11 +103,9 @@ $(function () {
                     </div>
                 </div>`
 
-
     var show = true;
     $('.address_book_click').click(function () {
         if (show) {
-            // 按A-Z来搜素
             $('.address_book_click_content').css('display', 'block')
             $(this).text('Click here to list from A to Z')
             $('.address_book_letter').css('display', 'none')
@@ -110,7 +115,6 @@ $(function () {
             show = false;
 
         } else {
-            //按街道搜索
             $('.address_book_click_content').css('display', 'none')
             $(this).text('Click here to list by Street Name')
             $('.address_book_letter').css('display', 'block')

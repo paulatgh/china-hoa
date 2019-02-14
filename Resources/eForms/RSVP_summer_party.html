@@ -14,155 +14,28 @@
     <link rel="stylesheet" type="text/css" href="../../css/reset.css">
     <link rel="stylesheet" type="text/css" href="../../css/public.css">
     <link rel="stylesheet" href="../../css/Resources/eForms/RSVP_summer_party.css">
+    <script src="https://cdn.bootcss.com/jquery/3.3.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
 </head>
 
 <body>
-    <!-- 头部 -->
-    <div class="header" style="box-shadow:0px 2px 7px 0px rgba(0,0,0,0.5);
-        border:1px solid rgba(151,151,151,1)">
-        <div class="w1200">
-            <a class="logo" href="../../index.html">
-                <img src="../../img/Combined Shape.png" alt="Combined Shape">
-                De Anza Oaks
-            </a>
-            <input type="text" placeholder="Search..." style="width: 188px;height: 37px;position: relative;top: 30px;left: 540px;border: solid 1px #393D44;padding-left: 10px;">
+    <div id="content"></div>
+    <script>
+        var data = {
 
-            <div class="btns clearfix">
-                <img src="../../img/Shape.png" alt="Shape" style="position: relative;left: -140px;top: 40px;z-index: 100000;">
-                <img src="../../img/dropdown.png" alt="dropdown" style="position: relative;left: -50px;top: 36px;z-index: 100000;">
-                <a class="btns-search" href="javascript:;"> </a>
-                <a class="btns-language" href="javascript:;"></a>
-                <div class="langOv">
-                    <div class="profile">
-                        <a href="../../saveFile.html" style="border-bottom: 1px solid white;width: 100%;margin-left: -1px">My
-                            Profile</a>
-                        <a href="javascript:;" class="logout">Log Out</a>
-                    </div>
-                </div>
-            </div>
-            <div class="nav">
-                <ul>
-                    <li class="curr">
-                        <a class="on" href="../../index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="../../about.html">About us</a>
-                    </li>
-                </ul>
-                <span class="navline"></span>
-            </div>
-        </div>
-        <!-- 二级导航背景 -->
-        <div class="innavbg"></div>
-        <div class="mask"></div>
+        }
+    </script>
 
-        <script src="../../js/jquery-1.11.0.min.js"></script>
-        <script type="text/javascript" src="../../js/header.js"></script>
-    </div>
-
-    <!-- 主体 -->
-    <div class="investor clearfix">
-        <div class="w1200">
-            <ul class="breadcrumb">
-                <li><a href="../../index.html" rel="noopener noreferrer">Home</a></li>
-                <li>&nbsp;>&nbsp;</li>
-                <li><a href="../resources.html" rel="noopener noreferrer"> Resources </a></li>
-                <li>&nbsp;>&nbsp;</li>
-                <li><a href="../eForms/eforms.html" rel="noopener noreferrer"> eForms</a></li>
-                <li>&nbsp;>&nbsp;</li>
-                <li><a href="#" rel="noopener noreferrer"> RSVP </a></li>
-            </ul>
-            <tbody style="margin-top: 50px;">
-                <tr>
-                    <td>
-                        <font size="2" face="Verdana, Arial, Helvetica" color="#222311">
-
-                            <form>
-                                <center style="margin-top: 200px">
-                                    <table class="eformtable std-table" id="eform29">
-                                        <tbody>
-                                            <tr>
-                                                <td class="eformheader" colspan="2">RSVP for DAO End of Summer Party</td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2"><br>
-                                                    <hr>
-                                                </td>
-                                            </tr><input type="hidden" name="rich_format" value="False">
-                                            <tr>
-                                                <td widht="200px" style="text-indent:0px;">Name:</td>
-                                                <td><input type="text" value="Connie Chan" name="f139" size="30"
-                                                        maxlength="250">*</td>
-                                            </tr>
-                                            <tr>
-                                                <td widht="200px" style="text-indent:0px;">No. of Adults:</td>
-                                                <td><input type="text" value="" name="f140" size="30" maxlength="250">*</td>
-                                            </tr>
-                                            <tr>
-                                                <td widht="200px" style="text-indent:0px;">No. of Kids:</td>
-                                                <td><input type="text" value="" name="f141" size="30" maxlength="250"></td>
-                                            </tr>
-                                            <tr>
-                                                <td style="text-indent:0px;">Can you help set up?:</td>
-                                                <td><select size="1" name="f142">
-                                                        <option value="1">Yes</option>
-                                                        <option value="5">No</option>
-                                                    </select>*</td>
-                                            </tr>
-                                            <tr>
-                                                <td style="text-indent:0px;">Can you help clean up?:</td>
-                                                <td><select size="1" name="f143">
-                                                        <option value="1">Yes</option>
-                                                        <option value="5">No</option>
-                                                    </select>*</td>
-                                            </tr>
-                                            <tr>
-                                                <td align="center" colspan="2">&nbsp;<br><input type="submit" value="Submit"
-                                                        id="send" name="action"><br><input type="HIDDEN" name="id"
-                                                        value="29"><input type="HIDDEN" name="cat_desc" value="RSVP for DAO End of Summer Party"><input
-                                                        type="HIDDEN" name="short_desc" value="RSVP for DAO End of Summer Party"><input
-                                                        type="HIDDEN" name="full_desc" value=""><input type="HIDDEN"
-                                                        name="ac_check" value="">* indicates required field<br></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </center>
-                            </form>
-                        </font>
-                    </td>
-                </tr>
-            </tbody>
-            <div class="clearfix"></div>
-        </div>
-    </div>
-    <script type="text/javascript" src="../../js/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="../../js/aos.js"></script>
-    <script type="text/javascript" src="../../js/masterslider.min.js"></script>
-    <script type="text/javascript" src="../../js/index.js"></script>
-    <!-- 底部 -->
-    <div class="footer" style="margin-top: 525px">
-        <p>
-            Copyright © 2019 Tellus, Inc. All Rights Reserved.
-        </p>
-    </div>
+    <script src="../../js/Resources/eForms/RSVP_summer_party.js"></script>
+    <script>
+        // This script block stays in this wrapper html file
+        $(function () {
+            $('#content').load("RSVP_summer_party.body.html", function () {
+                render();
+            });
+        });
+    </script>
 </body>
 
-<script>
-    // admin
-    var storage = window.localStorage;
-    if (storage.getItem('username') === 'admin') {
-        $('.buttona').css('display', 'none')
-    }
-    var username = storage.getItem('username')
-    $(".btns-language").text(username);
-
-
-    $('.logout').click(function () {
-        window.localStorage.setItem('username', '')
-        window.location.href = "http://tfire.net/index.html"
-
-
-    })
-</script>
 
 </html>

@@ -16,7 +16,7 @@ $(function () {
     var query = window.location.search.substring(1);
     if (query === "Board/Committee") {
         $('.add_volunteer_title').text(query)
-        var str = `<li><a href="../../index.html" rel="noopener noreferrer">Home</a></li>
+        var str = `<li><a href="../../dao.html" rel="noopener noreferrer">Home</a></li>
         <li>&nbsp;>&nbsp;</li>
         <li><a href="../../resources.html" rel="noopener noreferrer"> Resources </a></li>
         <li>&nbsp;>&nbsp;</li>
@@ -24,7 +24,7 @@ $(function () {
         $('.breadcrumb').append(str)
     } else {
         $('.add_volunteer_title').text('Volunteer Needs')
-        var str = `<li><a href="../../index.html" rel="noopener noreferrer">Home</a></li>
+        var str = `<li><a href="../../dao.html" rel="noopener noreferrer">Home</a></li>
         <li>&nbsp;>&nbsp;</li>
         <li><a href="../../news.html" rel="noopener noreferrer"> News </a></li>
         <li>&nbsp;>&nbsp;</li>
@@ -36,6 +36,6 @@ $(function () {
 
     $('.logout').click(function () {
         window.localStorage.setItem('username', '')
-        window.location.href = "http://tfire.net/index.html"
+        window.location.href = "http://tfire.net/dao.html"
     })
 })
