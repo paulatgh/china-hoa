@@ -1,0 +1,203 @@
+<!-- 头部 -->
+<div class="header" style="box-shadow:0 2px 7px 0px rgba(0,0,0,0.5); border:1px solid rgba(151,151,151,1)">
+    <div class="w1200">
+        <a class="logo" href="../../index.html">
+            <img src="../../img/Combined Shape.png" alt="Combined Shape">
+            De Anza Oaks
+        </a>
+        <input type="text" placeholder="Search..." style="width: 188px;height: 37px;position: relative;top: 30px;left: 540px;border: solid 1px #393D44;padding-left: 10px;">
+
+        <div class="btns clearfix">
+            <img src="../../img/Shape.png" alt="Shape" style="position: relative;left: -140px;top: 40px;z-index: 100000;">
+            <img src="../../img/dropdown.png" alt="dropdown" style="position: relative;left: -50px;top: 36px;z-index: 100000;">
+            <a class="btns-search" href="javascript:;"> </a>
+            <a class="btns-language" href="javascript:;"></a>
+            <div class="langOv">
+                <div class="profile">
+                    <a href="../../saveFile.html" style="border-bottom: 1px solid white;width: 100%;margin-left: -1px">My
+                        Profile</a>
+                    <a href="javascript:;" class="logout">Log Out</a>
+                </div>
+            </div>
+        </div>
+        <div class="nav">
+            <ul>
+                <li class="curr">
+                    <a class="on" href="../../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="../../about.html">About us</a>
+                </li>
+            </ul>
+            <span class="navline"></span>
+        </div>
+    </div>
+    <!-- 二级导航背景 -->
+    <div class="innavbg"></div>
+    <div class="mask"></div>
+    <script src="../../js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../../js/header.js"></script>
+</div>
+<!-- 主体 -->
+<div class="main">
+    <div class="main-top clearfix" style="margin-bottom: 35px;height: 100%;">
+
+        <div class="w1200 pr">
+            <ul class="breadcrumb">
+                <li><a href="../../index.html" rel="noopener noreferrer">Home</a></li>
+                <li>></li>
+                <li><a href="../../Resources/resources.html" rel="noopener noreferrer"> Resources </a></li>
+                <li>></li>
+                <li><a href="#" rel="noopener noreferrer">Address Book</a></li>
+            </ul>
+            <div class="main-left" style="width:100%;height: 100%;">
+                <div class="address_title">Here you will find a listing of De Anza Oaks residents who participate in
+                    this online
+                    version of the Directory.</div>
+                <div class="address_book_left">
+                    <div class="search">
+                        <input type="search" name="" id="">
+                        <div class="search_img"><img src="../../img/search2.png" /></div>
+                    </div>
+                    <div class="address_book_click">Click here to list by Street Name</div>
+                    <ul class="address_book_click_content">
+                        <li>No Street Name (1)</li>
+                        <li>Camberley Lane (19)</li>
+                        <li>Cricket Hill Road (43)</li>
+                        <li>Firwood Drive (43)</li>
+                        <li>Lamplighter Square (18)</li>
+                        <li>Longdown Road (46)</li>
+                        <li>N/A (1)</li>
+                        <li>Poplar Grove Square (15)</li>
+                        <li>Potters Hatch Common (15)</li>
+                        <li>Ridgeway Drive (20)</li>
+                        <li>washington Street (1)</li>
+                    </ul>
+                    <div class="address_categories">
+                        <h4>Address Book Categories</h4>
+                        <ul>
+                            <li>All(224)</li>
+                            <li>Resident(224)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="address_book_right">
+                    <ul id="events_photo">
+                        <li>A</li>
+                        <script id="event_template" type="txt/template">
+                            <li class="user_desc">{{name}}</li>
+                            </script>
+                    </ul>
+                    <ul id="events_photo2">
+                        <li>B</li>
+                        <script id="event_template2" type="txt/template">
+                            <li class="user_desc">{{name}}</li>
+                                </script>
+                    </ul>
+                    <ul id="events_photo3">
+                        <li>C</li>
+                        <script id="event_template3" type="txt/template">
+                            <li class="user_desc">{{name}}</li>
+                                    </script>
+                    </ul>
+                    <!-- <ul>
+                            <li>A</li>
+                            <li class="user_desc">Allan, Joan <span></span></li>
+                            <li class="user_desc">allen, christina</li>
+                            <li class="user_desc">An, Jeonghwan(James) <span></span> </li>
+                            <li class="user_desc">Anand, Prema</li>
+                            <li class="user_desc">Angne, Shweta</li>
+                            <li class="user_desc">Angani, Raju & Tekkali, Janaki</li>
+                            <li class="user_desc">Arora, Kiran & Patel, Ketan</li>
+                            <li class="user_desc">Arramreddy, Vasudeva & Rohini</li>
+                            <li class="user_desc">Arumugam, Ramabathiran & Ramabathiran, Selvi</li>
+                            <li class="user_desc">Asawa, Vanita</li>
+                        </ul>
+                        <ul>
+                            <li>B</li>
+                            <li class="user_desc">Baines, Joan & Mike</li>
+                            <li class="user_desc">Balachander, Needamangalam</li>
+                            <li class="user_desc">Balijepalli, Priya</li>
+                            <li class="user_desc">Beekley, Karen</li>
+                            <li class="user_desc">berry, susan</li>
+
+                        </ul>
+                        <ul>
+                            <li>C</li>
+                            <li class="user_desc">Cantley, Nancy</li>
+                            <li class="user_desc">Carlson, Madge Ann</li>
+                        </ul> -->
+                    <div class="a_z">
+                        <ul>
+                            <li>(No Street Name)</li>
+                            <li class="user_desc">Allan, Joan <span></span></li>
+                            <li class="user_desc">allen, christina</li>
+                            <li class="user_desc">An, Jeonghwan(James) <span></span> </li>
+                            <li class="user_desc">Anand, Prema</li>
+                            <li class="user_desc">Angne, Shweta</li>
+                            <li class="user_desc">Angani, Raju & Tekkali, Janaki</li>
+                            <li class="user_desc">Arora, Kiran & Patel, Ketan</li>
+                            <li class="user_desc">Arramreddy, Vasudeva & Rohini</li>
+                            <li class="user_desc">Arumugam, Ramabathiran & Ramabathiran, Selvi</li>
+                            <li class="user_desc">Asawa, Vanita</li>
+                        </ul>
+                        <ul>
+                            <li class="user_desc">Camberley Lane</li>
+                            <li class="user_desc">Baines, Joan & Mike</li>
+                            <li class="user_desc">Balachander, Needamangalam</li>
+                            <li class="user_desc">Balijepalli, Priya</li>
+                            <li class="user_desc">Beekley, Karen</li>
+                            <li class="user_desc">berry, susan</li>
+
+                        </ul>
+                        <ul>
+                            <li class="user_desc">Cricket Hill Road</li>
+                            <li class="user_desc">Cantley, Nancy</li>
+                            <li class="user_desc">Carlson, Madge Ann</li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="address_book_letter">
+                    <li>A</li>
+                    <li>B</li>
+                    <li>C</li>
+                    <li>D</li>
+                    <li>E</li>
+                    <li>F</li>
+                    <li>G</li>
+                    <li>H</li>
+                    <li>I</li>
+                    <li>J</li>
+                    <li>K</li>
+                    <li>L</li>
+                    <li>M</li>
+                    <li>N</li>
+                    <li>O</li>
+                    <li>P</li>
+                    <li>Q</li>
+                    <li>R</li>
+                    <li>S</li>
+                    <li>T</li>
+                    <li>U</li>
+                    <li>V</li>
+                    <li>W</li>
+                    <li>X</li>
+                    <li>Y</li>
+                    <li>Z</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部 -->
+    <div class="footer" style="margin-bottom: -24px">
+        <p>
+            Copyright © 2019 Tellus, Inc. All Rights Reserved.
+        </p>
+    </div>
+    <div class="clearfix"></div>
+</div>
+<script type="text/javascript" src="../../js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../../js/aos.js"></script>
+<script type="text/javascript" src="../../js/masterslider.min.js"></script>
+<script type="text/javascript" src="../../js/index.js"></script>

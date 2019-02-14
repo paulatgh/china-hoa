@@ -1,0 +1,316 @@
+<!-- 头部 -->
+<div class="header" style="box-shadow:0px 2px 7px 0px rgba(0,0,0,0.5);
+  border:1px solid rgba(151,151,151,1);">
+    <div class="w1200" style="height: 0;">
+        <a class="logo" href="../../index.html">
+            <img src="../../img/Combined Shape.png" alt="Combined Shape">
+            De Anza Oaks
+        </a>
+        <input type="text" placeholder="Search..." style="width: 188px;height: 37px;position: relative;top: 30px;left: 540px;border: solid 1px #393D44;padding-left: 10px;">
+        <div class="btns clearfix">
+            <img src="../../img/Shape.png" alt="Shape" style="position: relative;left: -140px;top: 40px;z-index: 100000;">
+            <img src="../../img/dropdown.png" alt="dropdown" style="position: relative;left: -50px;top: 36px;z-index: 100000;">
+            <a class="btns-search" href="javascript:;"> </a>
+            <a class="btns-language" href="javascript:;"></a>
+            <div class="langOv">
+                <div class="profile">
+                    <a href="../../saveFile.html" style="border-bottom: 1px solid white;width: 100%;margin-left: -1px">My
+                        Profile</a>
+                    <a href="javascript:;" class="logout">Log Out</a>
+                </div>
+            </div>
+        </div>
+        <div class="nav">
+            <ul>
+                <li class="curr">
+                    <a class="on" href="../../index.html">Home</a>
+                </li>
+                <li class="curr">
+                    <a class="on" href="../../about.html">About us</a>
+                </li>
+            </ul>
+            <span class="navline"></span>
+        </div>
+    </div>
+    <!-- 二级导航背景 -->
+    <!-- <div class="innavbg"></div> -->
+    <div class="mask"></div>
+
+    <script src="../../js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../../js/header.js"></script>
+    <script type="text/javascript" src="../../js/list=hk02007.js" charset="gb2312"></script>
+</div>
+
+<!-- 主体 -->
+<div class="main">
+    <div class="w1200 pr">
+        <ul class="breadcrumb" style="float: left">
+            <li><a href="../../index.html">Home</a></li>
+            <li>&nbsp;>&nbsp;</li>
+            <li><a href="../../Resources/resources.html">Resources</a></li>
+            <li>&nbsp;>&nbsp;</li>
+            <li><a href="#">Board/Committee</a></li>
+        </ul>
+        <h4>Board / Committee</h4>
+        <div class="content-1">
+            A complete listing of Board Members, Committee Chairs and Association Management
+        </div>
+        <div class="committee_add">Add</div>
+        <ul class="committee-content">
+            <li id="events_photo">
+                <script id="event_template" type="txt/template">
+                    <div class="part_1">
+                            <div class="Volunteer_dec_title" style="font-weight: 600;">{{title}}</div>
+                            <div class="Volunteer_dec_title">
+                                <div>Updated:{{updated}}</div>
+                                <div>{{content}}</div>
+                            </div>
+                            <div class="Volunteer_dec_title">
+                                <div>{{from}}</div>
+                                <div>{{telephone}}</div>
+                                <div>{{email}}</div>
+                            </div>
+                            <div class="admin-control">
+                                <span> <a href="../../editboardcommittee.html">Edit</a></span>
+                                <span class="del">Delete</span>
+                            </div>
+                    </div>
+               </script>
+            </li>
+            <li id="events_photo2">
+                <script id="event_template2" type="txt/template">
+                    <div class="part_1">
+                                <div class="Volunteer_dec_title" style="font-weight: 600;">{{title}}</div>
+                                <div class="Volunteer_dec_title">
+                                    <div>Updated:{{updated}}</div>
+                                    <div>{{content}}</div>
+                                </div>
+                                <div class="Volunteer_dec_title">
+                                    <div>{{from}}</div>
+                                    <div>{{telephone}}</div>
+                                    <div>{{email}}</div>
+                                </div>
+                                <div class="admin-control">
+                                    <span> <a href="../../editboardcommittee.html">Edit</a></span>
+                                    <span class="del">Delete</span>
+                                </div>
+                        </div>
+                   </script>
+            </li>
+            <li id="events_photo3">
+                <script id="event_template3" type="txt/template">
+                    <div class="part_1">
+                                    <div class="Volunteer_dec_title" style="font-weight: 600;">{{title}}</div>
+                                    <div class="Volunteer_dec_title">
+                                        <div>Updated:{{updated}}</div>
+                                        <div>{{content}}</div>
+                                    </div>
+                                    <div class="Volunteer_dec_title">
+                                        <div>{{from}}</div>
+                                        <div>{{telephone}}</div>
+                                        <div>{{email}}</div>
+                                    </div>
+                                    <div class="admin-control">
+                                        <span> <a href="../../editboardcommittee.html">Edit</a></span>
+                                        <span class="del">Delete</span>
+                                    </div>
+                            </div>
+                       </script>
+            </li>
+            <!-- 
+            <li>
+                <div class="part_1">
+                    <div class="Volunteer_dec_title" style="font-weight: 600;">Architecture</div>
+                    <div class="Volunteer_dec_title">
+                        <div>Updated:7/14/2013</div>
+                        <div>The Architectural Committee assists the Board of Directors in the CC&R
+                            mandate that all changes to the exterior of your home must have prior
+                            Board approval. The committee oversees the Architectural Change
+                            Application process.
+                        </div>
+                    </div>
+                    <div class="Volunteer_dec_title">
+                        <div>Chairperson:Louis Kim</div>
+                    </div>
+                    <div class="admin-control">
+                        <span> <a href="../../editboardcommittee.html">Edit</a></span>
+                        <span class="del">Delete</span>
+                    </div>
+                </div>
+                <div class="part_1">
+                    <div class="Volunteer_dec_title" style="font-weight: 600;">DAO Emergency Response Committee
+                    </div>
+                    <div class="Volunteer_dec_title">
+                        <div>Updated:2/21/2018</div>
+                        <div>The DAO ERC meets quarterly to discuss how to best facilitate communication within
+                            DAO and the City of Cupertino in the event of an emergency. Co-Chairwomen are Alicia
+                            Schober and Wynne Dobyns.
+                        </div>
+                    </div>
+                    <div class="Volunteer_dec_title">
+                        <div>Chairwoman:Alicia Schober</div>
+                    </div>
+                    <div class="admin-control">
+                        <span> <a href="../../editboardcommittee.html">Edit</a></span>
+                        <span class="del">Delete</span>
+                    </div>
+                </div>
+                <div class="part_1">
+                    <div class="Volunteer_dec_title" style="font-weight: 600;">Events</div>
+                    <div class="Volunteer_dec_title">
+                        <div>Updated:2/21/2018</div>
+                        <div>The De Anza Oaks Events committee is responsible for organizing community wide
+                            functions such as the Egg Hunt and Brunch in the Spring, the End of Summer Celebration,
+                            and Holiday Potluck. For more information, contact Smita Sharma at smitavns@yahoo.com.
+                        </div>
+                    </div>
+                    <div class="admin-control">
+                        <span> <a href="../../editboardcommittee.html">Edit</a></span>
+                        <span class="del">Delete</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="part_1">
+                    <div class="Volunteer_dec_title" style="font-weight: 600;">De Anza Oaks Board of Directors</div>
+                    <div class="Volunteer_dec_title">
+                        <div>Updated:2/13/2018</div>
+                        <div style="word-wrap:break-word;">
+                            The DAO Board of Directors meets the 4th Tuesday
+                            of the month at 7:00 p.m. at the Clubhouse.
+                        </div>
+                    </div>
+                    <div class="Volunteer_dec_title">
+                        <div>DAO Board</div>
+                    </div>
+                    <div class="admin-control">
+                        <span> <a href="../../editboardcommittee.html">Edit</a></span>
+                        <span class="del">Delete</span>
+                    </div>
+                </div>
+                <div class="part_1">
+                    <div class="Volunteer_dec_title" style="font-weight: 600;">Association Manager</div>
+                    <div class="Volunteer_dec_title">
+                        <div>Updated:2/17/2017</div>
+                        <div style="word-wrap:break-word;">
+                            Corresponding via mail: De Anza Oaks Homeowners Association c/o Grayson
+                            Community Management 65 Washington Street, Suite 268 Santa Clara,
+                            CA 95050
+                        </div>
+                        <div style="margin-top: 15px">Telephone: 888-277-5580 Press 1 during business hours Press
+                            4 for after hours</div>
+                        <div style="margin-top: 15px">
+                            Email: www.helpdesk@graysoncm.com
+                        </div>
+                    </div>
+                    <div class="Volunteer_dec_title">
+                        <div>Grayson Community Management</div>
+                    </div>
+                    <div class="admin-control">
+                        <span> <a href="../../editboardcommittee.html">Edit</a></span>
+                        <span class="del">Delete</span>
+                    </div>
+                </div>
+                <div class="part_1">
+                    <div class="Volunteer_dec_title" style="font-weight: 600;">Parking</div>
+                    <div class="Volunteer_dec_title">
+                        <div>Updated:1/29/2018</div>
+                        <div style="word-wrap:break-word;">
+                            The Parking Committee ensures that all residents and guests of the De Anza Oaks
+                            community adhere to the association's parking rules. Contact Grayson Community
+                            Management with parking related concerns: helpdesk@graysoncm.com
+                        </div>
+                    </div>
+                    <div class="admin-control">
+                        <span> <a href="../../editboardcommittee.html">Edit</a></span>
+                        <span class="del">Delete</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="part_1">
+                    <div class="Volunteer_dec_title" style="font-weight: 600;">Clubhouse</div>
+                    <div class="Volunteer_dec_title">
+                        <div>Updated:1/29/2018</div>
+                        <div>
+                            The Clubhouse committee facilitates the rental of our community clubhouse.
+                            Geeta Chavan is the Chairwoman and can be reached by email or (408) 480-7456.
+                        </div>
+                    </div>
+                    <div class="admin-control">
+                        <span> <a href="../../editboardcommittee.html">Edit</a></span>
+                        <span class="del">Delete</span>
+                    </div>
+                </div>
+                <div class="part_1">
+                    <div class="Volunteer_dec_title" style="font-weight: 600;">Gate Directory</div>
+                    <div class="Volunteer_dec_title">
+                        <div>Updated:1/29/2018</div>
+                        <div>
+                            Contact Grayson Community Management for Gate Directory and Gate Opener related
+                            matters:
+                            (888) 277-5580,
+                            Press 1 during business hours, Press 4 for after hours. <br />
+                            helpdesk@graysoncm.com
+                        </div>
+                    </div>
+                    <div class="admin-control">
+                        <span> <a href="../../editboardcommittee.html">Edit</a></span>
+                        <span class="del">Delete</span>
+                    </div>
+                </div>
+                <div class="part_1">
+                    <div class="Volunteer_dec_title" style="font-weight: 600;">Directory Booklet</div>
+                    <div class="Volunteer_dec_title">
+                        <div>Updated:7/4/2010</div>
+                        <div>
+                            The De Anza Oaks Directory is provided by the Association for residents.
+                            Georgia Sutherland is the chairperson.
+                        </div>
+
+                    </div>
+                    <div class="Volunteer_dec_title">Committee Chair : Georgia Sutherland</div>
+                    <div class="admin-control">
+                        <span> <a href="../../editboardcommittee.html">Edit</a></span>
+                        <span class="del">Delete</span>
+                    </div>
+                </div>
+                <div class="part_1">
+                    <div class="Volunteer_dec_title" style="font-weight: 600;">Playground</div>
+                    <div class="Volunteer_dec_title">
+                        <div>Updated:2/21/2018</div>
+                        <div>
+                            The Playground Committee assists with decisions on equipment and maintenance.
+                        </div>
+
+                    </div>
+                    <div class="admin-control">
+                        <span> <a href="../../editboardcommittee.html">Edit</a></span>
+                        <span class="del">Delete</span>
+                    </div>
+                </div>
+            </li> -->
+        </ul>
+    </div>
+    <!-- </div> -->
+    <!-- </div> -->
+</div>
+
+<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../../js/aos.js"></script>
+<script type="text/javascript" src="../../js/masterslider.min.js"></script>
+<script type="text/javascript" src="../../js/index.js"></script>
+<script src="../../js/public.js"></script>
+<!-- 日历插件 -->
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="../../js/calendar.js"></script>
+
+
+<!-- 底部 -->
+<div class="footer">
+    <p>
+        Copyright © 2019 Tellus, Inc. All Rights Reserved.
+    </p>
+</div>
