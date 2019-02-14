@@ -5,541 +5,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=8" /> -->
+    <link rel="shortcut icon" type="image/ico" href="../../img/favicon.ico" />
 
     <title>De Anza Oaks</title>
-    <link rel="stylesheet" type="text/css" href="css/animate.css">
-    <link rel="stylesheet" type="text/css" href="css/aos.css">
-    <link rel="stylesheet" type="text/css" href="css/masterslider.main.css">
-    <link rel="stylesheet" type="text/css" href="css/ms-skin-sample.css">
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/public.css">
-    <!-- 日历插件 -->
-    <link rel="stylesheet" href="css/calendar.css">
+    <link rel="stylesheet" type="text/css" href="../../css/animate.css">
+    <link rel="stylesheet" type="text/css" href="../../css/aos.css">
+    <link rel="stylesheet" type="text/css" href="../../css/masterslider.main.css">
+    <link rel="stylesheet" type="text/css" href="../../css/ms-skin-sample.css">
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../css/public.css">
 
-    <style>
-        .main {
-            height: 1148px;
-        }
-
-        .breadcrumb li {
-            color: rgba(30, 130, 23, 1);
-            height: 27px;
-            font-size: 20px;
-            font-family: OpenSans-Regular;
-            font-weight: 400;
-            line-height: 27px;
-        }
-        .breadcrumb li a {
-            color: rgba(30, 130, 23, 1);
-
-        }
-
-        .breadcrumb {
-            width: 347px;
-            display: flex;
-            /* border: solid 1px red; */
-            position: relative;
-            top: 24px;
-        }
-
-        .main-breadcrumb {
-            width: 100%;
-            height: 50px;
-        }
-
-        .main-center {
-            width: 1200px;
-            height: auto;
-            margin: auto;
-        }
-
-        .address_book_click {
-            display: none;
-            width: 167px;
-            height: 38px;
-            background: rgba(106, 166, 102, 1);
-            border-radius: 20px;
-            font-size: 16px;
-            font-family: OpenSans-Regular;
-            font-weight: 400;
-            color: rgba(255, 255, 255, 1);
-            line-height: 38px;
-            text-align: center;
-            box-sizing: border-box;
-        }
-
-        .address_book_click:hover {
-            cursor: pointer;
-        }
-
-        .address_book_right {
-            display: none;
-            width: 167px;
-            height: 38px;
-            background: rgba(245, 166, 35, 1);
-            border-radius: 20px;
-            font-size: 16px;
-            font-family: OpenSans-Regular;
-            font-weight: 400;
-            color: rgba(255, 255, 255, 1);
-            line-height: 38px;
-            text-align: center;
-            box-sizing: border-box;
-            margin-left: 16px;
-        }
-
-        .address_book_right:hover {
-            cursor: pointer;
-        }
-
-        .photo-albums {
-            height: 41px;
-            font-size: 24px;
-            font-family: OpenSans-Bold;
-            font-weight: 600;
-            color: rgba(57, 61, 68, 1);
-            line-height: 41px;
-            margin: 16px 0;
-        }
-
-        .Events-Calendar {
-            width: 370px;
-            height: 384px;
-            background: rgba(255, 255, 255, 1);
-            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.24);
-            margin-top: 21px;
-            margin-right: 21px;
-        }
-
-        .Events-Calendar:nth-child(1) div {
-            width: 338px;
-            height: 276px;
-            background: url('img/fly.jpg') no-repeat;
-
-            background-size: 100%;
-            margin: 16px auto;
-        }
-
-        .Events-Calendar:nth-child(2) div {
-            width: 338px;
-            height: 276px;
-            /* border: solid 1px; */
-            background: url('img/preview.jpg') no-repeat;
-
-            background-size: 100% 100%;
-            margin: 16px auto;
-        }
-
-        .Events-Calendar:nth-child(3) div {
-            width: 338px;
-            height: 276px;
-            /* border: solid 1px; */
-            background: url('img/1747AEC4.jpg') no-repeat;
-
-            background-size: 100% 100%;
-            margin: 16px auto;
-
-        }
-
-        .Events-Calendar:nth-child(4) div {
-            width: 338px;
-            height: 276px;
-            /* border: solid 1px; */
-            background: url('img/17107B61.jpg') no-repeat;
-
-            background-size: 100%;
-            margin: 16px auto;
-
-        }
-
-        .Events-Calendar:nth-child(5) div {
-            width: 338px;
-            height: 276px;
-            /* border: solid 1px; */
-            background: url('img/154B131A.jpg') no-repeat;
-
-            background-size: 100% 100%;
-            margin: 16px auto;
-
-        }
-
-        .Events-Calendar:nth-child(6) div {
-            width: 338px;
-            height: 276px;
-            /* border: solid 1px; */
-            background: url('img/10515DAE.jpg') no-repeat;
-
-            background-size: 100% 100%;
-            margin: 16px auto;
-
-        }
-
-        .Events-Calendar h5 {
-            font-size: 20px;
-            font-family: OpenSans-Bold;
-            font-weight: bold;
-            color: rgba(57, 61, 68, 1);
-            margin-left: 16px;
-        }
-
-        .Events-Calendar p {
-            height: 27px;
-            font-size: 18px;
-            font-family: OpenSans-Regular;
-            font-weight: 400;
-            color: rgba(57, 61, 68, 1);
-            line-height: 27px;
-            margin-left: 16px;
-        }
-
-        .Events-Calendar:hover {
-            cursor: pointer;
-        }
-
-        .content-img em {
-            font-size: 30px;
-            font-family: OpenSans-BoldItalic;
-            font-weight: normal;
-            font-style: italic;
-            color: rgba(255, 255, 255, 1);
-            position: relative;
-            top: 232px;
-            left: 288px;
-        }
-
-        .content-1 {
-            width: 100%;
-            height: auto;
-            display: flex;
-            flex-wrap: wrap;
-
-            padding-bottom: 80px;
-        }
-
-        .upload-photos {
-            display: none;
-            width: 1133px;
-            height: 671px;
-            background: rgba(255, 255, 255, 1);
-            border-radius: 4px;
-            position: fixed;
-            top: 56%;
-            left: 50%;
-            margin-left: -563px;
-            margin-top: -400px;
-            z-index: 1000022;
-        }
-
-        .bg {
-            display: none;
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            background: #000;
-            z-index: 100002;
-            top: 0;
-            left: 0;
-            opacity: 0.7;
-        }
-
-        .photos-img {
-            position: absolute;
-            right: -16px;
-            top: -18px;
-            border-radius: 50%;
-            cursor: pointer;
-        }
-
-        .upload-photos-p {
-            width: 100%;
-            height: 64px;
-            background: #6AA666;
-            border-radius: 4px 4px 0px 0px;
-            font-size: 30px;
-            line-height: 60px;
-            padding-left: 20px;
-            box-sizing: border-box;
-            color: rgba(255, 255, 255, 1);
-            font-weight: 400;
-            font-family: OpenSans-Regular;
-        }
-
-        .upload-photos-choose {
-            width: 100%;
-            height: 64px;
-            box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.24);
-        }
-
-        .upload-photos-span {
-            margin-left: 20px;
-            color: rgba(155, 155, 155, 1);
-            font-weight: 400;
-            font-family: OpenSans-Regular;
-            font-size: 22px;
-            line-height: 60px;
-        }
-
-        .upload-photos-int {
-            margin-left: 10px;
-            width: 322px;
-            height: 40px;
-            color: rgba(106, 166, 102, 1);
-            border-radius: 4px;
-            border: 1px solid rgba(106, 166, 102, 1);
-            padding-left: 10px
-        }
-
-        .upload-photos-file {
-            width: 279px;
-            height: 50px;
-            background: rgba(106, 166, 102, 1);
-            border-radius: 4px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            margin-left: -140px;
-            cursor: pointer;
-        }
-
-        .upload-photos-file-p {
-            color: rgba(255, 255, 255, 1);
-            font-weight: 500;
-            font-size: 16px;
-            float: left;
-            margin-top: 14px;
-            margin-left: 8px;
-            font-family: OpenSans-SemiBold;
-        }
-
-        .upload-photos-file img {
-            margin-left: 17px;
-            margin-top: 13px;
-            float: left;
-        }
-    </style>
-
+    <script src="https://cdn.bootcss.com/jquery/3.3.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../css/actives/albums.css">
 </head>
 
 <body>
-    <!-- 头部 -->
-    <div class="header" style="box-shadow:0px 2px 7px 0px rgba(0,0,0,0.5);
-    border:1px solid rgba(151,151,151,1);">
-        <div class="w1200" style="height: 0">
-            <a class="logo" href="index.html">
-                <img src="img/Combined Shape.png" alt="Combined Shape">
-                De Anza Oaks
-            </a>
-            <input type="text" placeholder="Search..."
-                style="width: 188px;height: 37px;position: relative;top: 30px;left: 540px;border: solid 1px #393D44;padding-left: 10px;">
-            <div class="btns clearfix">
-                <img src="img/Shape.png" alt="Shape" style="position: relative;left: -140px;top: 40px;z-index: 100000;">
-                <img src="img/dropdown.png" alt="dropdown"
-                    style="position: relative;left: -50px;top: 36px;z-index: 100000;">
-                <a class="btns-search" href="javascript:;"> </a>
-                <a class="btns-language" href="javascript:;"></a>
-                <div class="langOv">
-                    <div class="profile">
-                        <a href="saveFile.html" style="border-bottom: 1px solid white;width: 100%;margin-left: -1px">My
-                            Profile</a>
-                        <a href="javascript:;" class="logout">Log Out</a>
-                    </div>
-                </div>
-            </div>
-            <div class="nav">
-                <ul>
-                    <li class="curr">
-                        <a class="on" href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="about.html">About us</a>
+    <div id="content"></div>
 
-                    </li>
-                    <!-- <li>
-                        <a href="downloadFile.html">Docs</a>
-                    </li> -->
-                </ul>
-                <span class="navline"></span>
-            </div>
-        </div>
-        <!-- 二级导航背景 -->
-        <!-- <div class="innavbg"></div> -->
-        <div class="mask"></div>
-
-        <script src="js/jquery-1.11.0.min.js"></script>
-        <script type="text/javascript" src="js/header.js"></script>
-
-
-
-    </div>
-
-    <!-- 主体 -->
-    <div class="main">
-        <div class="main-breadcrumb" style="width: 1200px;margin: 0 auto">
-            <ul class="breadcrumb" style="float: left">
-                <li><a href="index.html">Home</a></li>
-                <li>&nbsp;>&nbsp;</li>
-                <li><a href="events.html">Events</a></li>
-                <li>&nbsp;>&nbsp;</li>
-                <li><a href="#">Photo Albums</a></li>
-            </ul>
-        </div>
-
-        <div class="main-center">
-            <p class="photo-albums">Photo Albums</p>
-            <div style="display: flex">
-                <div class="address_book_click"><a href="add-new-photo-alum.html" style="color: white">Add A New Album</a></div>
-                <div class="address_book_right">Upload photos</div>
-            </div>
-
-
-            <div class="content-1">
-                <div class="Events-Calendar ">
-                    <a href="photoalbums-list.html">
-                        <div class="content-img">
-                            <em>18</em>
-                        </div>
-
-                        <h5>2012 Fourth of July Activities</h5>
-                        <p>Parade on the green for kids and pets.</p>
-                    </a>
-
-                </div>
-                <div class="Events-Calendar ">
-                    <a href="photoalbums-list.html">
-                        <div class="content-img">
-                            <em>2</em>
-                        </div>
-                        <h5>2012 Pool Opening Celebration</h5>
-                        <p>Saturday May 26 brunch to celebrate…</p>
-                    </a>
-                </div>
-                <div class="Events-Calendar ">
-                    <a href="photoalbums-list.html">
-                        <div class="content-img">
-                            <em>7</em>
-                        </div>
-                        <h5>2012 Spring Brunch & Egg Hunt</h5>
-                        <p>DAO 2012 Spring Brunch & Egg Hunt</p>
-                    </a>
-                </div>
-                <div class="Events-Calendar ">
-                    <a href="photoalbums-list.html">
-                        <div class="content-img">
-                            <em>11</em>
-                        </div>
-                        <h5>2011 Holiday Party</h5>
-                        <p>De Anza Oaks 2011 Holiday Party</p>
-                    </a>
-                </div>
-                <div class="Events-Calendar ">
-                    <a href="photoalbums-list.html">
-                        <div class="content-img">
-                            <em>8</em>
-                        </div>
-                        <h5>2012 Fourth of July Activities</h5>
-                        <p>Parade on the green for kids and pets.</p>
-                    </a>
-                </div>
-                <div class="Events-Calendar ">
-                    <a href="photoalbums-list.html">
-                        <div class="content-img">
-                            <em>12</em>
-                        </div>
-                        <h5>2012 Fourth of July Activities</h5>
-                        <p>Parade on the green for kids and pets.</p>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-        <div class="bg"></div>
-        <div class="upload-photos">
-            <img class="photos-img" src="img/close-circle.png" alt="">
-            <p class="upload-photos-p">Upload photos</p>
-            <div class="upload-photos-choose">
-                <span class="upload-photos-span">Upload</span>
-                <select class="upload-photos-int" name="">
-                    <option value="0">Album Name</option>
-                    <option value="1">Album Age</option>
-                </select>
-            </div>
-            <div class="upload-photos-file" type="file"><img src="img/file.png" alt="">
-                <p class="upload-photos-file-p">Choose pictures and videos</p>
-            </div>
-        </div>
-
-    </div>
-
-    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="js/aos.js"></script>
-    <script type="text/javascript" src="js/masterslider.min.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-    <!-- 日历插件 -->
-    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
-    <script src="js/calendar.js"></script>
     <script>
-        var slider = new MasterSlider();
-        slider.setup('masterslider', {
-            width: 1920, // slider standard width
-            height: 500, // slider standard height
-            mouse: false,
-            autoplay: false,
-            loop: true,
-            overPause: false,
-            speed: 13
+        // This script block stays in this wrapper html file
+        var data = {
+            albums: [{
+                    id: 1,
+                    title: "2012 Fourth of July Activities",
+                    desc: 'Parade on the green for kids and pets.',
+                    count: '18',
+                    link: '../photo/album.html',
+                    img: '../../img/fly.jpg'
+                }, {
+                    id: 2,
+                    title: "2012 Pool Opening Celebration",
+                    desc: 'Saturday May 26 brunch to celebrate…',
+                    count: '2',
+                    link: '../photo/album.html',
+                    img: '../../img/preview.jpg'
+                }, {
+                    id: 3,
+                    title: "2012 Spring Brunch & Egg Hunt",
+                    desc: 'DAO 2012 Spring Brunch & Egg Hunt',
+                    count: '7',
+                    link: '../photo/album.html',
+                    img: '../../img/1747AEC4.jpg'
+                }, {
+                    id: 4,
+                    title: "2011 Holiday Party",
+                    desc: 'De Anza Oaks 2011 Holiday Party',
+                    count: '11',
+                    link: '../photo/album.html',
+                    img: '../../img/17107B61.jpg'
+                },
+                {
+                    id: 5,
+                    title: "2012 Fourth of July Activities",
+                    desc: 'Parade on the green for kids and pets.',
+                    count: '8',
+                    link: '../photo/album.html',
+                    img: '../../img/154B131A.jpg'
+                },
+                {
+                    id: 6,
+                    title: "2012 Fourth of July Activities",
+                    desc: 'Parade on the green for kids and pets.',
+                    count: '12',
+                    link: '../photo/album.html',
+                    img: '../../img/10515DAE.jpg'
+                }
+            ]
+        };
+    </script>
+    <script type="text/javascript" src="../../js/actives/albums.js"></script>
+    <script>
+        // This script block stays in this wrapper html file
+        $(function () {
+            $('#content').load("albums.body.html", function () {
+                render();
+            });
         });
-        MSScrollParallax.setup(slider, 60, 100, true);
-        slider.control('arrows');
-        var i = 1,
-            ileng = $('.ms-slide').length;
-        setInterval('timebar()', 6000);
-        $('.ban-len span').html(ileng);
-        clickReduce();
-        clickAdd();
     </script>
-
-    <!-- 底部 -->
-    <div class="footer">
-        <p>
-            Copyright © 2019 Tellus, Inc. All Rights Reserved.
-        </p>
-    </div>
-
-    <script>
-        // admin
-        var storage = window.localStorage;
-        if (storage.getItem('username') === 'admin') {
-            $('.address_book_click').css('display', 'block')
-            $(".address_book_right").css("display","block")
-        }
-
-
-        var username = storage.getItem('username')
-        $(".btns-language").text(username);
-
-
-        $('.logout').click(function () {
-            window.localStorage.setItem('username', '')
-            window.location.href = "http://tfire.net/index.html"
-
-        })
-    </script>
-    <script>
-        $(".address_book_right").click(function () {
-            $(".upload-photos").css("display", "block")
-            $(".bg").css("display", "block")
-        })
-        $(".photos-img").click(function () {
-            $(".upload-photos").css("display", "none")
-            $(".bg").css("display", "none")
-        })
-
-
-    </script>
-
 </body>
 
 </html>

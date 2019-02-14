@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=8" /> -->
     <link rel="shortcut icon" type="image/ico" href="../img/favicon.ico" />
 
     <title>De Anza Oaks</title>
@@ -18,40 +17,39 @@
 
     <script src="https://cdn.bootcss.com/jquery/3.3.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
-
-    <link rel="stylesheet" type="text/css" href="../css/actives/facilities.css">
-
+    <link rel="stylesheet" type="text/css" href="../css/actives/actives.css">
 </head>
 
 <body>
     <div id="content"></div>
 
     <script>
-        // This script block stays in this wrapper html file
         var data = {
-            facilities: null
-        };
+            actives: [{
+                    category: 'Events Calendar',
+                    img: '../img/events-calendar.png',
+                    link: '../actives/calendar/date.html'
+                },
+                {
+                    category: 'Facilities',
+                    img: '../img/events-facilities.png',
+                    link: '../actives/facilities.html'
+                },
+                {
+                    category: 'Photo Albums',
+                    img: '../img/events-photoalbums.png',
+                    link: '../actives/photo/albums.html'
+                }
+            ]
+
+        }
     </script>
-    <script type="text/javascript" src="../js/swiper.min.js"></script>
-    <script type="text/javascript" src="../js/actives/facilities.js"></script>
- 
+    <script type="text/javascript" src="../js/actives/actives.js"></script>
     <script>
         // This script block stays in this wrapper html file
         $(function () {
-            $('#content').load("facilities.body.html", function () {
+            $('#content').load("actives.body.html", function () {
                 render();
-                var swiper = new Swiper('.swiper-container', {
-                    spaceBetween: 30,
-                    centeredSlides: true,
-                    autoplay: {
-                        delay: 2500,
-                        disableOnInteraction: false,
-                    },
-                    navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev',
-                    },
-                });
             });
         });
     </script>
