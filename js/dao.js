@@ -24,7 +24,7 @@ var render = function () {
 
     $('.logout').click(function () {
         window.localStorage.setItem('username', '')
-        window.location.href = "http://tfire.net/dao.html"
+        window.location.href = "http://tfire.net/index.html"
     })
     var str =
         `<div class="db">

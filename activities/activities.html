@@ -16,7 +16,7 @@
 
     <script src="https://cdn.bootcss.com/jquery/3.3.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="../css/actives/actives.css">
+    <link rel="stylesheet" type="text/css" href="../css/activities/activities.css">
 </head>
 
 <body>
@@ -27,27 +27,27 @@
             actives: [{
                     category: 'Events Calendar',
                     img: '../img/events-calendar.png',
-                    link: '../actives/calendar/date.html'
+                    link: '../activities/calendar/date.html'
                 },
                 {
                     category: 'Facilities',
                     img: '../img/events-facilities.png',
-                    link: '../actives/facilities.html'
+                    link: '../activities/facilities.html'
                 },
                 {
                     category: 'Photo Albums',
                     img: '../img/events-photoalbums.png',
-                    link: '../actives/photo/albums.html'
+                    link: '../activities/photo/albums.html'
                 }
             ]
 
         }
     </script>
-    <script type="text/javascript" src="../js/actives/actives.js"></script>
+    <script type="text/javascript" src="../js/activities/activities.js"></script>
     <script>
         // This script block stays in this wrapper html file
         $(function () {
-            $('#content').load("actives.body.html", function () {
+            $('#content').load("activities.body.html", function () {
                 render();
             });
         });

@@ -19,8 +19,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
 
     <!-- 日历插件 -->
-    <link rel="stylesheet" href="css/actives/calendar_plugin.css">
-    <link rel="stylesheet" href="css/dao.css">
+    <link rel="stylesheet" href="css/activities/calendar_plugin.css">
+    <link rel="stylesheet" href="css/index.css">
 
 </head>
 
@@ -38,18 +38,18 @@
                 {
                     title: 'Upcoming Events',
                     num: '9',
-                    link: 'actives/calendar/date.html'
+                    link: 'activities/calendar/date.html'
                 },
                 {
                     title: 'Recently Added Events',
                     num: '7',
-                    link: 'actives/calendar/list.html'
+                    link: 'activities/calendar/list.html'
                 }
             ],
 
             featureList: [{
                     category: 'Events',
-                    link: 'actives/actives.html',
+                    link: 'activities/activities.html',
                     img: 'img/Events-b.png',
                     active_img: 'img/Events-g.png'
                 },
@@ -81,17 +81,17 @@
             date: [{
                     date: '06/02/2019',
                     title: 'Clubhouse Booking Comfiirm GS',
-                    link: 'actives/calendar/date.html'
+                    link: 'activities/calendar/date.html'
                 },
                 {
                     date: '17/02/2019',
                     title: 'Clubhouse Booking Comfiirm GS',
-                    link: 'actives/calendar/date.html'
+                    link: 'activities/calendar/date.html'
                 },
                 {
                     date: '20/02/2019',
                     title: 'Clubhouse Booking Comfiirm GS',
-                    link: 'actives/calendar/date.html'
+                    link: 'activities/calendar/date.html'
                 },
             ]
         }
@@ -101,7 +101,7 @@
     <script>
         // This script block stays in this wrapper html file
         $(function () {
-            $('#content').load("dao.body.html", function () {
+            $('#content').load("index.body.html", function () {
                 render();
 
                 var slider = new MasterSlider();

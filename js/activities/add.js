@@ -1,8 +1,8 @@
 var render = function () {
     var event_template = $('#event_template').html();
     Mustache.parse(event_template);
-    $.each(data.list, function () {
-        $('#calendar_events').append(Mustache.render(event_template, this));
+    $.each(data.add, function () {
+        $('#events_photo').append(Mustache.render(event_template, this));
     });
     // admin
     var storage = window.localStorage;
@@ -15,7 +15,6 @@ var render = function () {
 
     $('.logout').click(function () {
         window.localStorage.setItem('username', '')
-        window.location.href = "http://tfire.net/dao.html"
-
+        window.location.href = "http://tfire.net/index.html"
     })
 };
