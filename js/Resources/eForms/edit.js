@@ -1,7 +1,7 @@
 var render = function () {
     var event_template = $('#event_template').html();
     Mustache.parse(event_template);
-    $.each(data.HomeownersAssociation, function () {
+    $.each(data, function () {
         $('#calendar_events').append(Mustache.render(event_template, this));
     });
 
@@ -16,7 +16,7 @@ $(".btns-language").text(username);
 
 $('.logout').click(function () {
     window.localStorage.setItem('username', '')
-    window.location.href = "http://tfire.net/dao.html"
+    window.location.href = "http://tfire.net/index.html"
 })
 
 };

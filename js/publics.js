@@ -1,23 +1,14 @@
 
 /* 
 * @Title:  共用js
-* @Author:锐诺互动-设计支持
-* @Phone: 0755-25526820
-* @Date:   2017-4-19 11:43:20
-* @Last Modified time:
 */
 
 $(window).on('load', function () {
     // $(window).on('load', function () {
     var url = window.location.href;
     if (url.indexOf('aspx') < 0 && url.indexOf('html') > 0) {
-        // $(".header").load("https://www.bgy.com.cn/js/header.html");
-        // $(".footer").load("https://www.bgy.com.cn/js/footer.html");
-
     }
-    // setTimeout(function(){
-    //    	$('#loading').fadeOut('show');
-    //    },1000);
+
 });
 window.onload = function () {
 
