@@ -10,6 +10,12 @@ var render = function () {
     if (storage.getItem('username') === 'admin') {
         $('.buttona').css('display', 'none')
     }
+
+    ClassicEditor
+        .create(document.querySelector('#editor'))
+        .catch(error => {
+            console.error(error);
+        });
     // var query = window.location.search.substring(1);
     // if (query === "Board/Committee") {
     //     $('.add_volunteer_title').text(query)

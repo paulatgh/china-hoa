@@ -1,19 +1,19 @@
 var render = function () {
-    var event_template = $('#event_template').html();
-    Mustache.parse(event_template);
+    var volunteer_template = $('#volunteer_template').html();
+    Mustache.parse(volunteer_template);
     $.each(data.volunteer, function () {
-        $('#calendar_events').append(Mustache.render(event_template, this));
+        $('#news_volunteer').append(Mustache.render(volunteer_template, this));
     });
-    var event_template2 = $('#event_template2').html();
-    Mustache.parse(event_template2);
+    var volunteer_template2 = $('#volunteer_template2').html();
+    Mustache.parse(volunteer_template2);
     $.each(data.volunteer2, function () {
-        $('#calendar_events2').append(Mustache.render(event_template2, this));
+        $('#news_volunteer2').append(Mustache.render(volunteer_template2, this));
     });
 
-    var event_template3 = $('#event_template3').html();
-    Mustache.parse(event_template3);
+    var volunteer_template3 = $('#volunteer_template3').html();
+    Mustache.parse(volunteer_template3);
     $.each(data.volunteer3, function () {
-        $('#calendar_events3').append(Mustache.render(event_template3, this));
+        $('#news_volunteer3').append(Mustache.render(volunteer_template3, this));
     });
 
 

@@ -37,11 +37,7 @@
         $(function () {
             $('#content').load("add.body.html", function () {
                 render();
-                ClassicEditor
-                    .create(document.querySelector('#editor'))
-                    .catch(error => {
-                        console.error(error);
-                    });
+
             });
         });
     </script>
