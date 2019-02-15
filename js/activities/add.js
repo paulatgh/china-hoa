@@ -1,9 +1,7 @@
 var render = function () {
-    var event_template = $('#event_template').html();
+    var event_template = $('#add').html();
     Mustache.parse(event_template);
-    $.each(data.add, function () {
-        $('#events_photo').append(Mustache.render(event_template, this));
-    });
+    $('#add').after(Mustache.render(event_template, data));
     // admin
     var storage = window.localStorage;
     if (storage.getItem('username') === 'admin') {
