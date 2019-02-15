@@ -162,11 +162,6 @@ body {
     display: inline-block;
     width: 20px;
     height: 20px;
-    background: url('../../img/paizhao_g.png') no-repeat right bottom;
-}
-
-.address_book_right ul li span:hover {
-    background: url('../../img/paizhao_g (1).png') no-repeat right bottom;
 }
 
 .address_book_right ul li:hover {
@@ -184,7 +179,7 @@ body {
     box-sizing: border-box;
 }
 
-.address_book_right ul li:nth-child(odd) {
+.address_book_right ul li:nth-child(even) {
     background: rgba(241, 241, 241, 1);
 }
 

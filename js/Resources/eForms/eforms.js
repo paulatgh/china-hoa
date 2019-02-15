@@ -16,6 +16,32 @@ var render = function () {
     $.each(data.ViewExportSubmittedEforms, function () {
         $('#calendar_events3').append(Mustache.render(event_template3, this));
     });
+
+    // admin
+var storage = window.localStorage;
+if (storage.getItem('username') === 'admin') {
+    $('.buttona').css('display', 'none')
+    $(".del").click(function () {
+        deleteLog()
+    })
+    $(".edi").click(function () {
+        window.location.href = `http://tfire.net/Resources/eForms/edit.html`
+    })
+}
+var username = storage.getItem('username')
+$(".btns-language").text(username);
+
+
+$('.logout').click(function () {
+    window.localStorage.setItem('username', '')
+    window.location.href = "http://tfire.net/dao.html"
+})
+
+var stronge = window.localStorage;
+    if (stronge.getItem('username') === 'admin') {
+        $('.form_content_right').css('display', 'block');
+        $(".form_title_right").css("display", "block");
+    }
 };
 
 
@@ -27,32 +53,3 @@ var render = function () {
 
 
 
-// admin
-var storage = window.localStorage;
-if (storage.getItem('username') === 'admin') {
-    $('.buttona').css('display', 'none')
-    $(".del").click(function () {
-        deleteLog()
-    })
-    $(".edi").click(function () {
-        window.location.href = `http://tfire.net/Resources/eForms/edit.html`
-    })
-}
-
-var username = storage.getItem('username')
-$(".btns-language").text(username);
-
-
-$('.logout').click(function () {
-    window.localStorage.setItem('username', '')
-    window.location.href = "http://tfire.net/dao.html"
-})
-
-
-$(function () {
-    var stronge = window.localStorage;
-    if (stronge.getItem('username') === 'admin') {
-        $('.form_content_right').css('display', 'block');
-        $(".form_title_right").css("display", "block");
-    }
-})

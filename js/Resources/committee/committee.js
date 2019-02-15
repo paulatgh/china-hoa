@@ -14,11 +14,6 @@ var render = function () {
     $.each(data.ManagementList3, function () {
         $('#events_photo3').append(Mustache.render(event_template3, this));
     });
-};
-
-
-
-$(function () {
     $('#tabs a').click(function (e) {
         e.preventDefault();
         $('#tabs li').removeClass("current").removeClass("hoverItem");
@@ -58,4 +53,7 @@ $(function () {
         window.location.href = "http://tfire.net/dao.html"
 
     })
-});
+};
+
+
+

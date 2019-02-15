@@ -10,10 +10,8 @@ var render = function () {
     $.each(data.HomeownersAssociation2, function () {
         $('#calendar_events2').append(Mustache.render(event_template2, this));
     });
-};
 
-
-// admin
+    // admin
 var storage = window.localStorage;
 if (storage.getItem('username') === 'admin') {
     $('.announcements_add').css('display', 'block')
@@ -28,22 +26,24 @@ $('.logout').click(function () {
     window.location.href = "http://tfire.net/dao.html"
 })
 
-
-$(function () {
-    $('#tabs a').click(function (e) {
-        e.preventDefault();
-        $('#tabs li').removeClass("current").removeClass("hoverItem");
-        $(this).parent().addClass("current");
-        $(".choose-right ul").removeClass("show");
-        $('#' + $(this).attr('title')).addClass('show');
-    });
-
-    $('#tabs a').hover(function () {
-        if (!$(this).parent().hasClass("current")) {
-            $(this).parent().addClass("hoverItem");
-        }
-    }, function () {
-        $(this).parent().removeClass("hoverItem");
-    });
-
+$('#tabs a').click(function (e) {
+    e.preventDefault();
+    $('#tabs li').removeClass("current").removeClass("hoverItem");
+    $(this).parent().addClass("current");
+    $(".choose-right ul").removeClass("show");
+    $('#' + $(this).attr('title')).addClass('show');
 });
+
+$('#tabs a').hover(function () {
+    if (!$(this).parent().hasClass("current")) {
+        $(this).parent().addClass("hoverItem");
+    }
+}, function () {
+    $(this).parent().removeClass("hoverItem");
+});
+};
+
+
+
+
+

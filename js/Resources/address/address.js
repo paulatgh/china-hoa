@@ -1,7 +1,10 @@
 var render = function () {
     var event_template = $('#event_template').html();
+    var event_template = $('#event_template-A').html();
     var event_template2 = $('#event_template2').html();
+    var event_template2 = $('#event_template2-B').html();
     var event_template3 = $('#event_template3').html();
+    var event_template3 = $('#event_template3-C').html();
     var event_template4 = $('#event_template4').html();
 
     Mustache.parse(event_template);
@@ -18,41 +21,40 @@ var render = function () {
         c = item.username.filter((val) => val.name.substr(0, 1) === 'C' || val.name.substr(0, 1) === 'c')
     });
     $.each(a, function () {
-        $('#events_photo').append(Mustache.render(event_template, this));
+        $('#events_photo,#events_photo-A').append(Mustache.render(event_template, this));
     })
     $.each(b, function () {
-        $('#events_photo2').append(Mustache.render(event_template2, this));
+        $('#events_photo2,#events_photo2-B').append(Mustache.render(event_template2, this));
     })
     $.each(c, function () {
-        $('#events_photo3').append(Mustache.render(event_template3, this));
+        $('#events_photo3,#events_photo3-C').append(Mustache.render(event_template3, this));
     })
 
     Mustache.parse(event_template4);
-    $.each(data, function () {
+    $.each(data.AccordingToTheStreet2, function () {
         $('#calendar_events4').append(Mustache.render(event_template4, this));
     });
 
-};
 
-// admin
-var storage = window.localStorage;
-if (storage.getItem('username') === 'admin') {
-    $('.choose-right').css('margin-top', '50px')
-    $('.announcements_add').css('display', 'block')
-    $('.announcements_permission').css('display', 'block')
-}
+    // admin
+    var storage = window.localStorage;
+    if (storage.getItem('username') === 'admin') {
+        $('.choose-right').css('margin-top', '50px')
+        $('.announcements_add').css('display', 'block')
+        $('.announcements_permission').css('display', 'block')
+    }
 
-$('.logout').click(function () {
-    window.localStorage.setItem('username', '')
-    window.location.href = "http://tfire.net/dao.html"
+    $('.logout').click(function () {
+        window.localStorage.setItem('username', '')
+        window.location.href = "http://tfire.net/dao.html"
 
-})
+    })
 
-var username = storage.getItem('username')
-$(".btns-language").text(username);
+    var username = storage.getItem('username')
+    $(".btns-language").text(username);
 
 
-$(function () {
+
     var str =
         `<div class="db">
                     <div class="user">
@@ -106,28 +108,25 @@ $(function () {
     var show = true;
     $('.address_book_click').click(function () {
         if (show) {
-            $('.address_book_click_content').css('display', 'block')
             $(this).text('Click here to list from A to Z')
             $('.address_book_letter').css('display', 'none')
-            $('.street_name').css('display', 'none')
             $('.a_z').css('display', 'block')
-
+            $(".a_a").css("display", "none")
             show = false;
 
         } else {
-            $('.address_book_click_content').css('display', 'none')
             $(this).text('Click here to list by Street Name')
             $('.address_book_letter').css('display', 'block')
-            $('.street_name').css('display', 'block')
             $('.a_z').css('display', 'none')
+            $(".a_a").css("display", "block")
 
             show = true;
         }
     })
-    $('.street_name .user_desc, .a_z .user_desc').click(function () {
+    $('.user_desc, .a_z .user_desc').click(function () {
         $('body').append(str);
         $('.close').click(function () {
             $('.db').remove()
         })
     })
-})
+};

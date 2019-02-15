@@ -4,11 +4,8 @@ var render = function () {
     $.each(data, function () {
         $('#calendar_events').append(Mustache.render(event_template, this));
     });
-};
 
-
-
-// admin
+    // admin
 var storage = window.localStorage;
 if (storage.getItem('username') === 'admin') {
     $('.choose-right').css('margin-top', '50px')
@@ -25,3 +22,7 @@ $('.logout').click(function () {
     window.location.href = "http://tfire.net/dao.html"
 
 })
+};
+
+
+
