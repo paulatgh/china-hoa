@@ -4,18 +4,17 @@ var render = function () {
     $.each(data.add, function () {
         $('#events_photo').append(Mustache.render(event_template, this));
     });
+    // admin
+    var storage = window.localStorage;
+    if (storage.getItem('username') === 'admin') {
+        $('.buttona').css('display', 'none')
+    }
+    var username = storage.getItem('username')
+    $(".btns-language").text(username);
+
+
+    $('.logout').click(function () {
+        window.localStorage.setItem('username', '')
+        window.location.href = "http://tfire.net/dao.html"
+    })
 };
-
-  // admin
-  var storage = window.localStorage;
-  if (storage.getItem('username') === 'admin') {
-      $('.buttona').css('display', 'none')
-  }
-  var username = storage.getItem('username')
-  $(".btns-language").text(username);
-
-
-  $('.logout').click(function () {
-      window.localStorage.setItem('username', '')
-      window.location.href = "http://tfire.net/index.html"
-  })

@@ -1,6 +1,6 @@
 <div class="db1">
     <div class="notes">
-        <p class="return"><img src="../img/Bounced.png" alt="Bounced"></p>
+        <p class="return"><img src="../../img/Bounced.png" alt="Bounced"></p>
         <h3 class="notes-h3">Leave a Note</h3>
         <textarea name="" id="" cols="30" rows="10" placeholder="No more than 100 words" maxlength="100"></textarea>
         <input type="button" value="Submit">
@@ -44,9 +44,7 @@
 </div>
 <!-- 主体 -->
 <div class="main">
-
     <div class="main-top" style="margin-bottom: 35px;height: 100%;">
-
         <div class="w1200 pr">
             <ul class="breadcrumb">
                 <li><a href="../../dao.html" rel="noopener noreferrer">Home</a></li>
@@ -56,14 +54,14 @@
                 <li><a href="#" rel="noopener noreferrer"> Events Calendar</a></li>
             </ul>
             <div class="Add-top">
-                <span class="Add-top-a"><a href="addnewevents.html">Add</a></span>
+                <span class="Add-top-a"><a href="../add.html">Add</a></span>
             </div>
             <div class="main-left" style="width:100%;height: 100%;">
                 <div class="main-right-content" style="width:100%;height: 626px;display: flex;justify-content: space-between">
                     <div id="calendar" class="calendar"></div>
                     <div id="calendar_events" class="calendar-right">
                         <script id="event_template" type="txt/template">
-                            <ul>
+                            <ul data={{id}}>
                                 <li>{{date}}
                                     <div class="top-right">
                                         <span class="right-a">Edit</span>

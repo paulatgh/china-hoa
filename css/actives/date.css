@@ -1,5 +1,5 @@
 .main {
-    height: 1150px;   
+    height: 1150px;
 }
 
 .main-left-content {
@@ -287,16 +287,16 @@
     display: none;
 }
 
-.calendar-right ul:nth-child(odd) .top-right span{
+.calendar-right ul:nth-child(odd) .top-right span {
     color: #6AA666;
 }
 
-.calendar-right ul:nth-child(odd) .top-right span{
+.calendar-right ul:nth-child(odd) .top-right span {
     color: white;
 }
 
 .top-right span {
-    color: rgba(106, 166, 102, 1) ;
+    color: rgba(106, 166, 102, 1);
     display: inline-block;
     margin-right: 7px;
     font-size: 16px;
@@ -304,17 +304,32 @@
     font-weight: 400;
     line-height: 22px;
 }
+
 .calendar-right ul:nth-child(odd) .right-a,
 .calendar-right ul:nth-child(odd) .right-b {
     color: #ffffff;
 }
 
-
-
 .top-right span:nth-child(2) {
     margin-right: 0;
 }
 
-.right-b {
+.right-b,.right-a {
+    cursor: pointer;
+}
+
+.saveChange {
+    width: 80px;
+    height: 40px;
+    display: inline-block;
+    position: absolute;
+    top: 40%;
+    color: #ffffff;
+    background: rgba(249, 75, 90, 1);
+    border-radius: 20px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    right: 10px;
     cursor: pointer;
 }

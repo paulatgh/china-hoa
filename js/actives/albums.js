@@ -4,8 +4,6 @@ var render = function () {
     $.each(data.albums, function () {
         $('#events_photo').append(Mustache.render(event_template, this));
     });
-};
-$(function () {
     // admin
     var storage = window.localStorage;
     if (storage.getItem('username') === 'admin') {
@@ -18,7 +16,7 @@ $(function () {
 
     $('.logout').click(function () {
         window.localStorage.setItem('username', '')
-        window.location.href = "http://tfire.net/index.html"
+        window.location.href = "http://tfire.net/dao.html"
 
     })
     $(".address_book_right").click(function () {
@@ -29,4 +27,4 @@ $(function () {
         $(".upload-photos").css("display", "none")
         $(".bg").css("display", "none")
     })
-})
+};

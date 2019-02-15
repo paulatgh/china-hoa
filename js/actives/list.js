@@ -4,7 +4,6 @@ var render = function () {
     $.each(data.list, function () {
         $('#calendar_events').append(Mustache.render(event_template, this));
     });
-};
     // admin
     var storage = window.localStorage;
     if (storage.getItem('username') === 'admin') {
@@ -16,6 +15,7 @@ var render = function () {
 
     $('.logout').click(function () {
         window.localStorage.setItem('username', '')
-        window.location.href = "http://tfire.net/index.html"
-	
+        window.location.href = "http://tfire.net/dao.html"
+
     })
+};

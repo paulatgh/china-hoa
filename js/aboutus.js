@@ -4,31 +4,28 @@ var render = function () {
     $.each(data.aboutus, function () {
         $('#events_photo').append(Mustache.render(event_template, this));
     });
-};
-$(function () {
     // admin
-		var storage = window.localStorage;
-		var username = storage.getItem('username')
-		$(".btns-language").text(username);
-		$('.logout').click(function () {
-			window.localStorage.setItem('username', '')
-			window.location.href = "http://tfire.net/index.html"
-		
-		})
+    var storage = window.localStorage;
+    var username = storage.getItem('username')
+    $(".btns-language").text(username);
+    $('.logout').click(function () {
+        window.localStorage.setItem('username', '')
+        window.location.href = "http://tfire.net/dao.html"
+    })
     var str = `<div class="db">
-            <div class="login">
-                <h3 class="login-H3">De Anza Oaks HOA</h3>
-                <p class="return"><img src="img/Bounced.png" alt="Bounced"></p>
-                <input class="login-int" type="text" placeholder="Name"><br />
-                <p class="username">Please enter your user name</p>
-                <input class="login-int-a" type="password" placeholder="Password">
-                <p class="userp">Please enter your password</p>
-                <button class="login-button">Login</button>
-                <div class="login-div">
-                    <p class="login-a">Forgot your Password?</p>
-                </div>
-            </div>
-        </div>`;
+    <div class="login">
+        <h3 class="login-H3">De Anza Oaks HOA</h3>
+        <p class="return"><img src="../img/Bounced.png" alt="Bounced"></p>
+        <input class="login-int" type="text" placeholder="Name"><br />
+        <p class="username">Please enter your user name</p>
+        <input class="login-int-a" type="password" placeholder="Password">
+        <p class="userp">Please enter your password</p>
+        <button class="login-button">Login</button>
+        <div class="login-div">
+            <p class="login-a">Forgot your Password?</p>
+        </div>
+    </div>
+</div>`;
     if (storage.getItem('username')) {
         $(".btns-language").click(function (event) {
             event.preventDefault();
@@ -39,12 +36,13 @@ $(function () {
         $('.jump').click(function () {
             var arr = $(this).attr('data')
             if (arr) {
-                 window.location.href = `http://tfire.net/${arr}`;
+                window.location.href = `http://tfire.net/${arr}`;
             } else {
-                 window.location.href = "http://tfire.net/about.html";
+                window.location.href = "http://tfire.net/aboutus/aboutus.html";
             }
         })
     } else {
+        $(".btns-language").text('Login')
         $('.jump').click(function () {
             var _this = $(this)
             $('body').append(str);
@@ -53,7 +51,7 @@ $(function () {
                     var userValue = $('.login-int').val();
                     storage.setItem('username', userValue)
                     var hrefHtml = _this.attr('data')
-                     window.location.href = `http://tfire.net/${hrefHtml}`;
+                    window.location.href = `http://tfire.net/${hrefHtml}`;
                 } else {
                     if (!$('.login-int').val() && !$('.login-int-a').val()) {
                         $('.userp').css('display', 'block');
@@ -136,4 +134,4 @@ $(function () {
             })
         })
     }
-})
+};

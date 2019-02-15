@@ -1,20 +1,21 @@
-var render = function() {
+var render = function () {
     var event_template = $('#event_template').html();
     Mustache.parse(event_template);
-    $.each(data.date, function() {
+    $.each(data.date, function () {
         $('#calendar_events').append(Mustache.render(event_template, this));
     });
-};
-
-$(function () {
-    // admin
     var storage = window.localStorage;
     if (storage.getItem('username') === 'admin') {
         $(".Add-top").css("display", "block")
         $(".top-right").css("display", "block")
         $(".right-b").click(function () {
-            deleteLog()
-        })
+            if ($('#calendar_events .saveChange').length) { 
+                return false;
+            }
+            var index = Number($(this).parents('ul').attr('data'))
+            deleteLog(data.date,index,$(this).parents('ul'))
+        })        
+        edit()   
     } else {
         var str =
             `<li class="tips">
@@ -66,6 +67,50 @@ $(function () {
     $(".btns-language").text(username);
     $('.logout').click(function () {
         window.localStorage.setItem('username', '')
-        window.location.href = "http://tfire.net/index.html"
+        window.location.href = "http://tfire.net/dao.html"
     })
-})
+};
+
+function edit() {
+    $(".right-a").click(function () {
+        if ($('.saveChange').length !== 0) {
+            return false;
+        }
+        var val = $(this).parents('ul').find('li');
+        var saveButton = `<span class="saveChange">Save</span>`;
+        val.each(function (index, item) {
+            if ($(item).find('.top-right')) {
+                $(item).find('.top-right').remove();
+            }
+            var value = $(item).text().trim();
+            var inp = `<input type="text" style="width:80%" value="${value}"/>`;
+            $(item).empty().append(inp)
+        })
+        val.parent().append(saveButton);
+        $('.saveChange').click(function () {
+            $(this).remove()
+            var value = []
+            val.find('input').each(function (index, item) {
+                value.push($(item).val())
+            })
+            $(val).empty()
+            var editStr = `
+                    <div class="top-right" style="display: block;">
+                        <span class="right-a">Edit</span>
+                        <span class="right-b">Delete</span>
+                    </div>`
+            $.each(value, function (index, item) {
+                $(val).eq(index).text(item)
+            })
+            $(val).eq(0).append(editStr)
+            $(".right-b").click(function () {
+                if ($('#calendar_events .saveChange').length) {
+                    return false;
+                }
+                deleteLog(data,index)
+            })         
+            edit()
+        })
+
+    })
+}

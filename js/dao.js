@@ -21,31 +21,26 @@ var render = function () {
     $.each(data.date, function () {
         $('#date').append(Mustache.render(date_template, this));
     });
-};
-
-$(function () {
 
     $('.logout').click(function () {
         window.localStorage.setItem('username', '')
-        window.location.href = "http://tfire.net/index.html"
+        window.location.href = "http://tfire.net/dao.html"
     })
-
-    //登陆权限
     var str =
         `<div class="db">
-            <div class="login">
-                <h3 class="login-H3">De Anza Oaks HOA</h3>
-                <p class="return"><img src="img/Bounced.png" alt="Bounced"></p>
-                <input class="login-int" type="text" placeholder="Name"><br />
-                <p class="username">Please enter your user name</p>
-                <input class="login-int-a" type="password" placeholder="Password">
-                <p class="userp">Please enter your password</p>
-                <button class="login-button">Login</button>
-                <div class="login-div">
-                    <p class="login-a">Forgot your Password?</p>
-                </div>
+        <div class="login">
+            <h3 class="login-H3">De Anza Oaks HOA</h3>
+            <p class="return"><img src="img/Bounced.png" alt="Bounced"></p>
+            <input class="login-int" type="text" placeholder="Name"><br />
+            <p class="username">Please enter your user name</p>
+            <input class="login-int-a" type="password" placeholder="Password">
+            <p class="userp">Please enter your password</p>
+            <button class="login-button">Login</button>
+            <div class="login-div">
+                <p class="login-a">Forgot your Password?</p>
             </div>
-        </div>`;
+        </div>
+    </div>`;
     let storage = window.localStorage;
     if (storage.getItem('username')) {
         $(".btns-language").click(function (event) {
@@ -57,14 +52,14 @@ $(function () {
         $('.jump').click(function () {
             var arr = $(this).attr('data')
             if (arr) {
-                window.location.href = `http://tfire.net/${arr}`;
+                // window.location.href = `http://tfire.net/${arr}`;
+                window.location.href = `file:///C:/Users/Administrator/Documents/china-hoa/${arr}`;
             } else {
-                window.location.href = "http://tfire.net/about.html"
+                window.location.href = "http://tfire.net/aboutus/aboutus.html"
             }
         })
     } else {
         $('.jump').click(function () {
-            console.log('1111')
             var _this = $(this)
             $('body').append(str);
             $('.login-button').click(function () {
@@ -75,8 +70,7 @@ $(function () {
                     storage.setItem('username', userValue)
                     var hrefHtml = _this.attr('data')
                     // window.location.href = `http://tfire.net/${hrefHtml}`;
-                    // window.location.href = `file:///C:/Users/Administrator/Documents/china-hoa/${hrefHtml}`;
-
+                    window.location.href = `file:///C:/Users/Administrator/Documents/china-hoa/${hrefHtml}`;
                 } else {
                     if (!$('.login-int').val() && !$('.login-int-a').val()) {
                         $('.userp').css('display', 'block');
@@ -181,4 +175,4 @@ $(function () {
             })
         })
     }
-})
+};

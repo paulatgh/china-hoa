@@ -6,309 +6,39 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=8" /> -->
-    <link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
+    <link rel="shortcut icon" type="image/ico" href="../../img/favicon.ico" />
 
     <title>De Anza Oaks</title>
-    <link rel="stylesheet" type="text/css" href="css/animate.css">
-    <link rel="stylesheet" type="text/css" href="css/aos.css">
-    <link rel="stylesheet" type="text/css" href="css/masterslider.main.css">
-    <link rel="stylesheet" type="text/css" href="css/ms-skin-sample.css">
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/public.css">
+    <link rel="stylesheet" type="text/css" href="../../css/animate.css">
+    <link rel="stylesheet" type="text/css" href="../../css/aos.css">
+    <link rel="stylesheet" type="text/css" href="../../css/masterslider.main.css">
+    <link rel="stylesheet" type="text/css" href="../../css/ms-skin-sample.css">
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../css/public.css">
 
-    <style>
-        .w838{
-            width: 100%;
-            border-left: none;
-        }
-        .investor-right{
-            width: 100%; 
-        }
-        
-        .investor-pdf li {
-            width: 185px;
-        }
-        .nav_user{
-            width: 163px;
-            height: 40px;
-            background:#393D44; 
-        }
-        .eformtable tbody td.eformheader {
-            background-color: rgb(57, 61, 68);
-            color: #f1e8c6;
-            text-align: center;
-            font-size: 16px;
-            padding: 5px 5px;
-            font-weight: bold;
-            height: 50px;
-        }
-        .eformtable {
-            font: 12px Verdana, Arial, Helvetica;
-            border-collapse: collapse;
-            border: 3px solid rgb(57, 61, 68); 
-            margin: 5px;
-            line-height: 16px;
-        }
-        .eformtable tbody td {
-            border: 3px solid #6AA666;
-            background-color: #F1F1F1;
-            padding: 3px 10px;
-            box-sizing: border-box;
-        }
-        .eformtable tbody tr:nth-child(2) td{
-            border-top: none !important;
-        }
-        .eformtable p{
-            margin-bottom: 1em;
-        }
-        .breadcrumb{
-			width: 100%;
-			height: 75px;
-		}
-		.breadcrumb li{
-			float: left;
-			margin-right: 10px;
-			font-size:20px;
-			font-family:OpenSans-Regular;
-			font-weight:400;			
-			line-height:75px;
-			color:rgba(30,130,23,1);
-		}
-		.breadcrumb li a{
-			color:rgba(30,130,23,1);
-		}
-        .continue{
-            width:113px;
-            height:38px;
-            background:rgba(106,166,102,1);
-            border-radius:20px;
-            border: none;
-            font-size:16px;
-            font-family:OpenSans-Regular;
-            font-weight:400;
-            color:rgba(255,255,255,1);
-            margin: 24px
-        }
-        .cancel{
-            width:113px;
-            height:38px;
-            background:rgba(249,75,90,1);
-            border-radius:20px;
-            border: none;
-            font-size:16px;
-            font-family:OpenSans-Regular;
-            font-weight:400;
-            color:rgba(255,255,255,1);
-            cursor: pointer;
-        }
-        .add_volunteer_title{
-            width: 100%;
-            height: 41px;
-            font-size:28px;
-            font-family:OpenSans-Bold;
-            font-weight:bold;
-            color:rgba(57,61,68,1);
-            line-height:41px;
-            margin-bottom: 10px;
-        }
-    </style>
+    <script src="https://cdn.bootcss.com/jquery/3.3.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../css/actives/add.css">
 </head>
 
 <body>
-    <!-- 头部 -->
-    <div class="header" style="box-shadow:0px 2px 7px 0px rgba(0,0,0,0.5);
-        border:1px solid rgba(151,151,151,1)">
-        <div class="w1200">
-            <a class="logo" href="index.html">
-                <img src="img/Combined Shape.png" alt="Combined Shape">
-                De Anza Oaks
-            </a>
-            <input type="text" placeholder="Search..." style="width: 188px;height: 37px;position: relative;top: 30px;left: 540px;border: solid 1px #393D44;padding-left: 10px;">
+    <div id="content"></div>
 
-            <div class="btns clearfix">
-                <img src="img/Shape.png" alt="Shape" style="position: relative;left: -140px;top: 40px;z-index: 100000;">
-                <img src="img/dropdown.png" alt="dropdown" style="position: relative;left: -50px;top: 36px;z-index: 100000;">
-                <a class="btns-search" href="javascript:;"> </a>
-                <a class="btns-language" href="javascript:;"></a>
-                <div class="langOv">
-                    <div class="profile">
-                        <a href="saveFile.html" style="border-bottom: 1px solid white;width: 100%;margin-left: -1px">My
-                            Profile</a>
-                        <a href="javascript:;" class="logout">Log Out</a>
-                    </div>
-                </div>
-            </div>
-            <div class="nav">
-                <ul>
-                    <li class="curr">
-                        <a class="on" href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="about.html">About us</a>
-                    </li>
-                    <!-- <li>
-                        <a href="downloadFile.html">Docs</a>
-                    </li> -->
-
-                </ul>
-                <span class="navline"></span>
-            </div>
-        </div>
-        <!-- 二级导航背景 -->
-        <div class="innavbg"></div>
-        <div class="mask"></div>
-        <script src="js/jquery-1.11.0.min.js"></script>
-        <script type="text/javascript" src="js/header.js"></script>
-    </div>
-
-    <!-- 主体 -->
-    <div class="investor clearfix" style="margin-top: 30px;">
-        <div class="w1200"  style="height: 1100px;">
-                <ul class="breadcrumb">
-                    <li><a href="index.html" rel="noopener noreferrer">Home</a></li>
-                    <li>&nbsp;>&nbsp;</li>
-                    <li><a href="events.html" rel="noopener noreferrer"> Events </a></li>
-                    <li>&nbsp;>&nbsp;</li>
-                    <li><a href="photoalbums.html" rel="noopener noreferrer">Photo Albums</a></li>                      
-                </ul>
-                <div class="add_volunteer_title">Add a New Photo Album:</div>
-                <form>
-			
-                    <table bgcolor="#f1e8c6" width="90%" border="3" cellpadding="3" cellspacing="0" bordercolor="#6AA666">
-                        <tbody>
-                        <tr>
-                            <td width="50%" bgcolor="#f1e8c6" bordercolor="#008000" align="right"><font size="2" face="Verdana, Arial, Helvetica" color="#222311">
-                                Album Name (required):</font>
-                            </td>  
-                            <td width="50%" bgcolor="#f1e8c6" bordercolor="#008000" align="left"><font size="2" face="Verdana, Arial, Helvetica" color="#222311">
-                                <input type="text" size="50" maxlength="50" name="name_textfield"></font>
-                            </td> 
-                        </tr>
-                        <tr>
-                            <td width="50%" bgcolor="#f1e8c6" bordercolor="#008000" align="right"><font size="2" face="Verdana, Arial, Helvetica" color="#222311">
-                                Album Description:</font>
-                            </td> 
-                            <td width="50%" bgcolor="#f1e8c6" bordercolor="#008000" align="left"><font size="2" face="Verdana, Arial, Helvetica" color="#222311">
-                                <textarea cols="36" rows="6" name="description_textfield"></textarea></font>
-                            </td> 
-                        </tr> 
-                        <tr>
-                            <td width="50%" bgcolor="#f1e8c6" bordercolor="#008000" align="right"><font size="2" face="Verdana, Arial, Helvetica" color="#222311">
-                                Security Level Required to View Album:</font>
-                            </td> 
-                            <td width="50%" bgcolor="#f1e8c6" bordercolor="#008000" align="left"><font size="2" face="Verdana, Arial, Helvetica" color="#222311">
-                                <input type="text" maxlength="3" size="3" name="vsl_textfield"></font>
-                            </td> 
-                        </tr>
-                        <tr>
-                            <td width="50%" bgcolor="#f1e8c6" bordercolor="#008000" align="right"><font size="2" face="Verdana, Arial, Helvetica" color="#222311">
-                                Security Level Required to Edit Album:</font>
-                            </td> 
-                            <td width="50%" bgcolor="#f1e8c6" bordercolor="#008000" align="left"><font size="2" face="Verdana, Arial, Helvetica" color="#222311">
-                                <input type="text" maxlength="2" size="3" name="esl_textfield"></font>
-                            </td> 
-                        </tr>        
-                        <tr>
-                            <td width="50%" bgcolor="#f1e8c6" bordercolor="#008000" align="right"><font size="2" face="Verdana, Arial, Helvetica" color="#222311">
-                                Security Level Required to add a picture to this Album:</font>
-                            </td> 
-                            <td width="50%" bgcolor="#f1e8c6" bordercolor="#008000" align="left"><font size="2" face="Verdana, Arial, Helvetica" color="#222311">
-                                <input type="text" maxlength="2" size="3" name="csl_textfield"></font>
-                            </td> 
-                        </tr>
-                        
-                    
-                        <tr>
-                            <td width="50%" bgcolor="#f1e8c6" bordercolor="#008000" align="right"><font size="2" face="Verdana, Arial, Helvetica" color="#222311">
-                                Comments Allowed:</font>
-                            </td> 
-                            <td width="50%" bgcolor="#f1e8c6" bordercolor="#008000" align="left"><font size="2" face="Verdana, Arial, Helvetica" color="#222311">
-                                <input type="checkbox" name="comments_checkbox" checked="checked"></font>
-                            </td>
-                        </tr>
-                      
-                        
-                        <tr>
-                            <td width="50%" bgcolor="#f1e8c6" bordercolor="#008000" align="right"><font size="2" face="Verdana, Arial, Helvetica" color="#222311">
-                                Main Picture (required):</font>
-                            </td>
-                            <td width="50%" bgcolor="#f1e8c6" bordercolor="#008000" align="left"><font size="2" face="Verdana, Arial, Helvetica" color="#222311">
-                                <input type="file" maxlength="200" name="f1"></font>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="50%" bgcolor="#f1e8c6" bordercolor="#008000" align="right"><font size="2" face="Verdana, Arial, Helvetica" color="#222311">
-                                Caption for Main Picture:</font>
-                            </td> 
-                            <td width="50%" bgcolor="#f1e8c6" bordercolor="#008000" align="left"><font size="2" face="Verdana, Arial, Helvetica" color="#222311">
-                                <input type="text" size="50" maxlength="255" name="caption_textfield"></font>
-                            </td> 
-                        </tr>
-                        <tr>
-                            <td width="50%" bgcolor="#f1e8c6" bordercolor="#008000" align="right"><font size="2" face="Verdana, Arial, Helvetica" color="#222311">
-                                ----------&gt; </font>
-                            </td> 
-                            <td width="50%" bgcolor="#f1e8c6" bordercolor="#008000" align="left"><font size="2" face="Verdana, Arial, Helvetica" color="#222311">
-                                <input type="submit" value="Create Album"></font>
-                            </td> 
-                        </tr>  
-                    </tbody></table>
-                    
-                    </form>
-                    <table border="0" width="90%">
-                            <tbody>
-                                <tr>
-                                    <td width="10%" align="right">
-                                        <input type="Submit" value="Save New" name="action" class="continue">
-                                        <input type="Submit" value="Cancel" onclick="location.href='photoalbums.html'" class="cancel">
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-               
-            <div class="clearfix"></div>
-        </div>
-    </div>
-
-    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="js/aos.js"></script>
-    <script type="text/javascript" src="js/masterslider.min.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript" src="list=hk02007.js"></script>
-    <!-- 底部 -->
-    <div class="footer" style="margin-top: 40px;">
-        <p>
-           Copyright © 2019 Tellus, Inc. All Rights Reserved.
-        </p>
-    </div>
-
-
-</body>
-<script>
-    ClassicEditor
-        .create(document.querySelector('#editor'))
-        .catch(error => {
-            console.error(error);
+    <script>
+      
+        var data = {
+            add:null
+        }
+    </script>
+    <script type="text/javascript" src="../../js/actives/add.js"></script>
+    <script>
+        // This script block stays in this wrapper html file
+        $(function () {
+            $('#content').load("add.body.html", function () {
+                render();
+            });
         });
-</script>
-
-<script>
-    // admin
-    var storage = window.localStorage;
-    if (storage.getItem('username') === 'admin') {
-        $('.buttona').css('display', 'none')
-    }
-
-    var username = storage.getItem('username')
-    $(".btns-language").text(username);
-
-    $('.logout').click(function () {
-        window.localStorage.setItem('username', '')
-        window.location.href = "http://tfire.net/index.html"
-	
-    })
-</script>
+    </script>
+</body>
 
 </html>
