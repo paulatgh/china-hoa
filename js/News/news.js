@@ -1,8 +1,8 @@
 var render = function () {
-    var event_template = $('#event_template').html();
-    Mustache.parse(event_template);
+    var news_template = $('#news_template').html();
+    Mustache.parse(news_template);
     $.each(data.news, function () {
-        $('#calendar_events').append(Mustache.render(event_template, this));
+        $('#news_list').append(Mustache.render(news_template, this));
     });
     // admin管理员用户权限
     var storage = window.localStorage;
@@ -16,6 +16,6 @@ var render = function () {
 
     $('.logout').click(function () {
         window.localStorage.setItem('username', '')
-        window.location.href = "http://tfire.net/dao.html"
+        window.location.href = "http://tfire.net/index.html"
     })
 }
