@@ -1,0 +1,112 @@
+<!-- header -->
+<div class="header" style="box-shadow:0px 2px 7px 0px rgba(0,0,0,0.5);
+    border:1px solid rgba(151,151,151,1);">
+    <div class="w1200" style="height: 0">
+        <a class="logo" href="../../dao.html">
+            <img src="../img/Combined Shape.png" alt="Combined Shape">
+            De Anza Oaks
+        </a>
+        <input type="text" placeholder="Search..." style="width: 188px;height: 37px;position: relative;top: 30px;left: 540px;border: solid 1px #393D44;padding-left: 10px;">
+
+        <div class="btns clearfix">
+            <img src="../img/Shape.png" alt="Shape" style="position: relative;left: -140px;top: 40px;z-index: 100000;">
+            <img src="../img/dropdown.png" alt="dropdown" style="position: relative;left: -50px;top: 36px;z-index: 100000;">
+            <a class="btns-search" href="javascript:;"> </a>
+            <a class="btns-language" href="javascript:;">Login</a>
+            <div class="langOv">
+                <div class="profile">
+                    <a href="../saveFile.html" style="border-bottom: 1px solid white;width: 100%;margin-left: -1px">My
+                        Profile</a>
+                    <a href="javascript:;" class="logout">Log Out</a>
+                </div>
+            </div>
+        </div>
+        <div class="nav">
+            <ul>
+                <li>
+                    <a class="on" href="../dao.html">Home</a>
+                </li>
+                <li class="curr">
+                    <a class="on" href="../aboutus/aboutus.html">About us</a>
+                </li>
+            </ul>
+            <span class="navline"></span>
+        </div>
+    </div>
+    <div class="mask"></div>
+
+    <script src="../js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../js/header.js"></script>
+</div>
+
+<div class="main">
+    <div class="main-breadcrumb" style="width: 1200px;margin: 0 auto">
+        <ul class="breadcrumb" style="float: left">
+            <li><a href="../../dao.html">Home</a></li>
+            <li>&nbsp;>&nbsp;</li>
+            <li><a href="#">City Resources</a></li>
+        </ul>
+    </div>
+    <div class="main-center">
+        <div class="content-img">
+            <img src="../img/city resources.jpeg" style="width:100%">
+        </div>
+        <p>Cupertino City Resources</p>
+        <div class="content-1">
+            <ul>
+                <li id="calendar_events">
+                    <script type="txt/template" id="event_template">
+                        {{content}}
+                    </script>
+                </li>
+                <li>
+                    Helpful addresses:
+                    <ul class="addresses" id="calendar_events2">
+                        <script type="txt/template" id="event_template2">
+                            <li>{{title}}</li>
+                            </script>
+                    </ul>
+                </li>
+                <li>
+                    Here are some links to help you learn more about our city resources:
+                    <ul class="addresses" id="calendar_events3">
+                        <script type="txt/template" id="event_template3">
+                            <li>{{content}}<a href="{{link}}" target="_blank">{{link}}</a></li>
+                            </script>
+                    </ul>
+                </li>
+                <li>
+                    Which schools do De Anza Oaks residents attend?
+                    <ul class="addresses" id="calendar_events4">
+                        <script type="txt/template" id="event_template4">
+                            <li>{{title}}<a href="{{link}}"
+                                target="_blank">{{linkname}}</a> </li>
+                        </script>
+                    </ul>
+                </li>
+                <li>
+                    Utilities:
+                    <ul class="addresses" id="calendar_events5">
+                        <script type="txt/template" id="event_template5">
+                            <li>{{title}} <a href="{{link}}"
+                                    target="_blank">{{linkname}}</a></li>
+                            </script>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+</div>
+<script type="text/javascript" src="../js/masterslider.min.js"></script>
+<script type="text/javascript" src="../js/index.js"></script>
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="../js/calendar.js"></script>
+
+<!-- footer -->
+<div class="footer">
+    <p>
+        Copyright © 2019 Tellus, Inc. All Rights Reserved.
+    </p>
+</div>
