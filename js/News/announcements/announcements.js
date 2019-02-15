@@ -1,19 +1,26 @@
-var render = function() {
+var render = function () {
     var event_template = $('#event_template').html();
+    var event_template2 = $('#event_template2').html();
+
     Mustache.parse(event_template);
-    $.each(data.announcements, function() {
+    $.each(data.announcements, function () {
         $('#calendar_events').append(Mustache.render(event_template, this));
     });
-    
-};
 
-$(function () {
+
+    Mustache.parse(event_template2);
+    $.each(data.announcements2, function () {
+        $('#calendar_events2').append(Mustache.render(event_template2, this));
+    });
+
+
+
     $('#tabs a').click(function (e) {
         e.preventDefault();
         $('#tabs li').removeClass("current").removeClass("hoverItem");
         $(this).parent().addClass("current");
-        $("#calendar_events").removeClass("show");
-        $('#' + $(this).attr('title')).addClass('show');
+        $(".choose-right ul").removeClass("show");
+        $('.' + $(this).attr('title')).addClass('show');
     });
 
     $('#tabs a').hover(function () {
@@ -42,10 +49,10 @@ $(function () {
 
     $('.logout').click(function () {
         window.localStorage.setItem('username', '')
-        window.location.href = "http://tfire.net/index.html";
+        window.location.href = "http://tfire.net/dao.html";
 
     })
 
     var username = storage.getItem('username')
     $(".btns-language").text(username);
-});
+}

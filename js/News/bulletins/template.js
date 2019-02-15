@@ -4,21 +4,12 @@ var render = function () {
     $.each(data.template, function () {
         $('#calendar_events').append(Mustache.render(event_template, this));
     });
-
-};
-
-$(function () {
     var stronge = window.localStorage;
     if (stronge.getItem('username') === 'admin') {
         $('.form_content_right').css('display', 'block');
         $(".form_title_right").css("display", "block");
     }
-})
-
-
-
-
-// admin
+    // admin
 var storage = window.localStorage;
 
 $('.del').click(function () {
@@ -51,5 +42,13 @@ $(".btns-language").text(username);
 
 $('.logout').click(function () {
     window.localStorage.setItem('username', '')
-    window.location.href = "http://tfire.net/index.html"
+    window.location.href = "http://tfire.net/dao.html"
 })
+
+};
+
+
+
+
+
+

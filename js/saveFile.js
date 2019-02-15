@@ -1,25 +1,20 @@
 var render = function () {
     var event_template = $('#event_template').html();
     Mustache.parse(event_template);
-    $.each(data.bulletins, function () {
+    $.each(data, function () {
         $('#calendar_events').append(Mustache.render(event_template, this));
     });
+
     // admin
     var storage = window.localStorage;
+    if (storage.getItem('username') === 'admin') {
+        $('.buttona').css('display', 'none')
+    }
     var username = storage.getItem('username')
     $(".btns-language").text(username);
-    if (username === 'admin') {
-        $('.address_book_click').css('display', 'block')
-        $('.photo-albums').css('display', 'block')
-    }
-
     $('.logout').click(function () {
         window.localStorage.setItem('username', '')
-        window.location.href = "http://tfire.net/dao.html";
-
+        window.location.href = "http://tfire.net/dao.html"
 
     })
-
-    var username = storage.getItem('username')
-    $(".btns-language").text(username);
-};
+}
