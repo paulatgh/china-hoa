@@ -9,7 +9,7 @@ var render = function () {
     // $.each(data.announcementsleft, function () {
     //     $('#news_announcementsleft').append(Mustache.render(announcements_templateleft, this));
     // });
-    
+
 
 
 

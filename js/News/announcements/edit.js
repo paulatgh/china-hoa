@@ -14,14 +14,14 @@ var render = function () {
         .catch(error => {
             console.error(error);
         });
-      
-        function CuteEditor_FilterCode(editor, code) {
+
+    function CuteEditor_FilterCode(editor, code) {
         return code.replace(/(<\/*)(script)([^\>]*\>)/ig,
             "$1script$3").replace(/(['"][^\n\r']*)([\n\r]+)([^\n\r']*)([\n\r]*)(['"])/ig,
-                "$1$3$5");
+            "$1$3$5");
     }
 
-    
+
     var username = storage.getItem('username')
     $(".btns-language").text(username);
 
