@@ -1,11 +1,12 @@
 var render = function () {
-    var event_template = $('#event_template').html();
-    var event_template = $('#event_template-A').html();
-    var event_template2 = $('#event_template2').html();
-    var event_template2 = $('#event_template2-B').html();
-    var event_template3 = $('#event_template3').html();
-    var event_template3 = $('#event_template3-C').html();
-    var event_template4 = $('#event_template4').html();
+    var username = $('#username').html();
+    var event_template = $('#username-A').html();
+    var username2 = $('#username2').html();
+    var username2 = $('#username2-B').html();
+    var username3 = $('#username3').html();
+    var username3 = $('#username3-C').html();
+    var AccordingToTheStreet = $('#AccordingToTheStreet').html();
+
 
     Mustache.parse(event_template);
     var a = []
@@ -20,21 +21,37 @@ var render = function () {
     $.each(data.user, function (index, item) {
         c = item.username.filter((val) => val.name.substr(0, 1) === 'C' || val.name.substr(0, 1) === 'c')
     });
+
+
     $.each(a, function () {
-        $('#events_photo,#events_photo-A').append(Mustache.render(event_template, this));
+        $('#events_photo,#username-A_cycle').append(Mustache.render(username, this));
     })
     $.each(b, function () {
-        $('#events_photo2,#events_photo2-B').append(Mustache.render(event_template2, this));
+        $('#events_photo2,#events_photo2-B').append(Mustache.render(username2, this));
     })
     $.each(c, function () {
-        $('#events_photo3,#events_photo3-C').append(Mustache.render(event_template3, this));
+        $('#events_photo3,#events_photo3-C').append(Mustache.render(username3, this));
     })
 
-    Mustache.parse(event_template4);
-    $.each(data.AccordingToTheStreet2, function () {
-        $('#calendar_events4').append(Mustache.render(event_template4, this));
+    Mustache.parse(AccordingToTheStreet);
+    $.each(data.AccordingToTheStreet, function () {
+        $('#AccordingToTheStreet_cycle').append(Mustache.render(AccordingToTheStreet, this));
     });
 
+    var alphabet = $('#alphabet').html();
+    $.each(data.alphabet, function () {
+        $('#alphabet_cycle').append(Mustache.render(alphabet, this));
+    });
+
+    var PageInformation = $('#PageInformation').html();
+    $.each(data.PageInformation, function () {
+        $('#PageInformation_cycle').append(Mustache.render(PageInformation, this));
+    });
+
+    var FuctionButton = $('#FuctionButton').html();
+    $.each(data.FuctionButton, function () {
+        $('#FuctionButton_cycle').append(Mustache.render(FuctionButton, this));
+    });
 
     // admin
     var storage = window.localStorage;

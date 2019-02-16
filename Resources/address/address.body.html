@@ -50,17 +50,25 @@
                 <li><a href="#" rel="noopener noreferrer">Address Book</a></li>
             </ul>
             <div class="main-left" style="width:100%;height: 100%;">
-                <div class="address_title">Here you will find a listing of De Anza Oaks residents who participate in
-                    this online
-                    version of the Directory.</div>
+                <div class="address_title" id="PageInformation_cycle">
+                    <script id="PageInformation" type="txt/template">
+                        {{content}}
+                    </script>
+                </div>
                 <div class="address_book_left">
                     <div class="search">
                         <input type="search" name="" id="">
                         <div class="search_img"><img src="../../img/search2.png" /></div>
                     </div>
-                    <div class="address_book_click">Click here to list by Street Name</div>
-                    <ul class="address_book_click_content" id="events_photo4">
-                        <script id="event_template4" type="txt/template">
+
+                    <div class="address_book_click" id="FuctionButton_cycle">
+                        <script id="FuctionButton" type="txt/template">
+                            {{content}}
+                        </script>
+                    </div>
+
+                    <ul class="address_book_click_content" id="AccordingToTheStreet_cycle">
+                        <script id="AccordingToTheStreet" type="txt/template">
                             <li>{{title}} ({{number}})</li>
                         </script>
                     </ul>
@@ -76,71 +84,48 @@
                     <div class="a_a">
                         <ul id="events_photo">
                             <li>A</li>
-                            <script id="event_template" type="txt/template">
+                            <script id="username" type="txt/template">
                                 <li class="user_desc">{{name}}</li>
                             </script>
                         </ul>
                         <ul id="events_photo2">
                             <li>B</li>
-                            <script id="event_template2" type="txt/template">
+                            <script id="username2" type="txt/template">
                                 <li class="user_desc">{{name}}</li>
                                 </script>
                         </ul>
                         <ul id="events_photo3">
                             <li>C</li>
-                            <script id="event_template3" type="txt/template">
+                            <script id="username3" type="txt/template">
                                 <li class="user_desc">{{name}}</li>
                                     </script>
                         </ul>
                     </div>
                     <div class="a_z">
-                        <ul id="events_photo-A">
+                        <ul id="username-A_cycle">
                             <li>(No Street Name)</li>
-                            <script id="event_template-A" type="txt/template">
+                            <script id="username-A" type="txt/template">
                                 <li class="user_desc">{{name}} <span></span></li>
                             </script>
                         </ul>
                         <ul id="events_photo2-B">
                             <li class="user_desc">Camberley Lane</li>
-                            <script id="event_template2-B" type="txt/template">
+                            <script id="username2-B" type="txt/template">
                                 <li class="user_desc">{{name}}</li>
                             </script>
                         </ul>
                         <ul id="events_photo3-C">
                             <li class="user_desc">Cricket Hill Road</li>
-                            <script id="event_template3-C" type="txt/template">
+                            <script id="username3-C" type="txt/template">
                                 <li class="user_desc">{{name}}</li>
                             </script>
                         </ul>
                     </div>
                 </div>
-                <ul class="address_book_letter">
-                    <li>A</li>
-                    <li>B</li>
-                    <li>C</li>
-                    <li>D</li>
-                    <li>E</li>
-                    <li>F</li>
-                    <li>G</li>
-                    <li>H</li>
-                    <li>I</li>
-                    <li>J</li>
-                    <li>K</li>
-                    <li>L</li>
-                    <li>M</li>
-                    <li>N</li>
-                    <li>O</li>
-                    <li>P</li>
-                    <li>Q</li>
-                    <li>R</li>
-                    <li>S</li>
-                    <li>T</li>
-                    <li>U</li>
-                    <li>V</li>
-                    <li>W</li>
-                    <li>X</li>
-                    <li>Y</li>
-                    <li>Z</li>
+                <ul class="address_book_letter" id="alphabet_cycle">
+                    <script id="alphabet" type="txt/template">
+                        <li>{{alphabetList}}</li>
+                    </script>
                 </ul>
             </div>
         </div>
