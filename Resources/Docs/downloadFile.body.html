@@ -54,15 +54,20 @@
                     <div class="content-1">
                         <div class="choose">
                             <div class="choose-left">
-                                <h5>CHOOSE A CATEGORY</h5>
-                                <ul id="tabs">
-                                    <li><a href="#" title="tab1">Homeowners Association </a></li>
-                                    <li><a href="#" title="tab2">De Anza Oaks Paint Colors</a></li>
+                                <h5 id="categoryNameExternal">
+                                    <script id="categoryName" type="txt/template">
+                                        {{name}}
+                                </script>
+                                </h5>
+                                <ul id="PDFcategoryListExternal" class="tabs">
+                                    <script id="PDFcategoryList" type="txt/template">
+                                        <li><a href="{{link}}" title="{{title}}">{{content}}</a></li>                                    
+                                    </script>
                                 </ul>
                             </div>
                             <div class="choose-right">
-                                <ul id="calendar_events" class="item show clearfix">
-                                    <script id="event_template" type="txt/template">
+                                <ul id="HomeownersAssociationExternal" class="item show">
+                                    <script id="HomeownersAssociation" type="txt/template">
                                         <li>
                                         <div class="investor-pdfhov">
                                                     <div class="investor-pdf-img">
@@ -75,8 +80,8 @@
                                         </li>
                                         </script>
                                 </ul>
-                                <ul id="calendar_events2" class="item">
-                                    <script id="event_template2" type="txt/template">
+                                <ul id="HomeownersAssociationSecondExternal" class="item">
+                                    <script id="HomeownersAssociation" type="txt/template">
                                         <li>
                                             <div class="investor-pdfhov">
                                                         <div class="investor-pdf-img">

@@ -1,24 +1,19 @@
 var render = function () {
-    var event_template = $('#event_template').html();
-    Mustache.parse(event_template);
-    $.each(data, function () {
-        $('#calendar_events').append(Mustache.render(event_template, this));
-    });
+    var content_template = $('#form').html();
+    Mustache.parse(content_template);
+    $('#form').after(Mustache.render(content_template, data));
+
     // admin
-var storage = window.localStorage;
-if (storage.getItem('username') === 'admin') {
-    $('.buttona').css('display', 'none')
-}
-var username = storage.getItem('username')
-$(".btns-language").text(username);
+    var storage = window.localStorage;
+    if (storage.getItem('username') === 'admin') {
+        $('.buttona').css('display', 'none')
+    }
+    var username = storage.getItem('username')
+    $(".btns-language").text(username);
 
 
-$('.logout').click(function () {
-    window.localStorage.setItem('username', '')
-    window.location.href = "http://tfire.net/index.html"
-})
+    $('.logout').click(function () {
+        window.localStorage.setItem('username', '')
+        window.location.href = "http://tfire.net/index.html"
+    })
 };
-
-
-
-

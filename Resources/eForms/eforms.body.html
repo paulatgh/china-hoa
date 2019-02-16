@@ -49,22 +49,34 @@
             </ul>
             <div class="main-left" style="width:100%;height: 100%;">
                 <div class="form_1">
-                    <div class="form_title">eForms</div>
-                    <ul id="calendar_events">
-                        <script id="event_template" type="txt/template">
+                    <div class="form_title" id="eformsType_cycle">
+                        <script id="eformsType" type="txt/template">
+                            {{Typename}}
+                        </script>
+
+                    </div>
+
+                    <ul id="eforms_content_cycle">
+                        <script id="eforms_content" type="txt/template">
                             <li><a href="{{link}}">{{title}}</a></li>
                         </script>
                     </ul>
                 </div>
                 <div class="form_1">
-                    <div class="form_title">
-                        <div class="form_title_left">eForms Edit</div>
-                        <a href="../../Resources/eForms/add.html">
-                            <div class="form_title_right">Add</div>
-                        </a>
+                    <div class="form_title" id="FunctionButtonName_cycle">
+                        <div class="form_title_left" id="eFormsEditTitle_cycle">
+                            <script id="eFormsEditTitle" type="txt/template">
+                                {{Typename}}
+                            </script>
+                        </div>
+                        <script id="FunctionButtonName" type="txt/template">
+                            <a href="{{link}}">
+                            <div class="form_title_right">{{name}}</div>
+                            </a>
+                        </script>
                     </div>
-                    <ul id="calendar_events2">
-                        <script id="event_template2" type="txt/template">
+                    <ul id="eFormsEdit_cycle">
+                        <script id="eFormsEdit" type="txt/template">
                             <li>
                                     <div class="form_content_left">{{title}}</div>
                                     <div class="form_content_right">
@@ -76,9 +88,13 @@
                     </ul>
                 </div>
                 <div class="form_1">
-                    <div class="form_title">View/Export Submitted eForms</div>
-                    <ul id="calendar_events3">
-                        <script id="event_template3" type="txt/template">
+                    <div class="form_title" id="SeeTable_cycle">
+                        <script id="SeeTable" type="txt/template">
+                            {{Typename}}
+                        </script>
+                    </div>
+                    <ul id="View_cycle">
+                        <script id="View" type="txt/template">
                             <li>{{title}} &nbsp;<em>({{number}})</em></li>
                           </script>
                     </ul>

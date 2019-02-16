@@ -42,15 +42,19 @@
 <div class="investor clearfix" style="margin-top: 30px;">
     <div class="w1200" style="height: 1100px;">
         <ul class="breadcrumb">
-            <!-- <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../index.html">Home</a></li>
             <li>&nbsp;>&nbsp;</li>
             <li><a href="../../Resources/resources.html">Resources</a></li>
             <li>&nbsp;>&nbsp;</li>
-            <li><a href="../committee/committee.html">Board/Committee</a></li>
+            <li><a href="../../Resources/committee/committee.html">Committee</a></li>
             <li>&nbsp;>&nbsp;</li>
-            <li><a href="#">Volunteer Needs</a></li> -->
+            <li><a href="#">Add committee</a></li>
         </ul>
-        <div class="add_volunteer_title">Volunteer Needs</div>
+        <div class="add_volunteer_title">
+            <script id="CommitteeAdd" type="txt/template">
+                {{title}}
+            </script>
+        </div>
         <table style="background-color: #ffffff; margin-top:20px;" background="" border="0" width="100%" cellpadding="10"
             cellspacing="0">
             <tbody>
@@ -97,8 +101,7 @@
                                                         <textarea name="full_desc" id="full_desc" rows="13" cols="50"
                                                             class="CuteEditorTextArea" style="DISPLAY: none; WIDTH: 100%; HEIGHT: 100%"></textarea>
 
-                                                        <link
-                                                            type="text/css" rel="stylesheet">
+                                                        <link type="text/css" rel="stylesheet">
                                                         <input type="hidden" name="full_desc$ClientState" value="ToggleBorder=b:true;FullPage=b:false">
                                                         <table id="CE_full_desc_ID" _iscuteeditor="True" cellspacing="0"
                                                             cellpadding="0" style="background-color: rgb(244, 244, 243); border-color: rgb(221, 221, 221); border-width: 1px; border-style: solid; table-layout: auto; height: 450px; width: 100%;">

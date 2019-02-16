@@ -180,7 +180,3 @@ body {
 .show {
     display: block;
 }
-
-.choose-left .choose-left .tabs li {
-    margin-left: 0;
-}
