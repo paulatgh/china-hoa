@@ -1,29 +1,29 @@
 var render = function () {
-    var event_template = $('#event_template').html();
-    var event_template2 = $('#event_template2').html();
-    var event_template3 = $('#event_template3').html();
-    var event_template4 = $('#event_template4').html();
-    var event_template5 = $('#event_template5').html();
+    var CityResources_content = $('#CityResources_content').html();
+    var Helpfuladdresses_title = $('#Helpfuladdresses_title').html();
+    var aboutlink_content = $('#aboutlink_content').html();
+    var schooladdresses_title = $('#schooladdresses_title').html();
+    var Utilities_title = $('#Utilities_title').html();
 
-    Mustache.parse(event_template);
+    Mustache.parse(CityResources_content);
     $.each(data.CupertinoCityResources, function () {
-        $('#calendar_events').append(Mustache.render(event_template, this));
+        $('#CityResources').append(Mustache.render(CityResources_content, this));
     });
-    Mustache.parse(event_template2);
+    Mustache.parse(Helpfuladdresses_title);
     $.each(data.HelpfulAddresses, function () {
-        $('#calendar_events2').append(Mustache.render(event_template2, this));
+        $('#Helpfuladdresses').append(Mustache.render(Helpfuladdresses_title, this));
     });
-    Mustache.parse(event_template3);
+    Mustache.parse(aboutlink_content);
     $.each(data.UrbanResourceInformation, function () {
-        $('#calendar_events3').append(Mustache.render(event_template3, this));
+        $('#aboutlink').append(Mustache.render(aboutlink_content, this));
     });
-    Mustache.parse(event_template4);
+    Mustache.parse(schooladdresses_title);
     $.each(data.NearbySchools, function () {
-        $('#calendar_events4').append(Mustache.render(event_template4, this));
+        $('#schooladdresses').append(Mustache.render(schooladdresses_title, this));
     });
-    Mustache.parse(event_template5);
+    Mustache.parse(Utilities_title);
     $.each(data.Utilities, function () {
-        $('#calendar_events5').append(Mustache.render(event_template5, this));
+        $('#Utilities').append(Mustache.render(Utilities_title, this));
     });
     // admin
     var storage = window.localStorage;

@@ -55,110 +55,12 @@ border:1px solid rgba(151,151,151,1)">
 
         </ul>
         <div class="add_volunteer_title">Volunteer Needs</div>
+         <script id="add" type="txt/template">
+              {{{body}}}
+         </script>
+       
 
-        <table style="background-color: #ffffff; margin-top:20px;" background="" border="0" width="100%" cellpadding="10"
-            cellspacing="0">
-
-
-            <tbody>
-                <tr>
-                    <td>
-                        <font size="2" face="Verdana, Arial, Helvetica" color="#222311">
-
-                            <form>
-                                <div align="center">
-                                    <center>
-                                        <table class="std-table" border="3" width="100%" cellspacing="0" bordercolor="#008000">
-                                            <tbody>
-                                                <tr>
-                                                    <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
-                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;Form
-                                                            Title/Name:</font>
-                                                    </td>
-                                                    <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6"><input type="text"
-                                                            name="short_desc" size="40" maxlength="50" style="font-family: Tahoma; font-size: 11;margin-left: 57px"></td>
-                                                </tr>
-                                                <tr>
-                                                    <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6" valign="top">
-                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;
-                                                            When:</font><input type="text" name="short_desc" size="40"
-                                                            maxlength="50" style="font-family: Tahoma; font-size: 11;float: right">
-                                                    </td>
-                                                    <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
-                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;
-                                                            Where:</font><input type="text" name="short_desc" size="40"
-                                                            maxlength="50" style="font-family: Tahoma; font-size: 11">
-                                                    </td>
-                                                </tr>
-                                                <tr height="37px">
-                                                    <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6" valign="top">
-                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;Full
-                                                            Description:</font><input type="text" name="short_desc"
-                                                            size="40" maxlength="50" style="font-family: Tahoma; font-size: 11;float: right">
-                                                    </td>
-                                                    <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">&nbsp;</td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td colspan="2" align="center" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
-                                                        <!-- CuteEditor Version 6.7 full_desc Begin -->
-                                                        <textarea name="full_desc" id="full_desc" rows="13" cols="50"
-                                                            class="CuteEditorTextArea" style="DISPLAY: none; WIDTH: 100%; HEIGHT: 100%"></textarea>
-
-                                                        <link href="Editor/Themes/Office2007/style.asp?EditorID=CE_full_desc_ID"
-                                                            type="text/css" rel="stylesheet">
-                                                        <input type="hidden" name="full_desc$ClientState" value="ToggleBorder=b:true;FullPage=b:false">
-                                                        <table id="CE_full_desc_ID" _iscuteeditor="True" cellspacing="0"
-                                                            cellpadding="0" style="background-color: rgb(244, 244, 243); border-color: rgb(221, 221, 221); border-width: 1px; border-style: solid; table-layout: auto; height: 450px; width: 100%;">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td class="CuteEditorToolBarContainer" unselectable="on"
-                                                                        valign="top">
-                                                                        <textarea name="content" id="editor"></textarea>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-
-                                                        <script>
-                                                            function CuteEditor_FilterCode(editor, code) {
-                                                            return code.replace(/(<\/*)(script)([^\>]*\>)/ig,
-                                                                "$1script$3").replace(/(['"][^\n\r']*)([\n\r]+)([^\n\r']*)([\n\r]*)(['"])/ig,
-                                                                    "$1$3$5");
-                                                        }
-                                                    </script>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6" colspan="2"
-                                                        height="20px" style="width: 90%" valign="top">&nbsp;</td>
-                                                </tr>
-
-                                            </tbody>
-                                        </table>
-                                    </center>
-                                </div>
-                            </form>
-
-                            <table border="0" width="100%">
-                                <tbody>
-                                    <tr>
-                                        <td width="10%" align="right">
-                                            <input type="Submit" value="Submit" name="action" class="continue">
-                                            <input type="Submit" value="Cancel" onclick="location.href='volunteer.html'"
-                                                class="cancel">
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </font>
-                    </td>
-                </tr>
-            </tbody>
-            <div class="ad"></div>
-        </table>
-
-        <div class="clearfix"></div>
+        
     </div>
 </div>
 
@@ -169,6 +71,7 @@ border:1px solid rgba(151,151,151,1)">
         Copyright © 2019 Tellus, Inc. All Rights Reserved.
     </p>
 </div>
+<div class="clearfix"></div>
 <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 

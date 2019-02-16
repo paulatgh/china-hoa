@@ -83,6 +83,10 @@
     margin-left: 10px;
 }
 
+.choose-right::-webkit-scrollbar {
+    display: none
+}
+
 .choose-right ul>li {
     width: 851px;
     height: 170px;
@@ -174,10 +178,12 @@
     background: rgba(106, 166, 102, 1);
     color: rgba(255, 255, 255, 1);
 }
+
 .choose-right li:nth-child(2n) a {
     background: rgba(106, 166, 102, 1);
     color: rgba(255, 255, 255, 1);
 }
+
 .footer-p {
     font-size: 16px;
     font-family: OpenSans-SemiBold;
@@ -203,47 +209,7 @@
     margin-left: 24px
 }
 
-.calendar-right {
-    width: 478px;
-    height: 100%;
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
-    background: #F1F1F1;
-    overflow: overlay;
-}
 
-.calendar-right::-webkit-scrollbar {
-    display: none;
-}
-
-.calendar-right div {
-    width: 100%;
-    height: 33.3%;
-    padding: 0 25px;
-}
-
-.calendar-right p {
-    height: 22px;
-    line-height: 22px;
-    margin: 20px 0 0 0;
-    font-size: 16px;
-    font-family: PingFangSC-Regular;
-}
-
-.calendar-right p span {
-    float: left;
-}
-
-.calendar-right p a {
-    float: right;
-    color: black;
-}
-
-.calendar-right .active {
-    background-color: #6AA666;
-    color: #FFFFFF;
-}
 
 .announcement-tips {
     height: 20px;
@@ -279,8 +245,8 @@
     text-align: center;
 
     position: absolute;
-    top: -5px;
-    right: 0;
+    top: -10px;
+    left: 5px;
     display: none;
 }
 

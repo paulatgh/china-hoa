@@ -1,17 +1,15 @@
 var render = function () {
     var announcements_template = $('#announcements_template').html();
-    
-
     Mustache.parse(announcements_template);
     $.each(data.announcements, function () {
         $('#news_announcements').append(Mustache.render(announcements_template, this));
     });
-
-
-    // Mustache.parse(announcements_template2);
-    // $.each(data.announcements2, function () {
-    //     $('#news_announcements2').after(Mustache.render(announcements_template2, this));
+    // var announcements_templateleft = $('#announcements_templateleft').html();
+    // Mustache.parse(announcements_templateleft);
+    // $.each(data.announcementsleft, function () {
+    //     $('#news_announcementsleft').append(Mustache.render(announcements_templateleft, this));
     // });
+    
 
 
 

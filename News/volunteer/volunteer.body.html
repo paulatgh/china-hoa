@@ -49,12 +49,13 @@ border:1px solid rgba(151,151,151,1)">
                 <li><a href="#" rel="noopener noreferrer">Volunteer Needs</a></li>
             </ul>
             <div class="main-left" style="width:100%;height: 100%;">
-                <h3>Volunteer in De Anza Oaks!</h3>
-                <div class="Volunteer_dec">Volunteering in our community allows it to thrive. There are many
-                    opportunities to lend
-                    your talents within De Anza Oaks. Please consider being an active part of our wonderful
-                    community.</div>
-                <div style="width: 100%;margin-bottom: 16px"><a class="top-Add" href="add.html">Add</a> </div>
+                <div id="main_volunteer">
+                <script id="volunteer_title" type="txt/template"> 
+                <h3>{{title}}</h3>
+                <div class="Volunteer_dec">{{description}}</div>
+                <div style="width: 100%;margin-bottom: 16px"><a class="top-Add" href="{{link}}">{{submit}}</a> </div>
+            </script>
+        </div>
                 <div class="calendar-right">
                     <ul>
                         <li id="news_volunteer">
@@ -88,8 +89,8 @@ border:1px solid rgba(151,151,151,1)">
                                     </div>
                             </script>
                         </li>
-                        <li id="news_volunteer2">
-                            <script id="volunteer_template2" type="txt/template">
+                        <li id="news_volunteers">
+                            <script id="volunteer_templates" type="txt/template">
                                 <div class="part_1">
                                             <div class="Volunteer_dec_title" style="font-weight: 600;">{{title}}
                                             </div>
@@ -110,8 +111,8 @@ border:1px solid rgba(151,151,151,1)">
                                         </div>
                                 </script>
                         </li>
-                        <li id="news_volunteer3">
-                            <script id="volunteer_template3" type="txt/template">
+                        <li id="news_volunteert">
+                            <script id="volunteer_templatet" type="txt/template">
                                 <div class="part_1">
                                                 <div class="Volunteer_dec_title" style="font-weight: 600;">{{title}}
                                                 </div>

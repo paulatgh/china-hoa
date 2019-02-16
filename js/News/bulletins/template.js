@@ -1,9 +1,16 @@
 var render = function () {
-    var event_template = $('#event_template').html();
-    Mustache.parse(event_template);
+    var custom_template = $('#custom_template').html();
+    Mustache.parse(custom_template);
     $.each(data.template, function () {
-        $('#calendar_events').append(Mustache.render(event_template, this));
+        $('#bulletins_custom').append(Mustache.render(custom_template, this));
     });
+    var template_title = $('#template_title').html();
+    Mustache.parse(template_title);
+    $.each(data.headline , function () {
+        $('#form_titles').append(Mustache.render(template_title, this));
+    });
+
+
     var stronge = window.localStorage;
     if (stronge.getItem('username') === 'admin') {
         $('.form_content_right').css('display', 'block');

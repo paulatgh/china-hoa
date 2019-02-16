@@ -4,16 +4,21 @@ var render = function () {
     $.each(data.volunteer, function () {
         $('#news_volunteer').append(Mustache.render(volunteer_template, this));
     });
-    var volunteer_template2 = $('#volunteer_template2').html();
-    Mustache.parse(volunteer_template2);
-    $.each(data.volunteer2, function () {
-        $('#news_volunteer2').append(Mustache.render(volunteer_template2, this));
+    var volunteer_templates = $('#volunteer_templates').html();
+    Mustache.parse(volunteer_templates);
+    $.each(data.volunteersecond, function () {
+        $('#news_volunteers').append(Mustache.render(volunteer_templates, this));
     });
 
-    var volunteer_template3 = $('#volunteer_template3').html();
-    Mustache.parse(volunteer_template3);
-    $.each(data.volunteer3, function () {
-        $('#news_volunteer3').append(Mustache.render(volunteer_template3, this));
+    var volunteer_templatet = $('#volunteer_templatet').html();
+    Mustache.parse(volunteer_templatet);
+    $.each(data.volunteerthird, function () {
+        $('#news_volunteert').append(Mustache.render(volunteer_templatet, this));
+    });
+    var volunteer_title = $('#volunteer_title').html();
+    Mustache.parse(volunteer_title);
+    $.each(data.volunteertitle, function () {
+        $('#main_volunteer').append(Mustache.render(volunteer_title, this));
     });
 
 
@@ -28,8 +33,6 @@ var render = function () {
     }
     var username = storage.getItem('username')
     $(".btns-language").text(username);
-
-
     $('.logout').click(function () {
         window.localStorage.setItem('username', '')
         window.location.href = "http://tfire.net/index.html";

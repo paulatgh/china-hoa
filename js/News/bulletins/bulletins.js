@@ -1,8 +1,8 @@
 var render = function () {
-    var event_template = $('#event_template').html();
-    Mustache.parse(event_template);
+    var bulletins_template = $('#bulletins_template').html();
+    Mustache.parse(bulletins_template);
     $.each(data.bulletins, function () {
-        $('#calendar_events').append(Mustache.render(event_template, this));
+        $('#news_bulletins').append(Mustache.render(bulletins_template, this));
     });
     // admin
     var storage = window.localStorage;
