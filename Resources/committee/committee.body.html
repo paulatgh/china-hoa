@@ -36,7 +36,6 @@
 
     <script src="../../js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="../../js/header.js"></script>
-    <script type="text/javascript" src="../../js/list=hk02007.js" charset="gb2312"></script>
 </div>
 
 <!-- main body -->
@@ -49,14 +48,22 @@
             <li>&nbsp;>&nbsp;</li>
             <li><a href="#">Board/Committee</a></li>
         </ul>
-        <h4>Board / Committee</h4>
-        <div class="content-1">
-            A complete listing of Board Members, Committee Chairs and Association Management
+        <h4 id="TheTitleExternal">
+            <script id="TheTitle" type="txt/template">
+                {{theTitle}}
+                <div class="content-1">
+                       {{content}}
+                    </div>
+            </script>
+        </h4>
+        <div class="committee_add" id="AddbuttonExternal">
+            <script id="Addbutton" type="txt/template">
+                {{title}}
+            </script>
         </div>
-        <div class="committee_add">Add</div>
         <ul class="committee-content">
-            <li id="events_photo">
-                <script id="event_template" type="txt/template">
+            <li id="committeeExternal">
+                <script id="committeeList" type="txt/template">
                     <div class="part_1">
                             <div class="Volunteer_dec_title" style="font-weight: 600;">{{title}}</div>
                             <div class="Volunteer_dec_title">
@@ -75,8 +82,8 @@
                     </div>
                </script>
             </li>
-            <li id="events_photo2">
-                <script id="event_template2" type="txt/template">
+            <li id="committeeListsecondExternal">
+                <script id="committeeListsecond" type="txt/template">
                     <div class="part_1">
                                 <div class="Volunteer_dec_title" style="font-weight: 600;">{{title}}</div>
                                 <div class="Volunteer_dec_title">
@@ -95,8 +102,8 @@
                         </div>
                    </script>
             </li>
-            <li id="events_photo3">
-                <script id="event_template3" type="txt/template">
+            <li id="committeeExternalExternal">
+                <script id="committeeListThird" type="txt/template">
                     <div class="part_1">
                                     <div class="Volunteer_dec_title" style="font-weight: 600;">{{title}}</div>
                                     <div class="Volunteer_dec_title">
@@ -113,22 +120,15 @@
                                         <span class="del">Delete</span>
                                     </div>
                             </div>
-                       </script>
+                </script>
             </li>
 
         </ul>
     </div>
 </div>
 
-<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="../../js/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="../../js/aos.js"></script>
-<script type="text/javascript" src="../../js/masterslider.min.js"></script>
 <script type="text/javascript" src="../../js/index.js"></script>
 <script src="../../js/public.js"></script>
-<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
-<script src="../../js/calendar.js"></script>
 
 
 <!-- footer -->

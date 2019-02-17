@@ -1,7 +1,7 @@
 /**
  *  Master Slider Sample Skin
  *
- * This file does not load by Masterslider and is just for those who wants 
+ * This file does not load by Masterslider and is just for those who wants
  * to know how skin file is structured and let them to create their own custom skin
  * If you want to create your own custom skin you need to replace "ms-skin-default" with your unique skin name
  */
@@ -10,7 +10,6 @@
 .ms-skin-default .ms-video-btn{
 	width: 50px;
 	height: 51px;
-	background: url(/img/light-skin-1.png)/*tpa=https://www.bgy.com.cn/css/skins/light-skin-1.png*/ no-repeat -14px -150px;
 	top: 50%;
 	left: 50%;
 	margin: -25px 0 0 -25px;
@@ -19,7 +18,6 @@
 .ms-skin-default .ms-slide .ms-slide-vcbtn {
 	width: 30px;
 	height: 30px;
-	background: url(/img/light-skin-1.png)/*tpa=https://www.bgy.com.cn/css/skins/light-skin-1.png*/ no-repeat -24px -28px;
 	top: 18px;
 	right: 30px;
 }
@@ -41,11 +39,9 @@
 	display: block !important;
 }
 .ms-skin-default .ms-nav-prev{
-	background: url(/img/pics-prev.png)/*tpa=https://www.bgy.com.cn/images/pics-prev.png*/ no-repeat;
 }
 .ms-skin-default .ms-nav-next {
 	margin-left: -510px;
-	background: url(/img/pics-next.png)/*tpa=https://www.bgy.com.cn/images/pics-next.png*/ no-repeat;
 }
 
 
@@ -53,7 +49,6 @@
 .ms-skin-default .ms-bullet {
 	width: 10px;
 	height: 10px;
-	background: url(/img/light-skin-1.png)/*tpa=https://www.bgy.com.cn/css/skins/light-skin-1.png*/ no-repeat;
 	margin: 4px;
 	background-position: -34px -117px;
 }
@@ -117,7 +112,7 @@
 .ms-skin-default .ms-tooltip-point {cursor: pointer;}
 .ms-skin-default .ms-tooltip-point .ms-point-center {
 	width: 12px;
-	height: 12px; 
+	height: 12px;
 	border-radius: 15px;
 	border: solid 2px #BBB;
 	background: white;
@@ -128,13 +123,13 @@
 
 .ms-skin-default .ms-tooltip-point .ms-point-border {
 	width: 22px;
-	height: 22px; 
+	height: 22px;
 	background: black;
 	background:rgba(0, 0, 0, 0.36);
 	margin: -11px 0 0 -11px;
 	position: absolute;
 	border-radius: 15px;
-	
+
 	animation: point-anim 1.5s infinite ;
 	-moz-animation: point-anim 1.5s infinite;
 	-webkit-animation: point-anim 1.5s infinite;
@@ -154,22 +149,21 @@
 }
 
 /* retina */
-@media 
+@media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (                -webkit-min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
-	
+
 	.ms-skin-default .ms-slide .ms-slide-vpbtn,
 	.ms-skin-default .ms-video-btn,
 	.ms-skin-default .ms-slide .ms-slide-vcbtn,
 	.ms-skin-default .ms-nav-next,
 	.ms-skin-default .ms-nav-prev,
 	.ms-skin-default .ms-bullet{
-		background-image:url(/img/light-skin-1-retina.png)/*tpa=https://www.bgy.com.cn/css/skins/light-skin-1-retina.png*/;
 		background-size: 152px 225px;
 	}
-	
+
 }

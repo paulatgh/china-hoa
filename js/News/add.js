@@ -1,15 +1,26 @@
 var render = function () {
-    var event_template = $('#event_template').html();
-    Mustache.parse(event_template);
-    $.each(data, function () {
-        $('#calendar_events').append(Mustache.render(event_template, this));
-    });
+    var content_template = $('#add').html();
+    Mustache.parse(content_template);
+    $('#add').after(Mustache.render(content_template, data));
 
     // admin
     var storage = window.localStorage;
     if (storage.getItem('username') === 'admin') {
         $('.buttona').css('display', 'none')
     }
+
+    ClassicEditor
+        .create(document.querySelector('#editor'))
+        .catch(error => {
+            console.error(error);
+        });
+
+    function CuteEditor_FilterCode(editor, code) {
+        return code.replace(/(<\/*)(script)([^\>]*\>)/ig,
+            "$1script$3").replace(/(['"][^\n\r']*)([\n\r]+)([^\n\r']*)([\n\r]*)(['"])/ig,
+            "$1$3$5");
+    }
+
     // var query = window.location.search.substring(1);
     // if (query === "Board/Committee") {
     //     $('.add_volunteer_title').text(query)

@@ -1,19 +1,24 @@
 var render = function () {
-    var event_template = $('#event_template').html();
-    Mustache.parse(event_template);
+    var volunteer_template = $('#volunteer_template').html();
+    Mustache.parse(volunteer_template);
     $.each(data.volunteer, function () {
-        $('#calendar_events').append(Mustache.render(event_template, this));
+        $('#news_volunteer').append(Mustache.render(volunteer_template, this));
     });
-    var event_template2 = $('#event_template2').html();
-    Mustache.parse(event_template2);
-    $.each(data.volunteer2, function () {
-        $('#calendar_events2').append(Mustache.render(event_template2, this));
+    var volunteer_templates = $('#volunteer_templates').html();
+    Mustache.parse(volunteer_templates);
+    $.each(data.volunteersecond, function () {
+        $('#news_volunteers').append(Mustache.render(volunteer_templates, this));
     });
 
-    var event_template3 = $('#event_template3').html();
-    Mustache.parse(event_template3);
-    $.each(data.volunteer3, function () {
-        $('#calendar_events3').append(Mustache.render(event_template3, this));
+    var volunteer_templatet = $('#volunteer_templatet').html();
+    Mustache.parse(volunteer_templatet);
+    $.each(data.volunteerthird, function () {
+        $('#news_volunteert').append(Mustache.render(volunteer_templatet, this));
+    });
+    var volunteer_title = $('#volunteer_title').html();
+    Mustache.parse(volunteer_title);
+    $.each(data.volunteertitle, function () {
+        $('#main_volunteer').append(Mustache.render(volunteer_title, this));
     });
 
 
@@ -28,8 +33,6 @@ var render = function () {
     }
     var username = storage.getItem('username')
     $(".btns-language").text(username);
-
-
     $('.logout').click(function () {
         window.localStorage.setItem('username', '')
         window.location.href = "http://tfire.net/index.html";

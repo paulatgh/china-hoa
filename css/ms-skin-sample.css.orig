@@ -10,7 +10,10 @@
 .ms-skin-default .ms-video-btn{
 	width: 50px;
 	height: 51px;
-	
+<<<<<<< HEAD
+	background: url(/img/light-skin-1.png)/*tpa=https://www.bgy.com.cn/css/skins/light-skin-1.png*/ no-repeat -14px -150px;
+=======
+>>>>>>> refs/remotes/origin/zilly-hoa
 	top: 50%;
 	left: 50%;
 	margin: -25px 0 0 -25px;
@@ -19,7 +22,10 @@
 .ms-skin-default .ms-slide .ms-slide-vcbtn {
 	width: 30px;
 	height: 30px;
-	background: url(light-skin-1-1.png)no-repeat -24px -28px;
+<<<<<<< HEAD
+	background: url(/img/light-skin-1.png)/*tpa=https://www.bgy.com.cn/css/skins/light-skin-1.png*/ no-repeat -24px -28px;
+=======
+>>>>>>> refs/remotes/origin/zilly-hoa
 	top: 18px;
 	right: 30px;
 }
@@ -41,11 +47,17 @@
 	display: block !important;
 }
 .ms-skin-default .ms-nav-prev{
-	background: url(pics-prev.png) no-repeat;
+<<<<<<< HEAD
+	background: url(/img/pics-prev.png)/*tpa=https://www.bgy.com.cn/images/pics-prev.png*/ no-repeat;
 }
 .ms-skin-default .ms-nav-next {
-	margin-left: -520px;
-	background: url(pics-next.png) no-repeat;
+	margin-left: -510px;
+	background: url(/img/pics-next.png)/*tpa=https://www.bgy.com.cn/images/pics-next.png*/ no-repeat;
+=======
+}
+.ms-skin-default .ms-nav-next {
+	margin-left: -510px;
+>>>>>>> refs/remotes/origin/zilly-hoa
 }
 
 
@@ -53,7 +65,10 @@
 .ms-skin-default .ms-bullet {
 	width: 10px;
 	height: 10px;
-	background: url(light-skin-1-1.png) no-repeat;
+<<<<<<< HEAD
+	background: url(/img/light-skin-1.png)/*tpa=https://www.bgy.com.cn/css/skins/light-skin-1.png*/ no-repeat;
+=======
+>>>>>>> refs/remotes/origin/zilly-hoa
 	margin: 4px;
 	background-position: -34px -117px;
 }
@@ -168,7 +183,10 @@ only screen and (                min-resolution: 2dppx) {
 	.ms-skin-default .ms-nav-next,
 	.ms-skin-default .ms-nav-prev,
 	.ms-skin-default .ms-bullet{
-		background-image:url(light-skin-1-retina-1.png);
+<<<<<<< HEAD
+		background-image:url(/img/light-skin-1-retina.png)/*tpa=https://www.bgy.com.cn/css/skins/light-skin-1-retina.png*/;
+=======
+>>>>>>> refs/remotes/origin/zilly-hoa
 		background-size: 152px 225px;
 	}
 	

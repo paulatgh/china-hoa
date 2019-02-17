@@ -15,279 +15,19 @@
 	<link rel="stylesheet" type="text/css" href="../../css/ms-skin-sample.css">
 	<link rel="stylesheet" type="text/css" href="../../css/reset.css">
 	<link rel="stylesheet" type="text/css" href="../../css/public.css">
-	<style>
-		html,body{
-		height:100%;
-		}
-		/* .main{
-			height: 300%;
-		} */
-		.main-left h2{
-			text-align: center;
-			height: 120px;
-			line-height: 120px;
-			font-size:34px;
-			font-family:SourceHanSansSC-Bold;
-			font-weight:bold;
-			color:rgba(57,61,68,1);
-		}
-		.breadcrumb{
-			width: 100%;
-			height: 75px;
-		}
-		.breadcrumb li{
-			float: left;
-			margin-right: 10px;
-			font-size:20px;
-			font-family:OpenSans-Regular;
-			font-weight:400;			
-			line-height:75px;
-			color:rgba(30,130,23,1);
-		}
-		.breadcrumb li a{
-			color:rgba(30,130,23,1);
-		}
-		.address_title{
-			font-size:24px;
-			font-family:OpenSans-SemiBold;
-			font-weight:600;
-			color:rgba(57,61,68,1);
-			line-height:33px;
-			margin-bottom: 24px;
-		}
-		.address_book_left{
-			float: left;
-			width: 23%;
-			
-		}
-		.address_book_letter{
-			float: left;
-			width: 2%;
-			margin-left: 8px;	
-		
-		}
-		.address_book_letter li:hover{
-			color:#6AA666;
-			cursor: pointer;
-		}
-		.address_book_letter li{
-			width: 18px;
-			height: 33px;
-			font-size:22px;
-			font-family:OpenSans-SemiBold;
-			font-weight:500;
-			color:rgba(155,155,155,1);
-			line-height:33px;
-			margin-bottom: 5px;
-		}
-		.address_book_right{
-			float: left;
-			width: 72%;
-			overflow-y: scroll;
-			height: 1134px;
-			box-sizing: border-box;
-			margin-left: 16px;
-		}
-	
-		.address_book_right::-webkit-scrollbar { width: 0 !important }
-		.address_book_left>.search>input{
-			height: 40px;
-			border:none;
-			width: 100%;
-			border:1px solid rgba(57,61,68,1);
-			padding-left: 10px;
-		}
-		.search{
-			position: relative;
-			width: 100%;
-		}
-		.address_categories{
-			width: 100%;
-			height: 207px;
-			margin-top: 20px;
-			box-sizing: border-box;
-			box-shadow:0px 0px 8px 0px rgba(0,0,0,0.24);
-			padding: 20px;
-			box-sizing: border-box;
-		}
-		.address_categories h4{
-			font-family:OpenSans-SemiBold;
-			font-weight:600;
-			color:rgba(57,61,68,1);
-			line-height:30px;
-			font-size:18px;
-			margin-bottom: 15px;
-		}
-		.address_categories li{
-			font-family:OpenSans-Regular;
-			font-weight:400;
-			color:#6AA666;
-			line-height:32px;
-			font-size:18px;
-			cursor: pointer;
-		}
-		.address_categories li:hover{
-			color: #393D44;
-		}
-		.address_book_click_content{
-			display: none;
-			cursor: pointer;
-		}
-		.address_book_click_content li{
-			font-size:16px;
-			font-family:OpenSans-Regular;
-			font-weight:400;
-			color:rgba(106,166,102,1);
-			line-height:35px;
-		}
-		.address_book_click_content li:hover{
-			color:#393D44;
-		}
-		.address_book_right ul li{
-			height: 54px;
-			line-height: 54px;
-			background:rgba(255,255,255,1);
-			padding-left: 24px;
-			box-sizing: border-box;
-			font-size:20px;
-			font-family:OpenSans-Regular;
-			font-weight:400;
-			color:rgba(57,61,68,1);
-		
-		}
-		.address_book_right ul li span{
-			display: inline-block;
-			width: 20px;
-			height: 20px;
-			background: url('img/paizhao_g.png') no-repeat right bottom;
-		}
-		.address_book_right ul li span:hover{
-			background: url('img/paizhao_g (1).png') no-repeat right bottom;
-		}
-
-		.address_book_right ul li:hover{
-			color:#6AA666;
-			cursor: pointer;
-		}
-	       
-		.address_book_right ul li:first-child{
-			background:#6AA666!important;
-			font-size:24px;
-			font-family:OpenSans-SemiBold;
-			font-weight:600;
-			color:rgba(255,255,255,1);
-			padding-left: 16px;
-			box-sizing: border-box;
-		}
-		
-		.address_book_right ul li:nth-child(odd){
-			background:rgba(241,241,241,1);
-		}
-		.address_book_click{
-			height:40px;
-			width: 100%;
-			border-radius:20px;
-			border:1px solid rgba(106,166,102,1);
-			font-size:16px;
-			font-family:OpenSans-Regular;
-			font-weight:400;
-			color:rgba(106,166,102,1);
-			line-height: 40px;
-			padding-left: 13px;
-			box-sizing: border-box;
-			margin-top: 24px;	
-			margin-bottom: 10px;		
-			cursor: pointer;		
-		}	
-		.address_book_click:hover{
-			background: #6AA666;
-			color:#ffffff;
-		}
-		.search_img{
-			width: 45px;
-			height: 40px;
-			position: absolute;
-			top:0;
-			right: 0;
-			background-color: #393D44;
-		}
-		.search_img img{
-			margin: 13px;
-		}
-		.a_z{
-			display: none;
-		}
-		.div-pa{
-			text-align: center;
-			line-height: 50px;
-			font-size:16px;
-			color:rgba(57,61,68,1);
-			font-weight:400;
-		}
-	</style>
-
+	<link rel="stylesheet" href="../../css/News/notice.css">
+	<script src="https://cdn.bootcss.com/jquery/3.3.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
 </head>
 
 <body>
-	<!-- 头部 -->
-	<div class="header" style="box-shadow:0 2px 7px 0px rgba(0,0,0,0.5); border:1px solid rgba(151,151,151,1)">
-		<div class="w1200">
-			<a class="logo" href="../../index.html">
-				<img src="../../img/Combined Shape.png" alt="Combined Shape">
-				De Anza Oaks
-			</a>
-			<input type="text" placeholder="Search..." style="width: 188px;height: 37px;position: relative;top: 30px;left: 540px;border: solid 1px #393D44;padding-left: 10px;">
-
-			<div class="btns clearfix">
-				<img src="../../img/Shape.png" alt="Shape" style="position: relative;left: -140px;top: 40px;z-index: 100000;">
-				<img src="../../img/dropdown.png" alt="dropdown" style="position: relative;left: -50px;top: 36px;z-index: 100000;">
-				<a class="btns-search" href="javascript:;"> </a>
-				<a class="btns-language" href="javascript:;"></a>
-				<div class="langOv">
-					<div class="profile">
-						<a href="../../saveFile.html" style="border-bottom: 1px solid white;width: 100%;margin-left: -1px">My Profile</a>
-						<a href="javascript:;" class="logout">Log Out</a>
-					</div>
-				</div>
-			</div>
-			<div class="nav">
-				<ul>
-					<li class="curr">
-						<a class="on" href="../../index.html">Home</a>
-					</li>
-					<li>
-						<a href="../../aboutus.html">About us</a>
-					</li>
-					<!-- <li>
-						<a href="downloadFile.html">Docs</a>
-					</li> -->
-
-				</ul>
-				<span class="navline"></span>
-			</div>
-		</div>
-		<!-- 二级导航背景 -->
-		<div class="innavbg"></div>
-		<div class="mask"></div>
-		<script src="../../js/jquery-1.11.0.min.js"></script>
-		<script type="text/javascript" src="../../js/header.js"></script>
-	</div>
-	<!-- 主体 -->
-	<div class="main">
-		<div class="main-top clearfix" style="height: 100%;">
-
-			<div class="w1200 pr">
-				<ul class="breadcrumb">
-					<li><a href="../../index.html" rel="noopener noreferrer">Home</a></li>
-					<li>></li>
-					<li><a href="../../news.html" rel="noopener noreferrer">News</a></li>
-					<li>></li>
-					<li><a href="../../News/announcements/announcements.html" rel="noopener noreferrer">Announcements</a></li>
-					<li>></li>
-					<li><a href="#" rel="noopener noreferrer">DOA Board Elections 2018 - Urgent appeal</a></li>
-				</ul>
-				<div>
-					<img src="../../img/Bitmap.png" alt="" style="width:100%">
+	<div id="content"></div>
+</body>
+<script>
+	var data = {
+		body: `
+        <div>
+                <img src="../../img/Bitmap.png" alt="" style="width:100%">
 					<div class="div-p">
 						<p class="div-pa">De Anza Oaks HOA Elections! <br />2018 DAO Board Elections - Call for Candidates <br />Two
 							Seats up for Reelection <br />This
@@ -316,39 +56,17 @@
 						<img src="../../img/Bitmap2.png" alt="">
 					</div>
 				</div>
-			</div>
-		</div>
-		<script type="text/javascript" src="../../js/jquery-1.11.0.min.js"></script>
-
-		<script type="text/javascript" src="../../js/masterslider.min.js"></script>
-		<script type="text/javascript" src="../../js/index.js"></script>
-
-
-
-		<!-- 底部 -->
-		<div class="footer" style="margin-bottom: -24px">
-			<p>
-				Copyright © 2019 Tellus, Inc. All Rights Reserved.
-			</p>
-		</div>
-		<div class="clearfix"></div>
-	</div>
-</body>
-
-
+         `
+	}
+</script>
+<script type="text/javascript" src="../../js/News/announcements/notice.js"></script>
 <script>
-	// admin
-	var storage = window.localStorage;
-	var username = storage.getItem('username')
-	$(".btns-language").text(username);
-
-	$('.logout').click(function () {
-		window.localStorage.setItem('username', '')
-		window.location.href = "http://tfire.net/index.html"
-	})
-
-	var username = storage.getItem('username')
-	$(".btns-language").text(username);
+	// This script block stays in this wrapper html file
+	$(function () {
+		$('#content').load("notice.body.html", function () {
+			render();
+		});
+	});
 </script>
 
 </html>

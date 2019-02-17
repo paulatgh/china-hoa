@@ -4,7 +4,7 @@ body {
 }
 
 .main {
-        height: 1105px;
+    height: 1105px;
 }
 
 .main-left h2 {
@@ -82,6 +82,7 @@ body {
     line-height: 64px;
     padding: 0 24px;
     box-sizing: border-box;
+
 }
 
 .form_title_left {

@@ -1,19 +1,32 @@
 var render = function () {
-    var event_template = $('#event_template').html();
-    Mustache.parse(event_template);
+    var committeeList = $('#committeeList').html();
+    Mustache.parse(committeeList);
     $.each(data.ManagementList, function () {
-        $('#events_photo').append(Mustache.render(event_template, this));
+        $('#committeeExternal').append(Mustache.render(committeeList, this));
     });
-    var event_template2 = $('#event_template2').html();
-    Mustache.parse(event_template2);
+    var committeeListsecond = $('#committeeListsecond').html();
+    Mustache.parse(committeeListsecond);
     $.each(data.ManagementList2, function () {
-        $('#events_photo2').append(Mustache.render(event_template2, this));
+        $('#committeeListsecondExternal').append(Mustache.render(committeeListsecond, this));
     });
-    var event_template3 = $('#event_template3').html();
-    Mustache.parse(event_template3);
+    var committeeListThird = $('#committeeListThird').html();
+    Mustache.parse(committeeListThird);
     $.each(data.ManagementList3, function () {
-        $('#events_photo3').append(Mustache.render(event_template3, this));
+        $('#committeeExternalExternal').append(Mustache.render(committeeListThird, this));
     });
+
+    var TheTitle = $('#TheTitle').html();
+    Mustache.parse(TheTitle);
+    $.each(data.TheTitle, function () {
+        $('#TheTitleExternal').append(Mustache.render(TheTitle, this));
+    });
+
+    var Addbutton = $('#Addbutton').html();
+    Mustache.parse(Addbutton);
+    $.each(data.Addbutton, function () {
+        $('#AddbuttonExternal').append(Mustache.render(Addbutton, this));
+    });
+
     $('#tabs a').click(function (e) {
         e.preventDefault();
         $('#tabs li').removeClass("current").removeClass("hoverItem");
@@ -50,10 +63,7 @@ var render = function () {
 
     $('.logout').click(function () {
         window.localStorage.setItem('username', '')
-        window.location.href = "http://tfire.net/dao.html"
+        window.location.href = "http://tfire.net/index.html"
 
     })
 };
-
-
-

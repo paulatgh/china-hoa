@@ -1,11 +1,11 @@
-/*!
+/*! 
  * Master Slider WordPress Main CSS File
  * @date May 2015
  */
 
 
 
-/**
+/** 
  *  Master Slider
  * 	Main css file
  */
@@ -74,15 +74,20 @@
 
 /* grab cursor */
 .ms-def-cursor{cursor:auto !important;}
+<<<<<<< HEAD
+.ms-grab-cursor{cursor: url(/img/grab.png)/*tpa=https://www.bgy.com.cn/css/common/grab.png*/, move;}
+.ms-grabbing-cursor{cursor: url(/img/grabbing.png)/*tpa=https://www.bgy.com.cn/css/common/grabbing.png*/, move;}
+=======
 .ms-grab-cursor{cursor: url(grab.png), move;}
 .ms-grabbing-cursor{cursor: url(grabbing.png), move;}
+>>>>>>> refs/remotes/origin/zilly-hoa
 .ms-ie .ms-grab-cursor{cursor: move;}
 .ms-ie .ms-grabbing-cursor {cursor: move;}
 
-.ms-view {
+.ms-view { 
 	margin:0px auto;
 	overflow:hidden;
-
+	
 	position:relative;
 	-webkit-perspective: 2000px;
 	-ms-perspective: 2000px;
@@ -113,7 +118,7 @@
 	width: 100%;
 }
 
-.ms-slide .ms-slide-link {
+.ms-slide .ms-slide-link { 
 	display: block;
 	width: 100%;
 	height: 100%;
@@ -247,7 +252,7 @@
 }
 
 .ms-btn-s{
-    padding: 14px 17px;
+    padding: 14px 17px;  
     font-size: 80%;
     line-height: 0;
 }
@@ -262,7 +267,7 @@
 }
 
 .ms-btn-l{
-    padding: 17px 50px;
+    padding: 17px 50px;  
     font-size: 120%;
 }
 
@@ -303,7 +308,11 @@
     font-family: sans-serif;
     font-size: 0.75em;
     display: inline-block;
+<<<<<<< HEAD
+    background: url(/img/video-close-btn.png)/*tpa=https://www.bgy.com.cn/css/common/video-close-btn.png*/ no-repeat 0px 3px;
+=======
     background: url(video-close-btn.png) no-repeat 0px 3px;
+>>>>>>> refs/remotes/origin/zilly-hoa
     padding-left: 15px;
     height: 15px;
     color: #DBDBDB;
@@ -371,8 +380,8 @@
 .ms-tabs.ms-dir-h .ms-thumb-frame {margin-top: 12px;}
 .ms-tabs.ms-dir-v .ms-thumb-frame {margin-left: 12px;}
 .ms-tabs.ms-dir-v.ms-align-left .ms-thumb-frame {margin-left: 0px;}
-.ms-tabs.ms-dir-h.ms-align-top {z-index: 140;}
-.ms-tabs.ms-dir-h.ms-align-top  .ms-thumb-frame{margin-top: -12px;}
+.ms-tabs.ms-dir-h.ms-align-top {z-index: 140;} 
+.ms-tabs.ms-dir-h.ms-align-top  .ms-thumb-frame{margin-top: -12px;} 
 .ms-tabs .ms-thumb{padding: 20px 20px;}
 .ms-tabs .ms-thumb-frame-selected {	opacity: 1; background: #EDEDED;}
 .ms-tabs .ms-thumb-frame .ms-thumb-ol {
@@ -442,7 +451,7 @@
 	text-align: center;
 	margin: 5px;
 	font-size: 14px;
-	font-weight: 600;
+	font-weight: 600; 
 }
 
 /* horizontal thumblist arrows*/
@@ -660,7 +669,11 @@
 .ms-skin-default .ms-video-btn{
 	width: 50px;
 	height: 51px;
+<<<<<<< HEAD
+	background: url(/img/light-skin-1.png)/*tpa=https://www.bgy.com.cn/css/skins/light-skin-1.png*/ no-repeat -14px -150px;
+=======
 	background: url(light-skin-1.png) no-repeat -14px -150px;
+>>>>>>> refs/remotes/origin/zilly-hoa
 	top: 50%;
 	left: 50%;
 	margin: -25px 0 0 -25px;
@@ -669,7 +682,11 @@
 .ms-skin-default .ms-slide .ms-slide-vcbtn {
 	width: 30px;
 	height: 30px;
+<<<<<<< HEAD
+	background: url(/img/light-skin-1.png)/*tpa=https://www.bgy.com.cn/css/skins/light-skin-1.png*/ no-repeat -24px -28px;
+=======
 	background: url(light-skin-1.png) no-repeat -24px -28px;
+>>>>>>> refs/remotes/origin/zilly-hoa
 	top: 18px;
 	right: 30px;
 }
@@ -679,7 +696,11 @@
 .ms-skin-default .ms-nav-next,
 .ms-skin-default .ms-nav-prev {
 	width: 30px;
+<<<<<<< HEAD
+	background: url(/img/light-skin-1.png)/*tpa=https://www.bgy.com.cn/css/skins/light-skin-1.png*/;
+=======
 	background: url(light-skin-1.png);
+>>>>>>> refs/remotes/origin/zilly-hoa
 	background-position: -89px -26px;
 	height: 40px;
 	cursor: pointer;
@@ -700,7 +721,11 @@
 .ms-skin-default .ms-bullet {
 	width: 10px;
 	height: 10px;
+<<<<<<< HEAD
+	background: url(/img/light-skin-1.png)/*tpa=https://www.bgy.com.cn/css/skins/light-skin-1.png*/ no-repeat;
+=======
 	background: url(light-skin-1.png) no-repeat;
+>>>>>>> refs/remotes/origin/zilly-hoa
 	margin: 4px;
 	background-position: -34px -117px;
 }
@@ -764,7 +789,7 @@
 .ms-skin-default .ms-tooltip-point {cursor: pointer;}
 .ms-skin-default .ms-tooltip-point .ms-point-center {
 	width: 12px;
-	height: 12px;
+	height: 12px; 
 	border-radius: 15px;
 	border: solid 2px #BBB;
 	background: white;
@@ -775,13 +800,13 @@
 
 .ms-skin-default .ms-tooltip-point .ms-point-border {
 	width: 22px;
-	height: 22px;
+	height: 22px; 
 	background: black;
 	background:rgba(0, 0, 0, 0.36);
 	margin: -11px 0 0 -11px;
 	position: absolute;
 	border-radius: 15px;
-
+	
 	animation: point-anim 1.5s infinite ;
 	-moz-animation: point-anim 1.5s infinite;
 	-webkit-animation: point-anim 1.5s infinite;
@@ -801,24 +826,28 @@
 }
 
 /* retina */
-@media
+@media 
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (                -webkit-min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
-
+	
 	.ms-skin-default .ms-slide .ms-slide-vpbtn,
 	.ms-skin-default .ms-video-btn,
 	.ms-skin-default .ms-slide .ms-slide-vcbtn,
 	.ms-skin-default .ms-nav-next,
 	.ms-skin-default .ms-nav-prev,
 	.ms-skin-default .ms-bullet{
+<<<<<<< HEAD
+		background-image:url(/img/light-skin-1-retina.png)/*tpa=https://www.bgy.com.cn/css/skins/light-skin-1-retina.png*/;
+=======
 		background-image:url(light-skin-1-retina.png);
+>>>>>>> refs/remotes/origin/zilly-hoa
 		background-size: 152px 225px;
 	}
-
+	
 }
 
 
@@ -831,7 +860,11 @@ only screen and (                min-resolution: 2dppx) {
 .ms-skin-black-1 .ms-video-btn{
 	width: 54px;
 	height: 54px;
+<<<<<<< HEAD
+	background: url(/img/black-skin-1.png)/*tpa=https://www.bgy.com.cn/css/skins/black-skin-1.png*/ no-repeat -14px -150px;
+=======
 	background: url(black-skin-1.png) no-repeat -14px -150px;
+>>>>>>> refs/remotes/origin/zilly-hoa
 	top: 50%;
 	left: 50%;
 	margin: -27px 0 0 -27px;
@@ -840,7 +873,11 @@ only screen and (                min-resolution: 2dppx) {
 .ms-skin-black-1 .ms-slide .ms-slide-vcbtn {
 	width: 27px;
 	height: 26px;
+<<<<<<< HEAD
+	background: url(/img/black-skin-1.png)/*tpa=https://www.bgy.com.cn/css/skins/black-skin-1.png*/ no-repeat -24px -29px;
+=======
 	background: url(black-skin-1.png) no-repeat -24px -29px;
+>>>>>>> refs/remotes/origin/zilly-hoa
 	top: 30px;
 	right: 30px;
 }
@@ -850,7 +887,11 @@ only screen and (                min-resolution: 2dppx) {
 .ms-skin-black-1 .ms-nav-next,
 .ms-skin-black-1 .ms-nav-prev {
 	width: 53px;
+<<<<<<< HEAD
+	background: url(/img/black-skin-1.png)/*tpa=https://www.bgy.com.cn/css/skins/black-skin-1.png*/;
+=======
 	background: url(black-skin-1.png);
+>>>>>>> refs/remotes/origin/zilly-hoa
 	background-position: -79px -19px;
 	height: 61px;
 	cursor: pointer;
@@ -945,7 +986,7 @@ only screen and (                min-resolution: 2dppx) {
 .ms-skin-black-1 .ms-tooltip-point {cursor: pointer;}
 .ms-skin-black-1 .ms-tooltip-point .ms-point-center {
 	width: 12px;
-	height: 12px;
+	height: 12px; 
 	border-radius: 15px;
 	border: solid 2px #444444;
 	background: black;
@@ -956,13 +997,13 @@ only screen and (                min-resolution: 2dppx) {
 
 .ms-skin-black-1 .ms-tooltip-point .ms-point-border {
 	width: 22px;
-	height: 22px;
+	height: 22px; 
 	background: white;
 	background: rgba(255, 255, 255, 0.9);
 	margin: -11px 0 0 -11px;
 	position: absolute;
 	border-radius: 15px;
-
+	
 	animation: point-anim 1.5s infinite ;
 	-moz-animation: point-anim 1.5s infinite;
 	-webkit-animation: point-anim 1.5s infinite;
@@ -983,23 +1024,27 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 /* retina */
-@media
+@media 
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (                -webkit-min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
-
+	
 	.ms-skin-black-1 .ms-slide .ms-slide-vpbtn,
 	.ms-skin-black-1 .ms-video-btn,
 	.ms-skin-black-1 .ms-slide .ms-slide-vcbtn,
 	.ms-skin-black-1 .ms-nav-next,
 	.ms-skin-black-1 .ms-nav-prev{
+<<<<<<< HEAD
+		background-image:url(/img/black-skin-1-retina.png)/*tpa=https://www.bgy.com.cn/css/skins/black-skin-1-retina.png*/;
+=======
 		background-image:url(black-skin-1-retina.png);
+>>>>>>> refs/remotes/origin/zilly-hoa
 		background-size: 152px 225px;
 	}
-
+	
 }
 
 
@@ -1012,8 +1057,12 @@ only screen and (                min-resolution: 2dppx) {
 .ms-skin-black-2 .ms-video-btn{
 	width: 45px;
 	height: 45px;
+<<<<<<< HEAD
+	background: url(/img/black-skin-2.png)/*tpa=https://www.bgy.com.cn/css/skins/black-skin-2.png*/ black no-repeat -16px -103px;
+=======
 	background: url(black-skin-2.png) black no-repeat -16px -103px;
-	border: solid 3px rgb(255, 255, 255);
+>>>>>>> refs/remotes/origin/zilly-hoa
+	border: solid 3px rgb(255, 255, 255);  
 	border-color: rgba(255, 255, 255, 0.4);
 	-webkit-background-clip: padding-box;
 	top: 50%;
@@ -1029,7 +1078,11 @@ only screen and (                min-resolution: 2dppx) {
 .ms-skin-black-2 .ms-slide .ms-slide-vcbtn {
 	width: 25px;
 	height: 25px;
+<<<<<<< HEAD
+	background: url(/img/black-skin-2.png)/*tpa=https://www.bgy.com.cn/css/skins/black-skin-2.png*/ black no-repeat -27px -36px;
+=======
 	background: url(black-skin-2.png) black no-repeat -27px -36px;
+>>>>>>> refs/remotes/origin/zilly-hoa
 	border: solid 2px white;
 	border-color: rgba(255, 255, 255, 0.4);
 	top: 15px;
@@ -1050,7 +1103,11 @@ only screen and (                min-resolution: 2dppx) {
 	z-index: 110;
 	width: 45px;
 	height: 45px;
+<<<<<<< HEAD
+	background: url(/img/black-skin-2.png)/*tpa=https://www.bgy.com.cn/css/skins/black-skin-2.png*/ black;
+=======
 	background: url(black-skin-2.png) black;
+>>>>>>> refs/remotes/origin/zilly-hoa
 	background-clip: padding-box;
 	background-position: -88px -26px;
 	border: solid 3px rgb(255, 255, 255);
@@ -1169,7 +1226,7 @@ only screen and (                min-resolution: 2dppx) {
 .ms-skin-black-2 .ms-tooltip-point {cursor: pointer;}
 .ms-skin-black-2 .ms-tooltip-point .ms-point-center {
 	width: 12px;
-	height: 12px;
+	height: 12px; 
 	border-radius: 15px;
 	border: solid 2px #BBB;
 	background: white;
@@ -1180,13 +1237,13 @@ only screen and (                min-resolution: 2dppx) {
 
 .ms-skin-black-2 .ms-tooltip-point .ms-point-border {
 	width: 22px;
-	height: 22px;
+	height: 22px; 
 	background: black;
 	background:rgba(0, 0, 0, 0.36);
 	margin: -11px 0 0 -11px;
 	position: absolute;
 	border-radius: 15px;
-
+	
 	animation: point-anim 1.5s infinite ;
 	-moz-animation: point-anim 1.5s infinite;
 	-webkit-animation: point-anim 1.5s infinite;
@@ -1211,23 +1268,27 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 /* retina */
-@media
+@media 
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (                -webkit-min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
-
+	
 	.ms-skin-black-2 .ms-slide .ms-slide-vpbtn,
 	.ms-skin-black-2 .ms-video-btn,
 	.ms-skin-black-2 .ms-slide .ms-slide-vcbtn,
 	.ms-skin-black-2 .ms-nav-next,
 	.ms-skin-black-2 .ms-nav-prev{
+<<<<<<< HEAD
+		background-image:url(/img/black-skin-2-retina.png)/*tpa=https://www.bgy.com.cn/css/skins/black-skin-2-retina.png*/;
+=======
 		background-image:url(black-skin-2-retina.png);
+>>>>>>> refs/remotes/origin/zilly-hoa
 		background-size: 152px 225px;
 	}
-
+	
 }
 
 
@@ -1240,7 +1301,11 @@ only screen and (                min-resolution: 2dppx) {
 .ms-skin-light-2 .ms-video-btn{
 	width: 54px;
 	height: 54px;
+<<<<<<< HEAD
+	background: url(/img/light-skin-2.png)/*tpa=https://www.bgy.com.cn/css/skins/light-skin-2.png*/ no-repeat -14px -150px;
+=======
 	background: url(light-skin-2.png) no-repeat -14px -150px;
+>>>>>>> refs/remotes/origin/zilly-hoa
 	top: 50%;
 	left: 50%;
 	margin: -27px 0 0 -27px;
@@ -1249,7 +1314,11 @@ only screen and (                min-resolution: 2dppx) {
 .ms-skin-light-2 .ms-slide .ms-slide-vcbtn {
 	width: 27px;
 	height: 26px;
+<<<<<<< HEAD
+	background: url(/img/light-skin-2.png)/*tpa=https://www.bgy.com.cn/css/skins/light-skin-2.png*/ no-repeat -24px -29px;
+=======
 	background: url(light-skin-2.png) no-repeat -24px -29px;
+>>>>>>> refs/remotes/origin/zilly-hoa
 	top: 30px;
 	right: 30px;
 }
@@ -1259,7 +1328,11 @@ only screen and (                min-resolution: 2dppx) {
 .ms-skin-light-2 .ms-nav-next,
 .ms-skin-light-2 .ms-nav-prev {
 	width: 53px;
+<<<<<<< HEAD
+	background: url(/img/light-skin-2.png)/*tpa=https://www.bgy.com.cn/css/skins/light-skin-2.png*/;
+=======
 	background: url(light-skin-2.png);
+>>>>>>> refs/remotes/origin/zilly-hoa
 	background-position: -79px -19px;
 	height: 61px;
 	cursor: pointer;
@@ -1354,7 +1427,7 @@ only screen and (                min-resolution: 2dppx) {
 .ms-skin-light-2 .ms-tooltip-point {cursor: pointer;}
 .ms-skin-light-2 .ms-tooltip-point .ms-point-center {
 	width: 12px;
-	height: 12px;
+	height: 12px; 
 	border-radius: 15px;
 	border: solid 2px #BBB;
 	background: white;
@@ -1365,13 +1438,13 @@ only screen and (                min-resolution: 2dppx) {
 
 .ms-skin-light-2 .ms-tooltip-point .ms-point-border {
 	width: 22px;
-	height: 22px;
+	height: 22px; 
 	background: black;
 	background:rgba(0, 0, 0, 0.36);
 	margin: -11px 0 0 -11px;
 	position: absolute;
 	border-radius: 15px;
-
+	
 	animation: point-anim 1.5s infinite ;
 	-moz-animation: point-anim 1.5s infinite;
 	-webkit-animation: point-anim 1.5s infinite;
@@ -1391,23 +1464,27 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 /* retina */
-@media
+@media 
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (                -webkit-min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
-
+	
 	.ms-skin-light-2 .ms-slide .ms-slide-vpbtn,
 	.ms-skin-light-2 .ms-video-btn,
 	.ms-skin-light-2 .ms-slide .ms-slide-vcbtn,
 	.ms-skin-light-2 .ms-nav-next,
 	.ms-skin-light-2 .ms-nav-prev{
+<<<<<<< HEAD
+		background-image:url(/img/light-skin-2-retina.png)/*tpa=https://www.bgy.com.cn/css/skins/light-skin-2-retina.png*/;
+=======
 		background-image:url(light-skin-2-retina.png);
+>>>>>>> refs/remotes/origin/zilly-hoa
 		background-size: 152px 225px;
 	}
-
+	
 }
 
 
@@ -1421,7 +1498,11 @@ only screen and (                min-resolution: 2dppx) {
 .ms-skin-light-3 .ms-video-btn{
 	width: 50px;
 	height: 50px;
+<<<<<<< HEAD
+	background: url(/img/light-skin-3.png)/*tpa=https://www.bgy.com.cn/css/skins/light-skin-3.png*/ no-repeat -15px -149px;
+=======
 	background: url(light-skin-3.png) no-repeat -15px -149px;
+>>>>>>> refs/remotes/origin/zilly-hoa
 	top: 50%;
 	left: 50%;
 	margin: -25px 0 0 -25px;
@@ -1430,7 +1511,11 @@ only screen and (                min-resolution: 2dppx) {
 .ms-skin-light-3 .ms-slide .ms-slide-vcbtn {
 	width: 31px;
 	height: 29px;
+<<<<<<< HEAD
+	background: url(/img/light-skin-3.png)/*tpa=https://www.bgy.com.cn/css/skins/light-skin-3.png*/ no-repeat -26px -28px;
+=======
 	background: url(light-skin-3.png) no-repeat -26px -28px;
+>>>>>>> refs/remotes/origin/zilly-hoa
 	top: 30px;
 	right: 30px;
 }
@@ -1440,7 +1525,11 @@ only screen and (                min-resolution: 2dppx) {
 .ms-skin-light-3 .ms-nav-next,
 .ms-skin-light-3 .ms-nav-prev {
 	width: 50px;
+<<<<<<< HEAD
+	background: url(/img/light-skin-3.png)/*tpa=https://www.bgy.com.cn/css/skins/light-skin-3.png*/;
+=======
 	background: url(light-skin-3.png);
+>>>>>>> refs/remotes/origin/zilly-hoa
 	background-position: -82px -22px;
 	height: 50px;
 	cursor: pointer;
@@ -1471,7 +1560,11 @@ only screen and (                min-resolution: 2dppx) {
 .ms-skin-light-3 .ms-bullet {
 	width: 16px;
 	height: 16px;
+<<<<<<< HEAD
+	background: url(/img/light-skin-3.png)/*tpa=https://www.bgy.com.cn/css/skins/light-skin-3.png*/ no-repeat;
+=======
 	background: url(light-skin-3.png) no-repeat;
+>>>>>>> refs/remotes/origin/zilly-hoa
 	background-position: -31px -114px;
 	margin: 4px;
 }
@@ -1535,7 +1628,7 @@ only screen and (                min-resolution: 2dppx) {
 .ms-skin-light-3 .ms-tooltip-point {cursor: pointer;}
 .ms-skin-light-3 .ms-tooltip-point .ms-point-center {
 	width: 12px;
-	height: 12px;
+	height: 12px; 
 	border-radius: 15px;
 	border: solid 2px #BBB;
 	background: white;
@@ -1546,13 +1639,13 @@ only screen and (                min-resolution: 2dppx) {
 
 .ms-skin-light-3 .ms-tooltip-point .ms-point-border {
 	width: 22px;
-	height: 22px;
+	height: 22px; 
 	background: black;
 	background:rgba(0, 0, 0, 0.36);
 	margin: -11px 0 0 -11px;
 	position: absolute;
 	border-radius: 15px;
-
+	
 	animation: point-anim 1.5s infinite ;
 	-moz-animation: point-anim 1.5s infinite;
 	-webkit-animation: point-anim 1.5s infinite;
@@ -1572,24 +1665,28 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 /* retina */
-@media
+@media 
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (                -webkit-min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
-
+	
 	.ms-skin-light-3 .ms-slide .ms-slide-vpbtn,
 	.ms-skin-light-3 .ms-video-btn,
 	.ms-skin-light-3 .ms-slide .ms-slide-vcbtn,
 	.ms-skin-light-3 .ms-nav-next,
 	.ms-skin-light-3 .ms-nav-prev,
 	.ms-skin-light-3 .ms-bullet{
+<<<<<<< HEAD
+		background-image:url(/img/light-skin-3-retina.png)/*tpa=https://www.bgy.com.cn/css/skins/light-skin-3-retina.png*/;
+=======
 		background-image:url(light-skin-3-retina.png);
+>>>>>>> refs/remotes/origin/zilly-hoa
 		background-size: 152px 225px;
 	}
-
+	
 }
 
 
@@ -1603,7 +1700,11 @@ only screen and (                min-resolution: 2dppx) {
 .ms-skin-light-4 .ms-video-btn{
 	width: 54px;
 	height: 54px;
+<<<<<<< HEAD
+	background: url(/img/light-skin-4.png)/*tpa=https://www.bgy.com.cn/css/skins/light-skin-4.png*/ no-repeat -14px -150px;
+=======
 	background: url(light-skin-4.png) no-repeat -14px -150px;
+>>>>>>> refs/remotes/origin/zilly-hoa
 	top: 50%;
 	left: 50%;
 	margin: -27px 0 0 -27px;
@@ -1612,7 +1713,11 @@ only screen and (                min-resolution: 2dppx) {
 .ms-skin-light-4 .ms-slide .ms-slide-vcbtn {
 	width: 27px;
 	height: 26px;
+<<<<<<< HEAD
+	background: url(/img/light-skin-4.png)/*tpa=https://www.bgy.com.cn/css/skins/light-skin-4.png*/ no-repeat -24px -29px;
+=======
 	background: url(light-skin-4.png) no-repeat -24px -29px;
+>>>>>>> refs/remotes/origin/zilly-hoa
 	top: 30px;
 	right: 30px;
 }
@@ -1622,7 +1727,11 @@ only screen and (                min-resolution: 2dppx) {
 .ms-skin-light-4 .ms-nav-next,
 .ms-skin-light-4 .ms-nav-prev {
 	width: 54px;
+<<<<<<< HEAD
+	background: url(/img/light-skin-4.png)/*tpa=https://www.bgy.com.cn/css/skins/light-skin-4.png*/;
+=======
 	background: url(light-skin-4.png);
+>>>>>>> refs/remotes/origin/zilly-hoa
 	background-position: -77px -5px;
 	height: 68px;
 	cursor: pointer;
@@ -1743,7 +1852,7 @@ only screen and (                min-resolution: 2dppx) {
 .ms-skin-light-4 .ms-tooltip-point {cursor: pointer;}
 .ms-skin-light-4 .ms-tooltip-point .ms-point-center {
 	width: 12px;
-	height: 12px;
+	height: 12px; 
 	border-radius: 15px;
 	border: solid 2px #E0E0E0;
 	background: #4b8aac;
@@ -1754,12 +1863,12 @@ only screen and (                min-resolution: 2dppx) {
 
 .ms-skin-light-4 .ms-tooltip-point .ms-point-border {
 	width: 22px;
-	height: 22px;
+	height: 22px; 
 	background: white;
 	margin: -11px 0 0 -11px;
 	position: absolute;
 	border-radius: 15px;
-
+	
 	animation: point-anim 1.5s infinite ;
 	-moz-animation: point-anim 1.5s infinite;
 	-webkit-animation: point-anim 1.5s infinite;
@@ -1780,23 +1889,27 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 /* retina */
-@media
+@media 
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (                -webkit-min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
-
+	
 	.ms-skin-light-4 .ms-slide .ms-slide-vpbtn,
 	.ms-skin-light-4 .ms-video-btn,
 	.ms-skin-light-4 .ms-slide .ms-slide-vcbtn,
 	.ms-skin-light-4 .ms-nav-next,
 	.ms-skin-light-4 .ms-nav-prev{
+<<<<<<< HEAD
+		background-image:url(/img/light-skin-4-retina.png)/*tpa=https://www.bgy.com.cn/css/skins/light-skin-4-retina.png*/;
+=======
 		background-image:url(light-skin-4-retina.png);
+>>>>>>> refs/remotes/origin/zilly-hoa
 		background-size: 152px 225px;
 	}
-
+	
 }
 
 
@@ -1810,7 +1923,11 @@ only screen and (                min-resolution: 2dppx) {
 .ms-skin-light-5 .ms-video-btn{
 	width: 32px;
 	height: 32px;
+<<<<<<< HEAD
+	background: url(/img/light-skin-5.png)/*tpa=https://www.bgy.com.cn/css/skins/light-skin-5.png*/ black no-repeat -24px -160px;
+=======
 	background: url(light-skin-5.png) black no-repeat -24px -160px;
+>>>>>>> refs/remotes/origin/zilly-hoa
 	top: 50%;
 	left: 50%;
 	margin: -18px 0 0 -18px;
@@ -1824,7 +1941,11 @@ only screen and (                min-resolution: 2dppx) {
 .ms-skin-light-5 .ms-slide .ms-slide-vcbtn {
 	width: 30px;
 	height: 30px;
+<<<<<<< HEAD
+	background: url(/img/light-skin-5.png)/*tpa=https://www.bgy.com.cn/css/skins/light-skin-5.png*/ white no-repeat -24px -28px;
+=======
 	background: url(light-skin-5.png) white no-repeat -24px -28px;
+>>>>>>> refs/remotes/origin/zilly-hoa
 	top: 18px;
 	right: 30px;
 }
@@ -1834,7 +1955,11 @@ only screen and (                min-resolution: 2dppx) {
 .ms-skin-light-5 .ms-nav-next,
 .ms-skin-light-5 .ms-nav-prev {
 	width: 32px;
+<<<<<<< HEAD
+	background: url(/img/light-skin-5.png)/*tpa=https://www.bgy.com.cn/css/skins/light-skin-5.png*/ white;
+=======
 	background: url(light-skin-5.png) white;
+>>>>>>> refs/remotes/origin/zilly-hoa
 	background-position: -94px -32px;
 	height: 32px;
 	cursor: pointer;
@@ -1870,7 +1995,11 @@ only screen and (                min-resolution: 2dppx) {
 .ms-skin-light-5 .ms-bullet {
 	width: 10px;
 	height: 10px;
+<<<<<<< HEAD
+	background: url(/img/light-skin-5.png)/*tpa=https://www.bgy.com.cn/css/skins/light-skin-5.png*/ no-repeat;
+=======
 	background: url(light-skin-5.png) no-repeat;
+>>>>>>> refs/remotes/origin/zilly-hoa
 	margin: 4px;
 	background-position: -34px -117px;
 }
@@ -1934,7 +2063,7 @@ only screen and (                min-resolution: 2dppx) {
 .ms-skin-light-5 .ms-tooltip-point {cursor: pointer;}
 .ms-skin-light-5 .ms-tooltip-point .ms-point-center {
 	width: 12px;
-	height: 12px;
+	height: 12px; 
 	border-radius: 15px;
 	border: solid 2px #BBB;
 	background: white;
@@ -1945,13 +2074,13 @@ only screen and (                min-resolution: 2dppx) {
 
 .ms-skin-light-5 .ms-tooltip-point .ms-point-border {
 	width: 22px;
-	height: 22px;
+	height: 22px; 
 	background: black;
 	background:rgba(0, 0, 0, 0.36);
 	margin: -11px 0 0 -11px;
 	position: absolute;
 	border-radius: 15px;
-
+	
 	animation: point-anim 1.5s infinite ;
 	-moz-animation: point-anim 1.5s infinite;
 	-webkit-animation: point-anim 1.5s infinite;
@@ -1984,23 +2113,27 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 /* retina */
-@media
+@media 
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (                -webkit-min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
-
+	
 	.ms-skin-light-5 .ms-slide .ms-slide-vpbtn,
 	.ms-skin-light-5 .ms-video-btn,
 	.ms-skin-light-5 .ms-slide .ms-slide-vcbtn,
 	.ms-skin-light-5 .ms-nav-next,
 	.ms-skin-light-5 .ms-nav-prev{
+<<<<<<< HEAD
+		background-image:url(/img/light-skin-5-retina.png)/*tpa=https://www.bgy.com.cn/css/skins/light-skin-5-retina.png*/;
+=======
 		background-image:url(light-skin-5-retina.png);
+>>>>>>> refs/remotes/origin/zilly-hoa
 		background-size: 152px 225px;
 	}
-
+	
 }
 
 
@@ -2014,7 +2147,11 @@ only screen and (                min-resolution: 2dppx) {
 .ms-skin-light-6 .ms-video-btn{
 	width: 45px;
 	height: 45px;
+<<<<<<< HEAD
+	background: url(/img/light-skin-6.png)/*tpa=https://www.bgy.com.cn/css/skins/light-skin-6.png*/ white no-repeat -16px -103px;
+=======
 	background: url(light-skin-6.png) white no-repeat -16px -103px;
+>>>>>>> refs/remotes/origin/zilly-hoa
 	border: solid 3px rgb(112, 112, 112);  border-color: rgba(0, 0, 0, 0.27);
 	-webkit-background-clip: padding-box;
 	top: 50%;
@@ -2030,7 +2167,11 @@ only screen and (                min-resolution: 2dppx) {
 .ms-skin-light-6 .ms-slide .ms-slide-vcbtn {
 	width: 25px;
 	height: 25px;
+<<<<<<< HEAD
+	background: url(/img/light-skin-6.png)/*tpa=https://www.bgy.com.cn/css/skins/light-skin-6.png*/ white no-repeat -27px -36px;
+=======
 	background: url(light-skin-6.png) white no-repeat -27px -36px;
+>>>>>>> refs/remotes/origin/zilly-hoa
 	top: 15px;
 	right: 15px;
 }
@@ -2049,7 +2190,11 @@ only screen and (                min-resolution: 2dppx) {
 	z-index: 110;
 	width: 45px;
 	height: 45px;
+<<<<<<< HEAD
+	background: url(/img/light-skin-6.png)/*tpa=https://www.bgy.com.cn/css/skins/light-skin-6.png*/ white;
+=======
 	background: url(light-skin-6.png) white;
+>>>>>>> refs/remotes/origin/zilly-hoa
 	background-clip: padding-box;
 	background-position: -88px -26px;
 	border: solid 3px rgb(112, 112, 112);
@@ -2166,7 +2311,7 @@ only screen and (                min-resolution: 2dppx) {
 .ms-skin-light-6 .ms-tooltip-point {cursor: pointer;}
 .ms-skin-light-6 .ms-tooltip-point .ms-point-center {
 	width: 12px;
-	height: 12px;
+	height: 12px; 
 	border-radius: 15px;
 	border: solid 2px #BBB;
 	background: white;
@@ -2177,13 +2322,13 @@ only screen and (                min-resolution: 2dppx) {
 
 .ms-skin-light-6 .ms-tooltip-point .ms-point-border {
 	width: 22px;
-	height: 22px;
+	height: 22px; 
 	background: black;
 	background:rgba(0, 0, 0, 0.36);
 	margin: -11px 0 0 -11px;
 	position: absolute;
 	border-radius: 15px;
-
+	
 	animation: point-anim 1.5s infinite ;
 	-moz-animation: point-anim 1.5s infinite;
 	-webkit-animation: point-anim 1.5s infinite;
@@ -2208,23 +2353,27 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 /* retina */
-@media
+@media 
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (                -webkit-min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
-
+	
 	.ms-skin-light-6 .ms-slide .ms-slide-vpbtn,
 	.ms-skin-light-6 .ms-video-btn,
 	.ms-skin-light-6 .ms-slide .ms-slide-vcbtn,
 	.ms-skin-light-6 .ms-nav-next,
 	.ms-skin-light-6 .ms-nav-prev{
+<<<<<<< HEAD
+		background-image:url(/img/light-skin-6-retina.png)/*tpa=https://www.bgy.com.cn/css/skins/light-skin-6-retina.png*/;
+=======
 		background-image:url(light-skin-6-retina.png);
+>>>>>>> refs/remotes/origin/zilly-hoa
 		background-size: 152px 225px;
 	}
-
+	
 }
 
 
@@ -2238,7 +2387,11 @@ only screen and (                min-resolution: 2dppx) {
 .ms-skin-metro .ms-video-btn{
 	width: 47px;
 	height: 46px;
+<<<<<<< HEAD
+	background: url(/img/metro-skin.png)/*tpa=https://www.bgy.com.cn/css/skins/metro-skin.png*/ no-repeat -16px -152px;
+=======
 	background: url(metro-skin.png) no-repeat -16px -152px;
+>>>>>>> refs/remotes/origin/zilly-hoa
 	top: 50%;
 	left: 50%;
 	margin: -22px 0 0 -24px;
@@ -2247,7 +2400,11 @@ only screen and (                min-resolution: 2dppx) {
 .ms-skin-metro .ms-slide .ms-slide-vcbtn {
 	width: 47px;
 	height: 47px;
+<<<<<<< HEAD
+	background: url(/img/metro-skin.png)/*tpa=https://www.bgy.com.cn/css/skins/metro-skin.png*/ no-repeat -16px -19px;
+=======
 	background: url(metro-skin.png) no-repeat -16px -19px;
+>>>>>>> refs/remotes/origin/zilly-hoa
 	top: 15px;
 	right: 15px;
 }
@@ -2257,7 +2414,11 @@ only screen and (                min-resolution: 2dppx) {
 .ms-skin-metro .ms-nav-next,
 .ms-skin-metro .ms-nav-prev {
 	width: 47px;
+<<<<<<< HEAD
+	background: url(/img/metro-skin.png)/*tpa=https://www.bgy.com.cn/css/skins/metro-skin.png*/;
+=======
 	background: url(metro-skin.png);
+>>>>>>> refs/remotes/origin/zilly-hoa
 	background-position: -83px -23px;
 	height: 47px;
 	cursor: pointer;
@@ -2288,7 +2449,11 @@ only screen and (                min-resolution: 2dppx) {
 .ms-skin-metro .ms-bullet {
 	width: 16px;
 	height: 16px;
+<<<<<<< HEAD
+	background: url(/img/metro-skin.png)/*tpa=https://www.bgy.com.cn/css/skins/metro-skin.png*/ no-repeat;
+=======
 	background: url(metro-skin.png) no-repeat;
+>>>>>>> refs/remotes/origin/zilly-hoa
 	background-position: -31px -114px;
 	margin: 4px;
 }
@@ -2352,7 +2517,7 @@ only screen and (                min-resolution: 2dppx) {
 .ms-skin-metro .ms-tooltip-point {cursor: pointer;}
 .ms-skin-metro .ms-tooltip-point .ms-point-center {
 	width: 12px;
-	height: 12px;
+	height: 12px; 
 	border-radius: 15px;
 	border: solid 2px #BBB;
 	background: white;
@@ -2363,13 +2528,13 @@ only screen and (                min-resolution: 2dppx) {
 
 .ms-skin-metro .ms-tooltip-point .ms-point-border {
 	width: 22px;
-	height: 22px;
+	height: 22px; 
 	background: black;
 	background:rgba(0, 0, 0, 0.36);
 	margin: -11px 0 0 -11px;
 	position: absolute;
 	border-radius: 15px;
-
+	
 	animation: point-anim 1.5s infinite ;
 	-moz-animation: point-anim 1.5s infinite;
 	-webkit-animation: point-anim 1.5s infinite;
@@ -2389,24 +2554,28 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 /* retina */
-@media
+@media 
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (                -webkit-min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
-
+	
 	.ms-skin-metro .ms-slide .ms-slide-vpbtn,
 	.ms-skin-metro .ms-video-btn,
 	.ms-skin-metro .ms-slide .ms-slide-vcbtn,
 	.ms-skin-metro .ms-nav-next,
 	.ms-skin-metro .ms-nav-prev,
 	.ms-skin-metro .ms-bullet{
+<<<<<<< HEAD
+		background-image:url(/img/metro-skin-retina.png)/*tpa=https://www.bgy.com.cn/css/skins/metro-skin-retina.png*/;
+=======
 		background-image:url(metro-skin-retina.png);
+>>>>>>> refs/remotes/origin/zilly-hoa
 		background-size: 152px 225px;
 	}
-
+	
 }
 
 
@@ -2419,7 +2588,11 @@ only screen and (                min-resolution: 2dppx) {
 .ms-skin-contrast .ms-video-btn{
 	width: 60px;
 	height: 60px;
+<<<<<<< HEAD
+	background: url(/img/contrast-skin.png)/*tpa=https://www.bgy.com.cn/css/skins/contrast-skin.png*/ no-repeat -10px -144px;
+=======
 	background: url(contrast-skin.png) no-repeat -10px -144px;
+>>>>>>> refs/remotes/origin/zilly-hoa
 	top: 50%;
 	left: 50%;
 	margin: -30px 0 0 -30px;
@@ -2428,7 +2601,11 @@ only screen and (                min-resolution: 2dppx) {
 .ms-skin-contrast .ms-slide .ms-slide-vcbtn {
 	width: 24px;
 	height: 24px;
+<<<<<<< HEAD
+	background: url(/img/contrast-skin.png)/*tpa=https://www.bgy.com.cn/css/skins/contrast-skin.png*/ no-repeat -27px -30px;
+=======
 	background: url(contrast-skin.png) no-repeat -27px -30px;
+>>>>>>> refs/remotes/origin/zilly-hoa
 	top: 30px;
 	right: 30px;
 }
@@ -2438,7 +2615,11 @@ only screen and (                min-resolution: 2dppx) {
 .ms-skin-contrast .ms-nav-next,
 .ms-skin-contrast .ms-nav-prev {
 	width: 60px;
+<<<<<<< HEAD
+	background: url(/img/contrast-skin.png)/*tpa=https://www.bgy.com.cn/css/skins/contrast-skin.png*/;
+=======
 	background: url(contrast-skin.png);
+>>>>>>> refs/remotes/origin/zilly-hoa
 	background-position: -76px -17px;
 	height: 60px;
 	cursor: pointer;
@@ -2469,7 +2650,11 @@ only screen and (                min-resolution: 2dppx) {
 .ms-skin-contrast .ms-bullet {
 	width: 16px;
 	height: 16px;
+<<<<<<< HEAD
+	background: url(/img/contrast-skin.png)/*tpa=https://www.bgy.com.cn/css/skins/contrast-skin.png*/ no-repeat;
+=======
 	background: url(contrast-skin.png) no-repeat;
+>>>>>>> refs/remotes/origin/zilly-hoa
 	background-position: -31px -114px;
 	margin: 4px;
 }
@@ -2533,7 +2718,7 @@ only screen and (                min-resolution: 2dppx) {
 .ms-skin-contrast .ms-tooltip-point {cursor: pointer;}
 .ms-skin-contrast .ms-tooltip-point .ms-point-center {
 	width: 12px;
-	height: 12px;
+	height: 12px; 
 	border-radius: 15px;
 	border: solid 2px #636363;
 	background: black;
@@ -2544,13 +2729,13 @@ only screen and (                min-resolution: 2dppx) {
 
 .ms-skin-contrast .ms-tooltip-point .ms-point-border {
 	width: 22px;
-	height: 22px;
+	height: 22px; 
 	background: white;
 	background: rgba(255, 255, 255, 0.99);
 	margin: -11px 0 0 -11px;
 	position: absolute;
 	border-radius: 15px;
-
+	
 	animation: point-anim 1.5s infinite ;
 	-moz-animation: point-anim 1.5s infinite;
 	-webkit-animation: point-anim 1.5s infinite;
@@ -2571,24 +2756,28 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 /* retina */
-@media
+@media 
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (                -webkit-min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
-
+	
 	.ms-skin-contrast .ms-slide .ms-slide-vpbtn,
 	.ms-skin-contrast .ms-video-btn,
 	.ms-skin-contrast .ms-slide .ms-slide-vcbtn,
 	.ms-skin-contrast .ms-nav-next,
 	.ms-skin-contrast .ms-nav-prev,
 	.ms-skin-contrast .ms-bullet{
+<<<<<<< HEAD
+		background-image:url(/img/contrast-skin-retina.png)/*tpa=https://www.bgy.com.cn/css/skins/contrast-skin-retina.png*/;
+=======
 		background-image:url(contrast-skin-retina.png);
+>>>>>>> refs/remotes/origin/zilly-hoa
 		background-size: 152px 225px;
 	}
-
+	
 }
 
 
@@ -2627,7 +2816,11 @@ only screen and (                min-resolution: 2dppx) {
 
 .ms-display-template .ms-nav-prev,
 .ms-display-template .ms-nav-next {
+<<<<<<< HEAD
+    background: url(/img/device-skin.png)/*tpa=https://www.bgy.com.cn/css/templates/device-skin.png*/ no-repeat -11px -9px;
+=======
     background: url(device-skin.png) no-repeat -11px -9px;
+>>>>>>> refs/remotes/origin/zilly-hoa
     width: 35px;
     height: 40px;
     left: -80px;
@@ -2657,7 +2850,11 @@ only screen and (                min-resolution: 2dppx) {
 .ms-display-template .ms-bullet {
 	width: 10px;
 	height: 10px;
+<<<<<<< HEAD
+	background: url(/img/device-skin.png)/*tpa=https://www.bgy.com.cn/css/templates/device-skin.png*/ no-repeat -112px -25px;
+=======
 	background: url(device-skin.png) no-repeat -112px -25px;
+>>>>>>> refs/remotes/origin/zilly-hoa
 	margin: 4px;
 }
 
@@ -2680,10 +2877,17 @@ only screen and (                min-resolution: 2dppx) {
 	height: 100%;
 	float: left;
 	cursor: pointer;
+<<<<<<< HEAD
+	background: url(/img/gallery-btns.png)/*tpa=https://www.bgy.com.cn/css/templates/gallery-btns.png*/ no-repeat 6px 6px;
+}
+.ms-gallery-template .ms-gal-playbtn.btn-pause {
+	background: url(/img/gallery-btns.png)/*tpa=https://www.bgy.com.cn/css/templates/gallery-btns.png*/ no-repeat -55px 7px;
+=======
 	background: url(gallery-btns.png) no-repeat 6px 6px;
 }
 .ms-gallery-template .ms-gal-playbtn.btn-pause {
 	background: url(gallery-btns.png) no-repeat -55px 7px;
+>>>>>>> refs/remotes/origin/zilly-hoa
 }
 
 .ms-gallery-template .ms-gal-thumbtoggle {
@@ -2693,10 +2897,17 @@ only screen and (                min-resolution: 2dppx) {
 	width: 55px;
 	height: 100%;
 	cursor: pointer;
+<<<<<<< HEAD
+	background: url(/img/gallery-btns.png)/*tpa=https://www.bgy.com.cn/css/templates/gallery-btns.png*/ no-repeat -53px -41px;
+}
+.ms-gallery-template .ms-gal-thumbtoggle.btn-hide {
+	background: url(/img/gallery-btns.png)/*tpa=https://www.bgy.com.cn/css/templates/gallery-btns.png*/ no-repeat 4px -41px;
+=======
 	background: url(gallery-btns.png) no-repeat -53px -41px;
 }
 .ms-gallery-template .ms-gal-thumbtoggle.btn-hide {
 	background: url(gallery-btns.png) no-repeat 4px -41px;
+>>>>>>> refs/remotes/origin/zilly-hoa
 }
 
 .ms-gallery-template .ms-slide-num {
@@ -2807,7 +3018,11 @@ only screen and (                min-resolution: 2dppx) {
 
 .ms-laptop-template .ms-nav-prev,
 .ms-laptop-template .ms-nav-next {
+<<<<<<< HEAD
+    background: url(/img/device-skin.png)/*tpa=https://www.bgy.com.cn/css/templates/device-skin.png*/ no-repeat -11px -9px;
+=======
     background: url(device-skin.png) no-repeat -11px -9px;
+>>>>>>> refs/remotes/origin/zilly-hoa
     width: 35px;
     height: 40px;
     left: -80px;
@@ -2837,7 +3052,11 @@ only screen and (                min-resolution: 2dppx) {
 .ms-laptop-template .ms-bullet {
 	width: 10px;
 	height: 10px;
+<<<<<<< HEAD
+	background: url(/img/device-skin.png)/*tpa=https://www.bgy.com.cn/css/templates/device-skin.png*/ no-repeat -112px -25px;
+=======
 	background: url(device-skin.png) no-repeat -112px -25px;
+>>>>>>> refs/remotes/origin/zilly-hoa
 	margin: 4px;
 }
 
@@ -2876,7 +3095,11 @@ only screen and (                min-resolution: 2dppx) {
 
 .ms-tablet-template .ms-nav-prev,
 .ms-tablet-template .ms-nav-next {
+<<<<<<< HEAD
+    background: url(/img/device-skin.png)/*tpa=https://www.bgy.com.cn/css/templates/device-skin.png*/ no-repeat -11px -9px;
+=======
     background: url(device-skin.png) no-repeat -11px -9px;
+>>>>>>> refs/remotes/origin/zilly-hoa
     width: 35px;
     height: 40px;
     left: -120px;
@@ -2906,7 +3129,11 @@ only screen and (                min-resolution: 2dppx) {
 .ms-tablet-template .ms-bullet {
 	width: 10px;
 	height: 10px;
+<<<<<<< HEAD
+	background: url(/img/device-skin.png)/*tpa=https://www.bgy.com.cn/css/templates/device-skin.png*/ no-repeat -112px -25px;
+=======
 	background: url(device-skin.png) no-repeat -112px -25px;
+>>>>>>> refs/remotes/origin/zilly-hoa
 	margin: 4px;
 }
 
@@ -2946,7 +3173,11 @@ only screen and (                min-resolution: 2dppx) {
 
 .ms-phone-template .ms-nav-prev,
 .ms-phone-template .ms-nav-next {
+<<<<<<< HEAD
+    background: url(/img/device-skin.png)/*tpa=https://www.bgy.com.cn/css/templates/device-skin.png*/ no-repeat -11px -9px;
+=======
     background: url(device-skin.png) no-repeat -11px -9px;
+>>>>>>> refs/remotes/origin/zilly-hoa
     width: 35px;
     height: 40px;
     left: -120px;
@@ -2976,7 +3207,11 @@ only screen and (                min-resolution: 2dppx) {
 .ms-phone-template .ms-bullet {
 	width: 10px;
 	height: 10px;
+<<<<<<< HEAD
+	background: url(/img/device-skin.png)/*tpa=https://www.bgy.com.cn/css/templates/device-skin.png*/ no-repeat -112px -25px;
+=======
 	background: url(device-skin.png) no-repeat -112px -25px;
+>>>>>>> refs/remotes/origin/zilly-hoa
 	margin: 4px;
 }
 
@@ -3043,7 +3278,11 @@ only screen and (                min-resolution: 2dppx) {
 
 .ms-staff-carousel .ms-nav-prev,
 .ms-staff-carousel .ms-nav-next {
+<<<<<<< HEAD
+    background: url(/img/staff-arrows.png)/*tpa=https://www.bgy.com.cn/css/templates/staff-arrows.png*/ white no-repeat -7px -57px;
+=======
     background: url(staff-arrows.png) white no-repeat -7px -57px;
+>>>>>>> refs/remotes/origin/zilly-hoa
     width: 35px;
     height: 40px;
     left: -35px;
@@ -3073,7 +3312,7 @@ only screen and (                min-resolution: 2dppx) {
 		font-size: 22pt;
 		margin:0px;
 	}
-
+	
 	.ms-staff-carousel .ms-staff-info h4{
 		font-weight: 300;
 		color:#787878;
@@ -3097,7 +3336,7 @@ only screen and (                min-resolution: 2dppx) {
     box-shadow : none;
     left:-45px;
  }
-
+ 
 .ms-staff-carousel.ms-round .ms-nav-next {
     left:auto;
     right:-45px
@@ -3125,7 +3364,11 @@ only screen and (                min-resolution: 2dppx) {
 .ms-vertical-template .ms-nav-next {
     top: 10px;
     left: 50%;
+<<<<<<< HEAD
+    background: url(/img/vertical-arrows.png)/*tpa=https://www.bgy.com.cn/css/templates/vertical-arrows.png*/ no-repeat;
+=======
     background: url(vertical-arrows.png) no-repeat;
+>>>>>>> refs/remotes/origin/zilly-hoa
     background-position: -11px -6px;
     width: 40px;
     height: 30px;
@@ -3146,8 +3389,12 @@ only screen and (                min-resolution: 2dppx) {
 	top: 0;
 	height: 15px;
 	cursor: pointer;
+<<<<<<< HEAD
+	background: url(/img/vertical-arrows.png)/*tpa=https://www.bgy.com.cn/css/templates/vertical-arrows.png*/ no-repeat;
+=======
 	background: url(vertical-arrows.png) no-repeat;
-
+>>>>>>> refs/remotes/origin/zilly-hoa
+	
     background-position: 50% -106px;
 }
 .ms-vertical-template .ms-thumblist-bwd {

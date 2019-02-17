@@ -1,10 +1,16 @@
 var render = function () {
-	var event_template = $('#event_template').html();
-	Mustache.parse(event_template);
+	var subscribers_template = $('#subscribers_template').html();
+	Mustache.parse(subscribers_template);
 	$.each(data.subscribers, function () {
-		$('#calendar_events').append(Mustache.render(event_template, this));
+		$('#news_subscribers').append(Mustache.render(subscribers_template, this));
 	});
-	// admin
+	var content_title = $('#content_title').html();
+	Mustache.parse(content_title);
+	$.each(data.content, function () {
+		$('#form_titles').append(Mustache.render(content_title, this));
+	});
+
+
 	var storage = window.localStorage;
 	if (storage.getItem('username') === 'admin') {
 		$('.buttona').css('display', 'none')
