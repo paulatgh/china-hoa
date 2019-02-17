@@ -44,6 +44,12 @@ var render = function () {
         });
     });
 
+    $('#calendar').calendar({
+        ifSwitch: true, // 是否切换月份
+        hoverDate: true, // hover是否显示当天信息
+        backToday: true // 是否返回当天
+    });
+
     var slider = new MasterSlider();
     slider.setup('masterslider', {
         width: 1920, // slider standard width
@@ -60,10 +66,19 @@ var render = function () {
     slider.control('arrows');
     var i = 1,
         ileng = $('.ms-slide').length;
-    setInterval('timebar()', 6000);
-    $('.ban-len span').html(ileng);
-    clickReduce();
-    clickAdd();
+
+    $('.main-switch-top a').click(function(){
+        $(this).addClass('curr').siblings().removeClass('curr');
+        var manin = $(this).index();
+            $('.main-switch-item').hide();
+            $('.main-switch-item').eq(manin).fadeIn();
+    })
+
+    // 时间
+    function timebar() {
+        $('.mas-tib').stop().animate({ 'width' : 350+'px' },6000).animate({ 'width' : 0 },0);
+            $('.ms-nav-next').click();
+    };
 
     function clickAdd() {
         $('#masterslider').delegate('.ms-nav-next', 'click', function () {
@@ -85,6 +100,11 @@ var render = function () {
         })
     };
 
+    setInterval(timebar, 6000);
+    $('.ban-len span').html(ileng);
+    clickReduce();
+    clickAdd();
+
     $('.logout').click(function () {
         window.localStorage.setItem('username', '')
         window.location.href = "http://tfire.net/index.html"
@@ -94,7 +114,7 @@ var render = function () {
         `<div class="db">
         <div class="login">
             <h3 class="login-H3">De Anza Oaks HOA</h3>
-            <p class="return"><img src="img/Bounced.png" alt="Bounced"></p>
+            <p class="return"><img src="/img/Bounced.png" alt="Bounced"></p>
             <input class="login-int" type="text" placeholder="Name"><br />
             <p class="username">Please enter your user name</p>
             <input class="login-int-a" type="password" placeholder="Password">

@@ -30,7 +30,7 @@ var render = function () {
         `<div class="db">
         <div class="login">
             <h3 class="login-H3">De Anza Oaks HOA</h3>
-            <p class="return"><img src="img/Bounced.png" alt="Bounced"></p>
+            <p class="return"><img src="/img/Bounced.png" alt="Bounced"></p>
             <input class="login-int" type="text" placeholder="Name"><br />
             <p class="username">Please enter your user name</p>
             <input class="login-int-a" type="password" placeholder="Password">

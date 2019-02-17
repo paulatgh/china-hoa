@@ -2,19 +2,7 @@
  * 完整代码
  */
 
-
-// 关于月份： 在设置时要-1，使用时要+1
-$(function () {
-
-  $('#calendar').calendar({
-    ifSwitch: true, // 是否切换月份
-    hoverDate: true, // hover是否显示当天信息
-    backToday: true // 是否返回当天
-  });
-
-});
-
-; (function ($, window, document, undefined) {
+(function ($, window, document, undefined) {
 
   var Calendar = function (elem, options) {
     this.$calendar = elem;
