@@ -1,3 +1,19 @@
+
+All requests to backend
+    DELETE /event?id=123
+    POST /events/edit?id=123
+
+
+
+
+NEW DEV METHOD
+
+    npm install -g http-server
+    http-server -d false -c-1
+
+
+OLD DEV METHOD
+
 In order to view the pages locally on Chrome (mac), you need to start Chrome with a special parameter:
 
     /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --allow-file-access-from-files &
