@@ -1,9 +1,11 @@
 <!-- header -->
 <div class="header" style="box-shadow:0 2px 7px 0px rgba(0,0,0,0.5); border:1px solid rgba(151,151,151,1)">
     <div class="w1200">
-        <a class="logo" href="../../index.html">
-            <img src="../../img/Combined Shape.png" alt="Combined Shape">
-            De Anza Oaks
+        <a class="logo" href="../../index.html" id="Logo_cycle">
+            <script id="Logo" type="txt/template">
+                <img src="{{Url}}">
+            {{title}}
+        </script>
         </a>
         <input type="text" placeholder="Search..." style="width: 188px;height: 37px;position: relative;top: 30px;left: 540px;border: solid 1px #393D44;padding-left: 10px;">
 
@@ -127,6 +129,52 @@
                         <li>{{alphabetList}}</li>
                     </script>
                 </ul>
+            </div>
+        </div>
+        <div class="db">
+            <div class="user" id="userInformation_cycle">
+                <div class="close"></div>
+                <script id="userInformation" type="txt/template">
+                    <div class="user-img">
+                        <img src="{{PersonalPhotoUrl}}">
+                    </div>
+                    <div class="user-content">
+                        <h5>{{userContent}}</h5>
+                        <h5>{{name}}</h5>
+                        <p>{{DateOofBirth}}</p>
+                        <p>{{Email}}</p>
+                        <p>{{Phone}}</p>
+                        <p>{{professional}}</p>
+                    </div>
+    
+                    <div class="user-content">
+                        <h5>{{community}}</h5>
+                        <p>{{address}}</p>
+                        <p>{{addressContent}}</p>
+                        <p>{{content}}</p>
+                        <p>{{unit}}</p>
+                    </div>
+                    <div class="user-content">
+                        <h5>{{children}}</h5>
+                        <p>{{FirstChild}}</p>
+                        <p>{{SecondChild}}</p>
+                        <p>{{ThirdChild}}</p>
+    
+                    </div>
+                    <div class="user-content">
+                        <h5>{{HereFrom}}</h5>
+                        <p>{{HereFromContent}}</p>
+                        <h5>{{MoveInDate}}</h5>
+                        <p>{{MoveInDateContent}}</p>
+                        <h5>{{Computer}}</h5>
+                        <p>{{ComputerType}}</p>
+                        <h5>{{Hobbies}}</h5>
+                        <p>{{HobbiesList}},</p>
+                        <p>{{HobbiesList2}}</p>
+                        <h5>{{PersonalWebsite}}</h5>
+                        <p>{{personalUrl}}</p>
+                    </div>
+                </script>
             </div>
         </div>
     </div>

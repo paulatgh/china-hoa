@@ -1,4 +1,8 @@
 var render = function () {
+    var Logo = $('#Logo').html();
+    $.each(data.Logo, function () {
+        $('#Logo_cycle').append(Mustache.render(Logo, this));
+    });
     var event_template = $('#eforms_content').html();
     Mustache.parse(event_template);
     $.each(data.eForms, function () {

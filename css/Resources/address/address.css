@@ -285,3 +285,6 @@ body {
     color: rgba(57, 61, 68, 1);
     line-height: 27px;
 }
+.db{
+  display: none;  
+}

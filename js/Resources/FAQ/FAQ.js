@@ -1,4 +1,8 @@
 var render = function () {
+    var Logo = $('#Logo').html();
+    $.each(data.Logo, function () {
+        $('#Logo_cycle').append(Mustache.render(Logo, this));
+    });
     var event_template = $('#FAQcontent').html();
     Mustache.parse(event_template);
     $.each(data.FrequentlyAskedQuestions, function () {

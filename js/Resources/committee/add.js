@@ -1,8 +1,12 @@
 var render = function () {
+    var Logo = $('#Logo').html();
+    $.each(data.Logo, function () {
+        $('#Logo_cycle').append(Mustache.render(Logo, this));
+    });
     var CommitteeAdd = $('#CommitteeAdd').html();
     Mustache.parse(CommitteeAdd);
     $('#CommitteeAdd').after(Mustache.render(CommitteeAdd, data.TheTitle[0]));
-    
+
 
 
     var storage = window.localStorage;
