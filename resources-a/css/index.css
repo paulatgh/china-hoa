@@ -1,0 +1,211 @@
+html,
+body {
+    height: 100%;
+}
+
+.main {
+    height: 1105px;
+}
+
+table {
+    width: 1151px;
+    border: none;
+}
+
+tr {
+    height: 75px;
+    border-bottom: solid 1px #FAFAFA;
+
+}
+
+th {
+    height: 21px;
+    font-size: 14px;
+    font-family: PingFangSC-Medium;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.85);
+    line-height: 21px;
+    background: rgba(250, 250, 250, 1);
+}
+
+td {
+    font-size: 14px;
+    font-family: PingFangSC-Regular;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.breadcrumb li {
+    color: rgba(30, 130, 23, 1);
+    height: 27px;
+    font-size: 20px;
+    font-family: OpenSans-Regular;
+    font-weight: 400;
+    line-height: 27px;
+
+}
+
+.breadcrumb li a {
+    color: rgba(30, 130, 23, 1);
+
+}
+
+.breadcrumb {
+    width: 293px;
+    display: flex;
+    position: relative;
+    top: 24px;
+}
+
+.main-breadcrumb {
+    width: 100%;
+    height: 50px;
+}
+
+.main-center {
+    width: 1200px;
+    height: auto;
+    margin: auto;
+}
+
+.content-1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.Events-Calendar {
+    width: 368px;
+    height: 234px;
+    background: rgba(255, 255, 255, 1);
+    margin: 24px 24px 24px 0;
+}
+
+.Events-Calendar:nth-child(1) {
+    background-image: url('../../img/address book_bg.png');
+}
+
+.Events-Calendar:nth-child(2) {
+    background-image: url('../../img/address book_bg.png');
+}
+
+.Events-Calendar:nth-child(3) {
+    background-image: url('../../img/boardcommittee_bg.png');
+}
+
+.Events-Calendar:nth-child(4) {
+    background-image: url('../../img/eForms_bg.png');
+}
+
+.Events-Calendar:nth-child(5) {
+    background-image: url('../../img/FAQs_bg.png');
+}
+
+.Events-Calendar:nth-child(6) {
+    background-image: url('../../img/documents.png');
+}
+
+.calendar-img {
+    width: 250px;
+    height: 84px;
+    background: rgba(106, 166, 102, 0.9);
+    position: relative;
+    top: 76px;
+    left: 59px;
+}
+
+.calendar-img p {
+
+    font-size: 25px;
+    font-family: OpenSans-Bold;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    line-height: 80px;
+    text-align: center;
+    /* margin-top: 88px; */
+}
+
+.footer-p {
+    font-size: 16px;
+    font-family: OpenSans-SemiBold;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+    line-height: 70px;
+    text-align: center;
+
+}
+
+.main-left-content {
+    width: 421px;
+    height: 225px;
+    box-shadow: 0 0 8px;
+    margin-top: 15px;
+}
+
+.main-right-content {
+    width: 759px;
+    height: 225px;
+    box-shadow: 0 0 8px;
+    margin-top: 15px;
+    margin-left: 24px
+}
+
+.calendar-right {
+    width: 478px;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    background: #F1F1F1;
+    overflow: overlay;
+}
+
+.calendar-right::-webkit-scrollbar {
+    display: none;
+}
+
+.calendar-right div {
+    width: 100%;
+    height: 33.3%;
+    padding: 0 25px;
+}
+
+.calendar-right p {
+    height: 22px;
+    line-height: 22px;
+    margin: 20px 0 0 0;
+    font-size: 16px;
+    font-family: PingFangSC-Regular;
+}
+
+.calendar-right p span {
+    float: left;
+}
+
+.calendar-right p a {
+    float: right;
+    color: black;
+}
+
+.calendar-right .active {
+    background-color: #6AA666;
+    color: #FFFFFF;
+}
+
+.announcement-tips {
+    height: 20px;
+    box-sizing: border-box;
+    margin-left: 140px;
+    margin-top: 15px;
+}
+
+.announcement-tips span {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #A0C79F;
+    margin-left: 16px;
+}
