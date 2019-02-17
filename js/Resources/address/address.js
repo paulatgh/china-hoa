@@ -1,4 +1,8 @@
 var render = function () {
+    var Logo = $('#Logo').html();
+    $.each(data.Logo, function () {
+        $('#Logo_cycle').append(Mustache.render(Logo, this));
+    });
     var username = $('#username').html();
     var event_template = $('#username-A').html();
     var username2 = $('#username2').html();
@@ -6,6 +10,7 @@ var render = function () {
     var username3 = $('#username3').html();
     var username3 = $('#username3-C').html();
     var AccordingToTheStreet = $('#AccordingToTheStreet').html();
+    var userInformation = $('#userInformation').html();
 
 
     Mustache.parse(event_template);
@@ -53,6 +58,13 @@ var render = function () {
         $('#FuctionButton_cycle').append(Mustache.render(FuctionButton, this));
     });
 
+    var userInformation = $('#userInformation').html();
+    $.each(data.UserInformation, function () {
+        $('#userInformation_cycle').append(Mustache.render(userInformation, this));
+    });
+
+
+
     // admin
     var storage = window.localStorage;
     if (storage.getItem('username') === 'admin') {
@@ -70,58 +82,6 @@ var render = function () {
     var username = storage.getItem('username')
     $(".btns-language").text(username);
 
-
-
-    var str =
-        `<div class="db">
-                    <div class="user">
-                        <div class="close"></div>
-                        <div class="user-img">
-                            <img src="../../img/man.jpg">
-                        </div>
-                        <div class="user-content">
-                             <h5>Resident</h5>
-                             <h5>Allan, Joan </h5>
-                             <p>Birth date: January 26</p>
-                             <p>Email:johnkrischer@gmail.com</p>
-                             <p>Phone:408-550-6114</p>
-                             <p>Occupation: Tech Dork</p>
-                        </div>
-                        
-                        <div class="user-content">
-                             
-                             <h5>De Anza Oaks</h5>
-                             <p>Address: </p>
-                             <p>22806 Poplar Grove Square</p>
-                             <p>Cupertino CA 95014</p>
-                             <p>Lot #/Unit #: 056</p>
-                        </div>
-                        <div class="user-content">
-                             
-                             <h5>Children:</h5>
-                             <p>Sabrina - Birth date: 8/27/1998</p>
-                             <p>Samantha - Birth date: 1/11/2001</p>
-                             <p>Tyler - Birth date: 6/18/2003</p>
-                            
-                        </div>
-                        <div class="user-content">
-                             
-                             <h5>Here From:</h5>
-                             <p> Aptos, CA </p>
-                             <h5>Move-In Date:</h5>
-                             <p> 8/5/2005 </p>
-                             <h5>Computer Type: </h5>
-                             <p>Windows, Apple,Linux </p>
-                            <h5>Hobbies:</h5>
-                            <p> Travel, languages, Classic cars,</p>
-                            <p>anything ocean related </p>
-                            <h5>Personal Website:</h5>
-                            <p> http://www.johnkrischer.com </p>
-                        </div>
-                        
-                    </div>
-                </div>`
-
     var show = true;
     $('.address_book_click').click(function () {
         if (show) {
@@ -136,14 +96,14 @@ var render = function () {
             $('.address_book_letter').css('display', 'block')
             $('.a_z').css('display', 'none')
             $(".a_a").css("display", "block")
-
             show = true;
         }
     })
+
     $('.user_desc, .a_z .user_desc').click(function () {
-        $('body').append(str);
+        $(".db").css("display", "block")
         $('.close').click(function () {
-            $('.db').remove()
+            $('.db').css("display", "none")
         })
     })
 };

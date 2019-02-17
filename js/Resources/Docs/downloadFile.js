@@ -1,4 +1,8 @@
 var render = function () {
+    var Logo = $('#Logo').html();
+    $.each(data.Logo, function () {
+        $('#Logo_cycle').append(Mustache.render(Logo, this));
+    });
     var HomeownersAssociation = $('#HomeownersAssociation').html();
     Mustache.parse(HomeownersAssociation);
     $.each(data.HomeownersAssociation, function () {
