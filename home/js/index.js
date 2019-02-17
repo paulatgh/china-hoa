@@ -60,7 +60,7 @@ var render = function () {
     slider.control('arrows');
     var i = 1,
         ileng = $('.ms-slide').length;
-    setInterval('timebar', 6000);
+    setInterval('timebar()', 6000);
     $('.ban-len span').html(ileng);
     clickReduce();
     clickAdd();
