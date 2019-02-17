@@ -1,10 +1,11 @@
 var render = function () {
-    var event_template = $('#event_template').html();
-    Mustache.parse(event_template);
-    $.each(data, function () {
-        $('#calendar_events').append(Mustache.render(event_template, this));
+    var content_template = $('#saveFile').html();
+    Mustache.parse(content_template);
+    $('#saveFile').after(Mustache.render(content_template, data));
+    var Logo = $('#Logo').html();
+    $.each(data.Logo, function () {
+        $('#Logo_cycle').append(Mustache.render(Logo, this));
     });
-
     // admin
     var storage = window.localStorage;
     if (storage.getItem('username') === 'admin') {

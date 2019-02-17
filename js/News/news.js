@@ -4,6 +4,12 @@ var render = function () {
     $.each(data.news, function () {
         $('#news_list').append(Mustache.render(news_template, this));
     });
+    var Logo = $('#Logo').html();
+    $.each(data.Logo, function () {
+        $('#Logo_cycle').append(Mustache.render(Logo, this));
+    });
+
+
     // admin管理员用户权限
     var storage = window.localStorage;
     if (storage.getItem('username') === 'admin') {

@@ -38,67 +38,48 @@ var render = function () {
         window.location.href = "http://tfire.net/index.html";
 
     })
+   
+}
 
-    $('.part-a1').click(function () {
-        var val = $(this).parents('.part_1').find('.Volunteer_dec_title')
+function edit() {
+    $(".part-a1").click(function () {
+        if ($('.saveChange').length !== 0) {
+            return false;
+        }
+        var val = $(this).parents('ul').find('li');
+        var saveButton = `<span class="saveChange">Save</span>`;
         val.each(function (index, item) {
+            if ($(item).find('.part-a')) {
+                $(item).find('.part-a').remove();
+            }
             var value = $(item).text().trim();
-            console.log($(item).text())
-            var inp = `<input type="text" value="${value}"/>`;
-            val.empty().append(inp)
+            var inp = `<input type="text" style="width:80%" value="${value}"/>`;
+            $(item).empty().append(inp)
         })
-        var data = $(this).parent().prev().text();
-        var str = `<div class="part_1">
-        						<div class="Volunteer_dec_title" style="font-weight: 600;"><input value='${data}' type="text" class="edit_inp"/></div>
-        						<div class="Volunteer_dec_title">
-        							<h4><input value='${data}' type="text" class="edit_inp"/></h4>
-        							<div>
-        									<input value='${data}' type="text" class="edit_inp"/>
-        							</div>
-        						</div>
-        						<div class="Volunteer_dec_title">
-        							<h4><input value='${data}' type="text" class="edit_inp"/></h4>
-        							<div><input value='${data}' type="text" class="edit_inp"/></div>
-        						</div>
-        						<div class="part">
-        							<div class="part-a">
-        								<a class="part-a1">Edit</a>
-        								<a class="part-a2">Delete</a>
-        							</div>
-        						</div>
-        <span class="save">Save Changes</span>
-        					</div>`
-
-        $('.save').click(function () {
-            var val = $(this).prev().val()
-            var valStr = ` 
-                            <div class="Volunteer_dec_ title" style="font-weight: 600;">Architectural Committee</div>
-                            <div class="Volunteer_dec_title">
-                                <h4>Description:</h4>
-                                <div>
-                                    Help to manage the DAO website to keep it up to date and maximize timely
-                                    communication within our community.
-                                </div>
-                            </div>
-                            <div class="Volunteer_dec_title">
-                                <h4>Contact:</h4>
-                                <div>Dave Clark</div>
-                            </div>
-
-        <span class="save">Save Changes</span>
-                            
-                                <div class="part-a">
-                                    <span class="part-a1">Edit</span>
-                                    <span class="part-a2">Delete</span>                                    
-                                </div>
-                                `
-            $(this).parent().empty().append(valStr)
-            $('.part-a2').click(function () {
-                deleteLog()
-                $('.delete_button').click(function () {
-                    console.log('1111')
-                })
+        val.parent().append(saveButton);
+        $('.saveChange').click(function () {
+            $(this).remove()
+            var value = []
+            val.find('input').each(function (index, item) {
+                value.push($(item).val())
             })
+            $(val).empty()
+            var editStr = `
+            <div class="part-a" style="display: block;">
+            <a class="part-a1">Edit</a>
+            <a class="part-a2">Delete</a>
+        </div>`
+            $.each(value, function (index, item) {
+                $(val).eq(index).text(item)
+            })
+            $(val).eq(0).append(editStr)
+            $(".part-a2").click(function () {
+                if ($('#news_volunteer .saveChange').length) {
+                    return false;
+                }
+                deleteLog(data,index)
+            })         
+            edit()
         })
 
     })

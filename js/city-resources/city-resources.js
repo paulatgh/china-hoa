@@ -25,6 +25,11 @@ var render = function () {
     $.each(data.Utilities, function () {
         $('#Utilities').append(Mustache.render(Utilities_title, this));
     });
+
+    var Logo = $('#Logo').html();
+    $.each(data.Logo, function () {
+        $('#Logo_cycle').append(Mustache.render(Logo, this));
+    });
     // admin
     var storage = window.localStorage;
     var username = storage.getItem('username')
