@@ -1,5 +1,61 @@
-	
-$(function(){
+function Slider(slip, li, a, i, left, animatetime) {
+    this.$slip = slip;
+    this.$li = li;
+    this.$a = a;
+    this.$i = i;
+    this.$left = left;
+    this.$animatetime = animatetime;
+    var _this = this;
+    this.dingwei = function () {
+        this.$slip.stop().animate({
+            width: _this.$a.width() + 'px',
+            left: parseInt(_this.$a.position().left) + parseInt(_this.$left) + 'px'
+        }, _this.$animatetime)
+    };
+    this.bindevent = function () {
+        var _this = this;
+        this.$li.hover(function () {
+            _this.$slip.stop().animate({
+                width: $(this).width() + 'px',
+                left: parseInt($(this).position().left) + parseInt(_this.$left) + 'px'
+            }, _this.$animatetime);
+        }, function () {
+            _this.dingwei();
+        })
+    };
+    this.intr = function () {
+        this.dingwei();
+        this.bindevent();
+    };
+    this.intr();
+}
+
+// public delete button
+function deleteLog(data, index,el) {
+    var str = `<div class="db">
+                    <div class="delete">
+                        <h5>Comfirm Delete?</h5>
+                        <div class="delelte_content">Are you sure wish to delete?</div>
+                        <div class="oper">
+                            <span class="delete_button">Delete</span>
+                            <span class="cancel_button">Cancel</span>
+                        </div>
+                    </div>
+                </div>`;
+    $('body').append(str);
+    $('.cancel_button').click(function () {
+        $('.db').remove();
+    })
+    $('.delete_button').click(function () {
+        var dataList = data.filter((item, i) => {
+            return item.id !== index;
+        })
+        $('.db').remove();
+        $(el).remove();
+    })
+}
+
+function _post_render() {
     win = $(window);
     //showNav()
     innav()
@@ -16,8 +72,9 @@ $(function(){
             }
         });
     };
-//头部滑块
-var slip2=$(".navline"),li2=$(".nav li"),a2=$(".nav li.curr"),i2="",left2="15.5",animatetime2=300;
+    
+    //头部滑块
+    var slip2=$(".navline"),li2=$(".nav li"),a2=$(".nav li.curr"),i2="",left2="15.5",animatetime2=300;
     var Slider2 =new Slider(slip2,li2,a2,i2,left2,animatetime2);
     // 二级导航
     function innav(){
@@ -82,8 +139,4 @@ var slip2=$(".navline"),li2=$(".nav li"),a2=$(".nav li.curr"),i2="",left2="15.5"
         $('.profile').stop().animate({'top':'-100%'},200);
         
     })
-
-
-
-})
-
+}

@@ -1,3 +1,5 @@
+@import url("calendar_plugin.css");
+
 .main-right-content {
     width: 764px;
     height: 225px;
@@ -91,27 +93,27 @@
 }
 
 .main-left-content .Carousel li:first-child {
-    background: url('../img/Gated Community Photo.png') no-repeat;
+    background: url('/img/Gated Community Photo.png') no-repeat;
     background-size: 100% 100%;
 }
 
 .main-left-content .Carousel li:nth-child(2) {
-    background: url('../img/pool.png') no-repeat;
+    background: url('/img/pool.png') no-repeat;
     background-size: 100% 100%;
 }
 
 .main-left-content .Carousel li:nth-child(3) {
-    background: url('../img/clubhouse.png') no-repeat;
+    background: url('/img/clubhouse.png') no-repeat;
     background-size: 100% 100%;
 }
 
 .main-left-content .Carousel li:nth-child(4) {
-    background: url('../img/playground.png') no-repeat;
+    background: url('/img/playground.png') no-repeat;
     background-size: 100% 100%;
 }
 
 .main-left-content .Carousel li:nth-child(5) {
-    background: url('../img/green fields.png') no-repeat;
+    background: url('/img/green fields.png') no-repeat;
     background-size: 100% 100%;
 }
 
