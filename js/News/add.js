@@ -2,7 +2,11 @@ var render = function () {
     var content_template = $('#add').html();
     Mustache.parse(content_template);
     $('#add').after(Mustache.render(content_template, data));
-
+    
+    var Logo = $('#Logo').html();
+    $.each(data.Logo, function () {
+        $('#Logo_cycle').append(Mustache.render(Logo, this));
+    });
     // admin
     var storage = window.localStorage;
     if (storage.getItem('username') === 'admin') {
