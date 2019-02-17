@@ -8,14 +8,16 @@
     <link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
 
     <title>De Anza Oaks</title>
-    <link rel="stylesheet" type="text/css" href="css/animate.css">
-    <link rel="stylesheet" type="text/css" href="css/masterslider.main.css">
-    <link rel="stylesheet" type="text/css" href="css/ms-skin-sample.css">
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/public.css">
-    <link rel="stylesheet" href="../china-hoa/css/saveFile.css">
+    <link rel="stylesheet" href="/global.css">
+    <link rel="stylesheet" href="css/index.css">
+
     <script src="https://cdn.bootcss.com/jquery/3.3.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+
+    <!-- Links as currently hosted by http-server -->
+
+    <script src="/js/99_global.js"></script>
+
 </head>
 
 <body>
@@ -24,14 +26,12 @@
     </div>
     <script>
         var data = {
-            Logo:[
-                {
-                  id:1,
-                  url:"img/Combined Shape.png",
-                  title:"De Anza Oaks"
-                }
-              ],
-             body:`  <table style="background-color: #ffffff; margin-top:20px;margin-bottom: 50px;" bborder="0" width="100%"
+            Logo: [{
+                id: 1,
+                url: "/img/Combined Shape.png",
+                title: "De Anza Oaks"
+            }],
+            body: `  <table style="background-color: #ffffff; margin-top:20px;margin-bottom: 50px;" bborder="0" width="100%"
             cellpadding="10" cellspacing="0">
             <tbody>
                 <tr>
@@ -1178,11 +1178,11 @@
         <div class="clearfix"></div>`
         }
     </script>
-    <script type="text/javascript" src="./js/saveFile.js"></script>
+    <script type="text/javascript" src="/file/js/index.js"></script>
     <script>
         // This script block stays in this wrapper html file
         $(function () {
-            $('#content').load("saveFile.body.html", function () {
+            $('#content').load("body.html", function () {
                 render();
             });
         });
