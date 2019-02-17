@@ -3,6 +3,11 @@ var render = function () {
     Mustache.parse(content_template);
     $('#aboutus').after(Mustache.render(content_template, data));
 
+    // Global post render
+    _post_render();
+
+    // Local post render
+
     // admin
     var storage = window.localStorage;
     var username = storage.getItem('username')
