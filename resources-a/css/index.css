@@ -84,27 +84,27 @@ td {
 }
 
 .Events-Calendar:nth-child(1) {
-    background-image: url('../../img/address book_bg.png');
+    background-image: url('/community/img/address book_bg.png');
 }
 
 .Events-Calendar:nth-child(2) {
-    background-image: url('../../img/address book_bg.png');
+    background-image: url('/community/img/address book_bg.png');
 }
 
 .Events-Calendar:nth-child(3) {
-    background-image: url('../../img/boardcommittee_bg.png');
+    background-image: url('/community/img/boardcommittee_bg.png');
 }
 
 .Events-Calendar:nth-child(4) {
-    background-image: url('../../img/eForms_bg.png');
+    background-image: url('/community/img/eForms_bg.png');
 }
 
 .Events-Calendar:nth-child(5) {
-    background-image: url('../../img/FAQs_bg.png');
+    background-image: url('/community/img/FAQs_bg.png');
 }
 
 .Events-Calendar:nth-child(6) {
-    background-image: url('../../img/documents.png');
+    background-image: url('/community/img/documents.png');
 }
 
 .calendar-img {

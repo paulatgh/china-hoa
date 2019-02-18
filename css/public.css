@@ -5,7 +5,7 @@
 .mas-ab{position: absolute;top:0;left:0;width:100%;height:100%;}
 .mas-ab > .w1200{position: relative;height: 100%;}
 .mas-ab .mas-lbg{background: #000;opacity: 0.3;filter:alpha(opacity=30);width:480px;height:100%;position: absolute;top:0;left:-360px;display:none;z-index:10;}
-.mas-ab .mas-timebar{background: url(../img/mas-timebar.png)/*tpa=https://www.bgy.com.cn/images/mas-timebar.png*/ no-repeat;width:360px;height: 10px;position: absolute;bottom:64px;left:-360px;z-index:12;}
+.mas-ab .mas-timebar{background: url(/community/img/mas-timebar.png)/*tpa=https://www.bgy.com.cn/images/mas-timebar.png*/ no-repeat;width:360px;height: 10px;position: absolute;bottom:64px;left:-360px;z-index:12;}
 .mas-ab .mas-tib{background:#449F41;width:0;height: 2px;position: absolute;bottom:68px;left:-360px;z-index:12;}
 .ms-timerbar{bottom:68px !important;top:inherit !important;}
 .ban-len{width:54px;height:20px;position: absolute;bottom:60px;left:45px;color:#fff;font-family: 'dinCond-Medium';font-size: 16px;}
@@ -16,7 +16,7 @@
 .master-slider .pics-ban3{top:28% !important;left:33% !important;}
 
 /*ban*/
-.ban{width:100%;height:240px;background:url("../img/ban.jpg")/*tpa=https://www.bgy.com.cn/images/ban.jpg*/ no-repeat center center;}
+.ban{width:100%;height:240px;background:url("/community/img/ban.jpg")/*tpa=https://www.bgy.com.cn/images/ban.jpg*/ no-repeat center center;}
 .ban-con{position:absolute;top:80px;right:0;animation-duration:1.4s;}
 
 .suBan{width:100%;height:240px;position:relative;}
@@ -32,9 +32,9 @@
 .submask{width:62px;height:10px;position:absolute;right:0;bottom:-2px; background:#fff;}
 
 .submenu{float:left;}
-.submenu i{width:62px;height:62px;background:url("../img/submenu-1.jpg")/*tpa=https://www.bgy.com.cn/images/submenu-1.jpg*/ no-repeat center center;float:left;}
+.submenu i{width:62px;height:62px;background:url("/community/img/submenu-1.jpg")/*tpa=https://www.bgy.com.cn/images/submenu-1.jpg*/ no-repeat center center;float:left;}
 .submenu a{font-size:13px;color:#848181;line-height:62px;padding:0 	12px 0 20px;float:left;font-weight:bold;}
-.submenu span{padding-left:15px;font-size:13px;color:#0e98a5;font-weight:bold; line-height:62px; float:left;background:url("../img/submenu-2.jpg")/*tpa=https://www.bgy.com.cn/images/submenu-2.jpg*/ no-repeat left center;}
+.submenu span{padding-left:15px;font-size:13px;color:#0e98a5;font-weight:bold; line-height:62px; float:left;background:url("/community/img/submenu-2.jpg")/*tpa=https://www.bgy.com.cn/images/submenu-2.jpg*/ no-repeat left center;}
 
 .subNav{float:right;position:relative;height:62px;}
 .subNav li{float:left;padding:0 5px;line-height:62px;}
@@ -62,23 +62,23 @@
 .main-list .main-list3{animation-delay:.8s}
 .main-list .main-list4{animation-delay:1s}
 .main-list .main-list5{animation-delay:1.2s}
-.main-list .main-list1 p{background:url("../img/Events-b.png") no-repeat center 50px;}
-.main-list .main-list2 p{background:url("../img/News.png") no-repeat center 50px;}
-.main-list .main-list3 p{background:url("../img/Resources.png") no-repeat center 50px;}
-.main-list .main-list4 p{background:url("../img/Amenities_b.png") no-repeat center 50px;}
-.main-list .main-list5 p{background:url("../img/City\ Resources_b.png") no-repeat center 50px;}
+.main-list .main-list1 p{background:url("/community/img/Events-b.png") no-repeat center 50px;}
+.main-list .main-list2 p{background:url("/community/img/News.png") no-repeat center 50px;}
+.main-list .main-list3 p{background:url("/community/img/Resources.png") no-repeat center 50px;}
+.main-list .main-list4 p{background:url("/community/img/Amenities_b.png") no-repeat center 50px;}
+.main-list .main-list5 p{background:url("/community/img/City\ Resources_b.png") no-repeat center 50px;}
 .main-list-a{margin-top: 16px}
-.main-list .main-list1:hover p{background:url("../img/Events-g.png") no-repeat center 50px;}
-.main-list .main-list2:hover p{background:url("../img/News2.png") no-repeat center 50px;}
-.main-list .main-list3:hover p{background:url("../img/Resources2.png") no-repeat center 50px;}
-.main-list .main-list4:hover p{background:url("../img/Amenities_g.png") no-repeat center 50px;}
-.main-list .main-list5:hover p{background:url("../img/City\ Resources_g.png") no-repeat center 50px;}
+.main-list .main-list1:hover p{background:url("/community/img/Events-g.png") no-repeat center 50px;}
+.main-list .main-list2:hover p{background:url("/community/img/News2.png") no-repeat center 50px;}
+.main-list .main-list3:hover p{background:url("/community/img/Resources2.png") no-repeat center 50px;}
+.main-list .main-list4:hover p{background:url("/community/img/Amenities_g.png") no-repeat center 50px;}
+.main-list .main-list5:hover p{background:url("/community/img/City\ Resources_g.png") no-repeat center 50px;}
 
-.main-global{width:320px;height:160px;padding:0 20px;background:url("../img/main-bg2.jpg")/*tpa=https://www.bgy.com.cn/images/main-bg2.jpg*/ no-repeat center center;float:right;}
+.main-global{width:320px;height:160px;padding:0 20px;background:url("/community/img/main-bg2.jpg")/*tpa=https://www.bgy.com.cn/images/main-bg2.jpg*/ no-repeat center center;float:right;}
 .main-global h3{font-size:18px;color:#333333;padding-top:38px;}
 .main-global h4{font-size:24px;color:#26a2ae;font-family:'dinCond-Medium';font-weight:500;letter-spacing:-1.5px;}
 
-.main-about{width:480px;height:160px;padding-left:360px; background:url("../img/main-left.jpg")/*tpa=https://www.bgy.com.cn/images/main-left.jpg*/ no-repeat center center;position:absolute;left:-360px;bottom:0;}
+.main-about{width:480px;height:160px;padding-left:360px; background:url("/community/img/main-left.jpg")/*tpa=https://www.bgy.com.cn/images/main-left.jpg*/ no-repeat center center;position:absolute;left:-360px;bottom:0;}
 .main-about h3{font-size:18px;color:#333333;padding-top:38px;}
 .main-about h4{font-size:24px;color:#999999;font-weight:500;font-family:'dincond-medium';letter-spacing:-1.5px;}
 .main-about-img{width:431px;height:111px; position:absolute;right:0;bottom:0;animation-delay:1.8s}
@@ -130,7 +130,7 @@
 .about_1-con1 h2{font-size:30px;color:#fff;font-family:'novecentowide-book';font-weight:400;letter-spacing:-2.5px; line-height:35px;opacity:0.8;filter:Alpha(opacity=80);}
 .about_1-con1 h3{font-size:18px;color:#fff;padding:2px 0 8px 0;}
 .about_1-con1 h4{font-size:48px;color:#f5a100;font-family:'novecentowide-book';line-height:35px;font-weight:200;letter-spacing:-3px;}
-.about_1-con2{width:720px;padding:35px 40px 20px 40px;background:#f4f4f4 url("../img/about_1-3.jpg")/*tpa=https://www.bgy.com.cn/images/about/about_1-3.jpg*/ no-repeat right bottom;float:right;}
+.about_1-con2{width:720px;padding:35px 40px 20px 40px;background:#f4f4f4 url("/community/img/about_1-3.jpg")/*tpa=https://www.bgy.com.cn/images/about/about_1-3.jpg*/ no-repeat right bottom;float:right;}
 .about_1-con2 p{font-size:12.5px;color:#999999;padding-bottom:15px;}
 .about_1-img{width:4901px;height:215px;position:absolute;left:145px;bottom:0;}
 	/*about-1-2*/
@@ -144,26 +144,26 @@
 .share{height:32px;}
 .share em{font-size:13px;color:#797a81;line-height:30px;float:left;}
 .share a{width:32px;height:32px;margin-left:10px;float:left;}
-.share .wx{background:url("../img/wx_on.png")/*tpa=https://www.bgy.com.cn/images/wx_on.png*/ no-repeat 0 0;}
-.share .wb{background:url("../img/wb_on.png")/*tpa=https://www.bgy.com.cn/images/wb_on.png*/ no-repeat 0 0;}
-.share .qzone{background:url("../img/qzone.png")/*tpa=https://www.bgy.com.cn/images/qzone.png*/ no-repeat 0 0;}
-.share .qq{background:url("../img/qq.png")/*tpa=https://www.bgy.com.cn/images/qq.png*/ no-repeat 0 0;}
+.share .wx{background:url("/community/img/wx_on.png")/*tpa=https://www.bgy.com.cn/images/wx_on.png*/ no-repeat 0 0;}
+.share .wb{background:url("/community/img/wb_on.png")/*tpa=https://www.bgy.com.cn/images/wb_on.png*/ no-repeat 0 0;}
+.share .qzone{background:url("/community/img/qzone.png")/*tpa=https://www.bgy.com.cn/images/qzone.png*/ no-repeat 0 0;}
+.share .qq{background:url("/community/img/qq.png")/*tpa=https://www.bgy.com.cn/images/qq.png*/ no-repeat 0 0;}
 
 .about-right{width:280px;height:478px;float:left;padding:0px 40px 0 38px;position:relative;}
 .about-right .about-idxs{width:280px;height:428px;overflow:hidden;position:relative;}
 .about-right .about-idxs li{width:280px;height:214px;}
 .about-right .about-idxs li p{font-size:14px;color:#777777;text-align:center;}
 .about-right .about-idxs li .about-idxs-con{width:280px;height:160px;position:relative;margin-bottom:10px;cursor:pointer;}
-.about-right .about-idxs li .about-idxs-con span{width:100%;height:100%;background:url("../img/about-mask.png")/*tpa=https://www.bgy.com.cn/images/about/about-mask.png*/ no-repeat center center;position:absolute;top:0;left:0;z-index:2;}
+.about-right .about-idxs li .about-idxs-con span{width:100%;height:100%;background:url("/community/img/about-mask.png")/*tpa=https://www.bgy.com.cn/images/about/about-mask.png*/ no-repeat center center;position:absolute;top:0;left:0;z-index:2;}
 .about-right .about-idxs li .about-idxs-con img{width:100%;}
 .about-right .about-idxs li.on .about-idxs-con span{display:none;}
 
 .about-right .about-btn{width:280px;height:50px;}
 .about-right .about-btn a{width:138px;height:50px;float:left;}
-.about-right .about-btn .about-prev{background:url("../img/about-prev.jpg")/*tpa=https://www.bgy.com.cn/images/about/about-prev.jpg*/ no-repeat center center;margin-right:4px;}
-.about-right .about-btn .about-next{background:url("../img/about-next.jpg")/*tpa=https://www.bgy.com.cn/images/about/about-next.jpg*/ no-repeat center center;}
+.about-right .about-btn .about-prev{background:url("/community/img/about-prev.jpg")/*tpa=https://www.bgy.com.cn/images/about/about-prev.jpg*/ no-repeat center center;margin-right:4px;}
+.about-right .about-btn .about-next{background:url("/community/img/about-next.jpg")/*tpa=https://www.bgy.com.cn/images/about/about-next.jpg*/ no-repeat center center;}
 
-.about-2{width:100%;height:440px;background:url("../img/about-2.jpg")/*tpa=https://www.bgy.com.cn/images/about/about-2.jpg*/ no-repeat center bottom;}
+.about-2{width:100%;height:440px;background:url("/community/img/about-2.jpg")/*tpa=https://www.bgy.com.cn/images/about/about-2.jpg*/ no-repeat center bottom;}
 .about-2-left{padding-top:110px;}
 .about-2-left h3{font-size:18px;color:#26a2ae;padding-bottom:8px;}
 .about-2-left h4{font-size:36px;color:#c8c8c8;font-family:'novecentowide-book';letter-spacing: -3px;font-weight:500;padding-top:5px;}
@@ -186,9 +186,9 @@
 
 .news-left{width:322px;padding:40px 38px 0px 0;float:left;}
 .news-search{width:318px;height:55px;line-height:55px;position:relative;border:2px #dfdfdf solid;}
-.news-search a{width:58px;height:56px;background:url("../img/news-search.jpg")/*tpa=https://www.bgy.com.cn/images/news-search.jpg*/ no-repeat center center;position:absolute;right:0;top:0;}
+.news-search a{width:58px;height:56px;background:url("/community/img/news-search.jpg")/*tpa=https://www.bgy.com.cn/images/news-search.jpg*/ no-repeat center center;position:absolute;right:0;top:0;}
 .news-search input{font-size:14px;color:#999999;width:242px;height:55px;line-height:55px;border:none;padding-left:18px;}
-.news-select{width:260px;height:55px;margin-top:10px;padding-right:58px; position:relative;position:relative;border:2px #dfdfdf solid;background:url("../img/news-down.jpg")/*tpa=https://www.bgy.com.cn/images/news-down.jpg*/ no-repeat right center;cursor:pointer;}
+.news-select{width:260px;height:55px;margin-top:10px;padding-right:58px; position:relative;position:relative;border:2px #dfdfdf solid;background:url("/community/img/news-down.jpg")/*tpa=https://www.bgy.com.cn/images/news-down.jpg*/ no-repeat right center;cursor:pointer;}
 .news-select input{font-size:14px;color:#999999;width:242px;height:55px;line-height:55px;border:none;padding-left:18px;}
 .news-select ul{width:322px;padding:10px 0;position:absolute;left:-2px;top:55px;background:#e7e5e5;display:none;z-index:100;max-height:200px;overflow-y:auto;}
 .news-select li{padding:0px 0px 10px 20px;font-size:14px;color:#666666;-webkit-transition:all .3s;transition:.3s;}
@@ -199,16 +199,16 @@
 .news-list li{width:840px;height:135px; position:relative;border-bottom:2px #f4f4f4 solid}
 .news-list li a{width:760px;height:105px;padding:30px 40px 0px 40px;z-index:10;position:absolute;left:0;top:0;}
 .news-list li span{width:0;height:135px;position:absolute;left:0;top:0;z-index:8;background:-webkit-gradient(linear,120% 0%, 0% 100%, from(#f8f6f6), to(#f3f3f3), color-stop(1.2,#f3f3f3));-webkit-transition:all .3s;-moz-transition:all .3s;-transition:all .3s;}
-.news-list li h3{font-size:16px;color:#666666;padding-right:12px;margin-bottom:15px;background:url("../img/news-list.png")/*tpa=https://www.bgy.com.cn/images/news-list.png*/ no-repeat right center;}
+.news-list li h3{font-size:16px;color:#666666;padding-right:12px;margin-bottom:15px;background:url("/community/img/news-list.png")/*tpa=https://www.bgy.com.cn/images/news-list.png*/ no-repeat right center;}
 .news-list li h4{height:105px;width:125px; font-size:30px;color:#999999;font-family:'dincond-medium';letter-spacing:-1px;float:left;font-weight:500;}
 .news-list li p{font-size:12.5px;color:#999999;}
 .news-list li:hover span{width:840px;}
-.news-list li:hover h3{color:#26a2ae;background:url("../img/news-list-on.png")/*tpa=https://www.bgy.com.cn/images/news-list-on.png*/ no-repeat right center;}
+.news-list li:hover h3{color:#26a2ae;background:url("/community/img/news-list-on.png")/*tpa=https://www.bgy.com.cn/images/news-list-on.png*/ no-repeat right center;}
 .news-page{width:100%;height:50px;padding-top:30px;text-align:center;line-height:50px;}
 .news-page span{font-size:24px;color:#f6ad12;font-family:'dincond-medium'; display:inline-block;overflow:hidden;margin:0 3px;}
 .news-page a{font-size:24px;color:#666666;font-family:'dincond-medium'; height:50px;margin:0 3px; display:inline-block;overflow:hidden;-webkit-transition:all .3s;-moz-transition:all .3s;transition:.3s;}
-.news-page .news-page-prev{width:50px;margin-right:10px; background:url("../img/news-prev.jpg")/*tpa=https://www.bgy.com.cn/images/news-prev.jpg*/ no-repeat center center;}
-.news-page .news-page-next{width:50px;margin-left:10px; background:url("../img/news-next.jpg")/*tpa=https://www.bgy.com.cn/images/news-next.jpg*/ no-repeat center center;}
+.news-page .news-page-prev{width:50px;margin-right:10px; background:url("/community/img/news-prev.jpg")/*tpa=https://www.bgy.com.cn/images/news-prev.jpg*/ no-repeat center center;}
+.news-page .news-page-next{width:50px;margin-left:10px; background:url("/community/img/news-next.jpg")/*tpa=https://www.bgy.com.cn/images/news-next.jpg*/ no-repeat center center;}
 
 /*details*/
 .details{width:100%;padding-bottom:80px;}
@@ -226,7 +226,7 @@
 .details-right{width:360px;background:#f4f4f4;float:right;}
 .details-top{width:100%;}
 .details-top img{width:100%;}
-.details-top-con{width:318px;padding:30px 20px;background:url("../img/details-3.jpg")/*tpa=https://www.bgy.com.cn/images/details-3.jpg*/ no-repeat center bottom;}
+.details-top-con{width:318px;padding:30px 20px;background:url("/community/img/details-3.jpg")/*tpa=https://www.bgy.com.cn/images/details-3.jpg*/ no-repeat center bottom;}
 .details-top-con h3{font-size:16px;color:#333333;}
 .details-top-con h4{font-size:30px;color:#999999;font-family:'dincond-medium';padding:18px 0;}
 .details-top-con p{font-size:12.5px;color:#999999;}
@@ -238,12 +238,12 @@
 .search-left{width:322px;padding:0px 38px 0px 0;float:left;}
 .search-left li{width:100%;height:110px;line-height:110px; margin-bottom:10px;background:#f4f4f4;-webkit-transition:all 300ms;transition:all 300ms;}
 .search-left li a{font-size:18px;color:#999999;padding-left:145px;-webkit-transition:all 300ms; transition:all 300ms;}
-.search-left li .search-a1{background:url("../img/search-a1.png")/*tpa=https://www.bgy.com.cn/images/search-a1.png*/ no-repeat 60px center;}
-.search-left li .search-a2{background:url("../img/search-a2.png")/*tpa=https://www.bgy.com.cn/images/search-a2.png*/ no-repeat 60px center;}
+.search-left li .search-a1{background:url("/community/img/search-a1.png")/*tpa=https://www.bgy.com.cn/images/search-a1.png*/ no-repeat 60px center;}
+.search-left li .search-a2{background:url("/community/img/search-a2.png")/*tpa=https://www.bgy.com.cn/images/search-a2.png*/ no-repeat 60px center;}
 .search-left li.on{background:#26a2ae;}
 .search-left li.on a{color:#fff;}
-.search-left li.on .search-a1{background:url("../img/search-a1-on.png")/*tpa=https://www.bgy.com.cn/images/search-a1-on.png*/ no-repeat 60px center;}
-.search-left li.on .search-a2{background:url("../img/search-a2-on.png")/*tpa=https://www.bgy.com.cn/images/search-a2-on.png*/ no-repeat 60px center;}
+.search-left li.on .search-a1{background:url("/community/img/search-a1-on.png")/*tpa=https://www.bgy.com.cn/images/search-a1-on.png*/ no-repeat 60px center;}
+.search-left li.on .search-a2{background:url("/community/img/search-a2-on.png")/*tpa=https://www.bgy.com.cn/images/search-a2-on.png*/ no-repeat 60px center;}
 .search-right{width:838px;float:right;border-left:2px #f4f4f4 solid;}
 .search-title{width:760px;padding:25px 40px;background:#f4f4f4;}
 .search-title h3{font-size:16px;color:#0e98a5;}
@@ -255,10 +255,10 @@
 	/*product-1*/
 .product-title{width:1200px;position:relative;background:#f4f4f4;margin-bottom:30px;padding-bottom:30px;}
 .product-title h3{font-size:18px;color:#333333;padding:35px 0 30px 0px;text-align:center;}
-.product-title a{width:360px;height:60px;background:url("../img/product-1.jpg")/*tpa=https://www.bgy.com.cn/images/product-1.jpg*/ no-repeat center center;float:left;}
+.product-title a{width:360px;height:60px;background:url("/community/img/product-1.jpg")/*tpa=https://www.bgy.com.cn/images/product-1.jpg*/ no-repeat center center;float:left;}
 .product-search-list{padding-bottom:30px;width:1160px;padding-left:40px;}
 .product-search-list>input{width:340px;height:56px;padding-left:20px;float:left;font-size:14px;color:#666666;background:none;border:2px #dfdfdf solid;margin-right:20px;}
-.product-layout{width:298px;height:56px;padding-right:58px;border:2px #dfdfdf solid;float:left;position:relative;margin-right:20px;background:url("../img/product-layout.jpg")/*tpa=https://www.bgy.com.cn/images/product-layout.jpg*/ no-repeat right center;cursor:pointer;z-index:20;}
+.product-layout{width:298px;height:56px;padding-right:58px;border:2px #dfdfdf solid;float:left;position:relative;margin-right:20px;background:url("/community/img/product-layout.jpg")/*tpa=https://www.bgy.com.cn/images/product-layout.jpg*/ no-repeat right center;cursor:pointer;z-index:20;}
 .product-layout input{font-size:14px;color:#666666; width:280px;height:56px;padding-left:18px;border:none;background:none;}
 .product-layout ul{width:360px;padding:10px 0;background:#ebebeb;position:absolute;left:-2px;top:56px;display:none;max-height:200px;overflow-y:auto;}
 .product-layout li{padding:0 0 5px 20px;font-size:14px;color:#666666;-webkit-transition:all .3ms;-moz-transition:all .3s;transition:all .3s;}
@@ -290,13 +290,13 @@
 .pro-core input[type='reset']{width:395px;height:60px;line-height:60px;text-align:center;font-size:16px;color:#666666;background:#dfdfdf;border:none;cursor:pointer;-webkit-transition:all .3s;-moz-transition:all .3s;transition:all .3s;}
 .pro-core textarea{width:788px;height:130px;text-indent:18px;border:2px #dfdfdf solid;padding:16px 4px 0 4px;}
 .pro-core input[type='submit']:hover,.pro-core input[type='reset']:hover{background:#26a2ae;color:#fff;}
-.pro-core .core-layout{width:333px;height:56px;padding-right:58px;border:2px #dfdfdf solid;position:relative;background:url("../img/product-layout.jpg")/*tpa=https://www.bgy.com.cn/images/product-layout.jpg*/ no-repeat right center;cursor:pointer;}
+.pro-core .core-layout{width:333px;height:56px;padding-right:58px;border:2px #dfdfdf solid;position:relative;background:url("/community/img/product-layout.jpg")/*tpa=https://www.bgy.com.cn/images/product-layout.jpg*/ no-repeat right center;cursor:pointer;}
 .pro-core .core-layout input{font-size:14px;color:#666666; width:280px;height:56px;padding-left:18px;border:none;background:none;}
 .pro-core .core-layout ul{width:395px;max-height:140px;overflow-y:auto; padding:10px 0;background:#ebebeb;position:absolute;left:-2px;top:57px;display:none; z-index:20;}
 .pro-core .core-layout li{padding:0 0 5px 20px;font-size:14px;color:#666666;-webkit-transition:all .3ms;-moz-transition:all .3s;transition:all .3s;}
 .pro-core .core-layout li:hover{background:#26a2ae;color:#fff;}
 
-.pro-core .core-layout1{width:740px;height:56px;padding-right:58px;border:2px #dfdfdf solid;position:relative;background:url("../img/product-layout.jpg")/*tpa=https://www.bgy.com.cn/images/product-layout.jpg*/ no-repeat right center;cursor:pointer;}
+.pro-core .core-layout1{width:740px;height:56px;padding-right:58px;border:2px #dfdfdf solid;position:relative;background:url("/community/img/product-layout.jpg")/*tpa=https://www.bgy.com.cn/images/product-layout.jpg*/ no-repeat right center;cursor:pointer;}
 .pro-core .core-layout1 input{font-size:14px;color:#666666; width:280px;height:56px;padding-left:18px;border:none;background:none;}
 .pro-core .core-layout1 ul{width:802px;max-height:140px;overflow-y:auto; padding:10px 0;background:#ebebeb;position:absolute;left:-2px;top:57px;display:none; z-index:20;}
 .pro-core .core-layout1 li{padding:0 0 5px 20px;font-size:14px;color:#666666;-webkit-transition:all .3ms;-moz-transition:all .3s;transition:all .3s;}
@@ -314,10 +314,10 @@
 
 .pro-super{width:360px;float:right;padding-top:40px;}
 .pro-super .pro-super-phone{width:280px;height:225px;padding:0 40px;background:#f4f4f4;text-align:center;}
-.pro-super .pro-super-phone h3{padding-top:135px;font-size:14px;color:#666666;background:url("../img/pro-super-phone.png")/*tpa=https://www.bgy.com.cn/images/pro-super-phone.png*/ no-repeat center 50px;}
+.pro-super .pro-super-phone h3{padding-top:135px;font-size:14px;color:#666666;background:url("/community/img/pro-super-phone.png")/*tpa=https://www.bgy.com.cn/images/pro-super-phone.png*/ no-repeat center 50px;}
 .pro-super .pro-super-phone h4{font-size:14px;color:#999999;}
 .pro-super .pro-super-mail{width:280px;height:437px;padding:0 40px;background:#26a2ae;}
-.pro-super .pro-super-mail h3{padding-top:135px;font-size:14px;color:#ffffff;text-align:center; background:url("../img/pro-super-mail.png")/*tpa=https://www.bgy.com.cn/images/pro-super-mail.png*/ no-repeat center 50px;}
+.pro-super .pro-super-mail h3{padding-top:135px;font-size:14px;color:#ffffff;text-align:center; background:url("/community/img/pro-super-mail.png")/*tpa=https://www.bgy.com.cn/images/pro-super-mail.png*/ no-repeat center 50px;}
 .pro-super .pro-super-mail h4{font-size:14px;color:#ffffff;text-align:center; padding-bottom:25px;}
 .pro-super .pro-super-mail h5{font-size:12px;color:#fff;padding-bottom:10px;}
 .pro-super .pro-super-mail p{font-size:12px;color:#fff;}
@@ -328,14 +328,14 @@
 .pro-green-left h3{font-size:18px;color:#39b54a;padding-bottom:18px;}
 .pro-green-left p{font-size:12.5px;color:#999999;padding-bottom:25px;}
 .pro-green-left em{height:347px;margin-bottom:30px;display:block;}
-.pro-green-left .pro-green-con1{width:680px;height:287px;padding:60px 160px 0 360px;margin-bottom:30px; background:url("../img/pro-green-1.jpg")/*tpa=https://www.bgy.com.cn/images/pro-green-1.jpg*/ no-repeat center center;position:absolute;top:0;right:-40px;}
+.pro-green-left .pro-green-con1{width:680px;height:287px;padding:60px 160px 0 360px;margin-bottom:30px; background:url("/community/img/pro-green-1.jpg")/*tpa=https://www.bgy.com.cn/images/pro-green-1.jpg*/ no-repeat center center;position:absolute;top:0;right:-40px;}
 .pro-green-left .pro-green-con1 h4{font-size:36px;color:#2ba53b;padding-bottom:20px;font-family:'dincond-medium'}
 .pro-green-left .pro-green-con1 p{font-size:12.5px;color:#5c7b90;}
 .pro-green-right{width:360;padding-top:40px;float:left;}
 .pro-green-right img{width:100%;}
 .pro-green-img1{width:360px;height:440px;animation-delay:0.4s}
 .pro-green-img2{width:360px;height:347px;position:absolute;top:133px;right:-360px;animation-delay:1s}
-.pro-green-con2{width:360px;height:280px;background:url("../img/pro-green-4.jpg")/*tpa=https://www.bgy.com.cn/images/pro-green-4.jpg*/ no-repeat center center;text-align:center;}
+.pro-green-con2{width:360px;height:280px;background:url("/community/img/pro-green-4.jpg")/*tpa=https://www.bgy.com.cn/images/pro-green-4.jpg*/ no-repeat center center;text-align:center;}
 .pro-green-con2 em{font-size:60px;color:#fff;font-family:'dincond-medium';padding:60px 0px 20px 0;display:block;}
 .pro-green-con2 p{font-size:12.5px;color:#fff;}
 
@@ -348,15 +348,15 @@
 .investor-shares{width:320px;height:160px;padding:60px 0 0 40px;background:#f4f4f4;}
 .investor-shares h3{font-size:14px;color:#5f5c5c;padding-top:40px;}
 .investor-shares p{font-size:12.5px;color:#5f5c5c;}
-.investor-shares .up{width:16px;height:13px;display:inline-block;float:left;background:url("../img/stock-bt.png")/*tpa=https://www.bgy.com.cn/images/stock-bt.png*/ no-repeat center center;}
+.investor-shares .up{width:16px;height:13px;display:inline-block;float:left;background:url("/community/img/stock-bt.png")/*tpa=https://www.bgy.com.cn/images/stock-bt.png*/ no-repeat center center;}
 .investor-shares .uptxt{font-size:46px;color:#f62121;font-family:'DINCond-Bold',"微软雅黑";font-weight:500; float:left;margin-right:5px;}
-.investor-shares .down{width:16px;height:13px;display:inline-block;float:left;background:url("../img/down.png")/*tpa=https://www.bgy.com.cn/images/down.png*/ no-repeat center center;}
+.investor-shares .down{width:16px;height:13px;display:inline-block;float:left;background:url("/community/img/down.png")/*tpa=https://www.bgy.com.cn/images/down.png*/ no-repeat center center;}
 .investor-shares .downtxt{font-size:46px;color:#00A352;font-family:'DINCond-Bold',"微软雅黑";font-weight:500;float:left;margin-right:5px;}
 .investor-mode{width:320px;padding:30px 0px 0px 40px;}
 .investor-mode h3{font-size:18px;color:#26a2ae;padding-bottom:20px;}
 .investor-mode p{font-size:12.5px;color:#999999;}
 
-.investor-title{width:760px;height:170px;padding:50px 40px 0px 40px;background:url("../img/investor-title.jpg")/*tpa=https://www.bgy.com.cn/images/investor-title.jpg*/ no-repeat center center;}
+.investor-title{width:760px;height:170px;padding:50px 40px 0px 40px;background:url("/community/img/investor-title.jpg")/*tpa=https://www.bgy.com.cn/images/investor-title.jpg*/ no-repeat center center;}
 .investor-title p{font-size:12.5px;color:#fff;opacity:0.8;filter:Alpha(opacity=80);}
 .investor-title ul{width:100%;}
 .investor-title li{float:left;margin:0 60px 25px 0;}
@@ -368,9 +368,9 @@
 .investor-list li a{position:absolute;left:0;top:0;z-index:10;width:760px;height:106px;padding:0 40px;}
 .investor-list li h4{font-size:30px;color:#999999;font-family:'dincond-medium'; width:130px;float:left;}
 .investor-list li h3{font-size:16px;color:#666666;}
-.investor-list li em{width:40px;height:53px;background:url("../img/pdf.png")/*tpa=https://www.bgy.com.cn/images/pdf.png*/ no-repeat 0 0; position:absolute;right:40px;top:25px;-webkit-transition:all .6s;-moz-transition:all .6s;-transition:all .6s;}
+.investor-list li em{width:40px;height:53px;background:url("/community/img/pdf.png")/*tpa=https://www.bgy.com.cn/images/pdf.png*/ no-repeat 0 0; position:absolute;right:40px;top:25px;-webkit-transition:all .6s;-moz-transition:all .6s;-transition:all .6s;}
 .investor-list li span{width:0;height:106px;position:absolute;left:0;top:0;z-index:8;background:-webkit-gradient(linear,120% 0%, 0% 100%, from(#f8f6f6), to(#f3f3f3), color-stop(1.2,#f3f3f3));-webkit-transition:all .3s;-moz-transition:all .3s;-transition:all .3s;}
-.investor-list li:hover em{background:url("../img/pdf.png")/*tpa=https://www.bgy.com.cn/images/pdf.png*/ no-repeat -45px 0;}
+.investor-list li:hover em{background:url("/community/img/pdf.png")/*tpa=https://www.bgy.com.cn/images/pdf.png*/ no-repeat -45px 0;}
 .investor-list li:hover span{width:838px;}
 
 .investor-year{width:760px;height:80px;padding:0 40px;background:#f4f4f4;position:relative;}
@@ -409,7 +409,7 @@
 .resources-con p{font-size:12.5px;color:#999999;padding-bottom:15px;}
 .resources-con a{font-size:12.5px;color:#f5a100;padding-top:10px;}
 
-.reso_1-li{width:100%;height:435px;padding-top:22px; margin-top:50px;background:url("../img/resources_1-1.jpg")/*tpa=https://www.bgy.com.cn/images/resources_1-1.jpg*/ no-repeat center top;}
+.reso_1-li{width:100%;height:435px;padding-top:22px; margin-top:50px;background:url("/community/img/resources_1-1.jpg")/*tpa=https://www.bgy.com.cn/images/resources_1-1.jpg*/ no-repeat center top;}
 .reso_1-li li{padding-left:40px;height:55px;line-height:55px;margin-bottom:12px;}
 .reso_1-li li h4{font-size:16px;color:#fff;display:inline-block;width:108px;}
 .reso_1-li li p{font-size:12.5px;color:#fff;display:inline-block;}
@@ -420,10 +420,10 @@
 .reso_1-list ul{width:1208px;}
 .reso_1-list li{width:214px;height:294px;padding:0 40px; float:left;margin-right:8px;}
 .reso_1-list li h4{font-size:16px;color:#fff; height:80px;line-height:80px;margin-bottom:35px;}
-.reso_1-list .reso_1-list1{background:url("../img/reso_1-list1.jpg")/*tpa=https://www.bgy.com.cn/images/reso_1-list1.jpg*/ no-repeat center center;}
-.reso_1-list .reso_1-list2{background:url("../img/reso_1-list2.jpg")/*tpa=https://www.bgy.com.cn/images/reso_1-list2.jpg*/ no-repeat center center;}
-.reso_1-list .reso_1-list3{background:url("../img/reso_1-list3.jpg")/*tpa=https://www.bgy.com.cn/images/reso_1-list3.jpg*/ no-repeat center center;}
-.reso_1-list .reso_1-list4{background:url("../img/reso_1-list4.jpg")/*tpa=https://www.bgy.com.cn/images/reso_1-list4.jpg*/ no-repeat center center;}
+.reso_1-list .reso_1-list1{background:url("/community/img/reso_1-list1.jpg")/*tpa=https://www.bgy.com.cn/images/reso_1-list1.jpg*/ no-repeat center center;}
+.reso_1-list .reso_1-list2{background:url("/community/img/reso_1-list2.jpg")/*tpa=https://www.bgy.com.cn/images/reso_1-list2.jpg*/ no-repeat center center;}
+.reso_1-list .reso_1-list3{background:url("/community/img/reso_1-list3.jpg")/*tpa=https://www.bgy.com.cn/images/reso_1-list3.jpg*/ no-repeat center center;}
+.reso_1-list .reso_1-list4{background:url("/community/img/reso_1-list4.jpg")/*tpa=https://www.bgy.com.cn/images/reso_1-list4.jpg*/ no-repeat center center;}
 
 .reso_2-left{width:800px;padding-right:40px;float:left;}
 .reso_2-right{width:360px;float:right;}
@@ -447,7 +447,7 @@
 .product_2-1{width:100%;padding-bottom:20px;}
 .product_2-1 h2{font-size:18px;color:#f5a100;padding-bottom:15px;}
 .product_2-1 p{font-size:12.5px;color:#999999;padding-bottom:15px;}
-.product_2-2{width:100%;height:800px;background:url("../img/product_2-1.png")/*tpa=https://www.bgy.com.cn/images/product_2-1.png*/ no-repeat center top;}
+.product_2-2{width:100%;height:800px;background:url("/community/img/product_2-1.png")/*tpa=https://www.bgy.com.cn/images/product_2-1.png*/ no-repeat center top;}
 .product_2-2>.w1200{height:100%;}
 .product_2-con1{width:100%;height:270px;padding-top:130px;}
 .product_2-con1 h3{font-size:24px;color:#3e3e3e;font-weight:500;display:inline-block;}
@@ -465,11 +465,11 @@
 
 .proDeta-title{width:100%;height:220px;}
 .proDeta-title .proDeta-title-l{width:280px;height:180px;padding:40px 40px 0 40px; float:left;background:#eaeaea}
-.proDeta-title .proDeta-title-l .proDeta-tel{margin-bottom:27px;padding-left:70px;height:50px;line-height:50px;background:url("../img/proDeta-tel.png")/*tpa=https://www.bgy.com.cn/images/proDeta-tel.png*/ no-repeat left center;}
+.proDeta-title .proDeta-title-l .proDeta-tel{margin-bottom:27px;padding-left:70px;height:50px;line-height:50px;background:url("/community/img/proDeta-tel.png")/*tpa=https://www.bgy.com.cn/images/proDeta-tel.png*/ no-repeat left center;}
 .proDeta-title .proDeta-title-l .proDeta-tel h3{font-size:30px;color:#f5a100;font-weight:500;letter-spacing:-1.5px;font-family:'dincond-medium';}
 .proDeta-title .proDeta-title-l .proDeta-wx{width:100%;height:100px;position:relative;}
 .proDeta-title .proDeta-title-l .proDeta-wx h3{font-size:14px;color:#666666;line-height:50px;}
-.proDeta-title .proDeta-title-l .proDeta-wx a{float:left; padding-left:70px;height:50px;line-height:50px;background:url("../img/proDeta-wx.png")/*tpa=https://www.bgy.com.cn/images/proDeta-wx.png*/ no-repeat left center;}
+.proDeta-title .proDeta-title-l .proDeta-wx a{float:left; padding-left:70px;height:50px;line-height:50px;background:url("/community/img/proDeta-wx.png")/*tpa=https://www.bgy.com.cn/images/proDeta-wx.png*/ no-repeat left center;}
 .proDeta-title .proDeta-title-l .proDeta-wx .proDeta-code{width:0;height:136px;position:absolute;left:70px;top:-43px;overflow:hidden;}
 .proDeta-title .proDeta-title-r{width:760px;height:185px;padding:35px 40px 0 40px; float:left;background:#f4f4f4;}
 .proDeta-title .proDeta-title-r h2{font-size:18px;color:#0e98a5;padding-bottom:5px;}
@@ -478,7 +478,7 @@
 .proDeta-title .proDeta-title-r p{font-size:12.5px;color:#999999;}
 
 .proDeta-left{width:322px;padding-right:36px; float:left;padding-top:30px;}
-.proDeta-search{width:322px;height:60px;background:#26a2ae url("../img/pro-search.png")/*tpa=https://www.bgy.com.cn/images/pro-search.png*/ no-repeat center center;margin-top:10px;}
+.proDeta-search{width:322px;height:60px;background:#26a2ae url("/community/img/pro-search.png")/*tpa=https://www.bgy.com.cn/images/pro-search.png*/ no-repeat center center;margin-top:10px;}
 .proDeta-right{width:800px;padding:40px 0 85px 40px;border-left:2px #f4f4f4 solid;float:left;}
 
 .pro-ban{width:800px;height:430px;position: relative;padding-bottom:38px;}
@@ -494,15 +494,15 @@
 .pro-idxs li.on{border:1px #26a2ae solid;}
 .pro-btn{width:88px;height:80px;float:left;}
 .pro-btn a{width:38px;height:80px;margin-left:4px;float:left;}
-.pro-btn .pro-prev{background:url("../img/pro-prev.jpg")/*tpa=https://www.bgy.com.cn/images/pro-prev.jpg*/ no-repeat center center;}
-.pro-btn .pro-next{background:url("../img/pro-next.jpg")/*tpa=https://www.bgy.com.cn/images/pro-next.jpg*/ no-repeat center center;}
+.pro-btn .pro-prev{background:url("/community/img/pro-prev.jpg")/*tpa=https://www.bgy.com.cn/images/pro-prev.jpg*/ no-repeat center center;}
+.pro-btn .pro-next{background:url("/community/img/pro-next.jpg")/*tpa=https://www.bgy.com.cn/images/pro-next.jpg*/ no-repeat center center;}
 
 .proDeta-con p{font-size:12.5px;color:#999999;padding-bottom:20px;}
 
 
 /*csr*/
 .csr{width:100%;padding-bottom:100px;}
-.csr-1{width:1120px;padding:40px;background:#f4f4f4 url("../img/csr-1.png")/*tpa=https://www.bgy.com.cn/images/csr-1.png*/ no-repeat right top;}
+.csr-1{width:1120px;padding:40px;background:#f4f4f4 url("/community/img/csr-1.png")/*tpa=https://www.bgy.com.cn/images/csr-1.png*/ no-repeat right top;}
 .csr-list{width:100%;overflow:hidden;}
 .csr-list .csr-img{width:200px;height:272px;padding-right:40px;float:left;}
 .csr-list .csr-con{float:left;padding-top:35px;}
@@ -538,15 +538,15 @@
 
 .worMap-1{width:130px;height:60px;position:absolute;left:0;top:0px;}
 .worMap-1 em{width:101px;height:31px;display:block;position:absolute;left:0;top:0;-webkit-transition:all .3s;-moz-transition:all .3s;transition:all .3s;}
-.worMap-1 .worM-1{background:url("../img/worMap-1.png")/*tpa=https://www.bgy.com.cn/images/worMap-1.png*/ no-repeat center center;}
-.worMap-1 .worH-1{background:url("../img/worMap-1-on.png")/*tpa=https://www.bgy.com.cn/images/worMap-1-on.png*/ no-repeat center center;opacity:0;filter:Alpha(opacity=0);}
+.worMap-1 .worM-1{background:url("/community/img/worMap-1.png")/*tpa=https://www.bgy.com.cn/images/worMap-1.png*/ no-repeat center center;}
+.worMap-1 .worH-1{background:url("/community/img/worMap-1-on.png")/*tpa=https://www.bgy.com.cn/images/worMap-1-on.png*/ no-repeat center center;opacity:0;filter:Alpha(opacity=0);}
 .worMap-1 span{font-size:14px;color:#333333;position:absolute;left:35px;top:30px;z-index:10;}
 .worMap-1:hover .worM-1{opacity:0;filter:Alpha(opacity=0);}
 .worMap-1:hover .worH-1{opacity:1;filter:Alpha(opacity=100);}
 .worMap-2{width:220px;height:200px;position:absolute;right:0;bottom:0;}
 .worMap-2 em{width:213px;height:190px;position:absolute;left:0;bottom:0;-webkit-transition:all .3s;-moz-transition:all .3s;transition:all .3s;}
-.worMap-2 .worM-2{background:url("../img/worMap-2.png")/*tpa=https://www.bgy.com.cn/images/worMap-2.png*/ no-repeat center center;}
-.worMap-2 .worH-2{background:url("../img/worMap-2-on.png")/*tpa=https://www.bgy.com.cn/images/worMap-2-on.png*/ no-repeat center center;opacity:0;filter:Alpha(opacity=0);}
+.worMap-2 .worM-2{background:url("/community/img/worMap-2.png")/*tpa=https://www.bgy.com.cn/images/worMap-2.png*/ no-repeat center center;}
+.worMap-2 .worH-2{background:url("/community/img/worMap-2-on.png")/*tpa=https://www.bgy.com.cn/images/worMap-2-on.png*/ no-repeat center center;opacity:0;filter:Alpha(opacity=0);}
 .worMap-2 span{font-size:14px;color:#333333;position:absolute;left:80px;top:72px;z-index:10;}
 .worMap-2:hover .worM-2{opacity:0;filter:Alpha(opacity=0);}
 .worMap-2:hover .worH-2{opacity:1;filter:Alpha(opacity=100);}

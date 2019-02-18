@@ -7,7 +7,7 @@ a{
 }
 html,body{height:100%}
 #login{
-background: url(../img/dao5.png) no-repeat;
+background: url(/community/img/dao5.png) no-repeat;
 background-size: 100% 100%;
 /*border:1px solid rgba(151,151,151,1);*/
 height: 100%;

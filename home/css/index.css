@@ -93,27 +93,27 @@
 }
 
 .main-left-content .Carousel li:first-child {
-    background: url('/img/Gated Community Photo.png') no-repeat;
+    background: url('/community/img/Gated Community Photo.png') no-repeat;
     background-size: 100% 100%;
 }
 
 .main-left-content .Carousel li:nth-child(2) {
-    background: url('/img/pool.png') no-repeat;
+    background: url('/community/img/pool.png') no-repeat;
     background-size: 100% 100%;
 }
 
 .main-left-content .Carousel li:nth-child(3) {
-    background: url('/img/clubhouse.png') no-repeat;
+    background: url('/community/img/clubhouse.png') no-repeat;
     background-size: 100% 100%;
 }
 
 .main-left-content .Carousel li:nth-child(4) {
-    background: url('/img/playground.png') no-repeat;
+    background: url('/community/img/playground.png') no-repeat;
     background-size: 100% 100%;
 }
 
 .main-left-content .Carousel li:nth-child(5) {
-    background: url('/img/green fields.png') no-repeat;
+    background: url('/community/img/green fields.png') no-repeat;
     background-size: 100% 100%;
 }
 
