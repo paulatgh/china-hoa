@@ -85,40 +85,23 @@
     <div class="main-top" style="margin-bottom: 15px">
         <div class="w1200 pr">
             <div class="main-left" style="display: flex;justify-content: space-between;width: 100%;">
-                <div class="main-left-content swiper-container jump" data="./amenities/amenities.html" style="height: 316px; box-sizing: border-box;overflow: hidden;position: relative;cursor: pointer;">
+                <div class="main-left-content swiper-container jump" data="./amenities" style="height: 316px; box-sizing: border-box;overflow: hidden;position: relative;cursor: pointer;">
                     <div style="color: #1E1E1E;font-size: 16px;line-height:41px;height:41px;font-weight: 400">
                         Amenities</div>
-                    <ul class="Carousel swiper-wrapper" style="height: 280px;width:5000px;">
-                        <li class="swiper-slide">
-                            <div>
-                                <h6>Gated Community</h6>
-                            </div>
-                        </li>
-                        <li class="swiper-slide">
-                            <div>
-                                <h6>Junior Olympic Pool</h6>
-                            </div>
-                        </li>
-                        <li class="swiper-slide">
-                            <div>
-                                <h6>Clubhouse</h6>
-                            </div>
-                        </li>
-                        <li class="swiper-slide">
-                            <div>
-                                <h6>Playground</h6>
-                            </div>
-                        </li>
-                        <li class="swiper-slide">
-                            <div>
-                                <h6>Green Fields</h6>
-                            </div>
-                        </li>
+                    <ul id="Amenities_cycle" class="Carousel swiper-wrapper" style="height: 280px;width:5000px;">
+                        <script id="Amenities" type="txt/template">
+                            <li class="swiper-slide">
+                                <div>
+                                    <h6>{{content}}</h6>
+                                </div>
+                            </li>
+                    </script>
                     </ul>
                     <div class="announcement-tips swiper-pagination">
                         <span style="background: #359532"></span>
                         <span></span>
                         <span></span>
+
                     </div>
                 </div>
                 <div class="main-right-content" style="height: 316px;display: flex;justify-content: space-between;cursor: pointer;">
@@ -140,27 +123,32 @@
     </div>
 
     <!-- body-3 -->
-    <div class="main-top" style="height: 250px;">
-        <div class="w1200 pr" style="position: relative">
-            <img src="/community/img/Rectangle (4).png" alt="Rectangle" style="width:100%;">
-            <div class="Clubhouse" style="position: absolute;background: rgba(53,149,50,0.6);height: 84px;width: 579px;top: 77px;left: 314px;">
-                <a data="./Resources/eForms/reserve-the-clubhouse.html" class="jump" href="javascript:;">
-                    <p style="text-align: center;font-size:25px;font-family:OpenSans-Bold;font-weight:bold;color:rgba(255,255,255,1);line-height: 84px">
-                        Click Here To Book The Clubhouse
-                    </p>
-                </a>
+    <div class="main-top" style="height: 250px;" id="Clubhouse_cycle">
+        <script id="Clubhouse" type="txt/template">
+            <div class="w1200 pr" style="position: relative">
+                <img src="{{imgUrl}}" alt="Rectangle" style="width:100%;">
+                    <div class="Clubhouse" style="position: absolute;background: rgba(53,149,50,0.6);height: 84px;width: 579px;top: 77px;left: 314px;">
+                        <a data="{{link}}" class="jump" href="javascript:;">
+                                <p style="text-align: center;font-size:25px;font-family:OpenSans-Bold;font-weight:bold;color:rgba(255,255,255,1);line-height: 84px">
+                                {{title}}
+                                </p>
+                        </a>
+                    </div>
             </div>
-        </div>
+        </script>
+
     </div>
-    <div class="main-top" style="height: 250px;">
-        <div class="w1200 pr" style="position: relative;overflow: scroll;height: 233px;">
-            <img src="/community/img/dao5.png" alt="Aerial view of the residential area" style="width:100%;margin-top: -80px">
+    <div class="main-top" style="height: 250px;" id="BirDeyeView_cycle">
+        <script id="BirDeyeView" type="txt/template">
+            <div class="w1200 pr" style="position: relative;overflow: scroll;height: 233px;">
+            <img src="{{imgUrl}}" alt="Aerial view of the residential area" style="width:100%;margin-top: -80px">
             <div style="position: absolute;background:rgba(255,255,255,0.6);height: 69px;width: 376px;top:0;left:0;">
                 <p style="text-align: center;font-size:25px;font-family:OpenSans-Bold;font-weight:bold;color:#1E1E1E;line-height: 69px;">
-                    De Anza Oaks From The Air
+                   {{title}}
                 </p>
             </div>
         </div>
+        </script>
     </div>
 </div>
 
@@ -168,7 +156,8 @@
     <h3 class="login-H3-2">Lost Password Help</h3>
     <p class="return"><img src="/community/img/Bounced.png" alt="Bounced"></p>
     <p class="login2-p">
-        Fill out the below information and your username and password will be sent to your originally specified email address
+        Fill out the below information and your username and password will be sent to your originally specified email
+        address
     </p>
     <input class="login-int2" type="text" placeholder="Name"><br />
     <p class="login-Or">Or</p>

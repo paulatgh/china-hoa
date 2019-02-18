@@ -65,7 +65,7 @@ var render = function () {
         $('.admin-control').css('display', 'block')
         $('.committee_add').click(function () {
             var data = 'Board/Committee';
-            window.location.href = `http://tfire.net/Resources/committee/add.html?${data}`
+            window.location.href = `http://127.0.0.1:8080/resources/committee/add/`
         })
         $(".del").click(function () {
             deleteLog()
@@ -77,7 +77,7 @@ var render = function () {
 
     $('.logout').click(function () {
         window.localStorage.setItem('username', '')
-        window.location.href = "http://tfire.net/index.html"
+        window.location.href = "http://127.0.0.1:8080/home/"
 
     })
 };

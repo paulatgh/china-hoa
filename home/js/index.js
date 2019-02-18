@@ -23,11 +23,27 @@ var render = function () {
         $('#date').append(Mustache.render(date_template, this));
     });
 
+    var Clubhouse = $('#Clubhouse').html()
+    $.each(data.ReservationFunction, function () {
+        $('#Clubhouse_cycle').append(Mustache.render(Clubhouse, this));
+    });
+
+    var BirDeyeView = $('#BirDeyeView').html()
+    $.each(data.BirDeyeView, function () {
+        $('#BirDeyeView_cycle').append(Mustache.render(BirDeyeView, this));
+    });
+
+    var Amenities = $('#Amenities').html()
+    $.each(data.Amenities, function () {
+        $('#Amenities_cycle').append(Mustache.render(Amenities, this));
+    });
+
+
     // Global post render
     _post_render();
 
     // Local post render
-    $.getScript('js/swiper.min.js', function() {
+    $.getScript('js/swiper.min.js', function () {
         //Carousel
         var swiper = new Swiper('.swiper-container', {
             width: 412,
@@ -67,17 +83,21 @@ var render = function () {
     var i = 1,
         ileng = $('.ms-slide').length;
 
-    $('.main-switch-top a').click(function(){
+    $('.main-switch-top a').click(function () {
         $(this).addClass('curr').siblings().removeClass('curr');
         var manin = $(this).index();
-            $('.main-switch-item').hide();
-            $('.main-switch-item').eq(manin).fadeIn();
+        $('.main-switch-item').hide();
+        $('.main-switch-item').eq(manin).fadeIn();
     })
 
     // 时间
     function timebar() {
-        $('.mas-tib').stop().animate({ 'width' : 350+'px' },6000).animate({ 'width' : 0 },0);
-            $('.ms-nav-next').click();
+        $('.mas-tib').stop().animate({
+            'width': 350 + 'px'
+        }, 6000).animate({
+            'width': 0
+        }, 0);
+        $('.ms-nav-next').click();
     };
 
     function clickAdd() {

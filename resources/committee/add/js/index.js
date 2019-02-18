@@ -7,19 +7,24 @@ var render = function () {
     Mustache.parse(CommitteeAdd);
     $('#CommitteeAdd').after(Mustache.render(CommitteeAdd, data.TheTitle[0]));
 
-    ClassicEditor
-    .create(document.querySelector('#editor'))
-    .catch(error => {
-        console.error(error);
-    });
+
 
     // Global post render
     _post_render();
 
     // Local post render
 
-  
-      
+    $.getScript('js/cdn.ckeditor.js', function () {
+        //Carousel
+        ClassicEditor
+            .create(document.querySelector('#editor'))
+            .catch(error => {
+                console.error(error);
+            });
+    });
+
+
+
     var storage = window.localStorage;
     if (storage.getItem('username') === 'admin') {
         $('.buttona').css('display', 'none')
@@ -32,4 +37,3 @@ var render = function () {
         window.location.href = "http://tfire.net/index.html"
     })
 };
-

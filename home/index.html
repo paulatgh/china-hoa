@@ -37,24 +37,24 @@
             },
 
             _metadata: {
-                root_url: 'http://127.0.0.1:8080',
+                root_url: 'http://127.0.0.1:8080/home/',
                 site_name: 'De Anza Oaks'
             },
 
             shortcuts: [{
                     title: 'New Announcements',
                     num: '2',
-                    link: 'News/announcements/announcements.html'
+                    link: './news/announcements'
                 },
                 {
                     title: 'Upcoming Events',
                     num: '9',
-                    link: 'activities/calendar/date.html'
+                    link: './activities/calendar'
                 },
                 {
                     title: 'Recently Added Events',
                     num: '7',
-                    link: 'activities/calendar/list.html'
+                    link: './activities/calendar/list'
                 }
             ],
 
@@ -66,7 +66,7 @@
                 },
                 {
                     category: 'News',
-                    link: 'news.html',
+                    link: './news',
                     img: '/community/img/News.png',
                     active_img: '/community/img/News2.png'
                 },
@@ -78,7 +78,7 @@
                 },
                 {
                     category: 'Amenities',
-                    link: 'amenities.html',
+                    link: './amenities',
                     img: '/community/img/Amenities_b.png',
                     active_img: '/community/img/Amenities_g.png'
                 },
@@ -91,21 +91,49 @@
             ],
 
             date: [{
-                    date: '06/02/2019',
+                    date: '2019/06/02',
                     title: 'Clubhouse Booking Comfiirm GS',
-                    link: 'activities/calendar/date.html'
+                    link: './activities/calendar'
                 },
                 {
-                    date: '17/02/2019',
+                    date: '2019/17/02',
                     title: 'Clubhouse Booking Comfiirm GS',
-                    link: 'activities/calendar/date.html'
+                    link: './activities/calendar'
                 },
                 {
-                    date: '20/02/2019',
+                    date: '2019/20/02',
                     title: 'Clubhouse Booking Comfiirm GS',
-                    link: 'activities/calendar/date.html'
+                    link: './activities/calendar'
                 },
-            ]
+            ],
+
+            ReservationFunction: [{
+                title: 'Click Here To Book The Clubhouse',
+                link: './resources/eforms/reserve-the-clubhouse',
+                imgUrl: '/community/img/Rectangle (4).png'
+            }],
+
+            BirDeyeView: [{
+                imgUrl: '/community/img/dao5.png',
+                title: 'De Anza Oaks From The Air'
+            }],
+
+            Amenities: [{
+                id: 1,
+                content: 'Gated Community'
+            }, {
+                id: 2,
+                content: 'Junior Olympic Pool'
+            }, {
+                id: 3,
+                content: 'Clubhouse'
+            }, {
+                id: 4,
+                content: 'Playground'
+            }, {
+                id: 5,
+                content: 'Green Fields'
+            }]
         }
     </script>
 
