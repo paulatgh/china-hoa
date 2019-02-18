@@ -27,9 +27,18 @@ var render = function () {
     });
 
     var Logo = $('#Logo').html();
-    $.each(data.Logo, function () {
+    $.each(data.Logo, function () {              
         $('#Logo_cycle').append(Mustache.render(Logo, this));
     });
+
+    // Global post render
+    _post_render();
+
+    // Local post render
+
+
+
+
     // admin
     var storage = window.localStorage;
     var username = storage.getItem('username')

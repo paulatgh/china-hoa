@@ -6,6 +6,14 @@ var render = function () {
     $.each(data.Logo, function () {
         $('#Logo_cycle').append(Mustache.render(Logo, this));
     });
+
+
+     // Global post render
+     _post_render();
+
+     // Local post render
+
+     
     // admin
     var storage = window.localStorage;
     if (storage.getItem('username') === 'admin') {

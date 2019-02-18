@@ -6,17 +6,16 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<!-- <meta http-equiv="X-UA-Compatible" content="IE=8" /> -->
-	<link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
+	<link rel="shortcut icon" type="image/ico" href="/img/favicon.ico" />
 
 	<title>De Anza Oaks</title>
-	<link rel="stylesheet" type="text/css" href="css/animate.css">
-	<link rel="stylesheet" type="text/css" href="css/masterslider.main.css">
-	<link rel="stylesheet" type="text/css" href="css/ms-skin-sample.css">
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/public.css">
-	<link rel="stylesheet" href="css/city-resources.css">
+	<link rel="stylesheet" href="/global.css">
+	<link rel="stylesheet" href="css/index.css">
+
 	<script src="https://cdn.bootcss.com/jquery/3.3.0/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+
+	<script src="/js/99_global.js"></script>
 
 </head>
 
@@ -24,13 +23,11 @@
 	<div id="content"></div>
 	<script>
 		var data = {
-			Logo:[
-                {
-                  id:1,
-                  url:"img/Combined Shape.png",
-                  title:"De Anza Oaks"
-                }
-              ],
+			Logo: [{
+				id: 1,
+				url: "/img/Combined Shape.png",
+				title: "De Anza Oaks"
+			}],
 			CupertinoCityResources: [{
 				id: 1,
 				content: 'De Anza Oaks is located in the city of Cupertino in Santa fClara County. This city is home to Apple Headquarters, De Anza College, and a wide variety of businesses and great public schools. Cupertino has a population of 64,000 people within 13 square miles. It is 42 miles south of San Francisco and is on the western side of Silicon Valley, next to the Santa Cruz Mountains.'
@@ -106,11 +103,11 @@
 	</script>
 
 
-	<script type="text/javascript" src="js/city-resources/city-resources.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
 	<script>
 		// This script block stays in this wrapper html file
 		$(function () {
-			$('#content').load("city-resources.body.html", function () {
+			$('#content').load("body.html", function () {
 				render();
 			});
 		});
