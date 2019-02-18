@@ -19,11 +19,14 @@ var render = function () {
         $('.buttona').css('display', 'none')
     }
 
-    ClassicEditor
-        .create(document.querySelector('#editor'))
-        .catch(error => {
-            console.error(error);
-        });
+    $.getScript('js/cdn.ckeditor.js', function () {
+        //Carousel
+        ClassicEditor
+            .create(document.querySelector('#editor'))
+            .catch(error => {
+                console.error(error);
+            });
+    });
 
     function CuteEditor_FilterCode(editor, code) {
         return code.replace(/(<\/*)(script)([^\>]*\>)/ig,
