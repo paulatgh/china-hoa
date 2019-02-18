@@ -107,7 +107,7 @@ var render = function () {
 
     $('.logout').click(function () {
         window.localStorage.setItem('username', '')
-        window.location.href = "http://tfire.net/index.html"
+        window.location.href = "http://127.0.0.1:8080/"
     })
 
     var str =
@@ -137,9 +137,9 @@ var render = function () {
             var arr = $(this).attr('data')
             if (arr) {
                 // window.location.href = `http://tfire.net/${arr}`;
-                window.location.href = `file:///C:/Users/Administrator/Documents/china-hoa/${arr}`;
+                window.location.href = `http://127.0.0.1:8080/${arr}`;
             } else {
-                window.location.href = "http://tfire.net/aboutus/aboutus.html"
+                window.location.href = "http://127.0.0.1:8080/aboutus/"
             }
         })
     } else {
@@ -154,7 +154,7 @@ var render = function () {
                     storage.setItem('username', userValue)
                     var hrefHtml = _this.attr('data')
                     // window.location.href = `http://tfire.net/${hrefHtml}`;
-                    window.location.href = `file:///C:/Users/Administrator/Documents/china-hoa/${hrefHtml}`;
+                    window.location.href = `http://127.0.0.1:8080/${hrefHtml}`;
                 } else {
                     if (!$('.login-int').val() && !$('.login-int-a').val()) {
                         $('.userp').css('display', 'block');

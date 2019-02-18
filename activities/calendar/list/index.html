@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=8" /> -->
+    <link rel="shortcut icon" type="image/ico" href="/community/img/favicon.ico" />
+
+    <title>De Anza Oaks</title>
+    <link rel="stylesheet" href="/global.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <script src="https://cdn.bootcss.com/jquery/3.3.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+
+    <script src="/js/99_global.js"></script>
+
+</head>
+
+<body>
+    <div id="content"></div>
+
+    <script>
+        // This script block stays in this wrapper html file
+        var data = {
+            list: [{
+                    id: 1,
+                    posted: "12/13/2018 2:15:02 PM",
+                    date: "12/31/2018",
+                    timeframe: null,
+                    category: "ClubhouseRental",
+                    description: "Clubhouse Booking (Tentative) PM",
+                }, {
+                    id: 2,
+                    posted: "12/13/2018 2:15:02 PM",
+                    date: "12/31/2018",
+                    timeframe: null,
+                    category: "ClubhouseRental",
+                    description: "Clubhouse Booking (Tentative) PM",
+                },
+                {
+                    id: 3,
+                    posted: "12/13/2018 2:15:02 PM",
+                    date: "12/31/2018",
+                    timeframe: null,
+                    category: "ClubhouseRental",
+                    description: "Clubhouse Booking (Tentative) PM",
+                },
+                {
+                    id: 4,
+                    posted: "12/13/2018 2:15:02 PM",
+                    date: "12/31/2018",
+                    timeframe: null,
+                    category: "ClubhouseRental",
+                    description: "Clubhouse Booking (Tentative) PM",
+                },
+                {
+                    id: 5,
+                    posted: "12/13/2018 2:15:02 PM",
+                    date: "12/31/2018",
+                    timeframe: null,
+                    category: "ClubhouseRental",
+                    description: "Clubhouse Booking (Tentative) PM",
+                },
+                {
+                    id: 6,
+                    posted: "12/13/2018 2:15:02 PM",
+                    date: "12/31/2018",
+                    timeframe: null,
+                    category: "ClubhouseRental",
+                    description: "Clubhouse Booking (Tentative) PM",
+                },
+                {
+                    id: 7,
+                    posted: "12/13/2018 2:15:02 PM",
+                    date: "12/31/2018",
+                    timeframe: null,
+                    category: "ClubhouseRental",
+                    description: "Clubhouse Booking (Tentative) PM",
+                },
+                {
+                    id: 8,
+                    posted: "12/13/2018 2:15:02 PM",
+                    date: "12/31/2018",
+                    timeframe: null,
+                    category: "ClubhouseRental",
+                    description: "Clubhouse Booking (Tentative) PM",
+                },
+                {
+                    id: 9,
+                    posted: "12/13/2018 2:15:02 PM",
+                    date: "12/31/2018",
+                    timeframe: null,
+                    category: "ClubhouseRental",
+                    description: "Clubhouse Booking (Tentative) PM",
+                }
+
+            ]
+        };
+    </script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script>
+        // This script block stays in this wrapper html file
+        $(function () {
+            $('#content').load("body.html", function () {
+                render();
+            });
+        });
+    </script>
+</body>
+
+</html>
