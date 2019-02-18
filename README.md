@@ -28,3 +28,11 @@ On a PC's Chrome, create a shortcut for Chrome on your desktop and append this t
     --user-data-dir="C:\ProgramData\Chrome" --disable-web-security
 
 
+/******************************************************************************************************************************/
+
+news/announcements/add         news/announcements/edit    news/bulletins/page    news/bulletins/text   news/volunteer/add      
+resources/committee/add   resources/eforms/add   resources/eforms/edit
+Newly added JS:             
+                    cdn.ckeditor.js
+/******************************************************************************************************************************/
+
