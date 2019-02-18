@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=8" /> -->
+    <link rel="shortcut icon" type="image/ico" href="/community/img/favicon.ico" />
+
+    <title>De Anza Oaks</title>
+    <link rel="stylesheet" href="/global.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <script src="https://cdn.bootcss.com/jquery/3.3.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+
+    <!-- Links as currently hosted by http-server -->
+
+    <script src="/js/99_global.js"></script>
+</head>
+
+<body>
+    <div id="content">
+
+    </div>
+    <script>
+        var data = {
+            Logo: [{
+                id: 1,
+                url: "/community/img/Combined Shape.png",
+                title: "De Anza Oaks"
+            }],
+
+            content: [{
+                id: 1,
+                title: "Email Bulletin Current Subscribers"
+            }],
+            subscribers: [{
+                    title: "Clubhouse Committee eMail Bulletin Test",
+                    level: "(Security Level = 35, Number Sent = 4)",
+                    firstgmail: "Priya Balijepalli - bpriya@gmail.com (as of 11/30/2018 12:12:56 PM)",
+                    secondgmail: "Bill Milam - billgmilam@gmail.com (as of 7/13/2018 2:00:55 PM)",
+                    thirdgmail: "Ketan Shah - alpketan@gmail.com (as of 10/24/2018 4:53:37 PM)",
+                },
+                {
+                    title: "Events Committee eMail Bulletin Test",
+                    level: "(Security Level = 35, Number Sent = 32)",
+                    firstgmail: "Bill Milam - billgmilam@gmail.com (as of 7/13/2018 2:00:55 PM)",
+                    secondgmail: "Ketan Shah - alpketan@gmail.com (as of 10/24/2018 4:53:37 PM)",
+
+                },
+                {
+                    title: "Web Admin eMail Bulletin Test",
+                    level: "(Security Level = 1, Number Sent = 74)",
+                    firstgmail: "John Krischer - johnkrischer@gmail.com (as of 5/2/2011 3:20:14 PM)",
+                    secondgmail: "Alicia Schober - alicia_e_schober@yahoo.com (as of 5/2/2011 3:19:58 PM)",
+                    thirdgmail: "Ketan Shah - alpketan@gmail.com (as of 10/24/2016 4:53:37 PM)",
+                }
+            ]
+        }
+    </script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script>
+        // This script block stays in this wrapper html file
+        $(function () {
+            $('#content').load("body.html", function () {
+                render();
+            });
+        });
+    </script>
+</body>
+
+</html>

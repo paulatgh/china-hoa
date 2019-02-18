@@ -27,7 +27,7 @@ var render = function () {
     });
 
     var Logo = $('#Logo').html();
-    $.each(data.Logo, function () {              
+    $.each(data.Logo, function () {
         $('#Logo_cycle').append(Mustache.render(Logo, this));
     });
 
@@ -36,9 +36,6 @@ var render = function () {
 
     // Local post render
 
-
-
-
     // admin
     var storage = window.localStorage;
     var username = storage.getItem('username')
@@ -46,7 +43,7 @@ var render = function () {
 
     $('.logout').click(function () {
         window.localStorage.setItem('username', '')
-        window.location.href = "http://tfire.net/dao.html"
+        window.location.href = "http://127.0.0.1:8080/home"
 
     })
 

@@ -1,0 +1,119 @@
+<!-- header -->
+<div class="header" style="box-shadow:0px 2px 7px 0px rgba(0,0,0,0.5);
+border:1px solid rgba(151,151,151,1);">
+    <div class="w1200" style="height: 0">
+        <a class="logo" href="/home" id="Logo_cycle">
+            <script id="Logo" type="txt/template">
+                <img src="{{url}}">
+            {{title}}
+        </script>
+        </a>
+        <input type="text" placeholder="Search..." style="width: 188px;height: 37px;position: relative;top: 30px;left: 540px;border: solid 1px #393D44;padding-left: 10px;">
+        <div class="btns clearfix">
+            <img src="/community/img/Shape.png" alt="Shape" style="position: relative;left: -140px;top: 40px;z-index: 100000;">
+            <img src="/community/img/dropdown.png" alt="dropdown" style="position: relative;left: -50px;top: 36px;z-index: 100000;">
+            <a class="btns-search" href="javascript:;"> </a>
+            <a class="btns-language" href="javascript:;"></a>
+            <div class="langOv">
+                <div class="profile">
+                    <a href="/file" style="border-bottom: 1px solid white;width: 100%;margin-left: -1px">My
+                        Profile</a>
+                    <a href="javascript:;" class="logout">Log Out</a>
+                </div>
+            </div>
+        </div>
+        <div class="nav">
+            <ul>
+                <li class="curr">
+                    <a class="on" href="/home">Home</a>
+                </li>
+                <li>
+                    <a href="/aboutus">About us</a>
+
+                </li>
+                <!-- <li>
+                    <a href="downloadFile.html">Docs</a>
+                </li> -->
+            </ul>
+            <span class="navline"></span>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- main -->
+<div class="main" style="height:100%">
+    <div class="main-breadcrumb" style="width: 1200px;margin: 0 auto">
+        <ul class="breadcrumb" style="float: left">
+            <li><a href="/home">Home</a></li>
+            <li>&nbsp;>&nbsp;</li>
+            <li><a href="/news">News</a></li>
+            <li>&nbsp;>&nbsp;</li>
+            <li><a href="#">Email Bulletin</a></li>
+        </ul>
+    </div>
+
+    <div class="main-center">
+        <p class="photo-albums">Send an Email Bulletin</p>
+        <div class="address_book_click">
+            <button><a href="/news/bulletins/page">Send HTML</a></button>
+            <button><a href="/news/bulletins/text">Send Plain Text</a></button>
+
+            <button><a href="/news/bulletins/subscribers">Check Subscribers</a></button>
+            <button><a href="/news/bulletins/templates">Edit Custom Templates</a></button>
+        </div>
+
+        <div class="content-1">
+
+            <div class="choose">
+                <p class="newest">NEWEST EMAIL BULLETIN TEMPLATES</p>
+                <div class="search-click">
+                    <div class="search">
+                        <input type="search" placeholder="Search..." style="padding-left:10px">
+                        <div class="search_img"><img src="/community/img/pro-search.png" /></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="address_book_right">
+
+                <div class="email-template" id="news_bulletins">
+                    <script id="bulletins_template" type="txt/template">
+                        <div class="content-img">
+                            <div class="img-1">
+                               <img src={{img}}>
+                            </div>
+                            <p>{{title}}</p>
+                        </div>
+                    </script>
+                </div>
+                <div id="ContentPlaceHolder1_ctl00_AspNetPager1" class="news-page" style="width:100%;text-align:center;">
+                    <a disabled="disabled" style="margin-right:26px;border-radius: 2px">
+                        <img src="/community/img/left.png">
+                    </a>
+                    <a href="javascript:;" style="margin-right:26px; background:#449F41;border-radius: 2px">1</a>
+                    <!-- <a href="javascript:;" style="margin-right:26px; background:#449F41;border-radius: 2px">2</a>
+                            <a href="javascript:;" style="margin-right:26px; background:#449F41;border-radius: 2px">3</a> -->
+                    <a href="javascript:;" style="margin-right:26px;border-radius: 2px">
+                        <img src="/community/img/right.png">
+                    </a>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+</div>
+
+</div>
+
+<!-- footer -->
+<div class="footer">
+    <p>
+        Copyright © 2019 Tellus, Inc. All Rights Reserved.
+    </p>
+</div>
