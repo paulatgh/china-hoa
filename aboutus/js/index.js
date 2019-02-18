@@ -14,7 +14,7 @@ var render = function () {
     $(".btns-language").text(username);
     $('.logout').click(function () {
         window.localStorage.setItem('username', '')
-        window.location.href = "http://tfire.net/index.html"
+        window.location.href = "http://127.0.0.1:8080/home/"
     })
     var str = `<div class="db">
     <div class="login">
