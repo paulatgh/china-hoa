@@ -7,16 +7,19 @@ var render = function () {
     Mustache.parse(content_template);
     $('#editEforms').after(Mustache.render(content_template, data));
 
-        // Global post render
-        _post_render();
+    // Global post render
+    _post_render();
 
-        // Local post render
-
+    // Local post render
+    $.getScript('js/cdn.ckeditor.js', function () {
+        //Carousel
         ClassicEditor
-        .create(document.querySelector('#editor'))
-        .catch(error => {
-            console.error(error);
-        });
+            .create(document.querySelector('#editor'))
+            .catch(error => {
+                console.error(error);
+            });
+    });
+
 
     // admin
     var storage = window.localStorage;
@@ -29,7 +32,7 @@ var render = function () {
 
     $('.logout').click(function () {
         window.localStorage.setItem('username', '')
-        window.location.href = "http://tfire.net/index.html"
+        window.location.href = "http://127.0.0.1:8080/home/"
     })
 
 };

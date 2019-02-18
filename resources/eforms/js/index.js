@@ -58,7 +58,7 @@ var render = function () {
             deleteLog()
         })
         $(".edi").click(function () {
-            window.location.href = `http://tfire.net/Resources/eForms/edit.html`
+            window.location.href = `http://127.0.0.1:8080/resources/eforms/edit`
         })
     }
     var username = storage.getItem('username')
@@ -67,7 +67,7 @@ var render = function () {
 
     $('.logout').click(function () {
         window.localStorage.setItem('username', '')
-        window.location.href = "http://tfire.net/index.html"
+        window.location.href = "http://127.0.0.1:8080/home/"
     })
 
     var stronge = window.localStorage;

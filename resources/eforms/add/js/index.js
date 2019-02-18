@@ -11,16 +11,21 @@ var render = function () {
 
     // Local post render
 
-    ClassicEditor
-    .create(document.querySelector('#editor'))
-    .catch(error => {
-        console.error(error);
+    $.getScript('js/cdn.ckeditor.js', function () {
+        //Carousel
+        ClassicEditor
+        .create(document.querySelector('#editor'))
+        .catch(error => {
+            console.error(error);
+        });
+        ClassicEditor
+        .create(document.querySelector('#editor1'))
+        .catch(error => {
+            console.error(error);
+        });
     });
-    ClassicEditor
-    .create(document.querySelector('#editor1'))
-    .catch(error => {
-        console.error(error);
-    });
+
+
 
     // admin
     var storage = window.localStorage;
