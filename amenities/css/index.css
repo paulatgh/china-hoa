@@ -77,6 +77,15 @@ body {
     line-height: 34px;
 }
 
+.GatedCommunity ul li:before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
 .footer-p {
 
     font-size: 16px;

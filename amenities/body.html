@@ -45,32 +45,103 @@
         </ul>
     </div>
     <div class="main-top clearfix" style="margin-bottom: 35px;height: 100%;">
+
         <div class="w1200 pr">
-            <div class="main-left" id="events_photo" style="width:100%;height: 100%;">
-                <h2>Amenities in De Anza Oaks</h2>
-                <div style="padding:0 136px;box-sizing:border-box;font-size:26px;font-family:OpenSans-Regular;margin-bottom:32px;font-weight:400;color:rgba(57,61,68,1);	line-height:34px;">
-                    The residents of De Anza Oaks enjoy a variety of amenities. Here are some of the reasons we
-                    love living in our community:
+            <div class="main-left" style="width:100%;height: 100%;">
+                <div style="padding:0 136px;box-sizing:border-box;font-size:26px;font-family:OpenSans-Regular;margin-bottom:32px;font-weight:400;color:rgba(57,61,68,1);line-height:34px;" id="PageTitle_cycle">
+                <script id="PageTitle" type="txt/template">
+                    <h2>{{title}}</h2>
+                    {{content}}
+                </script>
                 </div>
-                <script id="event_template" type="txt/template">
-                    <div class="GatedCommunity">
-                    <div class="GatedCommunity-img">
-                        <img src={{img}} style="width:100%;">
-                    </div>
-                    <p>{{title}}</p>
-                    <ul>
-                        <li>
-                            ● {{desc_a}}
-                        </li>
-                        <li>
-                            ● {{desc_b}}
-                        </li>
-                    </ul>
-                </div> 
-            </script>
+                <div class="GatedCommunity" id="Community_cycle">
+                    <script id="Community" type="txt/template">
+                        <div class="GatedCommunity-img">
+                                <img src="{{img}}" style="width:100%">
+                            </div>
+                            <p>{{title}}</p>
+                            <ul>
+                                <li>
+                                    {{desc_a}}
+                                </li>
+                                <li>
+                                    {{desc_b}}
+                                </li>
+                            </ul>
+                    </script>
+                </div>
+                
+                <div class="GatedCommunity" id="OlympicGames_cycle">
+                    <script id="OlympicGames" type="txt/template">
+                        <div class="GatedCommunity-img">
+                                <img src="{{img}}" style="width:100%;">
+                            </div>
+                            <p>{{title}}</p>
+                            <ul>
+                                <li>
+                                        {{desc_a}}
+                                </li>
+                                <li>
+                                        {{desc_b}}
+                                </li>
+                            </ul>
+                    </script>
+                </div>
+
+                <div class="GatedCommunity" id="Clubhouse_cycle">
+                    <script id="Clubhouse" type="txt/template">
+                        <div class="GatedCommunity-img">
+                                <img src="{{img}}" style="width:100%;">
+                            </div>
+                            <p>{{title}}</p>
+                            <ul>
+                                <li>
+                                        {{desc_a}}
+                                </li>
+                                <li>
+                                        {{desc_b}}
+                                </li>
+                            </ul>
+                    </script>
+                </div>
+                
+                <div class="GatedCommunity" id="Children_cycle">
+                    <script id="Children" type="txt/template">
+                        <div class="GatedCommunity-img">
+                                <img src="{{img}}" style="width:100%;">
+                            </div>
+                            <p>{{title}}</p>
+                            <ul>
+                                <li>
+                                    {{desc_a}}
+                                </li>
+                            </ul>
+                    </script>
+                </div>
+
+                <div class="GatedCommunity" id="GreenFields_cycle">
+                    <script id="GreenFields" type="txt/template">
+                        <div class="GatedCommunity-img">
+                                <img src="{{img}}" style="width:100%;">
+                            </div>
+                            <p>{{title}}</p>
+                            <ul>
+                                    <li>
+                                            {{desc_a}}
+                                    </li>
+                                    <li>
+                                            {{desc_b}}
+                                    </li>
+                            </ul>
+                    </script>
+                </div>
+
+
             </div>
         </div>
+
     </div>
+
 </div>
 <!-- footer -->
 <div class="footer" style="margin-bottom: -16px">
