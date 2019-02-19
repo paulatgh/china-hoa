@@ -43,7 +43,7 @@ var render = function () {
     _post_render();
 
     // Local post render
-    $.getScript('js/swiper.min.js', function () {
+    $.getScript(data._metadata.assets_path + '/js/swiper.min.js', function () {
         //Carousel
         var swiper = new Swiper('.swiper-container', {
             width: 412,
