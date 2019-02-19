@@ -12,8 +12,8 @@ $(window).on('load', function () {
 });
 window.onload = function () {
 
-
-    setSlip();
+    var slip = $('.sub-navslip');
+    slip.length && setSlip();
 
 }
 
