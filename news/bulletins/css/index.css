@@ -94,9 +94,9 @@
     color: rgba(53, 149, 50, 1);
 }
 
-/* .address_book_click:hover{
+.address_book_click:hover{
     cursor: pointer;
-} */
+}
 .photo-albums {
     height: 41px;
     font-size: 24px;
