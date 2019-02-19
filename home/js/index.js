@@ -127,7 +127,7 @@ var render = function () {
 
     $('.logout').click(function () {
         window.localStorage.setItem('username', '')
-        window.location.href = "http://127.0.0.1:8080/"
+        window.location.href = "http://127.0.0.1:8080/home/"
     })
 
     var str =
