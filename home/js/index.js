@@ -61,9 +61,9 @@ var render = function () {
     });
 
     $('#calendar').calendar({
-        ifSwitch: true, // 是否切换月份
-        hoverDate: true, // hover是否显示当天信息
-        backToday: true // 是否返回当天
+        ifSwitch: true, // Whether to switch the month
+        hoverDate: true, // hover Whether to display the day information
+        backToday: true // Whether to return to the day
     });
 
     var slider = new MasterSlider();
@@ -90,7 +90,7 @@ var render = function () {
         $('.main-switch-item').eq(manin).fadeIn();
     })
 
-    // 时间
+    // time
     function timebar() {
         $('.mas-tib').stop().animate({
             'width': 350 + 'px'
@@ -156,7 +156,6 @@ var render = function () {
         $('.jump').click(function () {
             var arr = $(this).attr('data')
             if (arr) {
-                // window.location.href = `http://tfire.net/${arr}`;
                 window.location.href = `http://127.0.0.1:8080/${arr}`;
             } else {
                 window.location.href = "http://127.0.0.1:8080/aboutus/"
@@ -173,7 +172,6 @@ var render = function () {
                     var userValue = $('.login-int').val();
                     storage.setItem('username', userValue)
                     var hrefHtml = _this.attr('data')
-                    // window.location.href = `http://tfire.net/${hrefHtml}`;
                     window.location.href = `http://127.0.0.1:8080/${hrefHtml}`;
                 } else {
                     if (!$('.login-int').val() && !$('.login-int-a').val()) {

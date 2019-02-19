@@ -10,6 +10,13 @@ var render = function () {
 
     // Local post render
 
+    $('#calendar').calendar({
+        ifSwitch: true, // Whether to switch the month
+        hoverDate: true, // hover Whether to display the day information
+        backToday: true // Whether to return to the day
+    });
+
+
 
     var storage = window.localStorage;
     if (storage.getItem('username') === 'admin') {
