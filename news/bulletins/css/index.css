@@ -126,7 +126,6 @@
 }
 
 .search-click>.search>input {
-    width: 545px ;
     height: 40px;
     border: none;
     width: 100%;
@@ -135,7 +134,7 @@
 }
 
 .search-click {
-    width: 25%;
+    width: 22%;
     height: 40px;
     /* border: solid 1px; */
     margin:16px 0;

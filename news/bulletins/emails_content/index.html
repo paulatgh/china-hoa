@@ -17,8 +17,6 @@
 
 
     <!-- Links as currently hosted by http-server -->
-    <script src="/js/10_masterslider.min.js"></script>
-    <script src="/js/11_calendar_plugin.js"></script>
     <script src="/js/99_global.js"></script>
 </head>
 
@@ -33,7 +31,7 @@
             }],
             TheTitle: [{
                 id: 1,
-                title: 'Add Committee'
+                title: 'emails_content'
             }],
             body:`
             <table style="background-color: #ffffff; margin-top:20px;" background="" border="0" width="100%" cellpadding="10"
@@ -51,32 +49,77 @@
                                             <tbody>
                                                 <tr>
                                                     <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
-                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;Form
-                                                            Title/Name:</font>
+                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;From
+                                                            Name:</font>
                                                     </td>
                                                     <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6"><input type="text"
-                                                            name="short_desc" size="40" maxlength="50" style="font-family: Tahoma; font-size: 11;margin-left: 57px"></td>
+                                                            name="short_desc" size="40" maxlength="50" style="font-family: Tahoma; font-size: 11;"
+                                                            value="Connie Chan"></td>
                                                 </tr>
                                                 <tr>
                                                     <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6" valign="top">
-                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;
-                                                            When:</font><input type="text" name="short_desc" size="40"
-                                                            maxlength="50" style="font-family: Tahoma; font-size: 11;float: right">
+                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;From
+                                                            eMail Address:</font>
                                                     </td>
                                                     <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
-                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;
-                                                            Where:</font><input type="text" name="short_desc" size="40"
-                                                            maxlength="50" style="font-family: Tahoma; font-size: 11">
+                                                        <input type="text" name="short_desc" size="40" maxlength="50"
+                                                            style="font-family: Tahoma; font-size: 11" value="conniechan@gmail.com">
                                                     </td>
                                                 </tr>
                                                 <tr height="37px">
                                                     <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6" valign="top">
-                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;Full
-                                                            Description:</font><input type="text" name="short_desc"
-                                                            size="40" maxlength="50" style="font-family: Tahoma; font-size: 11;float: right">
+                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;To:</font>
                                                     </td>
-                                                    <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">&nbsp;</td>
+                                                    <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
+                                                        <select name="" id="">
+                                                            <option value="None">(None)</option>
+                                                            <option value="Category">Email Bulletin Category</option>
+                                                            <option value="Address">Address Book Category</option>
+                                                            <option value="Subdivision">Subdivision</option>
+                                                            <option value="All">All</option>
+                                                            <option value="eForm">eForm</option>
+                                                            <option value="Survey">Survey</option>
+                                                            <option value="Date">Last Login Date</option>
+                                                        </select>
+                                                    </td>
                                                 </tr>
+                                                <tr>
+                                                    <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6" valign="top">
+                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;Users
+                                                            who have not logged in since this date: (mm/dd/yyyy)</font>
+                                                    </td>
+                                                    <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
+                                                        <input type="text">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6" valign="top">
+                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;Subject:</font>
+                                                    </td>
+                                                    <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6"><input type="text"
+                                                            name="short_desc" size="40" maxlength="50" style="font-family: Tahoma; font-size: 11;"
+                                                            value="De Anza Oaks Homeowners Association eMail Bulletin">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6" valign="top">
+                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;Check
+                                                            here to send Login and Password information along with this
+                                                            eMail Bulletin:</font>
+                                                    </td>
+                                                    <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6"><input type="checkbox"
+                                                            name="short_desc" size="40" maxlength="50" style="font-family: Tahoma; font-size: 11;margin-left: 5px">
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6" valign="top">
+                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;Linked File:</font>
+                                                    </td>
+                                                    <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6"><input type="file">
+                                                    </td>
+                                                </tr>
+
 
                                                 <tr>
                                                     <td colspan="2" align="center" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
@@ -97,8 +140,6 @@
                                                                 </tr>
                                                             </tbody>
                                                         </table>
-
-
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -128,7 +169,8 @@
                 </tr>
             </tbody>
             <div class="ad"></div>
-        </table>`
+        </table>
+            `
         }
     </script>
     <script type="text/javascript" src="js/index.js"></script>

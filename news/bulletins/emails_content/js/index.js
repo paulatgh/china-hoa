@@ -11,11 +11,12 @@ var render = function () {
     $('#form').after(Mustache.render(form, data));
 
 
+
     // Global post render
     _post_render();
 
     // Local post render
-
+    
     $.getScript('js/cdn.ckeditor.js', function () {
         //Carousel
         ClassicEditor
@@ -25,11 +26,7 @@ var render = function () {
             });
     });
 
-    function CuteEditor_FilterCode(editor, code) {
-      return code.replace(/(<\/*)(script)([^\>]*\>)/ig,
-          "$1script$3").replace(/(['"][^\n\r']*)([\n\r]+)([^\n\r']*)([\n\r]*)(['"])/ig,
-              "$1$3$5");
-    }
+
 
     var storage = window.localStorage;
     if (storage.getItem('username') === 'admin') {
