@@ -215,66 +215,80 @@ var render = function () {
                     }
                 }
 
-            })
-            $('.return').click(function () {
-                $('.db').remove();
-            })
-        })
-        $(".btns-language").click(function () {
-            $('body').append(str);
-            var _this = $(this);
-            $('.login-button').click(function () {
-                if ($('.login-int').val() === 'Test' && $('.login-int-a').val() === '1215' ||
-                    $('.login-int').val() === 'admin' && $('.login-int-a').val() === '1215'
-                ) {
-                    var userValue = $('.login-int').val();
-                    storage.setItem('username', userValue)
-                    _this.text('Test');
-                    $('.db').remove();
-                    window.location.reload()
-                } else if (!$('.login-int').val() && !$('.login-int-a').val()) {
-                    $('.userp').css('display', 'block');
-                    $('.username').css('display', 'block')
-                    $('.login').css('height', '360')
-                } else if ($('.login-int').val() === 'Test' && $('.login-int-a').val() !==
-                    '1215' || $('.login-int').val() === 'admin' && $('.login-int-a').val() !==
-                    '1215') {
-                    $('.username').css('display', 'none')
-                    $('.userp').css('display', 'block')
-                    $('.login').css('height', '330')
-                } else if ($('.login-int-a').val() === '1215' && $('.login-int').val() !==
-                    'Test' || $('.login-int-a').val() === '1215' && $('.login-int').val() !==
-                    'admin') {
-                    $('.username').css('display', 'block');
-                    $('.userp').css('display', 'none');
-                    $('.login').css('height', '330')
-                } else if ($('.login-int').val() !== "Test" && $('.login-int-a').val() ===
-                    " " || $('.login-int').val() !== "admin" && $('.login-int-a').val() ===
-                    " ") {
-                    $('.login').css('height', '360')
-                } else if ($('.login-int').val() !== "Test" && $('.login-int-a').val() !==
-                    "1215" || $('.login-int').val() !== "admin" && $('.login-int-a').val() !==
-                    "1215") {
-                    $('.username').css('display', 'block');
-                    $('.userp').css('display', 'block');
-                    $('.login').css('height', '360')
-                } else if ($('.login-int').val() === " " && $('.login-int-a').val() !==
-                    "1215") {
-                    $('.login').css('height', '360')
-                } else {
-                    if ($('.login-int').val() !== 'Test' || $('.login-int').val() !==
-                        'admin') {
-                        $('.username').css('display', 'block')
-                        $('.login').css('height', '330')
-                    } else if ($('.login-int-a').val() !== '1215') {
-                        $('.userp').css('display', 'block')
-                        $('.login').css('height', '330')
-                    }
-                }
-            })
-            $('.return').click(function () {
-                $('.db').remove();
-            })
-        })
-    }
+      })
+      $('.return').click(function () {
+        $('.db').remove();
+      })
+    })
+    $(".btns-language").click(function () {
+      $('body').append(str);
+      var _this = $(this);
+      $('.login-button').click(function () {
+        if(data._metadata.environment === 'dev') {
+          if ($('.login-int').val() === 'Test' && $('.login-int-a').val() === '1215' ||
+            $('.login-int').val() === 'admin' && $('.login-int-a').val() === '1215'
+          ) {
+            var userValue = $('.login-int').val();
+            storage.setItem('username', userValue)
+            _this.text('Test');
+            $('.db').remove();
+            window.location.reload()
+          } else if (!$('.login-int').val() && !$('.login-int-a').val()) {
+            $('.userp').css('display', 'block');
+            $('.username').css('display', 'block')
+            $('.login').css('height', '360')
+          } else if ($('.login-int').val() === 'Test' && $('.login-int-a').val() !==
+            '1215' || $('.login-int').val() === 'admin' && $('.login-int-a').val() !==
+            '1215') {
+            $('.username').css('display', 'none')
+            $('.userp').css('display', 'block')
+            $('.login').css('height', '330')
+          } else if ($('.login-int-a').val() === '1215' && $('.login-int').val() !==
+            'Test' || $('.login-int-a').val() === '1215' && $('.login-int').val() !==
+            'admin') {
+            $('.username').css('display', 'block');
+            $('.userp').css('display', 'none');
+            $('.login').css('height', '330')
+          } else if ($('.login-int').val() !== "Test" && $('.login-int-a').val() ===
+            " " || $('.login-int').val() !== "admin" && $('.login-int-a').val() ===
+            " ") {
+            $('.login').css('height', '360')
+          } else if ($('.login-int').val() !== "Test" && $('.login-int-a').val() !==
+            "1215" || $('.login-int').val() !== "admin" && $('.login-int-a').val() !==
+            "1215") {
+            $('.username').css('display', 'block');
+            $('.userp').css('display', 'block');
+            $('.login').css('height', '360')
+          } else if ($('.login-int').val() === " " && $('.login-int-a').val() !==
+            "1215") {
+            $('.login').css('height', '360')
+          } else {
+            if ($('.login-int').val() !== 'Test' || $('.login-int').val() !==
+              'admin') {
+              $('.username').css('display', 'block')
+              $('.login').css('height', '330')
+            } else if ($('.login-int-a').val() !== '1215') {
+              $('.userp').css('display', 'block')
+              $('.login').css('height', '330')
+            }
+          }
+        } else {
+          var email = $('.login-int').val();
+          var password = $('.login-int-a').val();
+
+          submitDynamicForm(
+            '/hoa/session',
+            'POST',
+            [
+              {name: 'session_form[email]', value: email},
+              {name: 'session_form[password]', value: password},
+            ]
+          );
+        }
+      })
+      $('.return').click(function () {
+        $('.db').remove();
+      })
+    })
+  }
 };
