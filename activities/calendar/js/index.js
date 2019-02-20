@@ -19,17 +19,17 @@ var render = function () {
 
 
     var storage = window.localStorage;
-    if (storage.getItem('username') === 'admin') {
+    if (storage.getItem('username') === data._current_user.display_name && data._current_user.is_admin == true) {
         $(".Add-top").css("display", "block")
         $(".top-right").css("display", "block")
         $(".right-b").click(function () {
-            if ($('#calendar_events .saveChange').length) { 
+            if ($('#calendar_events .saveChange').length) {
                 return false;
             }
             var index = Number($(this).parents('ul').attr('data'))
-            deleteLog(data.date,index,$(this).parents('ul'))
-        })        
-        edit()   
+            deleteLog(data.date, index, $(this).parents('ul'))
+        })
+        edit()
     } else {
         var str =
             `<li class="tips">
@@ -83,6 +83,7 @@ var render = function () {
         window.localStorage.setItem('username', '')
         window.location.href = "http://127.0.0.1:8080/home/"
     })
+
     function edit() {
         $(".right-a").click(function () {
             if ($('.saveChange').length !== 0) {
@@ -119,12 +120,11 @@ var render = function () {
                     if ($('#calendar_events .saveChange').length) {
                         return false;
                     }
-                    deleteLog(data,index)
-                })         
+                    deleteLog(data, index)
+                })
                 edit()
             })
-    
+
         })
     }
 };
-

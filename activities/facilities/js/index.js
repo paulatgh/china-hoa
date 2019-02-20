@@ -1,33 +1,31 @@
 var render = function () {
-    var event_template = $('#event_template').html();
-    Mustache.parse(event_template);
-    $.each(data.facilities, function () {
-        $('#calendar_events').append(Mustache.render(event_template, this));
-    });
+    var content_template = $('#Facilities').html();
+    Mustache.parse(content_template);
+    $('#Facilities').after(Mustache.render(content_template, data));
 
     // Global post render
     _post_render();
 
     // Local post render
-    $.getScript('js/swiper.min.js', function() {
+    $.getScript('js/swiper.min.js', function () {
         //Carousel
-		var swiper = new Swiper('.swiper-container', {
-			spaceBetween: 30,
-			centeredSlides: true,
-			autoplay: {
-				delay: 2500,
-				disableOnInteraction: false,
-			},
-			navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev',
-			},
-		});
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
 
     });
     // admin
     var storage = window.localStorage;
-    if (storage.getItem('username') === 'admin') {
+    if (storage.getItem('username') === data._current_user.display_name && data._current_user.is_admin == true) {
         $('.buttona').css('display', 'none')
     }
 

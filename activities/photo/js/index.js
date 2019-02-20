@@ -6,14 +6,14 @@ var render = function () {
     });
 
 
-        // Global post render
-        _post_render();
+    // Global post render
+    _post_render();
 
-        // Local post render
+    // Local post render
 
     // admin
     var storage = window.localStorage;
-    if (storage.getItem('username') === 'admin') {
+    if (storage.getItem('username') === data._current_user.display_name && data._current_user.is_admin == true) {
         $('.address_book_click').css('display', 'block')
         $(".address_book_right").css("display", "block")
     }

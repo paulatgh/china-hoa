@@ -73,7 +73,7 @@ var render = function () {
   
     // admin
     var storage = window.localStorage;
-    if (storage.getItem('username') === 'admin') {
+    if (storage.getItem('username') === data._current_user.display_name && data._current_user.is_admin == true) {
         $('.choose-right').css('margin-top', '50px')
         $('.announcements_add').css('display', 'block')
         $('.announcements_permission').css('display', 'block')
