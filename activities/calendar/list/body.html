@@ -54,17 +54,17 @@
         <div class="content-1">
             <table style="border:1" id="calendar_events">
                 <tr id="list_category_cycle">
-                    <script id="list_category" type="txt/template">
-                        <th>{{name}}</th>
-                    </script>
+                    <td>Posted At</td>
+                    <td>Date</td>
+                    <td>Name</td>
+                    <td>Creator</td>
                 </tr>
                 <script id="event_template" type="txt/template">
                     <tr>
-                        <td>{{posted}}</td>
-                        <td>{{date}}</td>
-                        <td>{{tiemframe}}</td>
-                        <td>{{category}}</td>
-                        <td>{{description}}</td>
+                        <td>{{created_at}}</td>
+                        <td>{{friendly_date}}</td>
+                        <td>{{title}}</td>
+                        <td>{{creator}}</td>
                     </tr>
                 </script>
             </table>
