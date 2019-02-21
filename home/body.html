@@ -90,12 +90,12 @@
                         Amenities</div>
                     <ul id="Amenities_cycle" class="Carousel swiper-wrapper" style="height: 280px;width:5000px;">
                         <script id="Amenities" type="txt/template">
-                            <li class="swiper-slide">
+                            <li class="swiper-slide" style="background: url('{{imgUrl}}') no-repeat; background-size: cover;">
                                 <div>
-                                    <h6>{{content}}</h6>
+                                    <h6>{{name}}</h6>
                                 </div>
                             </li>
-                    </script>
+                        </script>
                     </ul>
                     <div class="announcement-tips swiper-pagination">
                         <span style="background: #359532"></span>
@@ -123,17 +123,18 @@
     </div>
 
     <!-- body-3 -->
-    <div class="main-top" style="height: 250px;" id="Clubhouse_cycle">
-        <script id="Clubhouse" type="txt/template">
+    <div class="main-top" style="height: 250px;" id="Reservables_cycle">
+        <script id="Reservables" type="txt/template">
             <div class="w1200 pr" style="position: relative">
                 <img src="{{imgUrl}}" alt="Rectangle" style="width:100%;">
-                    <div class="Clubhouse" style="position: absolute;background: rgba(53,149,50,0.6);height: 84px;width: 579px;top: 77px;left: 314px;">
-                        <a data="{{link}}" class="jump" href="javascript:;">
-                                <p style="text-align: center;font-size:25px;font-family:OpenSans-Bold;font-weight:bold;color:rgba(255,255,255,1);line-height: 84px">
-                                {{title}}
-                                </p>
+                    <div class="reservable" style="position: absolute;background: rgba(53,149,50,0.6);height: 84px;width: 579px;top: 77px;left: 314px;">
+                        <a data="{{reservationLink}}" class="jump" href="javascript:;">
+                            <p style="text-align: center;font-size:25px;font-family:OpenSans-Bold;font-weight:bold;color:rgba(255,255,255,1);line-height: 84px">
+                                Click Here To Book The {{name}}
+                            </p>
                         </a>
                     </div>
+                </img>
             </div>
         </script>
 

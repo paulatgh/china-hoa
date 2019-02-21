@@ -23,9 +23,9 @@ var render = function () {
         $('#date').append(Mustache.render(date_template, this));
     });
 
-    var Clubhouse = $('#Clubhouse').html()
-    $.each(data.ReservationFunction, function () {
-        $('#Clubhouse_cycle').append(Mustache.render(Clubhouse, this));
+    var Reservables = $('#Reservables').html()
+    $.each(data.Amenities.filter(a => a.reservable), function () {
+        $('#Reservables_cycle').append(Mustache.render(Reservables, this));
     });
 
     var BirDeyeView = $('#BirDeyeView').html()
