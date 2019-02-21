@@ -19,7 +19,7 @@ var render = function () {
             $(this).css('background', `url(${item.img}) no-repeat  center 50px`)
         })
     })
-    $.each(data.date, function () {
+    $.each(data.events, function () {
         $('#date').append(Mustache.render(date_template, this));
     });
 
