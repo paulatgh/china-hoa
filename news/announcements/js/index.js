@@ -36,8 +36,7 @@ var render = function () {
     // Local post render
 
     // admin
-    var storage = window.localStorage;
-    if (storage.getItem('username') === 'admin') {
+    if (data._current_user && data._current_user.is_admin) {
         $('.choose-right').css('margin-top', '50px')
         $('.announcements_add').css('display', 'block')
         $('.announcements_permission').css('display', 'block')
@@ -47,16 +46,13 @@ var render = function () {
     }
 
 
-    var username = storage.getItem('username')
+    var username = data._current_user && data._current_user.display_name
     $(".btns-language").text(username);
 
 
     $('.logout').click(function () {
-        window.localStorage.setItem('username', '')
-        window.location.href = "http://127.0.0.1:8080/home";
-
+    //    TODO: log out user
     })
 
-    var username = storage.getItem('username')
     $(".btns-language").text(username);
 }

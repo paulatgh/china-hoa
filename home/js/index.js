@@ -126,8 +126,7 @@ var render = function () {
     clickAdd();
 
     $('.logout').click(function () {
-        window.localStorage.setItem('username', '')
-        window.location.href = "http://127.0.0.1:8080/home/"
+        //TODO: log out user
     })
 
     var str =
@@ -145,12 +144,11 @@ var render = function () {
             </div>
         </div>
     </div>`;
-    let storage = window.localStorage;
-    if (storage.getItem('username')) {
+    var username = data._current_user && data._current_user.display_name
+    if (username) {
         $(".btns-language").click(function (event) {
             event.preventDefault();
         })
-        var username = storage.getItem('username')
         $(".btns-language").text(username);
         $(".langOv").css("display", "block")
         $('.jump').click(function () {
@@ -166,11 +164,8 @@ var render = function () {
             var _this = $(this)
             $('body').append(str);
             $('.login-button').click(function () {
-                if ($('.login-int').val() === data._current_user.display_name && $('.login-int-a').val() === data._current_user.password) {
-                    var userValue = $('.login-int').val();
-                    storage.setItem('username', userValue)
-                    var hrefHtml = _this.attr('data')
-                    window.location.href = `http://127.0.0.1:8080/${hrefHtml}`;
+                if (!!$('.login-int').val() && !!$('.login-int-a').val()) {
+                    //TODO log in user
                 } else {
                     if (!$('.login-int').val() && !$('.login-int-a').val()) {
                         $('.userp').css('display', 'block');
@@ -223,27 +218,23 @@ var render = function () {
             var _this = $(this);
             $('.login-button').click(function () {
                 if (data._metadata.environment === 'dev') {
-                    if ($('.login-int').val() === data._current_user.display_name && $('.login-int-a').val() === data._current_user.password) {
-                        var userValue = $('.login-int').val();
-                        storage.setItem('username', userValue)
-                        _this.text(data._current_user.display_name);
-                        $('.db').remove();
-                        window.location.reload()
+                    if (!!$('.login-int').val() && !!$('.login-int-a').val()) {
+                    //   TODO: log in user
                     } else if (!$('.login-int').val() && !$('.login-int-a').val()) {
                         $('.userp').css('display', 'block');
                         $('.username').css('display', 'block')
                         $('.login').css('height', '360')
-                    } else if ($('.login-int').val() === data._current_user.display_name && $('.login-int-a').val() !== data._current_user.password) {
+                    } else if ($('.login-int').val() === data._current_user && data._current_user.display_name && $('.login-int-a').val() !== data._current_user.password) {
                         $('.username').css('display', 'none')
                         $('.userp').css('display', 'block')
                         $('.login').css('height', '330')
-                    } else if ($('.login-int-a').val() === data._current_user.password && $('.login-int').val() !== data._current_user.display_name) {
+                    } else if ($('.login-int-a').val() === data._current_user.password && $('.login-int').val() !== data._current_user && data._current_user.display_name) {
                         $('.username').css('display', 'block');
                         $('.userp').css('display', 'none');
                         $('.login').css('height', '330')
-                    } else if ($('.login-int').val() !== data._current_user.display_name && $('.login-int-a').val() === " ") {
+                    } else if ($('.login-int').val() !== data._current_user && data._current_user.display_name && $('.login-int-a').val() === " ") {
                         $('.login').css('height', '360')
-                    } else if ($('.login-int').val() !== data._current_user.display_name && $('.login-int-a').val() !== data._current_user.password) {
+                    } else if ($('.login-int').val() !== data._current_user && data._current_user.display_name && $('.login-int-a').val() !== data._current_user.password) {
                         $('.username').css('display', 'block');
                         $('.userp').css('display', 'block');
                         $('.login').css('height', '360')
@@ -251,7 +242,7 @@ var render = function () {
                         data._current_user.password) {
                         $('.login').css('height', '360')
                     } else {
-                        if ($('.login-int').val() !== data._current_user.display_name) {
+                        if ($('.login-int').val() !== data._current_user && data._current_user.display_name) {
                             $('.username').css('display', 'block')
                             $('.login').css('height', '330')
                         } else if ($('.login-int-a').val() !== data._current_user.password) {
