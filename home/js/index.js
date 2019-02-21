@@ -19,7 +19,7 @@ var render = function () {
             $(this).css('background', `url(${item.img}) no-repeat  center 50px`)
         })
     })
-    $.each(data.date, function () {
+    $.each(data.events, function () {
         $('#date').append(Mustache.render(date_template, this));
     });
 
@@ -38,6 +38,15 @@ var render = function () {
         $('#Amenities_cycle').append(Mustache.render(Amenities, this));
     });
 
+    var CommunityNews = $('#CommunityNews').html()
+    $.each(data.CommunityNews, function () {
+        $('#CommunityNews_cycle').append(Mustache.render(CommunityNews, this));
+    });
+
+    var Amenities_title = $('#Amenities_title').html()
+    $.each(data.Amenities_title, function () {
+        $('#Amenities_title_cycle').append(Mustache.render(Amenities_title, this));
+    });
 
     // Global post render
     _post_render();
@@ -219,7 +228,7 @@ var render = function () {
             $('.login-button').click(function () {
                 if (data._metadata.environment === 'dev') {
                     if (!!$('.login-int').val() && !!$('.login-int-a').val()) {
-                    //   TODO: log in user
+                        //   TODO: log in user
                     } else if (!$('.login-int').val() && !$('.login-int-a').val()) {
                         $('.userp').css('display', 'block');
                         $('.username').css('display', 'block')

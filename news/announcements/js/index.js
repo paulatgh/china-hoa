@@ -14,6 +14,21 @@ var render = function () {
         $('#Logo_cycle').append(Mustache.render(Logo, this));
     });
 
+    var Announcements = $('#Announcements').html();
+    $.each(data.Announcements, function () {
+        $('#Announcements_cycle').append(Mustache.render(Announcements, this));
+    });
+
+    var ImportantAnnouncement = $('#ImportantAnnouncement').html();
+    $.each(data.ImportantAnnouncement, function () {
+        $('#ImportantAnnouncement_cycle').append(Mustache.render(ImportantAnnouncement, this));
+    });
+
+    var add = $('#add').html();
+    $.each(data.add, function () {
+        $('#add_cycle').append(Mustache.render(add, this));
+    });
+
     $('#tabs a').click(function (e) {
         e.preventDefault();
         $('#tabs li').removeClass("current").removeClass("hoverItem");
@@ -51,7 +66,7 @@ var render = function () {
 
 
     $('.logout').click(function () {
-    //    TODO: log out user
+        //    TODO: log out user
     })
 
     $(".btns-language").text(username);

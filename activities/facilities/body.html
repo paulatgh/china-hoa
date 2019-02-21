@@ -27,7 +27,7 @@ border:1px solid rgba(151,151,151,1)">
                 </li>
                 <li>
                     <a href="/aboutus">About us</a>
-                </li>       
+                </li>
             </ul>
             <span class="navline"></span>
         </div>
@@ -47,11 +47,99 @@ border:1px solid rgba(151,151,151,1)">
 
         <div class="w1200 pr">
             <div class="main-left" style="width:100%;height: 100%;">
-
-                <script id="Facilities" type="txt/template">
-                    {{{body}}}
-                </script>
-
+                <h2 id="content_title_cycle">
+                    <script id="content_title" type="txt/template">
+                        {{name}}
+                    </script>
+                </h2>
+                <div id="entertainment_facilities_cycle" style="padding:0 140px;box-sizing:border-box;font-size:26px;font-family:SourceHanSansSC-Normal;margin-bottom:90px;font-weight:400;color:rgba(57,61,68,1);	line-height:34px;">
+                    <script id="entertainment_facilities">
+                        {{content}}
+                    </script>
+                </div>
+                <div class="Carousel">
+                    <div class="Carousel_tips" id="img_cycle">
+                        <script id="img" type="txt/template">
+                            {{name}}
+                        </script>
+                    </div>
+                    <div class="Carousel_img swiper-container">
+                        <ul class="swiper-wrapper" style="height: 280px;width:20000px;" id="bg_img_cycle">
+                            <script id="bg_img" type="txt/template">
+                                <li class="swiper-slide" style=" background: url('{{imgurl}}') no-repeat;background-size:100%">
+                                </li>
+                            </script>
+                        </ul>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+                <div class="Carousel">
+                    <div class="Carousel_tips" id="clubhouse_cycle">
+                        <script id="clubhouse" type="txt/template">
+                            {{title}}                            
+                        </script>
+                    </div>
+                    <div id="clubhouseContent_cycle" style="padding:40px 140px 0;box-sizing:border-box;font-size:26px;font-family:SourceHanSansSC-Normal;margin-bottom:120px;font-weight:400;color:rgba(57,61,68,1);	line-height:34px;">
+                        <script id="clubhouseContent" type="txt/template">
+                            <div>
+                                {{content_One}}
+                                </div>
+                                <p>{{content_Tow}}</p>
+                                <p>
+                                   {{content_three}}
+                                </p>
+                                <p>
+                                    {{content_fore}}
+                                </p>
+                                <div>
+                                  {{Get_information_table}}
+                                </div>
+                                <div class="Information_desc">
+                                    <h3>{{Important_Information}}</h3>
+                                    <ul>
+                                        <li>{{Location}}</li>
+                                        <li>{{Hours}}</li>
+                                        <li>{{Phone}}</li>
+                                        <li>{{Costs}}</li>
+                                    </ul>
+                                </div>
+                        </script>
+                    </div>
+                </div>
+                <div class="Carousel">
+                    <div class="Carousel_tips" style="border: 0;width: 250px;" id="entertainmentProject_cycle">
+                        <script id="entertainmentProject" type="txt/template">
+                            {{name}}
+                            <hr style="background:#333333;height: 1px;margin-top: 14px;width: 44px" />
+                        </script>
+                    </div>
+                    <div class="Carousel_img swiper-container" style="margin-bottom: 40px">
+                        <ul class="swiper-wrapper" style="height: 280px;width:20000px;" id="bg_img_second_cycle">
+                            <script id="bg_img_second" type="txt/template">
+                                <li class="swiper-slide" style="background:url('{{imgurl}}') no-repeat;background-size:100%">
+                            </li>
+                            </script>
+                        </ul>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <div id="entertainmentProject_content_cycle" style="padding:0 140px;box-sizing:border-box;font-size:26px;font-family:SourceHanSansSC-Normal;margin-bottom:120px;font-weight:400;color:rgba(57,61,68,1);	line-height:34px;">
+                        <script id="entertainmentProject_content" type="txt/template">
+                            <div>{{content}}</div>
+                        <p>{{prompt}}</p>
+                        <div class="Information_desc">
+                            <h3>{{importantInformation}}</h3>
+                            <ul>
+                                <li>{{Location}}</li>
+                                <li>{{Hours}}</li>
+                                <li>{{Phone}}</li>
+                                <li>{{Costs}}</li>
+                            </ul>
+                        </div>
+                        </script>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -64,4 +152,3 @@ border:1px solid rgba(151,151,151,1)">
     </div>
     <div class="clearfix"></div>
 </div>
-

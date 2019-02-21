@@ -5,6 +5,13 @@ var render = function () {
         $('#calendar_events').append(Mustache.render(event_template, this));
     });
 
+    var list_category = $('#list_category').html();
+    $.each(data.list_category, function () {
+        $('#list_category_cycle').append(Mustache.render(list_category, this));
+    });
+
+
+
     // Global post render
     _post_render();
 

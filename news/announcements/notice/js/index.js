@@ -1,11 +1,20 @@
 var render = function () {
-    var content_template = $('#notice').html();
-    Mustache.parse(content_template);
-    $('#notice').after(Mustache.render(content_template, data));
     var Logo = $('#Logo').html();
     $.each(data.Logo, function () {
         $('#Logo_cycle').append(Mustache.render(Logo, this));
     });
+
+    var img = $('#img').html();
+    $.each(data.img, function () {
+        $('#img_cycle').append(Mustache.render(img, this));
+    });
+
+
+    var article = $('#article').html();
+    $.each(data.article, function () {
+        $('#article_cycle').append(Mustache.render(article, this));
+    });
+
     // Global post render
     _post_render();
 

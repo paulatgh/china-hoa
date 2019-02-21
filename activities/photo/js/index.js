@@ -5,6 +5,17 @@ var render = function () {
         $('#events_photo').append(Mustache.render(event_template, this));
     });
 
+    var photo_title = $('#photo_title').html();
+    $.each(data.photo_title, function () {
+        $('#photo_title_cycle').append(Mustache.render(photo_title, this));
+    });
+
+    var admin_permissions = $('#admin_permissions').html();
+    $.each(data.admin_permissions, function () {
+        $('#admin_permissions_cycle').append(Mustache.render(admin_permissions, this));
+    });
+
+
 
     // Global post render
     _post_render();
