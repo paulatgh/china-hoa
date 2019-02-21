@@ -46,8 +46,8 @@ border:1px solid rgba(151,151,151,1)">
             <li><span rel="noopener noreferrer" style="color:rgba(30,130,23,1)"> > </span></li>
             <li><a href="#" rel="noopener noreferrer">Add New Events</a></li>
         </ul>
-        <div id="content">  
-            <div class="main-center"> 
+        <div id="content">
+            <div class="main-center">
                 <tr>
                     <td>
                         <font size="2" face="Verdana, Arial, Helvetica" color="#222311">
@@ -63,14 +63,476 @@ border:1px solid rgba(151,151,151,1)">
                             </table>
                         </font>
                     </td>
-                </tr>       
-                <script id="add" type="txt/template">
-                    {{{body}}}
-                </script>  
-            </div>     
+                </tr>
+                <form method="post" enctype="multipart/form-data" name="daForm">
+                    <table class="std-table" border="3" width="90%" cellspacing="0" bordercolor="#6AA666">
+                        <tr>
+                            <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
+                                <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;&nbsp;Choose a
+                                    Category for this Event</font>
+                            </td>
+                            <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
+                                <font face="Verdana, Arial, Helvetica" size="2" color="#222311">
+                                    <select size="1" name="event_category" style="font-family: Tahoma; font-size: 11">
+                                        <option value="2">
+                                            Clubhouse Rental
+                                        </option>
+                                        <option value="3">
+                                            DAO Annual Holiday party
+                                        </option>
+                                        <option value="1">
+                                            General
+                                        </option>a
+                                    </select>
+                                </font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
+                                <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp; Event Start Date
+                                    <font size="-1">(mm/dd/yyyy)</font>:</font>
+                            </td>
+                            <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6"><input type="text" name="event_start_dt"
+                                    size="10" maxlength="10" style="font-family: Tahoma; font-size: 11"></td>
+                        </tr>
+                        <tr>
+                            <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
+                                <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp; Event End Date
+                                    <font size="-1">(mm/dd/yyyy)</font>:</font>
+                            </td>
+                            <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6"><input type="text" name="event_end_dt"
+                                    size="10" maxlength="10" style="font-family: Tahoma; font-size: 11">
+                                <font face="Verdana, Arial, Helvetica" size="2" color="#222311"> (use only for events
+                                    that
+                                    span across multiple consecutive days)</font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
+                                <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp; Event Start
+                                    Time:</font>
+                            </td>
+                            <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
+                                <select size="1" name="start_time_hour" style="font-family: Tahoma; font-size: 11">
+                                    <option value="">&nbsp;</option>
+
+                                    <option value="1">1</option>
+
+                                    <option value="2">2</option>
+
+                                    <option value="3">3</option>
+
+                                    <option value="4">4</option>
+
+                                    <option value="5">5</option>
+
+                                    <option value="6">6</option>
+
+                                    <option value="7">7</option>
+
+                                    <option value="8">8</option>
+
+                                    <option value="9">9</option>
+
+                                    <option value="10">10</option>
+
+                                    <option value="11">11</option>
+
+                                    <option value="12">12</option>
+
+                                </select>:
+                                <select size="1" name="start_time_minute" style="font-family: Tahoma; font-size: 11">
+                                    <option value="">&nbsp;</option>
+
+                                    <option value="00">00</option>
+
+                                    <option value="05">05</option>
+
+                                    <option value="10">10</option>
+
+                                    <option value="15">15</option>
+
+                                    <option value="20">20</option>
+
+                                    <option value="25">25</option>
+
+                                    <option value="30">30</option>
+
+                                    <option value="35">35</option>
+
+                                    <option value="40">40</option>
+
+                                    <option value="45">45</option>
+
+                                    <option value="50">50</option>
+
+                                    <option value="55">55</option>
+
+                                </select>&nbsp;
+                                <select size="1" name="start_time_AMPM" style="font-family: Tahoma; font-size: 11">
+                                    <option value="">&nbsp;</option>
+                                    <option value="AM">AM</option>
+                                    <option value="PM">PM</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
+                                <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp; Event End Time:</font>
+                            </td>
+                            <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
+                                <select size="1" name="end_time_hour" style="font-family: Tahoma; font-size: 11">
+                                    <option value="">&nbsp;</option>
+
+                                    <option value="1">1</option>
+
+                                    <option value="2">2</option>
+
+                                    <option value="3">3</option>
+
+                                    <option value="4">4</option>
+
+                                    <option value="5">5</option>
+
+                                    <option value="6">6</option>
+
+                                    <option value="7">7</option>
+
+                                    <option value="8">8</option>
+
+                                    <option value="9">9</option>
+
+                                    <option value="10">10</option>
+
+                                    <option value="11">11</option>
+
+                                    <option value="12">12</option>
+
+                                </select>:
+                                <select size="1" name="end_time_minute" style="font-family: Tahoma; font-size: 11">
+                                    <option value="">&nbsp;</option>
+
+                                    <option value="00">00</option>
+
+                                    <option value="05">05</option>
+
+                                    <option value="10">10</option>
+
+                                    <option value="15">15</option>
+
+                                    <option value="20">20</option>
+
+                                    <option value="25">25</option>
+
+                                    <option value="30">30</option>
+
+                                    <option value="35">35</option>
+
+                                    <option value="40">40</option>
+
+                                    <option value="45">45</option>
+
+                                    <option value="50">50</option>
+
+                                    <option value="55">55</option>
+
+                                </select>&nbsp;
+                                <select size="1" name="end_time_AMPM" style="font-family: Tahoma; font-size: 11">
+                                    <option value="">&nbsp;</option>
+                                    <option value="AM">AM</option>
+                                    <option value="PM">PM</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
+                                <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp; Location:</font>
+                            </td>
+                            <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6"><input type="text" name="location"
+                                    size="50" maxlength="50" style="font-family: Tahoma; font-size: 11"></td>
+                        </tr>
+                        <tr>
+                            <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
+                                <font face="Verdana, Arial, Helvetica" size="2" color="#222311">To have this event
+                                    automatically recur in the Calendar, specify the frequency to the right; if not,
+                                    select
+                                    "One Occurrence"<br>&nbsp;<br>&nbsp;<br>&nbsp;<br></font>
+                            </td>
+                            <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
+                                <font face="Verdana, Arial, Helvetica" size="2" color="#222311">
+                                    <input type="radio" value="none" CHECKED name="recur_type" style="font-family: Tahoma; font-size: 11">One
+                                    Occurrence<br>
+                                    <input type="radio" value="daily" name="recur_type" style="font-family: Tahoma; font-size: 11">
+                                    Daily - every <select size="1" name="daily_days" style="font-family: Tahoma; font-size: 11">
+                                        <option value="1">Day</option>
+                                        <option value="2">Weekday</option>
+                                        <option value="3">Weekend Day</option>
+                                    </select><br>
+                                    <input type="radio" value="weekly" name="recur_type" style="font-family: Tahoma; font-size: 11">
+                                    Weekly - every <select size="1" name="weekly_weeks" style="font-family: Tahoma; font-size: 11">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                    weeks on <select size="1" name="weekly_day" style="font-family: Tahoma; font-size: 11">
+                                        <option value="1">Sunday</option>
+                                        <option value="2">Monday</option>
+                                        <option value="3">Tuesday</option>
+                                        <option value="4">Wednesday</option>
+                                        <option value="5">Thursday</option>
+                                        <option value="6">Friday</option>
+                                        <option value="7">Saturday</option>
+                                    </select><br>
+                                    <input type="radio" value="monthly1" name="recur_type" style="font-family: Tahoma; font-size: 11">
+                                    Monthly on day <input type="text" name="monthly_day1" value="1" size="2" maxlength="2"
+                                        style="font-family: Tahoma; font-size: 11">
+                                    of every <input type="text" name="monthly_months1" size="2" value="1" maxlength="2"
+                                        style="font-family: Tahoma; font-size: 11">
+                                    month(s)<br>
+                                    <input type="radio" value="monthly2" name="recur_type" style="font-family: Tahoma; font-size: 11">
+                                    Monthly on the <select size="1" name="monthly_week" style="font-family: Tahoma; font-size: 11">
+                                        <option value="1">First</option>
+                                        <option value="2">Second</option>
+                                        <option value="3">Third</option>
+                                        <option value="4">Fourth</option>
+                                        <option value="5">Last</option>
+                                    </select>
+                                    <select size="1" name="monthly_day2" style="font-family: Tahoma; font-size: 11">
+                                        <option value="1">Sunday</option>
+                                        <option value="2">Monday</option>
+                                        <option value="3">Tuesday</option>
+                                        <option value="4">Wednesday</option>
+                                        <option value="5">Thursday</option>
+                                        <option value="6">Friday</option>
+                                        <option value="7">Saturday</option>
+                                    </select>
+                                    of every <input type="text" name="monthly_months2" size="2" value="1" maxlength="2"
+                                        style="font-family: Tahoma; font-size: 11">
+                                    month(s)<br>
+                                    Total of <input type="text" name="occurrences" size="2" value="1" maxlength="3"
+                                        style="font-family: Tahoma; font-size: 11">
+                                    Occurrences<br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
+                                <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp; Short
+                                    Description:</font>
+                            </td>
+                            <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6"><input type="text" name="short_desc"
+                                    size="40" maxlength="50" style="font-family: Tahoma; font-size: 11"></td>
+                        </tr>
+                        <tr>
+                            <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
+                                <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp; Full
+                                    Description:</font>
+                            </td>
+                            <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6"><textarea wrap="virtual" name="full_desc"
+                                    cols="50" rows="5" style="font-family: Tahoma; font-size: 11"></textarea></td>
+                        </tr>
+
+                        <input type="hidden" name="spouse_flag" value="0">
+
+                        <tr>
+                            <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
+                                <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp; Allow RSVP?:</font>
+                            </td>
+                            <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
+                                <font face="Verdana, Arial, Helvetica" size="2" color="#222311"><input type="checkbox"
+                                        value="1" name="rsvp" style="font-family: Tahoma; font-size: 11"> - Email to
+                                    use:
+                                    <input type="text" name="rsvp_email" size="40" maxlength="50" style="font-family: Tahoma; font-size: 11"></font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
+                                <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp; Picture or
+                                    Document
+                                    File:</font>
+                            </td>
+                            <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6"><input TYPE="FILE" NAME="image_link"
+                                    size="30" maxlength="200" style="font-family: Tahoma; font-size: 11"></td>
+                        </tr>
+                        <tr>
+                            <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
+                                <font face="Verdana, Arial, Helvetica" size="2" color="#222311">
+                                    <hr>To display a link to another web site with more information about this event,
+                                    enter
+                                    the web site address here.</font>
+                            </td>
+                            <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6"><input type="text" value="" name="website_link"
+                                    size="30" maxlength="100" style="font-family: Tahoma; font-size: 11"></td>
+                        </tr>
+                        <tr>
+                            <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
+                                <font face="Verdana, Arial, Helvetica" size="2" color="#222311">
+                                    <hr>If you wish to have an Announcement automatically posted for this event, choose
+                                    an
+                                    Announcement category to the right. If not, select "None"</font>
+                            </td>
+                            <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
+                                <font face="Verdana, Arial, Helvetica" size="2" color="#222311">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <select size="1" name="announcement_category" style="font-family: Tahoma; font-size: 11">
+                                                    <option value="0">None
+                                                    <option value="2">Board Announcements
+                                                    <option value="7">Clubhouse
+                                                    <option value="8">DAO Emergency Response Committee
+                                                    <option value="6">From the Web Administrator
+                                                    <option value="10">Maintenance
+                                                    <option value="9">Parking
+                                                    <option value="5">Recent eMail Bulletins
+                                                    <option value="3">Social Events
+                                                    <option value="11">Various Meetings
+                                                </select>
+                                            </td>
+                                            <td>
+                                                Announcement Date: <br><select size="1" name="announcement_postdate"
+                                                    style="font-family: Tahoma; font-size: 11">
+                                                    <option value="0">Post Today</option>
+                                                    <option value="-7">Post 7 Days before Event</option>
+                                                    <option value="-15">Post 15 Days before Event</option>
+                                                    <option value="-30">Post 30 Days before Event</option>
+                                                    <option value="-45">Post 45 Days before Event</option>
+                                                    <option value="-60">Post 60 Days before Event</option>
+                                                </select></td>
+                                        </tr>
+                                    </table>
+                                </font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
+                                <font face="Verdana, Arial, Helvetica" size="2" color="#222311">
+                                    <hr>If you wish to have an eMail Bulletin automatically sent out for this event,
+                                    choose
+                                    a Bulletin Category to the right. If not, select "None"</font>
+                            </td>
+                            <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
+                                <font face="Verdana, Arial, Helvetica" size="2" color="#222311">
+
+                                    <select size="1" name="maillist_id" style="font-family: Tahoma; font-size: 11">
+                                        <option value="0">None</option>
+                                        <option value="-99">** Send to All **</option>
+
+                                        <option value="7">
+                                            Clubhouse Committee eMail Bulletin Test
+                                        </option>
+
+                                        <option value="6">
+                                            Events Committee eMail Bulletin Test
+                                        </option>
+
+                                        <option value="2">
+                                            Web Admin eMail Bulletin Test
+                                        </option>
+
+                                    </select>
+
+                                </font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
+                                <font face="Verdana, Arial, Helvetica" size="2" color="#222311">Email Subject:</font>
+                            </td>
+                            <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6"><input type="text" name="emailSubject"
+                                    value="" size="40" maxlength="50" style="font-family: Tahoma; font-size: 11"></td>
+                        </tr>
+
+
+                        <tr>
+                            <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
+                                <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp; Check here to
+                                    send
+                                    Login and Password information along with the eMail Bulletin:</font>
+                            </td>
+                            <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6"><input name="send_login" type="checkbox"
+                                    value="1"></td>
+                        </tr>
+
+                        <tr>
+                            <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
+                                <font face="Verdana, Arial, Helvetica" size="2" color="#222311">
+                                    <hr>You can have a link to an existing eForm in your Event by selecting an eForm to
+                                    the
+                                    right and entering text for the hyperlink below.</font>
+                            </td>
+                            <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
+                                <font face="Verdana, Arial, Helvetica" size="2" color="#222311">
+
+                                    <select size="1" name="eform_id" style="font-family: Tahoma; font-size: 11">
+                                        <option value="0">None</option>
+
+                                        <option value="36">
+
+                                        </option>
+
+                                        <option value="34">
+
+                                        </option>
+
+                                        <option value="33">
+
+                                        </option>
+
+                                        <option value="6">
+
+                                        </option>
+
+                                        <option value="20">
+                                            Architectural Application
+                                        </option>
+
+                                        <option value="5">
+                                            Clubhouse Reservation Request Form
+                                        </option>
+
+                                        <option value="11">
+                                            Earthquake/Disaster Program
+                                        </option>
+
+                                        <option value="19">
+                                            Electronic Communication Consent Form
+                                        </option>
+
+                                        <option value="29">
+                                            RSVP for DAO End of Summer Party
+                                        </option>
+
+                                        <option value="23">
+                                            RSVP for DAO Holiday Party
+                                        </option>
+
+                                        <option value="26">
+                                            RSVP for Easter Brunch
+                                        </option>
+
+                                    </select>
+                                </font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="30%" bgcolor="#f1e8c6" bordercolor="#f1e8c6">
+                                <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;Text for eForm
+                                    Hyperlink:</font>
+                            </td>
+                            <td width="60%" bgcolor="#f1e8c6" bordercolor="#f1e8c6"><input type="text" name="eform_hyperlink_text"
+                                    size="40" maxlength="50" style="font-family: Tahoma; font-size: 11"></td>
+                        </tr>
+                    </table>
+                </form>
+                <p class="p-input">
+                    <input type="submit" name="action" value="Submit">
+                    <input type="submit" onclick="location.href='/activities/calendar/'" value="Cancel">
+                </p> `
+            </div>
         </div>
 
-       
+
     </div>
 </div>
 <!-- 底部 -->

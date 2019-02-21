@@ -1,7 +1,7 @@
 var render = function () {
-    var content_template = $('#add').html();
-    Mustache.parse(content_template);
-    $('#add').after(Mustache.render(content_template, data));
+    // var content_template = $('#add').html();
+    // Mustache.parse(content_template);
+    // $('#add').after(Mustache.render(content_template, data));
 
     var Logo = $('#Logo').html();
     $.each(data.Logo, function () {
