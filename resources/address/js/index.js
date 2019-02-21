@@ -11,7 +11,7 @@ var render = function () {
     var username3 = $('#username3-C').html();
     var AccordingToTheStreet = $('#AccordingToTheStreet').html();
     var userInformation = $('#userInformation').html();
-
+    
 
     Mustache.parse(event_template);
     var a = []
@@ -63,7 +63,10 @@ var render = function () {
         $('#userInformation_cycle').append(Mustache.render(userInformation, this));
     });
 
-
+    var category = $('#category').html();
+    $.each(data.AddressBookCategories, function () {
+        $('#address').append(Mustache.render(category, this));
+    });
     // Global post render
     _post_render();
 

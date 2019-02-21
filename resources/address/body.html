@@ -72,12 +72,14 @@
                             <li>{{title}} ({{number}})</li>
                         </script>
                     </ul>
-                    <div class="address_categories">
-                        <h4>Address Book Categories</h4>
+                    <div class="address_categories" id="address">
+                        <script id="category" type="txt/template">
+                        <h4>{{title}}</h4>
                         <ul>
-                            <li>All(224)</li>
-                            <li>Resident(224)</li>
+                            <li>{{list}}</li>
+                            <li>{{secondlist}}</li>
                         </ul>
+                    </script>
                     </div>
                 </div>
                 <div class="address_book_right">
