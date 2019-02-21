@@ -148,13 +148,16 @@ function submitDynamicForm(action, method, values) {
         action: action,
         method: method
     });
-
-    // add auth token
-    form.append($('<input/>', {
+    
+    
+    if(document.querySelector('meta[name=csrf-token]')){
+      // add auth token
+      form.append($('<input/>', {
         type: 'hidden',
         name: 'authenticity_token',
         value: document.querySelector('meta[name=csrf-token]').attributes.content.value
-    }));
+      }));
+    }
 
     // add data
     $.each(values, function() {
