@@ -1,7 +1,7 @@
 var render = function () {
-    var event_template = $('#add').html();
-    Mustache.parse(event_template);
-    $('#add').after(Mustache.render(event_template, data));
+    // var event_template = $('#add').html();
+    // Mustache.parse(event_template);
+    // $('#add').after(Mustache.render(event_template, data));
 
     // Global post render
     _post_render();
