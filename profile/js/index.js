@@ -1,7 +1,8 @@
 var render = function () {
-    var content_template = $('#saveFile').html();
-    Mustache.parse(content_template);
-    $('#saveFile').after(Mustache.render(content_template, data));
+    // var content_template = $('#save_profile').html();
+    // Mustache.parse(content_template);
+    // $('#save_profile').after(Mustache.render(content_template, data));
+
     var Logo = $('#Logo').html();
     $.each(data.Logo, function () {
         $('#Logo_cycle').append(Mustache.render(Logo, this));

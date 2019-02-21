@@ -1,52 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- footer -->
+<div class="header" style="box-shadow:0px 2px 7px 0px rgba(0,0,0,0.5);
+border:1px solid rgba(151,151,151,1)">
+    <div class="w1200">
+        <a class="logo" href="/home" id="Logo_cycle">
+            <script id="Logo" type="txt/template">
+                <img src="{{url}}">
+                    {{title}}
+                </script>
+        </a>
+        <input type="text" placeholder="Search..." style="width: 188px;height: 37px;position: relative;top: 30px;left: 540px;border: solid 1px #393D44;padding-left: 10px;">
+        <div class="btns clearfix">
+            <img src="/community/img/Shape.png" alt="Shape" style="position: relative;left: -140px;top: 40px;z-index: 100000;">
+            <img src="/community/img/dropdown.png" alt="dropdown" style="position: relative;left: -50px;top: 36px;z-index: 100000;">
+            <a class="btns-search" href="javascript:;"> </a>
+            <a class="btns-language" href="javascript:;"></a>
+            <div class="langOv">
+                <div class="profile">
+                    <a href="/profile" style="border-bottom: 1px solid white;width: 100%;margin-left: -1px">My
+                        Profile</a>
+                    <a href="javascript:;" class="logout">Log Out</a>
+                </div>
+            </div>
+        </div>
+        <div class="nav">
+            <ul>
+                <li class="curr">
+                    <a class="on" href="/home">Home</a>
+                </li>
+                <li>
+                    <a href="/aboutus">About us</a>
+                </li>
+                <!-- <li>
+                <a href="downloadFile.html">Docs</a>
+            </li> -->
 
-<head>
-    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <link rel="shortcut icon" type="image/ico" href="/community/img/favicon.ico" />
-
-    <title>De Anza Oaks</title>
-    <link rel="stylesheet" href="/global.css">
-    <link rel="stylesheet" href="css/index.css">
-
-    <script src="https://cdn.bootcss.com/jquery/3.3.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
-
-    <!-- Links as currently hosted by http-server -->
-
-    <script src="/js/99_global.js"></script>
-
-</head>
-
-<body>
-    <div id="content">
-
+            </ul>
+            <span class="navline"></span>
+        </div>
     </div>
-    <script>
-        var data = {
-            _current_user: {
-                id: '1234',
-                email: 'test@example.com',
-                display_name: 'Laurie01',
-                first_name: 'Laurie',
-                last_name: 'Williams',
-                is_admin: true
-            },
-            _metadata: {
-                root_url: 'http://127.0.0.1:8080',
-                page_path: '/home',
-                assets_path: '/home',
-                site_name: 'De Anza Oaks',
-                environment: 'dev',
-            },
-            Logo: [{
-                id: 1,
-                url: "/community/img/Combined Shape.png",
-                title: "De Anza Oaks"
-            }],
-            body: `  <table style="background-color: #ffffff; margin-top:20px;margin-bottom: 50px;" bborder="0" width="100%"
+
+</div>
+
+<!-- main -->
+<div class="investor clearfix">
+    <div class="w1200">
+        <table style="background-color: #ffffff; margin-top:20px;margin-bottom: 50px;" bborder="0" width="100%"
             cellpadding="10" cellspacing="0">
             <tbody>
                 <tr>
@@ -1165,8 +1163,7 @@
                                                                         <tbody>
                                                                             <tr>
                                                                                 <td width="10%" align="center">
-                                                                                    <input type="submit" 
-                                                                                        value="Save Changes">
+                                                                                    <input type="submit" value="Save Changes">
                                                                                 </td>
                                                                             </tr>
                                                                         </tbody>
@@ -1190,18 +1187,12 @@
             </tbody>
         </table>
 
-        <div class="clearfix"></div>`
-        }
-    </script>
-    <script type="text/javascript" src="js/index.js"></script>
-    <script>
-        // This script block stays in this wrapper html file
-        $(function () {
-            $('#content').load("body.html", function () {
-                render();
-            });
-        });
-    </script>
-</body>
-
-</html>
+        <div class="clearfix"></div>
+    </div>
+</div>
+<!-- footer -->
+<div class="footer">
+    <p>
+        Copyright © 2019 Tellus, Inc. All Rights Reserved.
+    </p>
+</div>
