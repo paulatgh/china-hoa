@@ -26,26 +26,53 @@
   <script>
     var data = {
       _current_user: {
-                id: '1234',
-                email: 'test@example.com',
-                display_name: 'Laurie01',
-                first_name: 'Laurie',
-                last_name: 'Williams',
-                is_admin: true
-            },
+        id: '1234',
+        email: 'test@example.com',
+        display_name: 'Laurie01',
+        first_name: 'Laurie',
+        last_name: 'Williams',
+        is_admin: true
+      },
       _metadata: {
-                root_url: 'http://127.0.0.1:8080',
-                page_path: '/home',
-                assets_path: '/home',
-                site_name: 'De Anza Oaks',
-                environment: 'dev',
-            },
+        root_url: 'http://127.0.0.1:8080',
+        page_path: '/home',
+        assets_path: '/home',
+        site_name: 'De Anza Oaks',
+        environment: 'dev',
+      },
       Logo: [{
-                id: 1,
-                url: "/community/img/Combined Shape.png",
-                title: "De Anza Oaks"
-            }],
-
+        id: 1,
+        url: "/community/img/Combined Shape.png",
+        title: "De Anza Oaks"
+      }],
+      theTitle: [{
+        id: 1,
+        title: 'Send an Email Bulletin'
+      }],
+      emailButton: [{
+          id: 1,
+          title: 'Send HTML',
+          link: '/news/bulletins/page'
+        },
+        {
+          id: 2,
+          title: 'Send Plain Text',
+          link: '/news/bulletins/text'
+        },
+        {
+          id: 3,
+          title: 'Check Subscribers',
+          link: '/news/bulletins/subscribers'
+        }, {
+          id: 4,
+          title: 'Edit Custom Templates',
+          link: '/news/bulletins/templates'
+        }
+      ],
+      template: [{
+        id: 1,
+        title: 'NEWEST EMAIL BULLETIN TEMPLATES'
+      }],
       bulletins: [{
           id: 1,
           img: "/community/img/water-main-repairs-thb.jpg",
@@ -136,8 +163,8 @@
           img: "/community/img/monthly-newsletters-thb.jpg",
           title: "Monthly Newsletters"
         }
-        
-       
+
+
       ]
     }
   </script>

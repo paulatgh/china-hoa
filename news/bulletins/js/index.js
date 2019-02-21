@@ -8,6 +8,23 @@ var render = function () {
     $.each(data.Logo, function () {
         $('#Logo_cycle').append(Mustache.render(Logo, this));
     });
+
+    var the_title = $('#the_title').html();
+    $.each(data.theTitle, function () {
+        $('#the_title_cycle').append(Mustache.render(the_title, this));
+    });
+
+    var emailButton = $('#emailButton').html();
+    $.each(data.emailButton, function () {
+        $('#emailButton_cycle').append(Mustache.render(emailButton, this));
+    });
+
+    var template = $('#template').html();
+    $.each(data.template, function () {
+        $('#template_cycle').append(Mustache.render(template, this));
+    });
+
+
     // Global post render
     _post_render();
 

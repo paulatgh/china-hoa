@@ -1,4 +1,4 @@
-<!-- 头部 -->
+<!-- header -->
 <div class="header" style="box-shadow:0px 2px 7px 0px rgba(0,0,0,0.5);
  border:1px solid rgba(151,151,151,1);">
     <div class="w1200" style="height: 0">
@@ -35,7 +35,7 @@
     </div>
 </div>
 
-<!-- 主体 -->
+<!-- main body -->
 <div class="main">
     <div class="main-breadcrumb" style="width: 1200px;margin: 0 auto">
         <ul class="breadcrumb" style="float: left">
@@ -47,10 +47,16 @@
         </ul>
     </div>
     <div class="main-center">
-        <p class="photo-albums">Photo Albums</p>
-        <div style="display: flex">
-            <div class="address_book_click"><a href="./add" style="color: white">Add A New Album</a></div>
-            <div class="address_book_right">Upload photos</div>
+        <p class="photo-albums" id="photo_title_cycle">
+            <script id="photo_title" type="txt/template">
+                {{name}}
+        </script>
+        </p>
+        <div style="display: flex" id="admin_permissions_cycle">
+            <script id="admin_permissions" type="txt/template">
+                <div class="address_book_click"><a href="{{function_One_link}}" style="color: white">{{function_One}}</a></div>
+                <div class="address_book_right">{{function_Two}}</div>
+            </script>
         </div>
         <div class="content-1" id="events_photo">
             <script id="event_template" type="txt/template">
@@ -81,7 +87,7 @@
             </div>
         </div>
     </div>
-    <!-- 底部 -->
+    <!-- footer -->
     <div class="footer">
         <p>
             Copyright © 2019 Tellus, Inc. All Rights Reserved.

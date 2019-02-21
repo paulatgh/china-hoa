@@ -55,19 +55,25 @@ border:1px solid rgba(151,151,151,1);">
     </div>
 
     <div class="main-center">
-        <p class="photo-albums">Send an Email Bulletin</p>
-        <div class="address_book_click">
-            <button><a href="/news/bulletins/page">Send HTML</a></button>
-            <button><a href="/news/bulletins/text">Send Plain Text</a></button>
-
-            <button><a href="/news/bulletins/subscribers">Check Subscribers</a></button>
-            <button><a href="/news/bulletins/templates">Edit Custom Templates</a></button>
+        <p class="photo-albums" id="the_title_cycle">
+            <script id="the_title" type="txt/template">
+                {{title}}
+    </script>
+        </p>
+        <div class="address_book_click" id="emailButton_cycle">
+            <script id="emailButton" type="txt/template">
+                <button><a href="{{link}}">{{title}}</a></button>
+        </script>
         </div>
 
         <div class="content-1">
 
             <div class="choose">
-                <p class="newest">NEWEST EMAIL BULLETIN TEMPLATES</p>
+                <p class="newest" id="template_cycle">
+                    <script id="template" type="txt/template">
+                        {{title}}
+                </script>
+                </p>
                 <div class="search-click">
                     <div class="search">
                         <input type="search" placeholder="Search..." style="padding-left:10px">

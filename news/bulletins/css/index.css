@@ -42,7 +42,7 @@
     display: none;
 }
 
-.address_book_click button:nth-child(1) {
+.address_book_click button:nth-child(2) {
     width: 117px;
     height: 30px;
     background: rgba(255, 255, 255, 1);
@@ -52,7 +52,7 @@
 
 }
 
-.address_book_click button:nth-child(2) {
+.address_book_click button:nth-child(3) {
     width: 150px;
     height: 30px;
     background: rgba(255, 255, 255, 1);
@@ -64,7 +64,7 @@
     margin: 0 20px;
 }
 
-.address_book_click button:nth-child(3) {
+.address_book_click button:nth-child(4) {
     width: 180px;
     height: 30px;
     background: rgba(255, 255, 255, 1);
@@ -76,7 +76,7 @@
 
 }
 
-.address_book_click button:nth-child(4) {
+.address_book_click button:nth-child(5) {
     width: 200px;
     height: 30px;
     background: rgba(255, 255, 255, 1);
@@ -94,9 +94,6 @@
     color: rgba(53, 149, 50, 1);
 }
 
-.address_book_click:hover{
-    cursor: pointer;
-}
 .photo-albums {
     height: 41px;
     font-size: 24px;
@@ -109,7 +106,7 @@
 }
 
 .newest {
-    width:40%; 
+    width: 40%;
     height: 30px;
     font-size: 22px;
     font-family: OpenSans-Bold;
@@ -137,15 +134,15 @@
     width: 22%;
     height: 40px;
     /* border: solid 1px; */
-    margin:16px 0;
-    
-    
+    margin: 16px 0;
+
+
 }
 
 .search {
     position: relative;
     width: 100%;
-    right:90px;
+    right: 90px;
 }
 
 .search_img {
@@ -170,7 +167,7 @@
 }
 
 .address_book_right {
-   
+
     width: 1152px;
     height: 910px;
     box-sizing: border-box;
@@ -248,7 +245,7 @@
     height: 188px;
     border: solid 1px white;
     margin-top: 40px;
-  
+
 }
 
 .content-img p {

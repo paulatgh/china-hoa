@@ -231,9 +231,11 @@ body {
 }
 
 .div-pa {
+    margin: auto;
     text-align: center;
     line-height: 50px;
     font-size: 16px;
     color: rgba(57, 61, 68, 1);
     font-weight: 400;
+    width: 700px;
 }

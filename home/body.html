@@ -53,8 +53,11 @@
         <div class="w1200 pr">
             <div class="main-left" style="display: flex;justify-content: space-between;width: 100%;margin-top: 10px">
                 <div class="main-left-content" style="padding: 30px;box-sizing: border-box">
-                    <p style="font-size: 20px;font-weight:600;color: black;margin-top: 20px">WHAT'S NEW AT DE ANZA
-                        OAKS</p>
+                    <p style="font-size: 20px;font-weight:600;color: black;margin-top: 20px" id="CommunityNews_cycle">
+                        <script id="CommunityNews" type="txt/template">
+                            {{title}}
+                        </script>
+                    </p>
                     <ul style="margin-top:20px;" id="events_photo">
                         <script id="event_template" type="txt/template">
                             <li class="main-left-content-list" >
@@ -86,8 +89,11 @@
         <div class="w1200 pr">
             <div class="main-left" style="display: flex;justify-content: space-between;width: 100%;">
                 <div class="main-left-content swiper-container jump" data="./amenities" style="height: 316px; box-sizing: border-box;overflow: hidden;position: relative;cursor: pointer;">
-                    <div style="color: #1E1E1E;font-size: 16px;line-height:41px;height:41px;font-weight: 400">
-                        Amenities</div>
+                    <div id="Amenities_title_cycle" style="color: #1E1E1E;font-size: 16px;line-height:41px;height:41px;font-weight: 400">
+                        <script id="Amenities_title" type="txt/template">
+                            {{title}}
+                        </script>
+                    </div>
                     <ul id="Amenities_cycle" class="Carousel swiper-wrapper" style="height: 280px;width:5000px;">
                         <script id="Amenities" type="txt/template">
                             <li class="swiper-slide" style="background: url('{{imgUrl}}') no-repeat; background-size: cover;">
@@ -101,7 +107,6 @@
                         <span style="background: #359532"></span>
                         <span></span>
                         <span></span>
-
                     </div>
                 </div>
                 <div class="main-right-content" style="height: 316px;display: flex;justify-content: space-between;cursor: pointer;">
