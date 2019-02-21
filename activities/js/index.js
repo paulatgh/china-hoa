@@ -1,7 +1,7 @@
 var render = function () {
     var event_template = $('#event_template').html();
     Mustache.parse(event_template);
-    $.each(data.actives, function () {
+    $.each(data.activities, function () {
         $('#events_photo').append(Mustache.render(event_template, this));
     });
 
@@ -20,7 +20,7 @@ var render = function () {
         $('.btns-language').text('null')
         $('.profile').css('display','none')
         $('.btns-language').click(function () {
-            window.location.href = "http://127.0.0.1:8080/home/"
+            window.location.href = `${data._metadata.root_url}/home`
         })
 
     }

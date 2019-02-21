@@ -53,7 +53,7 @@ border:1px solid rgba(151,151,151,1)">
                     </script>
                 </h2>
                 <div id="entertainment_facilities_cycle" style="padding:0 140px;box-sizing:border-box;font-size:26px;font-family:SourceHanSansSC-Normal;margin-bottom:90px;font-weight:400;color:rgba(57,61,68,1);	line-height:34px;">
-                    <script id="entertainment_facilities">
+                    <script id="entertainment_facilities" type="txt/template">
                         {{content}}
                     </script>
                 </div>
@@ -66,7 +66,7 @@ border:1px solid rgba(151,151,151,1)">
                     <div class="Carousel_img swiper-container">
                         <ul class="swiper-wrapper" style="height: 280px;width:20000px;" id="bg_img_cycle">
                             <script id="bg_img" type="txt/template">
-                                <li class="swiper-slide" style=" background: url('{{imgurl}}') no-repeat;background-size:100%">
+                                <li class="swiper-slide" style="background: url('{{imgurl}}') no-repeat; background-size: cover; display: inline-block; height: 280px">
                                 </li>
                             </script>
                         </ul>
@@ -77,7 +77,7 @@ border:1px solid rgba(151,151,151,1)">
                 <div class="Carousel">
                     <div class="Carousel_tips" id="clubhouse_cycle">
                         <script id="clubhouse" type="txt/template">
-                            {{title}}                            
+                            {{title}}
                         </script>
                     </div>
                     <div id="clubhouseContent_cycle" style="padding:40px 140px 0;box-sizing:border-box;font-size:26px;font-family:SourceHanSansSC-Normal;margin-bottom:120px;font-weight:400;color:rgba(57,61,68,1);	line-height:34px;">
@@ -117,7 +117,7 @@ border:1px solid rgba(151,151,151,1)">
                     <div class="Carousel_img swiper-container" style="margin-bottom: 40px">
                         <ul class="swiper-wrapper" style="height: 280px;width:20000px;" id="bg_img_second_cycle">
                             <script id="bg_img_second" type="txt/template">
-                                <li class="swiper-slide" style="background:url('{{imgurl}}') no-repeat;background-size:100%">
+                                <li class="swiper-slide" style="background:url('{{imgurl}}') no-repeat;background-size:cover; display: inline-block; height: 280px">
                             </li>
                             </script>
                         </ul>

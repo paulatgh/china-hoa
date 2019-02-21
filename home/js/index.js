@@ -164,9 +164,9 @@ var render = function () {
         $('.jump').click(function () {
             var arr = $(this).attr('data')
             if (arr) {
-                window.location.href = `http://127.0.0.1:8080/${arr}`;
+                window.location.href = `${data._metadata.root_url}/${arr}`;
             } else {
-                window.location.href = "http://127.0.0.1:8080/aboutus/"
+                window.location.href = `${data._metadata.root_url}/about-us`;
             }
         })
     } else {

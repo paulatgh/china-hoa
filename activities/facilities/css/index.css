@@ -43,27 +43,6 @@ body {
     margin-left: 150px;
 }
 
-.Carousel_img li:first-child {
-    /* background: url('/community/img/1.png') no-repeat; */
-    background-size: 100%;
-    height: 280px;
-    display: inline-block;
-}
-
-.Carousel_img li:nth-child(2) {
-    /* background: url('/community/img/2.png') no-repeat; */
-    background-size: 100%;
-    height: 280px;
-    display: inline-block;
-}
-
-.Carousel_img li:nth-child(3) {
-    /* background: url('/community/img/3.png') no-repeat; */
-    background-size: 100%;
-    height: 280px;
-    display: inline-block;
-}
-
 .swiper-button-next {
     background: url('/community/img/lefta.png') no-repeat;
     background-size: 100%;

@@ -48,7 +48,7 @@ var render = function () {
     _post_render();
 
     // Local post render
-    $.getScript('js/swiper.min.js', function () {
+    $.getScript(`/community${data._metadata.page_path}/js/swiper.min.js`, function () {
         //Carousel
         var swiper = new Swiper('.swiper-container', {
             spaceBetween: 30,
