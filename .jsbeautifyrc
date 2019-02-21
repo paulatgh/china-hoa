@@ -1,0 +1,13 @@
+{
+    "wrap_line_length": 800,
+    "max_preserve_newlines": 2,
+    "end_with_newline": true,
+    "wrap_attributes": "auto",
+    "space_after_anon_function": false,
+    "space_in_paren": false,
+    "indent_size": 4,
+    "indent_char": " ",
+    "css": {
+        "indent_size": 2
+    }
+}
