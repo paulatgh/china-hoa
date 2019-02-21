@@ -140,3 +140,31 @@ function _post_render() {
         
     })
 }
+
+function submitDynamicForm(action, method, values) {
+
+    // create form
+    var form = $('<form/>', {
+        action: action,
+        method: method
+    });
+
+    // add auth token
+    form.append($('<input/>', {
+        type: 'hidden',
+        name: 'authenticity_token',
+        value: document.querySelector('meta[name=csrf-token]').attributes.content.value
+    }));
+
+    // add data
+    $.each(values, function() {
+        form.append($('<input/>', {
+            type: 'hidden',
+            name: this.name,
+            value: this.value
+        }));
+    });
+
+    //submit form
+    form.appendTo('body').submit();
+}
