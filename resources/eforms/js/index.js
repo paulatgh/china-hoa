@@ -57,7 +57,7 @@ var render = function () {
             deleteLog()
         })
         $(".edi").click(function () {
-            window.location.href = `http://127.0.0.1:8080/resources/eforms/edit`
+            window.location.href = `${data._metadata.root_url}/resources/eforms/edit`
         })
     }
     var username = data._current_user && data._current_user.display_name

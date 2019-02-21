@@ -64,7 +64,7 @@ var render = function () {
         $('.admin-control').css('display', 'block')
         $('.committee_add').click(function () {
             var data = 'Board/Committee';
-            window.location.href = `http://127.0.0.1:8080/resources/committee/add/`
+            window.location.href = `${data._metadata.root_url}/resources/committee/add/`
         })
         $(".del").click(function () {
             deleteLog()
