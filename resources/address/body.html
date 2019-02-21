@@ -85,19 +85,32 @@
                 <div class="address_book_right">
                     <div class="a_a">
                         <ul id="events_photo">
-                            <li>A</li>
+                                <li id="group_one">
+                                <script id="first" type="txt/template">
+                                    {{list}}
+                                </script>
+                                </li>
+                            
                             <script id="username" type="txt/template">
                                 <li class="user_desc">{{name}}</li>
                             </script>
                         </ul>
                         <ul id="events_photo2">
-                            <li>B</li>
+                                <li id="group_two">
+                                        <script id="second" type="txt/template">
+                                            {{list}}
+                                        </script>
+                                </li>
                             <script id="username2" type="txt/template">
                                 <li class="user_desc">{{name}}</li>
                                 </script>
                         </ul>
                         <ul id="events_photo3">
-                            <li>C</li>
+                                <li id="group_three">
+                                        <script id="third" type="txt/template">
+                                            {{list}}
+                                        </script>
+                                </li>
                             <script id="username3" type="txt/template">
                                 <li class="user_desc">{{name}}</li>
                                     </script>
@@ -105,21 +118,33 @@
                     </div>
                     <div class="a_z">
                         <ul id="username-A_cycle">
-                            <li>(No Street Name)</li>
+                            <li id="nostreetname">
+                                <script id="nostreetname_one" type="txt/template">
+                                {{name}}
+                                </script>
+                            </li>
                             <script id="username-A" type="txt/template">
                                 <li class="user_desc">{{name}} <span></span></li>
                             </script>
                         </ul>
                         <ul id="events_photo2-B">
-                            <li class="user_desc">Camberley Lane</li>
+                                <li id="camberleylane">
+                                        <script id="camberleylane_one" type="txt/template">
+                                        {{name}}
+                                        </script>
+                                    </li> 
                             <script id="username2-B" type="txt/template">
                                 <li class="user_desc">{{name}}</li>
                             </script>
                         </ul>
                         <ul id="events_photo3-C">
-                            <li class="user_desc">Cricket Hill Road</li>
+                                <li id="crickethillroad">
+                                        <script id="crickethillroad_one" type="txt/template">
+                                        {{name}}
+                                        </script>
+                                    </li> 
                             <script id="username3-C" type="txt/template">
-                                <li class="user_desc">{{name}}</li>
+                               <li class="user_desc">{{name}}</li>
                             </script>
                         </ul>
                     </div>
