@@ -1,7 +1,7 @@
 var render = function () {
     var event_template = $('#event_template').html();
     Mustache.parse(event_template);
-    $.each(data.date, function () {
+    $.each(data.events, function () {
         $('#calendar_events').append(Mustache.render(event_template, this));
     });
 
@@ -37,7 +37,7 @@ var render = function () {
                     <li><a href="#" class="No">No</a></li>
                     <li><a href="#" class="Maybe">Maybe</a></li>
                     <li><a class="Notes">Notes</a></li>
-                </ul>					
+                </ul>
             </li>`;
         $('.calendar-right ul').mouseenter(function () {
             $(this).append(str)
