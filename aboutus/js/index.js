@@ -25,6 +25,7 @@ var render = function () {
   $(".btns-language").text(username);
   $('.logout').click(function () {
     //TODO: log out user
+    logOutUser()
   })
   var str = `<div class="db">
     <div class="login">
@@ -62,6 +63,10 @@ var render = function () {
       $('.login-button').click(function () {
         if (!!$('.login-int').val() && !!$('.login-int-a').val()) {
           //TODO: log in user
+          var email = $('.login-int').val();
+          var password = $('.login-int-a').val();
+
+          logInUser(email, password)
         } else {
           if (!$('.login-int').val() && !$('.login-int-a').val()) {
             $('.userp').css('display', 'block');
@@ -106,6 +111,10 @@ var render = function () {
         if (data._metadata.environment === 'dev') {
           if (!!$('.login-int').val() && !!$('.login-int-a').val()) {
             //TODO: log in user
+            var email = $('.login-int').val();
+            var password = $('.login-int-a').val();
+
+            logInUser(email, password)
           } else if (!$('.login-int').val() && !$('.login-int-a').val()) {
             $('.userp').css('display', 'block');
             $('.username').css('display', 'block')

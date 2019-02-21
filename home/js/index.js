@@ -136,7 +136,7 @@ var render = function () {
 
     $('.logout').click(function () {
         //TODO: log out user
-        submitDynamicForm(data._metadata.root_url + '/session/logout', 'POST', [])
+        logOutUser()
     })
 
     var str =
@@ -179,19 +179,7 @@ var render = function () {
                     var email = $('.login-int').val();
                     var password = $('.login-int-a').val();
 
-                    submitDynamicForm(
-                      data._metadata.root_url + '/session',
-                      'POST',
-                      [{
-                          name: 'session_form[email]',
-                          value: email
-                      },
-                          {
-                              name: 'session_form[password]',
-                              value: password
-                          },
-                      ]
-                    );
+                    logInUser(email, password)
                 } else {
                     if (!$('.login-int').val() && !$('.login-int-a').val()) {
                         $('.userp').css('display', 'block');
@@ -248,19 +236,7 @@ var render = function () {
                         //   TODO: log in user
                         var email = $('.login-int').val();
                         var password = $('.login-int-a').val();
-                        submitDynamicForm(
-                          data._metadata.root_url + '/session',
-                          'POST',
-                          [{
-                              name: 'session_form[email]',
-                              value: email
-                          },
-                              {
-                                  name: 'session_form[password]',
-                                  value: password
-                              },
-                          ]
-                        );
+                        logInUser(email, password);
                     } else if (!$('.login-int').val() && !$('.login-int-a').val()) {
                         $('.userp').css('display', 'block');
                         $('.username').css('display', 'block')

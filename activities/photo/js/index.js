@@ -33,7 +33,7 @@ var render = function () {
 
     $('.logout').click(function () {
         //TODO: log out user
-
+        logOutUser()
     })
     $(".address_book_right").click(function () {
         $(".upload-photos").css("display", "block")

@@ -26,6 +26,7 @@ var render = function () {
     }
     $('.logout').click(function () {
         //TODO: log out user
+        logOutUser()
     })
     var username = data._current_user && data._current_user.display_name
     $(".btns-language").text(username);

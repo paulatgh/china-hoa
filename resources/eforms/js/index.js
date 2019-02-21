@@ -66,6 +66,7 @@ var render = function () {
 
     $('.logout').click(function () {
         //TODO: log out user
+        logOutUser()
     })
 
     if (data._current_user && data._current_user.is_admin == true) {

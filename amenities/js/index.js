@@ -49,5 +49,6 @@ var render = function () {
 
     $('.logout').click(function () {
         //TODO: log out user
+        logOutUser()
     })
 };

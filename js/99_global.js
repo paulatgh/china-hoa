@@ -171,3 +171,23 @@ function submitDynamicForm(action, method, values) {
     //submit form
     form.appendTo('body').submit();
 }
+
+function logInUser(email, password) {
+    submitDynamicForm(
+      data._metadata.root_url + '/session',
+      'POST',
+      [{
+          name: 'session_form[email]',
+          value: email
+      },
+          {
+              name: 'session_form[password]',
+              value: password
+          },
+      ]
+    );
+}
+
+function logOutUser() {
+    submitDynamicForm(data._metadata.root_url + '/session/logout', 'POST', [])
+}

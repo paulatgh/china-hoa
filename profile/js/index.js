@@ -55,5 +55,6 @@ var render = function() {
     $(".btns-language").text(username);
     $('.logout').click(function() {
         //TODO: log out user
+        logOutUser()
     })
 }

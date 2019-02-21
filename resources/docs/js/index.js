@@ -44,6 +44,7 @@ var render = function () {
 
     $('.logout').click(function () {
         //TODO: log out user
+        logOutUser()
     })
 
     $('.tabs a').click(function (e) {
