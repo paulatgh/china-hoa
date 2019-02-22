@@ -9,7 +9,7 @@ var render = function() {
 
     // Local post render
 
-    $.getScript('js/cdn.ckeditor.js', function() {
+    $.getScript(data._metadata.assets_path + '/news/volunteer/add/js/cdn.ckeditor.js', function () {
         //Carousel
         ClassicEditor
             .create(document.querySelector('#editor'))
