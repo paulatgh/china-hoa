@@ -49,6 +49,16 @@ var render = function () {
         $('#Amenities_title_cycle').append(Mustache.render(Amenities_title, this));
     });
 
+    var banner_img = $('#banner_img').html()
+    $.each(data.bennerImg, function () {
+        $('#banner_img_cycle').append(Mustache.render(banner_img, this));
+    });
+
+    var provenance = $('#provenance').html()
+    $.each(data.provenance, function () {
+        $('#provenance_cycle').append(Mustache.render(provenance, this));
+    });
+
     // Global post render
     _post_render();
 
