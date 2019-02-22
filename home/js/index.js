@@ -1,4 +1,4 @@
-var render = function () {
+var render = function() {
     _pre_render();
     // Render page
     var event_template = $('#event_template').html();
@@ -7,55 +7,55 @@ var render = function () {
     Mustache.parse(event_template);
     Mustache.parse(featureList_template);
     Mustache.parse(date_template);
-    $.each(data.shortcuts, function () {
+    $.each(data.shortcuts, function() {
         $('#events_photo').append(Mustache.render(event_template, this));
     });
-    $.each(data.featureList, function () {
+    $.each(data.feature_list, function() {
         $('#featureList').append(Mustache.render(featureList_template, this));
     });
-    $.each(data.featureList, function (index, item) {
-        $('#featureList li').eq(index).find('p').hover(function () {
+    $.each(data.feature_list, function(index, item) {
+        $('#featureList li').eq(index).find('p').hover(function() {
             $(this).css('background', `url(${item.active_img}) no-repeat  center 50px`)
-        }, function () {
+        }, function() {
             $(this).css('background', `url(${item.img}) no-repeat  center 50px`)
         })
     })
-    $.each(data.events, function () {
+    $.each(data.events, function() {
         $('#date').append(Mustache.render(date_template, this));
     });
 
     var Reservables = $('#Reservables').html()
-    $.each(data.Amenities.filter(a => a.reservable), function () {
+    $.each(data.amenities.filter(a => a.reservable), function() {
         $('#Reservables_cycle').append(Mustache.render(Reservables, this));
     });
 
     var BirDeyeView = $('#BirDeyeView').html()
-    $.each(data.BirDeyeView, function () {
+    $.each(data.bir_deye_view, function() {
         $('#BirDeyeView_cycle').append(Mustache.render(BirDeyeView, this));
     });
 
     var Amenities = $('#Amenities').html()
-    $.each(data.Amenities, function () {
+    $.each(data.amenities, function() {
         $('#Amenities_cycle').append(Mustache.render(Amenities, this));
     });
 
     var CommunityNews = $('#CommunityNews').html()
-    $.each(data.CommunityNews, function () {
+    $.each(data.community_news, function() {
         $('#CommunityNews_cycle').append(Mustache.render(CommunityNews, this));
     });
 
     var Amenities_title = $('#Amenities_title').html()
-    $.each(data.Amenities_title, function () {
+    $.each(data.amenities_title, function() {
         $('#Amenities_title_cycle').append(Mustache.render(Amenities_title, this));
     });
 
     var banner_img = $('#banner_img').html()
-    $.each(data.bannerImg, function () {
+    $.each(data.bannerImg, function() {
         $('#banner_img_cycle').append(Mustache.render(banner_img, this));
     });
 
     var provenance = $('#provenance').html()
-    $.each(data.provenance, function () {
+    $.each(data.provenance, function() {
         $('#provenance_cycle').append(Mustache.render(provenance, this));
     });
     //calendar
@@ -65,12 +65,11 @@ var render = function () {
         $('#calendar_cycle').append(Mustache.render(calendar, this));
     });
 
-
     // Global post render
     _post_render();
 
     // Local post render
-    $.getScript(`${data._metadata.assets_path}${data._metadata.page_path}/js/swiper.min.js`, function () {
+    $.getScript(`${data._metadata.assets_path}${data._metadata.page_path}/js/swiper.min.js`, function() {
         //Carousel
         var swiper = new Swiper('.swiper-container', {
             width: 412,
@@ -120,7 +119,7 @@ var render = function () {
     var i = 1,
         ileng = $('.ms-slide').length;
 
-    $('.main-switch-top a').click(function () {
+    $('.main-switch-top a').click(function() {
         $(this).addClass('curr').siblings().removeClass('curr');
         var manin = $(this).index();
         $('.main-switch-item').hide();
@@ -138,7 +137,7 @@ var render = function () {
     };
 
     function clickAdd() {
-        $('#masterslider').delegate('.ms-nav-next', 'click', function () {
+        $('#masterslider').delegate('.ms-nav-next', 'click', function() {
             i++;
             if (i > ileng) {
                 i = 1;
@@ -148,7 +147,7 @@ var render = function () {
     };
 
     function clickReduce() {
-        $('#masterslider').delegate('.ms-nav-prev', 'click', function () {
+        $('#masterslider').delegate('.ms-nav-prev', 'click', function() {
             i--;
             if (i < 1) {
                 i = ileng;
@@ -179,11 +178,11 @@ var render = function () {
     </div>`;
     var username = data._current_user && data._current_user.display_name
     if (username) {
-        $(".btns-language").click(function (event) {
+        $(".btns-language").click(function(event) {
             event.preventDefault();
         })
         $(".langOv").css("display", "block")
-        $('.jump').click(function () {
+        $('.jump').click(function() {
             var arr = $(this).attr('data')
             if (arr) {
                 window.location.href = `${data._metadata.root_url}/${arr}`;
@@ -192,10 +191,10 @@ var render = function () {
             }
         })
     } else {
-        $('.jump').click(function () {
+        $('.jump').click(function() {
             var _this = $(this)
             $('body').append(str);
-            $('.login-button').click(function () {
+            $('.login-button').click(function() {
                 if (!!$('.login-int').val() && !!$('.login-int-a').val()) {
                     //TODO log in user
                     var email = $('.login-int').val();
@@ -245,14 +244,14 @@ var render = function () {
                 }
 
             })
-            $('.return').click(function () {
+            $('.return').click(function() {
                 $('.db').remove();
             })
         })
-        $(".btns-language").click(function () {
+        $(".btns-language").click(function() {
             $('body').append(str);
             var _this = $(this);
-            $('.login-button').click(function () {
+            $('.login-button').click(function() {
                 if (data._metadata.environment === 'dev') {
                     if (!!$('.login-int').val() && !!$('.login-int-a').val()) {
                         //   TODO: log in user
@@ -294,7 +293,7 @@ var render = function () {
                     var password = $('.login-int-a').val();
 
                     submitDynamicForm(
-                      data._metadata.root_url + '/session',
+                        data._metadata.root_url + '/session',
                         'POST',
                         [{
                                 name: 'session_form[email]',
@@ -308,7 +307,7 @@ var render = function () {
                     );
                 }
             })
-            $('.return').click(function () {
+            $('.return').click(function() {
                 $('.db').remove();
             })
         })
