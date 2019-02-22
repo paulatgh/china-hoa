@@ -83,7 +83,7 @@ function _pre_render() {
                     <a class="on jump" href="${data._metadata.root_url}/home">Home</a>
                 </li>
                 <li class="curr">
-                    <a class="on" href="${data._metadata.root_url}/about-us">About Us</a>
+                    <a class="on" href="${data._metadata.root_url}/aboutus">About Us</a>
                 </li>
             </ul>
             <span class="navline"></span>

@@ -1,8 +1,5 @@
 var render = function () {
-    var Logo = $('#Logo').html();
-    $.each(data.Logo, function () {
-        $('#Logo_cycle').append(Mustache.render(Logo, this));
-    });
+    _pre_render()
     var event_template = $('#eforms_content').html();
     Mustache.parse(event_template);
     $.each(data.eForms, function () {
@@ -60,14 +57,6 @@ var render = function () {
             window.location.href = `${data._metadata.root_url}/resources/eforms/edit`
         })
     }
-    var username = data._current_user && data._current_user.display_name
-    $(".btns-language").text(username);
-
-
-    $('.logout').click(function () {
-        //TODO: log out user
-        logOutUser()
-    })
 
     if (data._current_user && data._current_user.is_admin == true) {
         $('.form_content_right').css('display', 'block');

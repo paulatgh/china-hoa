@@ -1,14 +1,7 @@
 var render = function () {
-    var Logo = $('#Logo').html();
-    $.each(data.Logo, function () {
-        $('#Logo_cycle').append(Mustache.render(Logo, this));
-    });
-    var username = $('#username').html();
+    _pre_render()
+
     var event_template = $('#username-A').html();
-    var username2 = $('#username2').html();
-    var username2 = $('#username2-B').html();
-    var username3 = $('#username3').html();
-    var username3 = $('#username3-C').html();
     var AccordingToTheStreet = $('#AccordingToTheStreet').html();
     var userInformation = $('#userInformation').html();
 
@@ -48,30 +41,7 @@ var render = function () {
     $.each(data.AddressBookCategories, function () {
         $('#address').append(Mustache.render(category, this));
     });
-    var first = $('#first').html();
-    $.each(data.lettersorderone, function () {
-        $('#group_one').append(Mustache.render(first, this));
-    });
-    var second = $('#second').html();
-    $.each(data.lettersordertwo, function () {
-        $('#group_two').append(Mustache.render(second, this));
-    });
-    var third = $('#third').html();
-    $.each(data.lettersorderthree, function () {
-        $('#group_three').append(Mustache.render(third, this));
-    });
-    var nostreetname_one = $('#nostreetname_one').html();
-    $.each(data.nostreetnamelist, function () {
-        $('#nostreetname').append(Mustache.render(nostreetname_one, this));
-    });
-    var camberleylane_one = $('#camberleylane_one').html();
-    $.each(data.camberleylanelist, function () {
-        $('#camberleylane').append(Mustache.render(camberleylane_one, this));
-    });
-    var crickethillroad_one = $('#crickethillroad_one').html();
-    $.each(data.crickethillroadlist, function () {
-        $('#crickethillroad').append(Mustache.render(crickethillroad_one, this));
-    });
+
     // Global post render
     _post_render();
 
@@ -84,13 +54,7 @@ var render = function () {
         $('.announcements_permission').css('display', 'block')
     }
 
-    $('.logout').click(function () {
-        //TODO: log out user
-        logOutUser()
-    })
 
-    var username = data._current_user && data._current_user.display_name
-    $(".btns-language").text(username);
 
     var show = true;
     $('.address_book_click').click(function () {

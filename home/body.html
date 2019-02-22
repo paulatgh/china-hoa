@@ -3,16 +3,24 @@
 </div>
 <!-- swiper -->
 <div class="master-slider ms-skin-default" id="masterslider">
-    <div class="ms-slide"><img src="/community/img/doorway.png" /> </div>
-    <div class="ms-slide"><img src="/community/img/club.png" /> </div>
-    <div class="ms-slide"><img src="/community/img/swimmingpool.png" /> </div>
+    <div class="ms-slide" id="banner_img_cycle">
+        <script id="banner_img" type="txt/template">
+            <img src="{{img_url}}"/>
+        </script>
+    </div>
+    <!-- <div class="ms-slide"><img src="/community/img/club.png" /> </div> -->
+    <!-- <div class="ms-slide"><img src="/community/img/swimmingpool.png" /> </div> -->
     <div class="mas-ab">
         <div class="w1200 pr">
-            <div class="mas-lbg"></div>
-            <div class="mas-timebar"></div>
-            <div class="mas-tib"></div>
-            <div class="ban-len"> <i>1</i> / <span>3</span></div>
-            <img src="/community/img/tellus.png" alt="Powered-by-Tellus" style="width:178px;height:49px;position:absolute;right:0;bottom: 0">
+            <!-- <div class="mas-lbg"></div> -->
+            <!-- <div class="mas-timebar"></div> -->
+            <!-- <div class="mas-tib"></div> -->
+            <!-- <div class="ban-len"> <i>1</i> / <span>3</span></div> -->
+            <div id="provenance_cycle">
+                <script id="provenance" type="txt/template">
+                    <img src="{{provenance_url}}" alt="{{alt}}" style="width:178px;height:49px;position:absolute;right:0;bottom: 0">
+                </script>
+            </div>
         </div>
     </div>
 </div>
@@ -57,8 +65,10 @@
     <div class="main-top" style="margin-bottom: 15px">
         <div class="w1200 pr">
             <div class="main-left" style="display: flex;justify-content: space-between;width: 100%;">
+
+
                 <div class="main-left-content swiper-container jump" data="./amenities" style="height: 316px; box-sizing: border-box;overflow: hidden;position: relative;cursor: pointer;">
-                    <div id="Amenities_title_cycle" style="color: #1E1E1E;font-size: 16px;line-height:41px;height:41px;font-weight: 400">
+                    <!-- <div id="Amenities_title_cycle" style="color: #1E1E1E;font-size: 16px;line-height:41px;height:41px;font-weight: 400">
                         <script id="Amenities_title" type="txt/template">
                             {{title}}
                         </script>
@@ -76,7 +86,21 @@
                         <span style="background: #359532"></span>
                         <span></span>
                         <span></span>
+                    </div> -->
+                    <div id="Amenities_title_cycle" style="color: #1E1E1E;font-size: 16px;line-height:41px;height:41px;font-weight: 400">
+                        <script id="Amenities_title" type="txt/template">
+                            {{title}}
+                        </script>
                     </div>
+                    <ul id="Amenities_cycle">
+                        <script id="Amenities" type="txt/template">
+                            <li class="swiper-slide" style="background: url('{{imgUrl}}') no-repeat; background-size: cover;height:256px">
+                                    <div style:"background:red">
+                                        <!-- <h6>{{name}}</h6> -->
+                                    </div>
+                                </li>
+                            </script>
+                    </ul>
                 </div>
                 <div class="main-right-content" style="height: 316px;display: flex;justify-content: space-between;cursor: pointer;">
                     <div id="calendar" class="calendar"></div>
@@ -100,7 +124,7 @@
     <div class="main-top" style="height: 250px;" id="Reservables_cycle">
         <script id="Reservables" type="txt/template">
             <div class="w1200 pr" style="position: relative">
-                <img src="{{imgUrl}}" alt="Rectangle" style="width:100%;">
+                <img src="{{img_url}}" alt="Rectangle" style="width:100%;">
                     <div class="reservable" style="position: absolute;background: rgba(53,149,50,0.6);height: 84px;width: 579px;top: 77px;left: 314px;">
                         <a data="{{reservationLink}}" class="jump" href="javascript:;">
                             <p style="text-align: center;font-size:25px;font-family:OpenSans-Bold;font-weight:bold;color:rgba(255,255,255,1);line-height: 84px">
