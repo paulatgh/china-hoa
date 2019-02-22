@@ -1,20 +1,9 @@
 var render = function () {
   _pre_render();
-  var community_titlea = $('#community_title').html()
-  $.each(data.community_title, function () {
-    $('#community_title_cycle').append(Mustache.render(community_titlea, this));
-  });
 
-  var content_body = $('#content_body').html()
-  $.each(data.content, function () {
-    $('#content_cycle').append(Mustache.render(content_body, this));
-  });
-
-  var content_img = $('#content-img').html()
-  $.each(data.content_img, function () {
-    $('#content-img_cycle').append(Mustache.render(content_img, this));
-  });
-
+  $('#community_title').after(function() { return Mustache.render($(this).html(), data.content); });
+  $('#content_body').after(function() { return Mustache.render($(this).html(), data.content); });
+  $('#content_img').after(function() { return Mustache.render($(this).html(), data.content); });
 
   // Global post render
   _post_render();

@@ -1,35 +1,35 @@
 <!-- header -->
 <div class="header" style="box-shadow:0px 2px 7px 0px rgba(0,0,0,0.5);
     border:1px solid rgba(151,151,151,1);">
-	
+
 </div>
 <div id="content" class="main">
-	<div class="main-center">
-		<div id="community_title_cycle">
-			<script id="community_title" type="txt/template">
-				<p>{{title}}</p>
-			</script>
-		</div>
-		<div class="content-1">
-			<ul id="content_cycle">
-				<script id="content_body" type="txt/template">
-					<li>{{content}}</li>
-							<li>{{content_Second}}</li>
-							<li>{{content_Third}}</li>
-							<li>{{content_fourth}}</li>
-							</script>
-			</ul>
-		</div>
-		<div class="content-img" id="content-img_cycle">
-			<script id="content-img" type="txt/template">
-				<img src="{{imgurl}}" style="width:100%">					
-				</script>
-		</div>
-	</div>
+    <div class="main-center">
+        <div id="community_title_cycle">
+            <script id="community_title" type="txt/template">
+                <p>{{title}}</p>
+            </script>
+        </div>
+        <div class="content-1">
+            <ul id="content_cycle">
+                <script id="content_body" type="txt/template">
+                    {{#body}}
+                        <li>{{.}}</li>
+                    {{/body}}
+                    <li>{{footer}}</li>
+                </script>
+            </ul>
+        </div>
+        <div class="content-img" id="content-img_cycle">
+            <script id="content_img" type="txt/template">
+                <img src="{{image}}" style="width:100%">					
+            </script>
+        </div>
+    </div>
 </div>
 <!-- footer -->
 <div class="footer">
-	<p>
-		Copyright © 2019 Tellus, Inc. All Rights Reserved.
-	</p>
+    <p>
+        Copyright © 2019 Tellus, Inc. All Rights Reserved.
+    </p>
 </div>
