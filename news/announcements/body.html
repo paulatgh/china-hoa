@@ -68,7 +68,7 @@ border:1px solid rgba(151,151,151,1);">
             </div>
             <div class="choose">
                 <!-- <div class="choose-left" id="news_announcementsleft">
-                    <script id="announcements_templateleft" type="txt/template"> 
+                    <script id="announcements_templateleft" type="txt/template">
                     <h5>{{title}}</h5>
                     <ul id="tabs">
                         <li class="current"><a href="#" title="tab1">{{tab1}})</a></li>
@@ -93,22 +93,21 @@ border:1px solid rgba(151,151,151,1);">
                     <ul id="news_announcements" class="tab1 item show">
                         <script id="announcements_template" type="txt/template">
                             <li>
-                            <div class="announcements_permission"><span><a href="/news/announcements/edit">Edit</a></span><span
-                                    class="del">Delete</span>
-                            </div>
-                            <h5><a href="/news/announcements/notice" class="dao" style="width: 292px">{{title}}</a></h5>
-                            <div>
-                               {{date}}
-                            </div>
-                            <div>
-                                    {{firsttitle}}
-                            </div>
-                            <div>
-                                    {{secondtitle}}
-                                         
-                            </div>
-                        </li>
-                    </script>
+                                <div class="announcements_permission">
+                                    <span>
+                                        <a href="/news/announcements/edit">Edit</a>
+                                    </span>
+                                    <span class="del">Delete</span>
+                                </div>
+                                <h5>
+                                    <a href="{{link}}" class="dao" style="width: 292px">
+                                        {{title}}
+                                    </a>
+                                </h5>
+                                <div>{{friendly_date}}</div>
+                                <div style="white-space: pre-wrap;">{{abbreviated_body}}</div>
+                            </li>
+                        </script>
                     </ul>
                 </div>
             </div>
