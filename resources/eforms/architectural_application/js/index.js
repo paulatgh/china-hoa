@@ -1,4 +1,4 @@
-var render = function () {
+var render = function() {
     _pre_render()
     var content_template = $('#architectural_application').html();
     Mustache.parse(content_template);

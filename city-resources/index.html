@@ -2,126 +2,128 @@
 <html lang="en">
 
 <head>
-	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<!-- <meta http-equiv="X-UA-Compatible" content="IE=8" /> -->
-	<link rel="shortcut icon" type="image/ico" href="/community/img/favicon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=8" /> -->
+    <link rel="shortcut icon" type="image/ico" href="/community/img/favicon.ico" />
 
-	<title>De Anza Oaks</title>
-	<link rel="stylesheet" href="/global.css">
-	<link rel="stylesheet" href="css/index.css">
+    <title>De Anza Oaks</title>
+    <link rel="stylesheet" href="/global.css">
+    <link rel="stylesheet" href="css/index.css">
 
-	<script src="https://cdn.bootcss.com/jquery/3.3.0/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
 
-	<script src="/js/99_global.js"></script>
+    <script src="/js/99_global.js"></script>
 
 </head>
 
 <body>
-	<div id="content"></div>
-	<script>
-		var data = {
-			_current_user: {
-				id: '1234',
-				email: 'test@example.com',
-				display_name: 'Laurie01',
-				first_name: 'Laurie',
-				last_name: 'Williams',
-				is_admin: true
-			},
-			_metadata: {
-				root_url: 'http://127.0.0.1:8080',
-				page_path: '/home',
-				assets_path: '/home',
-				site_name: 'De Anza Oaks',
-				environment: 'dev',
-			},
-			cupertino_city_resources: [{
-				id: 1,
-				content: 'De Anza Oaks is located in the city of Cupertino in Santa fClara County. This city is home to Apple Headquarters, De Anza College, and a wide variety of businesses and great public schools. Cupertino has a population of 64,000 people within 13 square miles. It is 42 miles south of San Francisco and is on the western side of Silicon Valley, next to the Santa Cruz Mountains.'
-			}],
-			helpful_addresses: [{
-					id: 1,
-					title: 'Cupertino city hall: 10300 Torre Avenue'
-				},
-				{
-					id: 2,
-					title: 'Cupertino public library: 10800 Torre Avenue, across the plaza from City Hall'
-				},
-				{
-					id: 3,
-					title: 'Cupertino post office: 21701 Stevens Creek Blvd.'
-				},
-				{
-					id: 4,
-					title: 'Santa Clara County Sheriff’s Office: 1601 S. De Anza Blvd., Suite #148'
-				}
-			],
-			urban_resource_information: [{
-				content: 'Elementary and Middle Schools are part of the Cupertino Union School District. There are 19 elementary schools and 4 middle schools within the district:',
-				linkname: 'https://www.cusdk8.org/',
-				link: 'https://www.cusdk8.org/'
-			}, {
-				content: 'High Schools are part of the Fremont Union High School District:',
-				linkname: 'https://www.fuhsd.org/',
-				link: 'https://www.fuhsd.org/'
-			}, {
-				content: 'Cupertino is home to De Anza College, a 112-acre community college that serves over 25,000 students each year. De Anza is ranked among the top 3 community colleges in the United States for the number of Associate in Arts or Associate in Science degrees awarded:',
-				linkname: 'http://deanza.edu/',
-				link: 'http://deanza.edu/'
-			}],
-			nearby_schools: [{
-					title: 'Welcome letter from the City Manager of Cupertino:',
-					linkname: 'https://www.cupertino.org/home/showdocument?id=8620',
-					link: 'https://www.cupertino.org/home/showdocument?id=8620'
-				},
-				{
-					title: 'City of Cupertino website for residents:',
-					linkname: 'https://www.cupertino.org/residents',
-					link: 'https://www.cupertino.org/residents'
-				},
-				{
-					title: 'Things to see and do:',
-					linkname: 'https://www.cupertino.org/visitors/visiting-cupertino/what-to-see',
-					link: 'https://www.cupertino.org/visitors/visiting-cupertino/what-to-see'
-				},
-				{
-					title: 'History of Cupertino:',
-					linkname: 'https://www.cupertino.org/our-city/about-cupertino/history',
-					link: 'https://www.cupertino.org/our-city/about-cupertino/history'
-				}
-			],
-			utilities: [{
-					title: 'Residential Garbage Service:',
-					linkname: 'https://www.cupertino.org/our-city/departments/environment-sustainability/waste',
-					link: 'https://www.cupertino.org/our-city/departments/environment-sustainability/waste'
-				},
-				{
-					title: 'San Jose Water Company:',
-					linkname: 'https://www.sjwater.com/',
-					link: 'https://www.sjwater.com/'
-				},
-				{
-					title: 'California Water Service Company:',
-					linkname: 'https://www.calwater.com/',
-					link: 'https://www.calwater.com/'
-				}
-			]
-		}
-	</script>
+    <div id="content"></div>
+    <script>
+        var data = {
+            _current_user: {
+                id: '1234',
+                email: 'test@example.com',
+                display_name: 'Laurie01',
+                first_name: 'Laurie',
+                last_name: 'Williams',
+                is_admin: true
+            },
+            _metadata: {
+                root_url: 'http://127.0.0.1:8080',
+                page_path: '/home',
+                assets_path: '/home',
+                site_name: 'De Anza Oaks',
+                environment: 'dev',
+            },
+            cupertino_city_resources: [{
+                id: 1,
+                content: 'De Anza Oaks is located in the city of Cupertino in Santa fClara County. This city is home to Apple Headquarters, De Anza College, and a wide variety of businesses and great public schools. Cupertino has a population of 64,000 people within 13 square miles. It is 42 miles south of San Francisco and is on the western side of Silicon Valley, next to the Santa Cruz Mountains.'
+            }],
+            helpful_addresses: [{
+                    id: 1,
+                    title: 'Cupertino city hall: 10300 Torre Avenue'
+                },
+                {
+                    id: 2,
+                    title: 'Cupertino public library: 10800 Torre Avenue, across the plaza from City Hall'
+                },
+                {
+                    id: 3,
+                    title: 'Cupertino post office: 21701 Stevens Creek Blvd.'
+                },
+                {
+                    id: 4,
+                    title: 'Santa Clara County Sheriff’s Office: 1601 S. De Anza Blvd., Suite #148'
+                }
+            ],
+            urban_resource_information: [{
+                content: 'Elementary and Middle Schools are part of the Cupertino Union School District. There are 19 elementary schools and 4 middle schools within the district:',
+                linkname: 'https://www.cusdk8.org/',
+                link: 'https://www.cusdk8.org/'
+            }, {
+                content: 'High Schools are part of the Fremont Union High School District:',
+                linkname: 'https://www.fuhsd.org/',
+                link: 'https://www.fuhsd.org/'
+            }, {
+                content: 'Cupertino is home to De Anza College, a 112-acre community college that serves over 25,000 students each year. De Anza is ranked among the top 3 community colleges in the United States for the number of Associate in Arts or Associate in Science degrees awarded:',
+                linkname: 'http://deanza.edu/',
+                link: 'http://deanza.edu/'
+            }],
+            nearby_schools: [{
+                    title: 'Welcome letter from the City Manager of Cupertino:',
+                    linkname: 'https://www.cupertino.org/home/showdocument?id=8620',
+                    link: 'https://www.cupertino.org/home/showdocument?id=8620'
+                },
+                {
+                    title: 'City of Cupertino website for residents:',
+                    linkname: 'https://www.cupertino.org/residents',
+                    link: 'https://www.cupertino.org/residents'
+                },
+                {
+                    title: 'Things to see and do:',
+                    linkname: 'https://www.cupertino.org/visitors/visiting-cupertino/what-to-see',
+                    link: 'https://www.cupertino.org/visitors/visiting-cupertino/what-to-see'
+                },
+                {
+                    title: 'History of Cupertino:',
+                    linkname: 'https://www.cupertino.org/our-city/about-cupertino/history',
+                    link: 'https://www.cupertino.org/our-city/about-cupertino/history'
+                }
+            ],
+            utilities: [{
+                    title: 'Residential Garbage Service:',
+                    linkname: 'https://www.cupertino.org/our-city/departments/environment-sustainability/waste',
+                    link: 'https://www.cupertino.org/our-city/departments/environment-sustainability/waste'
+                },
+                {
+                    title: 'San Jose Water Company:',
+                    linkname: 'https://www.sjwater.com/',
+                    link: 'https://www.sjwater.com/'
+                },
+                {
+                    title: 'California Water Service Company:',
+                    linkname: 'https://www.calwater.com/',
+                    link: 'https://www.calwater.com/'
+                }
+            ]
+        }
+
+    </script>
 
 
-	<script type="text/javascript" src="js/index.js"></script>
-	<script>
-		// This script block stays in this wrapper html file
-		$(function () {
-			$('#content').load("body.html", function () {
-				render();
-			});
-		});
-	</script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script>
+        // This script block stays in this wrapper html file
+        $(function() {
+            $('#content').load("body.html", function() {
+                render();
+            });
+        });
+
+    </script>
 </body>
 
 </html>

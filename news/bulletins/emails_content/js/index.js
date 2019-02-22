@@ -1,4 +1,4 @@
-var render = function () {
+var render = function() {
     _pre_render();
     var committee_add = $('#committee_add').html();
     Mustache.parse(committee_add);
@@ -7,14 +7,12 @@ var render = function () {
     var form = $('#form').html();
     $('#form').after(Mustache.render(form, data));
 
-
-
     // Global post render
     _post_render();
 
     // Local post render
-    
-    $.getScript(data._metadata.assets_path + '/news/bulletins/emails_content/js/cdn.ckeditor.js', function () {
+
+    $.getScript(data._metadata.assets_path + '/news/bulletins/emails_content/js/cdn.ckeditor.js', function() {
         //Carousel
         ClassicEditor
             .create(document.querySelector('#editor'))
@@ -23,10 +21,8 @@ var render = function () {
             });
     });
 
-
-
     if (data._current_user && data._current_user.is_admin == true) {
         $('.buttona').css('display', 'none')
     }
-   
+
 };

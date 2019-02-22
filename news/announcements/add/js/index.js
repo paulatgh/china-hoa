@@ -1,4 +1,4 @@
-var render = function () {
+var render = function() {
     // var content_template = $('#add').html();
     // Mustache.parse(content_template);
     // $('#add').after(Mustache.render(content_template, data));
@@ -15,7 +15,7 @@ var render = function () {
         $('.buttona').css('display', 'none')
     }
 
-    $.getScript(data._metadata.assets_path + '/news/announcements/add/js/cdn.ckeditor.js', function () {
+    $.getScript(data._metadata.assets_path + '/news/announcements/add/js/cdn.ckeditor.js', function() {
         //Carousel
         ClassicEditor
             .create(document.querySelector('#editor'))
@@ -48,5 +48,5 @@ var render = function () {
     //     <li><a href="../../News/volunteer/volunteer.html" rel="noopener noreferrer">Volunteer Needs</a></li>  `
     //     $('.breadcrumb').append(str)
     // }
-   
+
 }
