@@ -39,9 +39,74 @@
                 root_url: 'http://127.0.0.1:8080',
                 page_path: '/home',
                 assets_path: '/home',
+                calendar_path: '/activities/calendar',
                 site_name: 'De Anza Oaks',
                 environment: 'dev',
             },
+            calendar: [{
+                    id: 1,
+                    data_date: '10/2/2019',
+                    data_time: '20:20',
+                    data_name: 'Tom',
+                    data_title: 'Test add an event',
+                    data_place: 'De Anza Oaks',
+                    data_content: 'It’s sunny today, it’s bustling outside, the street is noisy'
+                },
+                {
+                    id: 2,
+                    data_date: '21/2/2019',
+                    data_time: '22:20',
+                    data_name: 'Laurie',
+                    data_title: 'Test add an event',
+                    data_place: 'De Anza Oaks',
+                    data_content: 'It’s sunny today, it’s bustling outside, the street is noisy'
+                },
+                {
+                    id: 3,
+                    data_date: '28/2/2019',
+                    data_time: '22:20',
+                    data_name: 'Calvin',
+                    data_title: 'Beautiful morning',
+                    data_place: 'De Anza Oaks',
+                    data_content: 'It’s sunny today, it’s bustling outside, the street is noisy'
+                },
+                {
+                    id: 4,
+                    data_date: '28/2/2019',
+                    data_time: '22:20',
+                    data_name: 'Fiona',
+                    data_title: 'Beautiful morning',
+                    data_place: 'De Anza Oaks',
+                    data_content: 'It’s sunny today, it’s bustling outside, the street is noisy'
+                },
+                {
+                    id: 5,
+                    data_date: '25/2/2019',
+                    data_time: '22:20',
+                    data_name: 'Fiona',
+                    data_title: 'Beautiful morning',
+                    data_place: 'De Anza Oaks',
+                    data_content: 'It’s sunny today, it’s bustling outside, the street is noisy'
+                },
+                {
+                    id: 6,
+                    data_date: '20/3/2019',
+                    data_time: '22:20',
+                    data_name: 'Fiona',
+                    data_title: 'Beautiful morning',
+                    data_place: 'De Anza Oaks',
+                    data_content: 'It’s sunny today, it’s bustling outside, the street is noisy'
+                },
+                {
+                    id: 7,
+                    data_date: '5/3/2019',
+                    data_time: '22:20',
+                    data_name: 'Fiona',
+                    data_title: 'Beautiful morning',
+                    data_place: 'De Anza Oaks',
+                    data_content: 'It’s sunny today, it’s bustling outside, the street is noisy'
+                }
+            ],
             events: [{
                     id: 1,
                     title: "Clubhouse Booking (Confirmed) Priya Balijepalli",
@@ -86,15 +151,17 @@
                 }
             ]
         };
+
     </script>
     <script type="text/javascript" src="js/index.js"></script>
     <script>
         // This script block stays in this wrapper html file
-        $(function () {
-            $('#content').load("body.html", function () {
+        $(function() {
+            $('#content').load("body.html", function() {
                 render();
             });
         });
+
     </script>
 </body>
 

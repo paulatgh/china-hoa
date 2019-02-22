@@ -58,6 +58,13 @@ var render = function () {
     $.each(data.provenance, function () {
         $('#provenance_cycle').append(Mustache.render(provenance, this));
     });
+    //calendar
+    var calendar = $('#calendar_left').html();
+    Mustache.parse(calendar);
+    $.each(data.calendar, function() {
+        $('#calendar_cycle').append(Mustache.render(calendar, this));
+    });
+
 
     // Global post render
     _post_render();
@@ -77,6 +84,16 @@ var render = function () {
                 el: '.swiper-pagination',
                 clickable: true,
             }
+        });
+    });
+
+    $.getScript(data._metadata.page_path + '/js/jalendar.js', function() {
+        $(function() {
+            $('#myId').jalendar({
+                // customDay: '2017/12/01', // Format: Year/Month/Day
+                // color: '#ed145a', // Unlimited Colors
+                // lang: 'EN' // Format: English — 'EN', Türkçe — 'TR'
+            });
         });
     });
 

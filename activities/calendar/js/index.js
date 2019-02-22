@@ -1,9 +1,15 @@
-var render = function () {
+var render = function() {
     _pre_render();
-    var event_template = $('#event_template').html();
-    Mustache.parse(event_template);
-    $.each(data.events, function () {
-        $('#calendar_events').append(Mustache.render(event_template, this));
+    // var event_template = $('#event_template').html();
+    // Mustache.parse(event_template);
+    // $.each(data.events, function () {
+    //     $('#calendar_events').append(Mustache.render(event_template, this));
+    // });
+
+    var calendar = $('#calendar_left').html();
+    Mustache.parse(calendar);
+    $.each(data.calendar, function() {
+        $('#calendar_cycle').append(Mustache.render(calendar, this));
     });
 
     // Global post render
@@ -17,12 +23,20 @@ var render = function () {
         backToday: true // Whether to return to the day
     });
 
-
+    $.getScript(data._metadata.calendar_path + '/js/jalendar.js', function() {
+        $(function() {
+            $('#myId').jalendar({
+                // customDay: '2017/12/01', // Format: Year/Month/Day
+                // color: '#ed145a', // Unlimited Colors
+                // lang: 'EN' // Format: English — 'EN', Türkçe — 'TR'
+            });
+        });
+    });
 
     if (data._current_user && data._current_user.is_admin == true) {
         $(".Add-top").css("display", "block")
         $(".top-right").css("display", "block")
-        $(".right-b").click(function () {
+        $(".right-b").click(function() {
             if ($('#calendar_events .saveChange').length) {
                 return false;
             }
@@ -40,53 +54,51 @@ var render = function () {
                     <li><a class="Notes">Notes</a></li>
                 </ul>
             </li>`;
-        $('.calendar-right ul').mouseenter(function () {
+        $('.calendar-right ul').mouseenter(function() {
             $(this).append(str)
-            $('.Yes').hover(function () {
+            $('.Yes').hover(function() {
                 $(this).addClass('tips_hover_yes')
-            }, function () {
+            }, function() {
                 $(this).removeClass('tips_hover_yes')
             })
-            $('.No').hover(function () {
+            $('.No').hover(function() {
                 $(this).addClass('tips_hover_no')
-            }, function () {
+            }, function() {
                 $(this).removeClass('tips_hover_no')
             })
-            $('.Maybe').hover(function () {
+            $('.Maybe').hover(function() {
                 $(this).addClass('tips_hover_maybe')
-            }, function () {
+            }, function() {
                 $(this).removeClass('tips_hover_maybe')
             })
-            $('.Notes').hover(function () {
+            $('.Notes').hover(function() {
                 $(this).addClass('tips_hover_notes')
-            }, function () {
+            }, function() {
                 $(this).removeClass('tips_hover_notes')
             })
-            $('.Notes').click(function (e) {
+            $('.Notes').click(function(e) {
                 $('.db1').show();
                 return false;
             })
-            $('.return').click(function () {
+            $('.return').click(function() {
                 $('.db1').hide();
             })
             return false;
         })
-        $('.calendar-right ul').mouseleave(function () {
+        $('.calendar-right ul').mouseleave(function() {
             $('.tips').remove()
         })
 
     }
 
-   
-
     function edit() {
-        $(".right-a").click(function () {
+        $(".right-a").click(function() {
             if ($('.saveChange').length !== 0) {
                 return false;
             }
             var val = $(this).parents('ul').find('li');
             var saveButton = `<span class="saveChange">Save</span>`;
-            val.each(function (index, item) {
+            val.each(function(index, item) {
                 if ($(item).find('.top-right')) {
                     $(item).find('.top-right').remove();
                 }
@@ -95,10 +107,10 @@ var render = function () {
                 $(item).empty().append(inp)
             })
             val.parent().append(saveButton);
-            $('.saveChange').click(function () {
+            $('.saveChange').click(function() {
                 $(this).remove()
                 var value = []
-                val.find('input').each(function (index, item) {
+                val.find('input').each(function(index, item) {
                     value.push($(item).val())
                 })
                 $(val).empty()
@@ -107,11 +119,11 @@ var render = function () {
                             <span class="right-a">Edit</span>
                             <span class="right-b">Delete</span>
                         </div>`
-                $.each(value, function (index, item) {
+                $.each(value, function(index, item) {
                     $(val).eq(index).text(item)
                 })
                 $(val).eq(0).append(editStr)
-                $(".right-b").click(function () {
+                $(".right-b").click(function() {
                     if ($('#calendar_events .saveChange').length) {
                         return false;
                     }
