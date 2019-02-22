@@ -11,32 +11,13 @@ var render = function () {
     var username3 = $('#username3-C').html();
     var AccordingToTheStreet = $('#AccordingToTheStreet').html();
     var userInformation = $('#userInformation').html();
-    
 
     Mustache.parse(event_template);
-    var a = []
-    $.each(data.user, function (index, item) {
-        a = item.username.filter((val) => val.name.substr(0, 1) === 'A' || val.name.substr(0, 1) === 'a')
-    });
-    var b = []
-    $.each(data.user, function (index, item) {
-        b = item.username.filter((val) => val.name.substr(0, 1) === 'B' || val.name.substr(0, 1) === 'b')
-    });
-    var c = []
-    $.each(data.user, function (index, item) {
-        c = item.username.filter((val) => val.name.substr(0, 1) === 'C' || val.name.substr(0, 1) === 'c')
-    });
 
-
-    $.each(a, function () {
-        $('#events_photo,#username-A_cycle').append(Mustache.render(username, this));
-    })
-    $.each(b, function () {
-        $('#events_photo2,#events_photo2-B').append(Mustache.render(username2, this));
-    })
-    $.each(c, function () {
-        $('#events_photo3,#events_photo3-C').append(Mustache.render(username3, this));
-    })
+    var user_list_section_template = $('#user-list-section-template').html();
+    $.each(data.names_by_letter, function() {
+        $('#user_list').append(Mustache.render(user_list_section_template, this));
+    });
 
     Mustache.parse(AccordingToTheStreet);
     $.each(data.AccordingToTheStreet, function () {
@@ -44,7 +25,7 @@ var render = function () {
     });
 
     var alphabet = $('#alphabet').html();
-    $.each(data.alphabet, function () {
+    $.each(data.letter_anchors, function () {
         $('#alphabet_cycle').append(Mustache.render(alphabet, this));
     });
 
@@ -96,8 +77,6 @@ var render = function () {
 
     // Local post render
 
-
-  
     // admin
     if (data._current_user && data._current_user.is_admin == true) {
         $('.choose-right').css('margin-top', '50px')

@@ -83,75 +83,20 @@
                     </div>
                 </div>
                 <div class="address_book_right">
-                    <div class="a_a">
-                        <ul id="events_photo">
-                                <li id="group_one">
-                                <script id="first" type="txt/template">
-                                    {{list}}
-                                </script>
-                                </li>
-                            
-                            <script id="username" type="txt/template">
+                    <div id="user_list">
+                        <script id="user-list-section-template" type="txt/template">
+                            <ul id="events_photo">
+                                <li id="{{letter}}-section">{{letter}}</li>
+                                {{#names}}
                                 <li class="user_desc">{{name}}</li>
-                            </script>
-                        </ul>
-                        <ul id="events_photo2">
-                                <li id="group_two">
-                                        <script id="second" type="txt/template">
-                                            {{list}}
-                                        </script>
-                                </li>
-                            <script id="username2" type="txt/template">
-                                <li class="user_desc">{{name}}</li>
-                                </script>
-                        </ul>
-                        <ul id="events_photo3">
-                                <li id="group_three">
-                                        <script id="third" type="txt/template">
-                                            {{list}}
-                                        </script>
-                                </li>
-                            <script id="username3" type="txt/template">
-                                <li class="user_desc">{{name}}</li>
-                                    </script>
-                        </ul>
-                    </div>
-                    <div class="a_z">
-                        <ul id="username-A_cycle">
-                            <li id="nostreetname">
-                                <script id="nostreetname_one" type="txt/template">
-                                {{name}}
-                                </script>
-                            </li>
-                            <script id="username-A" type="txt/template">
-                                <li class="user_desc">{{name}} <span></span></li>
-                            </script>
-                        </ul>
-                        <ul id="events_photo2-B">
-                                <li id="camberleylane">
-                                        <script id="camberleylane_one" type="txt/template">
-                                        {{name}}
-                                        </script>
-                                    </li> 
-                            <script id="username2-B" type="txt/template">
-                                <li class="user_desc">{{name}}</li>
-                            </script>
-                        </ul>
-                        <ul id="events_photo3-C">
-                                <li id="crickethillroad">
-                                        <script id="crickethillroad_one" type="txt/template">
-                                        {{name}}
-                                        </script>
-                                    </li> 
-                            <script id="username3-C" type="txt/template">
-                               <li class="user_desc">{{name}}</li>
-                            </script>
-                        </ul>
+                                {{/names}}
+                            </ul>
+                        </script>
                     </div>
                 </div>
                 <ul class="address_book_letter" id="alphabet_cycle">
                     <script id="alphabet" type="txt/template">
-                        <li>{{alphabetList}}</li>
+                        <li><a href="#{{letter}}-section">{{letter}}</a></li>
                     </script>
                 </ul>
             </div>
@@ -171,7 +116,7 @@
                         <p>{{Phone}}</p>
                         <p>{{professional}}</p>
                     </div>
-    
+
                     <div class="user-content">
                         <h5>{{community}}</h5>
                         <p>{{address}}</p>
@@ -184,7 +129,6 @@
                         <p>{{FirstChild}}</p>
                         <p>{{SecondChild}}</p>
                         <p>{{ThirdChild}}</p>
-    
                     </div>
                     <div class="user-content">
                         <h5>{{HereFrom}}</h5>
