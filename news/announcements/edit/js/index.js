@@ -17,7 +17,7 @@ var render = function () {
         $('.buttona').css('display', 'none')
     }
 
-    $.getScript('js/cdn.ckeditor.js', function () {
+    $.getScript(data._metadata.assets_path + '/news/announcements/edit/js/cdn.ckeditor.js', function () {
         //Carousel
         ClassicEditor
             .create(document.querySelector('#editor'))

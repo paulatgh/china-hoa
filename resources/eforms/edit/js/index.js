@@ -11,7 +11,7 @@ var render = function () {
     _post_render();
 
     // Local post render
-    $.getScript('js/cdn.ckeditor.js', function () {
+    $.getScript(data._metadata.assets_path + '/resources/eforms/edit/js/cdn.ckeditor.js', function () {
         //Carousel
         ClassicEditor
             .create(document.querySelector('#editor'))
