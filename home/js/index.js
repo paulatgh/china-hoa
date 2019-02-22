@@ -1,4 +1,5 @@
 var render = function () {
+    _pre_render();
     // Render page
     var event_template = $('#event_template').html();
     var featureList_template = $('#featureList_template').html()
@@ -134,11 +135,6 @@ var render = function () {
     clickReduce();
     clickAdd();
 
-    $('.logout').click(function () {
-        //TODO: log out user
-        logOutUser()
-    })
-
     var str =
         `<div class="db">
         <div class="login">
@@ -159,7 +155,6 @@ var render = function () {
         $(".btns-language").click(function (event) {
             event.preventDefault();
         })
-        $(".btns-language").text(username);
         $(".langOv").css("display", "block")
         $('.jump').click(function () {
             var arr = $(this).attr('data')
