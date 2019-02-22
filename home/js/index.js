@@ -50,7 +50,7 @@ var render = function () {
     });
 
     var banner_img = $('#banner_img').html()
-    $.each(data.bennerImg, function () {
+    $.each(data.bannerImg, function () {
         $('#banner_img_cycle').append(Mustache.render(banner_img, this));
     });
 
@@ -63,7 +63,7 @@ var render = function () {
     _post_render();
 
     // Local post render
-    $.getScript(data._metadata.assets_path + '/js/swiper.min.js', function () {
+    $.getScript(`${data._metadata.assets_path}${data._metadata.page_path}/js/swiper.min.js`, function () {
         //Carousel
         var swiper = new Swiper('.swiper-container', {
             width: 412,
