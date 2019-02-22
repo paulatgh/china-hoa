@@ -2,34 +2,34 @@ var render = function () {
     _pre_render();
   
 
-    var PageTitle = $('#PageTitle').html();
-    $.each(data.pageTitle, function () {
-        $('#PageTitle_cycle').append(Mustache.render(PageTitle, this));
+    var page_title = $('#page_title').html();
+    $.each(data.page_title, function () {
+        $('#page_title_cycle').append(Mustache.render(page_title, this));
     });
 
-    var Community = $('#Community').html();
+    var community = $('#community').html();
     $.each(data.community, function () {
-        $('#Community_cycle').append(Mustache.render(Community, this));
+        $('#community_cycle').append(Mustache.render(community, this));
     });
 
-    var OlympicGames = $('#OlympicGames').html();
-    $.each(data.olympicGames, function () {
-        $('#OlympicGames_cycle').append(Mustache.render(OlympicGames, this));
+    var olympic_games = $('#olympic_games').html();
+    $.each(data.olympic_games, function () {
+        $('#olympic_games_cycle').append(Mustache.render(olympic_games, this));
     });
 
-    var Clubhouse = $('#Clubhouse').html();
-    $.each(data.clubhouse, function () {
-        $('#Clubhouse_cycle').append(Mustache.render(Clubhouse, this));
+    var Clubhouse = $('#club_house').html();
+    $.each(data.club_house, function () {
+        $('#club_house_cycle').append(Mustache.render(Clubhouse, this));
     });
 
     var Children = $('#Children').html();
     $.each(data.children, function () {
-        $('#Children_cycle').append(Mustache.render(Children, this));
+        $('#children_cycle').append(Mustache.render(Children, this));
     });
 
-    var GreenFields = $('#GreenFields').html();
-    $.each(data.greenFields, function () {
-        $('#GreenFields_cycle').append(Mustache.render(GreenFields, this));
+    var GreenFields = $('#green_fields').html();
+    $.each(data.green_fields, function () {
+        $('#green_fields_cycle').append(Mustache.render(GreenFields, this));
     });
 
     // Global post render

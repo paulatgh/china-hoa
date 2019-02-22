@@ -3,29 +3,29 @@ var render = function() {
 
     var committeeList = $('#committeeList').html();
     Mustache.parse(committeeList);
-    $.each(data.ManagementList, function() {
+    $.each(data.management_list, function() {
         $('#committeeExternal').append(Mustache.render(committeeList, this));
     });
     var committeeListsecond = $('#committeeListsecond').html();
     Mustache.parse(committeeListsecond);
-    $.each(data.ManagementList2, function() {
+    $.each(data.management_list_two, function() {
         $('#committeeListsecondExternal').append(Mustache.render(committeeListsecond, this));
     });
     var committeeListThird = $('#committeeListThird').html();
     Mustache.parse(committeeListThird);
-    $.each(data.ManagementList3, function() {
+    $.each(data.management_list_three, function() {
         $('#committeeExternalExternal').append(Mustache.render(committeeListThird, this));
     });
 
     var TheTitle = $('#TheTitle').html();
     Mustache.parse(TheTitle);
-    $.each(data.TheTitle, function() {
+    $.each(data.the_title, function() {
         $('#TheTitleExternal').append(Mustache.render(TheTitle, this));
     });
 
     var Addbutton = $('#Addbutton').html();
     Mustache.parse(Addbutton);
-    $.each(data.Addbutton, function() {
+    $.each(data.add_button, function() {
         $('#AddbuttonExternal').append(Mustache.render(Addbutton, this));
     });
 

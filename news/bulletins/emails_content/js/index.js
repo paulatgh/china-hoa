@@ -1,8 +1,8 @@
 var render = function () {
     _pre_render();
-    var CommitteeAdd = $('#CommitteeAdd').html();
-    Mustache.parse(CommitteeAdd);
-    $('#CommitteeAdd').after(Mustache.render(CommitteeAdd, data.TheTitle[0]));
+    var committee_add = $('#committee_add').html();
+    Mustache.parse(committee_add);
+    $('#committee_add').after(Mustache.render(committee_add, data.TheTitle[0]));
 
     var form = $('#form').html();
     $('#form').after(Mustache.render(form, data));

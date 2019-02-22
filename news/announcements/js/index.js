@@ -12,14 +12,14 @@ var render = function () {
     // });
 
 
-    var Announcements = $('#Announcements').html();
-    $.each(data.Announcements, function () {
-        $('#Announcements_cycle').append(Mustache.render(Announcements, this));
+    var announcements = $('#announcements').html();
+    $.each(data.community_announcements, function () {
+        $('#announcements_cycle').append(Mustache.render(announcements, this));
     });
 
-    var ImportantAnnouncement = $('#ImportantAnnouncement').html();
-    $.each(data.ImportantAnnouncement, function () {
-        $('#ImportantAnnouncement_cycle').append(Mustache.render(ImportantAnnouncement, this));
+    var important_announcement = $('#important_announcement').html();
+    $.each(data.important_announcement, function () {
+        $('#important_announcement_cycle').append(Mustache.render(important_announcement, this));
     });
 
     var add = $('#add').html();

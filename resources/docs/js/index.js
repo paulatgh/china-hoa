@@ -3,25 +3,25 @@ var render = function () {
 
     var HomeownersAssociation = $('#HomeownersAssociation').html();
     Mustache.parse(HomeownersAssociation);
-    $.each(data.HomeownersAssociation, function () {
+    $.each(data.homeowners_association, function () {
         $('#HomeownersAssociationExternal').append(Mustache.render(HomeownersAssociation, this));
     });
 
     var HomeownersAssociation = $('#HomeownersAssociation').html();
     Mustache.parse(HomeownersAssociation);
-    $.each(data.HomeownersAssociationSecond, function () {
+    $.each(data.homeowners_association_second, function () {
         $('#HomeownersAssociationSecondExternal').append(Mustache.render(HomeownersAssociation, this));
     });
 
     var categoryName = $('#categoryName').html();
     Mustache.parse(categoryName);
-    $.each(data.categoryName, function () {
+    $.each(data.category_name, function () {
         $('#categoryNameExternal').append(Mustache.render(categoryName, this));
     });
 
     var PDFcategoryList = $('#PDFcategoryList').html();
     Mustache.parse(PDFcategoryList);
-    $.each(data.PDFcategory, function () {
+    $.each(data.pdf_category, function () {
         $('#PDFcategoryListExternal').append(Mustache.render(PDFcategoryList, this));
     });
 

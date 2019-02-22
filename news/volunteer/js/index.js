@@ -7,18 +7,18 @@ var render = function () {
     });
     var volunteer_templates = $('#volunteer_templates').html();
     Mustache.parse(volunteer_templates);
-    $.each(data.volunteersecond, function () {
+    $.each(data.volunteer_second, function () {
         $('#news_volunteers').append(Mustache.render(volunteer_templates, this));
     });
 
     var volunteer_templatet = $('#volunteer_templatet').html();
     Mustache.parse(volunteer_templatet);
-    $.each(data.volunteerthird, function () {
+    $.each(data.volunteer_third, function () {
         $('#news_volunteert').append(Mustache.render(volunteer_templatet, this));
     });
     var volunteer_title = $('#volunteer_title').html();
     Mustache.parse(volunteer_title);
-    $.each(data.volunteertitle, function () {
+    $.each(data.volunteer_title, function () {
         $('#main_volunteer').append(Mustache.render(volunteer_title, this));
     });
   

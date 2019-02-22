@@ -6,40 +6,40 @@ var render = function () {
         $('#eforms_content_cycle').append(Mustache.render(event_template, this));
     });
 
-    var event_template2 = $('#eFormsEdit').html();
+    var event_template2 = $('#eforms_edit').html();
     Mustache.parse(event_template);
-    $.each(data.eFormsEdit, function () {
-        $('#eFormsEdit_cycle').append(Mustache.render(event_template2, this));
+    $.each(data.eforms_edit, function () {
+        $('#eforms_edit_cycle').append(Mustache.render(event_template2, this));
     });
 
     var event_template3 = $('#View').html();
     Mustache.parse(event_template);
-    $.each(data.ViewExportSubmittedEforms, function () {
-        $('#View_cycle').append(Mustache.render(event_template3, this));
+    $.each(data.view_export_submitted_eforms, function () {
+        $('#view_cycle').append(Mustache.render(event_template3, this));
     });
 
-    var event_template4 = $('#eformsType').html();
+    var event_template4 = $('#eforms_type').html();
     Mustache.parse(event_template);
-    $.each(data.eformsType, function () {
-        $('#eformsType_cycle').append(Mustache.render(event_template4, this));
+    $.each(data.eforms_type, function () {
+        $('#eforms_type_cycle').append(Mustache.render(event_template4, this));
     });
 
-    var event_template5 = $('#eFormsEditTitle').html();
+    var event_template5 = $('#eForms_edit_title').html();
     Mustache.parse(event_template);
-    $.each(data.eFormsEditTitle, function () {
-        $('#eFormsEditTitle_cycle').append(Mustache.render(event_template5, this));
+    $.each(data.eforms_edit_title, function () {
+        $('#eForms_edit_title_cycle').append(Mustache.render(event_template5, this));
     });
 
-    var event_template6 = $('#SeeTable').html();
+    var event_template6 = $('#see_table').html();
     Mustache.parse(event_template);
-    $.each(data.SeeTable, function () {
-        $('#SeeTable_cycle').append(Mustache.render(event_template6, this));
+    $.each(data.see_table, function () {
+        $('#see_table_cycle').append(Mustache.render(event_template6, this));
     });
 
-    var event_template7 = $('#FunctionButtonName').html();
+    var event_template7 = $('#function_button_name').html();
     Mustache.parse(event_template);
-    $.each(data.FunctionButtonName, function () {
-        $('#FunctionButtonName_cycle').append(Mustache.render(event_template7, this));
+    $.each(data.function_button_name, function () {
+        $('#function_buttonname_cycle').append(Mustache.render(event_template7, this));
     });
 
     // Global post render

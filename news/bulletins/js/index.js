@@ -7,13 +7,13 @@ var render = function () {
     });
   
     var the_title = $('#the_title').html();
-    $.each(data.theTitle, function () {
+    $.each(data.the_title, function () {
         $('#the_title_cycle').append(Mustache.render(the_title, this));
     });
 
-    var emailButton = $('#emailButton').html();
-    $.each(data.emailButton, function () {
-        $('#emailButton_cycle').append(Mustache.render(emailButton, this));
+    var email_button = $('#email_button').html();
+    $.each(data.email_button, function () {
+        $('#email_button_cycle').append(Mustache.render(email_button, this));
     });
 
     var template = $('#template').html();

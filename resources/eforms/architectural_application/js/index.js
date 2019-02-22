@@ -1,8 +1,8 @@
 var render = function () {
     _pre_render()
-    var content_template = $('#ArchitecturalApplication').html();
+    var content_template = $('#architectural_application').html();
     Mustache.parse(content_template);
-    $('#ArchitecturalApplication').after(Mustache.render(content_template, data));
+    $('#architectural_application').after(Mustache.render(content_template, data));
 
     // Global post render
     _post_render();

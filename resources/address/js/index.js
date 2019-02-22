@@ -2,8 +2,8 @@ var render = function () {
     _pre_render()
 
     var event_template = $('#username-A').html();
-    var AccordingToTheStreet = $('#AccordingToTheStreet').html();
-    var userInformation = $('#userInformation').html();
+    var according_to_the_street = $('#according_to_the_street').html();
+    var user_information = $('#user_information').html();
 
     Mustache.parse(event_template);
 
@@ -12,9 +12,9 @@ var render = function () {
         $('#user_list').append(Mustache.render(user_list_section_template, this));
     });
 
-    Mustache.parse(AccordingToTheStreet);
-    $.each(data.AccordingToTheStreet, function () {
-        $('#AccordingToTheStreet_cycle').append(Mustache.render(AccordingToTheStreet, this));
+    Mustache.parse(according_to_the_street);
+    $.each(data.according_to_the_street, function () {
+        $('#according_to_the_street_cycle').append(Mustache.render(according_to_the_street, this));
     });
 
     var alphabet = $('#alphabet').html();
@@ -22,23 +22,23 @@ var render = function () {
         $('#alphabet_cycle').append(Mustache.render(alphabet, this));
     });
 
-    var PageInformation = $('#PageInformation').html();
-    $.each(data.PageInformation, function () {
-        $('#PageInformation_cycle').append(Mustache.render(PageInformation, this));
+    var page_information = $('#page_information').html();
+    $.each(data.page_information, function () {
+        $('#page_information_cycle').append(Mustache.render(page_information, this));
     });
 
-    var FuctionButton = $('#FuctionButton').html();
-    $.each(data.FuctionButton, function () {
-        $('#FuctionButton_cycle').append(Mustache.render(FuctionButton, this));
+    var fuction_button = $('#fuction_button').html();
+    $.each(data.fuction_button, function () {
+        $('#fuction_button_cycle').append(Mustache.render(fuction_button, this));
     });
 
-    var userInformation = $('#userInformation').html();
-    $.each(data.UserInformation, function () {
-        $('#userInformation_cycle').append(Mustache.render(userInformation, this));
+    var user_information = $('#user_information').html();
+    $.each(data.user_information, function () {
+        $('#user_information_cycle').append(Mustache.render(user_information, this));
     });
 
     var category = $('#category').html();
-    $.each(data.AddressBookCategories, function () {
+    $.each(data.address_book_categories, function () {
         $('#address').append(Mustache.render(category, this));
     });
 

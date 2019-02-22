@@ -1,8 +1,8 @@
 var render = function() {
     _pre_render();
-    var content_template = $('#editEforms').html();
+    var content_template = $('#edit_eforms').html();
     Mustache.parse(content_template);
-    $('#editEforms').after(Mustache.render(content_template, data));
+    $('#edit_eforms').after(Mustache.render(content_template, data));
 
     // Global post render
     _post_render();

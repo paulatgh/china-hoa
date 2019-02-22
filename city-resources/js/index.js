@@ -1,29 +1,29 @@
 var render = function () {
     _pre_render();
-    var CityResources_content = $('#CityResources_content').html();
-    var Helpfuladdresses_title = $('#Helpfuladdresses_title').html();
-    var aboutlink_content = $('#aboutlink_content').html();
-    var schooladdresses_title = $('#schooladdresses_title').html();
+    var city_resources_content = $('#city_resources_content').html();
+    var helpful_addresses_title = $('#helpful_addresses_title').html();
+    var about_link_content = $('#about_link_content').html();
+    var school_addresses_title = $('#school_addresses_title').html();
     var Utilities_title = $('#Utilities_title').html();
 
-    Mustache.parse(CityResources_content);
-    $.each(data.CupertinoCityResources, function () {
-        $('#CityResources').append(Mustache.render(CityResources_content, this));
+    Mustache.parse(city_resources_content);
+    $.each(data.cupertino_city_resources, function () {
+        $('#city_resources').append(Mustache.render(city_resources_content, this));
     });
-    Mustache.parse(Helpfuladdresses_title);
-    $.each(data.HelpfulAddresses, function () {
-        $('#Helpfuladdresses').append(Mustache.render(Helpfuladdresses_title, this));
+    Mustache.parse(helpful_addresses_title);
+    $.each(data.helpful_addresses, function () {
+        $('#helpful_addresses').append(Mustache.render(helpful_addresses_title, this));
     });
-    Mustache.parse(aboutlink_content);
-    $.each(data.UrbanResourceInformation, function () {
-        $('#aboutlink').append(Mustache.render(aboutlink_content, this));
+    Mustache.parse(about_link_content);
+    $.each(data.urban_resource_information, function () {
+        $('#about_link').append(Mustache.render(about_link_content, this));
     });
-    Mustache.parse(schooladdresses_title);
-    $.each(data.NearbySchools, function () {
-        $('#schooladdresses').append(Mustache.render(schooladdresses_title, this));
+    Mustache.parse(school_addresses_title);
+    $.each(data.nearby_schools, function () {
+        $('#school_addresses').append(Mustache.render(school_addresses_title, this));
     });
     Mustache.parse(Utilities_title);
-    $.each(data.Utilities, function () {
+    $.each(data.utilities, function () {
         $('#Utilities').append(Mustache.render(Utilities_title, this));
     });
 
