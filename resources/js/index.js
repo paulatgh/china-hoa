@@ -1,8 +1,5 @@
 var render = function () {
-    var Logo = $('#Logo').html();
-    $.each(data.Logo, function () {
-        $('#Logo_cycle').append(Mustache.render(Logo, this));
-    });
+    _pre_render()
     var event_template = $('#Resources_list').html();
     Mustache.parse(event_template);
     $.each(data.resources, function () {
@@ -20,12 +17,5 @@ var render = function () {
     if (data._current_user && data._current_user.is_admin == true) {
         $('.buttona').css('display', 'none')
     }
-    var username = data._current_user && data._current_user.display_name
-    $(".btns-language").text(username);
 
-
-    $('.logout').click(function () {
-    //    TODO: log out user
-        logOutUser()
-    })
 };
