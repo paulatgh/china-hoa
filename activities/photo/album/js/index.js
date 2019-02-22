@@ -1,4 +1,5 @@
 var render = function () {
+    _pre_render();
     var photo = $('#photo').html();
     Mustache.parse(photo);
     $.each(data.album, function () {
@@ -20,11 +21,5 @@ var render = function () {
         $('.address_book_click').css('display', 'block')
     }
 
-    var username = data._current_user && data._current_user.display_name
-    $(".btns-language").text(username);
-
-    $('.logout').click(function () {
-        //TODO: log out user
-        logOutUser()
-    })
+    
 };

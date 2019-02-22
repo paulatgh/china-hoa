@@ -1,4 +1,5 @@
 var render = function () {
+    _pre_render();
     var event_template = $('#add').html();
     Mustache.parse(event_template);
     $('#add').after(Mustache.render(event_template, data));
@@ -11,12 +12,5 @@ var render = function () {
     if (data._current_user && data._current_user.is_admin == true) {
         $('.buttona').css('display', 'none')
     }
-    var username = data._current_user && data._current_user.display_name
-    $(".btns-language").text(username);
-
-
-    $('.logout').click(function () {
-        //TODO: log out user
-        logOutUser()
-    })
+    
 };
