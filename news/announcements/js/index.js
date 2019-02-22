@@ -1,4 +1,5 @@
 var render = function () {
+    _pre_render();
     var announcements_template = $('#announcements_template').html();
     Mustache.parse(announcements_template);
     $.each(data.announcements, function () {
@@ -9,10 +10,7 @@ var render = function () {
     // $.each(data.announcementsleft, function () {
     //     $('#news_announcementsleft').append(Mustache.render(announcements_templateleft, this));
     // });
-    var Logo = $('#Logo').html();
-    $.each(data.Logo, function () {
-        $('#Logo_cycle').append(Mustache.render(Logo, this));
-    });
+
 
     var Announcements = $('#Announcements').html();
     $.each(data.Announcements, function () {
@@ -59,16 +57,4 @@ var render = function () {
             deleteLog()
         })
     }
-
-
-    var username = data._current_user && data._current_user.display_name
-    $(".btns-language").text(username);
-
-
-    $('.logout').click(function () {
-        //    TODO: log out user
-        logOutUser()
-    })
-
-    $(".btns-language").text(username);
 }

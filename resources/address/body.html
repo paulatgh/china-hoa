@@ -1,41 +1,6 @@
 <!-- header -->
 <div class="header" style="box-shadow:0 2px 7px 0px rgba(0,0,0,0.5); border:1px solid rgba(151,151,151,1)">
-    <div class="w1200">
-        <a class="logo" href="/home" id="Logo_cycle">
-            <script id="Logo" type="txt/template">
-                <img src="{{Url}}">
-            {{title}}
-        </script>
-        </a>
-        <input type="text" placeholder="Search..." style="width: 188px;height: 37px;position: relative;top: 30px;left: 540px;border: solid 1px #393D44;padding-left: 10px;">
 
-        <div class="btns clearfix">
-            <img src="/community/img/Shape.png" alt="Shape" style="position: relative;left: -140px;top: 40px;z-index: 100000;">
-            <img src="/community/img/dropdown.png" alt="dropdown" style="position: relative;left: -50px;top: 36px;z-index: 100000;">
-            <a class="btns-search" href="javascript:;"> </a>
-            <a class="btns-language" href="javascript:;"></a>
-            <div class="langOv">
-                <div class="profile">
-                    <a href="/profile" style="border-bottom: 1px solid white;width: 100%;margin-left: -1px">My
-                        Profile</a>
-                    <a href="javascript:;" class="logout">Log Out</a>
-                </div>
-            </div>
-        </div>
-        <div class="nav">
-            <ul>
-                <li class="curr">
-                    <a class="on" href="/home">Home</a>
-                </li>
-                <li>
-                    <a href="/aboutus">About us</a>
-                </li>
-            </ul>
-            <span class="navline"></span>
-        </div>
-    </div>
-    <div class="innavbg"></div>
-    <div class="mask"></div>
 </div>
 <!-- main body -->
 <div class="main">
@@ -74,7 +39,7 @@
                     </ul>
                     <div class="address_categories" id="address">
                         <script id="category" type="txt/template">
-                        <h4>{{title}}</h4>
+                            <h4>{{title}}</h4>
                         <ul>
                             <li>{{list}}</li>
                             <li>{{secondlist}}</li>
@@ -83,75 +48,20 @@
                     </div>
                 </div>
                 <div class="address_book_right">
-                    <div class="a_a">
-                        <ul id="events_photo">
-                                <li id="group_one">
-                                <script id="first" type="txt/template">
-                                    {{list}}
-                                </script>
-                                </li>
-                            
-                            <script id="username" type="txt/template">
+                    <div id="user_list">
+                        <script id="user-list-section-template" type="txt/template">
+                            <ul id="events_photo">
+                                <li id="{{letter}}-section">{{letter}}</li>
+                                {{#names}}
                                 <li class="user_desc">{{name}}</li>
-                            </script>
-                        </ul>
-                        <ul id="events_photo2">
-                                <li id="group_two">
-                                        <script id="second" type="txt/template">
-                                            {{list}}
-                                        </script>
-                                </li>
-                            <script id="username2" type="txt/template">
-                                <li class="user_desc">{{name}}</li>
-                                </script>
-                        </ul>
-                        <ul id="events_photo3">
-                                <li id="group_three">
-                                        <script id="third" type="txt/template">
-                                            {{list}}
-                                        </script>
-                                </li>
-                            <script id="username3" type="txt/template">
-                                <li class="user_desc">{{name}}</li>
-                                    </script>
-                        </ul>
-                    </div>
-                    <div class="a_z">
-                        <ul id="username-A_cycle">
-                            <li id="nostreetname">
-                                <script id="nostreetname_one" type="txt/template">
-                                {{name}}
-                                </script>
-                            </li>
-                            <script id="username-A" type="txt/template">
-                                <li class="user_desc">{{name}} <span></span></li>
-                            </script>
-                        </ul>
-                        <ul id="events_photo2-B">
-                                <li id="camberleylane">
-                                        <script id="camberleylane_one" type="txt/template">
-                                        {{name}}
-                                        </script>
-                                    </li> 
-                            <script id="username2-B" type="txt/template">
-                                <li class="user_desc">{{name}}</li>
-                            </script>
-                        </ul>
-                        <ul id="events_photo3-C">
-                                <li id="crickethillroad">
-                                        <script id="crickethillroad_one" type="txt/template">
-                                        {{name}}
-                                        </script>
-                                    </li> 
-                            <script id="username3-C" type="txt/template">
-                               <li class="user_desc">{{name}}</li>
-                            </script>
-                        </ul>
+                                {{/names}}
+                            </ul>
+                        </script>
                     </div>
                 </div>
                 <ul class="address_book_letter" id="alphabet_cycle">
                     <script id="alphabet" type="txt/template">
-                        <li>{{alphabetList}}</li>
+                        <li><a href="#{{letter}}-section">{{letter}}</a></li>
                     </script>
                 </ul>
             </div>
@@ -171,7 +81,7 @@
                         <p>{{Phone}}</p>
                         <p>{{professional}}</p>
                     </div>
-    
+
                     <div class="user-content">
                         <h5>{{community}}</h5>
                         <p>{{address}}</p>
@@ -184,7 +94,6 @@
                         <p>{{FirstChild}}</p>
                         <p>{{SecondChild}}</p>
                         <p>{{ThirdChild}}</p>
-    
                     </div>
                     <div class="user-content">
                         <h5>{{HereFrom}}</h5>

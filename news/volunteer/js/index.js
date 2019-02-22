@@ -1,4 +1,5 @@
 var render = function () {
+    _pre_render();
     var volunteer_template = $('#volunteer_template').html();
     Mustache.parse(volunteer_template);
     $.each(data.volunteer, function () {
@@ -20,10 +21,7 @@ var render = function () {
     $.each(data.volunteertitle, function () {
         $('#main_volunteer').append(Mustache.render(volunteer_title, this));
     });
-    var Logo = $('#Logo').html();
-    $.each(data.Logo, function () {
-        $('#Logo_cycle').append(Mustache.render(Logo, this));
-    });
+  
     // Global post render
     _post_render();
 
@@ -37,12 +35,7 @@ var render = function () {
             deleteLog()
         })
     }
-    var username = data._current_user && data._current_user.display_name
-    $(".btns-language").text(username);
-    $('.logout').click(function () {
-        //TODO: log out user
-        logOutUser()
-    })
+ 
 
 }
 

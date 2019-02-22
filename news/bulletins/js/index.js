@@ -1,14 +1,11 @@
 var render = function () {
+    _pre_render();
     var bulletins_template = $('#bulletins_template').html();
     Mustache.parse(bulletins_template);
     $.each(data.bulletins, function () {
         $('#news_bulletins').append(Mustache.render(bulletins_template, this));
     });
-    var Logo = $('#Logo').html();
-    $.each(data.Logo, function () {
-        $('#Logo_cycle').append(Mustache.render(Logo, this));
-    });
-
+  
     var the_title = $('#the_title').html();
     $.each(data.theTitle, function () {
         $('#the_title_cycle').append(Mustache.render(the_title, this));
@@ -38,10 +35,5 @@ var render = function () {
         $('.photo-albums').css('display', 'block')
     }
 
-    $('.logout').click(function () {
-        //TODO: log out user
-        logOutUser()
-    })
-
-    $(".btns-language").text(username);
+    
 };

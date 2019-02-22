@@ -89,13 +89,13 @@
 
 .choose-right ul>li {
     width: 851px;
-    height: 170px;
+    min-height: 100px;
+    overflow: hidden;
     background: rgba(241, 241, 241, 1);
     margin-bottom: 10px;
     padding: 16px;
     box-sizing: border-box;
     position: relative;
-
 }
 
 .announcements_permission {

@@ -44,14 +44,12 @@ body {
 .address_book_left {
     float: left;
     width: 23%;
-
 }
 
 .address_book_letter {
     float: left;
     width: 2%;
     margin-left: 8px;
-
 }
 
 .address_book_letter li:hover {
@@ -61,13 +59,13 @@ body {
 
 .address_book_letter li {
     width: 18px;
-    height: 33px;
-    font-size: 22px;
+    height: 24px;
+    font-size: 16px;
     font-family: OpenSans-SemiBold;
     font-weight: 500;
     color: rgba(155, 155, 155, 1);
     line-height: 33px;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
 }
 
 .address_book_right {
@@ -224,7 +222,7 @@ body {
 
 .user {
     width: 386px;
-    height: 943px;
+    height: 100%;
     background: #ffffff;
     border-radius: 10px;
     position: absolute;
@@ -236,7 +234,7 @@ body {
 .close {
     width: 38px;
     height: 38px;
-    background: url('../../../community/img/close-circle.png') no-repeat;
+    background: url('/community/img/close-circle.png') no-repeat;
     position: absolute;
     top: -19px;
     right: -19px;
@@ -259,7 +257,7 @@ body {
 
 /* .user-img img:nth-child(2){
 			width: 186px;
-			
+
 
 		} */
 .user-content {
@@ -286,5 +284,5 @@ body {
     line-height: 27px;
 }
 .db{
-  display: none;  
+  display: none;
 }

@@ -1,4 +1,6 @@
 var render = function() {
+    _pre_render()
+
     $('#header').after(function() { return Mustache.render($(this).html(), data.profile); });
     $('#members_primary_name_first').after(function() { return Mustache.render($(this).html(), data.profile); });
     $('#members_primary_name_last').after(function() { return Mustache.render($(this).html(), data.profile); });

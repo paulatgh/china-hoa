@@ -1,11 +1,9 @@
 var render = function () {
+    _pre_render();
     var content_template = $('#page').html();
     Mustache.parse(content_template);
     $('#page').after(Mustache.render(content_template, data));
-    var Logo = $('#Logo').html();
-    $.each(data.Logo, function () {
-        $('#Logo_cycle').append(Mustache.render(Logo, this));
-    });
+    
     // Global post render
     _post_render();
 
@@ -16,7 +14,7 @@ var render = function () {
         $('.buttona').css('display', 'none')
     }
 
-    $.getScript('js/cdn.ckeditor.js', function () {
+    $.getScript(data._metadata.assets_path + '/news/bulletins/page/js/cdn.ckeditor.js', function () {
         //Carousel
         ClassicEditor
             .create(document.querySelector('#editor'))
@@ -32,11 +30,4 @@ var render = function () {
     }
 
 
-    var username = data._current_user && data._current_user.display_name
-    $(".btns-language").text(username);
-
-    $('.logout').click(function () {
-    //    TODO: log out user
-        logOutUser()
-    })
 }

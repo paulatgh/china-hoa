@@ -55,6 +55,52 @@ function deleteLog(data, index,el) {
     })
 }
 
+function _pre_render() {
+    header_html = `
+    <div class="w1200">
+        <a class="logo" href="#">
+            <img src="/community/img/Combined Shape.png" alt="Combined Shape">
+            De Anza Oaks
+        </a>
+        <input type="text" placeholder="Search..." style="width: 188px;height: 37px;position: relative;top: 30px;left: 540px;border: solid 1px #393D44;padding-left: 10px;">
+        <div class="btns clearfix">
+            <img src="/community/img/Shape.png" alt="Shape" style="position: relative;left: -140px;top: 40px;z-index: 100000;">
+            <img src="/community/img/dropdown.png" alt="dropdown" style="position: relative;left: -50px;top: 36px;z-index: 100000;">
+            <a class="btns-search" href="javascript:;"> </a>
+            <a class="btns-language" href="javascript:;">Log In</a>
+            <div class="langOv">
+                <div class="profile">
+                    <a href="${data._metadata.root_url}/profile" style="border-bottom: 1px solid white;width: 100%;margin-left: -1px">
+                        My Profile
+                    </a>
+                    <a href="javascript:;" class="logout">Log Out</a>
+                </div>
+            </div>
+        </div>
+        <div class="nav">
+            <ul>
+                <li class="curr">
+                    <a class="on jump" href="${data._metadata.root_url}/home">Home</a>
+                </li>
+                <li class="curr">
+                    <a class="on" href="${data._metadata.root_url}/aboutus">About Us</a>
+                </li>
+            </ul>
+            <span class="navline"></span>
+        </div>
+    </div>`;
+    $('.header').html(header_html);
+
+    var username = data._current_user && data._current_user.display_name
+    if (username) {
+        $(".btns-language").text(username);
+    }
+    $('.logout').click(function () {
+        //TODO: log out user
+        logOutUser()
+    })
+}
+
 function _post_render() {
     win = $(window);
     //showNav()
@@ -66,13 +112,13 @@ function _post_render() {
         $(".nav li a").each(function () {
             //console.log($(this).attr('href'));
             if ((urlstr + '/').indexOf($(this).attr('href')) > -1&&$(this).attr('href')!='') {
-              $(this).parent().addClass('curr'); urlstatus = true;      
+              $(this).parent().addClass('curr'); urlstatus = true;
             } else {
               $(this).parent().removeClass('curr');urlstatus = false;
             }
         });
     };
-    
+
     //头部滑块
     var slip2=$(".navline"),li2=$(".nav li"),a2=$(".nav li.curr"),i2="",left2="15.5",animatetime2=300;
     var Slider2 =new Slider(slip2,li2,a2,i2,left2,animatetime2);
@@ -92,7 +138,7 @@ function _post_render() {
             if (index == 3) {
                 innavbg.stop().fadeOut();
             }else if (index > 0 && index < 9 && index !=7) {
-                innavbg.stop().fadeIn();           
+                innavbg.stop().fadeIn();
             }else {
                 innavbg.stop().fadeOut();
             };
@@ -137,7 +183,7 @@ function _post_render() {
         //.stopPropagation();
     },function(){
         $('.profile').stop().animate({'top':'-100%'},200);
-        
+
     })
 }
 
@@ -148,8 +194,8 @@ function submitDynamicForm(action, method, values) {
         action: action,
         method: method
     });
-    
-    
+
+
     if(document.querySelector('meta[name=csrf-token]')){
       // add auth token
       form.append($('<input/>', {

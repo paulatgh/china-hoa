@@ -1,4 +1,5 @@
 var render = function () {
+    _pre_render();
     var Facilities = $('#content_title').html();
     $.each(data.content_title, function () {
         $('#content_title_cycle').append(Mustache.render(Facilities, this));
@@ -69,11 +70,5 @@ var render = function () {
         $('.buttona').css('display', 'none')
     }
 
-    var username = data._current_user && data._current_user.display_name
-    $(".btns-language").text(username);
-
-    $('.logout').click(function () {
-        //TODO: log out user
-        logOutUser()
-    })
+   
 };

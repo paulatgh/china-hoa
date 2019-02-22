@@ -1,4 +1,5 @@
 var render = function () {
+    _pre_render();
     // Render page
     var event_template = $('#event_template').html();
     var featureList_template = $('#featureList_template').html()
@@ -46,6 +47,16 @@ var render = function () {
     var Amenities_title = $('#Amenities_title').html()
     $.each(data.Amenities_title, function () {
         $('#Amenities_title_cycle').append(Mustache.render(Amenities_title, this));
+    });
+
+    var banner_img = $('#banner_img').html()
+    $.each(data.bennerImg, function () {
+        $('#banner_img_cycle').append(Mustache.render(banner_img, this));
+    });
+
+    var provenance = $('#provenance').html()
+    $.each(data.provenance, function () {
+        $('#provenance_cycle').append(Mustache.render(provenance, this));
     });
 
     // Global post render
@@ -134,11 +145,6 @@ var render = function () {
     clickReduce();
     clickAdd();
 
-    $('.logout').click(function () {
-        //TODO: log out user
-        logOutUser()
-    })
-
     var str =
         `<div class="db">
         <div class="login">
@@ -159,14 +165,13 @@ var render = function () {
         $(".btns-language").click(function (event) {
             event.preventDefault();
         })
-        $(".btns-language").text(username);
         $(".langOv").css("display", "block")
         $('.jump').click(function () {
             var arr = $(this).attr('data')
             if (arr) {
                 window.location.href = `${data._metadata.root_url}/${arr}`;
             } else {
-                window.location.href = `${data._metadata.root_url}/about-us`;
+                window.location.href = `${data._metadata.root_url}/aboutus`;
             }
         })
     } else {

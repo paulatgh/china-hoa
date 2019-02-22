@@ -1,4 +1,5 @@
 var render = function () {
+    _pre_render();
     var custom_template = $('#custom_template').html();
     Mustache.parse(custom_template);
     $.each(data.template, function () {
@@ -10,10 +11,7 @@ var render = function () {
         $('#form_titles').append(Mustache.render(template_title, this));
     });
 
-    var Logo = $('#Logo').html();
-    $.each(data.Logo, function () {
-        $('#Logo_cycle').append(Mustache.render(Logo, this));
-    });
+   
     
     if (data._current_user && data._current_user.is_admin == true) {
         $('.form_content_right').css('display', 'block');
@@ -51,12 +49,6 @@ var render = function () {
         })
 
     })
-    var username = data._current_user && data._current_user.display_name
-    $(".btns-language").text(username);
-
-    $('.logout').click(function () {
-        //TODO: log out user
-        logOutUser()
-    })
+    
 
 };
