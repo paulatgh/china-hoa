@@ -7,7 +7,7 @@ var render = function () {
 
     Mustache.parse(event_template);
 
-    var user_list_section_template = $('#user-list-section-template').html();
+    var user_list_section_template = $('#user_list_section_template').html();
     $.each(data.names_by_letter, function() {
         $('#user_list').append(Mustache.render(user_list_section_template, this));
     });
