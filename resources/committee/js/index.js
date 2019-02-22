@@ -1,9 +1,6 @@
 var render = function() {
     _pre_render()
-    // var Logo = $('#Logo').html();
-    // $.each(data.Logo, function () {
-    //     $('#Logo_cycle').append(Mustache.render(Logo, this));
-    // });
+
     var committeeList = $('#committeeList').html();
     Mustache.parse(committeeList);
     $.each(data.ManagementList, function() {

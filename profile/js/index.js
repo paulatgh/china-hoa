@@ -47,11 +47,6 @@ var render = function() {
     $('#notes_organizations').after(function() { return Mustache.render($(this).html(), data.profile); });
     $('#notes_freeform').after(function() { return Mustache.render($(this).html(), data.profile); });
 
-    var Logo = $('#Logo').html();
-    $.each(data.Logo, function() {
-        $('#Logo_cycle').append(Mustache.render(Logo, this));
-    });
-
     // Global post render
     _post_render();
 

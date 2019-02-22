@@ -39,86 +39,138 @@
                 site_name: 'De Anza Oaks',
                 environment: 'dev',
             },
-            names_by_letter: [
-                {
+            names_by_letter: [{
                     letter: 'A',
-                    names: [ { name: 'Allan, Joan' }, { name: 'Angani, Raju & Tekkali, Janaki' }],
+                    names: [{
+                        name: 'Allan, Joan'
+                    }, {
+                        name: 'Angani, Raju & Tekkali, Janaki'
+                    }],
                 },
                 {
                     letter: 'B',
-                    names: [ { name: 'Baines, Joan & Mike' }, { name: 'Berry, Susan' }],
+                    names: [{
+                        name: 'Baines, Joan & Mike'
+                    }, {
+                        name: 'Berry, Susan'
+                    }],
                 },
                 {
                     letter: 'C',
-                    names: [ { name: 'Cantley, Nancy' }, { name: 'Carlson, Madge Ann' } ],
+                    names: [{
+                        name: 'Cantley, Nancy'
+                    }, {
+                        name: 'Carlson, Madge Ann'
+                    }],
                 },
                 {
                     letter: 'L',
-                    names: [ { name: 'Lu, Tom' } ],
+                    names: [{
+                        name: 'Lu, Tom'
+                    }],
                 },
                 {
                     letter: 'T',
-                    names: [ { name: 'Test, Test' } ],
+                    names: [{
+                        name: 'Test, Test'
+                    }],
                 }
             ],
-            letter_anchors: [
-                { letter: 'A' },
-                { letter: 'B' },
-                { letter: 'C' },
-                { letter: 'D' },
-                { letter: 'E' },
-                { letter: 'F' },
-                { letter: 'G' },
-                { letter: 'H' },
-                { letter: 'I' },
-                { letter: 'J' },
-                { letter: 'K' },
-                { letter: 'L' },
-                { letter: 'M' },
-                { letter: 'N' },
-                { letter: 'O' },
-                { letter: 'P' },
-                { letter: 'Q' },
-                { letter: 'S' },
-                { letter: 'T' },
-                { letter: 'U' },
-                { letter: 'V' },
-                { letter: 'W' },
-                { letter: 'X' },
-                { letter: 'Y' },
-                { letter: 'Z' },
+            letter_anchors: [{
+                    letter: 'A'
+                },
+                {
+                    letter: 'B'
+                },
+                {
+                    letter: 'C'
+                },
+                {
+                    letter: 'D'
+                },
+                {
+                    letter: 'E'
+                },
+                {
+                    letter: 'F'
+                },
+                {
+                    letter: 'G'
+                },
+                {
+                    letter: 'H'
+                },
+                {
+                    letter: 'I'
+                },
+                {
+                    letter: 'J'
+                },
+                {
+                    letter: 'K'
+                },
+                {
+                    letter: 'L'
+                },
+                {
+                    letter: 'M'
+                },
+                {
+                    letter: 'N'
+                },
+                {
+                    letter: 'O'
+                },
+                {
+                    letter: 'P'
+                },
+                {
+                    letter: 'Q'
+                },
+                {
+                    letter: 'S'
+                },
+                {
+                    letter: 'T'
+                },
+                {
+                    letter: 'U'
+                },
+                {
+                    letter: 'V'
+                },
+                {
+                    letter: 'W'
+                },
+                {
+                    letter: 'X'
+                },
+                {
+                    letter: 'Y'
+                },
+                {
+                    letter: 'Z'
+                },
             ],
-            Logo: [{
+            AddressBookCategories: [{
                 id: 1,
-                title: 'De Anza Oaks',
-                Url: '/community/img/Combined Shape.png'
+                title: "Address Book Categories",
+                list: "All(224)",
+                secondlist: "Resident(224)"
             }],
-            AddressBookCategories:
-            [{
-                id:1,
-                title:"Address Book Categories",
-                list:"All(224)",
-                secondlist:"Resident(224)"
+
+            nostreetnamelist: [{
+                id: 1,
+                name: 'No street Name'
             }],
-            
-            nostreetnamelist:[
-                {
-                   id:1,
-                   name:'No street Name'
-               }
-           ],
-           camberleylanelist:[
-                {
-                   id:1,
-                   name:'Camberley Lane'
-               }
-           ],
-           crickethillroadlist:[
-                {
-                   id:1,
-                   name:'Cricket Hill Road'
-               }
-           ],
+            camberleylanelist: [{
+                id: 1,
+                name: 'Camberley Lane'
+            }],
+            crickethillroadlist: [{
+                id: 1,
+                name: 'Cricket Hill Road'
+            }],
             PageInformation: [{
                 id: 1,
                 content: 'Here you will find a listing of De Anza Oaks residents who participate in this online version of the Directory.'
@@ -276,18 +328,19 @@
                 number: '1'
             }]
         }
-    </script>
 
+    </script>
 
 
     <script src="js/index.js"></script>
     <script>
         // This script block stays in this wrapper html file
-        $(function () {
-            $('#content').load("body.html", function () {
+        $(function() {
+            $('#content').load("body.html", function() {
                 render();
             });
         });
+
     </script>
 </body>
 
