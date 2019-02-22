@@ -1,4 +1,5 @@
 var render = function () {
+  _pre_render();
   var community_titlea = $('#community_title').html()
   $.each(data.community_title, function () {
     $('#community_title_cycle').append(Mustache.render(community_titlea, this));

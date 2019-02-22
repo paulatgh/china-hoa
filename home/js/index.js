@@ -161,7 +161,7 @@ var render = function () {
             if (arr) {
                 window.location.href = `${data._metadata.root_url}/${arr}`;
             } else {
-                window.location.href = `${data._metadata.root_url}/about-us`;
+                window.location.href = `${data._metadata.root_url}/aboutus`;
             }
         })
     } else {
