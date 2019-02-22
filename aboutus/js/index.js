@@ -22,12 +22,7 @@ var render = function () {
   // Local post render
 
   // admin
-  var username = data._current_user && data._current_user.display_name
-  $(".btns-language").text(username);
-  $('.logout').click(function () {
-    //TODO: log out user
-    logOutUser()
-  })
+ 
   var str = `<div class="db">
     <div class="login">
         <h3 class="login-H3">De Anza Oaks HOA</h3>
@@ -42,6 +37,7 @@ var render = function () {
         </div>
     </div>
 </div>`;
+var username = data._current_user && data._current_user.display_name
   if (username) {
     $(".btns-language").click(function (event) {
       event.preventDefault();
@@ -51,9 +47,9 @@ var render = function () {
     $('.jump').click(function () {
       var arr = $(this).attr('data')
       if (arr) {
-        window.location.href = `http://tfire.net/${arr}`;
+        window.location.href = `${data._metadata.root_url}/${arr}`;
       } else {
-        window.location.href = "http://tfire.net/aboutus/aboutus.html";
+        window.location.href = "${data._metadata.root_url}/aboutus";
       }
     })
   } else {
