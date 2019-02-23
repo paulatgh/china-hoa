@@ -30,7 +30,7 @@ var render = function () {
 
     // Local post render
 
-    
+
     // admin
     if (data._current_user && data._current_user.is_admin == true) {
         $('.announcements_add').css('display', 'block')

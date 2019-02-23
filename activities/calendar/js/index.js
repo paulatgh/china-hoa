@@ -23,7 +23,7 @@ var render = function() {
         backToday: true // Whether to return to the day
     });
 
-    $.getScript(data._metadata.calendar_path + '/js/jalendar.js', function() {
+    $.getScript(`${data._metadata.assets_path}${data._metadata.page_path}/js/jalendar.js`, function() {
         $(function() {
             $('#myId').jalendar({
                 // customDay: '2017/12/01', // Format: Year/Month/Day

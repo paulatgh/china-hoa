@@ -27,9 +27,9 @@ var render = function () {
         $('#page_information_cycle').append(Mustache.render(page_information, this));
     });
 
-    var fuction_button = $('#fuction_button').html();
-    $.each(data.fuction_button, function () {
-        $('#fuction_button_cycle').append(Mustache.render(fuction_button, this));
+    var function_button = $('#function_button').html();
+    $.each(data.function_button, function () {
+        $('#function_button_cycle').append(Mustache.render(function_button, this));
     });
 
     var user_information = $('#user_information').html();

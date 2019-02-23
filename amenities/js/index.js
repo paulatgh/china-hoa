@@ -16,9 +16,9 @@ var render = function() {
         $('#olympic_games_cycle').append(Mustache.render(olympic_games, this));
     });
 
-    var Clubhouse = $('#club_house').html();
-    $.each(data.club_house, function() {
-        $('#club_house_cycle').append(Mustache.render(Clubhouse, this));
+    var Clubhouse = $('#clubhouse').html();
+    $.each(data.clubhouse, function() {
+        $('#clubhouse_cycle').append(Mustache.render(Clubhouse, this));
     });
 
     var Children = $('#Children').html();
