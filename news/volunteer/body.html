@@ -17,41 +17,79 @@ border:1px solid rgba(151,151,151,1)">
                 <div id="main_volunteer">
                     <script id="volunteer_title" type="txt/template">
                         <h3>{{title}}</h3>
-                <div class="Volunteer_dec">{{description}}</div>
-                <div style="width: 100%;margin-bottom: 16px"><a class="top-Add" href="{{link}}">{{submit}}</a> </div>
-            </script>
+                        <div class="Volunteer_dec">{{description}}</div>
+                        <div style="width: 100%;margin-bottom: 16px"><a class="top-Add" href="{{link}}">{{submit}}</a> </div>
+                    </script>
                 </div>
-                <div class="calendar-right">
-                    <ul>
-                        <li id="news_volunteer">
-                            <script id="volunteer_template" type="txt/template">
+                <div class="tiles">
+                    <script id="volunteer_tiles" type="txt/template">
+                        {{#volunteering_events}}
+                        <div class="item">
+                            <div class="volunteer_title">
+                                {{title}}
+                            </div>
+                            <div class="volunteer_description">
+                                <h4>Description:</h4>
+                                <div>{{description}}</div>
+                            </div>
+                            {{#when}}
+                            <div class="volunteer_details">
+                                <h4>When:</h4>
+                                <div>{{when}}</div>
+                            </div>
+                            {{/when}}
+                            {{#where}}
+                            <div class="volunteer_details">
+                                <h4>Where:</h4>
+                                <div>{{where}}</div>
+                            </div>
+                            {{/where}}
+                            <div class="volunteer_contact">
+                                <h4>Contact:</h4>
+                                <div>{{contact}}</div>
+                            </div>
+                            <div class="volunteer_admin_options">
+                                <div class="part-a">
+                                    <a class="part-a1">Edit</a>
+                                    <a class="part-a2">Delete</a>
+                                </div>
+                            </div>
+                        </div>
+                        {{/volunteering_events}}
+                    </script>
+                </div>
+<!-- 
+
+
+
+
                                 <div class="part_1">
-                                        <div class="Volunteer_dec_title" style="font-weight: 600;">{{title}}
+                                    <div class="Volunteer_dec_title" style="font-weight: 600;">{{title}}
+                                    </div>
+                                    <div class="Volunteer_dec_title">
+                                        <h4>Description:</h4>
+                                        <div>{{description}}</div>
+                                    </div>
+                                    <div class="Volunteer_dec_title">
+                                        <h4>{{when}}</h4>
+                                            <div>{{time}}</div>
                                         </div>
                                         <div class="Volunteer_dec_title">
-                                            <h4>Description:</h4>
-                                            <div>{{description}}</div>
-                                        </div>
-                                        <div class="Volunteer_dec_title">
-                                            <h4>{{When}}</h4>
-                                                <div>{{time}}</div>
+                                            <h4>{{where}}</h4>
+                                                <div>{{address}}</div>
                                             </div>
-                                            <div class="Volunteer_dec_title">
-                                                <h4>{{Where}}</h4>
-                                                    <div>{{address}}</div>
-                                                </div>
-                                               
-                                        <div class="Volunteer_dec_title">
-                                            <h4>Contact:</h4>
-                                            <div>{{contact}}</div>
-                                        </div>
-                                        <div class="part">
-                                            <div class="part-a">
-                                                <a class="part-a1">Edit</a>
-                                                <a class="part-a2">Delete</a>
-                                            </div>
+                                            
+                                    <div class="Volunteer_dec_title">
+                                        <h4>Contact:</h4>
+                                        <div>{{contact}}</div>
+                                    </div>
+                                    <div class="part">
+                                        <div class="part-a">
+                                            <a class="part-a1">Edit</a>
+                                            <a class="part-a2">Delete</a>
                                         </div>
                                     </div>
+                                </div>
                             </script>
                         </li>
                         <li id="news_volunteers">
@@ -98,7 +136,7 @@ border:1px solid rgba(151,151,151,1)">
                                             </div>
                                     </script>
                         </li>
-                    </ul>
+                    </ul> -->
                 </div>
             </div>
         </div>

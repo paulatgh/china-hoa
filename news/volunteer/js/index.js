@@ -1,26 +1,8 @@
 var render = function () {
     _pre_render();
-    var volunteer_template = $('#volunteer_template').html();
-    Mustache.parse(volunteer_template);
-    $.each(data.volunteer, function () {
-        $('#news_volunteer').append(Mustache.render(volunteer_template, this));
-    });
-    var volunteer_templates = $('#volunteer_templates').html();
-    Mustache.parse(volunteer_templates);
-    $.each(data.volunteer_second, function () {
-        $('#news_volunteers').append(Mustache.render(volunteer_templates, this));
-    });
 
-    var volunteer_templatet = $('#volunteer_templatet').html();
-    Mustache.parse(volunteer_templatet);
-    $.each(data.volunteer_third, function () {
-        $('#news_volunteert').append(Mustache.render(volunteer_templatet, this));
-    });
-    var volunteer_title = $('#volunteer_title').html();
-    Mustache.parse(volunteer_title);
-    $.each(data.volunteer_title, function () {
-        $('#main_volunteer').append(Mustache.render(volunteer_title, this));
-    });
+    $('#volunteer_title').after(function() { return Mustache.render($(this).html(), data.volunteer_title); });
+    $('#volunteer_tiles').after(function() { return Mustache.render($(this).html(), data); });
   
     // Global post render
     _post_render();
@@ -29,8 +11,8 @@ var render = function () {
 
     // admin
     if (data._current_user && data._current_user.is_admin) {
-        $('.top-Add').css('display', 'block')
-        $('.part').css('display', 'block')
+        $('.top-Add').show();
+        $('.volunteer_admin_options').show();
         $('.part .part-a2').click(function () {
             deleteLog()
         })

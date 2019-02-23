@@ -1,6 +1,7 @@
 html,
 body {
 	height: 100%;
+	min-height: 1000px;
 }
 
 .main {
@@ -34,43 +35,97 @@ body {
 	line-height: 41px;
 }
 
-.main-left .Volunteer_dec {
-	margin-top: 22px;
-	margin-bottom: 24px;
-	line-height: 33px;
-	font-size: 24px;
+/* Box-sizing reset: //w3bits.com/?p=3225 */
+/* html {
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+} */
+  
+.tiles {
+	column-width: 320px;
+	column-gap: 15px;
+	width: 90%;
+	max-width: 1100px;
+	margin: 50px auto;
+}
+  
+.item {
+	background: #fefefe;
+	border: 2px solid #fcfcfc;
+	box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+	margin: 0 2px 15px;
+	padding: 15px;
+	padding-bottom: 10px;
+	transition: opacity .4s ease-in-out;
+	display: inline-block;
+	column-break-inside: avoid;
+}
+  
+/* tiles on large screens */
+@media only screen and (min-width: 1024px) {
+	.tiles {
+	  	column-count: 2;
+	}
+}
+  
+/* tiles on medium-sized screens */
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+	.tiles {
+	  	column-count: 2;
+		column-gap: 0px;
+	}
+}
+  
+/* tiles on small screens */
+@media only screen and (max-width: 767px) and (min-width: 540px) {
+	.tiles {
+		column-count: 1;
+		column-gap: 0px;
+	}
+}
+
+.volunteer_title {
+	font-size: 20px;
 	font-family: OpenSans-SemiBold;
 	font-weight: 600;
-	color: #393D44;
+	color: rgba(57, 61, 68, 1);
+	line-height: 27px;
+	margin-bottom: 16px;
 }
 
-.main-left li {
-	float: left;
-	width: 384px;
-	margin-right: 15px;
-
-}
-
-.part_1 {
-	width: 100%;
-	height: 100%;
-	box-sizing: border-box;
-	padding: 32px;
-	margin-bottom: 15px;
-	box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.24);
-}
-
-.main-left li:last-child {
-	margin-right: 0;
-}
-
-.Volunteer_dec_title {
+.volunteer_description {
 	font-size: 20px;
 	font-family: OpenSans-SemiBold;
 	font-weight: 500;
 	color: rgba(57, 61, 68, 1);
 	line-height: 27px;
 	margin-bottom: 16px;
+}
+
+.volunteer_details {
+	font-size: 20px;
+	font-family: OpenSans-SemiBold;
+	font-weight: 500;
+	color: rgba(57, 61, 68, 1);
+	line-height: 27px;
+	margin-bottom: 16px;
+}
+
+.volunteer_contact {
+	font-size: 20px;
+	font-family: OpenSans-SemiBold;
+	font-weight: 500;
+	color: rgba(57, 61, 68, 1);
+	line-height: 27px;
+	margin-bottom: 16px;
+}
+
+.volunteer_admin_options {
+	display: none;
 }
 
 .top-Add {
@@ -127,10 +182,6 @@ body {
 
 .part-a2:hover {
 	color: #F94B5A;
-}
-
-.part {
-	display: none;
 }
 
 .edit_inp {
