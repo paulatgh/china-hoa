@@ -311,7 +311,7 @@
 }
 
 .jalendar .total-bar b {
-  color: #65c2c0;
+  color: rgba(106, 166, 102, 1);
   text-shadow: 0 1px 1px rgba(255, 255, 255, 1);
 }
 
@@ -345,6 +345,7 @@
 
 .jalendar .days .day:hover {
   background-color: #feffea;
+  color:   rgba(106, 166, 102, 1) !important;
 }
 
 .jalendar .days .day.selected {
