@@ -122,7 +122,9 @@ $(function() {
             var year = d.getFullYear();
             var date = d.getDate();
             var month = d.getMonth();
-
+            function p(s) {
+                return s < 10 ? '0' + s: s;
+            }
             var isLeapYear = function(year1) {
                 var f = new Date();
                 f.setYear(year1);
@@ -156,7 +158,7 @@ $(function() {
                 $this.find('.day').removeClass('this-month');
                 for (var i = 1; i <= monthDays[month]; i++) {
                     startDay++;
-                    $this.find('.day').eq(startDay - 1).addClass('this-month').attr('data-date', i + '/' + (month + 1) + '/' + year).html(i);
+                    $this.find('.day').eq(startDay - 1).addClass('this-month').attr('data-date', year + '-' + p(month + 1) + '-' + p(i) ).html(i);
                 }
                 if (month == d.getMonth()) {
                     $this.find('.day.this-month').removeClass('today').eq(date - 1).addClass('today').css('color', settings.color);

@@ -130,7 +130,9 @@ $(function() {
                 f.setDate(29);
                 return f.getDate() == 29;
             };
-
+            function p(s) {
+                return s < 10 ? '0' + s: s;
+            }
             var feb;
             var febCalc = function(feb) {
                 if (isLeapYear(year) === true) {
@@ -156,7 +158,7 @@ $(function() {
                 $this.find('.day').removeClass('this-month');
                 for (var i = 1; i <= monthDays[month]; i++) {
                     startDay++;
-                    $this.find('.day').eq(startDay - 1).addClass('this-month').attr('data-date', i + '/' + (month + 1) + '/' + year).html(i);
+                    $this.find('.day').eq(startDay - 1).addClass('this-month').attr('data-date', year + '-' + p(month + 1) + '-' + p(i) ).html(i);
                 }
                 if (month == d.getMonth()) {
                     $this.find('.day.this-month').removeClass('today').eq(date - 1).addClass('today').css('color', settings.color);
