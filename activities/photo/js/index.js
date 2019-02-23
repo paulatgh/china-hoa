@@ -15,11 +15,11 @@ var render = function () {
 
     // admin
     if (data._current_user && data._current_user.is_admin == true) {
-        $('.address_book_click').css('display', 'block')
-        $(".address_book_right").css("display", "block")
+        $('.admin_option_left').css('display', 'block')
+        $(".admin_option_right").css("display", "block")
     }
   
-    $(".address_book_right").click(function () {
+    $(".admin_option_right").click(function () {
         $(".upload-photos").css("display", "block")
         $(".bg").css("display", "block")
     })

@@ -35,7 +35,7 @@
     margin: auto;
 }
 
-.address_book_click {
+.admin_option_left {
     display: none;
     width: 167px;
     height: 38px;
@@ -50,11 +50,11 @@
     box-sizing: border-box;
 }
 
-.address_book_click:hover {
+.admin_option_left:hover {
     cursor: pointer;
 }
 
-.address_book_right {
+.admin_option_right {
     display: none;
     width: 167px;
     height: 38px;
@@ -70,7 +70,7 @@
     margin-left: 16px;
 }
 
-.address_book_right:hover {
+.admin_option_right:hover {
     cursor: pointer;
 }
 
