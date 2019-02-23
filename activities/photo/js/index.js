@@ -1,22 +1,12 @@
 var render = function () {
     _pre_render();
-    var event_template = $('#event_template').html();
-    Mustache.parse(event_template);
-    $.each(data.albums, function () {
-        $('#events_photo').append(Mustache.render(event_template, this));
-    });
-
-    var photo_title = $('#photo_title').html();
-    $.each(data.photo_title, function () {
-        $('#photo_title_cycle').append(Mustache.render(photo_title, this));
-    });
-
-    var admin_permissions = $('#admin_permissions').html();
-    $.each(data.admin_permissions, function () {
-        $('#admin_permissions_cycle').append(Mustache.render(admin_permissions, this));
-    });
-
-
+    // var event_template = $('#event_template').html();
+    // Mustache.parse(event_template);
+    // $.each(data.albums, function () {
+    //     $('#events_photo').append(Mustache.render(event_template, this));
+    // });
+    $('#photo_albums').after(function() { return Mustache.render($(this).html(), data); });
+    $('#upload_photo_album_selector').after(function() { return Mustache.render($(this).html(), data); });
 
     // Global post render
     _post_render();

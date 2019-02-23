@@ -1,7 +1,7 @@
 <!-- header -->
 <div class="header" style="box-shadow:0px 2px 7px 0px rgba(0,0,0,0.5);
  border:1px solid rgba(151,151,151,1);">
-   
+
 </div>
 
 <!-- main body -->
@@ -17,20 +17,17 @@
     </div>
     <div class="main-center">
         <p class="photo-albums" id="photo_title_cycle">
-            <script id="photo_title" type="txt/template">
-                {{name}}
-        </script>
+            Photo Albums
         </p>
         <div style="display: flex" id="admin_permissions_cycle">
-            <script id="admin_permissions" type="txt/template">
-                <div class="address_book_click"><a href="{{function_One_link}}" style="color: white">{{function_One}}</a></div>
-                <div class="address_book_right">{{function_Two}}</div>
-            </script>
+            <div class="address_book_click"><a href="add" style="color: white">Add a New Album</a></div>
+            <div class="address_book_right">Upload photos</div>
         </div>
         <div class="content-1" id="events_photo">
-            <script id="event_template" type="txt/template">
+            <script id="photo_albums" type="txt/template">
+                {{#albums}}
                 <div class="Events-Calendar ">
-                    <a href={{link}}>
+                    <a href="/activities/photo/album?id={{id}}">
                         <div class="content-img" style="background:url('{{img}}') no-repeat;background-size: 100% 100%;">
                             <em>{{count}}</em>
                         </div>
@@ -38,6 +35,7 @@
                         <p>{{desc}}</p>
                     </a>
                 </div>
+                {{/albums}}
             </script>
         </div>
         <div class="bg"></div>
@@ -47,8 +45,11 @@
             <div class="upload-photos-choose">
                 <span class="upload-photos-span">Upload</span>
                 <select class="upload-photos-int" name="">
-                    <option value="0">Album Name</option>
-                    <option value="1">Album Age</option>
+                    <script id="upload_photo_album_selector" type="txt/template">
+                        {{#albums}}
+                        <option value="{{id}}">{{title}}</option>
+                        {{/albums}}
+                    </script>
                 </select>
             </div>
             <div class="upload-photos-file" type="file"><img src="/community/img/profile.png" alt="">
