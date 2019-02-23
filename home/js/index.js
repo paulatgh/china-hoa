@@ -29,9 +29,9 @@ var render = function() {
         $('#Reservables_cycle').append(Mustache.render(Reservables, this));
     });
 
-    var BirDeyeView = $('#BirDeyeView').html()
-    $.each(data.bir_deye_view, function() {
-        $('#BirDeyeView_cycle').append(Mustache.render(BirDeyeView, this));
+    var birds_eye_view = $('#birds_eye_view').html()
+    $.each(data.birds_eye_view, function() {
+        $('#birds_eye_view_cycle').append(Mustache.render(birds_eye_view, this));
     });
 
     var Amenities = $('#Amenities').html()
@@ -50,7 +50,7 @@ var render = function() {
     });
 
     var banner_img = $('#banner_img').html()
-    $.each(data.bannerImg, function() {
+    $.each(data.banner_img, function() {
         $('#banner_img_cycle').append(Mustache.render(banner_img, this));
     });
 
@@ -86,7 +86,7 @@ var render = function() {
         });
     });
 
-    $.getScript(data._metadata.page_path + '/js/jalendar.js', function() {
+    $.getScript(`${data._metadata.assets_path}${data._metadata.page_path}/js/jalendar.js`, function() {
         $(function() {
             $('#myId').jalendar({
                 // customDay: '2017/12/01', // Format: Year/Month/Day

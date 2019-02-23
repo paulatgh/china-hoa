@@ -17,10 +17,10 @@ var render = function() {
         $('#committeeExternalExternal').append(Mustache.render(committeeListThird, this));
     });
 
-    var TheTitle = $('#TheTitle').html();
-    Mustache.parse(TheTitle);
+    var the_title = $('#the_title').html();
+    Mustache.parse(the_title);
     $.each(data.the_title, function() {
-        $('#TheTitleExternal').append(Mustache.render(TheTitle, this));
+        $('#TheTitleExternal').append(Mustache.render(the_title, this));
     });
 
     var Addbutton = $('#Addbutton').html();

@@ -193,7 +193,7 @@
   cursor: pointer;
   width: 50px;
   height: 51px;
-  background: url(../../community/img/jalendar-sprite.png) -65px -589px no-repeat;
+  background: url('/community/img/jalendar-sprite.png') -65px -589px no-repeat;
 }
 
 .jalendar .wood-bottom {
@@ -260,7 +260,7 @@
   position: absolute;
   display: inline-block;
   height: 31px;
-  background: url('../../community/img/jalendar-sprite.png') no-repeat;
+  background: url('/community/img/jalendar-sprite.png') no-repeat;
   top: 15px;
   cursor: pointer;
 }
@@ -289,7 +289,7 @@
   text-indent: 1px;
   text-align: center;
   margin: 0;
-  background: url('../../community/img/jalendar-sprite.png') no-repeat 0 -41px;
+  background: url('/community/img/jalendar-sprite.png') no-repeat 0 -41px;
   height: 22px;
   font: 13px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
   text-shadow: 0 1px 0 #000;
@@ -311,7 +311,7 @@
 }
 
 .jalendar .total-bar b {
-  color: #65c2c0;
+  color: rgba(106, 166, 102, 1);
   text-shadow: 0 1px 1px rgba(255, 255, 255, 1);
 }
 
@@ -345,6 +345,7 @@
 
 .jalendar .days .day:hover {
   background-color: #feffea;
+  color:   rgba(106, 166, 102, 1) !important;
 }
 
 .jalendar .days .day.selected {
@@ -386,7 +387,7 @@
   width: 10px;
   height: 10px;
   display: inline-block;
-  background: url(../../community/img/jalendar-sprite.png) 0 -580px;
+  background: url('/community/img/jalendar-sprite.png') 0 -580px;
 }
 
 .jalendar .add-event {
@@ -396,7 +397,7 @@
 }
 
 .jalendar .add-new {
-  background: url(../../community/img/jalendar-sprite.png) 0 -325px repeat-x;
+  background: url('/community/img/jalendar-sprite.png') 0 -325px repeat-x;
   margin: 0 0 20px 0;
   padding: 20px 15px 15px 15px;
   border-radius: 0 0 3px 3px;
@@ -422,7 +423,7 @@
   position: absolute;
   right: 20px;
   top: 25px;
-  background: url(../../community/img/jalendar-sprite.png) 0 -614px no-repeat;
+  background: url('/community/img/jalendar-sprite.png') 0 -614px no-repeat;
   width: 26px;
   height: 26px;
   display: inline-block;
@@ -436,7 +437,7 @@
 .jalendar .add-time {
   float: left;
   width: 108px;
-  background: url(../../community/img/jalendar-sprite.png) 0 -179px;
+  background: url('/community/img/jalendar-sprite.png') 0 -179px;
   padding: 0 0 0 20px;
   font: bold 13px "Helvetica Neue", Arial;
   position: relative;
@@ -453,7 +454,7 @@
 }
 
 .jalendar .add-time .select {
-  background: url(../../community/img/jalendar-sprite.png) right -250px repeat-x;
+  background: url('/community/img/jalendar-sprite.png') right -250px repeat-x;
   position: relative;
   float: left;
   border-radius: 2px;
@@ -505,7 +506,7 @@
 }
 
 .jalendar .all-day fieldset {
-  background: url(../../community/img/jalendar-sprite.png) 0 -492px repeat-x;
+  background: url('/community/img/jalendar-sprite.png') 0 -492px repeat-x;
   position: relative;
   float: right;
   border-radius: 2px;
@@ -522,7 +523,7 @@
   display: inline-block;
   height: 27px;
   margin: -6px 0 0 0;
-  background: url(../../community/img/jalendar-sprite.png) -2px -284px;
+  background: url('/community/img/jalendar-sprite.png') -2px -284px;
   position: relative;
 }
 
@@ -548,7 +549,7 @@
 }
 
 .jalendar .events h3 {
-  background: url(../../community/img/jalendar-sprite.png) center -532px no-repeat;
+  background: url('/community/img/jalendar-sprite.png') center -532px no-repeat;
   display: inline-block;
   width: 100%;
   font: 20px "Roboto", "Helvetica Neue", Arial;
@@ -586,7 +587,7 @@
 }
 
 .jalendar .events .event-single {
-  background: url(../../community/img/jalendar-sprite.png) 0 -90px;
+  background: url('/community/img/jalendar-sprite.png') 0 -90px;
   border-radius: 7px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.75);
   margin: 0 0 10px 0;
@@ -611,7 +612,7 @@
 }
 
 .jalendar .events .event-single .details .clock {
-  background: url(../../community/img/jalendar-sprite.png) 0 -184px;
+  background: url('/community/img/jalendar-sprite.png') 0 -184px;
   color: #fff;
   padding: 0 0 0 20px;
   font: bold 12px "Helvetica Neue", Arial;
@@ -621,7 +622,7 @@
 }
 
 .jalendar .events .event-single .details .erase {
-  background: url(../../community/img/jalendar-sprite.png) 0 -217px;
+  background: url('/community/img/jalendar-sprite.png') 0 -217px;
   float: right;
   display: inline-block;
   width: 11px;

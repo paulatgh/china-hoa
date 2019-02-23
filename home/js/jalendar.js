@@ -225,7 +225,7 @@ $(function() {
                 $this.find('.add-event').hide();
                 $this.children('.jalendar-wood').animate({
                     'width': jalendarWoodW
-                }, 200);
+                }, 0);
                 $this.children('.wood-bottom').animate({
                     'width': woodBottomW
                 }, 200);

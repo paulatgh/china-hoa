@@ -460,7 +460,7 @@
   border-radius: 3px;
   overflow: hidden;
   height: 124px;
-  box-shadow: 0px 1px 2px rgba(0,0,0,0.5), inset 0 -1px 0 rgba(0,0,0,0.5), inset 0 1px 1px rgba(255,255,255,0.7), inset 0 -10px 20px rgba(0,0,0,0.2), inset 0 40px 40px rgba(255,255,255,0.1);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5), inset 0 -1px 0 rgba(0, 0, 0, 0.5), inset 0 1px 1px rgba(255, 255, 255, 0.7), inset 0 -10px 20px rgba(0, 0, 0, 0.2), inset 0 40px 40px rgba(255, 255, 255, 0.1);
 
 }
 
@@ -489,7 +489,7 @@
   position: absolute;
   display: inline-block;
   height: 31px;
-  background: url('../../../community/img/jalendar-sprite.png') no-repeat;
+  background: url('/community/img/jalendar-sprite.png') no-repeat;
   top: 15px;
   cursor: pointer;
 }
@@ -519,7 +519,7 @@
   text-indent: 1px;
   text-align: center;
   margin: 0;
-  background: url('../../../community/img/jalendar-sprite.png') no-repeat 0 -41px;
+  background: url('/community/img/jalendar-sprite.png') no-repeat 0 -41px;
   height: 22px;
   font: 20px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
   text-shadow: 0 1px 0 #000;
@@ -541,7 +541,7 @@
 }
 
 .jalendar .total-bar b {
-  color: #6AA666 !important;
+  color: rgba(106, 166, 102, 1) !important;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 1);
 }
 
@@ -578,14 +578,15 @@
 
 .jalendar .days .day:hover {
   background-color: #feffea;
+  color: rgba(106, 166, 102, 1) !important;
 }
 
 .jalendar .days .day.selected {
   box-shadow: inset 0 5px 15px rgba(255, 255, 255, 0.4), inset 0 -10px 10px rgba(0, 0, 0, 0.2);
   color: #fff;
   text-shadow: 0 1px 1px #000;
-  background: #6AA666 !important;
-  line-height: 75px;
+  background: rgba(106, 166, 102, 1) !important;
+  line-height: 70px;
   border-radius: 5px;
 }
 
@@ -622,7 +623,7 @@
   width: 10px;
   height: 10px;
   display: inline-block;
-  background: url(../../../community/img/jalendar-sprite.png) 0 -580px;
+  background: url('/community/img/jalendar-sprite.png') 0 -580px;
 }
 
 .jalendar .add-event {
@@ -638,13 +639,13 @@
 }
 
 .jalendar .add-new {
-  /* background: url(../../../community/img/jalendar-sprite.png) 0 -325px repeat-x; */
+  /* background: url('/community/img/jalendar-sprite.png') 0 -325px repeat-x; */
   margin: 0 0 20px 0;
   padding: 20px 15px 15px 15px;
   border-radius: 3px;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
   position: relative;
-  background: #6AA666;
+  background: rgba(106, 166, 102, 1);
   height: 87px;
 }
 
@@ -666,7 +667,7 @@
   position: absolute;
   right: 20px;
   top: 25px;
-  background: url(../../../community/img/jalendar-sprite.png) 0 -614px no-repeat;
+  background: url('/community/img/jalendar-sprite.png') 0 -614px no-repeat;
   width: 26px;
   height: 26px;
   display: inline-block;
@@ -680,7 +681,7 @@
 .jalendar .add-time {
   float: left;
   width: 108px;
-  background: url(../../../community/img/jalendar-sprite.png) 0 -179px;
+  background: url('/community/img/jalendar-sprite.png') 0 -179px;
   padding: 0 0 0 20px;
   font: bold 13px "Helvetica Neue", Arial;
   position: relative;
@@ -697,7 +698,7 @@
 }
 
 .jalendar .add-time .select {
-  background: url(../../../community/img/jalendar-sprite.png) right -250px repeat-x;
+  background: url('/community/img/jalendar-sprite.png') right -250px repeat-x;
   position: relative;
   float: left;
   border-radius: 2px;
@@ -749,7 +750,7 @@
 }
 
 .jalendar .all-day fieldset {
-  background: url(../../../community/img/jalendar-sprite.png) 0 -492px repeat-x;
+  background: url('/community/img/jalendar-sprite.png') 0 -492px repeat-x;
   position: relative;
   float: right;
   border-radius: 2px;
@@ -766,7 +767,7 @@
   display: inline-block;
   height: 27px;
   margin: -6px 0 0 0;
-  background: url(../../../community/img/jalendar-sprite.png) -2px -284px;
+  background: url('/community/img/jalendar-sprite.png') -2px -284px;
   position: relative;
 }
 
@@ -793,7 +794,7 @@
 }
 
 .jalendar .events h3 {
-  /* background: url(../../../community/img/jalendar-sprite.png) center -532px no-repeat; */
+  /* background: url('/community/img/jalendar-sprite.png') center -532px no-repeat; */
   display: inline-block;
   width: 100%;
   font: 20px "Roboto", "Helvetica Neue", Arial;
@@ -817,7 +818,7 @@
   z-index: 2;
 }
 
-/* 
+/*
 .jalendar .events .gradient-wood {
   position: absolute;
   z-index: 1;
@@ -832,7 +833,7 @@
 } */
 
 .jalendar .events .event-single {
-  /* background: url(../../../community/img/jalendar-sprite.png) 0 -90px; */
+  /* background: url('/community/img/jalendar-sprite.png') 0 -90px; */
   border-radius: 7px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.75);
   margin: 0 0 10px 0;
@@ -862,7 +863,7 @@
 }
 
 .jalendar .events .event-single .details .clock {
-  background: url(../../../community/img/jalendar-sprite.png) 0 -184px;
+  background: url('/community/img/jalendar-sprite.png') 0 -184px;
   color: black;
   padding: 0 0 0 20px;
   font: bold 12px "Helvetica Neue", Arial;
@@ -872,7 +873,7 @@
 }
 
 .jalendar .events .event-single .details .erase {
-  background: url(../../../community/img/jalendar-sprite.png) 0 -217px;
+  background: url('/community/img/jalendar-sprite.png') 0 -217px;
   float: right;
   display: inline-block;
   width: 11px;

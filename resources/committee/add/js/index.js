@@ -3,7 +3,7 @@ var render = function() {
 
     var CommitteeAdd = $('#CommitteeAdd').html();
     Mustache.parse(CommitteeAdd);
-    $('#CommitteeAdd').after(Mustache.render(CommitteeAdd, data.TheTitle[0]));
+    $('#CommitteeAdd').after(Mustache.render(CommitteeAdd, data.the_title[0]));
 
     var form = $('#form').html();
     $('#form').after(Mustache.render(form, data));
