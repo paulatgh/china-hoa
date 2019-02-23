@@ -16,39 +16,24 @@
     height: 40px;
     background: #393D44;
 }
-
-.eformtable tbody td.eformheader {
-    background-color: rgb(57, 61, 68);
-    color: #f1e8c6;
-    text-align: center;
-    font-size: 16px;
-    padding: 5px 5px;
-    font-weight: bold;
-    height: 50px;
-}
-
-.eformtable {
-    font: 12px Verdana, Arial, Helvetica;
-    border-collapse: collapse;
-    border: 3px solid rgb(57, 61, 68);
-    margin: 5px;
-    line-height: 16px;
-}
-
-.eformtable tbody td {
-    border: 3px solid #6AA666;
-    background-color: #F1F1F1;
-    padding: 3px 10px;
-    box-sizing: border-box;
-}
-
-.eformtable tbody tr:nth-child(2) td {
-    border-top: none !important;
-}
-
-.eformtable p {
-    margin-bottom: 1em;
-}
+.eform-table tr {
+    width: 410px;
+    height: 54px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(106, 166, 102, 1);
+  }
+  
+  .eform-table tr td {
+    height: 24px;
+    font-size: 18px;
+    font-family: OpenSans-Regular;
+    font-weight: 400;
+    color: rgba(57, 61, 68, 1);
+    line-height: 24px;
+    text-align: left;
+    border-color: "#f1e8c6";
+    padding: 14px 24px;
+  }
 
 .breadcrumb {
     width: 100%;
@@ -79,7 +64,8 @@
     font-family: OpenSans-Regular;
     font-weight: 400;
     color: rgba(255, 255, 255, 1);
-    margin: 24px
+    margin: 24px;
+    cursor: pointer;
 }
 
 .cancel {
@@ -92,4 +78,5 @@
     font-family: OpenSans-Regular;
     font-weight: 400;
     color: rgba(255, 255, 255, 1);
+    cursor: pointer;
 }
