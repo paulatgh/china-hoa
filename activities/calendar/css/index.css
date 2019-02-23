@@ -578,7 +578,6 @@
 
 .jalendar .days .day:hover {
   background-color: #feffea;
-  color: rgba(106, 166, 102, 1) !important;
 }
 
 .jalendar .days .day.selected {
