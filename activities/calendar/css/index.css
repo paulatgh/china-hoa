@@ -852,6 +852,10 @@
   word-break: break-word;
 }
 
+.jalendar .events .event-single p:nth-child(4){
+  line-height: 26px;
+  font-size: 15px;
+}
 
 .jalendar .events .event-single p a {
   color: #333;
