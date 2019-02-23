@@ -122,8 +122,9 @@ $(function() {
             var year = d.getFullYear();
             var date = d.getDate();
             var month = d.getMonth();
+
             function p(s) {
-                return s < 10 ? '0' + s: s;
+                return s < 10 ? '0' + s : s;
             }
             var isLeapYear = function(year1) {
                 var f = new Date();
@@ -158,7 +159,7 @@ $(function() {
                 $this.find('.day').removeClass('this-month');
                 for (var i = 1; i <= monthDays[month]; i++) {
                     startDay++;
-                    $this.find('.day').eq(startDay - 1).addClass('this-month').attr('data-date', year + '-' + p(month + 1) + '-' + p(i) ).html(i);
+                    $this.find('.day').eq(startDay - 1).addClass('this-month').attr('data-date', year + '-' + p(month + 1) + '-' + p(i)).html(i);
                 }
                 if (month == d.getMonth()) {
                     $this.find('.day.this-month').removeClass('today').eq(date - 1).addClass('today').css('color', settings.color);
@@ -177,7 +178,7 @@ $(function() {
                             div('p', '').text($(this).attr('data-content')),
                             div('div', 'details').append(
                                 div('div', 'clock').text($(this).attr('data-time')),
-                                div('div', 'erase')
+                                // div('div', 'erase')
                             )
                         )
                     );
@@ -275,6 +276,7 @@ $(function() {
                     calcScroll();
                     $close.show();
                 });
+                $('.calendar-right').css('display', 'none')
             });
 
             dropdown[0].click(function() {
