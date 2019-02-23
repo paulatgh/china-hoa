@@ -42,498 +42,80 @@
             site_name: 'De Anza Oaks',
             environment: 'dev',
         },
-        body: `<table style="background-color: #ffffff"  border="0" width="100%" cellpadding="10"
-        cellspacing="0">
-        <tbody>
-            <tr>
-                <td>
-                    <font size="2" face="Verdana, Arial, Helvetica" color="#222311">
-
-                        <table class="std-table" border="0" width="90%">
-                            <tr style="font-Weight:800">
-                                <td>
-                                    <font size="5" face="Verdana, Arial, Helvetica" color="#393D44">
-
-                                        Send a new Email Bulletin
-                                    </font>
-                                </td>
-                            </tr>
-                        </table>
-                    </font>
-                </td>
-            </tr>
-    </table>
-    <form>
-       
-       
-        <div align="center"></div>
-            
-                <br>
-                <table class="std-table" border="3" width="90%" cellspacing="0" bordercolor="#6AA666">
-                    <tbody>
+        body: ` <table class="std-table" border="0" width="90%" bgcolor="#6AA666">
+                    <tr>
+                        <td style="height: 64px; padding-left: 24px;">
+                            <font size="5" face="Verdana, Arial, Helvetica" color="#ffffff">
+                                Send a new Email Bulletin
+                            </font>
+                        </td>
+                    </tr>
+                </table>
+                <form method="post" enctype="multipart/form-data" action="" name="daForm">
+                    <table class="page-table" border="1" width="90%" cellspacing="0" bordercolor="#6AA666">
                         <tr>
-                            <td width="30%" bgcolor="#f1e8c6 " bordercolor="#f1e8c6 " class="formLabel">
-                                <font face="Verdana, Arial, Helvetica" size="2" color="#222311">From Name:
-                                </font>
+                            <td>
+                                From Name:
                             </td>
-                            <td width="60%" bgcolor="#f1e8c6 " bordercolor="#f1e8c6 "><input id="txtFromName"
-                                    value="Connie Chan" type="text" name="fromName" size="40" maxlength="100"
-                                    style="font-family: Tahoma; font-size: 11"></td>
-                        </tr>
-                        <tr>
-                            <td width="30%" bgcolor="#f1e8c6 " bordercolor="#f1e8c6 " class="formLabel">
-                                <font face="Verdana, Arial, Helvetica" size="2" color="#222311">From eMail
-                                    Address:</font>
-                            </td>
-                            <td width="60%" bgcolor="#f1e8c6 " bordercolor="#f1e8c6 "><input id="txtFromEmail"
-                                    value="conniechan@gmail.com" type="text" name="fromEmail" size="40"
-                                    maxlength="100" style="font-family: Tahoma; font-size: 11"></td>
-                        </tr>
+                            <td>
 
-                        <tr>
-                            <td colspan="2" bgcolor="#f1e8c6 " bordercolor="#f1e8c6 ">
-                                <font face="Verdana, Arial, Helvetica" size="2" color="#222311">
-                                    <hr>
-                                </font>
-                            </td>
-                        </tr>
+                                <input type="text" style="width:564px; height:28px;background:rgba(255,255,255,1);">
 
-                        <tr>
-                            <td width="30%" bgcolor="#f1e8c6 " bordercolor="#f1e8c6 " class="formLabel">
-                                <font face="Verdana, Arial, Helvetica" size="2" color="#222311">To:</font>
-                            </td>
-                            <td width="60%" bgcolor="#f1e8c6 " bordercolor="#f1e8c6 ">
-                                <select size="1" name="sendTo" id="sendToSelect"
-                                    style="font-family: Tahoma; font-size: 11"
-                                    onchange="ChangeToSelection(this)">
-                                    <option selected="" value="none">(None)</option>
-                                    <option value="maillist_category">eMail Bulletin Category</option>
-                                    <option value="person_category">Address Book Category</option>
-                                    <option value="subdivision">Subdivision</option>
-                                    <option value="all">All</option>
-                                    <option value="eform">eForm</option>
-                                    <option value="survey">Survey</option>
-
-                                    <option value="last_login">Last Login Date</option>
-                                </select>
-                            </td>
-                        </tr>
-
-                        <tr id="tr_maillist_category" style="display: none; ">
-                            <td width="30%" bgcolor="#f1e8c6 " bordercolor="#f1e8c6 " class="formLabel">
-                                <font face="Verdana, Arial, Helvetica" size="2" color="#222311">Choose an eMail
-                                    Bulletin Category:</font>
-                            </td>
-                            <td width="60%" bgcolor="#f1e8c6 " bordercolor="#f1e8c6 ">
-                                <select size="1" name="id" style="font-family: Tahoma; font-size: 11">
-                                    <option selected="" value="0">(None)</option>
-
-                                    <option value="7">
-                                        Clubhouse Committee eMail Bulletin Test
-                                    </option>
-
-                                    <option value="6">
-                                        Events Committee eMail Bulletin Test
-                                    </option>
-
-                                    <option value="2">
-                                        Web Admin eMail Bulletin Test
-                                    </option>
-
-                                </select>
-                            </td>
-                        </tr>
-
-
-                        <tr id="tr_person_category" style="display: none; ">
-                            <td width="30%" bgcolor="#f1e8c6 " bordercolor="#f1e8c6 " class="formLabel">
-                                <font face="Verdana, Arial, Helvetica" size="2" color="#222311">Choose an
-                                    Address Book Category:</font>
-                            </td>
-                            <td width="60%" bgcolor="#f1e8c6 " bordercolor="#f1e8c6 ">
-                                <select size="1" name="person_category_id"
-                                    style="font-family: Tahoma; font-size: 11">
-                                    <option selected="" value="0">(None)</option>
-
-                                    <option value="1">
-                                        Resident
-                                    </option>
-
-                                </select>
-                            </td>
-                        </tr>
-                        <tr id="tr_all" style="display: none; ">
-                            <td colspan="2" bgcolor="#f1e8c6 " bordercolor="#f1e8c6 " class="formLabel">
-                                <font face="Verdana, Arial, Helvetica" size="2" color="#222311">Send an eMail
-                                    Bulletin to everyone in the Address Book with an email address.</font>
-                            </td>
-                        </tr>
-
-                        <tr id="tr2_all" style="display: none; ">
-                            <td width="30%" bgcolor="#f1e8c6 " bordercolor="#f1e8c6 " class="style1"
-                                style="padding-top: 5px; ">
-                                <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp; But send
-                                    only to Email<br>&nbsp; addresses for this domain<br>&nbsp; name:</font>
-                            </td>
-                            <td width="60%" bgcolor="#f1e8c6 " bordercolor="#f1e8c6 " style="padding-top: 5px; "
-                                class="style2"><input type="text" name="domain_filter" size="20" maxlength="100"
-                                    style="font-family: Tahoma; font-size: 11"></td>
-                        </tr>
-
-
-                        <tr id="tr3_all" style="display: none; ">
-                            <td width="30%" bgcolor="#f1e8c6 " bordercolor="#f1e8c6 " class="style1"
-                                style="padding-top: 5px; vertical-align:text-top;">
-                                <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp; Select
-                                    communities to<br>&nbsp; send to:</font>
-                            </td>
-                            <td width="60%" bgcolor="#f1e8c6 " bordercolor="#f1e8c6 " style="padding-top: 5px; "
-                                class="style2">
-                                <input type="checkbox" id="child-community-checkbox-check-all"
-                                    name="allChildCommunities" value="allChildCommunities">
-                                <font face="Verdana, Arial, Helvetica" size="2">All</font><br>
-                                <hr>
-                                <div id="community-checkboxes-div"></div>
-                            </td>
-                        </tr>
-
-                        <tr id="tr_subdivision" style="display: none; ">
-                            <td width="30%" bgcolor="#f1e8c6 " bordercolor="#f1e8c6 " class="formLabel">
-                                <font face="Verdana, Arial, Helvetica" size="2" color="#222311">Choose a
-                                    specific Subdivision:</font>
-                            </td>
-                            <td width="60%" bgcolor="#f1e8c6 " bordercolor="#f1e8c6 ">
-                                <select size="1" name="subdivision_id"
-                                    style="font-family: Verdana, Arial, Helvetica; font-size: 11">
-                                    <option selected="" value="0">(None)</option>
-
-                                    <option value="1">
-                                        De Anza Oaks
-                                    </option>
-
-                                </select>
-                            </td>
-                        </tr>
-
-                        <tr id="tr_account_balance" style="display: none; ">
-                            <td width="30%" bgcolor="#f1e8c6 " bordercolor="#f1e8c6 " class="formLabel">
-                                <font face="Verdana, Arial, Helvetica" size="2" color="#222311">Users with a
-                                    current Account Balance above this amount:</font>
-                            </td>
-                            <td width="60%" bgcolor="#f1e8c6 " bordercolor="#f1e8c6 " style="padding-top: 5px; ">
-                                <input type="text" name="balance_amount" size="20" maxlength="20"
-                                    style="font-family: Tahoma; font-size: 11"></td>
-                        </tr>
-                        <tr id="tr_last_login" style="display: none; ">
-                            <td width="30%" bgcolor="#f1e8c6 " bordercolor="#f1e8c6 " class="formLabel">
-                                <font face="Verdana, Arial, Helvetica" size="2" color="#222311">Users who have
-                                    not logged in since this date: (mm/dd/yyyy)</font>
-                            </td>
-                            <td width="60%" bgcolor="#f1e8c6 " bordercolor="#f1e8c6 " style="padding-top: 5px; ">
-                                <input type="text" name="last_login_date" size="10" maxlength="10"
-                                    style="font-family: Tahoma; font-size: 11"></td>
-                        </tr>
-
-                        <tr id="tr_survey" style="display: none; ">
-                            <td width="30%" bgcolor="#f1e8c6 " bordercolor="#f1e8c6 " class="formLabel">
-                                <font face="Verdana, Arial, Helvetica" size="2" color="#222311">Send an eMail
-                                    Bulletin to everyone who has yet to take part in a particular Survey:</font>
-                            </td>
-                            <td width="60%" bgcolor="#f1e8c6 " bordercolor="#f1e8c6 ">
-                                <select size="1" name="vote_id" style="font-family: Tahoma; font-size: 11">
-                                    <option selected="" value="0">(None)</option>
-
-                                </select>
-                            </td>
-                        </tr>
-
-
-                        <tr id="tr_eform" style="display: none; ">
-                            <td width="30%" bgcolor="#f1e8c6 " bordercolor="#f1e8c6 " class="formLabel">
-                                <font face="Verdana, Arial, Helvetica" size="2" color="#222311">Send an eMail
-                                    Bulletin to everyone who has yet to fill out a particular eForm:</font>
-                            </td>
-                            <td width="60%" bgcolor="#f1e8c6 " bordercolor="#f1e8c6 ">
-                                <select size="1" name="short_desc" style="font-family: Tahoma; font-size: 11">
-                                    <option selected="" value="0">(None)</option>
-
-                                    <option value="">
-
-                                    </option>
-
-                                    <option value="">
-
-                                    </option>
-
-                                    <option value="">
-
-                                    </option>
-
-                                    <option value="">
-
-                                    </option>
-
-                                    <option value="">
-
-                                    </option>
-
-                                    <option value="Architectural Application">
-                                        Architectural Application
-                                    </option>
-
-                                    <option value="Clubhouse Reservation Request Form">
-                                        Clubhouse Reservation Request Form
-                                    </option>
-
-                                    <option value="Earthquake/Disaster Program">
-                                        Earthquake/Disaster Program
-                                    </option>
-
-                                    <option value="Electronic Communication Consent Form">
-                                        Electronic Communication Consent Form
-                                    </option>
-
-                                    <option value="RSVP for DAO End of Summer Party">
-                                        RSVP for DAO End of Summer Party
-                                    </option>
-
-                                    <option value="RSVP for DAO Holiday Party">
-                                        RSVP for DAO Holiday Party
-                                    </option>
-
-                                    <option value="RSVP for Easter Brunch">
-                                        RSVP for Easter Brunch
-                                    </option>
-
-                                </select>
-                            </td>
-                        </tr>
-
-
-                        <tr>
-                            <td colspan="2" bgcolor="#f1e8c6 " bordercolor="#f1e8c6 ">
-                                <font face="Verdana, Arial, Helvetica" size="2" color="#222311">
-                                    <hr>
-                                </font>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td width="30%" bgcolor="#f1e8c6 " bordercolor="#f1e8c6 " class="formLabel">
-                                <font face="Verdana, Arial, Helvetica" size="2" color="#222311">Subject:</font>
-                            </td>
-                            <td width="60%" bgcolor="#f1e8c6 " bordercolor="#f1e8c6 "><input id="txtSubject"
-                                    value="De Anza Oaks Homeowners Association eMail Bulletin" type="text"
-                                    name="subject" size="40" maxlength="100"
-                                    style="font-family: Tahoma; font-size: 11"></td>
-                        </tr>
-
-                        <tr>
-                            <td colspan="2" bgcolor="#f1e8c6 " bordercolor="#f1e8c6 ">
-                                <font face="Verdana, Arial, Helvetica" size="2" color="#222311">
-                                    <hr>
-                                </font>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td width="30%" bgcolor="#f1e8c6 " bordercolor="#f1e8c6 " class="formLabel">
-                                <font face="Verdana, Arial, Helvetica" size="2" color="#222311">Check here to
-                                    send Login and Password information along with this eMail Bulletin:</font>
-                            </td>
-                            <td width="60%" bgcolor="#f1e8c6 " bordercolor="#f1e8c6 "><input name="send_login"
-                                    type="checkbox" value="1"></td>
-                        </tr>
-
-                        <tr id="tr-attachment1">
-
-                            <td width="30%" bgcolor="#f1e8c6 " bordercolor="#f1e8c6 " class="formLabel">
-                                <font face="Verdana, Arial, Helvetica" size="2" color="#222311">Linked File:
-                                </font>
-                            </td>
-
-                            <td width="60%" bgcolor="#f1e8c6 " bordercolor="#f1e8c6 "><input type="FILE"
-                                    name="attachment1" size="30" maxlength="200"
-                                    style="font-family: Tahoma; font-size: 11"
-                                    onchange="updatedAttachment(this);"></td>
-                        </tr>
-                        <tr id="tr-attachment2" style="display: none; ">
-
-                            <td width="30%" bgcolor="#f1e8c6 " bordercolor="#f1e8c6 " class="formLabel">
-                                <font face="Verdana, Arial, Helvetica" size="2" color="#222311">Linked File:
-                                </font>
-                            </td>
-
-                            <td width="60%" bgcolor="#f1e8c6 " bordercolor="#f1e8c6 "><input type="FILE"
-                                    name="attachment2" size="30" maxlength="200"
-                                    style="font-family: Tahoma; font-size: 11"
-                                    onchange="updatedAttachment(this);"></td>
-                        </tr>
-
-                        <tr>
-                            <td colspan="2" bgcolor="#f1e8c6 " bordercolor="#f1e8c6 ">
-                                <font face="Verdana, Arial, Helvetica" size="2" color="#222311">
-                                   
-                                </font>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td colspan="2" bgcolor="#f1e8c6 " bordercolor="#f1e8c6 " class="formLabel">
-                                <!-- CuteEditor Version 6.7 Editor1 Begin -->
-                                <textarea name="Editor1" id="Editor1" rows="13" cols="50"
-                                    class="CuteEditorTextArea"
-                                    style="DISPLAY: none; WIDTH: 100%; HEIGHT: 100%"></textarea>
-                                
-                                <table id="CE_Editor1_ID" _iscuteeditor="True" cellspacing="0" cellpadding="0"
-                                    style="background-color: rgb(244, 244, 243); border-color: rgb(221, 221, 221); border-width: 1px; border-style: solid; table-layout: auto; height: 450px; width: 100%;">
-                                    <tbody>
-                                        <tr>
-                                            <td class="CuteEditorToolBarContainer"
-                                                unselectable="on" valign="top">
-                                                <textarea name="content" id="editor"></textarea>
-                                            </td>
-                                        </tr>                            
-                                    </tbody>
-                                </table>
-                               
                             </td>
                         </tr>
                         <tr>
-                            <td colspan="2" bgcolor="#f1e8c6 " bordercolor="#f1e8c6 ">
-                                <font face="Verdana, Arial, Helvetica" size="2" color="#222311">
-                                    <hr>
-                                </font>
+                            <td>
+                                From eMail Address:
+                            </td>
+                            <td><input type="text"  size="10" maxlength="10" style="width:180px;height:28px;"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                To:
+                            </td>
+                            <td>
+                               <select size="1" name="sendTo" id="sendToSelect" style="width:240px;height:32px;>
+                                   <option selected="" value="none">(None)</option>
+                                   <option value="maillist_category">eMail Bulletin Category</option>
+                                   <option value="person_category">Address Book Category</option>
+                                   <option value="subdivision">Subdivision</option>
+                                   <option value="all">All</option>
+                                   <option value="eform">eForm</option>
+                                   <option value="survey">Survey</option>
+
+                                   <option value="last_login">Last Login Date</option>
+                               </select>
+                           </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Subject:
+                            </td>
+                            <td>
+                               <input type="text" name="event_start_dt" size="10" maxlength="10" style="width:180px;height:28px;">
                             </td>
                         </tr>
                         <tr>
-                            <td colspan="2">
-                                <div class="ahn-delivery-options">
-                                    <table border="0" width="100%">
-                                        <tbody>
-                                            <tr bgcolor="#f1e8c6 ">
-                                                <td colspan="2">
-                                                    <font size="4" face="Verdana, Arial, Helvetica"
-                                                        color="#f1e8c6 ">Delivery Options</font>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2">
-                                                    <font face="Verdana, Arial, Helvetica" size="2"
-                                                        color="#222311"><input type="radio" name="rSendOptions"
-                                                            value="1" id="rSendNow" checked=""
-                                                            onclick="javascript:CheckSelection(this.value);"><b>Send
-                                                            Now</b></font>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <input type="radio" name="rSendOptions" value="2"
-                                                        id="rSendLater"
-                                                        onclick="javascript:CheckSelection(this.value);">
-                                                    <font face="Verdana, Arial, Helvetica" size="2"
-                                                        color="#222311"><b>Schedule for delivery on <input
-                                                                type="text" name="open_dt" size="10"
-                                                                maxlength="10" class="datepicker hasDatepicker"
-                                                                style="font-family: Tahoma; font-size: 11"
-                                                                value="2/12/2019" '="" id="dp1549968044326"></b>&nbsp;&nbsp; 
-                                                                Time:
-                                                                <select size="1" name="start_time_hour" id="start_hr" style="font-family: Tahoma; font-size: 11" onchange="javascript:CheckDate();">
-                                            
-                                                                            <option value="1">1</option>
-                                            
-                                                                            <option selected="selected" value="2">2</option>
-                                            
-                                                                            <option value="3">3</option>
-                                            
-                                                                            <option value="4">4</option>
-                                            
-                                                                            <option value="5">5</option>
-                                            
-                                                                            <option value="6">6</option>
-                                            
-                                                                            <option value="7">7</option>
-                                            
-                                                                            <option value="8">8</option>
-                                            
-                                                                            <option value="9">9</option>
-                                            
-                                                                            <option value="10">10</option>
-                                            
-                                                                            <option value="11">11</option>
-                                            
-                                                                            <option value="12">12</option>
-                                            
-                                                                    </select>:
-                                                                    <select size="1" name="start_time_minute" id="start_minute" style="font-family: Tahoma; font-size: 11" onchange="javascript:CheckDate();">&gt;
-                                            
-                                                                            <option value="00">00</option>
-                                            
-                                                                            <option value="15">15</option>
-                                            
-                                                                            <option value="30">30</option>
-                                            
-                                                                            <option selected="selected" value="45">45</option>
-                                            
-                                                                    </select>&nbsp;
-                                                                    <select size="1" name="start_time_AMPM" id="start_ampm" style="font-family: Tahoma; font-size: 11" onchange="javascript:CheckDate();">
-                                            
-                                                                        <option selected="selected" value="AM">AM</option>
-                                            
-                                                                        <option value="PM">PM</option>
-                                            
-                                                                    </select>
-                                                                    </font>
-                                                            </td>
-                                                           
-                                                            </tr>
-                                                        </tbody></table>      
-                                                    </div>
-                                                    </td>
-                                                </tr> 
-                                            
-                                               
-                                                
-                                                <tr>
-                                                    <td colspan="2" bgcolor="#f1e8c6 " bordercolor="#f1e8c6 "><font face="Verdana, Arial, Helvetica" size="2" color="#222311">
-                                                        
-                                                    </font></td>
-                                                </tr>
-                                            
-                                            <tr>
-                                                    <td width="30%" bgcolor="#f1e8c6 " bordercolor="#f1e8c6 " class="formLabel"><font face="Verdana, Arial, Helvetica" size="2" color="#222311">To publish this as an 
-                                                        Announcement, select an Announcement category:</font></td>
-                                                    <td width="60%" bgcolor="#f1e8c6 " bordercolor="#f1e8c6 "><select size="1" name="sltACats" id="ahn-selected-category" style="font-family: Tahoma; font-size: 11">
-                                            <option value="0">None</option>
-                                            <option value="2">Board Announcements</option>
-                                            <option value="7">Clubhouse</option>
-                                            <option value="8">DAO Emergency Response Committee</option>
-                                            <option value="6">From the Web Administrator</option>
-                                            <option value="10">Maintenance</option>
-                                            <option value="9">Parking</option>
-                                            <option value="5">Recent eMail Bulletins</option>
-                                            <option value="3">Social Events</option>
-                                            <option value="11">Various Meetings</option>
-                                            </select>
-                                             </td>
-                                                </tr>
-                                                <tr>
-                                                    <td colspan="2" bgcolor="#f1e8c6 " bordercolor="#f1e8c6 "><font face="Verdana, Arial, Helvetica" size="2" color="#222311"></font></td>
-                                                </tr>
-                                                <tr>
-                                                    <td width="30%" bgcolor="#f1e8c6 " bordercolor="#f1e8c6 " class="formLabel"><font face="Verdana, Arial, Helvetica" size="2" color="#222311">To save this as a Custom Community Template, enter a template Name:</font></td>
-                                                    <td width="60%" bgcolor="#f1e8c6 " bordercolor="#f1e8c6 "><input type="text" name="template_name" size="30" maxlength="30" value="" style="font-family: Tahoma; font-size: 11">&nbsp; &nbsp; <input type="Submit" value="Save Template without Sending" name="action" style="font-family: Tahoma; font-size: 11"></td>
-                                                </tr>
-                                                </tbody></table>
-                                            </form>
-                                                <p class="p-input">
-               
-                                                        <input type="submit"  value="Send Email Bulletin">
-                                                        <input type="submit" onclick="location.href='/news/bulletins'"value="Cancel">
-                                                        
-                                                    </p>
-                        
-                    </font>
+                            <td>
+                                Linked File:
+                            </td>
+                            <td>
+                                <input type="file" size="30" maxlength="200"style="width:180px;height:28px;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Full Description:
+                            </td>
+                            <td><textarea wrap="virtual" name="full_desc" cols="50" rows="5" style="width:564px;height:160px;"></textarea></td>
+                        </tr>
+                    </table>
+                </form>
+                <p class="p-input">
+                <input type="submit"  value="Send Email Bulletin">
+                <input type="submit" onclick="location.href='/news/bulletins'"value="Cancel">
+                </p>   
+                </font>
                 </td>
             </tr>
         </tbody>
