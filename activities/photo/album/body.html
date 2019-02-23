@@ -20,15 +20,22 @@
     </div>
 
     <div class="main-center">
-        <p class="photo-albums">2012 Fourth of July Activities</p>
+        <script id="album" type="txt/template">
+            <p class="photo-albums">{{album.title}}</p>
+            <p class="photo-albums">{{album.desc}}</p>
+        </script>
         <div class="content-1" id="photo_cycle">
-            <script id="photo" type="txt/template">
+            <script id="photos" type="txt/template">
+                {{#photos}}
                 <div class="Events-Calendar">
-                        <div class="content-img" style="background:url('{{img}}') no-repeat;">
-                            <p>{{title}}</p>
-                        </div>
+                    <div class="content-img" style="background:url('{{img}}') no-repeat;">
+                        {{#title}}
+                        <p>{{title}}</p>
+                        {{/title}}
                     </div>
-               </script>
+                </div>
+                {{/photos}}
+            </script>
         </div>
     </div>
 </div>

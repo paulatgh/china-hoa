@@ -1,13 +1,8 @@
 var render = function () {
     _pre_render();
-    var photo = $('#photo').html();
-    Mustache.parse(photo);
-    $.each(data.album, function () {
-        $('#photo_cycle').append(Mustache.render(photo, this));
-    });
 
-
-
+    $("#album").after(function() { return Mustache.render($(this).html(), data); });
+    $("#photos").after(function() { return Mustache.render($(this).html(), data); });
 
     // Global post render
     _post_render();
