@@ -1,10 +1,10 @@
 var render = function() {
     _pre_render();
-    // var event_template = $('#event_template').html();
-    // Mustache.parse(event_template);
-    // $.each(data.events, function () {
-    //     $('#calendar_events').append(Mustache.render(event_template, this));
-    // });
+    var event_template = $('#event_template').html();
+    Mustache.parse(event_template);
+    $.each(data.calendar, function () {
+        $('#calendar_events').append(Mustache.render(event_template, this));
+    });
 
     var calendar = $('#calendar_left').html();
     Mustache.parse(calendar);
