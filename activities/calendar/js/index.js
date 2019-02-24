@@ -12,6 +12,8 @@ var render = function() {
         $('#calendar_cycle').append(Mustache.render(calendar, this));
     });
 
+    $('#action_buttons_template').after(function() { return Mustache.render($(this).html(), data); });
+
     // Global post render
     _post_render();
 
@@ -34,7 +36,7 @@ var render = function() {
     });
 
     if (data._current_user && data._current_user.is_admin == true) {
-        $(".Add-top").css("display", "block")
+        $(".action-buttons-top").css("display", "block")
         $(".top-right").css("display", "block")
         $(".right-b").click(function() {
             if ($('#calendar_events .saveChange').length) {
