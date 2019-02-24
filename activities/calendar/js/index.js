@@ -41,7 +41,7 @@ var render = function() {
                 return false;
             }
             var index = Number($(this).parents('ul').attr('data'))
-            deleteLog(data.date, index, $(this).parents('ul'))
+            delete_element(data.date, index, $(this).parents('ul'))
         })
         edit()
     } else {
@@ -127,7 +127,7 @@ var render = function() {
                     if ($('#calendar_events .saveChange').length) {
                         return false;
                     }
-                    deleteLog(data, index)
+                    delete_element(data, index)
                 })
                 edit()
             })

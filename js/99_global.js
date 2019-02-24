@@ -31,28 +31,39 @@ function Slider(slip, li, a, i, left, animatetime) {
 }
 
 // public delete button
-function deleteLog(data, index,el) {
-    var str = `<div class="db">
-                    <div class="delete">
-                        <h5>Comfirm Delete?</h5>
-                        <div class="delelte_content">Are you sure wish to delete?</div>
-                        <div class="oper">
-                            <span class="delete_button">Delete</span>
-                            <span class="cancel_button">Cancel</span>
-                        </div>
-                    </div>
-                </div>`;
-    $('body').append(str);
+function remove_delete_modal() {
+    $("body").find(".delete_modal").remove();
+    $("body").off("mousedown.delete_modal");
+};
+function delete_element(data, index, el) {
+    var modal = `
+        <div class="delete_modal">
+            <div class="delete">
+                <h5>Comfirm Delete?</h5>
+                <div class="delete_content">Are you sure wish to delete?</div>
+                <div class="options">
+                    <span class="delete_button">Delete</span>
+                    <span class="cancel_button">Cancel</span>
+                </div>
+            </div>
+        </div>
+        `;
+    $('body').append(modal);
+    $("body").on("mousedown.delete_modal", function(event) {
+        if (! $(event.target).closest(".delete").length) {
+            remove_delete_modal();
+        }
+    });
     $('.cancel_button').click(function () {
-        $('.db').remove();
-    })
+        remove_delete_modal();
+    });
     $('.delete_button').click(function () {
         var dataList = data.filter((item, i) => {
             return item.id !== index;
         })
-        $('.db').remove();
+        remove_delete_modal();
         $(el).remove();
-    })
+    });
 }
 
 function _pre_render() {

@@ -1,10 +1,7 @@
 html,
 body {
-    height: 100%;
-}
-
-.main {
-    height: 1675px;
+	height: 100%;
+	min-height: 1000px;
 }
 
 .breadcrumb {
@@ -36,6 +33,20 @@ body {
     line-height: 60px;
 }
 
+.committee_add {
+    width: 90px;
+    height: 40px;
+    background: rgba(106, 166, 102, 1);
+    border-radius: 20px;
+    text-align: center;
+    color: #ffffff;
+    line-height: 40px;
+    font-size: 16px;
+    margin-bottom: 16px;
+    display: none;
+    cursor: pointer;
+}
+
 .footer-p {
     font-size: 16px;
     font-family: OpenSans-SemiBold;
@@ -46,15 +57,61 @@ body {
 
 }
 
+/* Box-sizing reset: //w3bits.com/?p=3225 */
+/* html {
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+} */
+  
+.tiles {
+	column-width: 320px;
+	column-gap: 15px;
+	width: 90%;
+	max-width: 1100px;
+	margin: 50px auto;
+}
+  
 .item {
-    display: none;
+	background: #fefefe;
+	border: 2px solid #fcfcfc;
+	box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+	margin: 0 2px 15px;
+	padding: 15px;
+	padding-bottom: 10px;
+	transition: opacity .4s ease-in-out;
+	display: inline-block;
+	column-break-inside: avoid;
+}
+  
+/* tiles on large screens */
+@media only screen and (min-width: 1024px) {
+	.tiles {
+	  	/* column-count: 3; */
+	  	column-count: 2;
+	}
+}
+  
+/* tiles on medium-sized screens */
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+	.tiles {
+	  	column-count: 2;
+		column-gap: 0px;
+	}
+}
+  
+/* tiles on small screens */
+@media only screen and (max-width: 767px) and (min-width: 540px) {
+	.tiles {
+		column-count: 1;
+		column-gap: 0px;
+	}
 }
 
-.show {
-    display: block;
-}
-
-.main .Volunteer_dec {
+.committee_title {
     margin-top: 22px;
     margin-bottom: 24px;
     line-height: 33px;
@@ -64,23 +121,14 @@ body {
     color: #393D44;
 }
 
-.main .committee-content li {
-    float: left;
-    width: 384px;
-    margin-right: 15px;
-}
-
-.main .committee-content {
-    height: 1200px;
-}
-
-.part_1 {
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    padding: 32px;
-    margin-bottom: 15px;
-    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.24);
+.committee_details {
+    margin-top: 22px;
+    margin-bottom: 24px;
+    line-height: 27px;
+    font-size: 20px;
+    font-family: OpenSans-SemiBold;
+    font-weight: 500;
+    color: #393D44;
 }
 
 .main h3 {
@@ -99,50 +147,17 @@ body {
     line-height: 30px;
 }
 
-.main .Volunteer_dec {
-    margin-top: 22px;
-    margin-bottom: 24px;
-    line-height: 33px;
-    font-size: 24px;
-    font-family: OpenSans-SemiBold;
-    font-weight: 600;
-    color: #393D44;
-}
-
-.Volunteer_dec_title {
-    font-size: 19px;
-    font-family: OpenSans-SemiBold;
-    font-weight: 500;
-    color: rgba(57, 61, 68, 1);
-    line-height: 27px;
-    margin-bottom: 16px;
-}
-
-.committee_add {
-    width: 90px;
-    height: 40px;
-    background: rgba(106, 166, 102, 1);
-    border-radius: 20px;
-    text-align: center;
-    color: #ffffff;
-    line-height: 40px;
-    font-size: 16px;
-    margin-bottom: 16px;
-    display: none;
-    cursor: pointer;
-}
-
-.admin-control {
+.committee_admin_options {
     width: 100%;
     height: 40px;
     display: none;
 }
 
-.admin-control span a {
+.committee_admin_options span a {
     color: rgba(106, 166, 102, 1);
 }
 
-.admin-control span {
+.committee_admin_options span {
     display: inline-block;
     width: 90px;
     height: 38px;
@@ -151,12 +166,11 @@ body {
     border: 1px solid #6AA666;
     color: #6AA666;
     text-align: center;
-    line-height: 40px;
+    line-height: 38px;
     margin-right: 17px;
-
 }
 
-.admin-control span:nth-child(2) {
+.committee_admin_options span:nth-child(2) {
     border: 1px solid #F94B5A;
     color: #F94B5A;
 }

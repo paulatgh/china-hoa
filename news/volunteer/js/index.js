@@ -14,7 +14,7 @@ var render = function () {
         $('.top-Add').show();
         $('.volunteer_admin_options').show();
         $('.part .part-a2').click(function () {
-            deleteLog()
+            delete_element()
         })
     }
  
@@ -57,7 +57,7 @@ function edit() {
                 if ($('#news_volunteer .saveChange').length) {
                     return false;
                 }
-                deleteLog(data, index)
+                delete_element(data, index)
             })
             edit()
         })

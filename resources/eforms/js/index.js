@@ -51,7 +51,7 @@ var render = function () {
     if (data._current_user && data._current_user.is_admin == true) {
         $('.buttona').css('display', 'none')
         $(".del").click(function () {
-            deleteLog()
+            delete_element()
         })
         $(".edi").click(function () {
             window.location.href = `${data._metadata.root_url}/resources/eforms/edit`

@@ -14,81 +14,44 @@
             <li><a href="#">Board/Committee</a></li>
         </ul>
         <h4 id="TheTitleExternal">
-            <script id="the_title" type="txt/template">
-                {{theTitle}}
-                <div class="content-1">
-                       {{content}}
-                    </div>
-            </script>
+            Board / Committee
+            <div class="content-1">
+                A complete listing of Board Members, Committee Chairs and Association Management
+            </div>
         </h4>
         <div class="committee_add" id="AddbuttonExternal">
-            <script id="Addbutton" type="txt/template">
-                {{title}}
+            Add
+        </div>
+        <div class="tiles">
+            <script id="committee_tiles" type="txt/template">
+                {{#committees}}
+                <div class="item">
+                    <div class="committee_title">
+                        {{title}}
+                    </div>
+                    <div class="committee_details">
+                        <div>Updated: {{updated}}</div>
+                        <div>{{content}}</div>
+                    </div>
+                    <div class="committee_details">
+                        {{#from}}
+                        <div>{{from}}</div>
+                        {{/from}}
+                        {{#telephone}}
+                        <div>{{telephone}}</div>
+                        {{/telephone}}
+                        {{#email}}
+                        <div>{{email}}</div>
+                        {{/email}}
+                    </div>
+                    <div class="committee_admin_options">
+                        <span><a href="#">Edit</a></span>
+                        <span class="del">Delete</span>
+                    </div>
+                </div>
+                {{/committees}}
             </script>
         </div>
-        <ul class="committee-content">
-            <li id="committeeExternal">
-                <script id="committeeList" type="txt/template">
-                    <div class="part_1">
-                            <div class="Volunteer_dec_title" style="font-weight: 600;">{{title}}</div>
-                            <div class="Volunteer_dec_title">
-                                <div>Updated:{{updated}}</div>
-                                <div>{{content}}</div>
-                            </div>
-                            <div class="Volunteer_dec_title">
-                                <div>{{from}}</div>
-                                <div>{{telephone}}</div>
-                                <div>{{email}}</div>
-                            </div>
-                            <div class="admin-control">
-                                <span> <a href="#">Edit</a></span>
-                                <span class="del">Delete</span>
-                            </div>
-                    </div>
-               </script>
-            </li>
-            <li id="committeeListsecondExternal">
-                <script id="committeeListsecond" type="txt/template">
-                    <div class="part_1">
-                                <div class="Volunteer_dec_title" style="font-weight: 600;">{{title}}</div>
-                                <div class="Volunteer_dec_title">
-                                    <div>Updated:{{updated}}</div>
-                                    <div>{{content}}</div>
-                                </div>
-                                <div class="Volunteer_dec_title">
-                                    <div>{{from}}</div>
-                                    <div>{{telephone}}</div>
-                                    <div>{{email}}</div>
-                                </div>
-                                <div class="admin-control">
-                                    <span> <a href="#">Edit</a></span>
-                                    <span class="del">Delete</span>
-                                </div>
-                        </div>
-                   </script>
-            </li>
-            <li id="committeeExternalExternal">
-                <script id="committeeListThird" type="txt/template">
-                    <div class="part_1">
-                                    <div class="Volunteer_dec_title" style="font-weight: 600;">{{title}}</div>
-                                    <div class="Volunteer_dec_title">
-                                        <div>Updated:{{updated}}</div>
-                                        <div>{{content}}</div>
-                                    </div>
-                                    <div class="Volunteer_dec_title">
-                                        <div>{{from}}</div>
-                                        <div>{{telephone}}</div>
-                                        <div>{{email}}</div>
-                                    </div>
-                                    <div class="admin-control">
-                                        <span> <a href="#">Edit</a></span>
-                                        <span class="del">Delete</span>
-                                    </div>
-                            </div>
-                </script>
-            </li>
-
-        </ul>
     </div>
 </div>
 

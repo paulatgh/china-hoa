@@ -23,7 +23,7 @@ var render = function() {
 
     // admin
     $('.del').click(function() {
-        deleteLog()
+        delete_element()
     })
     $('.edit').click(function() {
         var data = $(this).parent().prev().text();
@@ -39,7 +39,7 @@ var render = function() {
                             </div>`
             $(this).parent().empty().append(valStr)
             $('.del').click(function() {
-                deleteLog()
+                delete_element()
                 $('.delete_button').click(function() {
                     console.log('1111')
                 })
