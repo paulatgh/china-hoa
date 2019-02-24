@@ -1,9 +1,9 @@
 var render = function () {
     _pre_render();
 
-    $('#volunteer_title').after(function() { return Mustache.render($(this).html(), data.volunteer_title); });
+    $('#volunteer_title').after(function() { return Mustache.render($(this).html(), data.volunteer_title[0]); });
     $('#volunteer_tiles').after(function() { return Mustache.render($(this).html(), data); });
-  
+
     // Global post render
     _post_render();
 
@@ -17,8 +17,6 @@ var render = function () {
             delete_element()
         })
     }
- 
-
 }
 
 function edit() {
