@@ -1,189 +1,70 @@
 html,
 body {
-    height: 100%;
+  height: 100%;
 }
 
-
-
 .breadcrumb li {
-    color: rgba(30, 130, 23, 1);
-    height: 27px;
-    font-size: 20px;
-    font-family: OpenSans-Regular;
-    font-weight: 400;
-    line-height: 27px;
+  color: rgba(30, 130, 23, 1);
+  height: 27px;
+  font-size: 20px;
+  font-family: OpenSans-Regular;
+  font-weight: 400;
+  line-height: 27px;
 
 }
 
 .breadcrumb li a {
-    color: rgba(30, 130, 23, 1);
+  color: rgba(30, 130, 23, 1);
 }
 
 .breadcrumb {
-    width: 293px;
-    display: flex;
-    position: relative;
-    top: 24px;
+  width: 293px;
+  display: flex;
+  position: relative;
+  top: 24px;
 }
 
 .main-breadcrumb {
-    width: 100%;
-    height: 50px;
+  width: 100%;
+  height: 50px;
 }
 
 .main-center {
-    width: 1200px;
-    height: auto;
-    margin: auto;
+  width: 1200px;
+  height: auto;
+  margin: auto;
 }
 
 .content-1 {
-    width: 100%;
-    height: auto;
-
-    /* border: solid 1px; */
-    display: flex;
-    flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
 
 }
 
 .Events-Calendar {
-    width: 368px;
-    height: 234px;
-    background: rgba(255, 255, 255, 1);
-    /* box-shadow:0px 0px 8px 0px rgba(0,0,0,0.24); */
-    margin: 24px 24px 24px 0;
-    /* border: 3px solid #6AA666; */
-}
-
-.Events-Calendar:nth-child(2) {
-    background-image: url("/community/img/news-volunteerneeds.png");
-
-}
-
-.Events-Calendar:nth-child(3) {
-    background-image: url('/community/img/news-announcements.png')
-}
-
-.Events-Calendar:nth-child(4) {
-    background-image: url('/community/img/news-emailbulletins.png')
+  width: 368px;
+  height: 234px;
+  background: rgba(255, 255, 255, 1);
+  margin: 24px 24px 24px 0;
 }
 
 .calendar-img {
-    width: 250px;
-    height: 84px;
-    background: rgba(106, 166, 102, 0.9);
-    position: relative;
-    top: 76px;
-    left: 59px;
+  width: 250px;
+  height: 84px;
+  background: rgba(106, 166, 102, 0.9);
+  position: relative;
+  top: 76px;
+  left: 59px;
 }
 
-/* .calendar-img img{
-    width: 90px;
-    height:90px;
-    position: relative;
-    top:-10px ;
-    left:81px ;
-    transition:top 1s;
--webkit-transition:top 1s; 
-}
-.calendar-img img:hover{
-    position: relative;
-    top:-20px ;
-    left:81px ;
-    cursor: pointer;
-} */
 .calendar-img p {
 
-    font-size: 25px;
-    font-family: OpenSans-Bold;
-    font-weight: bold;
-    color: rgba(255, 255, 255, 1);
-    line-height: 80px;
-    text-align: center;
-    /* margin-top: 88px; */
-}
-
-.footer-p {
-
-    font-size: 16px;
-    font-family: OpenSans-SemiBold;
-    font-weight: 600;
-    color: rgba(255, 255, 255, 1);
-    line-height: 70px;
-    text-align: center;
-
-}
-
-.main-left-content {
-    width: 421px;
-    height: 225px;
-    box-shadow: 0 0 8px;
-    margin-top: 15px;
-}
-
-.main-right-content {
-    width: 759px;
-    height: 225px;
-    box-shadow: 0 0 8px;
-    margin-top: 15px;
-    margin-left: 24px
-}
-
-.calendar-right {
-    width: 478px;
-    height: 100%;
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
-    background: #F1F1F1;
-    overflow: overlay;
-}
-
-.calendar-right::-webkit-scrollbar {
-    display: none;
-}
-
-.calendar-right div {
-    width: 100%;
-    height: 33.3%;
-    padding: 0 25px;
-}
-
-.calendar-right p {
-    height: 22px;
-    line-height: 22px;
-    margin: 20px 0 0 0;
-    font-size: 16px;
-    font-family: PingFangSC-Regular;
-}
-
-.calendar-right p span {
-    float: left;
-}
-
-.calendar-right p a {
-    float: right;
-    color: black;
-}
-
-.calendar-right .active {
-    background-color: #6AA666;
-    color: #FFFFFF;
-}
-
-.announcement-tips {
-    height: 20px;
-    box-sizing: border-box;
-    margin-left: 140px;
-    margin-top: 15px;
-}
-
-.announcement-tips span {
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background-color: #A0C79F;
-    margin-left: 16px;
+  font-size: 25px;
+  font-family: OpenSans-Bold;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 1);
+  line-height: 80px;
+  text-align: center;
 }

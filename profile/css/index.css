@@ -1,18 +1,60 @@
-.w838 {
-    width: 100%;
-    border-left: none;
+.profile-table tr {
+  width: 410px;
+  height: 54px;
+  background: rgba(255, 255, 255, 1);
 }
 
-.investor-right {
-    width: 100%;
+.profile-table tr td {
+  height: 24px;
+  font-size: 18px;
+  font-family: OpenSans-Regular;
+  font-weight: 400;
+  color: rgba(57, 61, 68, 1);
+  line-height: 24px;
+  text-align: left;
+
+  padding: 14px 24px;
 }
 
-.investor-pdf li {
-    width: 185px;
+.profile-table tr>td>input {
+  width: 180px;
+  height: 28px;
+
 }
 
-.nav_user {
-    width: 163px;
-    height: 40px;
-    background: #393D44;
+.p-input {
+  width: 100%;
+  margin: 20px 0;
+  text-align: right;
+
+}
+
+.p-input input:nth-child(1) {
+  width: 113px;
+  height: 38px;
+  background: rgba(106, 166, 102, 1);
+  border-radius: 19px;
+  border: none;
+  font-size: 16px;
+  font-family: OpenSans-Regular;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  line-height: 22px;
+  cursor: pointer;
+
+}
+
+.p-input input:nth-child(2) {
+  width: 113px;
+  height: 38px;
+  background: rgba(249, 75, 90, 1);
+  border-radius: 19px;
+  border: none;
+  font-size: 16px;
+  font-family: OpenSans-Regular;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  line-height: 22px;
+  margin-left: 20px;
+  cursor: pointer;
 }
