@@ -32,5 +32,6 @@ var render = function() {
     //     <li><a href="../../News/volunteer/volunteer.html" rel="noopener noreferrer">Volunteer Needs</a></li>  `
     //     $('.breadcrumb').append(str)
     // }
+    addAuthenticityTokenToForms();
 
 }

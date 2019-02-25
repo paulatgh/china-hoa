@@ -1,8 +1,5 @@
 var render = function() {
     _pre_render();
-    // var content_template = $('#form').html();
-    // Mustache.parse(content_template);
-    // $('#form').after(Mustache.render(content_template, data));
 
     var table_header = $('#table_header').html()
     $.each(data.table_header, function() {
@@ -18,5 +15,6 @@ var render = function() {
     if (data._current_user && data._current_user.is_admin == true) {
         $('.buttona').css('display', 'none')
     }
+    addAuthenticityTokenToForms();
 
 };

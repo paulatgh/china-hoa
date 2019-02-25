@@ -62,4 +62,5 @@ var render = function() {
         //TODO: log out user
         logOutUser()
     })
+    addAuthenticityTokenToForms();
 }

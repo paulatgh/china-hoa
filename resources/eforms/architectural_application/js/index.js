@@ -15,5 +15,6 @@ var render = function() {
         $('.announcements_add').css('display', 'block')
         $('.announcements_permission').css('display', 'block')
     }
+    addAuthenticityTokenToForms();
 
 };

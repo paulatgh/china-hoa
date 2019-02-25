@@ -13,5 +13,6 @@ var render = function() {
     if (data._current_user && data._current_user.is_admin == true) {
         $('.buttona').css('display', 'none')
     }
+    addAuthenticityTokenToForms();
 
 }
