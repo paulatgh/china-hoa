@@ -1,8 +1,14 @@
 var render = function() {
     _pre_render()
-    var content_template = $('#architectural_application').html();
-    Mustache.parse(content_template);
-    $('#architectural_application').after(Mustache.render(content_template, data));
+    var page_title = $('#page_title').html()
+    $.each(data.page_title, function() {
+        $('#page_title_cycle').append(Mustache.render(page_title, this));
+    });
+
+    var article_title = $('#article_title').html()
+    $.each(data.article_title, function() {
+        $('#article_title_cycle').append(Mustache.render(article_title, this));
+    });
 
     // Global post render
     _post_render();
