@@ -14,7 +14,7 @@ var render = function() {
     $.each(data.option, function() {
         $('#drop_down_list_cycle').append(Mustache.render(drop_down_list, this));
     });
-    var drop_down_list_two= $('#drop_down_list_two').html()
+    var drop_down_list_two = $('#drop_down_list_two').html()
     $.each(data.option_two, function() {
         $('#drop_down_list_two_cycle').append(Mustache.render(drop_down_list_two, this));
     });
@@ -28,5 +28,5 @@ var render = function() {
     if (data._current_user && data._current_user.is_admin == true) {
         $('.buttona').css('display', 'none')
     }
-
+    addAuthenticityTokenToForms();
 }
