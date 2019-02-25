@@ -2,7 +2,19 @@ var render = function() {
     // var content_template = $('#add').html();
     // Mustache.parse(content_template);
     // $('#add').after(Mustache.render(content_template, data));
+    var table_header = $('#table_header').html()
+    $.each(data.table_header, function() {
+        $('#table_header_cycle').append(Mustache.render(table_header, this));
+    });
 
+    var drop_down_list = $('#drop_down_list').html()
+    $.each(data.option, function() {
+        $('#drop_down_list_cycle').append(Mustache.render(drop_down_list, this));
+    });
+    var drop_down_list_two = $('#drop_down_list_two').html()
+    $.each(data.option_two, function() {
+        $('#drop_down_list_two_cycle').append(Mustache.render(drop_down_list_two, this));
+    });
     _pre_render();
 
     // Global post render
