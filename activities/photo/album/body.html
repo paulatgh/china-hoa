@@ -10,11 +10,11 @@
     <script id="breadcrumbs" type="txt/template">
         <div class="main-breadcrumb" style="width: 1200px;margin: 0 auto">
             <ul class="breadcrumb" style="float: left">
-                <li><a href="/home">Home</a></li>
+                <li><a href="{{_metadata.root_url}}/home">Home</a></li>
                 <li>&nbsp;>&nbsp;</li>
-                <li><a href="/activities">Events</a></li>
+                <li><a href="{{_metadata.root_url}}/activities">Events</a></li>
                 <li>&nbsp;>&nbsp;</li>
-                <li><a href="/activities/photo">Albums </a></li>
+                <li><a href="{{_metadata.root_url}}/activities/photo">Albums </a></li>
                 <li>&nbsp;>&nbsp;</li>
                 <li><a href="#?id={{album.id}}">{{album.title}}</a></li>
             </ul>
