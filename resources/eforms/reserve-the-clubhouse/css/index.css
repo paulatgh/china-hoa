@@ -1,8 +1,3 @@
-html,
-body {
-  height: 100%;
-}
-
 .main {
   height: 1200px;
 }
@@ -47,33 +42,6 @@ body {
   padding: 14px 24px;
 }
 
-.footer-p {
-
-  font-size: 16px;
-  font-family: OpenSans-SemiBold;
-  font-weight: 600;
-  color: rgba(255, 255, 255, 1);
-  line-height: 70px;
-  text-align: center;
-
-}
-
-.main-left-content {
-  width: 421px;
-  height: 225px;
-  box-shadow: 0 0 8px;
-  margin-top: 15px;
-}
-
-.main-right-content {
-  width: 759px;
-  height: 225px;
-  box-shadow: 0 0 8px;
-  margin-top: 15px;
-  margin-left: 24px
-}
-
-
 .breadcrumb {
   width: 1200px;
   height: 75px;
@@ -92,28 +60,29 @@ body {
 .breadcrumb li a {
   color: rgba(30, 130, 23, 1);
 }
+
 .continue {
-    width: 113px;
-    height: 38px;
-    background: rgba(106, 166, 102, 1);
-    border-radius: 20px;
-    border: none;
-    font-size: 16px;
-    font-family: OpenSans-Regular;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 1);
-    margin: 24px
-  }
-  
-  .cancel {
-    width: 113px;
-    height: 38px;
-    background: rgba(249, 75, 90, 1);
-    border-radius: 20px;
-    border: none;
-    font-size: 16px;
-    font-family: OpenSans-Regular;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 1);
-    cursor: pointer;
-  }
+  width: 113px;
+  height: 38px;
+  background: rgba(106, 166, 102, 1);
+  border-radius: 20px;
+  border: none;
+  font-size: 16px;
+  font-family: OpenSans-Regular;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  margin: 24px
+}
+
+.cancel {
+  width: 113px;
+  height: 38px;
+  background: rgba(249, 75, 90, 1);
+  border-radius: 20px;
+  border: none;
+  font-size: 16px;
+  font-family: OpenSans-Regular;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+}
