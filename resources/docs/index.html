@@ -31,27 +31,27 @@
             },
             _metadata: {
                 root_url: 'http://127.0.0.1:8080',
-                page_path: '/home',
-                assets_path: '/home',
+                page_path: '/resources/docs',
+                assets_path: '',
                 site_name: 'De Anza Oaks',
                 environment: 'dev',
             },
-            category_name: [{
-                id: 1,
-                name: 'CHOOSE A CATEGORY'
-            }],
-            pdf_category: [{
-                id: 1,
-                title: 'tab1',
-                link: '#',
-                content: 'Homeowners Association'
-            }, {
-                id: 2,
-                title: 'tab2',
-                link: '#',
-                content: 'De Anza Oaks Paint Colors'
-            }],
-            homeowners_association: [{
+            categories: [
+                {
+                    id: 1,
+                    title: 'tab1',
+                    link: '#',
+                    content: 'Homeowners Association'
+                },
+                {
+                    id: 2,
+                    title: 'tab2',
+                    link: '#',
+                    content: 'De Anza Oaks Paint Colors'
+                },
+            ],
+            documents: [
+                {
                     id: 1,
                     title: 'Homeowners Association',
                     img: '/community/img/Homeowners Association.png',
@@ -59,17 +59,17 @@
                 },
                 {
                     id: 2,
-                    title: 'Homeowners Association(2)',
-                    img: '/community/img/Architectural Satndards.png',
+                    title: 'Homeowners Association (2)',
+                    img: '/community/img/Architectural Standards.png',
                     pdf: '/community/pdf/21112002703_001.pdf',
-                }
+                },
+                {
+                    id: 3,
+                    title: 'De Anza Oaks Paint Colors',
+                    img: '/community/img/DE ANZA OAKS PAINT COLORS.png',
+                    pdf: '/community/pdf/2174420paint_colors_-_2007.pdf',
+                },
             ],
-            homeowners_association_second: [{
-                id: 3,
-                title: 'De Anza Oaks Pait Colors',
-                img: '/community/img/DE ANZA OAKS PAINT COLORS.png',
-                pdf: '/community/pdf/2174420paint_colors_-_2007.pdf',
-            }]
         }
 
     </script>

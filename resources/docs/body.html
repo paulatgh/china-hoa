@@ -1,7 +1,5 @@
 <!-- header -->
-<div class="header" style="box-shadow:0px 2px 7px 0px rgba(0,0,0,0.5);
- border:1px solid rgba(151,151,151,1)">
-
+<div class="header" style="box-shadow:0px 2px 7px 0px rgba(0,0,0,0.5); border:1px solid rgba(151,151,151,1)">
 </div>
 
 <!-- main body -->
@@ -16,59 +14,43 @@
         </ul>
     </div>
     <div class="w1200">
-
         <div class="w838">
             <div class="investor-pdf">
                 <div class="main-center">
                     <div class="content-1">
                         <div class="choose">
                             <div class="choose-left">
-                                <h5 id="categoryNameExternal">
-                                    <script id="categoryName" type="txt/template">
-                                        {{name}}
-                                </script>
-                                </h5>
-                                <ul id="PDFcategoryListExternal" class="tabs">
-                                    <script id="PDFcategoryList" type="txt/template">
+                                <h5>Choose a Category</h5>
+                                <ul id="category_list" class="tabs">
+                                    <script id="category_template" type="txt/template">
+                                        {{#categories}}
                                         <li><a href="{{link}}" title="{{title}}">{{content}}</a></li>
+                                        {{/categories}}
                                     </script>
                                 </ul>
                             </div>
                             <div class="choose-right">
-                                <ul id="HomeownersAssociationExternal" class="item show">
-                                    <script id="HomeownersAssociation" type="txt/template">
-                                        <li>
-                                        <div class="investor-pdfhov">
-                                                    <div class="investor-pdf-img">
-                                                        <img src="{{img}}" alt="" style="height: 214px">
-                                                    </div>
-                                                    <div class="investor-pdf-con"><a target="_blank" href="{{pdf}}">View</a>
-                                                    </div>
-                                                </div>
-                                                <p>{{title}}</p>
-                                        </li>
-                                        </script>
-                                </ul>
-                                <ul id="HomeownersAssociationSecondExternal" class="item">
-                                    <script id="HomeownersAssociation" type="txt/template">
+                                <ul id="documents" class="item show">
+                                    <script id="documents_template" type="txt/template">
+                                        {{#documents}}
                                         <li>
                                             <div class="investor-pdfhov">
-                                                        <div class="investor-pdf-img">
-                                                            <img src="{{img}}" alt="" style="height: 214px">
-                                                        </div>
-                                                        <div class="investor-pdf-con"><a target="_blank" href="{{pdf}}">View</a>
-                                                        </div>
-                                                    </div>
-                                                    <p>{{title}}</p>
-                                            </li>
-                                            </script>
+                                                <div class="investor-pdf-img">
+                                                    <img src="{{img}}" alt="" style="height: 214px">
+                                                </div>
+                                                <div class="investor-pdf-con">
+                                                    <a target="_blank" href="{{pdf}}">View</a>
+                                                </div>
+                                            </div>
+                                            <p>{{title}}</p>
+                                        </li>
+                                        {{/documents}}
+                                    </script>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
             </div>
             <div class="clearfix"></div>
         </div>

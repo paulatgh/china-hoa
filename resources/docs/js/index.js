@@ -13,6 +13,9 @@ var render = function () {
         $('#HomeownersAssociationSecondExternal').append(Mustache.render(HomeownersAssociation, this));
     });
 
+    $('#category_template').after(function() { return Mustache.render($(this).html(), data); });
+    $('#documents_template').after(function() { return Mustache.render($(this).html(), data); });
+
     var categoryName = $('#categoryName').html();
     Mustache.parse(categoryName);
     $.each(data.category_name, function () {
