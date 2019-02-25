@@ -2,7 +2,6 @@ var render = function() {
     _pre_render();
     var event_template = $('#add').html();
     Mustache.parse(event_template);
-    $('#add').after(Mustache.render(event_template, data));
 
     // Global post render
     _post_render();
@@ -13,4 +12,6 @@ var render = function() {
         $('.buttona').css('display', 'none')
     }
 
+    addAuthenticityTokenToForms();
 };
+ 

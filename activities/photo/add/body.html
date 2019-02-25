@@ -28,7 +28,7 @@
                         .
                     </tr>
                 </table>
-                <form>
+                <form method="post">
                     <table class="addalbum-table" width="90%" border="1" cellpadding="3" cellspacing="0" bordercolor="#6AA666">
                         <tbody>
                             <tr>
@@ -37,18 +37,18 @@
                                 </td>
                                 <td>
 
-                                    <input type="text" size="50" maxlength="50" name="name_textfield" style="width:564px;height:28px;">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Album Description:
-                                </td>
-                                <td>
+                                <input type="text" size="50" maxlength="50" name="name" style="width:564px;height:28px;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Album Description:
+                            </td>
+                            <td>
 
-                                    <textarea cols="36" rows="6" name="description_textfield" style="width:564px;height:160px;"></textarea>
-                                </td>
-                            </tr>
+                                <textarea cols="36" rows="6" name="description" style="width:564px;height:160px;"></textarea>
+                            </td>
+                        </tr>
 
                             <tr>
                                 <td>
@@ -81,17 +81,18 @@
                         </tbody>
                     </table>
 
-                </form>
-                <table border="0" width="90%">
-                    <tbody>
+                    <table border="0" width="90%">
+                        <tbody>
                         <tr>
                             <td width="10%" align="right">
                                 <input type="Submit" value="Save New" name="action" class="continue">
                                 <input type="Submit" value="Cancel" onclick="location.href='/activities/photo'" class="cancel">
                             </td>
                         </tr>
-                    </tbody>
-                </table>
+                        </tbody>
+                    </table>
+
+                </form>
                 <div class="clearfix"></div>
             </div>
         </div>

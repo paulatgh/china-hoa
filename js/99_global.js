@@ -198,6 +198,19 @@ function _post_render() {
     })
 }
 
+function addAuthenticityTokenToForms() {
+    $.each($('form'), function( index, formElem ) {
+        if(document.querySelector('meta[name=csrf-token]')){
+            // add auth token
+            $(formElem).append($('<input/>', {
+                type: 'hidden',
+                name: 'authenticity_token',
+                value: document.querySelector('meta[name=csrf-token]').attributes.content.value
+            }));
+        }
+    });
+}
+
 function submitDynamicForm(action, method, values) {
 
     // create form
