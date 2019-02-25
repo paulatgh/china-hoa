@@ -2,13 +2,6 @@
   height: 1150px;
 }
 
-.main-left-content {
-  width: 421px;
-  height: 225px;
-  box-shadow: 0 0 8px;
-  margin-top: 15px;
-}
-
 .main-right-content {
   width: 759px;
   height: 225px;
@@ -175,25 +168,6 @@
   border: 1px solid rgba(255, 255, 255, 1);
 }
 
-.tips_hover_yes {
-  border: 1px solid transparent !important;
-  background-color: #6AA666;
-}
-
-.tips_hover_no {
-  border: 1px solid transparent !important;
-  background-color: #F94B5A;
-}
-
-.tips_hover_maybe {
-  border: 1px solid transparent !important;
-  background-color: #F5A623;
-}
-
-.tips_hover_notes {
-  border: 1px solid transparent !important;
-  background-color: #393D44;
-}
 
 .db1 {
   width: 100%;
@@ -324,7 +298,6 @@
   margin-left: 56%;
   color: black;
 }
-
 .saveChange {
   width: 80px;
   height: 40px;
@@ -340,8 +313,6 @@
   right: 10px;
   cursor: pointer;
 }
-
-
 /* calendar */
 
 @import url(http://fonts.googleapis.com/css?family=Fugaz+One);
@@ -829,7 +800,7 @@
   word-break: break-word;
 }
 
-.jalendar .events .event-single p:nth-child(4){
+.jalendar .events .event-single p:nth-child(4) {
   line-height: 26px;
   font-size: 15px;
 }

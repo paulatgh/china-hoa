@@ -7,36 +7,6 @@ body {
   height: 1150px;
 }
 
-table {
-  width: 1151px;
-  border: none;
-}
-
-tr {
-  height: 75px;
-  border-bottom: solid 1px #FAFAFA;
-
-}
-
-th {
-  height: 21px;
-  font-size: 14px;
-  font-family: PingFangSC-Medium;
-  font-weight: 600;
-  color: rgba(0, 0, 0, 0.85);
-  line-height: 21px;
-  background: rgba(250, 250, 250, 1);
-
-
-}
-
-td {
-  font-size: 14px;
-  font-family: PingFangSC-Regular;
-  font-weight: 400;
-  color: rgba(0, 0, 0, 0.65);
-}
-
 .breadcrumb li {
   color: rgba(30, 130, 23, 1);
   height: 27px;
@@ -90,18 +60,6 @@ td {
   /* border: 3px solid #6AA666; */
 }
 
-.Events-Calendar:nth-child(1) {
-  background-image: url("/community/img/events-calendar.png");
-}
-
-.Events-Calendar:nth-child(2) {
-  background-image: url("/community/img/events-facilities.png");
-}
-
-.Events-Calendar:nth-child(3) {
-  background-image: url("/community/img/events-photoalbums.png");
-}
-
 .calendar-img {
   width: 250px;
   height: 84px;
@@ -119,89 +77,4 @@ td {
   color: rgba(255, 255, 255, 1);
   line-height: 80px;
   text-align: center;
-  /* margin-top: 88px; */
-}
-
-.footer-p {
-
-  font-size: 16px;
-  font-family: OpenSans-SemiBold;
-  font-weight: 600;
-  color: rgba(255, 255, 255, 1);
-  line-height: 70px;
-  text-align: center;
-
-}
-
-.main-left-content {
-  width: 421px;
-  height: 225px;
-  box-shadow: 0 0 8px;
-  margin-top: 15px;
-}
-
-.main-right-content {
-  width: 759px;
-  height: 225px;
-  box-shadow: 0 0 8px;
-  margin-top: 15px;
-  margin-left: 24px
-}
-
-.calendar-right {
-  width: 478px;
-  height: 100%;
-  box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
-  background: #F1F1F1;
-  overflow: overlay;
-}
-
-.calendar-right::-webkit-scrollbar {
-  display: none;
-}
-
-.calendar-right div {
-  width: 100%;
-  height: 33.3%;
-  padding: 0 25px;
-}
-
-.calendar-right p {
-  height: 22px;
-  line-height: 22px;
-  margin: 20px 0 0 0;
-  font-size: 16px;
-  font-family: PingFangSC-Regular;
-}
-
-.calendar-right p span {
-  float: left;
-}
-
-.calendar-right p a {
-  float: right;
-  color: black;
-}
-
-.calendar-right .active {
-  background-color: #6AA666;
-  color: #FFFFFF;
-}
-
-.announcement-tips {
-  height: 20px;
-  box-sizing: border-box;
-  margin-left: 140px;
-  margin-top: 15px;
-}
-
-.announcement-tips span {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background-color: #A0C79F;
-  margin-left: 16px;
 }

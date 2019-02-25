@@ -1,130 +1,118 @@
 html,
 body {
-    height: 100%;
+  height: 100%;
 }
 
 .main-left h2 {
-    text-align: center;
-    height: 120px;
-    line-height: 120px;
-    font-size: 34px;
-    font-family: SourceHanSansSC-Bold;
-    font-weight: bold;
-    color: rgba(57, 61, 68, 1);
+  text-align: center;
+  height: 120px;
+  line-height: 120px;
+  font-size: 34px;
+  font-family: SourceHanSansSC-Bold;
+  font-weight: bold;
+  color: rgba(57, 61, 68, 1);
 }
 
 .Carousel {
-    position: relative;
+  position: relative;
 }
 
 .Carousel_tips {
-    padding: 0 0 25px;
-    box-sizing: border-box;
-    height: 44px;
-    line-height: 24px;
-    font-size: 24px;
-    font-family: SourceHanSansSC-Medium;
-    font-weight: 500;
-    border-bottom: 2px solid #333333;
-    color: rgba(51, 51, 51, 1);
-    position: absolute;
-    top: -15px;
-    left: 139px;
-    width: 44px;
+  padding: 0 0 25px;
+  box-sizing: border-box;
+  height: 44px;
+  line-height: 24px;
+  font-size: 24px;
+  font-family: SourceHanSansSC-Medium;
+  font-weight: 500;
+  border-bottom: 2px solid #333333;
+  color: rgba(51, 51, 51, 1);
+  position: absolute;
+  top: -15px;
+  left: 139px;
+  width: 44px;
 }
 
 .Carousel_img {
-    width: 922px;
-    height: 300px;
-    padding-top: 70px;
-    box-sizing: border-box;
-    margin-bottom: 90px;
-    overflow: hidden;
-    margin-left: 150px;
+  width: 922px;
+  height: 300px;
+  padding-top: 70px;
+  box-sizing: border-box;
+  margin-bottom: 90px;
+  overflow: hidden;
+  margin-left: 150px;
 }
 
 .swiper-button-next {
-    background: url('/community/img/lefta.png') no-repeat;
-    background-size: 100%;
-    top: 175px;
-    right: 150px;
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    cursor: pointer;
+  background: url('/community/img/lefta.png') no-repeat;
+  background-size: 100%;
+  top: 175px;
+  right: 150px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  cursor: pointer;
 }
 
 .swiper-button-prev {
-    background: url('/community/img/right2.png') no-repeat;
-    background-size: 100%;
-    top: 175px;
-    left: 170px;
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    cursor: pointer;
+  background: url('/community/img/right2.png') no-repeat;
+  background-size: 100%;
+  top: 175px;
+  left: 170px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  cursor: pointer;
 }
 
 .Carousel p {
-    line-height: 70px;
+  line-height: 70px;
 }
 
-.Information_list {
-    margin-top: 20px;
-}
-
-.Information_list>li>a {
-    font-size: 26px;
-    font-family: SourceHanSansSC-Normal;
-    font-weight: 400;
-    color: rgba(106, 166, 102, 1);
-    line-height: 60px;
-    text-decoration: underline;
-}
 
 .Information_desc {
-    height: 376px;
-    margin-top: 30px;
-    background: rgba(255, 255, 255, 1);
-    border: 1px solid rgba(68, 159, 65, 1);
-    padding: 0 46px 46px;
-    box-sizing: border-box;
-    margin-bottom: -30px;
+  height: 376px;
+  margin-top: 30px;
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(68, 159, 65, 1);
+  padding: 0 46px 46px;
+  box-sizing: border-box;
+  margin-bottom: -30px;
 }
 
 .Information_desc ul li {
-    font-size: 26px;
-    font-family: SourceHanSansSC-Normal;
-    font-weight: 400;
-    color: rgba(106, 166, 102, 1);
-    line-height: 60px;
+  font-size: 26px;
+  font-family: SourceHanSansSC-Normal;
+  font-weight: 400;
+  color: rgba(106, 166, 102, 1);
+  line-height: 60px;
 }
 
 .Information_desc h3 {
-    text-align: center;
-    line-height: 75px;
-    font-size: 26px;
-    font-family: SourceHanSansSC-Medium;
-    font-weight: 500;
-    color: rgba(106, 166, 102, 1);
+  text-align: center;
+  line-height: 75px;
+  font-size: 26px;
+  font-family: SourceHanSansSC-Medium;
+  font-weight: 500;
+  color: rgba(106, 166, 102, 1);
 
 }
 
 .breadcrumb {
-    width: 1200px;
-    height: 75px;
-    margin: 0 auto;
+  width: 1200px;
+  height: 75px;
+  margin: 0 auto;
 }
 
 .breadcrumb li {
-    float: left;
-    margin-right: 10px;
-    font-size: 20px;
-    font-family: OpenSans-Regular;
-    font-weight: 400;
-    line-height: 75px;
+  float: left;
+  margin-right: 10px;
+  font-size: 20px;
+  font-family: OpenSans-Regular;
+  font-weight: 400;
+  line-height: 75px;
 }
 
 .breadcrumb li a {
-    color: rgba(30, 130, 23, 1);
+  color: rgba(30, 130, 23, 1);
 }

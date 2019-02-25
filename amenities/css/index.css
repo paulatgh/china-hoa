@@ -44,7 +44,6 @@ body {
 .GatedCommunity {
   width: 920px;
   height: 450px;
-  /* border: solid 1px; */
   margin: auto;
   margin-bottom: 32px;
 }
@@ -52,7 +51,6 @@ body {
 .GatedCommunity-img {
   width: 920px;
   height: 250px;
-  /* border: solid 1px red; */
 }
 
 .GatedCommunity p {
@@ -85,31 +83,3 @@ body {
   background-color: #000;
   border-radius: 50%;
 }
-
-.footer-p {
-
-  font-size: 16px;
-  font-family: OpenSans-SemiBold;
-  font-weight: 600;
-  color: rgba(255, 255, 255, 1);
-  line-height: 70px;
-  text-align: center;
-
-}
-
-.main-left-content {
-  width: 421px;
-  height: 225px;
-  box-shadow: 0 0 8px;
-  margin-top: 15px;
-}
-
-.main-right-content {
-  width: 759px;
-  height: 225px;
-  box-shadow: 0 0 8px;
-  margin-top: 15px;
-  margin-left: 24px
-}
-
-
