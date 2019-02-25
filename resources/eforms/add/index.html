@@ -37,69 +37,9 @@
                 site_name: 'De Anza Oaks',
                 environment: 'dev',
             },
-            body: `
-            <table style="background-color: #ffffff; margin-top:20px;" background="" border="0" width="100%" cellpadding="10"
-            cellspacing="0">
-            <tbody>
-                <tr>
-                    <td>
-                        <font size="2" face="Verdana, Arial, Helvetica" color="#222311">
-                            <table class="std-table" border="0" width="90%" bgcolor="#6AA666">
-                <tr>
-                    <td style="height: 64px; padding-left: 24px;">
-                        <font size="5" face="Verdana, Arial, Helvetica" color="#ffffff">
-                            eForm Add
-                        </font>
-                    </td>
-                </tr>
-            </table>
-             <form>
-                               <table class="eform-table" border="1" width="90%" cellspacing="0" bordercolor="#008000">
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                    Form Title/Name:</font>
-                                                    </td>
-                                                    <td><input type="text" name="short_desc" size="40" maxlength="50" style="font-family: Tahoma; font-size: 11"></td>
-                                                </tr>
-                                               
-                                                <tr>
-                                            <td>
-                                                Full Description:
-                                            </td>
-                                            <td><textarea wrap="virtual" name="full_desc" cols="50" rows="5" style="width:564px;height:160px;"></textarea></td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                Auto Reply Email Message:
-                                            </td>
-                                            <td><textarea wrap="virtual" name="full_desc" cols="50" rows="5" style="width:564px;height:160px;"></textarea></td>
-                                        </tr>
-                                                            </tbody>
-                                                        </table>
-
-
-                                                    </td>
-                                                </tr>
-                                    
-                            </form>
-
-                                <table border="0" width="90%">
-                                    <tbody>
-                                        <tr>
-                                            <td width="10%" align="right">
-                                                <input type="Submit" value="Continue"  class="continue">
-                                                <input type="Submit" value="Cancel"  onclick="location.href='/resources/eforms'"  class="cancel">
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                
-                        </font>
-                    </td>
-                </tr>
-            </tbody>
-        </table>`
+            eforms_add_title: [{
+                name: 'eforms_add_title'
+            }],
         }
 
     </script>
