@@ -35,149 +35,127 @@
                 site_name: 'De Anza Oaks',
                 environment: 'dev',
             },
-            body: `    <div class="main-center">
-        <div class="content-1">
-            <table class="std-table" border="0" width="100%" bgcolor="#6AA666">
-                    <tr>
-                        <td style="height: 64px; padding-left: 24px;">
-                            <font size="5" face="Verdana, Arial, Helvetica" color="#ffffff">
-                                Clubhouse Reservation Request Form
-                            </font>
-                        </td>
-                        .
-                    </tr>
-                </table>
-        <form>
-            <table class="reserve-table" width="100%" border="1" cellpadding="3" cellspacing="0" bordercolor="#6AA666">
-                <tbody>
-                    <tr>
-                        <td>         
-                           Name:
-                        </td>
-                        <td>
-                            
+            table_header: [{
+                id: 1,
+                title: 'Clubhouse Reservation Request Form'
+            }],
+            body: `<form>
+                <table class="reserve-table" width="100%" border="1" cellpadding="3" cellspacing="0" bordercolor="#6AA666">
+                    <tbody>
+                        <tr>
+                            <td>
+                                Name:
+                            </td>
+                            <td>
+
                                 <input type="text" size="50" maxlength="50" name="name_textfield" style="width:564px;height:28px;">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                           
-                            Street Address:
-                        </td>
-                        <td>
-                        
-                            <input type="text" size="50" maxlength="50" name="name_textfield" style="width:564px;height:28px;">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                           
-                            Phone Number:
-                        </td>
-                        <td>
-                        
-                            <input type="text" size="50" maxlength="50" name="name_textfield" style="width:564px;height:28px;">
-                        </td>
-                    </tr> 
-                    <tr>
-                        <td>
-                           
-                            Email Address:
-                        </td>
-                        <td>
-                        
-                            <input type="text" size="50" maxlength="50" name="name_textfield" style="width:564px;height:28px;">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                           
-                            Event Date:
-                        </td>
-                        <td>
-                        
-                            <input type="text" size="50" maxlength="50" name="name_textfield" style="width:564px;height:28px;">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                           
-                            Start Time (hh:mm am/pm):
-                        </td>
-                        <td>
-                        
-                            <input type="text" size="50" maxlength="50" name="name_textfield" style="width:564px;height:28px;">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                           
-                            End Time (hh:mm am/pm):
-                        </td>
-                        <td>
-                        
-                            <input type="text" size="50" maxlength="50" name="name_textfield" style="width:564px;height:28px;">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                           
-                            Type of Event:
-                        </td>
-                        <td>
-                        
-                            <input type="text" size="50" maxlength="50" name="name_textfield" style="width:564px;height:28px;">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                           
-                            Estimated Number of Attendees:
-                        </td>
-                        <td>
-                        
-                            <input type="text" size="50" maxlength="50" name="name_textfield" style="width:564px;height:28px;">
-                        </td>
-                    </tr>
-                    <tr>
-                          <td>Will you be using the pool?:</td>
-                         <td>
-                           <select size="1" name="f77">
-                           <option value="1">No</option>
-                           <option value="4">Yes</option>
-                          </select>
-                          </td>
-                    </tr>
-                    <tr>
-                        <td>
-                           
-                            Special Requests:
-                        </td>
-                        <td>
-                        
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                                Street Address:
+                            </td>
+                            <td>
+
+                                <input type="text" size="50" maxlength="50" name="name_textfield" style="width:564px;height:28px;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                                Phone Number:
+                            </td>
+                            <td>
+
+                                <input type="text" size="50" maxlength="50" name="name_textfield" style="width:564px;height:28px;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                                Email Address:
+                            </td>
+                            <td>
+
+                                <input type="text" size="50" maxlength="50" name="name_textfield" style="width:564px;height:28px;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                                Event Date:
+                            </td>
+                            <td>
+
+                                <input type="text" size="50" maxlength="50" name="name_textfield" style="width:564px;height:28px;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                                Start Time (hh:mm am/pm):
+                            </td>
+                            <td>
+
+                                <input type="text" size="50" maxlength="50" name="name_textfield" style="width:564px;height:28px;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                                End Time (hh:mm am/pm):
+                            </td>
+                            <td>
+
+                                <input type="text" size="50" maxlength="50" name="name_textfield" style="width:564px;height:28px;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                                Type of Event:
+                            </td>
+                            <td>
+
+                                <input type="text" size="50" maxlength="50" name="name_textfield" style="width:564px;height:28px;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                                Estimated Number of Attendees:
+                            </td>
+                            <td>
+
+                                <input type="text" size="50" maxlength="50" name="name_textfield" style="width:564px;height:28px;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Will you be using the pool?:</td>
+                            <td>
+                                <select size="1" name="f77">
+                                    <option value="1">No</option>
+                                    <option value="4">Yes</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                                Special Requests:
+                            </td>
+                            <td>
+
                                 <textarea cols="36" rows="6" name="description_textfield" style="width:564px;height:160px;"></textarea>
-                        </td>
-                    </tr>
+                            </td>
+                        </tr>
 
 
-                </tbody>
-            </table>
+                    </tbody>
+                </table>
 
-        </form>
-        <table border="0" width="100%">
-            <tbody>
-                <tr>
-                    <td width="10%" align="right">
-                        <input type="Submit" value="Sumbit" name="action" class="continue">
-                        <input type="Submit" value="Cancel" onclick="location.href='/home'" class="cancel">
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-        </div>
-
-    </div>`
+            </form> `
         }
 
     </script>
