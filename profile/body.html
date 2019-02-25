@@ -1,4 +1,4 @@
-<!-- footer -->
+<!-- header -->
 <div class="header" style="box-shadow:0px 2px 7px 0px rgba(0,0,0,0.5);
 border:1px solid rgba(151,151,151,1)">
 
@@ -12,889 +12,733 @@ border:1px solid rgba(151,151,151,1)">
             <tbody>
                 <tr>
                     <td>
-                        <font size="2" face="Verdana, Arial, Helvetica" color="#222311">
-                            <center>
-                                <table width="100%" bgcolor="#393D44">
-                                    <tbody>
-                                        <tr>
-                                            <td align="center" style="height: 50px;">
-                                                <script id="header" type="txt/template">
-                                                    <font size="4" face="Verdana, Arial, Helvetica" color="#F1F1F1">
+
+                        <table width="100%" bgcolor="#6AA666">
+                            <tbody>
+                                <tr>
+                                    <td style="height: 64px;padding-left: 24px;">
+                                        <script id="header" type="txt/template">
+                                            <font size="4" face="Verdana, Arial, Helvetica" color="#F1F1F1">
                                                         Edit Person - {{members.primary.name.first}} {{members.primary.name.last}}
                                                     </font>
                                                 </script>
-                                            </td>
-                                            <td width="25">&nbsp;</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <table class="std-table" border="2" bordercolor="#6AA666" cellpadding="0" cellspacing="0" style="font-family:Verdana, Arial, Helvetica; font-size: 9pt; width: 100%;border-top: none">
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                        <form>
+                            <input type="hidden" name="topsapi_old_address_compare_val" value="" <div lign="center">
+                            <center>
+                                <table class="profile-table" border="1" width="100%" cellspacing="0" bordercolor="#6AA666">
                                     <tbody>
-                                        <!-- <tr>
-                                        <td>
-                                            <div style="height: 40px; line-height: 40px;">
-                                                <div style="float: left; padding: 10px; box-sizing: border-box;">
-                                                    <b>User Profile:</b>
-                                                </div>
-                                                <div style="float: left; padding: 10px;box-sizing: border-box;">
-                                                    <a href="javascript:;">Subscriptions</a>
-                                                </div>
-                                                <div style="float: left; padding: 10px;box-sizing: border-box;">
-                                                    <a href="javascript:;">My Documents</a>
-                                                </div>
-                                                <div style="float: left; padding: 10px;box-sizing: border-box;">
-                                                    <a href="javascript:;">My eForms</a>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr> -->
-                                        <tr valign="top">
-                                            <td width="100%" style="background-color: #FFFFFF; ">
-                                                <table border="0" cellpadding="3" cellspacing="0" width="100%">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>
-                                                                <form>
-                                                                    <input type="hidden" name="topsapi_old_address_compare_val" value="" <div lign="center">
-                                                                    <center>
-                                                                        <table class="std-table" border="1" width="100%" cellspacing="0" bordercolor="#6AA666">
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td width="30%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;
-                                                                                            First Name:
-                                                                                        </font>
-                                                                                    </td>
-                                                                                    <td width="60%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <script id="members_primary_name_first" type="txt/template">
-                                                                                            <font face="Verdana, Arial, Helvetica" size="2" color="#222311">{{members.primary.name.first}}&nbsp;</font>
+                                        <tr>
+                                            <td>
+
+                                                First Name:
+
+                                            </td>
+                                            <td>
+                                                <script id="members_primary_name_first" type="txt/template">
+                                                    <font face="Verdana, Arial, Helvetica" size="2" color="#222311">{{members.primary.name.first}}&nbsp;</font>
                                                                                             <input type="hidden" name="first_name" value="{{members.primary.name.first}}">
                                                                                         </script>
-                                                                                    </td>
-                                                                                </tr>
+                                            </td>
+                                        </tr>
 
-                                                                                <tr>
-                                                                                    <td width="30%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;
-                                                                                            Last Name:
-                                                                                        </font>
-                                                                                    </td>
-                                                                                    <td width="60%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <script id="members_primary_name_last" type="txt/template">
-                                                                                            <font face="Verdana, Arial, Helvetica" size="2" color="#222311">{{members.primary.name.last}}&nbsp;</font>
+                                        <tr>
+                                            <td>
+
+                                                Last Name:
+
+                                            </td>
+                                            <td>
+                                                <script id="members_primary_name_last" type="txt/template">
+                                                    <font face="Verdana, Arial, Helvetica" size="2" color="#222311">{{members.primary.name.last}}&nbsp;</font>
                                                                                             <input type="hidden" name="last_name" value="{{members.primary.name.last}}">
                                                                                         </script>
-                                                                                    </td>
-                                                                                </tr>
+                                            </td>
+                                        </tr>
 
-                                                                                <input type="hidden" name="person_category_id" value="1">
+                                        <input type="hidden" name="person_category_id" value="1">
 
-                                                                                <tr>
-                                                                                    <td width="30%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;
-                                                                                            Login Name:
-                                                                                        </font>
-                                                                                    </td>
-                                                                                    <td width="60%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <script id="members_primary_login" type="txt/template">
-                                                                                            <input type="text" value="{{members.primary.login}}" name="login_name" size="20" maxlength="50" style="font-family: Tahoma; font-size: 11">
+                                        <tr>
+                                            <td>
+
+                                                Login Name:
+
+                                            </td>
+                                            <td>
+                                                <script id="members_primary_login" type="txt/template">
+                                                    <input type="text" value="{{members.primary.login}}" name="login_name" size="20" maxlength="50" style="font-family: Tahoma; font-size: 11">
                                                                                         </script>
-                                                                                    </td>
-                                                                                </tr>
+                                            </td>
+                                        </tr>
 
-                                                                                <tr>
-                                                                                    <td width="30%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;
-                                                                                            Password:
-                                                                                        </font>
-                                                                                    </td>
-                                                                                    <td width="60%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <input type="password" value="********" name="password" size="20" maxlength="20" style="font-family: Tahoma; font-size: 11">
-                                                                                    </td>
-                                                                                </tr>
+                                        <tr>
+                                            <td>
 
-                                                                                <tr>
-                                                                                    <td width="30%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;
-                                                                                            Confirm Password:
-                                                                                        </font>
-                                                                                    </td>
-                                                                                    <td width="60%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <input type="password" value="********" name="confirm_password" size="20" maxlength="20" style="font-family: Tahoma; font-size: 11">
-                                                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311"></font>
-                                                                                    </td>
-                                                                                </tr>
+                                                Password:
 
-                                                                                <input type="hidden" value="25" name="sec_level">
-                                                                                <input type="hidden" value="" name="pm_person_id">
+                                            </td>
+                                            <td>
+                                                <input type="password" value="********" name="password" size="20" maxlength="20" style="font-family: Tahoma; font-size: 11">
+                                            </td>
+                                        </tr>
 
-                                                                                <tr>
-                                                                                    <td width="30%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;
-                                                                                            Discard "Remember Login Info":
-                                                                                        </font>
-                                                                                    </td>
-                                                                                    <td width="60%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <script id="members_primary_discard_login_info" type="txt/template">
-                                                                                            <input type="checkbox" name="forgetlogin" style="font-family: Tahoma; font-size: 11" {{#members.primary.discard_login_info}}checked="checked"{{/members.primary.discard_login_info}}>
+                                        <tr>
+                                            <td>
+
+                                                Confirm Password:
+
+                                            </td>
+                                            <td>
+                                                <input type="password" value="********" name="confirm_password" size="20" maxlength="20" style="font-family: Tahoma; font-size: 11">
+                                                <font face="Verdana, Arial, Helvetica" size="2" color="#222311"></font>
+                                            </td>
+                                        </tr>
+
+                                        <input type="hidden" value="25" name="sec_level">
+                                        <input type="hidden" value="" name="pm_person_id">
+
+                                        <tr>
+                                            <td colspan="2" class="check-input">
+
+                                                Discard "Remember Login Info":
+
+
+                                                <script id="members_primary_discard_login_info" type="txt/template">
+                                                    <input class="" type="checkbox" name="forgetlogin" style="position: relative;top:5px;left:10px;width:20px;height:20px;font-family: Tahoma; font-size: 11" {{#members.primary.discard_login_info}}checked="checked"{{/members.primary.discard_login_info}}>
                                                                                         </script>
-                                                                                    </td>
-                                                                                </tr>
+                                            </td>
+                                        </tr>
 
-                                                                                <tr>
-                                                                                    <td width="30%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;
-                                                                                            Birthdate <font size="-1">(mm/dd)</font>:
-                                                                                        </font>
-                                                                                    </td>
-                                                                                    <td width="60%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <script id="members_primary_birthdate" type="txt/template">
-                                                                                            <input type="text" value="{{members.primary.birthday}}" name="birthdate" size="5" maxlength="5" style="font-family: Tahoma; font-size: 11">
+                                        <tr>
+                                            <td>
+
+                                                Birthdate (mm/dd):
+
+                                            </td>
+                                            <td>
+                                                <script id="members_primary_birthdate" type="txt/template">
+                                                    <input type="text" value="{{members.primary.birthday}}" name="birthdate" size="5" maxlength="5" style="font-family: Tahoma; font-size: 11">
                                                                                         </script>
-                                                                                    </td>
-                                                                                </tr>
+                                            </td>
+                                        </tr>
 
-                                                                                <tr>
-                                                                                    <td width="30%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;
-                                                                                            Employer:
-                                                                                        </font>
-                                                                                    </td>
-                                                                                    <td width="60%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <script id="members_primary_employer" type="txt/template">
-                                                                                            <input type="text" value="{{members.primary.employer}}" name="employer" size="30" maxlength="50" style="font-family: Tahoma; font-size: 11">
+                                        <tr>
+                                            <td>
+
+                                                Employer:
+
+                                            </td>
+                                            <td>
+                                                <script id="members_primary_employer" type="txt/template">
+                                                    <input type="text" value="{{members.primary.employer}}" name="employer" size="30" maxlength="50" style="font-family: Tahoma; font-size: 11">
                                                                                         </script>
-                                                                                    </td>
-                                                                                </tr>
+                                            </td>
+                                        </tr>
 
-                                                                                <tr>
-                                                                                    <td width="30%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;
-                                                                                            Occupation:
-                                                                                        </font>
-                                                                                    </td>
-                                                                                    <td width="60%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <script id="members_primary_occupation" type="txt/template">
-                                                                                            <input type="text" value="{{members.primary.occupation}}" name="occupation" size="40" maxlength="50" style="font-family: Tahoma; font-size: 11">
+                                        <tr>
+                                            <td>
+
+                                                Occupation:
+
+                                            </td>
+                                            <td>
+                                                <script id="members_primary_occupation" type="txt/template">
+                                                    <input type="text" value="{{members.primary.occupation}}" name="occupation" size="40" maxlength="50" style="font-family: Tahoma; font-size: 11">
                                                                                         </script>
-                                                                                    </td>
-                                                                                </tr>
+                                            </td>
+                                        </tr>
 
-                                                                                <tr>
-                                                                                    <td width="30%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;
-                                                                                            Home Phone:
-                                                                                        </font>
-                                                                                    </td>
-                                                                                    <td width="60%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <script id="members_primary_phone_home" type="txt/template">
-                                                                                            <input type="text" value="{{members.primary.phone.home.number}}" name="home_phone" size="18" maxlength="18" style="font-family: Tahoma; font-size: 11">
-                                                                                            <input type="checkbox" name="hide_phone" style="font-family: Tahoma; font-size: 11" {{#members.primary.phone.home.hidden}}checked="checked"{{/members.primary.phone.home.hidden}}>
+                                        <tr>
+                                            <td>
+
+                                                Home Phone:
+
+                                            </td>
+                                            <td>
+                                                <script id="members_primary_phone_home" type="txt/template">
+                                                    <input type="text" value="{{members.primary.phone.home.number}}" name="home_phone" size="18" maxlength="18" style="font-family: Tahoma; font-size: 11">
+                                                                                            <input type="checkbox" name="hide_phone" style="position: relative;top:5px;width:20px;height:20px;font-family: Tahoma; font-size: 11" {{#members.primary.phone.home.hidden}}checked="checked"{{/members.primary.phone.home.hidden}}>
                                                                                             <font face="Verdana, Arial, Helvetica" size="2" color="#222311">
                                                                                                 Hide from Address Book
                                                                                             </font>
                                                                                         </script>
-                                                                                    </td>
-                                                                                </tr>
+                                            </td>
+                                        </tr>
 
-                                                                                <tr>
-                                                                                    <td width="30%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;
-                                                                                            Work Phone:
-                                                                                        </font>
-                                                                                    </td>
-                                                                                    <td width="60%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <script id="members_primary_phone_work" type="txt/template">
-                                                                                            <input type="text" value="{{members.primary.phone.work.number}}" name="work_phone" size="18" maxlength="18" style="font-family: Tahoma; font-size: 11">
+                                        <tr>
+                                            <td>
+
+                                                Work Phone:
+
+                                            </td>
+                                            <td>
+                                                <script id="members_primary_phone_work" type="txt/template">
+                                                    <input type="text" value="{{members.primary.phone.work.number}}" name="work_phone" size="18" maxlength="18" style="font-family: Tahoma; font-size: 11">
                                                                                             <font face="Verdana, Arial, Helvetica" size="2" color="#222311">
                                                                                                 (Hides with Home Phone)
                                                                                             </font>
                                                                                         </script>
-                                                                                    </td>
-                                                                                </tr>
+                                            </td>
+                                        </tr>
 
-                                                                                <tr>
-                                                                                    <td width="30%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;
-                                                                                            Cell Phone:
-                                                                                        </font>
-                                                                                    </td>
-                                                                                    <td width="60%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <script id="members_primary_phone_cell" type="txt/template">
-                                                                                            <input type="text" value="{{members.primary.phone.cell.number}}" name="cell_phone" size="18" maxlength="18" style="font-family: Tahoma; font-size: 11">
+                                        <tr>
+                                            <td>
+
+                                                Cell Phone:
+
+                                            </td>
+                                            <td>
+                                                <script id="members_primary_phone_cell" type="txt/template">
+                                                    <input type="text" value="{{members.primary.phone.cell.number}}" name="cell_phone" size="18" maxlength="18" style="font-family: Tahoma; font-size: 11">
                                                                                             <font face="Verdana, Arial, Helvetica" size="2" color="#222311">
                                                                                                 (Hides with Home Phone)
                                                                                             </font>
                                                                                         </script>
-                                                                                    </td>
-                                                                                </tr>
+                                            </td>
+                                        </tr>
 
-                                                                                <tr>
-                                                                                    <td width="30%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;
-                                                                                            Other Phone/Fax/Pager:
-                                                                                        </font>
-                                                                                    </td>
-                                                                                    <td width="60%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <script id="members_primary_phone_other" type="txt/template">
-                                                                                            <input type="text" value="{{members.primary.phone.other.number}}" name="pager_number" size="18" maxlength="18" style="font-family: Tahoma; font-size: 11">
+                                        <tr>
+                                            <td>
+
+                                                Other Phone/Fax/Pager:
+
+                                            </td>
+                                            <td>
+                                                <script id="members_primary_phone_other" type="txt/template">
+                                                    <input type="text" value="{{members.primary.phone.other.number}}" name="pager_number" size="18" maxlength="18" style="font-family: Tahoma; font-size: 11">
                                                                                             <font face="Verdana, Arial, Helvetica" size="2" color="#222311">
                                                                                                 (Hides with Home Phone)
                                                                                             </font>
                                                                                         </script>
-                                                                                    </td>
-                                                                                </tr>
+                                            </td>
+                                        </tr>
 
-                                                                                <tr>
-                                                                                    <td width="30%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;
-                                                                                            Email Address:
-                                                                                        </font>
-                                                                                    </td>
-                                                                                    <td width="60%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <script id="members_primary_email" type="txt/template">
-                                                                                            <input type="text" value="{{members.primary.email.address}}" name="email_address" size="40" maxlength="50" style="font-family: Tahoma; font-size: 11">
-                                                                                            <input type="checkbox" id="members_primary_email_hidden" name="hide_email" style="font-family: Tahoma; font-size: 11" {{#members.primary.email.hidden}}checked="checked"{{/members.primary.email.hidden}}>
+                                        <tr>
+                                            <td>
+
+                                                Email Address:
+
+                                            </td>
+                                            <td>
+                                                <script id="members_primary_email" type="txt/template">
+                                                    <input type="text" value="{{members.primary.email.address}}" name="email_address" size="40" maxlength="50" style="font-family: Tahoma; font-size: 11">
+                                                                                            <input type="checkbox" id="members_primary_email_hidden" name="hide_email" style="position: relative;top:5px;width:20px;height:20px;font-family: Tahoma; font-size: 11" {{#members.primary.email.hidden}}checked="checked"{{/members.primary.email.hidden}}>
                                                                                             <font face="Verdana, Arial, Helvetica" size="2" color="#222311">
                                                                                                 Hide from Address Book
                                                                                             </font>
                                                                                         </script>
-                                                                                    </td>
-                                                                                </tr>
+                                            </td>
+                                        </tr>
 
-                                                                                <tr>
-                                                                                    <td bgcolor="#F1F1F1" bordercolor="#F1F1F1" colspan="2">
-                                                                                        <hr>
-                                                                                    </td>
-                                                                                </tr>
 
-                                                                                <tr>
-                                                                                    <td width="30%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;
-                                                                                            Resident 2 First Name:
-                                                                                        </font>
-                                                                                    </td>
-                                                                                    <td width="60%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <script id="members_secondary_name_first" type="txt/template">
-                                                                                            <input type="text" value="{{members.secondary.name.first}}" name="spouse_first_name" size="20" maxlength="20" style="font-family: Tahoma; font-size: 11">
+                                        <tr>
+                                            <td>
+
+                                                Resident 2 First Name:
+
+                                            </td>
+                                            <td>
+                                                <script id="members_secondary_name_first" type="txt/template">
+                                                    <input type="text" value="{{members.secondary.name.first}}" name="spouse_first_name" size="20" maxlength="20" style="font-family: Tahoma; font-size: 11">
                                                                                         </script>
-                                                                                    </td>
-                                                                                </tr>
+                                            </td>
+                                        </tr>
 
-                                                                                <tr>
-                                                                                    <td width="30%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;
-                                                                                            Resident 2 Last Name:
-                                                                                        </font>
-                                                                                    </td>
-                                                                                    <td width="60%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <script id="members_secondary_name_last" type="txt/template">
-                                                                                            <input type="text" value="{{members.secondary.name.last}}" name="spouse_last_name" size="20" maxlength="20" style="font-family: Tahoma; font-size: 11">
+                                        <tr>
+                                            <td>
+
+                                                Resident 2 Last Name:
+
+                                            </td>
+                                            <td>
+                                                <script id="members_secondary_name_last" type="txt/template">
+                                                    <input type="text" value="{{members.secondary.name.last}}" name="spouse_last_name" size="20" maxlength="20" style="font-family: Tahoma; font-size: 11">
                                                                                         </script>
-                                                                                    </td>
-                                                                                </tr>
+                                            </td>
+                                        </tr>
 
-                                                                                <tr>
-                                                                                    <td width="30%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;
-                                                                                            Resident 2 Birthdate
-                                                                                            <font size="-1">(mm/dd)</font>:
-                                                                                        </font>
-                                                                                    </td>
-                                                                                    <td width="60%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <script id="members_secondary_birthday" type="txt/template">
-                                                                                            <input type="text" value="{{members.secondary.birthday}}" name="spouse_birthdate" size="5" maxlength="5" style="font-family: Tahoma; font-size: 11">
+                                        <tr>
+                                            <td>
+
+                                                Resident 2 Birthdate (mm/dd):
+
+                                            </td>
+                                            <td>
+                                                <script id="members_secondary_birthday" type="txt/template">
+                                                    <input type="text" value="{{members.secondary.birthday}}" name="spouse_birthdate" size="5" maxlength="5" style="font-family: Tahoma; font-size: 11">
                                                                                         </script>
-                                                                                    </td>
-                                                                                </tr>
+                                            </td>
+                                        </tr>
 
-                                                                                <tr>
-                                                                                    <td width="30%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;
-                                                                                            Resident 2 Employer:
-                                                                                        </font>
-                                                                                    </td>
-                                                                                    <td width="60%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <script id="members_secondary_employer" type="txt/template">
-                                                                                            <input type="text" value="{{members.secondary.employer}}" name="spouse_employer" size="30" maxlength="50" style="font-family: Tahoma; font-size: 11">
+                                        <tr>
+                                            <td>
+
+                                                Resident 2 Employer:
+
+                                            </td>
+                                            <td>
+                                                <script id="members_secondary_employer" type="txt/template">
+                                                    <input type="text" value="{{members.secondary.employer}}" name="spouse_employer" size="30" maxlength="50" style="font-family: Tahoma; font-size: 11">
                                                                                         </script>
-                                                                                    </td>
-                                                                                </tr>
+                                            </td>
+                                        </tr>
 
-                                                                                <tr>
-                                                                                    <td width="30%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;
-                                                                                            Resident 2 Occupation:
-                                                                                        </font>
-                                                                                    </td>
-                                                                                    <td width="60%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <script id="members_secondary_occupation" type="txt/template">
-                                                                                            <input type="text" value="{{members.secondary.occupation}}" name="spouse_occupation" size="40" maxlength="50" style="font-family: Tahoma; font-size: 11">
+                                        <tr>
+                                            <td>
+
+                                                Resident 2 Occupation:
+
+                                            </td>
+                                            <td>
+                                                <script id="members_secondary_occupation" type="txt/template">
+                                                    <input type="text" value="{{members.secondary.occupation}}" name="spouse_occupation" size="40" maxlength="50" style="font-family: Tahoma; font-size: 11">
                                                                                         </script>
-                                                                                    </td>
-                                                                                </tr>
+                                            </td>
+                                        </tr>
 
-                                                                                <tr>
-                                                                                    <td width="30%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;
-                                                                                            Resident 2 Work Phone:
-                                                                                        </font>
-                                                                                    </td>
-                                                                                    <td width="60%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <script id="members_secondary_phone_work" type="txt/template">
-                                                                                            <input type="text" value="{{members.secondary.phone.work.number}}" name="work_phone2" size="18" maxlength="18" style="font-family: Tahoma; font-size: 11">
+                                        <tr>
+                                            <td>
+
+                                                Resident 2 Work Phone:
+
+                                            </td>
+                                            <td>
+                                                <script id="members_secondary_phone_work" type="txt/template">
+                                                    <input type="text" value="{{members.secondary.phone.work.number}}" name="work_phone2" size="18" maxlength="18" style="font-family: Tahoma; font-size: 11">
                                                                                             <font face="Verdana, Arial, Helvetica" size="2" color="#222311">
                                                                                                 (Hides with Home Phone)
                                                                                             </font>
                                                                                         </script>
-                                                                                    </td>
-                                                                                </tr>
+                                            </td>
+                                        </tr>
 
-                                                                                <tr>
-                                                                                    <td width="30%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;
-                                                                                            Resident 2 Cell Phone:
-                                                                                        </font>
-                                                                                    </td>
-                                                                                    <td width="60%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <script id="members_secondary_phone_cell" type="txt/template">
-                                                                                            <input type="text" value="{{members.secondary.phone.cell.number}}" name="spouse_cell_phone" size="18" maxlength="18" style="font-family: Tahoma; font-size: 11">
+                                        <tr>
+                                            <td>
+
+                                                Resident 2 Cell Phone:
+
+                                            </td>
+                                            <td>
+                                                <script id="members_secondary_phone_cell" type="txt/template">
+                                                    <input type="text" value="{{members.secondary.phone.cell.number}}" name="spouse_cell_phone" size="18" maxlength="18" style="font-family: Tahoma; font-size: 11">
                                                                                             <font face="Verdana, Arial, Helvetica" size="2" color="#222311">
                                                                                                 (Hides with Home Phone)
                                                                                             </font>
                                                                                         </script>
-                                                                                    </td>
-                                                                                </tr>
+                                            </td>
+                                        </tr>
 
-                                                                                <tr>
-                                                                                    <td width="30%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;
-                                                                                            Resident 2 Email Address:
-                                                                                        </font>
-                                                                                    </td>
-                                                                                    <td width="60%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <script id="members_secondary_email" type="txt/template">
-                                                                                            <input type="text" value="{{members.secondary.email.address}}" name="spouse_email" size="40" maxlength="50" style="font-family: Tahoma; font-size: 11">
+                                        <tr>
+                                            <td>
+
+                                                Resident 2 Email Address:
+
+                                            </td>
+                                            <td>
+                                                <script id="members_secondary_email" type="txt/template">
+                                                    <input type="text" value="{{members.secondary.email.address}}" name="spouse_email" size="40" maxlength="50" style="font-family: Tahoma; font-size: 11">
                                                                                             <font face="Verdana, Arial, Helvetica" size="2" color="#222311">
                                                                                                 (Hides with email address above)
                                                                                             </font>
                                                                                         </script>
-                                                                                    </td>
-                                                                                </tr>
+                                            </td>
+                                        </tr>
 
-                                                                                <tr>
-                                                                                    <td bgcolor="#F1F1F1" bordercolor="#F1F1F1" colspan="2">
-                                                                                        <hr>
-                                                                                    </td>
-                                                                                </tr>
 
-                                                                                <tr>
-                                                                                    <td bgcolor="#F1F1F1" bordercolor="#F1F1F1" colspan="2">
-                                                                                        <center>
-                                                                                            <script id="addresses_primary_hidden" type="txt/template">
-                                                                                                <font face="Verdana, Arial, Helvetica" size="2" color="#222311">
-                                                                                                    Primary Address (
+                                        <tr>
+                                            <td bgcolor="#F1F1F1" colspan="2">
+                                                <center>
+                                                    <script id="addresses_primary_hidden" type="txt/template">
+
+                                                        Primary Address (
                                                                                                     <input type="checkbox" id="addreesses_primary_hidden" name="hide_address" style="font-family: Tahoma; font-size: 11" {{#addresses.primary.hidden}}checked="checked"{{/addresses.primary.hidden}}>
                                                                                                     Hide from Address Book)
-                                                                                                </font>
+                                                                                               
                                                                                             </script>
-                                                                                        </center>
-                                                                                    </td>
-                                                                                </tr>
+                                                </center>
+                                            </td>
+                                        </tr>
 
-                                                                                <tr>
-                                                                                    <td width="30%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;
-                                                                                            Address 1:
-                                                                                        </font>
-                                                                                    </td>
-                                                                                    <td width="60%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <script id="addresses_primary_address_1" type="txt/template">
-                                                                                            <input type="text" value="{{addresses.primary.address_1}}" name="address1" size="30" maxlength="35" style="font-family: Verdana, Arial, Helvetica; font-size: 11">
+                                        <tr>
+                                            <td>
+
+                                                Address 1:
+
+                                            </td>
+                                            <td>
+                                                <script id="addresses_primary_address_1" type="txt/template">
+                                                    <input type="text" value="{{addresses.primary.address_1}}" name="address1" size="30" maxlength="35" style="font-family: Verdana, Arial, Helvetica; font-size: 11">
                                                                                         </script>
-                                                                                    </td>
-                                                                                </tr>
+                                            </td>
+                                        </tr>
 
-                                                                                <tr>
-                                                                                    <td width="30%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;
-                                                                                            Address 2:
-                                                                                        </font>
-                                                                                    </td>
-                                                                                    <td width="60%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <script id="addresses_primary_address_2" type="txt/template">
-                                                                                            <input type="text" value="{{addresses.primary.address_2}}" name="address2" size="30" maxlength="35" style="font-family: Verdana, Arial, Helvetica; font-size: 11">
+                                        <tr>
+                                            <td>
+
+                                                Address 2:
+
+                                            </td>
+                                            <td>
+                                                <script id="addresses_primary_address_2" type="txt/template">
+                                                    <input type="text" value="{{addresses.primary.address_2}}" name="address2" size="30" maxlength="35" style="font-family: Verdana, Arial, Helvetica; font-size: 11">
                                                                                         </script>
-                                                                                    </td>
-                                                                                </tr>
+                                            </td>
+                                        </tr>
 
-                                                                                <tr>
-                                                                                    <td width="30%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;
-                                                                                            City:
-                                                                                        </font>
-                                                                                    </td>
-                                                                                    <td width="60%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <script id="addresses_primary_city" type="txt/template">
-                                                                                            <input type="text" value="{{addresses.primary.city}}" name="city" size="20" maxlength="20" style="font-family: Verdana, Arial, Helvetica; font-size: 11">
+                                        <tr>
+                                            <td>
+
+                                                City:
+
+                                            </td>
+                                            <td>
+                                                <script id="addresses_primary_city" type="txt/template">
+                                                    <input type="text" value="{{addresses.primary.city}}" name="city" size="20" maxlength="20" style="font-family: Verdana, Arial, Helvetica; font-size: 11">
                                                                                         </script>
-                                                                                    </td>
-                                                                                </tr>
+                                            </td>
+                                        </tr>
 
-                                                                                <tr>
-                                                                                    <td width="30%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;
-                                                                                            State:
-                                                                                        </font>
-                                                                                    </td>
-                                                                                    <td width="60%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <script id="addresses_primary_state" type="txt/template">
-                                                                                            <input type="text" value="{{addresses.primary.state}}" name="state" size="2" maxlength="2" style="font-family: Verdana, Arial, Helvetica; font-size: 11">
+                                        <tr>
+                                            <td>
+
+                                                State:
+
+                                            </td>
+                                            <td>
+                                                <script id="addresses_primary_state" type="txt/template">
+                                                    <input type="text" value="{{addresses.primary.state}}" name="state" size="2" maxlength="2" style="font-family: Verdana, Arial, Helvetica; font-size: 11">
                                                                                         </script>
-                                                                                    </td>
-                                                                                </tr>
+                                            </td>
+                                        </tr>
 
-                                                                                <tr>
-                                                                                    <td width="30%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;
-                                                                                            Zip:
-                                                                                        </font>
-                                                                                    </td>
-                                                                                    <td width="60%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <script id="addresses_primary_zip" type="txt/template">
-                                                                                            <input type="text" value="{{addresses.primary.zip}}" name="zip" size="15" maxlength="15" style="font-family: Verdana, Arial, Helvetica; font-size: 11">
+                                        <tr>
+                                            <td>
+
+                                                Zip:
+
+                                            </td>
+                                            <td>
+                                                <script id="addresses_primary_zip" type="txt/template">
+                                                    <input type="text" value="{{addresses.primary.zip}}" name="zip" size="15" maxlength="15" style="font-family: Verdana, Arial, Helvetica; font-size: 11">
                                                                                         </script>
-                                                                                    </td>
-                                                                                </tr>
+                                            </td>
+                                        </tr>
 
-                                                                                <tr>
-                                                                                    <td width="30%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;
-                                                                                            Lot #/Unit #:
-                                                                                        </font>
-                                                                                    </td>
-                                                                                    <td width="60%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <script id="addresses_primary_lot" type="txt/template">
-                                                                                            <input type="text" value="{{addresses.primary.lot}}" name="lot_number" size="15" maxlength="15" style="font-family: Verdana, Arial, Helvetica; font-size: 11">
+                                        <tr>
+                                            <td>
+
+                                                Lot #/Unit #:
+
+                                            </td>
+                                            <td>
+                                                <script id="addresses_primary_lot" type="txt/template">
+                                                    <input type="text" value="{{addresses.primary.lot}}" name="lot_number" size="15" maxlength="15" style="font-family: Verdana, Arial, Helvetica; font-size: 11">
                                                                                         </script>
-                                                                                    </td>
-                                                                                </tr>
+                                            </td>
+                                        </tr>
 
-                                                                                <tr>
-                                                                                    <td width="30%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;
-                                                                                            Subdivision:
-                                                                                        </font>
-                                                                                    </td>
-                                                                                    <td width="60%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <script id="addresses_primary_subdivision" type="txt/template">
-                                                                                            <font face="Verdana, Arial, Helvetica" size="2" color="#222311">{{addresses.primary.subdivision}}&nbsp;</font>
+                                        <tr>
+                                            <td>
+
+                                                Subdivision:
+
+                                            </td>
+                                            <td>
+                                                <script id="addresses_primary_subdivision" type="txt/template">
+                                                    <font face="Verdana, Arial, Helvetica" size="2" color="#222311">{{addresses.primary.subdivision}}&nbsp;</font>
                                                                                             <input type="hidden" name="first_name" value="{{addresses.primary.subdivision}}">
                                                                                         </script>
-                                                                                        <!-- <select size="1" name="subdivision_id" style="font-family: Verdana, Arial, Helvetica; font-size: 11">
+                                                <!-- <select size="1" name="subdivision_id" style="font-family: Verdana, Arial, Helvetica; font-size: 11">
                                                                                             <option value="0">(None)</option>
                                                                                             <option selected="" value="1">
                                                                                                 De Anza Oaks
                                                                                             </option>
                                                                                         </select> -->
-                                                                                    </td>
-                                                                                </tr>
-
-                                                                                <tr>
-                                                                                    <td bgcolor="#F1F1F1" bordercolor="#F1F1F1" colspan="2">
-                                                                                        <hr>
-                                                                                    </td>
-                                                                                </tr>
-
-                                                                                <!-- TODO: need to make these pics dynamic, but need to know <img> tags for these profile pics -->
-                                                                                <tr>
-                                                                                    <td colspan="2">
-                                                                                        <table border="0" width="100%">
-                                                                                            <tbody>
-                                                                                                <tr>
-                                                                                                    <!-- Pic 1 -->
-                                                                                                    <td bgcolor="#F1F1F1" bordercolor="#F1F1F1" width="50%">
-                                                                                                        <center>
-                                                                                                            <br>
-                                                                                                            <i>
-                                                                                                                <font size="1">
-                                                                                                                    - None -
-                                                                                                                </font>
-                                                                                                            </i>
-                                                                                                            <br>
-                                                                                                        </center>
-                                                                                                        <br>
-                                                                                                    </td>
-                                                                                                    <!-- Pic 2 -->
-                                                                                                    <td bgcolor="#F1F1F1" bordercolor="#F1F1F1" width="50%">
-                                                                                                        <center>
-                                                                                                            <br>
-                                                                                                            <i>
-                                                                                                                <font size="1">
-                                                                                                                    - None -
-                                                                                                                </font>
-                                                                                                            </i>
-                                                                                                            <br>
-                                                                                                        </center>
-                                                                                                        <br>
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                                <tr>
-                                                                                                    <td bgcolor="#F1F1F1" bordercolor="#F1F1F1" class="style5">
-                                                                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">
-                                                                                                            Resident 1 Picture:
-                                                                                                        </font>
-                                                                                                        <font size="2" face="Verdana, Arial, Helvetica" color="#222311">
-                                                                                                            <br>
-                                                                                                            <br>
-                                                                                                            <input type="FILE" name="image_link" size="30" maxlength="150" style="font-family: Tahoma; font-size: 11">
-                                                                                                            <font face="Verdana, Arial, Helvetica" size="2" color="#222311">
-                                                                                                                <br>
-                                                                                                                <input type="checkbox" name="delimg">
-                                                                                                                Check to Delete
-                                                                                                            </font>
-                                                                                                        </font>
-                                                                                                    </td>
-                                                                                                    <td bgcolor="#F1F1F1" bordercolor="#F1F1F1" class="style3">
-                                                                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">
-                                                                                                            Resident 2 Picture:
-                                                                                                        </font>
-                                                                                                        <font size="2" face="Verdana, Arial, Helvetica" color="#222311">
-                                                                                                            <br>
-                                                                                                            <br>
-                                                                                                            <input type="FILE" name="image_link2" size="30" maxlength="150" style="font-family: Tahoma; font-size: 11">
-                                                                                                            <font face="Verdana, Arial, Helvetica" size="2" color="#222311">
-                                                                                                                <br>
-                                                                                                                <input type="checkbox" name="delimg2">
-                                                                                                                Check to Delete
-                                                                                                            </font>
-                                                                                                        </font>
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                            </tbody>
-                                                                                        </table>
-                                                                                    </td>
-                                                                                </tr>
-
-                                                                                <tr>
-                                                                                    <td bgcolor="#F1F1F1" bordercolor="#F1F1F1" class="style4">&nbsp;</td>
-                                                                                    <td width="60%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;</font>
-                                                                                    </td>
-                                                                                </tr>
-
-                                                                                <tr>
-                                                                                    <td bgcolor="#F1F1F1" bordercolor="#F1F1F1" class="style4">&nbsp;</td>
-                                                                                    <td width="60%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        &nbsp;
-                                                                                    </td>
-                                                                                </tr>
-
-                                                                                <tr>
-                                                                                    <td bgcolor="#F1F1F1" bordercolor="#F1F1F1" colspan="2">
-                                                                                        <hr>
-                                                                                    </td>
-                                                                                </tr>
-
-                                                                                <script id="members_dependents" type="txt/template">
-                                                                                    {{#members.dependents}}
-                                                                                    <tr>
-                                                                                        <td width="30%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                            <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;
-                                                                                                Child #{{index}} Name:
-                                                                                            </font>
-                                                                                        </td>
-                                                                                        <td width="60%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                            <input type="text" value="{{name}}" name="child{{index}}_name" size="20" maxlength="20" style="font-family: Tahoma; font-size: 11">
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td width="30%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                            <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;
-                                                                                                Child #{{index}} Birthdate
-                                                                                                <font size="-1">(mm/dd/yyyy)</font>:
-                                                                                            </font>
-                                                                                        </td>
-                                                                                        <td width="60%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                            <input type="text" value="{{birthday}}" name="child{{index}}_birthdate" size="10" maxlength="10" style="font-family: Tahoma; font-size: 11">
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                    {{/members.dependents}}
-                                                                                </script>
-
-                                                                                <tr>
-                                                                                    <td bgcolor="#F1F1F1" bordercolor="#F1F1F1" colspan="2">
-                                                                                        <hr>
-                                                                                    </td>
-                                                                                </tr>
-
-                                                                                <tr>
-                                                                                    <td bgcolor="#F1F1F1" bordercolor="#F1F1F1" colspan="2">
-                                                                                        <center>
-                                                                                            <font face="Verdana, Arial, Helvetica" size="2" color="#222311">
-                                                                                                Alternate Address (Hides with Primary Address above)
-                                                                                            </font>
-                                                                                        </center>
-                                                                                    </td>
-                                                                                </tr>
-
-                                                                                <tr>
-                                                                                    <td width="30%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;
-                                                                                            Alt Address 1:
-                                                                                        </font>
-                                                                                    </td>
-                                                                                    <td width="60%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <script id="addresses_secondary_address_1" type="txt/template">
-                                                                                            <input type="text" name="alt_address1" value="{{addresses.secondary.address_1}}" size="30" maxlength="35" style="font-family: Verdana, Arial, Helvetica; font-size: 11">
-                                                                                        </script>
-                                                                                    </td>
-                                                                                </tr>
-
-                                                                                <tr>
-                                                                                    <td width="30%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;
-                                                                                            Alt Address 2:
-                                                                                        </font>
-                                                                                    </td>
-                                                                                    <td width="60%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <script id="addresses_secondary_address_2" type="txt/template">
-                                                                                            <input type="text" name="alt_address2" value="{{addresses.secondary.address_2}}" size="30" maxlength="35" style="font-family: Verdana, Arial, Helvetica; font-size: 11">
-                                                                                        </script>
-                                                                                    </td>
-                                                                                </tr>
-
-                                                                                <tr>
-                                                                                    <td width="30%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;
-                                                                                            Alt City:
-                                                                                        </font>
-                                                                                    </td>
-                                                                                    <td width="60%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <script id="addresses_secondary_city" type="txt/template">
-                                                                                            <input type="text" name="alt_city" value="{{addresses.secondary.city}}" size="20" maxlength="20" style="font-family: Verdana, Arial, Helvetica; font-size: 11">
-                                                                                        </script>
-                                                                                    </td>
-                                                                                </tr>
-
-                                                                                <tr>
-                                                                                    <td width="30%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;
-                                                                                            Alt State:
-                                                                                        </font>
-                                                                                    </td>
-                                                                                    <td width="60%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <script id="addresses_secondary_state" type="txt/template">
-                                                                                            <input type="text" name="alt_state" value="{{addresses.secondary.state}}" size="2" maxlength="2" style="font-family: Verdana, Arial, Helvetica; font-size: 11">
-                                                                                        </script>
-                                                                                    </td>
-                                                                                </tr>
-
-                                                                                <tr>
-                                                                                    <td width="30%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;
-                                                                                            Alt Zip:
-                                                                                        </font>
-                                                                                    </td>
-                                                                                    <td width="60%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <script id="addresses_secondary_zip" type="txt/template">
-                                                                                            <input type="text" name="alt_zip" value="{{addresses.secondary.zip}}" size="15" maxlength="15" style="font-family: Verdana, Arial, Helvetica; font-size: 11">
-                                                                                        </script>
-                                                                                    </td>
-                                                                                </tr>
-
-                                                                                <tr>
-                                                                                    <td bgcolor="#F1F1F1" bordercolor="#F1F1F1" colspan="2">
-                                                                                        <hr>
-                                                                                    </td>
-                                                                                </tr>
-
-                                                                                <tr>
-                                                                                    <td width="30%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;
-                                                                                            Moved Here From:
-                                                                                        </font>
-                                                                                    </td>
-                                                                                    <td width="60%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <script id="notes_moved_from" type="txt/template">
-                                                                                            <input type="text" value="{{notes.moved_from}}" name="come_frm" size="40" maxlength="100" style="font-family: Tahoma; font-size: 11">
-                                                                                        </script>
-                                                                                    </td>
-                                                                                </tr>
-
-                                                                                <tr>
-                                                                                    <td width="30%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;
-                                                                                            Move-In Date <font size="-1">(mm/dd/yyyy)</font>:
-                                                                                        </font>
-                                                                                    </td>
-                                                                                    <td width="60%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <script id="notes_move_in_date" type="txt/template">
-                                                                                            <input type="text" value="{{notes.move_in_date}}" name="move_in_date" size="10" maxlength="10" style="font-family: Tahoma; font-size: 11">
-                                                                                        </script>
-                                                                                    </td>
-                                                                                </tr>
-
-                                                                                <tr>
-                                                                                    <td width="30%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;
-                                                                                            Web Site Address:
-                                                                                        </font>
-                                                                                    </td>
-                                                                                    <td width="60%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <script id="notes_website" type="txt/template">
-                                                                                            <input type="text" value="{{notes.website}}" name="web_address" size="40" maxlength="100" style="font-family: Tahoma; font-size: 11">
-                                                                                        </script>
-                                                                                    </td>
-                                                                                </tr>
-
-                                                                                <tr>
-                                                                                    <td width="30%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;
-                                                                                            Computer Type:
-                                                                                        </font>
-                                                                                    </td>
-                                                                                    <td width="60%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <script id="notes_computer" type="txt/template">
-                                                                                            <input type="text" value="{{notes.computer}}" name="computer_type" size="20" maxlength="20" style="font-family: Tahoma; font-size: 11">
-                                                                                        </script>
-                                                                                    </td>
-                                                                                </tr>
-
-                                                                                <tr>
-                                                                                    <td width="30%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;
-                                                                                            Connect Speed:
-                                                                                        </font>
-                                                                                    </td>
-                                                                                    <td width="60%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <script id="notes_internet" type="txt/template">
-                                                                                            <input type="text" value="{{notes.internet}}" name="connect_speed" size="8" maxlength="8" style="font-family: Tahoma; font-size: 11">
-                                                                                        </script>
-                                                                                    </td>
-                                                                                </tr>
-
-                                                                                <tr>
-                                                                                    <td width="30%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;
-                                                                                            Hobbies:
-                                                                                        </font>
-                                                                                    </td>
-                                                                                    <td width="60%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <script id="notes_hobbies" type="txt/template">
-                                                                                            <input type="text" value="{{notes.hobbies}}" name="hobbies" size="40" maxlength="200" style="font-family: Tahoma; font-size: 11">
-                                                                                        </script>
-                                                                                    </td>
-                                                                                </tr>
-
-                                                                                <tr>
-                                                                                    <td width="30%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;
-                                                                                            Interests:
-                                                                                        </font>
-                                                                                    </td>
-                                                                                    <td width="60%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <script id="notes_interests" type="txt/template">
-                                                                                            <input type="text" value="{{notes.interests}}" name="interests" size="40" maxlength="200" style="font-family: Tahoma; font-size: 11">
-                                                                                        </script>
-                                                                                    </td>
-                                                                                </tr>
-
-                                                                                <tr>
-                                                                                    <td width="30%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">&nbsp;
-                                                                                            Organizations:
-                                                                                        </font>
-                                                                                    </td>
-                                                                                    <td width="60%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <script id="notes_organizations" type="txt/template">
-                                                                                            <input type="text" value="{{notes.organizations}}" name="organizations" size="40" maxlength="200" style="font-family: Tahoma; font-size: 11">
-                                                                                        </script>
-                                                                                    </td>
-                                                                                </tr>
-
-                                                                                <tr>
-                                                                                    <td bgcolor="#F1F1F1" bordercolor="#F1F1F1" colspan="2">
-                                                                                        <hr>
-                                                                                    </td>
-                                                                                </tr>
-
-                                                                                <tr>
-                                                                                    <td bgcolor="#F1F1F1" bordercolor="#F1F1F1" colspan="2">
-                                                                                        <center>
-                                                                                            <font face="Verdana, Arial, Helvetica" size="2" color="#222311">
-                                                                                                Additional Information
-                                                                                            </font>
-                                                                                        </center>
-                                                                                    </td>
-                                                                                </tr>
-
-                                                                                <tr>
-                                                                                    <td width="30%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">
-                                                                                            Label (example: Car Make/Model)
-                                                                                        </font>
-                                                                                    </td>
-                                                                                    <td width="60%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                        <font face="Verdana, Arial, Helvetica" size="2" color="#222311">
-                                                                                            Value (example: Ford Mustang)
-                                                                                        </font>
-                                                                                    </td>
-                                                                                </tr>
-
-                                                                                <script id="notes_freeform" type="txt/template">
-                                                                                    {{#notes.freeform}}
-                                                                                    <tr>
-                                                                                        <td width="30%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                            <input type="text" name="label{{index}}" value="{{label}}" size="30" maxlength="30" style="font-family: Tahoma; font-size: 11">
-                                                                                        </td>
-                                                                                        <td width="60%" bgcolor="#F1F1F1" bordercolor="#F1F1F1">
-                                                                                            <input type="text" name="misc{{index}}" value="{{value}}" size="30" maxlength="30" style="font-family: Tahoma; font-size: 11">
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                    {{/notes.freeform}}
-                                                                                </script>
-
-                                                                                <tr>
-                                                                                    <td bgcolor="#F1F1F1" bordercolor="#F1F1F1" colspan="2">
-                                                                                        <hr>
-                                                                                    </td>
-                                                                                </tr>
-
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </center>
-                                                                    <p>
-                                                                    </p>
-                                                                    <table border="0" width="100%" bgcolor="#6AA666" style="height: 30px">
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td width="10%" align="center">
-                                                                                    <input type="submit" value="Save Changes">
-                                                                                </td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                    <input type="hidden" name="id" value="335">
-                                                                </form>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
                                             </td>
                                         </tr>
+
+
+                                        <!-- TODO: need to make these pics dynamic, but need to know <img> tags for these profile pics -->
+
+                                        <tr>
+                                            <td colspan="2">
+                                                Resident 1 Picture:
+                                                <input type="FILE" name="image_link" size="30" maxlength="150" style="font-family: Tahoma; font-size: 11">
+                                                <input type="checkbox" name="delimg" style="position: relative; top: 5px; width: 20px;height: 20px;">
+                                                Check to Delete
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+
+                                                Resident 2 Picture:
+
+                                                <input type="FILE" name="image_link2" size="30" maxlength="150" style="font-family: Tahoma; font-size: 11">
+
+
+                                                <input type="checkbox" name="delimg2" style="position: relative; top: 5px; width: 20px;height: 20px;">
+                                                Check to Delete
+
+                                            </td>
+                                        </tr>
+
+
+                                        <script id="members_dependents" type="txt/template">
+                                            {{#members.dependents}}
+                                            <tr>
+                                            <td>                                            
+                                            Child #{{index}} Name:                                        
+                                            </td>
+                                            <td>
+                                            <input type="text" value="{{name}}" name="child{{index}}_name" size="20" maxlength="20" style="font-family: Tahoma; font-size: 11">
+                                            </td>
+                                            </tr>
+                                            <tr>
+                                        <td>                                                   
+                                        Child #{{index}} Birthdate (mm/dd/yyyy):                                                   
+                                        </td>
+                                        <td>
+                                        <input type="text" value="{{birthday}}" name="child{{index}}_birthdate" size="10" maxlength="10" style="font-family: Tahoma; font-size: 11">
+                                        </td>
+                                        </tr>
+                                        {{/members.dependents}}
+                                        </script>
+                                        <tr>
+                                            <td colspan="2" bgcolor="#F1F1F1">
+
+                                                <center>
+                                                    Alternate Address (Hides with Primary Address above)
+                                                </center>
+
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+
+                                                Alt Address 1:
+
+                                            </td>
+                                            <td>
+                                                <script id="addresses_secondary_address_1" type="txt/template">
+                                                    <input type="text" name="alt_address1" value="{{addresses.secondary.address_1}}" size="30" maxlength="35" style="font-family: Verdana, Arial, Helvetica; font-size: 11">
+                                                                                        </script>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+
+                                                Alt Address 2:
+
+                                            </td>
+                                            <td>
+                                                <script id="addresses_secondary_address_2" type="txt/template">
+                                                    <input type="text" name="alt_address2" value="{{addresses.secondary.address_2}}" size="30" maxlength="35" style="font-family: Verdana, Arial, Helvetica; font-size: 11">
+                                                                                        </script>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+
+                                                Alt City:
+
+                                            </td>
+                                            <td>
+                                                <script id="addresses_secondary_city" type="txt/template">
+                                                    <input type="text" name="alt_city" value="{{addresses.secondary.city}}" size="20" maxlength="20" style="font-family: Verdana, Arial, Helvetica; font-size: 11">
+                                                                                        </script>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+
+                                                Alt State:
+
+                                            </td>
+                                            <td>
+                                                <script id="addresses_secondary_state" type="txt/template">
+                                                    <input type="text" name="alt_state" value="{{addresses.secondary.state}}" size="2" maxlength="2" style="font-family: Verdana, Arial, Helvetica; font-size: 11">
+                                                                                        </script>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+
+                                                Alt Zip:
+
+                                            </td>
+                                            <td>
+                                                <script id="addresses_secondary_zip" type="txt/template">
+                                                    <input type="text" name="alt_zip" value="{{addresses.secondary.zip}}" size="15" maxlength="15" style="font-family: Verdana, Arial, Helvetica; font-size: 11">
+                                                                                        </script>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td>
+
+                                                Moved Here From:
+
+                                            </td>
+                                            <td>
+                                                <script id="notes_moved_from" type="txt/template">
+                                                    <input type="text" value="{{notes.moved_from}}" name="come_frm" size="40" maxlength="100" style="font-family: Tahoma; font-size: 11">
+                                                                                        </script>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+
+                                                Move-In Date (mm/dd/yyyy):
+
+                                            </td>
+                                            <td>
+                                                <script id="notes_move_in_date" type="txt/template">
+                                                    <input type="text" value="{{notes.move_in_date}}" name="move_in_date" size="10" maxlength="10" style="font-family: Tahoma; font-size: 11">
+                                                                                        </script>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+
+                                                Web Site Address:
+
+                                            </td>
+                                            <td>
+                                                <script id="notes_website" type="txt/template">
+                                                    <input type="text" value="{{notes.website}}" name="web_address" size="40" maxlength="100" style="font-family: Tahoma; font-size: 11">
+                                                                                        </script>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+
+                                                Computer Type:
+
+                                            </td>
+                                            <td>
+                                                <script id="notes_computer" type="txt/template">
+                                                    <input type="text" value="{{notes.computer}}" name="computer_type" size="20" maxlength="20" style="font-family: Tahoma; font-size: 11">
+                                                                                        </script>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+
+                                                Connect Speed:
+
+                                            </td>
+                                            <td>
+                                                <script id="notes_internet" type="txt/template">
+                                                    <input type="text" value="{{notes.internet}}" name="connect_speed" size="8" maxlength="8" style="font-family: Tahoma; font-size: 11">
+                                                                                        </script>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+
+                                                Hobbies:
+
+                                            </td>
+                                            <td>
+                                                <script id="notes_hobbies" type="txt/template">
+                                                    <input type="text" value="{{notes.hobbies}}" name="hobbies" size="40" maxlength="200" style="font-family: Tahoma; font-size: 11">
+                                                                                        </script>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+
+                                                Interests:
+
+                                            </td>
+                                            <td>
+                                                <script id="notes_interests" type="txt/template">
+                                                    <input type="text" value="{{notes.interests}}" name="interests" size="40" maxlength="200" style="font-family: Tahoma; font-size: 11">
+                                                                                        </script>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+
+                                                Organizations:
+
+                                            </td>
+                                            <td>
+                                                <script id="notes_organizations" type="txt/template">
+                                                    <input type="text" value="{{notes.organizations}}" name="organizations" size="40" maxlength="200" style="font-family: Tahoma; font-size: 11">
+                                                                                        </script>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td colspan="2" bgcolor="#F1F1F1">
+
+                                                <center>
+                                                    Additional Information
+
+                                                </center>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+
+                                                Label (example: Car Make/Model)
+
+                                            </td>
+                                            <td>
+
+                                                Value (example: Ford Mustang)
+
+                                            </td>
+                                        </tr>
+
+                                        <script id="notes_freeform" type="txt/template">
+                                            {{#notes.freeform}}
+                                            <tr>
+                                            <td>
+                                            <input type="text" name="label{{index}}" value="{{label}}" size="30" maxlength="30" style="font-family: Tahoma; font-size: 11">
+                                            </td>
+                                            <td>
+                                            <input type="text" name="misc{{index}}" value="{{value}}" size="30" maxlength="30" style="font-family: Tahoma; font-size: 11">
+                                            </td>
+                                            </tr>
+                                            {{/notes.freeform}}
+                                         </script>
                                     </tbody>
                                 </table>
-                                <!-- End Content Begin Footer -->
-
                             </center>
-                        </font>
+                            <input type="hidden" name="id" value="335">
+                        </form>
+                        <p class="p-input">
+                            <input type="submit" name="action" value="Submit">
+                            <input type="submit" onclick="location.href='/home'" value="Cancel">
+                        </p>
+
                     </td>
                 </tr>
             </tbody>
         </table>
 
-        <div class="clearfix"></div>
     </div>
 </div>
 <!-- footer -->

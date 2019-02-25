@@ -106,22 +106,4 @@ body {
   margin-left: 24px
 }
 
-.announcement-tips {
-  height: 20px;
-  box-sizing: border-box;
-  margin-left: 140p x;
-  margin-top: 15px;
-}
 
-.announcement-tips span {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background-color: #A0C79F;
-  margin-left: 16px;
-}
-
-.langOv {
-  display: none;
-}
