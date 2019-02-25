@@ -16,9 +16,74 @@
             <li>&nbsp;>&nbsp;</li>
             <li><a href="#" rel="noopener noreferrer"> Architectural Application</a></li>
         </ul>
-        <script id="architectural_application" type="txt/template">
-            {{{body}}}
-        </script>
+        <table class="eformtable std-table" id="eform20" style="margin-top:20px;">
+            <tbody>
+                <tr>
+                    <td class="eformheader" colspan="2" style="border:none;" id="page_title_cycle">
+                        <script id="page_title" type="txt/template">
+                            {{title}}
+                        </script>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div id="article_title_cycle">
+                            <script id="article_title" type="txt/template">
+                                <p style="font-family: Helvetica; font-size: 13px;margin-top:10px">{{title}}:</p>
+                            <p style="font-family: Helvetica; font-size: 13px;">{{first_paragraph}}</p>
+                            <p style="font-family: Helvetica; font-size: 13px;">{{second_paragraph}}</p>
+                            <p style="font-family: Helvetica; font-size: 13px;">{{third_paragraph}}</p>
+                            <p style="font-family: Helvetica; font-size: 13px;">{{fourth_paragraph}}</p>
+                            <p style="font-family: Helvetica; font-size: 13px;">{{fifth_section}}</p>
+                        </script>
+                        </div>
+                    </td>
+                </tr><input type="hidden" name="rich_format" value="True">
+                <tr>
+                    <td widht="200px" style="text-indent:0px;">Name:</td>
+                    <td><input type="text" value="" name="f105" size="30" maxlength="250">*</td>
+                </tr>
+                <tr>
+                    <td widht="200px" style="text-indent:0px;">Street Address:</td>
+                    <td><input type="text" value="22805 Poplar Grove Square" name="f106" size="30" maxlength="250">*</td>
+                </tr>
+                <tr>
+                    <td widht="200px" style="text-indent:0px;">Lot #:</td>
+                    <td><input type="text" value="43" name="f107" size="30" maxlength="250">*</td>
+                </tr>
+                <tr>
+                    <td widht="200px" style="text-indent:0px;">Phone Number:</td>
+                    <td><input type="text" value="" name="f108" size="30" maxlength="250"></td>
+                </tr>
+                <tr>
+                    <td widht="200px" style="text-indent:0px;">Mobile Number:</td>
+                    <td><input type="text" value="" name="f109" size="30" maxlength="250"></td>
+                </tr>
+                <tr>
+                    <td widht="200px" style="text-indent:0px;">Email Address:</td>
+                    <td><input type="text" value="" name="f110" size="30" maxlength="250">*</td>
+                </tr>
+                <tr>
+                    <td style="text-indent:0px;">General Description of Proposed Work:</td>
+                    <td><textarea wrap="virtual" name="f112" cols="50" rows="5"></textarea>*</td>
+                </tr>
+                <tr>
+                    <td style="text-indent:0px;">Sketches, Drawings, Plans:</td>
+                    <td><input type="FILE" name="f114" size="30" maxlength="200"></td>
+                </tr>
+                <tr>
+                    <td style="text-indent:0px;">By checking this box, I agree to the above conditions:</td>
+                    <td><input type="checkbox" name="f111">*</td>
+                </tr>
+                <tr>
+                    <td align="center" colspan="2"><br><input type="Submit" value="Sumbit" name="action" class="continue"><br>
+                        <input type="HIDDEN" name="id" value="20"><input type="HIDDEN" name="cat_desc" value="Architectural Application">
+                        <input type="HIDDEN" name="short_desc" value="Architectural Application">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
         <div class="clearfix"></div>
     </div>
 </div>
