@@ -19,7 +19,7 @@
 .eformtable tbody td {
   border: 3px solid #6AA666;
   background-color: #F1F1F1;
-  padding: 3px 10px;
+  padding: 10px;
   box-sizing: border-box;
 }
 
@@ -29,6 +29,11 @@
 
 .eformtable p {
   margin-bottom: 1em;
+}
+
+.eformtable .paragraph {
+  font-family: Helvetica; 
+  font-size: 13px;
 }
 
 .breadcrumb {

@@ -1,14 +1,8 @@
 var render = function() {
-    _pre_render()
-    var page_title = $('#page_title').html()
-    $.each(data.page_title, function() {
-        $('#page_title_cycle').append(Mustache.render(page_title, this));
-    });
+    _pre_render();
 
-    var article_title = $('#article_title').html()
-    $.each(data.article_title, function() {
-        $('#article_title_cycle').append(Mustache.render(article_title, this));
-    });
+    $('#page_title').after(function() { return Mustache.render($(this).html(), data.eform); });
+    $('#article_title').after(function() { return Mustache.render($(this).html(), data.eform); });
 
     // Global post render
     _post_render();

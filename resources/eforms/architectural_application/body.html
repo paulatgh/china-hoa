@@ -27,14 +27,13 @@
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <div id="article_title_cycle">
+                        <div id="eform_content">
                             <script id="article_title" type="txt/template">
-                                <p style="font-family: Helvetica; font-size: 13px;margin-top:10px">{{title}}:</p>
-                            <p style="font-family: Helvetica; font-size: 13px;">{{first_paragraph}}</p>
-                            <p style="font-family: Helvetica; font-size: 13px;">{{second_paragraph}}</p>
-                            <p style="font-family: Helvetica; font-size: 13px;">{{third_paragraph}}</p>
-                            <p style="font-family: Helvetica; font-size: 13px;">{{fourth_paragraph}}</p>
-                            <p style="font-family: Helvetica; font-size: 13px;">{{fifth_section}}</p>
+                                {{#paragraphs}}
+                                    <p class="paragraph">
+                                        {{.}}
+                                    </p>
+                                {{/paragraphs}}
                         </script>
                         </div>
                     </td>
@@ -45,11 +44,11 @@
                 </tr>
                 <tr>
                     <td widht="200px" style="text-indent:0px;">Street Address:</td>
-                    <td><input type="text" value="22805 Poplar Grove Square" name="f106" size="30" maxlength="250">*</td>
+                    <td><input type="text" value="" name="f106" size="30" maxlength="250">*</td>
                 </tr>
                 <tr>
                     <td widht="200px" style="text-indent:0px;">Lot #:</td>
-                    <td><input type="text" value="43" name="f107" size="30" maxlength="250">*</td>
+                    <td><input type="text" value="" name="f107" size="30" maxlength="250">*</td>
                 </tr>
                 <tr>
                     <td widht="200px" style="text-indent:0px;">Phone Number:</td>
