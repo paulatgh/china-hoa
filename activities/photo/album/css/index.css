@@ -417,3 +417,42 @@
     height: 36px;
     top: 20px;
 }
+
+.admin_option_left {
+    display: none;
+    width: 167px;
+    height: 38px;
+    background: rgba(106, 166, 102, 1);
+    border-radius: 20px;
+    font-size: 16px;
+    font-family: OpenSans-Regular;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    line-height: 38px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.admin_option_left:hover {
+    cursor: pointer;
+}
+
+.admin_option_right {
+    display: none;
+    width: 167px;
+    height: 38px;
+    background: rgba(245, 166, 35, 1);
+    border-radius: 20px;
+    font-size: 16px;
+    font-family: OpenSans-Regular;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    line-height: 38px;
+    text-align: center;
+    box-sizing: border-box;
+    margin-left: 16px;
+}
+
+.admin_option_right:hover {
+    cursor: pointer;
+}
