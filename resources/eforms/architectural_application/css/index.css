@@ -1,26 +1,28 @@
 .eformtable tbody td.eformheader {
-  background-color: rgb(57, 61, 68);
-  color: #f1e8c6;
+  background-color: #6AA666;
+  color: #ffffff;
   text-align: center;
-  font-size: 16px;
+  font-size: 18px;
   padding: 5px 5px;
   font-weight: bold;
-  height: 50px;
+  height: 64px;
 }
 
 .eformtable {
   font: 12px Verdana, Arial, Helvetica;
   border-collapse: collapse;
-  border: 3px solid rgb(57, 61, 68);
+  border: 1px solid #6AA666;
   margin: 5px;
   line-height: 16px;
 }
 
 .eformtable tbody td {
-  border: 3px solid #6AA666;
-  background-color: #F1F1F1;
+  border: 1px solid #6AA666;
+  background-color: #ffffff;
   padding: 10px;
   box-sizing: border-box;
+  font-size: 16px;
+  color: rgba(57, 61, 68, 1);
 }
 
 .eformtable tbody tr:nth-child(2) td {
@@ -28,12 +30,13 @@
 }
 
 .eformtable p {
+
   margin-bottom: 1em;
 }
 
 .eformtable .paragraph {
-  font-family: Helvetica; 
-  font-size: 13px;
+  font-family: Helvetica;
+  font-size: 15px;
 }
 
 .breadcrumb {
@@ -55,16 +58,39 @@
   color: rgba(30, 130, 23, 1);
 }
 
-.continue {
-  width: 128px;
+.p-input {
+  width: 100%;
+  margin: 20px 0;
+  text-align: right;
+
+}
+
+.p-input input:nth-child(1) {
+  width: 113px;
   height: 38px;
   background: rgba(106, 166, 102, 1);
-  border-radius: 20px;
+  border-radius: 19px;
   border: none;
   font-size: 16px;
   font-family: OpenSans-Regular;
   font-weight: 400;
   color: rgba(255, 255, 255, 1);
-  margin: 4px;
+  line-height: 22px;
+  cursor: pointer;
+
+}
+
+.p-input input:nth-child(2) {
+  width: 113px;
+  height: 38px;
+  background: rgba(249, 75, 90, 1);
+  border-radius: 19px;
+  border: none;
+  font-size: 16px;
+  font-family: OpenSans-Regular;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  line-height: 22px;
+  margin-left: 20px;
   cursor: pointer;
 }

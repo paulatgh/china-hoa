@@ -20,19 +20,19 @@
             {{{body}}}
         </script> -->
         <div>
-                <tbody style="margin-top: 50px;">
+            <tbody style="margin-top: 50px;">
                 <tr>
                     <td>
                         <font size="2" face="Verdana, Arial, Helvetica" color="#222311">
-    
+
                             <form>
-                                <center style="margin-top: 200px">
+                                <center>
                                     <table class="eformtable std-table" id="eform29">
                                         <tbody>
                                             <tr>
                                                 <td class="eformheader" colspan="2" id="table_header_cycle">
                                                     <script id="table_header" type="txt/template">
-                                                    {{title}}
+                                                        {{title}}
                                                     </script>
                                                 </td>
                                             </tr>
@@ -64,18 +64,20 @@
                                                         <option value="5">No</option>
                                                     </select>*</td>
                                             </tr>
-                                            <tr>
-                                                <td align="center" colspan="2"><input type="Submit" value="Continue"  class="continue">
-                                            </tr>
+
                                         </tbody>
                                     </table>
                                 </center>
                             </form>
                         </font>
+                        <p class="p-input">
+                            <input type="submit" name="action" value="Submit">
+                            <input type="submit" onclick="location.href='/resources/eforms'" value="Cancel">
+                        </p>
                     </td>
                 </tr>
             </tbody>
-            <div class="clearfix"></div>
+
         </div>
     </div>
 </div>
