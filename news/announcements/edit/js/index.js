@@ -14,6 +14,10 @@ var render = function() {
     $.each(data.option, function() {
         $('#drop_down_list_cycle').append(Mustache.render(drop_down_list, this));
     });
+    var drop_down_list_two= $('#drop_down_list_two').html()
+    $.each(data.option_two, function() {
+        $('#drop_down_list_two_cycle').append(Mustache.render(drop_down_list_two, this));
+    });
 
     // Global post render
     _post_render();
