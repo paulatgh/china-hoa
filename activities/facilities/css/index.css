@@ -13,101 +13,71 @@ body {
     color: rgba(57, 61, 68, 1);
 }
 
-.Carousel {
+.section {
     position: relative;
 }
 
-.Carousel_tips {
+.section_title {
     padding: 0 0 25px;
     box-sizing: border-box;
     height: 44px;
     line-height: 24px;
     font-size: 24px;
-    font-family: SourceHanSansSC-Medium;
     font-weight: 500;
+    margin-top: 80px;
+    margin-left: 140px;
     border-bottom: 2px solid #333333;
     color: rgba(51, 51, 51, 1);
-    position: absolute;
-    top: -15px;
-    left: 139px;
-    width: 44px;
+    width: fit-content;
 }
 
-.Carousel_img {
+.section_text {
+    padding: 40px 140px 0;
+    box-sizing: border-box;
+    font-size: 26px;
+    font-weight: 400;
+    color: rgba(57,61,68,1);
+    line-height: 34px;
+}
+
+.section_images {
     width: 922px;
     height: 300px;
     padding-top: 70px;
     box-sizing: border-box;
-    margin-bottom: 90px;
     overflow: hidden;
     margin-left: 150px;
 }
 
-.swiper-button-next {
-    background: url('/community/img/lefta.png') no-repeat;
-    background-size: 100%;
-    top: 175px;
-    right: 150px;
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    cursor: pointer;
+.section_images ul {
+    height: 280px;
+    width: 20000px;
 }
 
-.swiper-button-prev {
-    background: url('/community/img/right2.png') no-repeat;
-    background-size: 100%;
-    top: 175px;
-    left: 170px;
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    cursor: pointer;
-}
-
-.Carousel p {
-    line-height: 70px;
-}
-
-.Information_list {
-    margin-top: 20px;
-}
-
-.Information_list>li>a {
-    font-size: 26px;
-    font-family: SourceHanSansSC-Normal;
-    font-weight: 400;
-    color: rgba(106, 166, 102, 1);
-    line-height: 60px;
-    text-decoration: underline;
-}
-
-.Information_desc {
-    height: 376px;
+.section_highlight {
+    height: fit-content;
+    width: 70%;
     margin-top: 30px;
+    margin-left: 15%;
     background: rgba(255, 255, 255, 1);
     border: 1px solid rgba(68, 159, 65, 1);
     padding: 0 46px 46px;
     box-sizing: border-box;
-    margin-bottom: -30px;
 }
 
-.Information_desc ul li {
+.section_highlight ul li {
     font-size: 26px;
-    font-family: SourceHanSansSC-Normal;
     font-weight: 400;
     color: rgba(106, 166, 102, 1);
     line-height: 60px;
 }
 
-.Information_desc h3 {
+.section_highlight h3 {
     text-align: center;
     line-height: 75px;
     font-size: 26px;
-    font-family: SourceHanSansSC-Medium;
     font-weight: 500;
     color: rgba(106, 166, 102, 1);
-
 }
 
 .breadcrumb {
