@@ -1,8 +1,8 @@
 var render = function() {
-    _pre_render()
-    var content_template = $('#architectural_application').html();
-    Mustache.parse(content_template);
-    $('#architectural_application').after(Mustache.render(content_template, data));
+    _pre_render();
+
+    $('#page_title').after(function() { return Mustache.render($(this).html(), data.eform); });
+    $('#article_title').after(function() { return Mustache.render($(this).html(), data.eform); });
 
     // Global post render
     _post_render();

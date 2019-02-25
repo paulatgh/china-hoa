@@ -20,14 +20,15 @@
             Photo Albums
         </p>
         <div style="display: flex" id="admin_permissions_cycle">
-            <div class="admin_option_left"><a href="add" style="color: white">Add a New Album</a></div>
-            <div class="admin_option_right">Upload photos</div>
+            <script id="upload_photo_links" type="txt/template">
+                <div class="admin_option_left"><a href="{{_metadata.root_url}}{{_metadata.page_path}}/add" style="color: white">Add a New Album</a></div>
+            </script>
         </div>
         <div class="content-1" id="events_photo">
             <script id="photo_albums" type="txt/template">
                 {{#albums}}
                 <div class="Events-Calendar ">
-                    <a href="/activities/photo/album?id={{id}}">
+                    <a href="{{_metadata.root_url}}/activities/photo/album?id={{id}}">
                         <div class="content-img" style="background:url('{{img}}') no-repeat;background-size: 100% 100%;">
                             <em>{{count}}</em>
                         </div>
@@ -52,9 +53,9 @@
                     </script>
                 </select>
             </div>
-            <div class="upload-photos-file" type="file"><img src="/community/img/profile.png" alt="">
+            <!-- <div class="upload-photos-file" type="file"><img src="/community/img/profile.png" alt="">
                 <p class="upload-photos-file-p">Choose pictures and videos</p>
-            </div>
+            </div> -->
         </div>
     </div>
     <!-- footer -->

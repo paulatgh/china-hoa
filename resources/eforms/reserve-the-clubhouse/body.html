@@ -10,12 +10,47 @@
     <ul class="breadcrumb">
         <li><a href="/home" rel="noopener noreferrer">Home</a></li>
         <li><span rel="noopener noreferrer" style="color: #6AA666"> > </span></li>
+        <li><a href="/resources" rel="noopener noreferrer">Resources</a></li>
+        <li><span rel="noopener noreferrer" style="color: #6AA666"> > </span></li>
+        <li><a href="/resources/eforms" rel="noopener noreferrer">eForms</a></li>
+        <li><span rel="noopener noreferrer" style="color: #6AA666"> > </span></li>
         <li><a href="#" rel="noopener noreferrer">reservation</a></li>
     </ul>
 
-    <script id="bodya" type="txt/template">
-        {{{body}}}
-    </script>
+    <div class="main-center">
+        <div class="content-1">
+            <table class="std-table" border="0" width="100%" bgcolor="#6AA666">
+                <tr>
+                    <td style="height: 64px; padding-left: 24px;">
+                        <font size="5" face="Verdana, Arial, Helvetica" color="#ffffff">
+                            <div id="table_header_cycle">
+                                <script id="table_header" type="txt/template">
+                                    {{title}}            
+                                </script>
+                            </div>
+
+                        </font>
+                    </td>
+                </tr>
+            </table>
+            <script id="bodya" type="txt/template">
+            {{{body}}}
+            </script>
+            <table border="0" width="100%">
+                <tbody>
+                    <tr>
+                        <td width="10%" align="right">
+                            <input type="Submit" value="Sumbit" name="action" class="continue">
+                            <input type="Submit" value="Cancel" onclick="location.href='/resources/eforms/'" class="cancel">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
+
 
 </div>
 

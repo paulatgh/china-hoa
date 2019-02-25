@@ -1,59 +1,54 @@
-.w838 {
-    width: 100%;
-    border-left: none;
-}
-
-.investor-right {
-    width: 100%;
-}
-
-.investor-pdf li {
-    width: 185px;
-}
-
-.nav_user {
-    width: 163px;
-    height: 40px;
-    background: #393D44;
-}
-
 .eformtable tbody td.eformheader {
-    background-color: rgb(57, 61, 68);
-    color: #f1e8c6;
-    text-align: center;
-    font-size: 16px;
-    padding: 5px 5px;
-    font-weight: bold;
-    height: 50px;
-    border: 3px solid rgb(57, 61, 68);
+  background-color: rgb(57, 61, 68);
+  color: #f1e8c6;
+  text-align: center;
+  font-size: 16px;
+  padding: 5px 5px;
+  font-weight: bold;
+  height: 50px;
+  border: 3px solid rgb(57, 61, 68);
 }
 
 .eformtable {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .eformtable tbody td {
-    border: 3px solid #6AA666;
-    background-color: #F1F1F1;
-    padding: 3px 10px;
-    box-sizing: border-box;
+  border: 3px solid #6AA666;
+  background-color: #F1F1F1;
+  padding: 3px 10px;
+  box-sizing: border-box;
 }
 
 .breadcrumb {
-    width: 100%;
-    height: 75px;
+  width: 100%;
+  height: 75px;
 }
 
 .breadcrumb li {
-    float: left;
-    margin-right: 10px;
-    font-size: 20px;
-    font-family: OpenSans-Regular;
-    font-weight: 400;
-    line-height: 75px;
-    color: rgba(30, 130, 23, 1);
+  float: left;
+  margin-right: 10px;
+  font-size: 20px;
+  font-family: OpenSans-Regular;
+  font-weight: 400;
+  line-height: 75px;
+  color: rgba(30, 130, 23, 1);
 }
 
 .breadcrumb li a {
-    color: rgba(30, 130, 23, 1);
+  color: rgba(30, 130, 23, 1);
+}
+
+.continue {
+  width: 128px;
+  height: 38px;
+  background: rgba(106, 166, 102, 1);
+  border-radius: 20px;
+  border: none;
+  font-size: 16px;
+  font-family: OpenSans-Regular;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+  margin: 5px;
 }

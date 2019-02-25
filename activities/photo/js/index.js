@@ -7,6 +7,7 @@ var render = function () {
     // });
     $('#photo_albums').after(function() { return Mustache.render($(this).html(), data); });
     $('#upload_photo_album_selector').after(function() { return Mustache.render($(this).html(), data); });
+    $('#upload_photo_links').after(function() { return Mustache.render($(this).html(), data); });
 
     // Global post render
     _post_render();
@@ -18,7 +19,7 @@ var render = function () {
         $('.admin_option_left').css('display', 'block')
         $(".admin_option_right").css("display", "block")
     }
-  
+
     $(".admin_option_right").click(function () {
         $(".upload-photos").css("display", "block")
         $(".bg").css("display", "block")

@@ -1,299 +1,227 @@
 .breadcrumb li {
-    color: rgba(30, 130, 23, 1);
-    height: 27px;
-    font-size: 20px;
-    font-family: OpenSans-Regular;
-    font-weight: 400;
-    line-height: 27px;
+  color: rgba(30, 130, 23, 1);
+  height: 27px;
+  font-size: 20px;
+  font-family: OpenSans-Regular;
+  font-weight: 400;
+  line-height: 27px;
 
 }
 
 .breadcrumb li a {
-    color: rgba(30, 130, 23, 1);
+  color: rgba(30, 130, 23, 1);
 
 }
 
 .breadcrumb {
-    width: 347px;
-    display: flex;
-    /* border: solid 1px red; */
-    position: relative;
-    top: 24px;
+  width: 347px;
+  display: flex;
+  /* border: solid 1px red; */
+  position: relative;
+  top: 24px;
 }
 
 .main-breadcrumb {
-    width: 100%;
-    height: 50px;
+  width: 100%;
+  height: 50px;
 }
 
 .main-center {
-    width: 1200px;
-    height: auto;
-    margin: auto;
+  width: 1200px;
+  height: auto;
+  margin: auto;
 }
 
 .address_book_click {
-    width: 1152px;
-    height: 80px;
-    border: 1px solid rgba(151, 151, 151, 1);
-    border-left: none;
-    border-right: none;
-    line-height: 80px;
-    display: none;
+  width: 1152px;
+  height: 80px;
+  border: 1px solid rgba(151, 151, 151, 1);
+  border-left: none;
+  border-right: none;
+  line-height: 80px;
+  display: none;
 }
 
 .address_book_click button:nth-child(2) {
-    width: 117px;
-    height: 30px;
-    background: rgba(255, 255, 255, 1);
-    border-radius: 20px;
-    border: 1px solid rgba(53, 149, 50, 1);
+  width: 117px;
+  height: 30px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 20px;
+  border: 1px solid rgba(53, 149, 50, 1);
 
 
 }
 
 .address_book_click button:nth-child(3) {
-    width: 150px;
-    height: 30px;
-    background: rgba(255, 255, 255, 1);
-    border-radius: 20px;
-    border: 1px solid rgba(53, 149, 50, 1);
-    font-size: 16px;
-    font-family: OpenSans;
-    color: rgba(53, 149, 50, 1);
-    margin: 0 20px;
+  width: 150px;
+  height: 30px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 20px;
+  border: 1px solid rgba(53, 149, 50, 1);
+  font-size: 16px;
+  font-family: OpenSans;
+  color: rgba(53, 149, 50, 1);
+  margin: 0 20px;
 }
 
 .address_book_click button:nth-child(4) {
-    width: 180px;
-    height: 30px;
-    background: rgba(255, 255, 255, 1);
-    border-radius: 20px;
-    border: 1px solid rgba(53, 149, 50, 1);
-    font-size: 16px;
-    font-family: OpenSans;
-    color: rgba(53, 149, 50, 1);
+  width: 180px;
+  height: 30px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 20px;
+  border: 1px solid rgba(53, 149, 50, 1);
+  font-size: 16px;
+  font-family: OpenSans;
+  color: rgba(53, 149, 50, 1);
 
 }
 
 .address_book_click button:nth-child(5) {
-    width: 200px;
-    height: 30px;
-    background: rgba(255, 255, 255, 1);
-    border-radius: 20px;
-    border: 1px solid rgba(53, 149, 50, 1);
-    font-size: 16px;
-    font-family: OpenSans;
-    color: rgba(53, 149, 50, 1);
-    margin: 0 20px;
+  width: 200px;
+  height: 30px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 20px;
+  border: 1px solid rgba(53, 149, 50, 1);
+  font-size: 16px;
+  font-family: OpenSans;
+  color: rgba(53, 149, 50, 1);
+  margin: 0 20px;
 }
 
 .address_book_click button a {
-    font-size: 16px;
-    font-family: OpenSans;
-    color: rgba(53, 149, 50, 1);
+  font-size: 16px;
+  font-family: OpenSans;
+  color: rgba(53, 149, 50, 1);
 }
 
 .photo-albums {
-    height: 41px;
-    font-size: 24px;
-    font-family: OpenSans-Bold;
-    font-weight: 600;
-    color: rgba(57, 61, 68, 1);
-    line-height: 41px;
-    margin: 16px 0;
-    display: none;
+  height: 41px;
+  font-size: 24px;
+  font-family: OpenSans-Bold;
+  font-weight: 600;
+  color: rgba(57, 61, 68, 1);
+  line-height: 41px;
+  margin: 16px 0;
+  display: none;
 }
 
 .newest {
-    width: 40%;
-    height: 30px;
-    font-size: 22px;
-    font-family: OpenSans-Bold;
-    font-weight: bold;
-    color: rgba(57, 61, 68, 1);
-    line-height: 30px;
-    margin: 16px 0;
+  width: 40%;
+  height: 30px;
+  font-size: 22px;
+  font-family: OpenSans-Bold;
+  font-weight: bold;
+  color: rgba(57, 61, 68, 1);
+  line-height: 30px;
+  margin: 16px 0;
 }
 
 .content-1 {
-    width: 100%;
-    height: auto;
-    padding-bottom: 80px;
+  width: 100%;
+  height: auto;
+  padding-bottom: 80px;
 }
 
 .search-click>.search>input {
-    height: 40px;
-    border: none;
-    width: 100%;
-    border: 1px solid rgba(57, 61, 68, 1);
-    padding-left: 5px;
+  height: 40px;
+  border: none;
+  width: 100%;
+  border: 1px solid rgba(57, 61, 68, 1);
+  padding-left: 5px;
 }
 
 .search-click {
-    width: 22%;
-    height: 40px;
-    /* border: solid 1px; */
-    margin: 16px 0;
+  width: 22%;
+  height: 40px;
+  /* border: solid 1px; */
+  margin: 16px 0;
 
 
 }
 
 .search {
-    position: relative;
-    width: 100%;
-    right: 90px;
+  position: relative;
+  width: 100%;
+  right: 90px;
 }
 
 .search_img {
-    width: 45px;
-    height: 40px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: #393D44;
+  width: 45px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #393D44;
 }
 
 .search_img img {
-    margin: 13px;
+  margin: 13px;
 }
 
 .choose {
-    width: 1152px;
-    /* height: 80px; */
-    /* border: solid 1px; */
-    display: flex;
-    justify-content: space-between;
+  width: 1152px;
+  /* height: 80px; */
+  /* border: solid 1px; */
+  display: flex;
+  justify-content: space-between;
 }
 
 .address_book_right {
 
-    width: 1152px;
-    height: 910px;
-    box-sizing: border-box;
-    border: solid 2px #6AA666;
+  width: 1152px;
+  height: 910px;
+  box-sizing: border-box;
+  border: solid 2px #6AA666;
 }
 
 .address_book_right::-webkit-scrollbar {
-    width: 0 !important
+  width: 0 !important
 }
-
-.address_categories {
-    width: 280px;
-
-}
-
-.address_categories h5 {
-    font-size: 18px;
-    font-family: OpenSans-Bold;
-    color: rgba(57, 61, 68, 1);
-    line-height: 20px;
-    margin-top: 22px;
-    margin-bottom: 10px;
-}
-
-.address_categories ul {
-    width: 260px;
-    height: 190px;
-    /* border: solid 1px; */
-
-}
-
-.address_categories li a {
-    font-size: 14px;
-    font-family: OpenSans-Regular;
-    font-weight: 400;
-    color: rgba(106, 166, 102, 1);
-    line-height: 30px;
-}
-
-.address_categories li a:hover {
-    color: rgba(57, 61, 68, 1);
-}
-
-/* .templates {
-    width: 836px;
-    height: 54px;
-    background: rgba(106, 166, 102, 1);
-    font-size: 24px;
-    font-family: OpenSans-SemiBold;
-    font-weight: 600;
-    color: rgba(255, 255, 255, 1);
-    line-height: 54px;
-    padding-left: 16px;
-} */
 
 .email-template {
-    width: 990px;
-    height: 750px;
-    /* border: solid 2px #6AA666; */
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: auto;
+  width: 990px;
+  height: 750px;
+  /* border: solid 2px #6AA666; */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: auto;
 }
 
 .img-1 {
-    width: 125px;
-    height: 135px;
-    border: solid 1px;
-    margin: auto;
+  width: 125px;
+  height: 135px;
+  border: solid 1px;
+  margin: auto;
 }
 
 .content-img {
-    width: 142px;
-    height: 188px;
-    border: solid 1px white;
-    margin-top: 40px;
+  width: 142px;
+  height: 188px;
+  border: solid 1px white;
+  margin-top: 40px;
 
 }
 
 .content-img p {
 
-    width: 120px;
-    height: 44px;
-    font-size: 16px;
-    font-family: OpenSans;
-    color: rgba(106, 166, 102, 1);
-    line-height: 23px;
-    text-align: center;
+  width: 120px;
+  height: 44px;
+  font-size: 16px;
+  font-family: OpenSans;
+  color: rgba(106, 166, 102, 1);
+  line-height: 23px;
+  text-align: center;
 
-    margin: 10px auto;
+  margin: 10px auto;
 }
-
-.footer-p {
-    font-size: 16px;
-    font-family: OpenSans-SemiBold;
-    font-weight: 600;
-    color: rgba(255, 255, 255, 1);
-    line-height: 70px;
-    text-align: center;
-
-}
-
-.main-left-content {
-    width: 421px;
-    height: 225px;
-    box-shadow: 0 0 8px;
-    margin-top: 15px;
-}
-
-.main-right-content {
-    width: 759px;
-    height: 225px;
-    box-shadow: 0 0 8px;
-    margin-top: 15px;
-    margin-left: 24px
-}
-
-
 
 .news-page a {
-    display: inline-block;
-    width: 42px;
-    height: 42px;
-    border: 1px solid #449F41;
-    line-height: 42px;
-    font-size: 23px;
-    color: white;
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  border: 1px solid #449F41;
+  line-height: 42px;
+  font-size: 23px;
+  color: white;
 }

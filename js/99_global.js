@@ -69,7 +69,7 @@ function delete_element(data, index, el) {
 function _pre_render() {
     header_html = `
     <div class="w1200">
-        <a class="logo" href="#">
+        <a class="logo" href="${data._metadata.root_url}/home">
             <img src="/community/img/Combined Shape.png" alt="Combined Shape">
             De Anza Oaks
         </a>

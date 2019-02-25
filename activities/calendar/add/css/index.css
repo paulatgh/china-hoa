@@ -70,31 +70,7 @@
   border: 1px solid rgba(106, 166, 102, 1);
 }
 
-.continue {
-  width: 113px;
-  height: 38px;
-  background: rgba(106, 166, 102, 1);
-  border-radius: 20px;
-  border: none;
-  font-size: 16px;
-  font-family: OpenSans-Regular;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 1);
-  margin: 24px
-}
 
-.cancel {
-  width: 113px;
-  height: 38px;
-  background: rgba(249, 75, 90, 1);
-  border-radius: 20px;
-  border: none;
-  font-size: 16px;
-  font-family: OpenSans-Regular;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 1);
-  cursor: pointer;
-}
 
 .add_volunteer_title {
   width: 100%;
