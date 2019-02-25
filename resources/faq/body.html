@@ -17,17 +17,17 @@
                 <div class="form_2">
                     <div class="form_title">
                         <div class="form_title" id="faq_title_cycle">
-                            <script id="faq_title" type="txt/template">
-                                {{title}}
-                        </script>
+                            Frequently Asked Questions
                         </div>
                     </div>
                     <ul id="faq_content_cycle">
-                        <script id="faq_content" type="txt/template">
+                        <script id="faqs" type="txt/template">
+                            {{#faqs}}
                             <li>
-                                    <h3>Question: {{Question}}</h3>
-                                    <p><strong>Answer:</strong>{{Answer}}</p>
-                                </li>
+                                <h3>Question: {{Question}}</h3>
+                                <p><strong>Answer:</strong> {{Answer}}</p>
+                            </li>
+                            {{/faqs}}
                         </script>
                     </ul>
                 </div>

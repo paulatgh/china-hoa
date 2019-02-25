@@ -1,15 +1,7 @@
 var render = function() {
     _pre_render()
-    var event_template = $('#faq_content').html();
-    Mustache.parse(event_template);
-    $.each(data.frequently_asked_questions, function() {
-        $('#faq_content_cycle').append(Mustache.render(event_template, this));
-    });
 
-    var event_template = $('#faq_title').html();
-    $.each(data.faq_title, function() {
-        $('#faq_title_cycle').append(Mustache.render(event_template, this));
-    });
+    $("#faqs").after(function() { return Mustache.render($(this).html(), data); });
 
     // Global post render
     _post_render();
