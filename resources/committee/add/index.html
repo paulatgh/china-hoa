@@ -41,87 +41,22 @@
                 site_name: 'De Anza Oaks',
                 environment: 'dev',
             },
-           
-            body:`
-            <table style="background-color: #ffffff; margin-top:20px;" background="" border="0" width="100%" cellpadding="10" cellspacing="0">
-            <table class="std-table" border="0" width="90%" bgcolor="#6AA666">
-                <tr>
-                    <td style="height: 64px; padding-left: 24px;">
-                        <font size="5" face="Verdana, Arial, Helvetica" color="#ffffff">
-                            Add Committee
-                        </font>
-                    </td>
-                </tr>
-            </table>
-            <tbody>
-                <tr>
-                    <td>
-                        <font size="2" face="Verdana, Arial, Helvetica" color="#222311">
-
-                            <form>
-
-                                <table class="volunteer-table" border="1" width="90%" cellspacing="0" bordercolor="#6AA666">
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                Form Title/Name:
-                                            </td>
-                                            <td><input type="text" name="short_desc" size="40" maxlength="50" style="width:564px;height:28px;"></td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-
-                                                When:
-                                            </td>
-                                            <td><input type="text" name="short_desc" size="40" maxlength="50" style="width:180px;height:28px;"></td>
-
-                                        </tr>
-                                        <tr>
-                                            <td>
-
-                                                Where:
-                                            </td>
-                                            <td><input type="text" name="short_desc" size="40" maxlength="50" style="width:180px;height:28px;"></td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                Full Description:
-                                            </td>
-                                            <td><textarea wrap="virtual" name="full_desc" cols="50" rows="5" style="width:564px;height:160px;"></textarea></td>
-                                        </tr>
-
-
-                                    </tbody>
-                                </table>
-
-                            </form>
-
-                            <table border="0" width="90%">
-                                <tbody>
-                                    <tr>
-                                        <td width="10%" align="right">
-                                            <input type="Submit" value="Submit" name="action" class="continue">
-                                            <input type="Submit" value="Cancel" onclick="location.href='/resources/committee/'" class="cancel">
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </font>
-                    </td>
-                </tr>
-            </tbody>
-            <div class="ad"></div>
-        </table>`
+            table_header: [{
+                id: 1,
+                title: 'Add Committee'
+            }],
         }
+
     </script>
     <script type="text/javascript" src="js/index.js"></script>
     <script>
         // This script block stays in this wrapper html file
-        $(function () {
-            $('#content').load("body.html", function () {
+        $(function() {
+            $('#content').load("body.html", function() {
                 render();
             });
         });
+
     </script>
 </body>
 
