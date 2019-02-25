@@ -38,104 +38,73 @@
                 site_name: 'De Anza Oaks',
                 environment: 'dev',
             },
-            body: ` <div class="add_volunteer_title">Add a New Photo Album:</div>
+            body: ` <table class="std-table" border="0" width="90%" bgcolor="#6AA666">
+                    <tr>
+                        <td style="height: 64px; padding-left: 24px;">
+                            <font size="5" face="Verdana, Arial, Helvetica" color="#ffffff">
+                                Add a New Photo Album
+                            </font>
+                        </td>
+                        .
+                    </tr>
+                </table>
         <form>
-            <table bgcolor="#f1e8c6" width="90%" border="3" cellpadding="3" cellspacing="0" bordercolor="#6AA666">
+            <table class="addalbum-table" width="90%" border="1" cellpadding="3" cellspacing="0" bordercolor="#6AA666">
                 <tbody>
                     <tr>
-                        <td width="50%" bgcolor="#f1e8c6" bordercolor="#008000" align="right">
-                            <font size="2" face="Verdana, Arial, Helvetica" color="#222311">
-                                Album Name (required):</font>
+                        <td>
+                           
+                                Album Name (required)
                         </td>
-                        <td width="50%" bgcolor="#f1e8c6" bordercolor="#008000" align="left">
-                            <font size="2" face="Verdana, Arial, Helvetica" color="#222311">
-                                <input type="text" size="50" maxlength="50" name="name_textfield"></font>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td width="50%" bgcolor="#f1e8c6" bordercolor="#008000" align="right">
-                            <font size="2" face="Verdana, Arial, Helvetica" color="#222311">
-                                Album Description:</font>
-                        </td>
-                        <td width="50%" bgcolor="#f1e8c6" bordercolor="#008000" align="left">
-                            <font size="2" face="Verdana, Arial, Helvetica" color="#222311">
-                                <textarea cols="36" rows="6" name="description_textfield"></textarea></font>
+                        <td>
+                            
+                                <input type="text" size="50" maxlength="50" name="name_textfield" style="width:564px;height:28px;">
                         </td>
                     </tr>
                     <tr>
-                        <td width="50%" bgcolor="#f1e8c6" bordercolor="#008000" align="right">
-                            <font size="2" face="Verdana, Arial, Helvetica" color="#222311">
-                                Security Level Required to View Album:</font>
+                        <td>
+                           
+                                Album Description:
                         </td>
-                        <td width="50%" bgcolor="#f1e8c6" bordercolor="#008000" align="left">
-                            <font size="2" face="Verdana, Arial, Helvetica" color="#222311">
-                                <input type="text" maxlength="3" size="3" name="vsl_textfield"></font>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td width="50%" bgcolor="#f1e8c6" bordercolor="#008000" align="right">
-                            <font size="2" face="Verdana, Arial, Helvetica" color="#222311">
-                                Security Level Required to Edit Album:</font>
-                        </td>
-                        <td width="50%" bgcolor="#f1e8c6" bordercolor="#008000" align="left">
-                            <font size="2" face="Verdana, Arial, Helvetica" color="#222311">
-                                <input type="text" maxlength="2" size="3" name="esl_textfield"></font>
+                        <td>
+                        
+                                <textarea cols="36" rows="6" name="description_textfield" style="width:564px;height:160px;"></textarea>
                         </td>
                     </tr>
+                   
                     <tr>
-                        <td width="50%" bgcolor="#f1e8c6" bordercolor="#008000" align="right">
-                            <font size="2" face="Verdana, Arial, Helvetica" color="#222311">
-                                Security Level Required to add a picture to this Album:</font>
+                        <td >
+                            
+                                Comments Allowed:
                         </td>
-                        <td width="50%" bgcolor="#f1e8c6" bordercolor="#008000" align="left">
-                            <font size="2" face="Verdana, Arial, Helvetica" color="#222311">
-                                <input type="text" maxlength="2" size="3" name="csl_textfield"></font>
+                        <td class="check-input">
+                                <input id="color-input-green_a" type="checkbox" name="color-input-green_a" checked="checked">
+                                <label for="color-input-green_a"></label>
                         </td>
                     </tr>
 
 
                     <tr>
-                        <td width="50%" bgcolor="#f1e8c6" bordercolor="#008000" align="right">
-                            <font size="2" face="Verdana, Arial, Helvetica" color="#222311">
-                                Comments Allowed:</font>
+                        <td>
+                           
+                                Main Picture (required):
                         </td>
-                        <td width="50%" bgcolor="#f1e8c6" bordercolor="#008000" align="left">
-                            <font size="2" face="Verdana, Arial, Helvetica" color="#222311">
-                                <input type="checkbox" name="comments_checkbox" checked="checked"></font>
-                        </td>
-                    </tr>
-
-
-                    <tr>
-                        <td width="50%" bgcolor="#f1e8c6" bordercolor="#008000" align="right">
-                            <font size="2" face="Verdana, Arial, Helvetica" color="#222311">
-                                Main Picture (required):</font>
-                        </td>
-                        <td width="50%" bgcolor="#f1e8c6" bordercolor="#008000" align="left">
-                            <font size="2" face="Verdana, Arial, Helvetica" color="#222311">
-                                <input type="file" maxlength="200" name="f1"></font>
+                        <td>
+                            
+                                <input type="file" maxlength="200" name="image">
                         </td>
                     </tr>
                     <tr>
-                        <td width="50%" bgcolor="#f1e8c6" bordercolor="#008000" align="right">
-                            <font size="2" face="Verdana, Arial, Helvetica" color="#222311">
-                                Caption for Main Picture:</font>
+                        <td >
+                            
+                                Caption for Main Picture:
                         </td>
-                        <td width="50%" bgcolor="#f1e8c6" bordercolor="#008000" align="left">
-                            <font size="2" face="Verdana, Arial, Helvetica" color="#222311">
-                                <input type="text" size="50" maxlength="255" name="caption_textfield"></font>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td width="50%" bgcolor="#f1e8c6" bordercolor="#008000" align="right">
-                            <font size="2" face="Verdana, Arial, Helvetica" color="#222311">
-                                ----------&gt; </font>
-                        </td>
-                        <td width="50%" bgcolor="#f1e8c6" bordercolor="#008000" align="left">
-                            <font size="2" face="Verdana, Arial, Helvetica" color="#222311">
-                                <input type="submit" value="Create Album"></font>
+                        <td>
+                            
+                                <input type="text" size="50" maxlength="255" name="caption_textfield">
                         </td>
                     </tr>
+                  
                 </tbody>
             </table>
 
