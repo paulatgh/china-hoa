@@ -1,7 +1,9 @@
 var render = function() {
     _pre_render()
 
-    $('#committee_tiles').after(function() { return Mustache.render($(this).html(), data); });
+    $('#committee_tiles').after(function() {
+        return Mustache.render($(this).html(), data);
+    });
 
     // Global post render
     _post_render();
@@ -13,7 +15,6 @@ var render = function() {
         $('.choose-right').css('margin-top', '50px')
         $('.committee_admin_options').show()
         $('.committee_add').show().click(function() {
-            var data = 'Board/Committee';
             window.location.href = `${data._metadata.root_url}/resources/committee/add/`
         })
         $(".del").click(function() {
