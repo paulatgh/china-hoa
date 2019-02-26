@@ -24,7 +24,7 @@
 }
 
 .announcement-table tr td {
-  height: 24px;
+  height: 26px;
   font-size: 18px;
   font-family: OpenSans-Regular;
   font-weight: 400;
@@ -81,22 +81,4 @@
 
 tr {
   height: 35px;
-}
-
-.styled-checkbox {
-  -webkit-appearance: none;
-  width: 21px;
-  height: 20px;
-  border: rgba(106, 166, 102, 1) solid 1px;
-  border-radius: 3px;
-}
-
-.styled-checkbox:checked {
-  background: rgba(106, 166, 102, 1);
-}
-
-.styled-checkbox:checked:after {
-  content: "\2714";
-  font-size: 16px;
-  color: white;
 }
