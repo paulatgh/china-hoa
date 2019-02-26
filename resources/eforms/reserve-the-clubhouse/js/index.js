@@ -1,8 +1,5 @@
 var render = function() {
     _pre_render()
-    var content_template = $('#bodya').html();
-    Mustache.parse(content_template);
-    $('#bodya').after(Mustache.render(content_template, data));
 
     var table_header = $('#table_header').html();
     $.each(data.table_header, function() {

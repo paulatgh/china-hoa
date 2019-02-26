@@ -17,9 +17,133 @@
             <li><span rel="noopener noreferrer" style="color:rgba(30,130,23,1)"> > </span></li>
             <li><a href="#">Edit eForms</a></li>
         </ul>
-        <script id="edit_eforms" type="txt/template">
+        <!-- <script id="edit_eforms" type="txt/template">
             {{{body}}}
-        </script>
+        </script> -->
+
+        <table class="std-table" border="0" width="90%" bgcolor="#6AA666">
+            <tr>
+                <td style="height: 64px; padding-left: 24px;">
+                    <font size="5" face="Verdana, Arial, Helvetica" color="#ffffff">
+                        <div id="page_title_cycle">
+                            <script id="page_title" type="txt/template">
+                                {{name}}
+                        </script>
+                        </div>
+                    </font>
+                </td>
+            </tr>
+        </table>
+
+        <table style="background-color: #ffffff" background="" border="0" width="100%" cellpadding="10" cellspacing="0">
+            <tbody>
+                <tr>
+                    <td>
+                        <font size="2" face="Verdana, Arial, Helvetica" color="#222311">
+
+                            <form method="post">
+
+
+                                <table class="edit_eform-table" border="1" width="90%" cellspacing="0" bordercolor="#6AA666">
+
+
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                Category:
+                                            </td>
+                                            <td>
+                                                <select size="1" name="announcement_category_id" style="width:180px;height:28px;">
+                                                    <option selected="" value="0">
+
+                                                    </option>
+                                                    <option selected="" value="2">
+                                                        Board Announcements
+                                                    </option>
+
+                                                    <option value="7">
+                                                        Clubhouse
+                                                    </option>
+
+                                                    <option value="8">
+                                                        DAO Emergency Response Committee
+                                                    </option>
+
+                                                    <option value="6">
+                                                        From the Web Administrator
+                                                    </option>
+
+                                                    <option value="10">
+                                                        Maintenance
+                                                    </option>
+
+                                                    <option value="9">
+                                                        Parking
+                                                    </option>
+
+                                                    <option value="5">
+                                                        Recent eMail Bulletins
+                                                    </option>
+
+                                                    <option value="3">
+                                                        Social Events
+                                                    </option>
+
+                                                    <option value="11">
+                                                        Various Meetings
+                                                    </option>
+
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Date:
+                                            </td>
+                                            <td><input type="text" size="10" maxlength="10" style="width:180px;height:28px;font-family: Tahoma; font-size: 11"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Expire Date:
+                                            </td>
+                                            <td><input type="text" style="width:180px;height:28px;">
+                                                (optional)
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Title:
+                                            </td>
+                                            <td><input type="text" style="width:180px;height:28px;"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                Full Description:
+                                            </td>
+                                            <td><textarea wrap="virtual" name="full_desc" cols="50" rows="5" style="width:564px;height:160px;"></textarea></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </form>
+                            <table border="0" width="90%">
+                                <tbody>
+                                    <tr>
+                                        <td width="10%" align="right">
+                                            <input type="Submit" value="Continue" class="continue">
+                                            <input type="Submit" value="Cancel" onclick="location.href='/resources/eforms'" class="cancel">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </font>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+
     </div>
 </div>
 
