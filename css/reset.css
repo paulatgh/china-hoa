@@ -295,7 +295,6 @@ p{line-height:22px;max-width: 1190px;}
 }
 .delete {
     width: 396px;
-    height: 287px;
     background: #ffffff;
     border-radius:9px;
     position: absolute;
@@ -304,7 +303,8 @@ p{line-height:22px;max-width: 1190px;}
     transform: translate(-50%, -50%);
     padding: 40px 57px 48px;
     box-sizing: border-box;
-    text-align: center;
+	text-align: center;
+	min-height: 283px;
 }
 .delete h5{
     height:36px;
@@ -315,13 +315,16 @@ p{line-height:22px;max-width: 1190px;}
     line-height:36px;
 }
 .delete .delete_content{
-    height: 121px;
-    line-height: 121px;
     font-size:19px;
     font-family:OpenSans-Regular;
     font-weight:400;
     color:rgba(57,61,68,1);
-    text-align: center;
+	text-align: center;
+	padding-top: 30px;
+	height: 100%;
+}
+.delete .options{
+	margin-top: 43px;
 }
 .delete .options span{
     display: inline-block;
