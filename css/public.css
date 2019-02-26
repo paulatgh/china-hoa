@@ -526,16 +526,6 @@
 
 .worMap{width:280px;height:281px;position:absolute;right:40px;bottom:40px;}
 
-/*.worMap a{width:100%;height:100%;position:absolute;left:0;top:0;z-index:10;}
-.worMap span{font-size:14px;color:#333333;}
-.worMap .worM1{position:absolute;right:175px;top:30px;}
-.worMap .worM2{position:absolute;right:60px;bottom:105px;}
-.worMap em{width:100%;height:100%;position:absolute;left:0;top:0;z-index:8; -webkit-transition:all .4s;-moz-transition:all .4s;transition:all .4s;}
-.worMap .worM{background:url("../images/worMap.png") no-repeat center center;}
-.worMap .worH{background:url("../images/worMap-on.png") no-repeat center center;opacity:0;opacity:0\9;filter: Alpha(opacity=0);}
-.worMap:hover .worM{opacity:0;opacity:0\9;filter: Alpha(opacity=0);}
-.worMap:hover .worH{opacity:1;opacity:1\9;filter: Alpha(opacity=100);}*/
-
 .worMap-1{width:130px;height:60px;position:absolute;left:0;top:0px;}
 .worMap-1 em{width:101px;height:31px;display:block;position:absolute;left:0;top:0;-webkit-transition:all .3s;-moz-transition:all .3s;transition:all .3s;}
 .worMap-1 .worM-1{background:url("/community/img/worMap-1.png")/*tpa=https://www.bgy.com.cn/images/worMap-1.png*/ no-repeat center center;}
@@ -551,3 +541,23 @@
 .worMap-2:hover .worM-2{opacity:0;filter:Alpha(opacity=0);}
 .worMap-2:hover .worH-2{opacity:1;filter:Alpha(opacity=100);}
 
+.styled-checkbox {
+	-webkit-appearance: none;
+	width: 21px;
+	height: 20px;
+	border: rgba(106, 166, 102, 1) solid 1px;
+	border-radius: 3px;
+  }
+  
+  .styled-checkbox:checked {
+	background: rgba(106, 166, 102, 1);
+  }
+  
+  .styled-checkbox:checked:after {
+	content: "\2714";
+	font-size: 20px;
+	color: white;
+	position: relative;
+	top: -3px;
+	left: 1px;
+  }

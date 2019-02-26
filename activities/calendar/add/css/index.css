@@ -88,140 +88,17 @@
   cursor: pointer;
 }
 
-input[type=checkbox] {
-  visibility: hidden;
+.styled-checkbox_div {
+  margin-top: 20px;
+  width: 300px;
 }
 
-.check-input {
+.styled-checkbox_div input {
+  display: flex;
+}
+
+.styled-checkbox_div span {
   position: relative;
-}
-
-.label_span_a {
-  position: absolute;
-  top: 14px;
-  color: rgba(57, 61, 68, 1) !important;
-  font-size: 18px !important;
-}
-
-.label_span_b {
-  position: absolute;
-  top: 44px;
-  left: 50px;
-  color: rgba(57, 61, 68, 1) !important;
-  font-size: 18px !important;
-}
-
-.label_span_c {
-  position: absolute;
-  top: 76px;
-  left: 50px;
-  color: rgba(57, 61, 68, 1) !important;
-  font-size: 18px !important;
-}
-
-.label_span_d {
-  position: absolute;
-  top: 107px;
-  left: 50px;
-  color: rgba(57, 61, 68, 1) !important;
-  font-size: 18px !important;
-}
-
-#color-input-green_a+label {
-  display: block;
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-  position: absolute;
-  top: 16px;
-  left: 15px;
-  border: rgba(106, 166, 102, 1) solid 1px;
-  border-radius: 3px;
-}
-
-
-#color-input-green_a:checked+label::before {
-  display: block;
-  content: "\2714";
-  text-align: center;
-  font-size: 16px;
-  background: rgba(106, 166, 102, 1);
-  color: white;
-  position: relative;
-  line-height: 20px;
-}
-
-
-
-#color-input-green_b+label {
-  display: block;
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-  position: absolute;
-  top: 46px;
-  left: 15px;
-  border: rgba(106, 166, 102, 1) solid 1px;
-  border-radius: 3px;
-
-}
-
-
-#color-input-green_b:checked+label::before {
-  display: block;
-  content: "\2714";
-  text-align: center;
-  font-size: 16px;
-  background: rgba(106, 166, 102, 1);
-  color: white;
-  position: relative;
-  line-height: 20px;
-}
-
-#color-input-green_c+label {
-  display: block;
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-  position: absolute;
-  top: 77px;
-  left: 15px;
-  border: rgba(106, 166, 102, 1) solid 1px;
-  border-radius: 3px;
-}
-
-
-#color-input-green_c:checked+label::before {
-  display: block;
-  content: "\2714";
-  text-align: center;
-  font-size: 16px;
-  background: rgba(106, 166, 102, 1);
-  color: white;
-  position: relative;
-  line-height: 20px;
-}
-
-#color-input-green_d+label {
-  display: block;
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-  position: absolute;
-  top: 107px;
-  left: 15px;
-  border: rgba(106, 166, 102, 1) solid 1px;
-  border-radius: 3px;
-}
-
-
-#color-input-green_d:checked+label::before {
-  display: block;
-  content: "\2714";
-  text-align: center;
-  font-size: 16px;
-  background: rgba(106, 166, 102, 1);
-  color: white;
-  position: relative;
-  line-height: 20px;
+  top: -22px;
+  left: 30px;
 }

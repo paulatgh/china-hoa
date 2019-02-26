@@ -6,7 +6,7 @@
 }
 
 .addalbum-table tr td {
-  height: 24px;
+  height: 26px;
   font-size: 18px;
   font-family: OpenSans-Regular;
   font-weight: 400;
@@ -61,33 +61,3 @@
   cursor: pointer;
 }
 
-input[type=checkbox] {
-  visibility: hidden;
-}
-
-.check-input {
-  position: relative;
-}
-
-#color-input-green_a+label {
-  display: block;
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-  position: absolute;
-  top: 16px;
-  left: 15px;
-  border: rgba(106, 166, 102, 1) solid 1px;
-  border-radius: 3px;
-}
-
-#color-input-green_a:checked+label::before {
-  display: block;
-  content: "\2714";
-  text-align: center;
-  font-size: 16px;
-  background: rgba(106, 166, 102, 1);
-  color: white;
-  position: relative;
-  line-height: 20px;
-}
