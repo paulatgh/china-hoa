@@ -4,7 +4,9 @@ var render = function() {
     $.each(data.volunteer_add_title, function() {
         $('#volunteer_add_title_cycle').append(Mustache.render(volunteer_add_title, this));
     });
-
+    $("#breadcrumbs").after(function() {
+        return Mustache.render($(this).html(), data);
+    });
     _pre_render();
     // Global post render
     _post_render();
