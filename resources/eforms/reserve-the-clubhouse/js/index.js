@@ -5,6 +5,7 @@ var render = function() {
     $.each(data.table_header, function() {
         $('#table_header_cycle').append(Mustache.render(table_header, this));
     });
+    $("#breadcrumbs").after(function() { return Mustache.render($(this).html(), data); });
 
     // Global post render
     _post_render();

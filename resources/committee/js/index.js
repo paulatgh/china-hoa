@@ -1,9 +1,8 @@
 var render = function() {
     _pre_render()
 
-    $('#committee_tiles').after(function() {
-        return Mustache.render($(this).html(), data);
-    });
+    $('#committee_tiles').after(function() {return Mustache.render($(this).html(), data);});
+    $("#breadcrumbs").after(function() { return Mustache.render($(this).html(), data); });
 
     // Global post render
     _post_render();

@@ -7,15 +7,19 @@
 <!-- main body -->
 <div class="investor clearfix">
     <div class="w1200">
-        <ul class="breadcrumb">
-            <li><a href="/home" rel="noopener noreferrer">Home</a></li>
-            <li>&nbsp;>&nbsp;</li>
-            <li><a href="/resources" rel="noopener noreferrer"> Resources </a></li>
-            <li>&nbsp;>&nbsp;</li>
-            <li><a href="/resources/eforms" rel="noopener noreferrer"> eForms</a></li>
-            <li>&nbsp;>&nbsp;</li>
-            <li><a href="#" rel="noopener noreferrer"> Architectural Application</a></li>
-        </ul>
+        <script id="breadcrumbs" type="txt/template">
+            <div class="main-breadcrumb" style="width: 1200px;margin: 0 auto;">
+                            <ul class="breadcrumb">
+                                <li><a href="{{_metadata.root_url}}/home">Home</a></li>
+                                <li>&nbsp;>&nbsp;</li>
+                                <li><a href="{{_metadata.root_url}}/resources">Resources</a></li>
+                                <li>&nbsp;>&nbsp;</li>
+                                <li><a href="{{_metadata.root_url}}/resources/eforms" rel="noopener noreferrer"> eForms</a></li>
+                                <li>&nbsp;>&nbsp;</li>
+                                <li><a href="#?id={{page_title.id}}">{{page_title.title}}</a></li>
+                            </ul>
+                        </div>
+                        </script>
         <table class="eformtable std-table" id="eform20" style="margin-top:20px;">
             <tbody>
                 <tr>
@@ -39,43 +43,43 @@
                     </td>
                 </tr>
                 <form action="post">
-                <input type="hidden" name="rich_format" value="True">
-                <tr>
-                    <td widht="200px" style="text-indent:0px;">Name:</td>
-                    <td><input type="text" value="" name="f105" size="30" maxlength="250">*</td>
-                </tr>
-                <tr>
-                    <td widht="200px" style="text-indent:0px;">Street Address:</td>
-                    <td><input type="text" value="" name="f106" size="30" maxlength="250">*</td>
-                </tr>
-                <tr>
-                    <td widht="200px" style="text-indent:0px;">Lot #:</td>
-                    <td><input type="text" value="" name="f107" size="30" maxlength="250">*</td>
-                </tr>
-                <tr>
-                    <td widht="200px" style="text-indent:0px;">Phone Number:</td>
-                    <td><input type="text" value="" name="f108" size="30" maxlength="250"></td>
-                </tr>
-                <tr>
-                    <td widht="200px" style="text-indent:0px;">Mobile Number:</td>
-                    <td><input type="text" value="" name="f109" size="30" maxlength="250"></td>
-                </tr>
-                <tr>
-                    <td widht="200px" style="text-indent:0px;">Email Address:</td>
-                    <td><input type="text" value="" name="f110" size="30" maxlength="250">*</td>
-                </tr>
-                <tr>
-                    <td style="text-indent:0px;">General Description of Proposed Work:</td>
-                    <td><textarea wrap="virtual" name="f112" cols="50" rows="5"></textarea>*</td>
-                </tr>
-                <tr>
-                    <td style="text-indent:0px;">Sketches, Drawings, Plans:</td>
-                    <td><input type="FILE" name="f114" size="30" maxlength="200"></td>
-                </tr>
-                <tr>
-                    <td style="text-indent:0px;">By checking this box, I agree to the above conditions:</td>
-                    <td><input type="checkbox" name="f111">*</td>
-                </tr>
+                    <input type="hidden" name="rich_format" value="True">
+                    <tr>
+                        <td widht="200px" style="text-indent:0px;">Name:</td>
+                        <td><input type="text" value="" name="f105" size="30" maxlength="250">*</td>
+                    </tr>
+                    <tr>
+                        <td widht="200px" style="text-indent:0px;">Street Address:</td>
+                        <td><input type="text" value="" name="f106" size="30" maxlength="250">*</td>
+                    </tr>
+                    <tr>
+                        <td widht="200px" style="text-indent:0px;">Lot #:</td>
+                        <td><input type="text" value="" name="f107" size="30" maxlength="250">*</td>
+                    </tr>
+                    <tr>
+                        <td widht="200px" style="text-indent:0px;">Phone Number:</td>
+                        <td><input type="text" value="" name="f108" size="30" maxlength="250"></td>
+                    </tr>
+                    <tr>
+                        <td widht="200px" style="text-indent:0px;">Mobile Number:</td>
+                        <td><input type="text" value="" name="f109" size="30" maxlength="250"></td>
+                    </tr>
+                    <tr>
+                        <td widht="200px" style="text-indent:0px;">Email Address:</td>
+                        <td><input type="text" value="" name="f110" size="30" maxlength="250">*</td>
+                    </tr>
+                    <tr>
+                        <td style="text-indent:0px;">General Description of Proposed Work:</td>
+                        <td><textarea wrap="virtual" name="f112" cols="50" rows="5"></textarea>*</td>
+                    </tr>
+                    <tr>
+                        <td style="text-indent:0px;">Sketches, Drawings, Plans:</td>
+                        <td><input type="FILE" name="f114" size="30" maxlength="200"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-indent:0px;">By checking this box, I agree to the above conditions:</td>
+                        <td><input type="checkbox" name="f111">*</td>
+                    </tr>
                 </form>
             </tbody>
         </table>

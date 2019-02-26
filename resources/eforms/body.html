@@ -1,19 +1,22 @@
 <!-- header -->
 <div class="header" style="box-shadow:0 2px 7px 0px rgba(0,0,0,0.5); border:1px solid rgba(151,151,151,1)">
-   
+
 </div>
 <!-- main body -->
 <div class="main">
     <div class="main-top clearfix" style="margin-bottom: 35px;height: 100%;">
-
         <div class="w1200 pr">
-            <ul class="breadcrumb">
-                <li><a href="/home" rel="noopener noreferrer">Home</a></li>
-                <li><span target="_blank" rel="noopener noreferrer" style="color: #6AA666"> > </span></li>
-                <li><a href="/resources" rel="noopener noreferrer"> Resources </a></li>
-                <li><span target="_blank" rel="noopener noreferrer" style="color:#6AA666"> > </span></li>
-                <li><a href="#" rel="noopener noreferrer">eForms</a></li>
-            </ul>
+            <script id="breadcrumbs" type="txt/template">
+                <div class="main-breadcrumb" style="width: 1200px;margin: 0 auto;">
+                            <ul class="breadcrumb">
+                                <li><a href="{{_metadata.root_url}}/home">Home</a></li>
+                                <li>&nbsp;>&nbsp;</li>
+                                <li><a href="{{_metadata.root_url}}/resources">Resources</a></li>
+                                <li>&nbsp;>&nbsp;</li>
+                                <li><a href="#?id={{page_title.id}}">{{page_title.title}}</a></li>
+                            </ul>
+                        </div>
+                        </script>
             <div class="main-left" style="width:100%;height: 100%;">
                 <div class="form_1">
                     <div class="form_title" id="eforms_type_cycle">
@@ -25,7 +28,7 @@
 
                     <ul id="eforms_content_cycle">
                         <script id="eforms_content" type="txt/template">
-                            <li><a href="{{link}}">{{title}}</a></li>
+                            <li><a href="{{_metadata.root_url}}{{link}}?id={{id}}">{{title}}</a></li>
                         </script>
                     </ul>
                 </div>
@@ -37,7 +40,7 @@
                             </script>
                         </div>
                         <script id="function_button_name" type="txt/template">
-                            <a href="{{link}}">
+                            <a href="{{_metadata.root_url}}{{link}}?id={{id}}">
                             <div class="form_title_right">{{name}}</div>
                             </a>
                         </script>

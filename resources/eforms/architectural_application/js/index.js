@@ -3,6 +3,7 @@ var render = function() {
 
     $('#page_title').after(function() { return Mustache.render($(this).html(), data.eform); });
     $('#article_title').after(function() { return Mustache.render($(this).html(), data.eform); });
+    $("#breadcrumbs").after(function() { return Mustache.render($(this).html(), data); });
 
     // Global post render
     _post_render();
