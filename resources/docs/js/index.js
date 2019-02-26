@@ -4,29 +4,22 @@ var render = function () {
     var HomeownersAssociation = $('#HomeownersAssociation').html();
     Mustache.parse(HomeownersAssociation);
     $.each(data.homeowners_association, function () {
-        $('#HomeownersAssociationExternal').append(Mustache.render(HomeownersAssociation, this));
-    });
-
+    $('#HomeownersAssociationExternal').append(Mustache.render(HomeownersAssociation, this)); });
     var HomeownersAssociation = $('#HomeownersAssociation').html();
     Mustache.parse(HomeownersAssociation);
     $.each(data.homeowners_association_second, function () {
-        $('#HomeownersAssociationSecondExternal').append(Mustache.render(HomeownersAssociation, this));
-    });
-
+    $('#HomeownersAssociationSecondExternal').append(Mustache.render(HomeownersAssociation, this));});
     $('#category_template').after(function() { return Mustache.render($(this).html(), data); });
     $('#documents_template').after(function() { return Mustache.render($(this).html(), data); });
-
     var categoryName = $('#categoryName').html();
     Mustache.parse(categoryName);
     $.each(data.category_name, function () {
-        $('#categoryNameExternal').append(Mustache.render(categoryName, this));
-    });
-
+    $('#categoryNameExternal').append(Mustache.render(categoryName, this));});
     var PDFcategoryList = $('#PDFcategoryList').html();
     Mustache.parse(PDFcategoryList);
     $.each(data.pdf_category, function () {
-        $('#PDFcategoryListExternal').append(Mustache.render(PDFcategoryList, this));
-    });
+    $('#PDFcategoryListExternal').append(Mustache.render(PDFcategoryList, this));});
+    $("#breadcrumbs").after(function() { return Mustache.render($(this).html(), data); });
 
     // Global post render
     _post_render();

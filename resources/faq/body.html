@@ -6,13 +6,17 @@
 <div class="main">
     <div class="main-top clearfix" style="margin-bottom: 35px;height: 100%;">
         <div class="w1200 pr">
-            <ul class="breadcrumb">
-                <li><a href="/home" rel="noopener noreferrer">Home</a></li>
-                <li>&nbsp;>&nbsp;</li>
-                <li><a href="/resources" rel="noopener noreferrer"> Resources </a></li>
-                <li>&nbsp;>&nbsp;</li>
-                <li><a href="#" rel="noopener noreferrer"> FAQ's</a></li>
-            </ul>
+            <script id="breadcrumbs" type="txt/template">
+                <div class="main-breadcrumb" style="width: 1200px;margin: 0 auto;">
+                            <ul class="breadcrumb">
+                                <li><a href="{{_metadata.root_url}}/home">Home</a></li>
+                                <li>&nbsp;>&nbsp;</li>
+                                <li><a href="{{_metadata.root_url}}/resources"> Resources </a></li>
+                                <li>&nbsp;>&nbsp;</li>
+                                <li><a href="#?id={{page_title.id}}">{{page_title.title}}</a></li>
+                            </ul>
+                        </div>
+                        </script>
             <div class="main-left" style="width:100%;height: 100%;">
                 <div class="form_2">
                     <div class="form_title">

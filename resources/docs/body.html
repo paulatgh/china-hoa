@@ -5,13 +5,17 @@
 <!-- main body -->
 <div class="investor clearfix">
     <div class="main-breadcrumb" style="width: 1200px;margin: 0 auto">
-        <ul class="breadcrumb" style="float: left">
-            <li><a href="/home">Home</a></li>
-            <li>&nbsp;>&nbsp;</li>
-            <li><a href="/resources">Resources</a></li>
-            <li>&nbsp;>&nbsp;</li>
-            <li><a href="#">Docs</a></li>
-        </ul>
+        <script id="breadcrumbs" type="txt/template">
+            <div class="main-breadcrumb" style="width: 1200px;margin: 0 auto;">
+                        <ul class="breadcrumb">
+                            <li><a href="{{_metadata.root_url}}/home">Home</a></li>
+                            <li>&nbsp;>&nbsp;</li>
+                            <li><a href="{{_metadata.root_url}}/resources">Resources</a></li>
+                            <li>&nbsp;>&nbsp;</li>
+                            <li><a href="#?id={{page_title.id}}">{{page_title.title}}</a></li>
+                        </ul>
+                    </div>
+                    </script>
     </div>
     <div class="w1200">
         <div class="w838">

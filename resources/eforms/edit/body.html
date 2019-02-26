@@ -8,19 +8,19 @@
 <div style="height:1200px">
 
     <div class="w1200" style="margin-bottom:60px">
-        <ul class="breadcrumb">
-            <li><a href="/home">Home</a></li>
-            <li><span rel="noopener noreferrer" style="color:rgba(30,130,23,1)"> > </span></li>
-            <li><a href="/resources">Resources</a></li>
-            <li><span rel="noopener noreferrer" style="color:rgba(30,130,23,1)"> > </span></li>
-            <li><a href="/resources/eforms">eForms</a></li>
-            <li><span rel="noopener noreferrer" style="color:rgba(30,130,23,1)"> > </span></li>
-            <li><a href="#">Edit eForms</a></li>
-        </ul>
-        <!-- <script id="edit_eforms" type="txt/template">
-            {{{body}}}
-        </script> -->
-
+        <script id="breadcrumbs" type="txt/template">
+            <div class="main-breadcrumb" style="width: 1200px;margin: 0 auto;">
+                            <ul class="breadcrumb">
+                                <li><a href="{{_metadata.root_url}}/home">Home</a></li>
+                                <li>&nbsp;>&nbsp;</li>
+                                <li><a href="{{_metadata.root_url}}/resources">Resources</a></li>
+                                <li>&nbsp;>&nbsp;</li>
+                                <li><a href="{{_metadata.root_url}}/resources/eforms">eForms</a></li>
+                                <li>&nbsp;>&nbsp;</li>
+                                <li><a href="#?id={{title.id}}">{{title.title}}</a></li>
+                            </ul>
+                        </div>
+                        </script>
         <table class="std-table" border="0" width="90%" bgcolor="#6AA666">
             <tr>
                 <td style="height: 64px; padding-left: 24px;">

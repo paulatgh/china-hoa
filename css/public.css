@@ -9,7 +9,7 @@
 .mas-ab .mas-tib{background:#449F41;width:0;height: 2px;position: absolute;bottom:68px;left:-360px;z-index:12;}
 .ms-timerbar{bottom:68px !important;top:inherit !important;}
 .ban-len{width:54px;height:20px;position: absolute;bottom:60px;left:45px;color:#fff;font-family: 'dinCond-Medium';font-size: 16px;}
-
+.breadcrumb li{color: rgba(30, 130, 23, 1)}
 
 .master-slider .pics-ban1{top:25% !important;right:15% !important;}
 .master-slider .pics-ban2{top:35% !important;left:43% !important;}
