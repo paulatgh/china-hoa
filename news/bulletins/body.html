@@ -6,16 +6,17 @@ border:1px solid rgba(151,151,151,1);">
 
 <!-- main -->
 <div class="main" style="height:100%">
+    <script id="breadcrumbs" type="txt/template">
     <div class="main-breadcrumb" style="width: 1200px;margin: 0 auto">
         <ul class="breadcrumb" style="float: left">
-            <li><a href="/home">Home</a></li>
+            <li><a href="{{_metadata.root_url}}/home">Home</a></li>
             <li>&nbsp;>&nbsp;</li>
-            <li><a href="/news">News</a></li>
+            <li><a href="{{_metadata.root_url}}/news">News</a></li>
             <li>&nbsp;>&nbsp;</li>
-            <li><a href="#">Email Bulletin</a></li>
+            <li><a href="#?id={{bulletins_title.id}}">{{bulletins_title.title}}</a></li>
         </ul>
     </div>
-
+   </script>
     <div class="main-center">
         <p class="photo-albums" id="the_title_cycle">
             <script id="the_title" type="txt/template">
@@ -24,7 +25,7 @@ border:1px solid rgba(151,151,151,1);">
         </p>
         <div class="address_book_click" id="email_button_cycle">
             <script id="email_button" type="txt/template">
-                <button><a href="{{link}}">{{title}}</a></button>
+                <button><a href="{{_metadata.root_url}}{{link}}?id={{id}}">{{title}}</a></button>
         </script>
         </div>
 

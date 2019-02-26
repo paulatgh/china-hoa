@@ -6,25 +6,26 @@ border:1px solid rgba(151,151,151,1)">
 <!-- main -->
 <div style="height:1200px">
     <div class="w1200" style="margin-bottom:60px">
-        <ul class="breadcrumb">
-            <li><a href="/home">Home</a></li>
+        <script id="breadcrumbs" type="txt/template">
+            <ul class="breadcrumb">
+            <li><a href="{{_metadata.root_url}}/home">Home</a></li>
             <li><span rel="noopener noreferrer" style="color:rgba(30,130,23,1)"> > </span></li>
-            <li><a href="/news">News</a></li>
+            <li><a href="{{_metadata.root_url}}/news">News</a></li>
             <li><span rel="noopener noreferrer" style="color:rgba(30,130,23,1)"> > </span></li>
-            <li><a href="/news/bulletins">Email Bulletin</a></li>
+            <li><a href="{{_metadata.root_url}}/news/bulletins">Email Bulletin</a></li>
             <li><span rel="noopener noreferrer" style="color:rgba(30,130,23,1)"> > </span></li>
-            <li><a href="#">Send HTML</a></li>
+            <li><a href="#?id={{page_title.id}}">{{page_title.title}}</a></li>
         </ul>
+        </script>
         <table class="std-table" border="0" width="90%" bgcolor="#6AA666">
             <tr>
                 <td style="height: 64px; padding-left: 24px;">
                     <font size="5" face="Verdana, Arial, Helvetica" color="#ffffff">
-                            <div id="page_add_title_cycle">
-                                    <script id="page_add_title" type="txt/template">
-                                        {{name}}
+                        <div id="page_add_title_cycle">
+                            <script id="page_add_title" type="txt/template">
+                                {{name}}
                                     </script>
-                                </div>
-                       
+                        </div>
                     </font>
                 </td>
             </tr>
@@ -45,32 +46,32 @@ border:1px solid rgba(151,151,151,1)">
                     <td>
                         From eMail Address:
                     </td>
-                    <td><input type="text"  size="10" maxlength="10" style="width:180px;height:28px;"></td>
+                    <td><input type="text" size="10" maxlength="10" style="width:180px;height:28px;"></td>
                 </tr>
                 <tr>
                     <td>
                         To:
                     </td>
                     <td>
-                       <select size="1" name="sendTo" id="sendToSelect" style="width:240px;height:32px;">
-                           <option selected="" value="none">(None)</option>
-                           <option value="maillist_category">eMail Bulletin Category</option>
-                           <option value="person_category">Address Book Category</option>
-                           <option value="subdivision">Subdivision</option>
-                           <option value="all">All</option>
-                           <option value="eform">eForm</option>
-                           <option value="survey">Survey</option>
+                        <select size="1" name="sendTo" id="sendToSelect" style="width:240px;height:32px;">
+                            <option selected="" value="none">(None)</option>
+                            <option value="maillist_category">eMail Bulletin Category</option>
+                            <option value="person_category">Address Book Category</option>
+                            <option value="subdivision">Subdivision</option>
+                            <option value="all">All</option>
+                            <option value="eform">eForm</option>
+                            <option value="survey">Survey</option>
 
-                           <option value="last_login">Last Login Date</option>
-                       </select>
-                   </td>
+                            <option value="last_login">Last Login Date</option>
+                        </select>
+                    </td>
                 </tr>
                 <tr>
                     <td>
                         Subject:
                     </td>
                     <td>
-                       <input type="text" name="event_start_dt" size="10" maxlength="10" style="width:180px;height:28px;">
+                        <input type="text" name="event_start_dt" size="10" maxlength="10" style="width:180px;height:28px;">
                     </td>
                 </tr>
                 <tr>
@@ -78,7 +79,7 @@ border:1px solid rgba(151,151,151,1)">
                         Linked File:
                     </td>
                     <td>
-                        <input type="file" size="30" maxlength="200"style="width:180px;height:28px;">
+                        <input type="file" size="30" maxlength="200" style="width:180px;height:28px;">
                     </td>
                 </tr>
                 <tr>
@@ -88,16 +89,17 @@ border:1px solid rgba(151,151,151,1)">
                     <td><textarea wrap="virtual" name="full_desc" cols="50" rows="5" style="width:564px;height:160px;"></textarea></td>
                 </tr>
             </table>
+            <p class="p-input">
+                <input type="submit" value="Send Email Bulletin">
+                <input type="submit" onclick="location.href='/news/bulletins'" value="Cancel">
+            </p>
         </form>
-        <p class="p-input">
-        <input type="submit"  value="Send Email Bulletin">
-        <input type="submit" onclick="location.href='/news/bulletins'"value="Cancel">
-        </p>   
+
         </font>
         </td>
-    </tr>
-</tbody>
-</table>
+        </tr>
+        </tbody>
+        </table>
 
     </div>
 </div>
