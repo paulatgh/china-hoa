@@ -43,14 +43,6 @@
   color: rgba(151, 151, 151, 1);
 }
 
-.calendar-table .check-input input {
-  width: 20px;
-  height: 20px;
-  background: rgba(106, 166, 102, 1);
-  border-radius: 3px;
-  border: 1px solid rgba(106, 166, 102, 1);
-}
-
 .p-input {
   width: 90%;
   margin: 20px 0;
