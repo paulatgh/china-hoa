@@ -86,8 +86,16 @@
                     <div id="myId" class="jalendar">
                         <div id="calendar_cycle">
                             <script id="calendar_left" type="txt/template">
-                                <div class="added-event" data-name="{{data_name}}" data-date="{{data_date}}" data-time="{{data_time}}" data-title="{{data_title}}" data-content="{{data_content}}" data-place="{{data_place}}"></div>
-                                        </script>
+                                <div
+                                    class="added-event"
+                                    data-name="{{creator}}"
+                                    data-date="{{date}}"
+                                    data-time="{{time}}"
+                                    data-title="{{title}}"
+                                    data-content="{{abbreviated_body}}"
+                                    data-place="{{location}}">
+                                </div>
+                            </script>
                         </div>
                     </div>
                     <div class="calendar-right" id="date">
@@ -95,7 +103,7 @@
                             <div class="jump" data={{link}}>
                                 <p>{{friendly_date}}</p>
                                 <p>
-                                    <span>{{data_title}}</span>
+                                    <span>{{title}}</span>
                                     <a href="javascript:;">more</a>
                                 </p>
                             </div>

@@ -20,7 +20,7 @@ var render = function() {
             $(this).css('background', `url(${item.img}) no-repeat  center 50px`)
         })
     })
-    $.each(data.calendar, function() {
+    $.each(data.events, function() {
         $('#date').append(Mustache.render(date_template, this));
     });
 
@@ -61,7 +61,7 @@ var render = function() {
     //calendar
     var calendar = $('#calendar_left').html();
     Mustache.parse(calendar);
-    $.each(data.calendar, function() {
+    $.each(data.events, function() {
         $('#calendar_cycle').append(Mustache.render(calendar, this));
     });
 
