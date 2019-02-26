@@ -2,17 +2,21 @@ var render = function() {
     _pre_render();
     var event_template = $('#event_template').html();
     Mustache.parse(event_template);
-    $.each(data.calendar, function () {
+    $.each(data.calendar, function() {
         $('#calendar_events').append(Mustache.render(event_template, this));
     });
-
+    $("#breadcrumbs").after(function() {
+        return Mustache.render($(this).html(), data);
+    });
     var calendar = $('#calendar_left').html();
     Mustache.parse(calendar);
     $.each(data.calendar, function() {
         $('#calendar_cycle').append(Mustache.render(calendar, this));
     });
 
-    $('#action_buttons_template').after(function() { return Mustache.render($(this).html(), data); });
+    $('#action_buttons_template').after(function() {
+        return Mustache.render($(this).html(), data);
+    });
 
     // Global post render
     _post_render();

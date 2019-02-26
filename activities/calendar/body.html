@@ -15,13 +15,17 @@
 <div class="main">
     <div class="main-top" style="margin-bottom: 35px;height: 100%;">
         <div class="w1200 pr">
-            <ul class="breadcrumb">
-                <li><a href="/home" rel="noopener noreferrer">Home</a></li>
-                <li><span rel="noopener noreferrer" style="color:rgba(30,130,23,1)"> > </span></li>
-                <li><a href="/activities" rel="noopener noreferrer">Events</a></li>
-                <li><span rel="noopener noreferrer" style="color:rgba(30,130,23,1)"> > </span></li>
-                <li><a href="#" rel="noopener noreferrer"> Events Calendar</a></li>
-            </ul>
+            <script id="breadcrumbs" type="txt/template">
+                <div class="main-breadcrumb" style="width: 1200px;margin: 0 auto">
+                        <ul class="breadcrumb" style="float: left">
+                            <li><a href="{{_metadata.root_url}}/home">Home</a></li>
+                            <li>&nbsp;>&nbsp;</li>
+                            <li><a href="{{_metadata.root_url}}/activities">Events</a></li>
+                            <li>&nbsp;>&nbsp;</li>
+                            <li><a href="#?id={{page_title.id}}">Events Calendar</a></li>
+                        </ul>
+                    </div>
+                </script>
             <div class="action-buttons-top">
                 <script id="action_buttons_template" type="txt/template">
                     {{#action_buttons}}
