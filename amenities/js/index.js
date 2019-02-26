@@ -1,35 +1,8 @@
 var render = function() {
     _pre_render();
 
-    var page_title = $('#page_title').html();
-    $.each(data.page_title, function() {
-        $('#page_title_cycle').append(Mustache.render(page_title, this));
-    });
-
-    var community = $('#community').html();
-    $.each(data.community, function() {
-        $('#community_cycle').append(Mustache.render(community, this));
-    });
-
-    var olympic_games = $('#olympic_games').html();
-    $.each(data.olympic_games, function() {
-        $('#olympic_games_cycle').append(Mustache.render(olympic_games, this));
-    });
-
-    var Clubhouse = $('#clubhouse').html();
-    $.each(data.clubhouse, function() {
-        $('#clubhouse_cycle').append(Mustache.render(Clubhouse, this));
-    });
-
-    var Children = $('#Children').html();
-    $.each(data.children, function() {
-        $('#children_cycle').append(Mustache.render(Children, this));
-    });
-
-    var GreenFields = $('#green_fields').html();
-    $.each(data.green_fields, function() {
-        $('#green_fields_cycle').append(Mustache.render(GreenFields, this));
-    });
+    $('#page_title').after(function() { return Mustache.render($(this).html(), data); });
+    $("#sections").after(function() { return Mustache.render($(this).html(), data); });
 
     // Global post render
     _post_render();
