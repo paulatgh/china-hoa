@@ -7,13 +7,15 @@ border:1px solid rgba(151,151,151,1);">
 <!-- main body -->
 <div class="main">
     <div class="main-breadcrumb" style="width: 1200px;margin: 0 auto">
+        <script id="breadcrumbs" type="txt/template">
         <ul class="breadcrumb" style="float: left">
-            <li><a href="/home">Home</a></li>
+            <li><a href="{{_metadata.root_url}}/home">Home</a></li>
             <li>&nbsp;>&nbsp;</li>
-            <li><a href="/news">News</a></li>
+            <li><a href="{{_metadata.root_url}}/news">News</a></li>
             <li>&nbsp;>&nbsp;</li>
-            <li><a href="#">Announcements</a></li>
+            <li><a href="#?id={{announcements_title.id}}">{{announcements_title.title}}</a></li>
         </ul>
+    </script>
     </div>
 
     <div class="main-center">
@@ -26,7 +28,7 @@ border:1px solid rgba(151,151,151,1);">
                     <div class="announcements_add" id="add_cycle">
                         <script id="add" type="txt/template">
                             {{#action_buttons}}
-                            <a href="{{link}}">{{action}}</a>
+                            <a href="{{_metadata.root_url}}{{_metadata.page_path}}/add?id={{announcements_title.id}}">Add</a>
                             {{/action_buttons}}
                         </script>
                     </div>
@@ -37,10 +39,10 @@ border:1px solid rgba(151,151,151,1);">
                                     <span>
                                         <a href="{{edit_link}}">Edit</a>
                                     </span>
-                                    <span class="del">Delete</span>
+                                    <span class="del" data-action="{{delete_link}}">Delete</span>
                                 </div>
                                 <h5>
-                                    <a href="{{link}}" class="dao" style="width: 292px">
+                                    <a href="{{_metadata.root_url}}{{link}}?id={{id}}" class="dao" style="width: 292px">
                                         {{title}}
                                     </a>
                                 </h5>

@@ -7,20 +7,21 @@
 
 <!-- main body -->
 <div class="main" style="height:1100px">
+    <script id="breadcrumbs" type="txt/template">
     <div class="main-breadcrumb" style="width: 1200px;margin: 0 auto;">
         <ul class="breadcrumb">
-            <li><a href="/home">Home</a></li>
+            <li><a href="{{_metadata.root_url}}/home">Home</a></li>
             <li>&nbsp;>&nbsp;</li>
-            <li><a href="#">News</a></li>
+            <li><a href="#?id={{page_title.id}}">{{page_title.title}}</a></li>
         </ul>
     </div>
-
+    </script>
     <div class="main-center">
 
         <div class="content-1" id="news_list">
             <script id="news_template" type="txt/template">
                 <div class="Events-Calendar" style="background-image:url('{{img}}')">
-                         <a href="{{link}}" style="height:100%">
+                         <a href="{{_metadata.root_url}}{{link}}?id={{id}}" style="height:100%">
                             <div class="calendar-img">
                                 <p>{{title}}</p>
                             </div>

@@ -6,19 +6,24 @@ border:1px solid rgba(151,151,151,1)">
 <div class="main">
     <div class="main-top" style="margin-bottom: 35px;height: 100%;">
         <div class="w1200 pr" style="height: 100%;">
+            <script id="breadcrumbs" type="txt/template">
             <ul class="breadcrumb">
-                <li><a href="/home" rel="noopener noreferrer">Home</a></li>
+                <li><a href="{{_metadata.root_url}}/home" rel="noopener noreferrer">Home</a></li>
                 <li>&nbsp;>&nbsp;</li>
-                <li><a href="/news" rel="noopener noreferrer">News</a></li>
+                <li><a href="{{_metadata.root_url}}/news" rel="noopener noreferrer">News</a></li>
                 <li>&nbsp;>&nbsp;</li>
-                <li><a href="#" rel="noopener noreferrer">Volunteer Needs</a></li>
+                <li><a href="#?id={{page_title.id}}">{{page_title.title}}</a></li>
             </ul>
+        </script>
             <div class="main-left" style="width:100%;height: 100%;">
                 <div id="main_volunteer">
                     <script id="volunteer_title" type="txt/template">
                         <h3>{{title}}</h3>
                         <div class="Volunteer_dec">{{description}}</div>
-                        <div style="width: 100%;margin-bottom: 16px"><a class="top-Add" href="{{link}}">{{submit}}</a> </div>
+                        
+                    </script>
+                    <script id="add_links" type="txt/template">
+                    <div style="width: 100%;margin-bottom: 16px"><a class="top-Add" href="{{_metadata.root_url}}{{_metadata.page_path}}/add?id={{page_title.id}}">Add</a> </div>
                     </script>
                 </div>
                 <div class="tiles">
