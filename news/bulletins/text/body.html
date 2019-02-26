@@ -7,24 +7,26 @@
 <div style="height:1100px">
 
     <div class="w1200">
-        <ul class="breadcrumb">
-            <li><a href="/home">Home</a></li>
+        <script id="breadcrumbs" type="txt/template">
+            <ul class="breadcrumb">
+            <li><a href="{{_metadata.root_url}}/home">Home</a></li>
             <li><span rel="noopener noreferrer" style="color:rgba(30,130,23,1)"> > </span></li>
-            <li><a href="/news">News</a></li>
+            <li><a href="{{_metadata.root_url}}/news">News</a></li>
             <li><span rel="noopener noreferrer" style="color:rgba(30,130,23,1)"> > </span></li>
-            <li><a href="/news/bulletins">Email Bulletin</a></li>
+            <li><a href="{{_metadata.root_url}}/news/bulletins">Email Bulletin</a></li>
             <li><span rel="noopener noreferrer" style="color:rgba(30,130,23,1)"> > </span></li>
-            <li><a href="#">Send Plain Text</a></li>
+            <li><a href="#?id={{text_title.id}}">{{text_title.title}}</a></li>
         </ul>
+    </script>
         <table class="std-table" border="0" width="90%" bgcolor="#6AA666">
             <tr>
                 <td style="height: 64px; padding-left: 24px;">
                     <font size="5" face="Verdana, Arial, Helvetica" color="#ffffff">
-                            <div id="text_add_title_cycle">
-                                    <script id="text_add_title" type="txt/template">
-                                        {{name}}
+                        <div id="text_add_title_cycle">
+                            <script id="text_add_title" type="txt/template">
+                                {{name}}
                                     </script>
-                                </div>
+                        </div>
                     </font>
                 </td>
             </tr>
@@ -53,7 +55,7 @@
                     </td>
                     <td>
                         <select size="1" name="sendTo" id="sendToSelect" style="width:240px;height:32px;">
-                               <option selected="" value=" none">(None)</option>
+                            <option selected="" value=" none">(None)</option>
                             <option value="maillist_category">eMail Bulletin Category</option>
                             <option value="person_category">Address Book Category</option>
                             <option value="subdivision">Subdivision</option>
@@ -88,13 +90,14 @@
                     <td><textarea wrap="virtual" name="full_desc" cols="50" rows="5" style="width:564px;height:160px;"></textarea></td>
                 </tr>
             </table>
+            <p class="p-input">
+
+                <input type="submit" value="Send Email Bulletin">
+                <input type="submit" onclick="location.href='/news/bulletins'" value="Cancel">
+
+            </p>
         </form>
-        <p class="p-input">
 
-            <input type="submit" value="Send Email Bulletin">
-            <input type="submit" onclick="location.href='/news/bulletins'" value="Cancel">
-
-        </p>
         </font>
         </td>
         </tr>

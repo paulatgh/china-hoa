@@ -39,7 +39,7 @@
 .subNav{float:right;position:relative;height:62px;}
 .subNav li{float:left;padding:0 5px;line-height:62px;}
 .subNav li a{font-size:13px;color:#848181;padding:0 5px;font-weight:bold;}
-.subNav .sub-navslip{position:absolute;width:0;height:2px; background:#f5a100;bottom:-2px;left:15px;    
+.subNav .sub-navslip{position:absolute;width:0;height:2px; background:#f5a100;bottom:-2px;left:15px;
 	background:-webkit-gradient(linear,115% 0%, 0% 100%, from(#fff), to(#FFFFFF), color-stop(0.5,#f5a100));}
 
 
@@ -542,22 +542,22 @@
 .worMap-2:hover .worH-2{opacity:1;filter:Alpha(opacity=100);}
 
 .styled-checkbox {
-	-webkit-appearance: none;
-	width: 21px;
-	height: 20px;
-	border: rgba(106, 166, 102, 1) solid 1px;
-	border-radius: 3px;
-  }
-  
-  .styled-checkbox:checked {
-	background: rgba(106, 166, 102, 1);
-  }
-  
-  .styled-checkbox:checked:after {
-	content: "\2714";
-	font-size: 20px;
-	color: white;
-	position: relative;
-	top: -3px;
-	left: 1px;
-  }
+  -webkit-appearance: none;
+  width: 21px;
+  height: 20px;
+  border: rgba(106, 166, 102, 1) solid 1px;
+  border-radius: 3px;
+}
+
+.styled-checkbox:checked {
+  background: rgba(106, 166, 102, 1);
+}
+
+.styled-checkbox:checked:after {
+  content: "\2714";
+  font-size: 20px;
+  color: white;
+  position: relative;
+  top: -3px;
+  left: 1px;
+}

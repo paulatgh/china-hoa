@@ -1,5 +1,8 @@
 var render = function() {
     _pre_render();
+    $("#breadcrumbs").after(function() {
+        return Mustache.render($(this).html(), data);
+    });
     var custom_template = $('#custom_template').html();
     Mustache.parse(custom_template);
     $.each(data.template, function() {
