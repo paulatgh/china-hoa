@@ -7,15 +7,19 @@ border:1px solid rgba(151,151,151,1)">
 <!-- main -->
 <div class="investor clearfix" style="height: 1138px">
     <div class="w1200" style="margin-top:10px;margin-bottom: 60px">
-        <ul class="breadcrumb">
-            <li><a href="/home" rel="noopener noreferrer">Home</a></li>
-            <li><span rel="noopener noreferrer" style="color:rgba(30,130,23,1)"> > </span></li>
-            <li><a href="/activities" rel="noopener noreferrer">Events</a></li>
-            <li><span rel="noopener noreferrer" style="color:rgba(30,130,23,1)"> > </span></li>
-            <li><a href="/activities/calendar" rel="noopener noreferrer"> Events Calendar</a></li>
-            <li><span rel="noopener noreferrer" style="color:rgba(30,130,23,1)"> > </span></li>
-            <li><a href="#" rel="noopener noreferrer">Add New Events</a></li>
-        </ul>
+        <script id="breadcrumbs" type="txt/template">
+            <div class="main-breadcrumb" style="width: 1200px;margin: 0 auto">
+                        <ul class="breadcrumb" style="float: left">
+                            <li><a href="{{_metadata.root_url}}/home">Home</a></li>
+                            <li>&nbsp;>&nbsp;</li>
+                            <li><a href="{{_metadata.root_url}}/activities">Events</a></li>
+                            <li>&nbsp;>&nbsp;</li>
+                            <li><a href="{{_metadata.root_url}}/activities/calendar"> Events Calendar</a></li>
+                            <li>&nbsp;>&nbsp;</li>
+                            <li><a href="#?id={{page_title.id}}">{{page_title.title}}</a></li>
+                        </ul>
+                    </div>
+                </script>
         <div id="content">
             <div class="main-center">
                 <table class="std-table" border="0" width="90%" bgcolor="#6AA666">

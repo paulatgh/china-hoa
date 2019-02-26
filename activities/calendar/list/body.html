@@ -8,15 +8,19 @@
 <!-- main body -->
 <div class="main">
     <div class="main-breadcrumb" style="width: 1200px;margin: 0 auto">
-        <ul class="breadcrumb" style="float: left">
-            <li><a href="/home">Home</a></li>
-            <li>&nbsp;>&nbsp;</li>
-            <li><a href="/activities">Events</a></li>
-            <li>&nbsp;>&nbsp;</li>
-            <li><a href="/activities/calendar">Events Calendar</a></li>
-            <li>&nbsp;>&nbsp;</li>
-            <li><a href="#">Recently Added Events</a></li>
-        </ul>
+        <script id="breadcrumbs" type="txt/template">
+            <div class="main-breadcrumb" style="width: 1200px;margin: 0 auto">
+                        <ul class="breadcrumb" style="float: left">
+                            <li><a href="{{_metadata.root_url}}/home">Home</a></li>
+                            <li>&nbsp;>&nbsp;</li>
+                            <li><a href="{{_metadata.root_url}}/activities">Events</a></li>
+                            <li>&nbsp;>&nbsp;</li>
+                            <li><a href="{{_metadata.root_url}}/activities/calendar">Events Calendar</a></li>
+                            <li>&nbsp;>&nbsp;</li>
+                            <li><a href="#?id={{page_title.id}}">{{page_title.title}}</a></li>
+                        </ul>
+                    </div>
+                </script>
     </div>
 
     <div class="main-center">

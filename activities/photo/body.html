@@ -7,13 +7,17 @@
 <!-- main body -->
 <div class="main">
     <div class="main-breadcrumb" style="width: 1200px;margin: 0 auto">
-        <ul class="breadcrumb" style="float: left">
-            <li><a href="/home">Home</a></li>
-            <li>&nbsp;>&nbsp;</li>
-            <li><a href="/activities">Events</a></li>
-            <li>&nbsp;>&nbsp;</li>
-            <li><a href="#">Albums</a></li>
-        </ul>
+        <script id="breadcrumbs" type="txt/template">
+            <div class="main-breadcrumb" style="width: 1200px;margin: 0 auto">
+                        <ul class="breadcrumb" style="float: left">
+                            <li><a href="{{_metadata.root_url}}/home">Home</a></li>
+                            <li>&nbsp;>&nbsp;</li>
+                            <li><a href="{{_metadata.root_url}}/activities">Events</a></li>
+                            <li>&nbsp;>&nbsp;</li>
+                            <li><a href="#?id={{page_title.id}}">{{page_title.title}}</a></li>
+                        </ul>
+                    </div>
+                </script>
     </div>
     <div class="main-center">
         <p class="photo-albums" id="photo_title_cycle">

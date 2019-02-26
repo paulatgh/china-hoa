@@ -1,13 +1,10 @@
 var render = function () {
     _pre_render();
-    // var event_template = $('#event_template').html();
-    // Mustache.parse(event_template);
-    // $.each(data.albums, function () {
-    //     $('#events_photo').append(Mustache.render(event_template, this));
-    // });
+
     $('#photo_albums').after(function() { return Mustache.render($(this).html(), data); });
     $('#upload_photo_album_selector').after(function() { return Mustache.render($(this).html(), data); });
     $('#upload_photo_links').after(function() { return Mustache.render($(this).html(), data); });
+    $("#breadcrumbs").after(function() { return Mustache.render($(this).html(), data); });
 
     // Global post render
     _post_render();

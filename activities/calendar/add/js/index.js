@@ -1,8 +1,6 @@
 var render = function() {
     _pre_render();
-    // var event_template = $('#add').html();
-    // Mustache.parse(event_template);
-    // $('#add').after(Mustache.render(event_template, data));
+    $("#breadcrumbs").after(function() { return Mustache.render($(this).html(), data); });
 
     // Global post render
     _post_render();

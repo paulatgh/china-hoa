@@ -6,6 +6,7 @@ var render = function () {
     $.each(data.activities, function () {
         $('#events_photo').append(Mustache.render(event_template, this));
     });
+    $("#breadcrumbs").after(function() { return Mustache.render($(this).html(), data); });
 
     // Global post render
     _post_render();
