@@ -2,7 +2,7 @@ var render = function() {
     _pre_render();
     var event_template = $('#event_template').html();
     Mustache.parse(event_template);
-    $.each(data.calendar, function() {
+    $.each(data.events, function() {
         $('#calendar_events').append(Mustache.render(event_template, this));
     });
     $("#breadcrumbs").after(function() {
@@ -10,7 +10,7 @@ var render = function() {
     });
     var calendar = $('#calendar_left').html();
     Mustache.parse(calendar);
-    $.each(data.calendar, function() {
+    $.each(data.events, function() {
         $('#calendar_cycle').append(Mustache.render(calendar, this));
     });
 
