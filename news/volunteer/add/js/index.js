@@ -1,7 +1,9 @@
 var render = function() {
-    // var content_template = $('#add').html();
-    // Mustache.parse(content_template);
-    // $('#add').after(Mustache.render(content_template, data));
+    var volunteer_add_title = $('#volunteer_add_title').html();
+    Mustache.parse(volunteer_add_title);
+    $.each(data.volunteer_add_title, function() {
+        $('#volunteer_add_title_cycle').append(Mustache.render(volunteer_add_title, this));
+    });
 
     _pre_render();
     // Global post render

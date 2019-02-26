@@ -42,86 +42,9 @@
             site_name: 'De Anza Oaks',
             environment: 'dev',
         },
-        body: ` <table class="std-table" border="0" width="90%" bgcolor="#6AA666">
-                    <tr>
-                        <td style="height: 64px; padding-left: 24px;">
-                            <font size="5" face="Verdana, Arial, Helvetica" color="#ffffff">
-                                Send a new Email Bulletin
-                            </font>
-                        </td>
-                    </tr>
-                </table>
-                <form method="post" enctype="multipart/form-data" action="" name="daForm">
-                    <table class="page-table" border="1" width="90%" cellspacing="0" bordercolor="#6AA666">
-                        <tr>
-                            <td>
-                                From Name:
-                            </td>
-                            <td>
-
-                                <input type="text" style="width:564px; height:28px;background:rgba(255,255,255,1);">
-
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                From eMail Address:
-                            </td>
-                            <td><input type="text"  size="10" maxlength="10" style="width:180px;height:28px;"></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                To:
-                            </td>
-                            <td>
-                               <select size="1" name="sendTo" id="sendToSelect" style="width:240px;height:32px;>
-                                   <option selected="" value="none">(None)</option>
-                                   <option value="maillist_category">eMail Bulletin Category</option>
-                                   <option value="person_category">Address Book Category</option>
-                                   <option value="subdivision">Subdivision</option>
-                                   <option value="all">All</option>
-                                   <option value="eform">eForm</option>
-                                   <option value="survey">Survey</option>
-
-                                   <option value="last_login">Last Login Date</option>
-                               </select>
-                           </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Subject:
-                            </td>
-                            <td>
-                               <input type="text" name="event_start_dt" size="10" maxlength="10" style="width:180px;height:28px;">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Linked File:
-                            </td>
-                            <td>
-                                <input type="file" size="30" maxlength="200"style="width:180px;height:28px;">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Full Description:
-                            </td>
-                            <td><textarea wrap="virtual" name="full_desc" cols="50" rows="5" style="width:564px;height:160px;"></textarea></td>
-                        </tr>
-                    </table>
-                </form>
-                <p class="p-input">
-                <input type="submit"  value="Send Email Bulletin">
-                <input type="submit" onclick="location.href='/news/bulletins'"value="Cancel">
-                </p>   
-                </font>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-
-`
+        page_add_title:[{
+            name:" Send a new Email Bulletin"
+        }]
     }
 
 </script>

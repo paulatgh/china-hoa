@@ -1,8 +1,11 @@
 var render = function() {
     _pre_render();
 
-    var form = $('#form').html();
-    $('#form').after(Mustache.render(form, data));
+    var emails_title = $('#emails_title').html();
+    Mustache.parse(emails_title);
+    $.each(data.emails_title, function() {
+        $('#emails_title_cycle').append(Mustache.render(emails_title, this));
+    });
 
     // Global post render
     _post_render();
