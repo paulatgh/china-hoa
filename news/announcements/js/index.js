@@ -38,7 +38,11 @@ var render = function() {
         $('.announcements_add').css('display', 'block')
         $('.announcements_permission').css('display', 'block')
         $(".del").click(function() {
-            delete_element()
+            var self = this;
+            // TODO these should not be passing null, but it only matters in the dev env
+            delete_element(data, null, null, function() {
+                submitDynamicForm(self.getAttribute('data-action'), 'POST');
+            });
         })
     }
 }

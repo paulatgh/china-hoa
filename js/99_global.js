@@ -35,7 +35,7 @@ function remove_delete_modal() {
     $("body").find(".delete_modal").remove();
     $("body").off("mousedown.delete_modal");
 };
-function delete_element(data, index, el) {
+function delete_element(data, index, el, callback) {
     var modal = `
         <div class="delete_modal">
             <div class="delete">
@@ -58,11 +58,15 @@ function delete_element(data, index, el) {
         remove_delete_modal();
     });
     $('.delete_button').click(function () {
-        var dataList = data.filter((item, i) => {
-            return item.id !== index;
-        })
-        remove_delete_modal();
-        $(el).remove();
+        if (data._metadata.environment === 'dev') {
+            var dataList = data.filter((item, i) => {
+                return item.id !== index;
+            })
+            remove_delete_modal();
+            $(el).remove();
+        } else {
+            callback();
+        }
     });
 }
 
