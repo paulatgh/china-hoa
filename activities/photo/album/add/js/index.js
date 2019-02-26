@@ -13,4 +13,6 @@ var render = function() {
         $('.buttona').css('display', 'none')
     }
 
+    addAuthenticityTokenToForms();
+
 };
