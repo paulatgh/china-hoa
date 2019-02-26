@@ -40,7 +40,7 @@ function delete_element(data, index, el) {
         <div class="delete_modal">
             <div class="delete">
                 <h5>Confirm Deletion</h5>
-                <div class="delete_content">Are you sure you want to delete this?</div>
+                <p class="delete_content">Are you sure you want to delete this?</p>
                 <div class="options">
                     <span class="delete_button">Delete</span>
                     <span class="cancel_button">Cancel</span>
