@@ -6,7 +6,6 @@
 
 <!-- main -->
 <div style="height:100%">
-
     <div class="w1200" style="margin-bottom:60px">
         <ul class="breadcrumb">
             <li><a href="/home">Home</a></li>
@@ -22,90 +21,62 @@
                 <tr>
                     <td style="height: 64px; padding-left: 24px;">
                         <font size="5" face="Verdana, Arial, Helvetica" color="#ffffff">
-                            <div id="table_header_cycle">
-                                <script id="table_header" type="txt/template">
-                                    {{name}}
-                                </script>
-                            </div>
+                            Add a New Announcement
                         </font>
                     </td>
                 </tr>
             </table>
-            <form method="post">
+            <form id="add-announcement-form" method="post" enctype="multipart/form-data">
                 <table class="announcement-table" border="1" width="90%" cellspacing="0" bordercolor="#6AA666">
                     <tbody>
                         <tr>
                             <td>
-                                Date:
+                                Title
                             </td>
                             <td>
-                                <input type="text" size="10" maxlength="10" style="width:564px;height:28px;"></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Expire Date:
-
-                            </td>
-                            <td>
-                                <input type="text" name="expire_dt" class="datepicker hasDatepicker" value="" size="10" maxlength="10" style="width:180px; height:28px;">
-
+                                <input type="text" name="title" size="10" maxlength="255" required style="width:564px;height:28px;">
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                Title:
-                            </td>
-                            <td width="70%">
-                                <input type="text" name="event_end_dt" size="10" maxlength="10" style="width:180px;height:28px;">
-                                <span>(use only for events that span across multiple consecutive days)
-                                </span>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                Template
-                                (selecting a
-                                template will replace any content you have already
-                                created below):
+                                Description
                             </td>
                             <td>
-                                <select id="drop_down_list_cycle" size="1" name="category" style="font-family: Tahoma; font-size: 11;width:240px; height:32px;">
-                                    <script id="drop_down_list" type="txt/template">
-                                        <option value="{{id}}">{{name}}</option>
-                                    </script>
-                                </select>
+                                <textarea wrap="virtual" name="description" required cols="50" rows="5" style="width:564px;height:160px;"></textarea>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                Full Description:
+                                Header Image
                             </td>
-                            <td><textarea wrap="virtual" name="full_desc" cols="50" rows="5" style="width:564px;height:160px;"></textarea></td>
+                            <td>
+                                <input type="file" name="photo" accept="image/*"/>
+                            </td>
                         </tr>
                         <tr>
                             <td>
-                                Contact Person:
+                                Publish
                             </td>
                             <td>
-                                <select id="drop_down_list_two_cycle" size="1" name="contact_person_id" style="width:240px;height:32px;">
-                                    <script id="drop_down_list_two" type="txt/template">
-                                        <option value="{{id}}">{{name}}</option>
-                                    </script>
-                                </select>
+                                <input type="checkbox" name="publish"/>
                             </td>
                         </tr>
-
-
+                        <tr>
+                            <td>
+                                Send Notifications When Publishing
+                            </td>
+                            <td>
+                                <input type="checkbox" name="send_notifications"/>
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
+                <p class="p-input">
+                    <input type="submit" value="Save New">
+                    <input type="submit" onclick="location.href='/news/announcements'" value="Cancel">
+                </p>
             </form>
-            <p class="p-input">
-
-                <input type="submit" value="Save New">
-                <input type="submit" onclick="location.href='/news/announcements'" value="Cancel">
-
-            </p>
+        </table>
     </div>
 </div>
 <!-- footer -->

@@ -1,4 +1,5 @@
 var render = function() {
+    _pre_render();
     // var content_template = $('#add').html();
     // Mustache.parse(content_template);
     // $('#add').after(Mustache.render(content_template, data));
@@ -15,7 +16,8 @@ var render = function() {
     $.each(data.option_two, function() {
         $('#drop_down_list_two_cycle').append(Mustache.render(drop_down_list_two, this));
     });
-    _pre_render();
+
+    $('#add-announcement-form').attr('action', `${data._metadata.root_url}${data._metadata.page_path}`);
 
     // Global post render
     _post_render();

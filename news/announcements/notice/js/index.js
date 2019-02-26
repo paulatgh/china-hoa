@@ -1,10 +1,5 @@
 var render = function () {
     _pre_render();
-    var img = $('#img').html();
-    $.each(data.img, function () {
-        $('#img_cycle').append(Mustache.render(img, this));
-    });
-
 
     var article = $('#article').html();
     $.each(data.article, function () {
@@ -15,6 +10,4 @@ var render = function () {
     _post_render();
 
     // Local post render
-   
-  
 }
