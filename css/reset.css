@@ -316,12 +316,13 @@ p{line-height:22px;max-width: 1190px;}
 }
 .delete .delete_content{
     height: 121px;
-    line-height: 121px;
     font-size:19px;
     font-family:OpenSans-Regular;
     font-weight:400;
     color:rgba(57,61,68,1);
-    text-align: center;
+	text-align: center;
+	padding-top: 30px;
+	height: 100px;
 }
 .delete .options span{
     display: inline-block;
