@@ -39,8 +39,8 @@ function delete_element(data, index, el) {
     var modal = `
         <div class="delete_modal">
             <div class="delete">
-                <h5>Comfirm Delete?</h5>
-                <div class="delete_content">Are you sure wish to delete?</div>
+                <h5>Confirm Deletion</h5>
+                <div class="delete_content">Are you sure you want to delete this?</div>
                 <div class="options">
                     <span class="delete_button">Delete</span>
                     <span class="cancel_button">Cancel</span>

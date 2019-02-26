@@ -29,12 +29,13 @@ border:1px solid rgba(151,151,151,1)">
             <form id="edit-announcement-form" method="post" enctype="multipart/form-data">
                 <table class="announcement-table" border="1" width="90%" cellspacing="0" bordercolor="#6AA666">
                     <tbody>
+                        <script id="edit-announcement-body" type="txt/template">
                         <tr>
                             <td>
                                 Title
                             </td>
                             <td>
-                                <input type="text" name="title" size="10" maxlength="255" required style="width:564px;height:28px;">
+                                <input type="text" name="title" size="10" maxlength="255" required style="width:564px;height:28px;" value="{{title}}">
                             </td>
                         </tr>
                         <tr>
@@ -42,7 +43,7 @@ border:1px solid rgba(151,151,151,1)">
                                 Description
                             </td>
                             <td>
-                                <textarea wrap="virtual" name="description" required cols="50" rows="5" style="width:564px;height:160px;"></textarea>
+                                <textarea wrap="virtual" name="description" required cols="50" rows="5" style="width:564px;height:160px;">{{body}}</textarea>
                             </td>
                         </tr>
                         <tr>
@@ -51,6 +52,9 @@ border:1px solid rgba(151,151,151,1)">
                             </td>
                             <td>
                                 <input type="file" name="photo" accept="image/*"/>
+                                {{#photo_url}}
+                                (<a href="{{photo_url}}">currently attached image</a>)
+                                {{/photo_url}}
                             </td>
                         </tr>
                         <tr>
@@ -58,7 +62,7 @@ border:1px solid rgba(151,151,151,1)">
                                 Publish
                             </td>
                             <td>
-                                <input type="checkbox" name="publish"/>
+                                <input type="checkbox" name="publish" {{#date}}checked{{/date}}/>
                             </td>
                         </tr>
                         <tr>
@@ -66,14 +70,15 @@ border:1px solid rgba(151,151,151,1)">
                                 Send Notifications When Publishing
                             </td>
                             <td>
-                                <input type="checkbox" name="send_notifications"/>
+                                <input type="checkbox" name="send_notifications" {{#send_notifications}}checked{{/send_notifications}}/>
                             </td>
                         </tr>
+                        </script>
                     </tbody>
                 </table>
                 <p class="p-input">
-                    <input type="submit" value="Save New">
-                    <input type="submit" onclick="location.href='/news/announcements'" value="Cancel">
+                    <input type="submit" value="Save">
+                    <input type="button" id="cancel-button" value="Cancel">
                 </p>
             </form>
         </table>
