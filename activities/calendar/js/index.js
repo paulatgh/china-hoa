@@ -47,7 +47,10 @@ var render = function() {
                 return false;
             }
             var index = Number($(this).parents('ul').attr('data'))
-            delete_element(data.date, index, $(this).parents('ul'))
+            var self = this;
+            delete_element(data, index, $(this).parents('ul'), function() {
+                submitDynamicForm(self.getAttribute('data-link'), 'POST');
+            })
         })
         edit()
     } else {
@@ -99,6 +102,8 @@ var render = function() {
 
     function edit() {
         $(".right-a").click(function() {
+            window.location = this.getAttribute('data-link');
+            return;
             if ($('.saveChange').length !== 0) {
                 return false;
             }

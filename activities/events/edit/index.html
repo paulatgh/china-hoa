@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
+    <link rel="shortcut icon" type="image/ico" href="/community/img/favicon.ico" />
 
     <title>De Anza Oaks</title>
     <link rel="stylesheet" href="/global.css">
@@ -14,11 +14,17 @@
     <script src="https://cdn.bootcss.com/jquery/3.3.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
 
+    <!-- Links as currently hosted by http-server -->
+
     <script src="/js/99_global.js"></script>
+
+
 </head>
 
 <body>
-    <div id="content"></div>
+    <div id="content">
+
+    </div>
 
     <script>
         var data = {
@@ -32,38 +38,31 @@
             },
             _metadata: {
                 root_url: 'http://127.0.0.1:8080',
-                page_path: '/activities',
+                page_path: '/activities/calendar/events/edit',
                 assets_path: '',
                 site_name: 'De Anza Oaks',
                 environment: 'dev',
             },
-            page_title: {
-                id: 1,
-                title: 'Events'
+            event_edit_title:{
+                id:1,
+                title:"Edit Event"
             },
-            activities: [{
-                    id:1,
-                    category: 'Events Calendar',
-                    img: '/community/img/events-calendar.png',
-                    link: '/activities/calendar'
-                },
-                {
-                    id:2,
-                    category: 'Facilities',
-                    img: '/community/img/events-facilities.png',
-                    link: '/activities/facilities'
-                },
-                {
-                    id:3,
-                    category: 'Photo Albums',
-                    img: '/community/img/events-photoalbums.png',
-                    link: '/activities/photo'
-                }
-            ]
-
+            event: {
+              id: 1,
+              friendly_date: 'March 5th, 2019',
+              date: '2019-03-05',
+              time: '22:20',
+              location: "Playground",
+              creator: 'Fiona',
+              title: 'Early July 4th BBQ',
+              location: 'De Anza Oaks',
+              description: 'It’s sunny today, it’s bustling outside, the street is noisy',
+              abbreviated_description: 'It’s sunny today, it’s bustling outside, the street is noisy',
+          },
         }
 
     </script>
+
     <script type="text/javascript" src="js/index.js"></script>
     <script>
         // This script block stays in this wrapper html file

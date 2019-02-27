@@ -20,7 +20,7 @@
                         <ul class="breadcrumb" style="float: left">
                             <li><a href="{{_metadata.root_url}}/home">Home</a></li>
                             <li>&nbsp;>&nbsp;</li>
-                            <li><a href="{{_metadata.root_url}}/activities">Events</a></li>
+                            <li><a href="{{_metadata.root_url}}/activities">Activities</a></li>
                             <li>&nbsp;>&nbsp;</li>
                             <li><a href="#?id={{page_title.id}}">{{page_title.title}}</a></li>
                         </ul>
@@ -56,8 +56,8 @@
                             <ul data={{id}}>
                                 <li>{{friendly_date}}
                                     <div class="top-right">
-                                        <span class="right-a">Edit</span>
-                                        <span class="right-b">Delete</span>
+                                        <span class="right-a" data-link="{{edit_link}}">Edit</span>
+                                        <span class="right-b" data-link="{{delete_link}}">Delete</span>
                                     </div>
                                 </li>
                                 <li>{{title}}</li>

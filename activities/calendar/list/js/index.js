@@ -2,7 +2,7 @@ var render = function () {
     _pre_render();
     var event_template = $('#event_template').html();
     Mustache.parse(event_template);
-    $.each(data.list, function () {
+    $.each(data.events, function () {
         $('#calendar_events').append(Mustache.render(event_template, this));
     });
     $("#breadcrumbs").after(function() { return Mustache.render($(this).html(), data); });
@@ -16,5 +16,5 @@ var render = function () {
     if (data._current_user && data._current_user.is_admin == true) {
         $('.buttona').css('display', 'none')
     }
-   
+
 };

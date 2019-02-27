@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="shortcut icon" type="image/ico" href="/community/img/favicon.ico" />
+
+    <title>De Anza Oaks</title>
+    <link rel="stylesheet" href="/global.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <script src="https://cdn.bootcss.com/jquery/3.3.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+
+    <!-- Links as currently hosted by http-server -->
+
+    <script src="/js/99_global.js"></script>
+
+
+</head>
+
+<body>
+    <div id="content">
+
+    </div>
+
+    <script>
+        var data = {
+            _current_user: {
+                id: '1234',
+                email: 'test@example.com',
+                display_name: 'Laurie01',
+                first_name: 'Laurie',
+                last_name: 'Williams',
+                is_admin: true
+            },
+            _metadata: {
+                root_url: 'http://127.0.0.1:8080',
+                page_path: '/activities/calendar/reservations/edit',
+                assets_path: '',
+                site_name: 'De Anza Oaks',
+                environment: 'dev',
+            },
+            event_edit_title:{
+                id:1,
+                title:"Edit Reservation"
+            },
+            event: {
+                id: 1,
+                friendly_date: 'February 21st, 2019',
+                date: '2019-02-21',
+                time: '22:20',
+                location: "Clubhouse",
+                creator: 'Laurie',
+                title: 'Clubhouse Booking (Confirmed) GS',
+                location: 'De Anza Oaks',
+                description: 'The theme of the community activity is the soul of the whole activity, so it is necessary to consider whether it can easily make the community residents understand and recognize when determining the theme. Therefore, from the perspective of public welfare, it is the most able to attract their attention, so that they feel that the activities that Bianjie helps to do are closely related to their health and safety. Therefore, the focus is on promoting the harm of home appliance pollution to the health and safety of users. Advocating Baijie to provide not only the cleaning of home appliances is the guarantee of home environment health.',
+                abbreviated_description: 'The theme of the community activity is the soul of the whole activity, so it is necessary to consider whether it can easily make the community residents understand and recognize when determining the theme. Therefore, from the perspective of public welfare, it is the most able to attract their attention, so that they feel that the activities that Bianjie helps to do are closely related to their health and safety. Therefore, the focus is on promoting the harm of home appliance pollution to the health and safety of users. Advocating Baijie to provide not only the cleaning of home appliances is the guarantee of home environment health.',
+            },
+        }
+
+    </script>
+
+    <script type="text/javascript" src="js/index.js"></script>
+    <script>
+        // This script block stays in this wrapper html file
+        $(function() {
+            $('#content').load("body.html", function() {
+                render();
+            });
+        });
+
+    </script>
+</body>
+
+</html>
