@@ -3,6 +3,7 @@ var render = function() {
 
     $('#committee_tiles').after(function() {return Mustache.render($(this).html(), data);});
     $("#breadcrumbs").after(function() { return Mustache.render($(this).html(), data); });
+    $("#links").after(function() { return Mustache.render($(this).html(), data); });
 
     // Global post render
     _post_render();
@@ -15,10 +16,6 @@ var render = function() {
         $('.committee_admin_options').show()
         $('.committee_add').show().click(function() {
             window.location.href = `${data._metadata.root_url}/resources/committee/add/`
-        })
-        $(".del").click(function() {
-            // TODO: need to fill in the parameters for the delete function
-            delete_element()
         })
     }
 

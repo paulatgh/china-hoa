@@ -1,0 +1,112 @@
+<!-- header -->
+<div class="header" style="box-shadow:0px 2px 7px 0px rgba(0,0,0,0.5);
+  border:1px solid rgba(151,151,151,1)">
+</div>
+
+<!-- main body -->
+<div class="investor clearfix" style="margin-top: 30px;">
+    <div class="w1200" style="height: 1100px;">
+        <script id="breadcrumbs" type="txt/template">
+            <div class="main-breadcrumb" style="width: 1200px;margin: 0 auto;">
+                        <ul class="breadcrumb">
+                            <li><a href="{{_metadata.root_url}}/home">Home</a></li>
+                            <li>&nbsp;>&nbsp;</li>
+                            <li><a href="{{_metadata.root_url}}/resources">Resources</a></li>
+                            <li>&nbsp;>&nbsp;</li>
+                            <li><a href="{{_metadata.root_url}}/resources/committee">Board/Committee</a></li>
+                            <li>&nbsp;>&nbsp;</li>
+                            <li><a href="#?id={{page_title.id}}">{{page_title.title}}</a></li>
+                        </ul>
+                    </div>
+                    </script>
+        <table style="background-color: #ffffff; margin-top:20px;" background="" border="0" width="100%" cellpadding="10" cellspacing="0">
+            <table class="std-table" border="0" width="90%" bgcolor="#6AA666">
+                <tr>
+                    <td style="height: 64px; padding-left: 24px;">
+                        <font size="5" face="Verdana, Arial, Helvetica" color="#ffffff">
+                            <div id="table_header_cycle">
+                                <script id="table_header" type="txt/template">
+                                    {{title}}
+                                </script>
+                            </div>
+                        </font>
+                    </td>
+                </tr>
+            </table>
+            <tbody>
+                <tr>
+                    <td>
+                        <font size="2" face="Verdana, Arial, Helvetica" color="#222311">
+                            <script id="form" type="txt/template">
+                                <form method="post">
+                                    <table class="volunteer-table" border="1" width="90%" cellspacing="0" bordercolor="#6AA666">
+                                        <input type="hidden" name="committee_id" value="{{committee.id}}">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    Form Title/Name:
+                                                </td>
+                                                <td><input type="text" name="title" size="40" maxlength="50" style="width:564px;height:28px;" value="{{committee.title}}"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+
+                                                    When:
+                                                </td>
+                                                <td><input type="text" name="time" size="40" maxlength="50" style="width:180px;height:28px;" value="{{committee.time}}"></td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>
+
+                                                    Where:
+                                                </td>
+                                                <td><input type="text" name="location" size="40" maxlength="50" style="width:180px;height:28px;" value="{{committee.location}}"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+
+                                                    Primary Contact:
+                                                </td>
+                                                <td><input type="text" name="primary_contact" size="40" maxlength="50" style="width:180px;height:28px;" value="{{committee.from}}"></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    Full Description:
+                                                </td>
+                                                <td><textarea wrap="virtual" name="description" cols="50" rows="5" style="width:564px;height:160px;">{{committee.content}}</textarea></td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                    <table border="0" width="90%">
+                                        <tbody>
+                                            <tr>
+                                                <td width="10%" align="right">
+                                                    <input type="Submit" value="Submit" name="action" class="continue">
+                                                    <input type="Submit" value="Cancel" onclick="location.href='/resources/committee/'" class="cancel">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </form>
+                            </script>
+                        </font>
+                    </td>
+                </tr>
+            </tbody>
+            <div class="ad"></div>
+        </table>
+
+
+    </div>
+
+</div>
+
+<!-- footer -->
+<div class="footer" style="margin-top: 40px;">
+    <p>
+        Copyright © 2019 Tellus, Inc. All Rights Reserved.
+    </p>
+</div>
