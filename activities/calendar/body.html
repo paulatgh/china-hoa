@@ -56,8 +56,12 @@
                             <ul data={{id}}>
                                 <li>{{friendly_date}}
                                     <div class="top-right">
+                                        {{#edit_link}}
                                         <span class="right-a" data-link="{{edit_link}}">Edit</span>
+                                        {{/edit_link}}
+                                        {{#delete_link}}
                                         <span class="right-b" data-link="{{delete_link}}">Delete</span>
+                                        {{/delete_link}}
                                     </div>
                                 </li>
                                 <li>{{title}}</li>
