@@ -15,6 +15,8 @@
             <li>&nbsp;>&nbsp;</li>
             <li><a href="{{_metadata.root_url}}/activities/photo/" rel="noopener noreferrer"> Albums </a></li>
             <li>&nbsp;>&nbsp;</li>
+            <li><a href="{{_metadata.root_url}}/activities/photo/album" rel="noopener noreferrer"> photo</a></li>
+            <li>&nbsp;>&nbsp;</li>
             <li><a href="#?id={{ablum_add_title.id}}">{{ablum_add_title.title}}</a></li>
         </ul>
     </script>
@@ -79,8 +81,7 @@
                             <tr>
                                 <td width="10%" align="right">
                                     <input type="Submit" value="Save New" name="action" class="continue">
-                                    <input type="Submit" value="Cancel" onclick="location.href='/activities/photo/album'"
-                                           class="cancel">
+                                    <input type="button" id="cancel-button" value="Cancel" class="cancel">
                                 </td>
                             </tr>
                             </tbody>

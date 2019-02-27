@@ -3,7 +3,9 @@ var render = function() {
     var event_template = $('#add').html();
     Mustache.parse(event_template);
     $("#breadcrumbs").after(function() { return Mustache.render($(this).html(), data); });
-
+    $('#cancel-button').click(function() {
+        window.location = `${data._metadata.root_url}/activities/photo`;
+    })
     // Global post render
     _post_render();
 

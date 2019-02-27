@@ -46,7 +46,10 @@ var render = function() {
     $('#notes_interests').after(function() { return Mustache.render($(this).html(), data.profile); });
     $('#notes_organizations').after(function() { return Mustache.render($(this).html(), data.profile); });
     $('#notes_freeform').after(function() { return Mustache.render($(this).html(), data.profile); });
-
+    
+    $('#cancel-button').click(function() {
+        window.location = `${data._metadata.root_url}/home`;
+    })
     // Global post render
     _post_render();
 
