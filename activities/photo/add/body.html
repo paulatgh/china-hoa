@@ -7,15 +7,17 @@
 <!-- main body -->
 <div class="investor clearfix" style="margin-top: 30px;">
     <div class="w1200" style="height: 1100px;">
+        <script id="breadcrumbs" type="txt/'template'">
         <ul class="breadcrumb">
-            <li><a href="/home" rel="noopener noreferrer">Home</a></li>
+            <li><a href="{{_metadata.root_url}}/home" rel="noopener noreferrer">Home</a></li>
             <li>&nbsp;>&nbsp;</li>
-            <li><a href="/activities" rel="noopener noreferrer"> Events </a></li>
+            <li><a href="{{_metadata.root_url}}/activities" rel="noopener noreferrer"> Events </a></li>
             <li>&nbsp;>&nbsp;</li>
-            <li><a href="/activities/photo/" rel="noopener noreferrer"> Albums </a></li>
+            <li><a href="{{_metadata.root_url}}/activities/photo/" rel="noopener noreferrer"> Albums </a></li>
             <li>&nbsp;>&nbsp;</li>
-            <li><a href="#" rel="noopener noreferrer">New</a></li>
+            <li><a href="#?id={{photo_add_title.id}}">{{photo_add_title.title}}</a></li>
         </ul>
+       </script>
         <div id="content">
             <div class="main-center">
                 <table class="std-table" border="0" width="90%" bgcolor="#6AA666">

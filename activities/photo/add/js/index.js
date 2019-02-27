@@ -2,6 +2,7 @@ var render = function() {
     _pre_render();
     var event_template = $('#add').html();
     Mustache.parse(event_template);
+    $("#breadcrumbs").after(function() { return Mustache.render($(this).html(), data); });
 
     // Global post render
     _post_render();
