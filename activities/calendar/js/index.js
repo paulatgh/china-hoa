@@ -56,13 +56,13 @@ var render = function() {
     } else {
         var str =
             `<li class="tips">
-                <ul>
-                    <li><a href="#" class="Yes">Yes</a></li>
-                    <li><a href="#" class="No">No</a></li>
-                    <li><a href="#" class="Maybe">Maybe</a></li>
-                    <li><a class="Notes">Notes</a></li>
-                </ul>
-            </li>`;
+            <ul>
+            <li><a href="#" class="Yes">Yes</a></li>
+            <li><a href="#" class="No">No</a></li>
+            <li><a href="#" class="Maybe">Maybe</a></li>
+            <li><a class="Notes">Notes</a></li>
+            </ul>
+        </li>`;
         $('.calendar-right ul').mouseenter(function() {
             $(this).append(str)
             $('.Yes').hover(function() {
@@ -97,8 +97,14 @@ var render = function() {
         $('.calendar-right ul').mouseleave(function() {
             $('.tips').remove()
         })
+        for (i = 0; i < data.events.length; i++) {
+            var name = data._current_user.id == data.events[i].id;
+            if (name == false) {
+                console.log(123)
+            }
+        }
+    } 
 
-    }
 
     function edit() {
         $(".right-a").click(function() {
