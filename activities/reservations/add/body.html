@@ -15,7 +15,7 @@ border:1px solid rgba(151,151,151,1)">
             <li><span rel="noopener noreferrer" style="color:rgba(30,130,23,1)"> > </span></li>
             <li><a href="{{_metadata.root_url}}/activities/calendar">Events</a></li>
             <li><span rel="noopener noreferrer" style="color:rgba(30,130,23,1)"> > </span></li>
-            <li><a href="#?id={{reservations_edit_title.id}}">{{reservations_edit_title.title}}</a></li>
+            <li><a href="#">Create Reservation Request</a></li>
         </ul>
     </script>
         <table style="background-color: #ffffff" background="" border="0" width="100%" cellpadding="10" cellspacing="0">
@@ -23,22 +23,23 @@ border:1px solid rgba(151,151,151,1)">
                 <tr>
                     <td style="height: 64px; padding-left: 24px;">
                         <font size="5" face="Verdana, Arial, Helvetica" color="#ffffff">
-                            Edit Reservation
+                            Create Reservation Request
                         </font>
                     </td>
                 </tr>
             </table>
-            <form id="edit-reservation-form" method="post" enctype="multipart/form-data">
+            <form id="add-reservation-form" method="post" enctype="multipart/form-data">
                 <table class="reservation-table" border="1" width="90%" cellspacing="0" bordercolor="#6AA666">
                     <tbody>
-                        <script id="edit-reservation-body" type="txt/template">
                         <tr>
                             <td>
                                 Location
                             </td>
                             <td>
-                                <input type="text" name="title" size="10" maxlength="255" disabled required style="width:564px;height:28px;" value="{{location}}">
-                                <input type="hidden" name="amenity_id" value="{{amenity_id}}"/>
+                                <script id="location_template" type="txt/template">
+                                <span>{{name}}</span>
+                                <input type="hidden" name="amenity_id" value="{{id}}"/>
+                                </script>
                             </td>
                         </tr>
                         <tr>
@@ -134,11 +135,12 @@ border:1px solid rgba(151,151,151,1)">
                                 </select>
                             </td>
                         </tr>
+                        <script id="reservation_fields_template" type="txt/template">
                         {{#reservation_fields}}
                         <tr>
                             <td>{{user_friendly_name}}:</td>
                             <td>
-                                <input type="text" name="fields[{{key}}]" size="10" maxlength="255" value="{{value}}" style="width:564px;height:28px;">
+                                <input type="text" name="fields[{{key}}]" size="10" maxlength="255" style="width:564px;height:28px;">
                             </td>
                         </tr>
                         {{/reservation_fields}}
