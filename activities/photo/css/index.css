@@ -1,5 +1,5 @@
 .main {
-  height: 1148px;
+  height: 1200px;
 }
 
 .breadcrumb li {
@@ -33,6 +33,8 @@
   width: 1200px;
   height: 1100px;
   margin: auto;
+  margin-bottom: 100px;
+
 }
 
 .admin_option_left {
