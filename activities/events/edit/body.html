@@ -32,7 +32,7 @@ border:1px solid rgba(151,151,151,1)">
                 <table class="event-table" border="1" width="90%" cellspacing="0" bordercolor="#6AA666">
                     <tbody>
                         <script id="edit-event-body" type="txt/template">
-                            <tr>
+                        <tr>
                             <td>
                                 Title
                             </td>
@@ -42,10 +42,95 @@ border:1px solid rgba(151,151,151,1)">
                         </tr>
                         <tr>
                             <td>
-                                Description
+                                Event Start Date (mm/dd/yyyy):
+                            </td>
+                            <td><input type="text" name="start_date" size="10" maxlength="10" required style="width:180px;height:28px;"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Event End Date (mm/dd/yyyy):
+                            </td>
+                            <td width="70%">
+                                <input type="text" name="end_date" size="10" maxlength="10" style="width:180px;height:28px;">
+                                <span>(use only for events that span across multiple consecutive days)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Event Start Time:
                             </td>
                             <td>
-                                <textarea wrap="virtual" name="description" required cols="50" rows="5" style="width:564px;height:160px;">{{body}}</textarea>
+                                <select size="1" name="start_time_hour" required style="font-family: Tahoma; font-size: 11">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>:
+                                <select size="1" name="start_time_minute" required style="font-family: Tahoma; font-size: 11">
+                                    <option value="00">00</option>
+                                    <option value="05">05</option>
+                                    <option value="10">10</option>
+                                    <option value="15">15</option>
+                                    <option value="20">20</option>
+                                    <option value="25">25</option>
+                                    <option value="30">30</option>
+                                    <option value="35">35</option>
+                                    <option value="40">40</option>
+                                    <option value="45">45</option>
+                                    <option value="50">50</option>
+                                    <option value="55">55</option>
+                                </select>&nbsp;
+                                <select size="1" name="start_time_period" required style="font-family: Tahoma; font-size: 11">
+                                    <option value="AM">AM</option>
+                                    <option value="PM">PM</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Event End Time:
+                            </td>
+                            <td>
+                                <select size="1" name="end_time_hour" required style="font-family: Tahoma; font-size: 11">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>:
+                                <select size="1" name="end_time_minute" required style="font-family: Tahoma; font-size: 11">
+                                    <option value="00">00</option>
+                                    <option value="05">05</option>
+                                    <option value="10">10</option>
+                                    <option value="15">15</option>
+                                    <option value="20">20</option>
+                                    <option value="25">25</option>
+                                    <option value="30">30</option>
+                                    <option value="35">35</option>
+                                    <option value="40">40</option>
+                                    <option value="45">45</option>
+                                    <option value="50">50</option>
+                                    <option value="55">55</option>
+                                </select>&nbsp;
+                                <select size="1" name="end_time_period" required style="font-family: Tahoma; font-size: 11">
+                                    <option value="AM">AM</option>
+                                    <option value="PM">PM</option>
+                                </select>
                             </td>
                         </tr>
                         <tr>
@@ -53,7 +138,15 @@ border:1px solid rgba(151,151,151,1)">
                                 Location
                             </td>
                             <td>
-                                <input type="text" name="title" size="10" maxlength="255" required style="width:564px;height:28px;" value="{{location}}">
+                                <input type="text" name="location" size="10" maxlength="255" required style="width:564px;height:28px;" value="{{location}}">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Description
+                            </td>
+                            <td>
+                                <textarea wrap="virtual" name="description" required cols="50" rows="5" style="width:564px;height:160px;">{{description}}</textarea>
                             </td>
                         </tr>
                         </script>

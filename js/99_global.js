@@ -265,3 +265,14 @@ function logInUser(email, password) {
 function logOutUser() {
     submitDynamicForm(data._metadata.root_url + '/session/logout', 'POST', [])
 }
+
+function parseDateTimeComponents(str) {
+    d = new Date(str);
+    h = d.toLocaleTimeString('en-US', { hour: '2-digit' });
+    return {
+        date: d.toLocaleDateString('en-US', { month: '2-digit', day: '2-digit', year: 'numeric' }),
+        hour: parseInt(h).toString(),
+        minute: ('0' + d.getMinutes()).slice(-2),
+        period: h.slice(-2),
+    };
+}
