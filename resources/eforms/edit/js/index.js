@@ -7,7 +7,9 @@ var render = function() {
         $('#page_title_cycle').append(Mustache.render(page_title, this));
     });
     $("#breadcrumbs").after(function() { return Mustache.render($(this).html(), data); });
-
+    $('#cancel-button').click(function() {
+        window.location = `${data._metadata.root_url}/resources/eforms`;
+    })
     // Global post render
     _post_render();
 

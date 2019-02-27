@@ -8,6 +8,9 @@ var render = function() {
     $.each(data.page_add_title, function() {
         $('#page_add_title_cycle').append(Mustache.render(page_add_title, this));
     });
+    $('#cancel-button').click(function() {
+        window.location = `${data._metadata.root_url}/news/bulletins`;
+    })
 
     // Global post render
     _post_render();

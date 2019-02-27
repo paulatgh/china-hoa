@@ -7,6 +7,9 @@ var render = function() {
     $("#breadcrumbs").after(function() {
         return Mustache.render($(this).html(), data);
     });
+    $('#cancel-button').click(function() {
+        window.location = `${data._metadata.root_url}/news/volunteer`;
+    })
     _pre_render();
     // Global post render
     _post_render();
