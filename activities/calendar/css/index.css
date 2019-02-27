@@ -14,14 +14,32 @@
   box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.24);
 }
 
+.tips_hover_yes {
+  background: #6AA666;
+}
+
+.tips_hover_no {
+  background: #F94B5A;
+}
+
+.tips_hover_maybe {
+  background: #F5A623;
+}
+
+.tips_hover_notes {
+  background: #393D44;
+}
+
 .calendar-title .arrow {
   top: 10px;
   width: 90px;
   right: 17px;
 }
-.breadcrumb li{
-  color:rgba(30,130,23,1);
+
+.breadcrumb li {
+  color: rgba(30, 130, 23, 1);
 }
+
 .calendar-title .arrow span {
   font-size: 40px;
 }
@@ -295,6 +313,7 @@
   margin-left: 56%;
   color: black;
 }
+
 .saveChange {
   width: 80px;
   height: 40px;
@@ -310,6 +329,7 @@
   right: 10px;
   cursor: pointer;
 }
+
 /* calendar */
 
 @import url(http://fonts.googleapis.com/css?family=Fugaz+One);
@@ -342,6 +362,7 @@
   display: inline-block;
   z-index: 2;
 }
+
 .jalendar .wood-bottom {
   display: none;
   position: absolute;
