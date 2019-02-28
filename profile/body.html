@@ -1,6 +1,5 @@
 <!-- header -->
-<div class="header" style="box-shadow:0px 2px 7px 0px rgba(0,0,0,0.5);
-border:1px solid rgba(151,151,151,1)">
+<div class="header">
 
 
 </div>
@@ -8,19 +7,19 @@ border:1px solid rgba(151,151,151,1)">
 <!-- main -->
 <div class="investor clearfix">
     <div class="w1200">
-        <table style="background-color: #ffffff; margin-top:20px;margin-bottom: 50px;" bborder="0" width="100%" cellpadding="10" cellspacing="0">
+        <table class="table-one" bborder="0"  cellpadding="10" cellspacing="0">
             <tbody>
                 <tr>
                     <td>
 
-                        <table width="100%" bgcolor="#6AA666">
+                        <table class="table-two">
                             <tbody>
                                 <tr>
-                                    <td style="height: 64px;padding-left: 24px;">
+                                    <td>
                                         <script id="header" type="txt/template">
-                                            <font size="4" face="Verdana, Arial, Helvetica" color="#F1F1F1">
+                                           
                                                     Edit Person - {{_current_user.first_name}} {{_current_user.last_name}}
-                                            </font>
+                                            
                                         </script>
                                     </td>
 
@@ -31,7 +30,7 @@ border:1px solid rgba(151,151,151,1)">
                             <script id="form" type="txt/template">
                                 <input type="hidden" name="topsapi_old_address_compare_val" value="" align="center">
                                 <center>
-                                    <table class="profile-table" border="1" width="100%" cellspacing="0" bordercolor="#6AA666">
+                                    <table class="profile-table" border="1"  cellspacing="0">
                                         <tbody>
                                             <tr>
                                                 <td>
@@ -64,7 +63,7 @@ border:1px solid rgba(151,151,151,1)">
     
                                                 </td>
                                                 <td>
-                                                    <input type="text" value="{{profile.phone.home}}" name="home_phone" size="18" maxlength="18" style="font-family: Tahoma; font-size: 11px">
+                                                    <input type="text" value="{{profile.phone.home}}" name="home_phone" size="18" maxlength="18">
                                                 </td>
                                             </tr>
     
@@ -75,7 +74,7 @@ border:1px solid rgba(151,151,151,1)">
     
                                                 </td>
                                                 <td>
-                                                    <input type="text" value="{{profile.phone.work}}" name="work_phone" size="18" maxlength="18" style="font-family: Tahoma; font-size: 11px">
+                                                    <input type="text" value="{{profile.phone.work}}" name="work_phone" size="18" maxlength="18" >
                                                 </td>
                                             </tr>
     
@@ -86,7 +85,7 @@ border:1px solid rgba(151,151,151,1)">
     
                                                 </td>
                                                 <td>
-                                                    <input type="text" value="{{profile.phone.cell}}" name="cell_phone" size="18" maxlength="18" style="font-family: Tahoma; font-size: 11px">
+                                                    <input type="text" value="{{profile.phone.cell}}" name="cell_phone" size="18" maxlength="18" >
                                                 </td>
                                             </tr>
     
@@ -97,7 +96,7 @@ border:1px solid rgba(151,151,151,1)">
     
                                                 </td>
                                                 <td>
-                                                    <input type="text" value="{{profile.phone.other}}" name="other_phone" size="18" maxlength="18" style="font-family: Tahoma; font-size: 11px">
+                                                    <input type="text" value="{{profile.phone.other}}" name="other_phone" size="18" maxlength="18" >
                                                 </td>
                                             </tr>
     
@@ -183,7 +182,7 @@ border:1px solid rgba(151,151,151,1)">
     
                                                 </td>
                                                 <td>
-                                                    <input type="text" value="{{profile.employer}}" name="employer" size="30" maxlength="50" style="font-family: Tahoma; font-size: 11px">
+                                                    <input type="text" value="{{profile.employer}}" name="employer" size="30" maxlength="50" >
                                                 </td>
                                             </tr>
     
@@ -194,7 +193,7 @@ border:1px solid rgba(151,151,151,1)">
     
                                                 </td>
                                                 <td>
-                                                    <input type="text" value="{{profile.website}}" name="website" size="40" maxlength="100" style="font-family: Tahoma; font-size: 11px">
+                                                    <input type="text" value="{{profile.website}}" name="website" size="40" maxlength="100" >
                                                 </td>
                                             </tr>
     
@@ -205,7 +204,7 @@ border:1px solid rgba(151,151,151,1)">
     
                                                 </td>
                                                 <td>
-                                                    <input type="text" value="{{profile.occupation}}" name="occupation" size="40" maxlength="50" style="font-family: Tahoma; font-size: 11px">
+                                                    <input type="text" value="{{profile.occupation}}" name="occupation" size="40" maxlength="50" >
                                                 </td>
                                             </tr>
     
@@ -216,7 +215,7 @@ border:1px solid rgba(151,151,151,1)">
     
                                                 </td>
                                                 <td>
-                                                    <input type="text" value="{{profile.hobbies}}" name="hobbies" size="40" maxlength="200" style="font-family: Tahoma; font-size: 11px">
+                                                    <input type="text" value="{{profile.hobbies}}" name="hobbies" size="40" maxlength="200" >
                                                 </td>
                                             </tr>
     
@@ -227,7 +226,7 @@ border:1px solid rgba(151,151,151,1)">
     
                                                 </td>
                                                 <td>
-                                                    <input type="text" value="{{profile.interests}}" name="interests" size="40" maxlength="200" style="font-family: Tahoma; font-size: 11px">
+                                                    <input type="text" value="{{profile.interests}}" name="interests" size="40" maxlength="200" >
                                                 </td>
                                             </tr>
     
@@ -238,7 +237,7 @@ border:1px solid rgba(151,151,151,1)">
     
                                                 </td>
                                                 <td>
-                                                    <input type="text" value="{{profile.organizations}}" name="organizations" size="40" maxlength="200" style="font-family: Tahoma; font-size: 11px">
+                                                    <input type="text" value="{{profile.organizations}}" name="organizations" size="40" maxlength="200" >
                                                 </td>
                                             </tr>
     
