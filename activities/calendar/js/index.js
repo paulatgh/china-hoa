@@ -44,6 +44,8 @@ var render = function() {
     if (data._current_user && data._current_user.is_admin == true) {
         $(".action-buttons-top").css("display", "block")
     }
+
+    addAuthenticityTokenToForms();
 };
 
 var displayEventActions = function() {
@@ -79,38 +81,36 @@ var displayEventActions = function() {
 };
 
 var displayRsvp = function(elem) {
-    var tipsHtml =
-        `<li class="tips">
-            <ul>
-            <li><a href="#" class="Yes">Yes</a></li>
-            <li><a href="#" class="No">No</a></li>
-            <li><a href="#" class="Maybe">Maybe</a></li>
-            <li><a class="Notes">Notes</a></li>
-            </ul>
-        </li>`;
     $(elem).mouseenter(function() {
-        $(this).append(tipsHtml)
-        $('.Yes').hover(function() {
+        var eventId = elem.getAttribute('data-event-id');
+        var actionUrl = `${data._metadata.root_url}/activities/events/rsvp?id=${eventId}`;
+        $(this).children('.tips').show();
+        var actionElems = $(this).children('.tips').children('ul').children('li');
+        $('.rsvp-yes').hover(function() {
             $(this).addClass('tips_hover_yes')
         }, function() {
             $(this).removeClass('tips_hover_yes')
         })
-        $('.No').hover(function() {
+        actionElems.children('.rsvp-yes').click(function() { submitRsvpAction(actionUrl, 'yes') });
+        $('.rsvp-no').hover(function() {
             $(this).addClass('tips_hover_no')
         }, function() {
             $(this).removeClass('tips_hover_no')
         })
-        $('.Maybe').hover(function() {
+        actionElems.children('.rsvp-no').click(function() { submitRsvpAction(actionUrl, 'no') });
+        $('.rsvp-maybe').hover(function() {
             $(this).addClass('tips_hover_maybe')
         }, function() {
             $(this).removeClass('tips_hover_maybe')
         })
-        $('.Notes').hover(function() {
+        actionElems.children('.rsvp-maybe').click(function() { submitRsvpAction(actionUrl, 'maybe') });
+        $('.rsvp-notes').hover(function() {
             $(this).addClass('tips_hover_notes')
         }, function() {
             $(this).removeClass('tips_hover_notes')
         })
-        $('.Notes').click(function(e) {
+        $('.rsvp-notes').click(function(e) {
+            $('#rsvp_notes_form')[0].setAttribute('action', actionUrl);
             $('.db1').show();
             return false;
         })
@@ -120,6 +120,19 @@ var displayRsvp = function(elem) {
         return false;
     })
     $(elem).mouseleave(function() {
-        $('.tips').remove()
+        $(this).children('.tips').hide();
     })
+};
+
+var submitRsvpAction = function(actionUrl, status) {
+    submitDynamicForm(
+        actionUrl,
+        'POST',
+        [
+            {
+                name: 'status',
+                value: status,
+            }
+        ]
+    )
 };

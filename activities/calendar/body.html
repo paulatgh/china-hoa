@@ -2,8 +2,10 @@
     <div class="notes">
         <p class="return"><img src="/community/img/Bounced.png" alt="Bounced"></p>
         <h3 class="notes-h3">Leave a Note</h3>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Max: 500 characters" maxlength="500"></textarea>
-        <input type="button" value="Submit">
+        <form id="rsvp_notes_form" method="post">
+            <textarea name="notes" cols="30" rows="10" required placeholder="Max. 500 characters" maxlength="500"></textarea>
+            <input type="submit" value="Submit">
+        </form>
     </div>
 </div>
 <!-- header -->
@@ -49,7 +51,7 @@
                     </div>
                     <div id="calendar_events" class="calendar-right">
                         <script id="event_template" type="txt/template">
-                            <ul class="event-row" data-id="{{id}}" data-event-type="{{event_type}}">
+                            <ul class="event-row" data-event-id="{{id}}" data-event-type="{{event_type}}">
                                 <div class="top-right">
                                     {{#edit_link}}
                                     <span class="right-a" data-link="{{edit_link}}">Edit</span>
@@ -63,6 +65,14 @@
                                 <li>Location:&nbsp;{{location}}</li>
                                 <li>
                                     Event Added By:&nbsp;{{creator}}
+                                </li>
+                                <li class="tips" style="display: none;">
+                                    <ul>
+                                        <li><a class="rsvp-yes">Yes</a></li>
+                                        <li><a class="rsvp-no">No</a></li>
+                                        <li><a class="rsvp-maybe">Maybe</a></li>
+                                        <li><a class="rsvp-notes">Notes</a></li>
+                                    </ul>
                                 </li>
                             </ul>
                         </script>
