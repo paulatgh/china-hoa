@@ -3,6 +3,11 @@
   border-left: none;
 }
 
+.investor {
+  margin-top: 30px;
+  height: 1100px;
+}
+
 .investor-right {
   width: 100%;
 }
@@ -15,6 +20,30 @@
   width: 163px;
   height: 40px;
   background: #393D44;
+}
+
+.table-one {
+  background-color: #ffffff;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.table-two {
+  width: 90%;
+  background-color: #6AA666;
+}
+
+.table-two tr td {
+  height: 64px;
+  padding-left: 24px;
+  color: #ffffff;
+  font-family: Verdana, Arial, Helvetica;
+  font-size: 26px;
+}
+
+.volunteer-table {
+  width: 90%;
+  border: #6AA666;
 }
 
 .volunteer-table tr {
@@ -34,6 +63,17 @@
   text-align: left;
   border-color: "#f1e8c6";
   padding: 14px 24px;
+}
+
+
+.int {
+  width: 564px;
+  height: 28px;
+}
+
+.textarea-desc {
+  width: 564px;
+  height: 160px;
 }
 
 .volunteer-table tr>td>span {

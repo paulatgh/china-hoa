@@ -3,6 +3,10 @@ body {
   height: 100%;
 }
 
+.main {
+  height: 1148px;
+}
+
 .breadcrumb li {
   color: rgba(30, 130, 23, 1);
   height: 27px;
@@ -33,6 +37,8 @@ body {
   width: 1200px;
   height: auto;
   margin: auto;
+
+
 }
 
 .content-1 {
