@@ -1,4 +1,97 @@
 /* @import url("calendar_plugin.css"); */
+.body-one {
+  height: 250px;
+}
+
+.body_two {
+  margin-bottom: 15px;
+}
+
+.body-left {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+}
+
+.w1200 {
+  position: relative;
+}
+
+#w1200-view {
+  position: relative;
+  overflow: scroll;
+  height: 233px;
+}
+
+#w1200-view img {
+  width: 100%;
+  margin-top: -80px;
+}
+
+.reservable {
+  position: absolute;
+  background: rgba(53, 149, 50, 0.6);
+  height: 84px;
+  width: 579px;
+  top: 77px;
+  left: 314px;
+}
+
+.reservable p {
+  text-align: center;
+  font-size: 25px;
+  font-family: OpenSans-Bold;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 1);
+  line-height: 84px;
+}
+
+.view-p {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.6);
+  height: 69px;
+  width: 376px;
+  top: 0;
+  left: 0;
+
+}
+.view-p p{
+  text-align: center;
+  font-size:25px;
+  font-family:OpenSans-Bold;
+  font-weight:bold;
+  color:#1E1E1E;
+  line-height: 69px;
+}
+#provenance_cycle img {
+  width: 178px;
+  height: 49px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+#CommunityNews_cycle {
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+  margin-top: 20px;
+}
+
+#Amenities_title_cycle {
+  color: #1E1E1E;
+  font-size: 16px;
+  line-height: 41px;
+  height: 41px;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+
+#Amenities_cycle {
+  height: 280px;
+  width: 5000px;
+}
 
 .main-right-content {
   width: 764px;
@@ -6,6 +99,10 @@
   box-shadow: 0 0 8px;
   margin-top: 15px;
   margin-left: 24px
+}
+
+.main_right {
+  width: 779px;
 }
 
 .calendar-right {
@@ -72,7 +169,7 @@
   height: 20px;
   position: absolute !important;
   box-sizing: border-box;
-  top: 286px;
+  top: 290px;
   left: 125px;
 }
 
@@ -83,6 +180,11 @@
   border-radius: 50%;
   background-color: #A0C79F;
   margin-left: 16px;
+
+}
+
+.main-left-contents ul {
+  margin-top: 20px;
 }
 
 .main-left-content .Carousel li {
@@ -110,11 +212,23 @@
 }
 
 .main-left-content {
+  padding: 5px 15px;
+  height: 316px;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 0 8px;
+  margin-top: 15px;
+}
+
+.main-left-contents {
   width: 421px;
   height: 225px;
   box-shadow: 0 0 8px;
   margin-top: 15px;
-  padding: 0 16px;
+  padding: 30px;
+  box-sizing: border-box;
 }
 
 .calendar {
@@ -143,6 +257,12 @@
   display: none;
 }
 
+.main_display {
+  height: 316px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
 
 /* calendar */
 

@@ -12,7 +12,7 @@
         <div class="w1200 pr">
             <div id="provenance_cycle">
                 <script id="provenance" type="txt/template">
-                    <img src="{{provenance_url}}" alt="{{alt}}" style="width:178px;height:49px;position:absolute;right:0;bottom: 0">
+                    <img src="{{provenance_url}}" alt="{{alt}}">
                 </script>
             </div>
         </div>
@@ -20,16 +20,16 @@
 </div>
 <div class="main">
     <!-- body-1 -->
-    <div class="main-top" style="height: 250px">
+    <div class="main-top body-one">
         <div class="w1200 pr">
-            <div class="main-left" style="display: flex;justify-content: space-between;width: 100%;margin-top: 10px">
-                <div class="main-left-content" style="padding: 30px;box-sizing: border-box">
-                    <p style="font-size: 20px;font-weight:600;color: black;margin-top: 20px" id="CommunityNews_cycle">
+            <div class="main-left body-left" style=" margin-top: 10px;">
+                <div class="main-left-contents">
+                    <p id="CommunityNews_cycle">
                         <script id="CommunityNews" type="txt/template">
                             {{title}}
                         </script>
                     </p>
-                    <ul style="margin-top:20px;" id="events_photo">
+                    <ul id="events_photo">
                         <script id="event_template" type="txt/template">
                             <li class="main-left-content-list" >
                                 <a class="body1-a jump" data={{link}} href="javascript:;">
@@ -38,9 +38,9 @@
                         </script>
                     </ul>
                 </div>
-                <div class="main-right-content" style="width: 779px">
+                <div class="main-right-content main_right">
                     <div class="main-list">
-                        <ul style="width: 100%;" id="featureList">
+                        <ul id="featureList">
                             <script id="featureList_template" type="txt/template">
                                 <li class="main-list" animated zoomIn">
                                     <a data={{link}} href="javascript:;" target="_blank" class="main-list-a jump">
@@ -56,18 +56,16 @@
     </div>
 
     <!-- body-2 -->
-    <div class="main-top" style="margin-bottom: 15px">
+    <div class="main-top body_two">
         <div class="w1200 pr">
-            <div class="main-left" style="display: flex;justify-content: space-between;width: 100%;">
-
-
-                <div class="main-left-content swiper-container jump" data="./amenities" style="height: 316px; box-sizing: border-box;overflow: hidden;position: relative;cursor: pointer;">
-                    <div id="Amenities_title_cycle" style="color: #1E1E1E;font-size: 16px;line-height:41px;height:41px;font-weight: 400">
+            <div class="main-left body-left">
+                <div class="main-left-content swiper-container jump" data="./amenities">
+                    <div id="Amenities_title_cycle">
                         <script id="Amenities_title" type="txt/template">
                             {{title}}
                         </script>
                     </div>
-                    <ul id="Amenities_cycle" class="Carousel swiper-wrapper" style="height: 280px;width:5000px;">
+                    <ul id="Amenities_cycle" class="Carousel swiper-wrapper">
                         <script id="Amenities" type="txt/template">
                             <li class="swiper-slide" style="background: url('{{img_url}}') no-repeat; background-size: cover;">
                                 <div>
@@ -77,12 +75,12 @@
                         </script>
                     </ul>
                     <div class="announcement-tips swiper-pagination">
-                        <span style="background: #359532"></span>
+                        <span></span>
                         <span></span>
                         <span></span>
                     </div>
                 </div>
-                <div class="main-right-content" style="height: 316px;display: flex;justify-content: space-between;cursor: pointer;">
+                <div class="main-right-content main_display">
                     <div id="myId" class="jalendar">
                         <div id="calendar_cycle">
                             <script id="calendar_left" type="txt/template">
@@ -115,13 +113,13 @@
     </div>
 
     <!-- body-3 -->
-    <div class="main-top" style="height: 250px;" id="Reservables_cycle">
+    <div class="main-top body-one"  id="Reservables_cycle">
         <script id="Reservables" type="txt/template">
-            <div class="w1200 pr" style="position: relative">
+            <div class="w1200 pr">
                 <img src="{{img_url}}" alt="Rectangle" style="width:100%;">
-                    <div class="reservable" style="position: absolute;background: rgba(53,149,50,0.6);height: 84px;width: 579px;top: 77px;left: 314px;">
+                    <div class="reservable">
                         <a data="{{reservation_link}}" class="jump" href="javascript:;">
-                            <p style="text-align: center;font-size:25px;font-family:OpenSans-Bold;font-weight:bold;color:rgba(255,255,255,1);line-height: 84px">
+                            <p>
                                 Click Here To Book The {{name}}
                             </p>
                         </a>
@@ -131,12 +129,12 @@
         </script>
 
     </div>
-    <div class="main-top" style="height: 250px;" id="birds_eye_view_cycle">
+    <div class="main-top body-one"  id="birds_eye_view_cycle">
         <script id="birds_eye_view" type="txt/template">
-            <div class="w1200 pr" style="position: relative;overflow: scroll;height: 233px;">
-            <img src="{{img_url}}" alt="Aerial view of the residential area" style="width:100%;margin-top: -80px">
-            <div style="position: absolute;background:rgba(255,255,255,0.6);height: 69px;width: 376px;top:0;left:0;">
-                <p style="text-align: center;font-size:25px;font-family:OpenSans-Bold;font-weight:bold;color:#1E1E1E;line-height: 69px;">
+            <div class="w1200 pr" id="w1200-view">
+            <img src="{{img_url}}" alt="Aerial view of the residential area">
+            <div class="view-p">
+                <p>
                    {{title}}
                 </p>
             </div>
