@@ -9,6 +9,14 @@
   padding-left: 24px;
 }
 
+.main_body {
+  height: 1148px;
+}
+
+.w1200 {
+  height: 100%;
+}
+
 .eformtable {
   width: 100%;
   margin-top: 20px;

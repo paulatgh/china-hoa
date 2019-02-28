@@ -1,4 +1,4 @@
-.investor{
+.investor {
   height: 1200px;
 }
 
@@ -17,9 +17,15 @@
   color: rgba(30, 130, 23, 1);
 }
 
+.main-breadcrumb {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .breadcrumb li a {
   color: rgba(30, 130, 23, 1);
 }
+
 .volunteer-table tr {
   width: 410px;
   height: 54px;
@@ -45,6 +51,21 @@
   font-weight: 400;
   color: rgba(151, 151, 151, 1);
 }
+
+.inta {
+  width: 564px !important;
+  height: 28px;
+}
+
+.volunteer-table tr td input {
+  width: 180px;
+  height: 28px;
+}
+
+.textarea {
+  width: 564px;
+}
+
 .continue {
   width: 113px;
   height: 38px;

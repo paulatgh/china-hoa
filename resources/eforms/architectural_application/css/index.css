@@ -16,7 +16,9 @@
   line-height: 16px;
  
 }
-
+.eformheader{
+  border: none !important;
+}
 .eformtable tbody td {
   border: 1px solid #6AA666;
   background-color: #ffffff;

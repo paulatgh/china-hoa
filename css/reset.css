@@ -1,11 +1,4 @@
-/* 
-* @Title:  共用样式表
-* @Author:锐诺互动-设计支持
-* @Phone: 0755-25526820
-* @Date:   2017-4-19 11:43:20
-* @Last Modified time:
-*/
-/* 重置 */
+
 html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{margin:0;padding:0;}
 header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details{display:block;}
 table{border-collapse:collapse;border-spacing:0;}

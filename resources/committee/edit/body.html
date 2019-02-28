@@ -6,7 +6,7 @@
 <div class="investor clearfix">
     <div class="w1200">
         <script id="breadcrumbs" type="txt/template">
-            <div class="main-breadcrumb" style="width: 1200px;margin: 0 auto;">
+            <div class="main-breadcrumb">
                         <ul class="breadcrumb">
                             <li><a href="{{_metadata.root_url}}/home">Home</a></li>
                             <li>&nbsp;>&nbsp;</li>
@@ -45,14 +45,14 @@
                                                 <td>
                                                     Form Title/Name:
                                                 </td>
-                                                <td><input type="text" name="title" size="40" maxlength="50" style="width:564px;height:28px;" value="{{committee.title}}"></td>
+                                                <td><input class="inta" type="text" name="title" size="40" maxlength="50" value="{{committee.title}}"></td>
                                             </tr>
                                             <tr>
                                                 <td>
 
                                                     When:
                                                 </td>
-                                                <td><input type="text" name="time" size="40" maxlength="50" style="width:180px;height:28px;" value="{{committee.time}}"></td>
+                                                <td><input  type="text" name="time" size="40" maxlength="50"  value="{{committee.time}}"></td>
 
                                             </tr>
                                             <tr>
@@ -60,21 +60,21 @@
 
                                                     Where:
                                                 </td>
-                                                <td><input type="text" name="location" size="40" maxlength="50" style="width:180px;height:28px;" value="{{committee.location}}"></td>
+                                                <td><input type="text" name="location" size="40" maxlength="50" value="{{committee.location}}"></td>
                                             </tr>
                                             <tr>
                                                 <td>
 
                                                     Primary Contact:
                                                 </td>
-                                                <td><input type="text" name="primary_contact" size="40" maxlength="50" style="width:180px;height:28px;" value="{{committee.from}}"></td>
+                                                <td><input type="text" name="primary_contact" size="40" maxlength="50" value="{{committee.from}}"></td>
                                             </tr>
 
                                             <tr>
                                                 <td>
                                                     Full Description:
                                                 </td>
-                                                <td><textarea wrap="virtual" name="description" cols="50" rows="5" style="width:564px;height:160px;">{{committee.content}}</textarea></td>
+                                                <td><textarea class="textarea" wrap="virtual" name="description" cols="50" rows="5">{{committee.content}}</textarea></td>
                                             </tr>
 
                                         </tbody>

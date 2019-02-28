@@ -1,20 +1,19 @@
-/* html,
-body {
-    height: 100%;
-} */
-
-.investor{
-  height:1200px;
+.investor {
+  height: 1200px;
 }
+
+.main-breadcrumb {
+  width: 1200px !important;
+  margin: 0 auto !important;
+}
+
 .w838 {
   width: 100%;
   border-left: none;
   height: 1051px;
 }
 
-/* .investor-right {
-    width: 100%;
-} */
+
 .main-breadcrumb {
   width: 1200px;
   margin: 0 auto;
@@ -28,6 +27,10 @@ body {
   font-weight: 400;
   line-height: 27px;
 
+}
+
+.pdfa {
+  height: 214px;
 }
 
 .breadcrumb li a {

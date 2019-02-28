@@ -7,7 +7,7 @@
 <div class="main">
     <div class="w1200">
         <script id="breadcrumbs" type="txt/template">
-            <div class="main-breadcrumb" style="width: 1200px;margin: 0 auto;">
+            <div class="main-breadcrumb">
                             <ul class="breadcrumb">
                                 <li><a href="{{_metadata.root_url}}/home">Home</a></li>
                                 <li>&nbsp;>&nbsp;</li>
@@ -22,118 +22,118 @@
         <table class="table-two" border="0">
             <tr>
                 <td>
-                   
-                        <div id="page_title_cycle">
-                            <script id="page_title" type="txt/template">
-                                {{name}}
+
+                    <div id="page_title_cycle">
+                        <script id="page_title" type="txt/template">
+                            {{name}}
                         </script>
-                        </div>
-                  
+                    </div>
+
                 </td>
             </tr>
         </table>
 
-        <table class="table-one"  border="0" cellpadding="10" cellspacing="0">
+        <table class="table-one" border="0" cellpadding="10" cellspacing="0">
             <tbody>
                 <tr>
                     <td>
-                        
-                            <form method="post">
+
+                        <form method="post">
 
 
-                                <table class="edit_eform-table" border="1"  cellspacing="0">
+                            <table class="edit_eform-table" border="1" cellspacing="0">
 
 
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                Category:
-                                            </td>
-                                            <td>
-                                                <select size="1" name="announcement_category_id">
-                                                    <option selected="" value="0">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            Category:
+                                        </td>
+                                        <td>
+                                            <select size="1" name="announcement_category_id">
+                                                <option selected="" value="0">
 
-                                                    </option>
-                                                    <option selected="" value="2">
-                                                        Board Announcements
-                                                    </option>
+                                                </option>
+                                                <option selected="" value="2">
+                                                    Board Announcements
+                                                </option>
 
-                                                    <option value="7">
-                                                        Clubhouse
-                                                    </option>
+                                                <option value="7">
+                                                    Clubhouse
+                                                </option>
 
-                                                    <option value="8">
-                                                        DAO Emergency Response Committee
-                                                    </option>
+                                                <option value="8">
+                                                    DAO Emergency Response Committee
+                                                </option>
 
-                                                    <option value="6">
-                                                        From the Web Administrator
-                                                    </option>
+                                                <option value="6">
+                                                    From the Web Administrator
+                                                </option>
 
-                                                    <option value="10">
-                                                        Maintenance
-                                                    </option>
+                                                <option value="10">
+                                                    Maintenance
+                                                </option>
 
-                                                    <option value="9">
-                                                        Parking
-                                                    </option>
+                                                <option value="9">
+                                                    Parking
+                                                </option>
 
-                                                    <option value="5">
-                                                        Recent eMail Bulletins
-                                                    </option>
+                                                <option value="5">
+                                                    Recent eMail Bulletins
+                                                </option>
 
-                                                    <option value="3">
-                                                        Social Events
-                                                    </option>
+                                                <option value="3">
+                                                    Social Events
+                                                </option>
 
-                                                    <option value="11">
-                                                        Various Meetings
-                                                    </option>
+                                                <option value="11">
+                                                    Various Meetings
+                                                </option>
 
-                                                </select>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                Date:
-                                            </td>
-                                            <td><input type="text" size="10" maxlength="10" style="width:180px;height:28px;"></td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                Expire Date:
-                                            </td>
-                                            <td><input type="text" style="width:180px;height:28px;">
-                                                (optional)
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                Title:
-                                            </td>
-                                            <td><input type="text" style="width:180px;height:28px;"></td>
-                                        </tr>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Date:
+                                        </td>
+                                        <td><input type="text" size="10" maxlength="10"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Expire Date:
+                                        </td>
+                                        <td><input type="text">
+                                            (optional)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Title:
+                                        </td>
+                                        <td><input type="text"></td>
+                                    </tr>
 
-                                        <tr>
-                                            <td>
-                                                Full Description:
-                                            </td>
-                                            <td><textarea wrap="virtual" name="full_desc" cols="50" rows="5"></textarea></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <table border="0" width="90%">
-                                    <tbody>
-                                        <tr>
-                                            <td width="10%" align="right">
-                                                <input type="Submit" value="Continue" class="continue">
-                                                <input type="button" id="cancel-button" value="Cancel" class="cancel">
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </form>
-                       
+                                    <tr>
+                                        <td>
+                                            Full Description:
+                                        </td>
+                                        <td><textarea wrap="virtual" name="full_desc" cols="50" rows="5"></textarea></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table border="0" width="90%">
+                                <tbody>
+                                    <tr>
+                                        <td width="10%" align="right">
+                                            <input type="Submit" value="Continue" class="continue">
+                                            <input type="button" id="cancel-button" value="Cancel" class="cancel">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+
                     </td>
                 </tr>
             </tbody>

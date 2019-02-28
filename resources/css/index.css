@@ -51,6 +51,9 @@
   margin: 24px 24px 24px 0;
 }
 
+.Events-Calendar_a {
+  height: 100%;
+}
 
 .calendar-img {
   width: 250px;

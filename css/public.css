@@ -5,7 +5,7 @@
 .table-one {background-color: #ffffff;margin-top: 20px;width: 100%;}
 .table-two {width: 90%;background-color: #6AA666;}
 .table-two tr td {height: 64px;padding-left: 24px;color: #ffffff;font-size: 26px;}
-
+.main-breadcrumb{width: 1200px;margin: 0 auto}
 /*banner*/
 .master-slider{min-width: 1200px;z-index:2;}
 .master-slider .ms-slide{z-index:8;}
