@@ -1,8 +1,8 @@
 var render = function() {
     _pre_render();
 
-    var volunteer_edit_title = $('#volunteer_edit_title').html();
-    Mustache.parse(volunteer_edit_title);
+    var volunteer_add_title = $('#volunteer_add_title').html();
+    Mustache.parse(volunteer_add_title);
     // $.each(data.volunteer_add_title, function() {
     //     $('#volunteer_add_title_cycle').append(Mustache.render(volunteer_add_title, this));
     // });
