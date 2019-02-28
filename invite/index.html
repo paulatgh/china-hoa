@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="shortcut icon" type="image/ico" href="/community/img/favicon.ico" />
+
+    <title>De Anza Oaks</title>
+    <link rel="stylesheet" href="/global.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <script src="https://cdn.bootcss.com/jquery/3.3.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+
+    <!-- Links as currently hosted by http-server -->
+
+    <script src="/js/99_global.js"></script>
+
+</head>
+
+<body>
+    <div id="content">
+
+    </div>
+    <script>
+        var data = {
+            _current_user: {
+                id: '1234',
+                email: 'test@example.com',
+                display_name: 'Laurie01',
+                first_name: 'Laurie',
+                last_name: 'Williams',
+                is_admin: true
+            },
+            _metadata: {
+                root_url: 'http://127.0.0.1:8080',
+                page_path: '/home',
+                assets_path: '/home',
+                site_name: 'De Anza Oaks',
+                environment: 'dev',
+            },
+            profile: {
+              birthday: "01/03/01",
+                employer: "C Corp",
+                occupation: "Real Estate Broker",
+                phone: {
+                home: "+14088385888",
+                  work: "+14088385881",
+                  cell: "+14088385882",
+                  other: "+14088385883",
+              },
+              email: "conniechan@gmail.com",
+                address: {
+                address_1: "22805 Poplar Grove Square",
+                  address_2: "Some place",
+                  city: "Cupertino",
+                  state: "CA",
+                  zip: "95014",
+                  lot: "43",
+                  subdivision: "De Anza Oaks",
+              },
+              website: "www.example.com",
+                hobbies: "football",
+                interests: "real estate",
+                organizations: "hoa",
+            }
+        }
+
+    </script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script>
+        // This script block stays in this wrapper html file
+        $(function() {
+            $('#content').load("body.html", function() {
+                render();
+            });
+        });
+
+    </script>
+</body>
+
+</html>
