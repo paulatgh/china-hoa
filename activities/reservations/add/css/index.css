@@ -1,8 +1,18 @@
+
+.main_body{
+  height:1200px
+}
+.w1200{
+  margin-bottom:60px;
+}
 .breadcrumb {
   width: 100%;
   height: 75px;
 }
-
+.table_a{
+  background-image: #ffffff;
+  width: 100%;
+}
 .breadcrumb li {
   float: left;
   margin-right: 10px;
@@ -12,11 +22,18 @@
   line-height: 75px;
   color: rgba(30, 130, 23, 1);
 }
+.tda{
+  height: 64px; 
+  padding-left: 24px;
+}
 
 .breadcrumb li a {
   color: rgba(30, 130, 23, 1);
 }
-
+.reservation-table{
+  width:90%;
+  border-color:"#6AA666"
+}
 .reservation-table tr {
   width: 410px;
   height: 54px;
@@ -35,7 +52,18 @@
   border-color: "#f1e8c6";
   padding: 14px 24px;
 }
-
+.reservation-table tr td input{
+  width:180px;
+  height:28px;
+}
+.reservation-table tr td select{
+  font-family: Tahoma; 
+  font-size: 11
+}
+.intb{
+  width:564px;
+  height:28px;
+}
 .p-input {
   width: 90%;
   margin: 20px 0;

@@ -1,6 +1,15 @@
+.w1200 {
+  margin-top: 10px;
+  margin-bottom: 60px
+}
+
 .breadcrumb {
   width: 100%;
   height: 75px;
+}
+
+.main_body {
+  height: 1138px;
 }
 
 .breadcrumb li {
@@ -15,6 +24,10 @@
 
 .breadcrumb li a {
   color: rgba(30, 130, 23, 1);
+}
+
+.calendar-table {
+  width: "90%";
 }
 
 .calendar-table tr {
@@ -43,11 +56,37 @@
   color: rgba(151, 151, 151, 1);
 }
 
+.int {
+  width: 564px !important;
+  height: 28px;
+  background: rgba(255, 255, 255, 1);
+}
+
+.calendar-table tr td input {
+  width: 180px;
+  height: 28px;
+}
+
+.calendar-table tr td select {
+  font-family: Tahoma;
+  font-size: 11
+}
+
+.inputa {
+  width: 564px !important;
+  height: 28px;
+}
+
 .p-input {
   width: 90%;
   margin: 20px 0;
   text-align: right;
 
+}
+
+.textarea {
+  width: 564px;
+  height: 160px;
 }
 
 .p-input input:nth-child(1) {

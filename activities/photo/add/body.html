@@ -1,14 +1,11 @@
 <!-- header -->
-<div class="header" style="box-shadow:0px 2px 7px 0px rgba(0,0,0,0.5);
-  border:1px solid rgba(151,151,151,1)">
-
-</div>
+<div class="header"></div>
 
 <!-- main body -->
-<div class="investor clearfix" style="margin-top: 30px;">
-    <div class="w1200" style="height: 1100px;">
+<div class="main_body">
+    <div class="w1200">
         <script id="breadcrumbs" type="txt/'template'">
-        <ul class="breadcrumb">
+            <ul class="breadcrumb">
             <li><a href="{{_metadata.root_url}}/home" rel="noopener noreferrer">Home</a></li>
             <li>&nbsp;>&nbsp;</li>
             <li><a href="{{_metadata.root_url}}/activities" rel="noopener noreferrer"> Events </a></li>
@@ -22,7 +19,7 @@
             <div class="main-center">
                 <table class="std-table" border="0" width="90%" bgcolor="#6AA666">
                     <tr>
-                        <td style="height: 64px; padding-left: 24px;">
+                        <td class="tda">
                             <font size="5" face="Verdana, Arial, Helvetica" color="#ffffff">
                                 Add a New Photo Album
                             </font>
@@ -39,27 +36,27 @@
                                 </td>
                                 <td>
 
-                                <input type="text" size="50" maxlength="50" name="name" style="width:564px;height:28px;">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Album Description:
-                            </td>
-                            <td>
+                                    <input type="text" size="50" maxlength="50" name="name">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Album Description:
+                                </td>
+                                <td>
 
-                                <textarea cols="36" rows="6" name="description" style="width:564px;height:160px;"></textarea>
-                            </td>
-                        </tr>
+                                    <textarea class="inta" cols="36" rows="6" name="description"></textarea>
+                                </td>
+                            </tr>
 
                             <!--<tr>-->
-                                <!--<td>-->
-                                    <!--Comments Allowed:-->
-                                <!--</td>-->
-                                <!--<td class="check-input">-->
-                                    <!--<input id="color-input-green_a" type="checkbox" name="color-input-green_a" checked="checked">-->
-                                    <!--<label for="color-input-green_a"></label>-->
-                                <!--</td>-->
+                            <!--<td>-->
+                            <!--Comments Allowed:-->
+                            <!--</td>-->
+                            <!--<td class="check-input">-->
+                            <!--<input id="color-input-green_a" type="checkbox" name="color-input-green_a" checked="checked">-->
+                            <!--<label for="color-input-green_a"></label>-->
+                            <!--</td>-->
                             <!--</tr>-->
 
 
@@ -82,23 +79,23 @@
 
                         </tbody>
                     </table>
-                <table border="0" width="90%">
-                    <tbody>
-                    <tr>
-                        <td width="10%" align="right">
-                            <input type="Submit" value="Save New" name="action" class="continue">
-                            <input type="button" id="cancel-button" value="Cancel" class="cancel">
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
+                    <table border="0" width="90%">
+                        <tbody>
+                            <tr>
+                                <td width="10%" align="right">
+                                    <input type="Submit" value="Save New" name="action" class="continue">
+                                    <input type="button" id="cancel-button" value="Cancel" class="cancel">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </form>
             </div>
         </div>
     </div>
 </div>
 <!-- footer -->
-<div class="footer" style="margin-top: 40px;">
+<div class="footer">
     <p>
         Copyright © 2019 Tellus, Inc. All Rights Reserved.
     </p>

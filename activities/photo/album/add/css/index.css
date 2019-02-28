@@ -1,10 +1,29 @@
+
+.main_body{
+  margin-top: 30px;
+  height: 1100px;
+}
+.w1200{
+  height: 100% !important;
+}
 .addalbum-table tr {
   width: 410px;
   height: 54px;
   background: rgba(255, 255, 255, 1);
   border: 1px solid rgba(106, 166, 102, 1);
 }
-
+.tda{
+  height: 64px; 
+  padding-left: 24px;
+}
+.inta{
+  width:564px;
+  height:28px;
+}
+.intb{
+  width:564px;
+  height:160px;
+}
 .addalbum-table tr td {
   height: 24px;
   font-size: 18px;

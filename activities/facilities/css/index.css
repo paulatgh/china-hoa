@@ -3,6 +3,17 @@ body {
   height: 100%;
 }
 
+.swiper-slide {
+  background-size: cover;
+  display: inline-block;
+  height: 280px;
+}
+
+.main-left {
+  width: 100%;
+  height: 100%;
+}
+
 .main-left h2 {
   text-align: center;
   height: 120px;
@@ -13,8 +24,18 @@ body {
   color: rgba(57, 61, 68, 1);
 }
 
+.main-breadcrumb {
+  width: 1200px;
+  margin: 0 auto
+}
+
 .section {
   position: relative;
+}
+
+.main-top {
+  margin-bottom: 35px;
+  height: 100%;
 }
 
 .section_title {

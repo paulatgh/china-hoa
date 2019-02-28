@@ -1,8 +1,22 @@
+.main_body {
+  margin-top: 30px;
+  height: 1100px;
+}
+
+.w1200 {
+  height: 100%;
+}
+
 .addalbum-table tr {
   width: 410px;
   height: 54px;
   background: rgba(255, 255, 255, 1);
   border: 1px solid rgba(106, 166, 102, 1);
+}
+
+.tda {
+  height: 64px;
+  padding-left: 24px;
 }
 
 .addalbum-table tr td {
@@ -14,6 +28,16 @@
   line-height: 24px;
   text-align: left;
   padding: 14px 24px;
+}
+
+.addalbum-table tbody tr td input {
+  width: 564px;
+  height: 28px;
+}
+
+.inta {
+  width: 564px;
+  height: 160px;
 }
 
 .breadcrumb {
@@ -60,4 +84,3 @@
   color: rgba(255, 255, 255, 1);
   cursor: pointer;
 }
-

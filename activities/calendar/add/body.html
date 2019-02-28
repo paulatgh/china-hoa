@@ -1,14 +1,11 @@
 <!-- header -->
-<div class="header" style="box-shadow:0px 2px 7px 0px rgba(0,0,0,0.5);
-border:1px solid rgba(151,151,151,1)">
-
-</div>
+<div class="header"></div>
 
 <!-- main -->
-<div class="investor clearfix" style="height: 1138px">
-    <div class="w1200" style="margin-top:10px;margin-bottom: 60px">
+<div class="investor clearfix  main_body">
+    <div class="w1200">
         <script id="breadcrumbs" type="txt/template">
-        <ul class="breadcrumb">
+            <ul class="breadcrumb">
             <li><a href="{{_metadata.root_url}}/home" rel="noopener noreferrer">Home</a></li>
             <li><span rel="noopener noreferrer" style="color:rgba(30,130,23,1)"> > </span></li>
             <li><a href="{{_metadata.root_url}}/activities" rel="noopener noreferrer">Events</a></li>
@@ -20,37 +17,35 @@ border:1px solid rgba(151,151,151,1)">
         </script>
         <div id="content">
             <div class="main-center">
-                <table class="std-table" border="0" width="90%" bgcolor="#6AA666">
+                <table class="table-two" border="0">
                     <tr>
-                        <td style="height: 64px; padding-left: 24px;">
-                            <font size="5" face="Verdana, Arial, Helvetica" color="#ffffff">
-                                Add New Events
-                            </font>
+                        <td>
+                            Add New Events
                         </td>
                     </tr>
                 </table>
                 <form method="post">
-                    <table class="calendar-table" border="1" width="90%" cellspacing="0" bordercolor="#6AA666">
+                    <table class="calendar-table" border="1">
                         <tr>
                             <td>
                                 Title:
                             </td>
                             <td>
-                                <input type="text" name="title" required style="width:564px; height:28px;background:rgba(255,255,255,1);">
+                                <input class="int" type="text" name="title" required maxlength="200">
                             </td>
                         </tr>
                         <tr>
                             <td>
                                 Event Start Date (mm/dd/yyyy):
                             </td>
-                            <td><input type="text" name="start_date" size="10" maxlength="10" required style="width:180px;height:28px;"></td>
+                            <td><input type="text" name="start_date" size="10" maxlength="10" required></td>
                         </tr>
                         <tr>
                             <td>
                                 Event End Date (mm/dd/yyyy):
                             </td>
                             <td width="70%">
-                                <input type="text" name="end_date" size="10" maxlength="10" style="width:180px;height:28px;">
+                                <input type="text" name="end_date" size="10" maxlength="10">
                                 <span>(use only for events that span across multiple consecutive days)</span>
                             </td>
                         </tr>
@@ -59,7 +54,7 @@ border:1px solid rgba(151,151,151,1)">
                                 Event Start Time:
                             </td>
                             <td>
-                                <select size="1" name="start_time_hour" required style="font-family: Tahoma; font-size: 11">
+                                <select size="1" name="start_time_hour" required>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
@@ -73,7 +68,7 @@ border:1px solid rgba(151,151,151,1)">
                                     <option value="11">11</option>
                                     <option value="12">12</option>
                                 </select>:
-                                <select size="1" name="start_time_minute" required style="font-family: Tahoma; font-size: 11">
+                                <select size="1" name="start_time_minute" required>
                                     <option value="00">00</option>
                                     <option value="05">05</option>
                                     <option value="10">10</option>
@@ -87,7 +82,7 @@ border:1px solid rgba(151,151,151,1)">
                                     <option value="50">50</option>
                                     <option value="55">55</option>
                                 </select>&nbsp;
-                                <select size="1" name="start_time_period" required style="font-family: Tahoma; font-size: 11">
+                                <select size="1" name="start_time_period" required>
                                     <option value="AM">AM</option>
                                     <option value="PM">PM</option>
                                 </select>
@@ -98,7 +93,7 @@ border:1px solid rgba(151,151,151,1)">
                                 Event End Time:
                             </td>
                             <td>
-                                <select size="1" name="end_time_hour" required style="font-family: Tahoma; font-size: 11">
+                                <select size="1" name="end_time_hour" required>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
@@ -112,7 +107,7 @@ border:1px solid rgba(151,151,151,1)">
                                     <option value="11">11</option>
                                     <option value="12">12</option>
                                 </select>:
-                                <select size="1" name="end_time_minute" required style="font-family: Tahoma; font-size: 11">
+                                <select size="1" name="end_time_minute" required>
                                     <option value="00">00</option>
                                     <option value="05">05</option>
                                     <option value="10">10</option>
@@ -126,7 +121,7 @@ border:1px solid rgba(151,151,151,1)">
                                     <option value="50">50</option>
                                     <option value="55">55</option>
                                 </select>&nbsp;
-                                <select size="1" name="end_time_period" required style="font-family: Tahoma; font-size: 11">
+                                <select size="1" name="end_time_period" required>
                                     <option value="AM">AM</option>
                                     <option value="PM">PM</option>
                                 </select>
@@ -136,7 +131,7 @@ border:1px solid rgba(151,151,151,1)">
                             <td>
                                 Location:
                             </td>
-                            <td><input type="text" name="location" required size="50" maxlength="50" style="width:564px; height:28px;"></td>
+                            <td><input class="inputa" type="text" name="location" required size="50" maxlength="50"></td>
                         </tr>
                         <!-- <tr>
                             <td>
@@ -162,7 +157,7 @@ border:1px solid rgba(151,151,151,1)">
                             <td>
                                 Description:
                             </td>
-                            <td><textarea wrap="virtual" name="description" cols="50" rows="5" style="width:564px;height:160px;"></textarea></td>
+                            <td><textarea class="textarea" wrap="virtual" name="description" cols="50" rows="5"></textarea></td>
                         </tr>
                     </table>
                     <p class="p-input">

@@ -16,16 +16,26 @@
 
 }
 
+.admin_option_left_a {
+  color: white;
+}
+
+#admin_permissions_cycle {
+  display: flex;
+}
+
 .breadcrumb {
   width: 347px;
   display: flex;
   position: relative;
   top: 24px;
+  float: left;
 }
 
 .main-breadcrumb {
-  width: 100%;
   height: 50px;
+  width: 1200px;
+  margin: 0 auto
 }
 
 .main-center {
@@ -101,6 +111,10 @@
 
 .Events-Calendar:hover {
   cursor: pointer;
+}
+
+.content-img {
+  background-size: 100%;
 }
 
 .content-img em {
