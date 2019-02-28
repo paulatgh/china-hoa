@@ -1,0 +1,96 @@
+<!-- header -->
+<div class="header" style="box-shadow:0px 2px 7px 0px rgba(0,0,0,0.5);
+border:1px solid rgba(151,151,151,1)">
+</div>
+
+<!-- main -->
+<div style="height:1200px">
+
+    <div class="w1200" style="margin-bottom:60px">
+        <script id="breadcrumbs" type="txt/template">
+        <ul class="breadcrumb">
+            <li><a href="{{_metadata.root_url}}/home">Home</a></li>
+            <li><span rel="noopener noreferrer" style="color:rgba(30,130,23,1)"> > </span></li>
+            <li><a href="{{_metadata.root_url}}/activities">Activities</a></li>
+            <li><span rel="noopener noreferrer" style="color:rgba(30,130,23,1)"> > </span></li>
+            <li><a href="{{_metadata.root_url}}/activities/calendar">Events</a></li>
+        </ul>
+    </script>
+        <table style="background-color: #ffffff" background="" border="0" width="100%" cellpadding="10" cellspacing="0">
+            <table class="std-table" border="0" width="90%" bgcolor="#6AA666">
+                <tr>
+                    <td style="height: 64px; padding-left: 24px;">
+                        <font size="5" face="Verdana, Arial, Helvetica" color="#ffffff">
+                            Respond to Reservation Request
+                        </font>
+                    </td>
+                </tr>
+            </table>
+            <form id="edit-reservation-form" method="post">
+                <table class="reservation-table" border="1" width="90%" cellspacing="0" bordercolor="#6AA666">
+                    <tbody>
+                        <script id="edit-reservation-body" type="txt/template">
+                        <tr>
+                            <td>
+                                Location
+                            </td>
+                            <td>
+                                <span>{{location}}</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Event Start:
+                            </td>
+                            <td>
+                                <span>{{user_friendly_starts_at}}</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Event End:
+                            </td>
+                            <td>
+                                <span>{{user_friendly_ends_at}}</span>
+                            </td>
+                        </tr>
+                        {{#reservation_fields}}
+                        <tr>
+                            <td>{{user_friendly_name}}:</td>
+                            <td>
+                                <span>{{value}}</span>
+                            </td>
+                        </tr>
+                        {{/reservation_fields}}
+                        </script>
+                        <tr>
+                            <td>Approve/Deny:</td>
+                            <td>
+                                <input type="radio" name="status" value="approved" checked> Approve<br/>
+                                <input type="radio" name="status" value="denied"> Deny<br/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Reason (optional):</td>
+                            <td>
+                                <input type="text" name="response_text" size="10" maxlength="255" style="width:564px;height:28px"/>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="p-input">
+                    <input type="submit" value="Save">
+                    <input type="button" id="cancel-button" value="Cancel">
+                </p>
+            </form>
+        </table>
+    </div>
+</div>
+
+
+<!-- footer -->
+<div class="footer">
+    <p>
+        Copyright © 2019 Tellus, Inc. All Rights Reserved.
+    </p>
+</div>
