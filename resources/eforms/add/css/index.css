@@ -1,3 +1,8 @@
+
+.eform-table{
+  width:90%;
+  border:#008000;
+}
 .eform-table tr {
   width: 410px;
   height: 54px;
@@ -16,7 +21,14 @@
   border-color: "#f1e8c6";
   padding: 14px 24px;
 }
-
+.eform-table tr td textarea{
+  width:564px;
+  height:160px;
+}
+.eform-table tr td input{
+  font-family: Tahoma; 
+  font-size: 11;
+}
 .breadcrumb {
   width: 100%;
   height: 75px;

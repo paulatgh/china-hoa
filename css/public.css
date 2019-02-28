@@ -1,6 +1,11 @@
 /*header*/
 .header{box-shadow:0px 2px 7px 0px rgba(0,0,0,0.5);border:1px solid rgba(151,151,151,1);}
 
+/*table*/
+.table-one {background-color: #ffffff;margin-top: 20px;width: 100%;}
+.table-two {width: 90%;background-color: #6AA666;}
+.table-two tr td {height: 64px;padding-left: 24px;color: #ffffff;font-size: 26px;}
+
 /*banner*/
 .master-slider{min-width: 1200px;z-index:2;}
 .master-slider .ms-slide{z-index:8;}
@@ -344,7 +349,7 @@
 
 /*investor*/
 	/*investor-1*/
-.investor{width:100%;}
+.investor{width:100%;margin-top: 30px;height: 1200px;}
 .investor-left{width:360px;float:left;}
 .investor-right{width:840px;float:left;}
 

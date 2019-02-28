@@ -16,14 +16,18 @@
 .breadcrumb li a {
   color: rgba(30, 130, 23, 1);
 }
-.volunteer-table tr {
+.committee-table{
+  width:90%;
+  border:#6AA666;
+}
+.committee-table tr {
   width: 410px;
   height: 54px;
   background: rgba(255, 255, 255, 1);
   border: 1px solid rgba(106, 166, 102, 1);
 }
 
-.volunteer-table tr td {
+.committee-table tr td {
   height: 24px;
   font-size: 18px;
   font-family: OpenSans-Regular;
@@ -34,8 +38,19 @@
   border-color: "#f1e8c6";
   padding: 14px 24px;
 }
-
-.volunteer-table tr>td>span {
+.text{
+  width:564px;
+  height:28px;
+}
+.time{
+ width:180px;
+ height:28px;
+}
+.committee-table tr td textarea{
+  width:564px;
+  height:160px;
+}
+.committee-table tr>td>span {
   font-size: 16px;
   font-family: OpenSans-Regular;
   font-weight: 400;
