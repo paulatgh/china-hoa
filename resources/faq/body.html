@@ -17,23 +17,26 @@
                             </ul>
                         </div>
                         </script>
-            <div class="main-left" style="width:100%;height: 100%;">
+            <div class="main-left">
                 <div class="form_2">
                     <div class="form_title">
                         <div class="form_title" id="faq_title_cycle">
                             Frequently Asked Questions
                         </div>
                     </div>
-                    <ul id="faq_content_cycle">
-                        <script id="faqs" type="txt/template">
-                            {{#faqs}}
-                            <li>
-                                <h3>Question: {{Question}}</h3>
-                                <p><strong>Answer:</strong> {{Answer}}</p>
-                            </li>
-                            {{/faqs}}
-                        </script>
-                    </ul>
+                    <div id="faq_cycle" class="faq_cycle">
+                        <script id="faq" type="txt/template">
+                            {{#title}}
+                        <div class="faq_title">{{title}}</div>
+                        {{/title}}
+                        <ul class="faq_ul">
+                                <li>
+                                    <h3>Question:{{Question}}</h3>
+                                    <p class="faq_p"><strong>Answer:</strong> {{Answer}}</p>
+                                </li>
+                        </ul>
+                    </script>
+                    </div>
                 </div>
             </div>
         </div>
