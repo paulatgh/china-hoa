@@ -1,3 +1,6 @@
+/*header*/
+.header{box-shadow:0px 2px 7px 0px rgba(0,0,0,0.5);border:1px solid rgba(151,151,151,1);}
+
 /*banner*/
 .master-slider{min-width: 1200px;z-index:2;}
 .master-slider .ms-slide{z-index:8;}

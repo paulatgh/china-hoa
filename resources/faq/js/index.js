@@ -1,7 +1,13 @@
 var render = function() {
     _pre_render()
 
-    $("#faqs").after(function() { return Mustache.render($(this).html(), data); });
+    // $("#faq").after(function() { return Mustache.render($(this).html(), data); });
+
+    var faq = $('#faq').html()
+    $.each(data.faq, function() {
+        $('#faq_cycle').append(Mustache.render(faq, this));
+    });
+
     $("#breadcrumbs").after(function() { return Mustache.render($(this).html(), data); });
 
     // Global post render
