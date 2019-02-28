@@ -6,7 +6,10 @@ body {
 .main {
   height: 1105px;
 }
-
+.main-top{
+ margin-bottom: 35px;
+ height: 100%;
+}
 .main-left h2 {
   text-align: center;
   height: 120px;

@@ -1,3 +1,11 @@
+.main {
+  height: 1200px;
+}
+
+.w1200 {
+  margin-bottom: 60px;
+}
+
 .breadcrumb {
   width: 100%;
   height: 75px;
@@ -14,6 +22,11 @@
 
 .breadcrumb li a {
   color: rgba(30, 130, 23, 1);
+}
+
+.page-table {
+  width: 90%;
+  border: #6AA666;
 }
 
 .page-table tr {
@@ -33,6 +46,27 @@
   text-align: left;
   border-color: "#f1e8c6";
   padding: 14px 24px;
+}
+
+.page-table tr td input {
+  width: 180px;
+  height: 28px;
+}
+
+.page-table tr td select {
+  width: 180px;
+  height: 28px;
+}
+
+.page-table tr td textarea {
+  width: 564px;
+  height: 160px;
+}
+
+.int {
+  width: 564px !important;
+  height: 28px !important;
+  background: rgba(255, 255, 255, 1);
 }
 
 .p-input {

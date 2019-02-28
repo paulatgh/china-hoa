@@ -1,10 +1,9 @@
 <!-- header -->
-<div class="header" style="box-shadow:0px 2px 7px 0px rgba(0,0,0,0.5);
-  border:1px solid rgba(151,151,151,1)">
+<div class="header">
 </div>
 
 <!-- main body -->
-<div class="investor clearfix" style="margin-top: 30px; height: 1200px">
+<div class="investor clearfix">
     <div class="w1200">
         <script id="breadcrumbs" type="txt/template">
             <div class="main-breadcrumb" style="width: 1200px;margin: 0 auto">
@@ -19,28 +18,28 @@
                     </ul>
                 </div>
                </script>
-        <table class="std-table" border="0" width="90%" bgcolor="#6AA666">
+        <table class="table-two" border="0">
             <tr>
-                <td style="height: 64px; padding-left: 24px;">
-                    <font size="5" face="Verdana, Arial, Helvetica" color="#ffffff">
+                <td>
+                    
                         <div id="emails_title_cycle">
                             <script id="emails_title" type="txt/template">
                                 {{name}}
                                         </script>
                         </div>
-                    </font>
+                  
                 </td>
             </tr>
         </table>
         <form method="post" enctype="multipart/form-data" action="" name="daForm">
-            <table class="content-table" border="1" width="90%" cellspacing="0" bordercolor="#6AA666">
+            <table class="content-table" border="1"cellspacing="0">
                 <tr>
                     <td>
                         From Name:
                     </td>
                     <td>
 
-                        <input type="text" style="width:564px; height:28px;background:rgba(255,255,255,1);">
+                        <input class="int" type="text"size="10" maxlength="10" >
 
                     </td>
                 </tr>
@@ -48,14 +47,14 @@
                     <td>
                         From eMail Address:
                     </td>
-                    <td><input type="text" size="10" maxlength="10" style="width:180px;height:28px;"></td>
+                    <td><input type="text" size="10" maxlength="10"></td>
                 </tr>
                 <tr>
                     <td>
                         To:
                     </td>
                     <td>
-                        <select size="1" name="sendTo" id="sendToSelect" style="width:240px;height:32px;">
+                        <select size="1" name="sendTo" id="sendToSelect">
                             <option selected="" value="none">(None)</option>
                             <option value="maillist_category">eMail Bulletin Category</option>
                             <option value="person_category">Address Book Category</option>
@@ -73,7 +72,7 @@
                         Users who have not logged in since this date: (mm/dd/yyyy)
                     </td>
                     <td>
-                        <input type="text" style="width:180px;height:28px;">
+                        <input type="text" size="10" maxlength="10">
                     </td>
                 </tr>
                 <tr>
@@ -81,7 +80,7 @@
                         Subject:
                     </td>
                     <td>
-                        <input type="text" name="event_start_dt" size="10" maxlength="10" style="width:180px;height:28px;">
+                        <input type="text" name="event_start_dt" size="10" maxlength="10">
                     </td>
                 </tr>
                 <tr>
@@ -89,14 +88,14 @@
                         Linked File:
                     </td>
                     <td>
-                        <input type="file" size="30" maxlength="200" style="width:180px;height:28px;">
+                        <input type="file" size="30" maxlength="200">
                     </td>
                 </tr>
                 <tr>
                     <td>
                         Full Description:
                     </td>
-                    <td><textarea wrap="virtual" name="full_desc" cols="50" rows="5" style="width:564px;height:160px;"></textarea></td>
+                    <td><textarea wrap="virtual" name="full_desc" cols="50" rows="5"></textarea></td>
                 </tr>
             </table>
             <table border="0" width="90%">
