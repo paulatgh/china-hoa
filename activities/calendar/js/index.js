@@ -39,23 +39,48 @@ var render = function() {
         });
     });
 
+    displayEventActions();
+
     if (data._current_user && data._current_user.is_admin == true) {
         $(".action-buttons-top").css("display", "block")
-        $(".top-right").css("display", "block")
-        $(".right-b").click(function() {
-            if ($('#calendar_events .saveChange').length) {
-                return false;
-            }
-            var index = Number($(this).parents('ul').attr('data'))
-            var self = this;
-            delete_element(data, index, $(this).parents('ul'), function() {
-                submitDynamicForm(self.getAttribute('data-link'), 'POST');
-            })
+    }
+};
+
+var displayEventActions = function() {
+    $('.event-row').each(function() {
+        eventType = this.getAttribute('data-event-type');
+        isAdmin = data._current_user && data._current_user.is_admin;
+        if (eventType == 'event' && !isAdmin) {
+            // show the RSVP actions for all events
+            displayRsvp(this);
+        } else {
+            // show the edit/delete panel if available
+            $(this).children(".top-right").css("display", "block")
+        }
+    });
+
+    // handle event editing by redirecting to edit link
+    $(".right-a").click(function() {
+        window.location = this.getAttribute('data-link');
+        return;
+    });
+
+    // handle event deletion
+    $(".right-b").click(function() {
+        if ($('#calendar_events .saveChange').length) {
+            return false;
+        }
+        var index = Number($(this).parents('ul').attr('data'))
+        var self = this;
+        delete_element(data, index, $(this).parents('ul'), function() {
+            submitDynamicForm(self.getAttribute('data-link'), 'POST');
         })
-        edit()
-    } else {
-        var str =
-            `<li class="tips">
+    });
+};
+
+var displayRsvp = function(elem) {
+    var tipsHtml =
+        `<li class="tips">
             <ul>
             <li><a href="#" class="Yes">Yes</a></li>
             <li><a href="#" class="No">No</a></li>
@@ -63,92 +88,38 @@ var render = function() {
             <li><a class="Notes">Notes</a></li>
             </ul>
         </li>`;
-        $('.calendar-right ul').mouseenter(function() {
-            $(this).append(str)
-            $('.Yes').hover(function() {
-                $(this).addClass('tips_hover_yes')
-            }, function() {
-                $(this).removeClass('tips_hover_yes')
-            })
-            $('.No').hover(function() {
-                $(this).addClass('tips_hover_no')
-            }, function() {
-                $(this).removeClass('tips_hover_no')
-            })
-            $('.Maybe').hover(function() {
-                $(this).addClass('tips_hover_maybe')
-            }, function() {
-                $(this).removeClass('tips_hover_maybe')
-            })
-            $('.Notes').hover(function() {
-                $(this).addClass('tips_hover_notes')
-            }, function() {
-                $(this).removeClass('tips_hover_notes')
-            })
-            $('.Notes').click(function(e) {
-                $('.db1').show();
-                return false;
-            })
-            $('.return').click(function() {
-                $('.db1').hide();
-            })
+    $(elem).mouseenter(function() {
+        $(this).append(tipsHtml)
+        $('.Yes').hover(function() {
+            $(this).addClass('tips_hover_yes')
+        }, function() {
+            $(this).removeClass('tips_hover_yes')
+        })
+        $('.No').hover(function() {
+            $(this).addClass('tips_hover_no')
+        }, function() {
+            $(this).removeClass('tips_hover_no')
+        })
+        $('.Maybe').hover(function() {
+            $(this).addClass('tips_hover_maybe')
+        }, function() {
+            $(this).removeClass('tips_hover_maybe')
+        })
+        $('.Notes').hover(function() {
+            $(this).addClass('tips_hover_notes')
+        }, function() {
+            $(this).removeClass('tips_hover_notes')
+        })
+        $('.Notes').click(function(e) {
+            $('.db1').show();
             return false;
         })
-        $('.calendar-right ul').mouseleave(function() {
-            $('.tips').remove()
+        $('.return').click(function() {
+            $('.db1').hide();
         })
-        for (i = 0; i < data.events.length; i++) {
-            var name = data._current_user.id == data.events[i].id;
-            if (name == false) {
-                console.log(123)
-            }
-        }
-    }
-
-
-    function edit() {
-        $(".right-a").click(function() {
-            window.location = this.getAttribute('data-link');
-            return;
-            if ($('.saveChange').length !== 0) {
-                return false;
-            }
-            var val = $(this).parents('ul').find('li');
-            var saveButton = `<span class="saveChange">Save</span>`;
-            val.each(function(index, item) {
-                if ($(item).find('.top-right')) {
-                    $(item).find('.top-right').remove();
-                }
-                var value = $(item).text().trim();
-                var inp = `<input type="text" style="width:80%" value="${value}"/>`;
-                $(item).empty().append(inp)
-            })
-            val.parent().append(saveButton);
-            $('.saveChange').click(function() {
-                $(this).remove()
-                var value = []
-                val.find('input').each(function(index, item) {
-                    value.push($(item).val())
-                })
-                $(val).empty()
-                var editStr = `
-                        <div class="top-right" style="display: block;">
-                            <span class="right-a">Edit</span>
-                            <span class="right-b">Delete</span>
-                        </div>`
-                $.each(value, function(index, item) {
-                    $(val).eq(index).text(item)
-                })
-                $(val).eq(0).append(editStr)
-                $(".right-b").click(function() {
-                    if ($('#calendar_events .saveChange').length) {
-                        return false;
-                    }
-                    delete_element(data, index)
-                })
-                edit()
-            })
-
-        })
-    }
+        return false;
+    })
+    $(elem).mouseleave(function() {
+        $('.tips').remove()
+    })
 };

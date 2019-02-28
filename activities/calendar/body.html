@@ -49,17 +49,16 @@
                     </div>
                     <div id="calendar_events" class="calendar-right">
                         <script id="event_template" type="txt/template">
-                            <ul data={{id}}>
-                                <li>{{friendly_date}}
-                                    <div class="top-right">
-                                        {{#edit_link}}
-                                        <span class="right-a" data-link="{{edit_link}}">Edit</span>
-                                        {{/edit_link}}
-                                        {{#delete_link}}
-                                        <span class="right-b" data-link="{{delete_link}}">Delete</span>
-                                        {{/delete_link}}
-                                    </div>
-                                </li>
+                            <ul class="event-row" data-id="{{id}}" data-event-type="{{event_type}}">
+                                <div class="top-right">
+                                    {{#edit_link}}
+                                    <span class="right-a" data-link="{{edit_link}}">Edit</span>
+                                    {{/edit_link}}
+                                    {{#delete_link}}
+                                    <span class="right-b" data-link="{{delete_link}}">Delete</span>
+                                    {{/delete_link}}
+                                </div>
+                                <li>{{friendly_date}}</li>
                                 <li>{{title}}</li>
                                 <li>Location:&nbsp;{{location}}</li>
                                 <li>
