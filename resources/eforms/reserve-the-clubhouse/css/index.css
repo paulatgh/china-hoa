@@ -23,7 +23,13 @@
   width: 100%;
   padding: 10px 0;
 }
-
+.table-two{
+  width: 100%;
+}
+.reserve-table {
+  width: 100%;
+  border:#6AA666;
+}
 .reserve-table tr {
   width: 410px;
   height: 54px;
@@ -41,7 +47,18 @@
   text-align: left;
   padding: 14px 24px;
 }
-
+.reserve-table tr td input{
+  width:564px;
+  height:28px;
+}
+.reserve-table tr td textarea{
+  width:564px;
+  height:160px;
+}
+.main-breadcrumb{
+ width: 1200px;
+ margin: 0 auto;
+}
 .breadcrumb {
   width: 1200px;
   height: 75px;
