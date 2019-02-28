@@ -26,13 +26,13 @@
                     </div>
                     <div id="faq_cycle" class="faq_cycle">
                         <script id="faq" type="txt/template">
-                            {{#title}}
-                        <div class="faq_title">{{title}}</div>
-                        {{/title}}
+                            <div class="faq_title">{{category_name}}</div>
                         <ul class="faq_ul">
                                 <li>
+                                    {{#faqs}}
                                     <h3>Question:{{question}}</h3>
                                     <p class="faq_p"><strong>Answer:</strong> {{answer}}</p>
+                                    {{/faqs}}
                                 </li>
                         </ul>
                     </script>
