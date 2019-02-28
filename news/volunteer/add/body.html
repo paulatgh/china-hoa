@@ -11,10 +11,7 @@
             <li>&nbsp;>&nbsp;</li>
             <li><a href="{{_metadata.root_url}}/news" rel="noopener noreferrer">News</a></li>
             <li>&nbsp;>&nbsp;</li>
-            <li><a href="{{_metadata.root_url}}/news/volunteer" rel="noopener noreferrer">volunteer</a></li>
-            <li>&nbsp;>&nbsp;</li>
-            <li><a href="#?id={{volunteer_page_title.id}}">{{volunteer_page_title.title}}</a></li>
-
+            <li><a href="{{_metadata.root_url}}/news/volunteer" rel="noopener noreferrer">Volunteer</a></li>
         </ul>
         </script>
 
@@ -22,59 +19,55 @@
             <table class="table-two" border="0">
                 <tr>
                     <td>
-                        <div id="volunteer_add_title_cycle">
-                            <script id="volunteer_add_title" type="txt/template">
-                                {{name}}
-                            </script>
-                        </div>
+                        <font size="5" face="Verdana, Arial, Helvetica" color="#ffffff">
+                            <div>Create Volunteer Need</div>
+                        </font>
                     </td>
                 </tr>
             </table>
             <tbody>
                 <tr>
                     <td>
-
-
                         <form method="post">
-
                             <table class="volunteer-table" border="1" cellspacing="0">
                                 <tbody>
                                     <tr>
                                         <td>
-                                            Form Title/Name:
+                                            Title:
                                         </td>
-                                        <td><input class="int" type="text" name="short_desc" size="40" maxlength="50"></td>
+                                        <td><input type="text" name="title" required size="40" maxlength="50"></td>
                                     </tr>
                                     <tr>
                                         <td>
-
                                             When:
                                         </td>
-                                        <td><input type="text" name="short_desc" size="40" maxlength="50"></td>
-
+                                        <td><input type="text" name="when" size="40" maxlength="50"></td>
                                     </tr>
                                     <tr>
                                         <td>
-
                                             Where:
                                         </td>
-                                        <td><input type="text" name="short_desc" size="40" maxlength="50"></td>
+                                        <td><input type="text" name="where" size="40" maxlength="50"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Contact:
+                                        </td>
+                                        <td><input type="text" name="contact" size="40" maxlength="50"></td>
                                     </tr>
                                     <tr>
                                         <td>
                                             Full Description:
                                         </td>
-                                        <td><textarea class="textarea-desc" wrap="virtual" name="full_desc" cols="50" rows="5"></textarea></td>
+                                        <td><textarea class="textarea-desc" wrap="virtual" name="description" cols="50" rows="5"></textarea></td>
                                     </tr>
-
-
                                 </tbody>
                             </table>
                             <table border="0" width="90%">
                                 <tbody>
                                     <tr>
                                         <td width="10%" align="right">
-                                            <input type="Submit" value="Submit" name="action" class="continue">
+                                            <input type="submit" value="Submit" name="action" class="continue">
                                             <input type="button" value="Cancel" id="cancel-button" class="cancel">
                                         </td>
                                     </tr>
@@ -89,7 +82,6 @@
         </table>
     </div>
 </div>
-
 
 <!-- footer -->
 <div class="footer">

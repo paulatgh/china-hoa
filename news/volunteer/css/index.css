@@ -113,6 +113,15 @@ body {
   margin-bottom: 16px;
 }
 
+.volunteer_body {
+  font-size: 20px;
+  font-family: OpenSans-SemiBold;
+  font-weight: 500;
+  color: rgba(57, 61, 68, 1);
+  line-height: 27px;
+  margin-bottom: 16px;
+}
+
 .volunteer_description {
   font-size: 20px;
   font-family: OpenSans-SemiBold;

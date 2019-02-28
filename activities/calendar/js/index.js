@@ -103,7 +103,7 @@ var render = function() {
                 console.log(123)
             }
         }
-    } 
+    }
 
 
     function edit() {
