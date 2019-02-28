@@ -4,13 +4,15 @@ body {
 }
 
 .main {
-  height: 2020px;
+  height: 100%;
 }
 
 .main-center {
   width: 920px;
-  height: auto;
+  height: 100%;
   margin: 40px auto;
+  box-sizing: border-box;
+
 
 }
 
