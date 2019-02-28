@@ -12,8 +12,9 @@
   font: 12px Verdana, Arial, Helvetica;
   border-collapse: collapse;
   border: 1px solid #6AA666;
-  margin: 5px;
+  margin:20px 5px 5px 5px;
   line-height: 16px;
+ 
 }
 
 .eformtable tbody td {
