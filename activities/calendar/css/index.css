@@ -1,6 +1,4 @@
-.main {
-  height: 1150px;
-}
+
 
 .main-left {
   width: 100%;
@@ -11,7 +9,7 @@
   width: 100%;
   height: 626px;
   display: flex;
-  justify-content: space-between
+  justify-content: space-between;
 }
 
 .calendar {
@@ -27,7 +25,7 @@
 }
 
 .main-top {
-  margin-bottom: 35px;
+  margin-bottom: 150px;
   height: 100%;
 }
 

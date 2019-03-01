@@ -1,6 +1,6 @@
 
 .main_body{
-  height:1200px
+  margin-bottom: 100px;
 }
 .w1200{
   margin-bottom:60px;
@@ -32,7 +32,7 @@
 }
 .reservation-table{
   width:90%;
-  border-color:"#6AA666"
+  border-color:#6AA666;
 }
 .reservation-table tr {
   width: 410px;
@@ -60,7 +60,7 @@
   font-family: Tahoma; 
   font-size: 11
 }
-.intb{
+.int{
   width:564px;
   height:28px;
 }
