@@ -1,6 +1,7 @@
-.investor{
-  height: 1200px;
+.investor {
+  margin-bottom: 100px;
 }
+
 .breadcrumb {
   width: 100%;
   height: 75px;
@@ -19,10 +20,12 @@
 .breadcrumb li a {
   color: rgba(30, 130, 23, 1);
 }
-.committee-table{
-  width:90%;
-  border:#6AA666;
+
+.committee-table {
+  width: 90%;
+  border: #6AA666;
 }
+
 .committee-table tr {
   width: 410px;
   height: 54px;
@@ -41,24 +44,29 @@
   border-color: "#f1e8c6";
   padding: 14px 24px;
 }
-.text{
-  width:564px;
-  height:28px;
+
+.text {
+  width: 564px;
+  height: 28px;
 }
-.time{
- width:180px;
- height:28px;
+
+.time {
+  width: 180px;
+  height: 28px;
 }
-.committee-table tr td textarea{
-  width:564px;
-  height:160px;
+
+.committee-table tr td textarea {
+  width: 564px;
+  height: 160px;
 }
+
 .committee-table tr>td>span {
   font-size: 16px;
   font-family: OpenSans-Regular;
   font-weight: 400;
   color: rgba(151, 151, 151, 1);
 }
+
 .continue {
   width: 113px;
   height: 38px;
