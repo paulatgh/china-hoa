@@ -1,92 +1,73 @@
 <!-- header -->
 <div class="header">
-    </div>
+</div>
 
-    <!-- main -->
-    <div class="investor clearfix">
-        <div class="w1200">
-            <script id="breadcrumbs" type="txt/template">
-                <ul class="breadcrumb">
-                <li><a href="{{_metadata.root_url}}/home" rel="noopener noreferrer">Home</a></li>
-                <li>&nbsp;>&nbsp;</li>
-                <li><a href="{{_metadata.root_url}}/news" rel="noopener noreferrer">News</a></li>
-                <li>&nbsp;>&nbsp;</li>
-                <li><a href="{{_metadata.root_url}}/news/volunteer" rel="noopener noreferrer">Volunteer</a></li>
-                <li>&nbsp;>&nbsp;</li>
-                <li><a href="#?id={{volunteer_page_title.id}}">{{volunteer_page_title.title}}</a></li>
-            </ul>
-            </script>
+<!-- main -->
+<div class="investor clearfix">
+    <div class="w1200">
+        <script id="breadcrumbs" type="txt/template">
+        <ul class="breadcrumb">
+            <li><a href="{{_metadata.root_url}}/home" rel="noopener noreferrer">Home</a></li>
+            <li>&nbsp;>&nbsp;</li>
+            <li><a href="{{_metadata.root_url}}/news" rel="noopener noreferrer">News</a></li>
+            <li>&nbsp;>&nbsp;</li>
+            <li><a href="{{_metadata.root_url}}/news/volunteer" rel="noopener noreferrer">Volunteer</a></li>
+        </ul>
+        </script>
 
-            <table class="table-one" border="0" cellpadding="10" cellspacing="0">
-                <table class="table-two" border="0">
-                    <tr>
-                        <td>
-                            <div>Edit Volunteer Need</div>
-                        </td>
-                    </tr>
-                </table>
-                <tbody>
-                    <tr>
-                        <td>
-                            <form method="post">
-                                <table class="volunteer-table" border="1" cellspacing="0">
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                Title:
-                                            </td>
-                                            <td><input type="text" name="title" required size="40" maxlength="50"></td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                When:
-                                            </td>
-                                            <td><input type="text" name="when" size="40" maxlength="50"></td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                Where:
-                                            </td>
-                                            <td><input type="text" name="where" size="40" maxlength="50"></td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                Contact:
-                                            </td>
-                                            <td><input type="text" name="contact" size="40" maxlength="50"></td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                Full Description:
-                                            </td>
-                                            <td><textarea class="textarea-desc" wrap="virtual" name="description" cols="50" rows="5"></textarea></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <table border="0" width="90%">
-                                    <tbody>
-                                        <tr>
-                                            <td width="10%" align="right">
-                                                <input type="submit" value="Submit" name="action" class="continue">
-                                                <input type="button" value="Cancel" id="cancel-button" class="cancel">
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </form>
-
-                        </td>
-                    </tr>
-                </tbody>
-                <div class="ad"></div>
+        <table class="table-one" border="0" cellpadding="10" cellspacing="0">
+            <table class="table-two" border="0">
+                <tr>
+                    <td>
+                        <div>Edit Volunteer Need</div>
+                    </td>
+                </tr>
             </table>
-        </div>
+            <tbody>
+                <tr>
+                    <td>
+                        <form method="post">
+                            <table class="volunteer-table" border="1" cellspacing="0">
+                                <tbody>
+                                    <script id="edit-volunteer-body" type="txt/template">
+                                    <tr>
+                                        <td>
+                                            Title:
+                                        </td>
+                                        <td><input type="text" name="title" required size="40" maxlength="50" value="{{title}}"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Full Description:
+                                        </td>
+                                        <td><textarea class="textarea-desc" wrap="virtual" name="description" cols="50" rows="5">{{body}}</textarea></td>
+                                    </tr>
+                                    </script>
+                                </tbody>
+                            </table>
+                            <table border="0" width="90%">
+                                <tbody>
+                                    <tr>
+                                        <td width="10%" align="right">
+                                            <input type="submit" value="Submit" name="action" class="continue">
+                                            <input type="button" value="Cancel" id="cancel-button" class="cancel">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                    </td>
+                </tr>
+            </tbody>
+            <div class="ad"></div>
+        </table>
     </div>
+</div>
 
-    <!-- footer -->
-    <div class="footer">
-        <p>
-            Copyright © 2019 Tellus, Inc. All Rights Reserved.
-        </p>
-    </div>
-    <div class="clearfix"></div>
+<!-- footer -->
+<div class="footer">
+    <p>
+        Copyright © 2019 Tellus, Inc. All Rights Reserved.
+    </p>
+</div>
+<div class="clearfix"></div>

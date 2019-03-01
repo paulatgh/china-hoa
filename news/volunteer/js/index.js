@@ -21,14 +21,12 @@ var render = function() {
     if (data._current_user && data._current_user.is_admin) {
         $('.top-Add').show();
         $('.volunteer_admin_options').show();
-        $('.part .part-a2').click(function() {
-            delete_element()
+        $('.part-a2').click(function() {
+            var self = this;
+            // TODO these should not be passing null, but it only matters in the dev env
+            delete_element(data, null, null, function() {
+                submitDynamicForm(self.getAttribute('data-link'), 'POST');
+            });
         })
     }
-    $(".part-a1").click(function() {
-        window.location = `${data._metadata.root_url}/news/volunteer/edit`;
-    })
-    $(".part-a2").click(function() {
-        delete_element()
-    })
 }
