@@ -4,7 +4,6 @@
   color: rgba(30, 130, 23, 1);
   height: 27px;
   font-size: 20px;
-  font-family: OpenSans-Regular;
   font-weight: 400;
   line-height: 27px;
 }
@@ -55,7 +54,6 @@
   background: rgba(106, 166, 102, 1);
   border-radius: 20px;
   font-size: 16px;
-  font-family: OpenSans-Regular;
   font-weight: 400;
   color: rgba(255, 255, 255, 1);
   line-height: 38px;
@@ -70,7 +68,6 @@
 .photo-albums {
   height: 41px;
   font-size: 24px;
-  font-family: OpenSans-Bold;
   font-weight: 600;
   color: rgba(57, 61, 68, 1);
   line-height: 41px;
@@ -94,7 +91,6 @@
 
 .Events-Calendar h5 {
   font-size: 20px;
-  font-family: OpenSans-Bold;
   font-weight: bold;
   color: rgba(57, 61, 68, 1);
   margin-left: 16px;
@@ -103,7 +99,6 @@
 .Events-Calendar p {
   height: 27px;
   font-size: 18px;
-  font-family: OpenSans-Regular;
   font-weight: 400;
   color: rgba(57, 61, 68, 1);
   line-height: 27px;
@@ -120,7 +115,6 @@
 
 .content-img em {
   font-size: 30px;
-  font-family: OpenSans-BoldItalic;
   font-weight: normal;
   font-style: italic;
   color: rgba(255, 255, 255, 1);
@@ -183,7 +177,6 @@
   box-sizing: border-box;
   color: rgba(255, 255, 255, 1);
   font-weight: 400;
-  font-family: OpenSans-Regular;
 }
 
 .upload-photos-choose {
@@ -196,7 +189,6 @@
   margin-left: 20px;
   color: rgba(155, 155, 155, 1);
   font-weight: 400;
-  font-family: OpenSans-Regular;
   font-size: 22px;
   line-height: 60px;
 }
@@ -230,7 +222,6 @@
   float: left;
   margin-top: 14px;
   margin-left: 8px;
-  font-family: OpenSans-SemiBold;
 }
 
 .upload-photos-file img {

@@ -13,7 +13,6 @@
   float: left;
   margin-right: 10px;
   font-size: 20px;
-  font-family: OpenSans-Regular;
   font-weight: 400;
   line-height: 75px;
   color: rgba(30, 130, 23, 1);
@@ -36,7 +35,6 @@
 .reservation-table tr td {
   height: 24px;
   font-size: 18px;
-  font-family: OpenSans-Regular;
   font-weight: 400;
   color: rgba(57, 61, 68, 1);
   line-height: 24px;
@@ -62,7 +60,6 @@
   border-radius: 19px;
   border: none;
   font-size: 16px;
-  font-family: OpenSans-Regular;
   font-weight: 400;
   color: rgba(255, 255, 255, 1);
   line-height: 22px;
@@ -77,7 +74,6 @@
   border-radius: 19px;
   border: none;
   font-size: 16px;
-  font-family: OpenSans-Regular;
   font-weight: 400;
   color: rgba(255, 255, 255, 1);
   line-height: 22px;

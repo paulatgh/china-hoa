@@ -101,7 +101,6 @@
   height: 32px;
   line-height: 32px;
   font-size: 16px;
-  font-family: PingFangSC-Regular;
 }
 
 .calendar-week {
@@ -161,7 +160,6 @@
   float: left;
   margin-right: 10px;
   font-size: 20px;
-  font-family: OpenSans-Regular;
   font-weight: 400;
   line-height: 75px;
 }
@@ -194,7 +192,6 @@
   height: 24px;
   padding: 0 8px;
   line-height: 24px;
-  font-family: OpenSans-SemiBold;
   color: rgba(255, 255, 255, 1);
   border-radius: 14px;
   border: 1px solid rgba(255, 255, 255, 1);
@@ -274,7 +271,6 @@
   border-radius: 20px;
   text-align: center;
   font-size: 16px;
-  font-family: OpenSans-Regular;
   font-weight: 400;
   color: rgba(255, 255, 255, 1);
   line-height: 40px;
@@ -308,7 +304,6 @@
   display: inline-block;
   margin-right: 7px;
   font-size: 16px;
-  font-family: OpenSans-Regular;
   font-weight: 400;
   line-height: 22px;
 }

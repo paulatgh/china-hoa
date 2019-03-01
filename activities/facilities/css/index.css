@@ -19,7 +19,6 @@ body {
   height: 120px;
   line-height: 120px;
   font-size: 34px;
-  font-family: SourceHanSansSC-Bold;
   font-weight: bold;
   color: rgba(57, 61, 68, 1);
 }
@@ -111,7 +110,6 @@ body {
   float: left;
   margin-right: 10px;
   font-size: 20px;
-  font-family: OpenSans-Regular;
   font-weight: 400;
   line-height: 75px;
 }

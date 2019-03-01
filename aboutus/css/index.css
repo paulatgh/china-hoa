@@ -14,7 +14,6 @@ body {
   width: 100%;
   height: 51px;
   font-size: 34px;
-  font-family: SourceHanSansSC-Bold;
   font-weight: bold;
   color: rgba(57, 61, 68, 1);
   line-height: 51px;
@@ -30,7 +29,6 @@ body {
 .content-1 li:nth-of-type(1) {
 
   font-size: 24px;
-  font-family: SourceHanSansSC-Normal;
   font-weight: 400;
   color: rgba(57, 61, 68, 1);
   line-height: 34px;
@@ -42,7 +40,6 @@ body {
 .content-1 li:nth-of-type(2) {
 
   font-size: 24px;
-  font-family: SourceHanSansSC-Normal;
   font-weight: 400;
   color: rgba(57, 61, 68, 1);
   line-height: 34px;
@@ -54,7 +51,6 @@ body {
 .content-1 li:nth-of-type(3) {
 
   font-size: 24px;
-  font-family: SourceHanSansSC-Normal;
   font-weight: 400;
   color: rgba(57, 61, 68, 1);
   line-height: 34px;
@@ -65,7 +61,6 @@ body {
 .content-1 li:nth-of-type(4) {
 
   font-size: 24px;
-  font-family: SourceHanSansSC-Bold;
   font-weight: bold;
   color: rgba(57, 61, 68, 1);
   line-height: 34px;

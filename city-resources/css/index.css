@@ -28,7 +28,6 @@ body {
   width: 100%;
   height: 51px;
   font-size: 34px;
-  font-family: OpenSans-Bold;
   font-weight: bold;
   color: rgba(57, 61, 68, 1);
   line-height: 46px;
@@ -43,7 +42,6 @@ body {
 
 .content-1 li:nth-of-type(1) {
   font-size: 24px;
-  font-family: OpenSans-Regular;
   font-weight: 400;
   color: rgba(57, 61, 68, 1);
   line-height: 34px;
@@ -53,7 +51,6 @@ body {
 
 .content-1 li:nth-of-type(2) {
   font-size: 24px;
-  font-family: OpenSans-SemiBold;
   font-weight: 600;
   color: rgba(57, 61, 68, 1);
   line-height: 34px;
@@ -63,7 +60,6 @@ body {
 
 .content-1 li:nth-of-type(3) {
   font-size: 24px;
-  font-family: OpenSans-SemiBold;
   font-weight: 600;
   color: rgba(57, 61, 68, 1);
   line-height: 34px;
@@ -73,7 +69,6 @@ body {
 
 .content-1 li:nth-of-type(4) {
   font-size: 24px;
-  font-family: OpenSans-SemiBold;
   font-weight: 600;
   color: rgba(57, 61, 68, 1);
   line-height: 34px;
@@ -82,7 +77,6 @@ body {
 
 .content-1 li:nth-of-type(5) {
   font-size: 24px;
-  font-family: OpenSans-SemiBold;
   font-weight: 600;
   color: rgba(57, 61, 68, 1);
   line-height: 34px;
@@ -96,7 +90,6 @@ body {
   box-sizing: border-box;
   line-height: 34px;
   font-size: 22px;
-  font-family: SourceHanSansSC-Normal;
   font-weight: 400;
 }
 
