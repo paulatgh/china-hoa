@@ -171,7 +171,7 @@
   height: 20px;
   position: absolute !important;
   box-sizing: border-box;
-  top: 290px;
+  top: 305px;
   left: 125px;
 }
 
@@ -182,7 +182,7 @@
   border-radius: 50%;
   background-color: #A0C79F;
   margin-left: 16px;
-
+  cursor: pointer;
 }
 
 .main-left-contents ul {

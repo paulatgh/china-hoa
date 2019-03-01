@@ -19,6 +19,9 @@
 .admin_option_left_a {
   color: white;
 }
+.admin_option_left_a:hover{
+  color: white;
+}
 
 #admin_permissions_cycle {
   display: flex;
