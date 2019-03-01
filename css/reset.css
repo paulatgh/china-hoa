@@ -9,7 +9,6 @@ i,cite,em,var,address,dfn{font-style:normal;}
 li{list-style:none;}
 h1,h2,h3,h4,h5,h6,small{font-size:100%;}
 sup,sub{font-size:83%;}
-pre,code,kbd,samp{font-family:inherit;}
 q:before,q:after{content:none;}
 textarea{overflow:auto;resize:none;}
 label,summary{cursor:default;}
@@ -64,18 +63,18 @@ p{line-height:22px;max-width: 1190px;}
 .loading span:nth-child(5){-webkit-animation-delay:0.65s; }
 */
 
-@font-face{font-family:'DINCond-Bold';src: url('DINCond-Bold.otf')/*tpa=https://www.bgy.com.cn/font/DINCond-Bold.otf*/format('opentype');src: url('dincond-bold-webfont.eot')/*tpa=https://www.bgy.com.cn/font/dincond-bold-webfont.eot*/;src: url('dincond-bold-webfont.eot-#iefix')/*tpa=https://www.bgy.com.cn/font/dincond-bold-webfont.eot?#iefix*/format('embedded-opentype');src: url('dincond-bold-webfont.svg#Regular')/*tpa=https://www.bgy.com.cn/font/dincond-bold-webfont.svg#Regular*/format('svg');src: url('dincond-bold-webfont.woff')/*tpa=https://www.bgy.com.cn/font/dincond-bold-webfont.woff*/format('woff');src: url('dincond-bold-webfont.ttf')/*tpa=https://www.bgy.com.cn/font/dincond-bold-webfont.ttf*/format('truetype');font-weight: normal;font-style: normal;}
+@font-face{src: url('DINCond-Bold.otf')/*tpa=https://www.bgy.com.cn/font/DINCond-Bold.otf*/format('opentype');src: url('dincond-bold-webfont.eot')/*tpa=https://www.bgy.com.cn/font/dincond-bold-webfont.eot*/;src: url('dincond-bold-webfont.eot-#iefix')/*tpa=https://www.bgy.com.cn/font/dincond-bold-webfont.eot?#iefix*/format('embedded-opentype');src: url('dincond-bold-webfont.svg#Regular')/*tpa=https://www.bgy.com.cn/font/dincond-bold-webfont.svg#Regular*/format('svg');src: url('dincond-bold-webfont.woff')/*tpa=https://www.bgy.com.cn/font/dincond-bold-webfont.woff*/format('woff');src: url('dincond-bold-webfont.ttf')/*tpa=https://www.bgy.com.cn/font/dincond-bold-webfont.ttf*/format('truetype');font-weight: normal;font-style: normal;}
 
-@font-face{font-family:'NOVECENTOWIDE';src: url('NOVECENTOWIDE-DEMIBOLD.otf')/*tpa=https://www.bgy.com.cn/font/NOVECENTOWIDE-DEMIBOLD.otf*/format('opentype');src: url('novecentowide-demibold-webfont.eot')/*tpa=https://www.bgy.com.cn/font/novecentowide-demibold-webfont.eot*/;src: url('novecentowide-demibold-webfont.eot-#iefix')/*tpa=https://www.bgy.com.cn/font/novecentowide-demibold-webfont.eot?#iefix*/format('embedded-opentype');src: url('novecentowide-demibold-webfont.svg#Regular')/*tpa=https://www.bgy.com.cn/font/novecentowide-demibold-webfont.svg#Regular*/format('svg');src: url('novecentowide-demibold-webfont.woff')/*tpa=https://www.bgy.com.cn/font/novecentowide-demibold-webfont.woff*/format('woff');src: url('novecentowide-demibold-webfont.woff2')/*tpa=https://www.bgy.com.cn/font/novecentowide-demibold-webfont.woff2*/format('woff2');font-weight: normal;font-style: normal;}
-@font-face{font-family:'MONTSERRAT';src: url('MONTSERRAT-REGULAR.TTF')/*tpa=https://www.bgy.com.cn/font/MONTSERRAT-REGULAR.TTF*/format('TTF');src: url('montserrat-regular-webfont.eot')/*tpa=https://www.bgy.com.cn/font/montserrat-regular-webfont.eot*/;src: url('montserrat-regular-webfont.eot-#iefix')/*tpa=https://www.bgy.com.cn/font/montserrat-regular-webfont.eot?#iefix*/format('embedded-opentype');src: url('montserrat-regular-webfont.svg#Regular')/*tpa=https://www.bgy.com.cn/font/montserrat-regular-webfont.svg#Regular*/format('svg');src: url('montserrat-regular-webfont.woff')/*tpa=https://www.bgy.com.cn/font/montserrat-regular-webfont.woff*/format('woff');src: url('montserrat-regular-webfont.woff2')/*tpa=https://www.bgy.com.cn/font/montserrat-regular-webfont.woff2*/format('woff2');font-weight: normal;font-style: normal;}
+@font-face{src: url('NOVECENTOWIDE-DEMIBOLD.otf')/*tpa=https://www.bgy.com.cn/font/NOVECENTOWIDE-DEMIBOLD.otf*/format('opentype');src: url('novecentowide-demibold-webfont.eot')/*tpa=https://www.bgy.com.cn/font/novecentowide-demibold-webfont.eot*/;src: url('novecentowide-demibold-webfont.eot-#iefix')/*tpa=https://www.bgy.com.cn/font/novecentowide-demibold-webfont.eot?#iefix*/format('embedded-opentype');src: url('novecentowide-demibold-webfont.svg#Regular')/*tpa=https://www.bgy.com.cn/font/novecentowide-demibold-webfont.svg#Regular*/format('svg');src: url('novecentowide-demibold-webfont.woff')/*tpa=https://www.bgy.com.cn/font/novecentowide-demibold-webfont.woff*/format('woff');src: url('novecentowide-demibold-webfont.woff2')/*tpa=https://www.bgy.com.cn/font/novecentowide-demibold-webfont.woff2*/format('woff2');font-weight: normal;font-style: normal;}
+@font-face{src: url('MONTSERRAT-REGULAR.TTF')/*tpa=https://www.bgy.com.cn/font/MONTSERRAT-REGULAR.TTF*/format('TTF');src: url('montserrat-regular-webfont.eot')/*tpa=https://www.bgy.com.cn/font/montserrat-regular-webfont.eot*/;src: url('montserrat-regular-webfont.eot-#iefix')/*tpa=https://www.bgy.com.cn/font/montserrat-regular-webfont.eot?#iefix*/format('embedded-opentype');src: url('montserrat-regular-webfont.svg#Regular')/*tpa=https://www.bgy.com.cn/font/montserrat-regular-webfont.svg#Regular*/format('svg');src: url('montserrat-regular-webfont.woff')/*tpa=https://www.bgy.com.cn/font/montserrat-regular-webfont.woff*/format('woff');src: url('montserrat-regular-webfont.woff2')/*tpa=https://www.bgy.com.cn/font/montserrat-regular-webfont.woff2*/format('woff2');font-weight: normal;font-style: normal;}
 
-@font-face{font-family: 'novecentowide-book';src: url('novecentowide-book-webfont.eot')/*tpa=https://www.bgy.com.cn/font/novecentowide-book-webfont.eot*/;src: url('novecentowide-book-webfont.eot-#iefix')/*tpa=https://www.bgy.com.cn/font/novecentowide-book-webfont.eot?#iefix*/ format('embedded-opentype'), url('novecentowide-book-webfont.woff2')/*tpa=https://www.bgy.com.cn/font/novecentowide-book-webfont.woff2*/ format('woff2'), url('novecentowide-book-webfont.woff')/*tpa=https://www.bgy.com.cn/font/novecentowide-book-webfont.woff*/ format('woff'), url('novecentowide-book-webfont.ttf')/*tpa=https://www.bgy.com.cn/font/novecentowide-book-webfont.ttf*/ format('truetype'), url('novecentowide-book-webfont.svg#novecentowide-bold-webfont')/*tpa=https://www.bgy.com.cn/font/novecentowide-book-webfont.svg#novecentowide-bold-webfont*/ format('svg');}
+@font-face{src: url('novecentowide-book-webfont.eot')/*tpa=https://www.bgy.com.cn/font/novecentowide-book-webfont.eot*/;src: url('novecentowide-book-webfont.eot-#iefix')/*tpa=https://www.bgy.com.cn/font/novecentowide-book-webfont.eot?#iefix*/ format('embedded-opentype'), url('novecentowide-book-webfont.woff2')/*tpa=https://www.bgy.com.cn/font/novecentowide-book-webfont.woff2*/ format('woff2'), url('novecentowide-book-webfont.woff')/*tpa=https://www.bgy.com.cn/font/novecentowide-book-webfont.woff*/ format('woff'), url('novecentowide-book-webfont.ttf')/*tpa=https://www.bgy.com.cn/font/novecentowide-book-webfont.ttf*/ format('truetype'), url('novecentowide-book-webfont.svg#novecentowide-bold-webfont')/*tpa=https://www.bgy.com.cn/font/novecentowide-book-webfont.svg#novecentowide-bold-webfont*/ format('svg');}
 
 
 
 /*头部*/
 .header{width:100%;height:100px;position:relative;z-index:100;}
-.header .logo{float:left;margin-top:15px;font-size:23px;font-family:OpenSans-SemiBold;font-weight:600;color:rgba(57,61,68,1);line-height:60px;}
+.header .logo{float:left;margin-top:15px;font-size:23px;font-weight:600;color:rgba(57,61,68,1);line-height:60px;}
 .header .btns{float:right;height:100px;margin-left:10px;position:relative;}
 .header .btns .btns-language{text-align: center;font-size:14px;line-height:40px;float:left;font-weight:bold;position:relative;cursor: pointer;background: #393D44;height: 40px;margin-top: 30px;width:163px;color: white;}
 .header .btns .btns-search{width:29px;height:29px;float:left; margin:45px 15px 0 0;position:relative;top: -15px;left: 0;;padding: 5px;background:url("/community/img/search2.png") no-repeat center #393D44}
@@ -87,7 +86,6 @@ p{line-height:22px;max-width: 1190px;}
 .header .nav{float:right;height:100px;position:relative;z-index:10;}
 .header .nav li{padding:0 17px 0 16px;float:left;height:100px;}
 .header .nav li a{color:#449F41;line-height:100px;font-size:18px;
-	font-family:OpenSans-SemiBold;
 	font-weight:600;
 }
 .header .nav .navline{position:absolute;width:0;height:2px;padding-bottom:3px;background-color:#449F41;bottom:0;left:15px;}
@@ -111,7 +109,7 @@ p{line-height:22px;max-width: 1190px;}
 
 /*底部*/
 .footer{width:100%;height: 69px; background:#393D44;}
-.footer p{color:white;font-size: 16px;font-family: OpenSans-SemiBold;font-weight: 600;text-align: center;line-height: 69px;margin: 0 auto}
+.footer p{color:white;font-size: 16px;font-weight: 600;text-align: center;line-height: 69px;margin: 0 auto}
 .foot-top{width:100%;height:65px;}
 .foot-share{height:65px;float:left;}
 .foot-share span{font-size:12.5px;color:#8c8c8c;line-height:65px;float:left;margin-right:15px;font-weight:bold;}
@@ -153,9 +151,9 @@ p{line-height:22px;max-width: 1190px;}
 
 .sitemap-shares{padding:10px 0 20px 0;}
 .sitemap-shares .up{width:1rem;height:1.2rem;float:left;background:url("/community/img/stock-bt.png")/*tpa=https://www.bgy.com.cn/images/stock-bt.png*/ no-repeat center top;background-size:100%;margin-left:5px;}
-.sitemap-shares .uptxt{font-size:36px;color:#fe0000;letter-spacing:-1px; font-family:'dincond-medium';line-height:1.6rem;padding-bottom:0.5rem;float:left;}
+.sitemap-shares .uptxt{font-size:36px;color:#fe0000;letter-spacing:-1px; ;line-height:1.6rem;padding-bottom:0.5rem;float:left;}
 .sitemap-shares .down{width:16px;height:13px;float:left;background:url("/community/img/downtx.png")/*tpa=https://www.bgy.com.cn/images/downtx.png*/ no-repeat center top;background-size:100%;margin-left:5px;}
-.sitemap-shares .downtxt{font-size:2.6rem;color:#00A352;font-family:'dincond-medium';line-height:1.6rem;padding-bottom:0.5rem;float:left;}
+.sitemap-shares .downtxt{font-size:2.6rem;color:#00A352;;line-height:1.6rem;padding-bottom:0.5rem;float:left;}
 .sitemap-shares h3{font-size:12.5;color:#5f5c5c;padding-top:5px; }
 .sitemap-shares p{font-size:12.5;color:#5f5c5c;}
 .sitemap-shares .reenoo{font-size:12.5px;color:#5f5c5c;padding-top:25px;line-height:15px;float:left;}
@@ -253,7 +251,6 @@ p{line-height:22px;max-width: 1190px;}
 	font-size: 16px;
 	font-weight: 500;
 	color: #FFFFFF;
-	font-family:SourceHanSansSC-Medium;
 }
 .login-div{
 	width: 80%;
@@ -302,14 +299,12 @@ p{line-height:22px;max-width: 1190px;}
 .delete h5{
     height:36px;
     font-size:25px;
-    font-family:OpenSans-Regular;
     font-weight:400;
     color:rgba(57,61,68,1);
     line-height:36px;
 }
 .delete .delete_content{
     font-size:19px;
-    font-family:OpenSans-Regular;
     font-weight:400;
     color:rgba(57,61,68,1);
 	text-align: center;
@@ -326,7 +321,6 @@ p{line-height:22px;max-width: 1190px;}
     background:rgba(106,166,102,1);
     border-radius:4px;
     font-size:15px;
-    font-family:OpenSans-SemiBold;
     line-height: 42px;
     color:#ffffff;
 	margin-right: 20px;
@@ -356,7 +350,6 @@ p{line-height:22px;max-width: 1190px;}
 	left: 40%;
 	z-index: 1001;
 	font-weight: 500;
-	font-family:SourceHanSansSC-Medium;
 }
 .login-H3-2{
 	font-size: 26px;

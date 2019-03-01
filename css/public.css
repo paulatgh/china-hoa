@@ -16,7 +16,7 @@
 .mas-ab .mas-timebar{background: url(/community/img/mas-timebar.png)/*tpa=https://www.bgy.com.cn/images/mas-timebar.png*/ no-repeat;width:360px;height: 10px;position: absolute;bottom:64px;left:-360px;z-index:12;}
 .mas-ab .mas-tib{background:#449F41;width:0;height: 2px;position: absolute;bottom:68px;left:-360px;z-index:12;}
 .ms-timerbar{bottom:68px !important;top:inherit !important;}
-.ban-len{width:54px;height:20px;position: absolute;bottom:60px;left:45px;color:#fff;font-family: 'dinCond-Medium';font-size: 16px;}
+.ban-len{width:54px;height:20px;position: absolute;bottom:60px;left:45px;color:#fff;font-size: 16px;}
 .breadcrumb li{color: rgba(30, 130, 23, 1)}
 
 .master-slider .pics-ban1{top:25% !important;right:15% !important;}
@@ -60,7 +60,7 @@
 .main-list{width:100%;height:180px;}
 .main-list .main-list-con{width:120px;height:180px;float:left;}
 .main-list .main-list-con h3{font-size:18px;color:#333333;padding:38px 0 5px 0;}
-.main-list .main-list-con h4{font-size:24px;color:#999999;font-family:'dinCond-Medium';line-height:24px;font-weight:500;}
+.main-list .main-list-con h4{font-size:24px;color:#999999;line-height:24px;font-weight:500;}
 /* .main-list ul{margin: 0 auto} */
 .main-list li{width:152.5px;height:225px;float:left;-webkit-transition:all .3ms;-moz-transition:all .3s;transition:all .3s;}
 .main-list li p{font-size:14px;color:#666666;font-weight:bold; text-align:center;padding-top:120px;-webkit-transition:all .3s;-moz-transition:all .3s;height: 89px;}
@@ -84,11 +84,11 @@
 
 .main-global{width:320px;height:160px;padding:0 20px;background:url("/community/img/main-bg2.jpg")/*tpa=https://www.bgy.com.cn/images/main-bg2.jpg*/ no-repeat center center;float:right;}
 .main-global h3{font-size:18px;color:#333333;padding-top:38px;}
-.main-global h4{font-size:24px;color:#26a2ae;font-family:'dinCond-Medium';font-weight:500;letter-spacing:-1.5px;}
+.main-global h4{font-size:24px;color:#26a2ae;font-weight:500;letter-spacing:-1.5px;}
 
 .main-about{width:480px;height:160px;padding-left:360px; background:url("/community/img/main-left.jpg")/*tpa=https://www.bgy.com.cn/images/main-left.jpg*/ no-repeat center center;position:absolute;left:-360px;bottom:0;}
 .main-about h3{font-size:18px;color:#333333;padding-top:38px;}
-.main-about h4{font-size:24px;color:#999999;font-weight:500;font-family:'dincond-medium';letter-spacing:-1.5px;}
+.main-about h4{font-size:24px;color:#999999;font-weight:500;letter-spacing:-1.5px;}
 .main-about-img{width:431px;height:111px; position:absolute;right:0;bottom:0;animation-delay:1.8s}
 
 .main-right{width:320px;height:340px;position:absolute;right:0;bottom:0;background:#f4f4f4;z-index:3;}
@@ -103,7 +103,7 @@
 .main-news-img img{width:100%;}
 .main-news-con{width:600px;height:150px;padding:0 20px; float:left;}
 .main-news-con h3{font-size:16px;color:#565656;}
-.main-news-con h4{font-size:24px;color:#0e98a5;font-family:'dincond-medium';padding:3px 0;}
+.main-news-con h4{font-size:24px;color:#0e98a5;padding:3px 0;}
 .main-news-con p{font-size:12.5px;color:#999999;}
 
 .main-switch{width:358px;height:150px;padding-top:40px;border-left:2px #f4f4f4 solid;float:right;}
@@ -123,21 +123,21 @@
 
 .about_1{width:100%;padding-bottom:30px;}
 .about_1 .about_1-left{width:440px;float:left;}
-.about_1 .about_1-left h2{font-size:36px;color:#c8c8c8;font-weight:500; font-family:'novecentowide-book';letter-spacing: -2px;}
+.about_1 .about_1-left h2{font-size:36px;color:#c8c8c8;font-weight:500;letter-spacing: -2px;}
 .about_1 .about_1-left h3{font-size:18px;color:#333333;padding:15px 0 30px 0px;}
 .about_1 .about_1-right{width:760px;float:right;}
 .about_1 .about_1-right h3{font-size:18px;color:#333333;padding-bottom:15px;}
 .about_1 .about_1-right p{font-size:12.5px;color:#999999;padding-bottom:20px;}
 
 .about-h5 h5{font-size:14px;color:#848181;float:left;margin-right:30px;}
-.about-h5 h5 em{font-size:48px;color:#f6ad12;font-family:'novecentowide-book';float:left;margin-right:10px;letter-spacing:-4px;line-height:30px\0;}
+.about-h5 h5 em{font-size:48px;color:#f6ad12;float:left;margin-right:10px;letter-spacing:-4px;line-height:30px\0;}
 
 .about_1-2{width:100%;height:450px;background:#26a2ae;}
 .about_1-2>.w1200{height:100%}
 .about_1-con1{width:400px;float:left;padding-top:50px;}
-.about_1-con1 h2{font-size:30px;color:#fff;font-family:'novecentowide-book';font-weight:400;letter-spacing:-2.5px; line-height:35px;opacity:0.8;filter:Alpha(opacity=80);}
+.about_1-con1 h2{font-size:30px;color:#fff;font-weight:400;letter-spacing:-2.5px; line-height:35px;opacity:0.8;filter:Alpha(opacity=80);}
 .about_1-con1 h3{font-size:18px;color:#fff;padding:2px 0 8px 0;}
-.about_1-con1 h4{font-size:48px;color:#f5a100;font-family:'novecentowide-book';line-height:35px;font-weight:200;letter-spacing:-3px;}
+.about_1-con1 h4{font-size:48px;color:#f5a100;line-height:35px;font-weight:200;letter-spacing:-3px;}
 .about_1-con2{width:720px;padding:35px 40px 20px 40px;background:#f4f4f4 url("/community/img/about_1-3.jpg")/*tpa=https://www.bgy.com.cn/images/about/about_1-3.jpg*/ no-repeat right bottom;float:right;}
 .about_1-con2 p{font-size:12.5px;color:#999999;padding-bottom:15px;}
 .about_1-img{width:4901px;height:215px;position:absolute;left:145px;bottom:0;}
@@ -174,7 +174,7 @@
 .about-2{width:100%;height:440px;background:url("/community/img/about-2.jpg")/*tpa=https://www.bgy.com.cn/images/about/about-2.jpg*/ no-repeat center bottom;}
 .about-2-left{padding-top:110px;}
 .about-2-left h3{font-size:18px;color:#26a2ae;padding-bottom:8px;}
-.about-2-left h4{font-size:36px;color:#c8c8c8;font-family:'novecentowide-book';letter-spacing: -3px;font-weight:500;padding-top:5px;}
+.about-2-left h4{font-size:36px;color:#c8c8c8;letter-spacing: -3px;font-weight:500;padding-top:5px;}
 .about-2-con{width:320px;height:345px;padding:55px 20px 0px 20px; background:#26a2ae;position:absolute;top:0;right:0;animation-delay:1.4s; }
 .about-2-con p{font-size:12.5px;color:#fff;padding-bottom:18px;}
 
@@ -187,7 +187,7 @@
 .news-title .news-title-img img{width:100%;}
 .news-title .news-title-con{width:760px;height:220px;padding:0 40px;float:left;background:#f4f4f4;}
 .news-title .news-title-con h3{font-size:16px;color:#0e98a5;padding:30px 0 8px 0;}
-.news-title .news-title-con h4{font-size:30px;color:#999999;font-family:'dincond-medium';letter-spacing:-1px;padding-bottom:20px;}
+.news-title .news-title-con h4{font-size:30px;color:#999999;letter-spacing:-1px;padding-bottom:20px;}
 .news-title .news-title-con p{font-size: 12.5px;color:#999999;}
 
 .news-bot{width:100%;}
@@ -208,13 +208,13 @@
 .news-list li a{width:760px;height:105px;padding:30px 40px 0px 40px;z-index:10;position:absolute;left:0;top:0;}
 .news-list li span{width:0;height:135px;position:absolute;left:0;top:0;z-index:8;background:-webkit-gradient(linear,120% 0%, 0% 100%, from(#f8f6f6), to(#f3f3f3), color-stop(1.2,#f3f3f3));-webkit-transition:all .3s;-moz-transition:all .3s;-transition:all .3s;}
 .news-list li h3{font-size:16px;color:#666666;padding-right:12px;margin-bottom:15px;background:url("/community/img/news-list.png")/*tpa=https://www.bgy.com.cn/images/news-list.png*/ no-repeat right center;}
-.news-list li h4{height:105px;width:125px; font-size:30px;color:#999999;font-family:'dincond-medium';letter-spacing:-1px;float:left;font-weight:500;}
+.news-list li h4{height:105px;width:125px; font-size:30px;color:#999999;letter-spacing:-1px;float:left;font-weight:500;}
 .news-list li p{font-size:12.5px;color:#999999;}
 .news-list li:hover span{width:840px;}
 .news-list li:hover h3{color:#26a2ae;background:url("/community/img/news-list-on.png")/*tpa=https://www.bgy.com.cn/images/news-list-on.png*/ no-repeat right center;}
 .news-page{width:100%;height:50px;padding-top:30px;text-align:center;line-height:50px;}
-.news-page span{font-size:24px;color:#f6ad12;font-family:'dincond-medium'; display:inline-block;overflow:hidden;margin:0 3px;}
-.news-page a{font-size:24px;color:#666666;font-family:'dincond-medium'; height:50px;margin:0 3px; display:inline-block;overflow:hidden;-webkit-transition:all .3s;-moz-transition:all .3s;transition:.3s;}
+.news-page span{font-size:24px;color:#f6ad12; display:inline-block;overflow:hidden;margin:0 3px;}
+.news-page a{font-size:24px;color:#666666; height:50px;margin:0 3px; display:inline-block;overflow:hidden;-webkit-transition:all .3s;-moz-transition:all .3s;transition:.3s;}
 .news-page .news-page-prev{width:50px;margin-right:10px; background:url("/community/img/news-prev.jpg")/*tpa=https://www.bgy.com.cn/images/news-prev.jpg*/ no-repeat center center;}
 .news-page .news-page-next{width:50px;margin-left:10px; background:url("/community/img/news-next.jpg")/*tpa=https://www.bgy.com.cn/images/news-next.jpg*/ no-repeat center center;}
 
@@ -223,7 +223,7 @@
 .details-left{width:800px;padding-right:40px;float:left;}
 .details-title{width:800px;position:relative;overflow:hidden;padding-bottom:40px;}
 .details-title h2{font-size:16px;color:#333333;padding-bottom:15px;}
-.details-title h4{font-size:30px;color:#999999;font-family:'dincond-medium';margin-right:40px;float:left;line-height:30px;}
+.details-title h4{font-size:30px;color:#999999;margin-right:40px;float:left;line-height:30px;}
 .details-title p{font-size:13px;color:#797a81;float:left;line-height:30px;}
 .details-title .share{float:left;margin-left:30px;}
 
@@ -236,7 +236,7 @@
 .details-top img{width:100%;}
 .details-top-con{width:318px;padding:30px 20px;background:url("/community/img/details-3.jpg")/*tpa=https://www.bgy.com.cn/images/details-3.jpg*/ no-repeat center bottom;}
 .details-top-con h3{font-size:16px;color:#333333;}
-.details-top-con h4{font-size:30px;color:#999999;font-family:'dincond-medium';padding:18px 0;}
+.details-top-con h4{font-size:30px;color:#999999;padding:18px 0;}
 .details-top-con p{font-size:12.5px;color:#999999;}
 .details-top-con a{font-size:12.5px;color:#999999;padding-top:20px;}
 .details-con2{width:318px;padding:35px 20px;}
@@ -279,7 +279,7 @@
 .product-list li .pro-list-img{width:294px;height:294px;-z-index:2;display:none;}
 .product-list li .pro-list-con{width:294px;height:286px;z-index:4;background:#f4f4f4;text-align:center;-webkit-transition:all .3s ease;-moz-transition:all .3s ease;transition:all .3s ease;}
 .product-list li .pro-list-con h3{font-size:18px;color:#26a2ae;padding:35px 0 3px 0;}
-.product-list li .pro-list-con h4{font-size:30px;color:#f5a100;font-family:'dincond-medium';padding:20px 0px 15px 0;}
+.product-list li .pro-list-con h4{font-size:30px;color:#f5a100;padding:20px 0px 15px 0;}
 .product-list li .pro-list-con h5{font-size:14px;color:#666666;padding-bottom:3px;}
 .product-list li .pro-list-con p{font-size:12.5px;color:#999999;}
 .product-list li .pro-list-con span{width:100%;height:60px;line-height:60px;background:#26a2ae;font-size:14px;color:#fff;position:absolute;left:0px;bottom:0;}
@@ -337,14 +337,14 @@
 .pro-green-left p{font-size:12.5px;color:#999999;padding-bottom:25px;}
 .pro-green-left em{height:347px;margin-bottom:30px;display:block;}
 .pro-green-left .pro-green-con1{width:680px;height:287px;padding:60px 160px 0 360px;margin-bottom:30px; background:url("/community/img/pro-green-1.jpg")/*tpa=https://www.bgy.com.cn/images/pro-green-1.jpg*/ no-repeat center center;position:absolute;top:0;right:-40px;}
-.pro-green-left .pro-green-con1 h4{font-size:36px;color:#2ba53b;padding-bottom:20px;font-family:'dincond-medium'}
+.pro-green-left .pro-green-con1 h4{font-size:36px;color:#2ba53b;padding-bottom:20px;}
 .pro-green-left .pro-green-con1 p{font-size:12.5px;color:#5c7b90;}
 .pro-green-right{width:360;padding-top:40px;float:left;}
 .pro-green-right img{width:100%;}
 .pro-green-img1{width:360px;height:440px;animation-delay:0.4s}
 .pro-green-img2{width:360px;height:347px;position:absolute;top:133px;right:-360px;animation-delay:1s}
 .pro-green-con2{width:360px;height:280px;background:url("/community/img/pro-green-4.jpg")/*tpa=https://www.bgy.com.cn/images/pro-green-4.jpg*/ no-repeat center center;text-align:center;}
-.pro-green-con2 em{font-size:60px;color:#fff;font-family:'dincond-medium';padding:60px 0px 20px 0;display:block;}
+.pro-green-con2 em{font-size:60px;color:#fff;padding:60px 0px 20px 0;display:block;}
 .pro-green-con2 p{font-size:12.5px;color:#fff;}
 
 /*investor*/
@@ -357,9 +357,9 @@
 .investor-shares h3{font-size:14px;color:#5f5c5c;padding-top:40px;}
 .investor-shares p{font-size:12.5px;color:#5f5c5c;}
 .investor-shares .up{width:16px;height:13px;display:inline-block;float:left;background:url("/community/img/stock-bt.png")/*tpa=https://www.bgy.com.cn/images/stock-bt.png*/ no-repeat center center;}
-.investor-shares .uptxt{font-size:46px;color:#f62121;font-family:'DINCond-Bold',"微软雅黑";font-weight:500; float:left;margin-right:5px;}
+.investor-shares .uptxt{font-size:46px;color:#f62121;font-weight:500; float:left;margin-right:5px;}
 .investor-shares .down{width:16px;height:13px;display:inline-block;float:left;background:url("/community/img/down.png")/*tpa=https://www.bgy.com.cn/images/down.png*/ no-repeat center center;}
-.investor-shares .downtxt{font-size:46px;color:#00A352;font-family:'DINCond-Bold',"微软雅黑";font-weight:500;float:left;margin-right:5px;}
+.investor-shares .downtxt{font-size:46px;color:#00A352;font-weight:500;float:left;margin-right:5px;}
 .investor-mode{width:320px;padding:30px 0px 0px 40px;}
 .investor-mode h3{font-size:18px;color:#26a2ae;padding-bottom:20px;}
 .investor-mode p{font-size:12.5px;color:#999999;}
@@ -368,13 +368,13 @@
 .investor-title p{font-size:12.5px;color:#fff;opacity:0.8;filter:Alpha(opacity=80);}
 .investor-title ul{width:100%;}
 .investor-title li{float:left;margin:0 60px 25px 0;}
-.investor-title li h3{font-size:32.5px;color:#fff;font-family:'dincond-medium';padding-bottom:10px;}
+.investor-title li h3{font-size:32.5px;color:#fff;padding-bottom:10px;}
 .investor-title li p{font-size:14px;color:#fff;}
 
 .investor-list{width:838px;}
 .investor-list li{width:838px;height:106px;line-height:106px;position:relative;border-bottom:2px #f4f4f4 solid;-webkit-transition:all .3s;-moz-transition:all .3s;-transition:all .3s;}
 .investor-list li a{position:absolute;left:0;top:0;z-index:10;width:760px;height:106px;padding:0 40px;}
-.investor-list li h4{font-size:30px;color:#999999;font-family:'dincond-medium'; width:130px;float:left;}
+.investor-list li h4{font-size:30px;color:#999999;width:130px;float:left;}
 .investor-list li h3{font-size:16px;color:#666666;}
 .investor-list li em{width:40px;height:53px;background:url("/community/img/pdf.png")/*tpa=https://www.bgy.com.cn/images/pdf.png*/ no-repeat 0 0; position:absolute;right:40px;top:25px;-webkit-transition:all .6s;-moz-transition:all .6s;-transition:all .6s;}
 .investor-list li span{width:0;height:106px;position:absolute;left:0;top:0;z-index:8;background:-webkit-gradient(linear,120% 0%, 0% 100%, from(#f8f6f6), to(#f3f3f3), color-stop(1.2,#f3f3f3));-webkit-transition:all .3s;-moz-transition:all .3s;-transition:all .3s;}
@@ -459,8 +459,8 @@
 .product_2-2>.w1200{height:100%;}
 .product_2-con1{width:100%;height:270px;padding-top:130px;}
 .product_2-con1 h3{font-size:24px;color:#3e3e3e;font-weight:500;display:inline-block;}
-.product_2-con1 h3 em{font-size:28PX;color:#f5a100;font-family:'MONTSERRAT';}
-.product_2-con1 h4{font-size:66px;color:#f5a100;font-family:'MONTSERRAT';letter-spacing:-5px;font-weight:500;display:inline-block;line-height:100px;margin-left: 10px;}
+.product_2-con1 h3 em{font-size:28PX;color:#f5a100;}
+.product_2-con1 h4{font-size:66px;color:#f5a100;letter-spacing:-5px;font-weight:500;display:inline-block;line-height:100px;margin-left: 10px;}
 .product_2-con1 p{font-size:14px;color:#666666;}
 .product_2-con1 a{width:160px;height:50px;line-height:50px;text-align:center; margin-top:40px;border:1px #f5a50c solid;border-radius:100px;-webkit-transition:all .3s;-moz-transition:all .3s;transition:all .3s;}
 .product_2-con1 a:hover{background:#f5a100;color:#fff;}
@@ -474,7 +474,7 @@
 .proDeta-title{width:100%;height:220px;}
 .proDeta-title .proDeta-title-l{width:280px;height:180px;padding:40px 40px 0 40px; float:left;background:#eaeaea}
 .proDeta-title .proDeta-title-l .proDeta-tel{margin-bottom:27px;padding-left:70px;height:50px;line-height:50px;background:url("/community/img/proDeta-tel.png")/*tpa=https://www.bgy.com.cn/images/proDeta-tel.png*/ no-repeat left center;}
-.proDeta-title .proDeta-title-l .proDeta-tel h3{font-size:30px;color:#f5a100;font-weight:500;letter-spacing:-1.5px;font-family:'dincond-medium';}
+.proDeta-title .proDeta-title-l .proDeta-tel h3{font-size:30px;color:#f5a100;font-weight:500;letter-spacing:-1.5px;}
 .proDeta-title .proDeta-title-l .proDeta-wx{width:100%;height:100px;position:relative;}
 .proDeta-title .proDeta-title-l .proDeta-wx h3{font-size:14px;color:#666666;line-height:50px;}
 .proDeta-title .proDeta-title-l .proDeta-wx a{float:left; padding-left:70px;height:50px;line-height:50px;background:url("/community/img/proDeta-wx.png")/*tpa=https://www.bgy.com.cn/images/proDeta-wx.png*/ no-repeat left center;}
@@ -514,9 +514,9 @@
 .csr-list{width:100%;overflow:hidden;}
 .csr-list .csr-img{width:200px;height:272px;padding-right:40px;float:left;}
 .csr-list .csr-con{float:left;padding-top:35px;}
-.csr-list .csr-con h2{font-size:60px;color:#f5a100;font-weight:500;font-family:"dincond-medium";letter-spacing:-3px;}
+.csr-list .csr-con h2{font-size:60px;color:#f5a100;font-weight:500;letter-spacing:-3px;}
 .csr-list .csr-con h3{font-size:18px;color:#333333;padding:18px 0 8px 0;font-weight:500;}
-.csr-list .csr-con p{font-size:20px;color:#666666;font-family:'novecentowide-book';padding-bottom:35px;}
+.csr-list .csr-con p{font-size:20px;color:#666666;padding-bottom:35px;}
 .csr-list .csr-con a{font-size:14px;color:#26a2ae;text-align:center; width:116px;height:40px;line-height:40px;float:left;margin-right:10px;border:1px #26a2ae solid;-webkit-transition:all .3s;transition:all .3s;}
 .csr-list .csr-con a:hover{background:#26a2ae;color:#fff;}
 
