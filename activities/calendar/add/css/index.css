@@ -1,15 +1,8 @@
-.w1200 {
-  margin-bottom: 60px
-}
-
 .breadcrumb {
   width: 100%;
   height: 75px;
 }
 
-.main_body {
-  height: 1138px;
-}
 
 .breadcrumb li {
   float: left;
@@ -26,7 +19,7 @@
 }
 
 .calendar-table {
-  width: "90%";
+  width: 90%;
 }
 
 .calendar-table tr {
