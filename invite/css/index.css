@@ -1,3 +1,17 @@
+.table-one{
+  margin-top: 50px;
+}
+.table-two{
+  width: 100%;
+  
+}
+.investor{
+  height: 1200px;
+}
+.profile-table{
+  width:100%;
+  border:#6AA666;
+}
 .profile-table tr {
   width: 410px;
   height: 54px;
