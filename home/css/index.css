@@ -56,14 +56,16 @@
   left: 0;
 
 }
-.view-p p{
+
+.view-p p {
   text-align: center;
-  font-size:25px;
-  font-family:OpenSans-Bold;
-  font-weight:bold;
-  color:#1E1E1E;
+  font-size: 25px;
+  font-family: OpenSans-Bold;
+  font-weight: bold;
+  color: #1E1E1E;
   line-height: 69px;
 }
+
 #provenance_cycle img {
   width: 178px;
   height: 49px;
@@ -81,10 +83,10 @@
 
 #Amenities_title_cycle {
   color: #1E1E1E;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 41px;
   height: 41px;
-  font-weight: 400;
+  font-weight: 600;
   box-sizing: border-box;
 }
 
@@ -262,6 +264,14 @@
   display: flex;
   justify-content: space-between;
   cursor: pointer;
+}
+
+.swiper-pagination-bullet {
+  opacity: .2;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
 }
 
 /* calendar */
