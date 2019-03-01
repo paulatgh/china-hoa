@@ -1,12 +1,12 @@
-
-.investor{
-  margin-top: 30px; 
-  height: 1200px;
+.investor {
+  margin-top: 30px;
 }
-.content-table{
+
+.content-table {
   width: 90%;
   border: #6AA666;
 }
+
 .content-table tr {
   width: 410px;
   height: 54px;
@@ -25,6 +25,7 @@
   border-color: "#f1e8c6";
   padding: 14px 24px;
 }
+
 .content-table tr td input {
   width: 180px;
   height: 28px;
