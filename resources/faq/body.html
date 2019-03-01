@@ -11,7 +11,7 @@
                                 <li>&nbsp;>&nbsp;</li>
                                 <li><a href="{{_metadata.root_url}}/resources"> Resources </a></li>
                                 <li>&nbsp;>&nbsp;</li>
-                                <li><a href="#?id={{page_title.id}}">{{page_title.title}}</a></li>
+                                <li><a href="#">FAQs</a></li>
                             </ul>
                         </div>
                         </script>
@@ -24,16 +24,16 @@
                     </div>
                     <div id="faq_cycle" class="faq_cycle">
                         <script id="faq" type="txt/template">
-                            <div class="faq_title">{{category_name}}</div>
+                        <div class="faq_title">{{category_name}}</div>
                         <ul class="faq_ul">
-                                <li>
-                                    {{#faqs}}
-                                    <h3>Question:{{question}}</h3>
-                                    <p class="faq_p"><strong>Answer:</strong> {{answer}}</p>
-                                    {{/faqs}}
-                                </li>
+                            <li>
+                                {{#faqs}}
+                                <h3>Question: {{question}}</h3>
+                                <p class="faq_p"><strong>Answer:</strong> {{answer}}</p>
+                                {{/faqs}}
+                            </li>
                         </ul>
-                    </script>
+                        </script>
                     </div>
                 </div>
             </div>
