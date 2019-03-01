@@ -24,7 +24,6 @@ body {
   float: left;
   margin-right: 10px;
   font-size: 20px;
-  font-family: OpenSans-Regular;
   font-weight: 400;
   line-height: 75px;
   color: rgba(30, 130, 23, 1);
@@ -36,21 +35,10 @@ body {
 
 .main-left-one h3 {
   font-size: 30px;
-  font-family: OpenSans-Bold;
   font-weight: 600;
   color: rgba(57, 61, 68, 1);
   line-height: 41px;
 }
-
-/* Box-sizing reset: //w3bits.com/?p=3225 */
-/* html {
-	box-sizing: border-box;
-}
-*,
-*:before,
-*:after {
-	box-sizing: inherit;
-} */
 
 .tiles {
   column-width: 320px;
@@ -98,7 +86,6 @@ body {
 
 .volunteer_title {
   font-size: 20px;
-  font-family: OpenSans-SemiBold;
   font-weight: 600;
   color: rgba(57, 61, 68, 1);
   line-height: 27px;
@@ -107,7 +94,6 @@ body {
 
 .volunteer_body {
   font-size: 20px;
-  font-family: OpenSans-SemiBold;
   font-weight: 500;
   color: rgba(57, 61, 68, 1);
   line-height: 27px;
@@ -116,7 +102,6 @@ body {
 
 .volunteer_description {
   font-size: 20px;
-  font-family: OpenSans-SemiBold;
   font-weight: 500;
   color: rgba(57, 61, 68, 1);
   line-height: 27px;
@@ -125,7 +110,6 @@ body {
 
 .volunteer_details {
   font-size: 20px;
-  font-family: OpenSans-SemiBold;
   font-weight: 500;
   color: rgba(57, 61, 68, 1);
   line-height: 27px;
@@ -134,7 +118,6 @@ body {
 
 .volunteer_contact {
   font-size: 20px;
-  font-family: OpenSans-SemiBold;
   font-weight: 500;
   color: rgba(57, 61, 68, 1);
   line-height: 27px;
@@ -146,7 +129,6 @@ body {
   margin-bottom: 24px;
   line-height: 33px;
   font-size: 24px;
-  font-family: OpenSans-SemiBold;
   font-weight: 600;
   color: #393D44;
 }
@@ -165,7 +147,6 @@ body {
   color: white;
   font-size: 16px;
   font-weight: 400;
-  font-family: OpenSans-Regular;
   display: none;
 }
 
@@ -224,7 +205,6 @@ body {
   margin-left: 24px;
   box-sizing: border-box;
   font-size: 16px;
-  font-family: OpenSans-Regular;
   font-weight: 400;
   color: rgba(106, 166, 102, 1);
   line-height: 25px;

@@ -11,7 +11,6 @@ body {
   color: rgba(30, 130, 23, 1);
   height: 27px;
   font-size: 20px;
-  font-family: OpenSans-Regular;
   font-weight: 400;
   line-height: 27px;
 
@@ -68,7 +67,6 @@ body {
 .calendar-img p {
 
   font-size: 25px;
-  font-family: OpenSans-Bold;
   font-weight: bold;
   color: rgba(255, 255, 255, 1);
   line-height: 80px;

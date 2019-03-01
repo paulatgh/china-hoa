@@ -2,7 +2,6 @@
   color: rgba(30, 130, 23, 1);
   height: 27px;
   font-size: 20px;
-  font-family: OpenSans-Regular;
   font-weight: 400;
   line-height: 27px;
 
@@ -59,7 +58,6 @@
   border-radius: 20px;
   border: 1px solid rgba(53, 149, 50, 1);
   font-size: 16px;
-  font-family: OpenSans;
   color: rgba(53, 149, 50, 1);
   margin: 0 20px;
 }
@@ -71,7 +69,6 @@
   border-radius: 20px;
   border: 1px solid rgba(53, 149, 50, 1);
   font-size: 16px;
-  font-family: OpenSans;
   color: rgba(53, 149, 50, 1);
 
 }
@@ -83,21 +80,18 @@
   border-radius: 20px;
   border: 1px solid rgba(53, 149, 50, 1);
   font-size: 16px;
-  font-family: OpenSans;
   color: rgba(53, 149, 50, 1);
   margin: 0 20px;
 }
 
 .address_book_click button a {
   font-size: 16px;
-  font-family: OpenSans;
   color: rgba(53, 149, 50, 1);
 }
 
 .photo-albums {
   height: 41px;
   font-size: 24px;
-  font-family: OpenSans-Bold;
   font-weight: 600;
   color: rgba(57, 61, 68, 1);
   line-height: 41px;
@@ -109,7 +103,6 @@
   width: 40%;
   height: 30px;
   font-size: 22px;
-  font-family: OpenSans-Bold;
   font-weight: bold;
   color: rgba(57, 61, 68, 1);
   line-height: 30px;
@@ -208,7 +201,6 @@
   width: 120px;
   height: 44px;
   font-size: 16px;
-  font-family: OpenSans;
   color: rgba(106, 166, 102, 1);
   line-height: 23px;
   text-align: center;

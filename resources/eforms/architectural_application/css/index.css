@@ -12,13 +12,15 @@
   font: 12px Verdana, Arial, Helvetica;
   border-collapse: collapse;
   border: 1px solid #6AA666;
-  margin:20px 5px 5px 5px;
+  margin: 20px 5px 5px 5px;
   line-height: 16px;
- 
+
 }
-.eformheader{
+
+.eformheader {
   border: none !important;
 }
+
 .eformtable tbody td {
   border: 1px solid #6AA666;
   background-color: #ffffff;
@@ -38,7 +40,6 @@
 }
 
 .eformtable .paragraph {
-  font-family: Helvetica;
   font-size: 15px;
 }
 
@@ -51,7 +52,6 @@
   float: left;
   margin-right: 10px;
   font-size: 20px;
-  font-family: OpenSans-Regular;
   font-weight: 400;
   line-height: 75px;
   color: rgba(30, 130, 23, 1);
@@ -75,7 +75,6 @@
   border-radius: 19px;
   border: none;
   font-size: 16px;
-  font-family: OpenSans-Regular;
   font-weight: 400;
   color: rgba(255, 255, 255, 1);
   line-height: 22px;
@@ -90,7 +89,6 @@
   border-radius: 19px;
   border: none;
   font-size: 16px;
-  font-family: OpenSans-Regular;
   font-weight: 400;
   color: rgba(255, 255, 255, 1);
   line-height: 22px;
@@ -98,6 +96,6 @@
   cursor: pointer;
 }
 
-.footer{
+.footer {
   margin-top: 70px;
 }

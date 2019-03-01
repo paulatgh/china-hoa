@@ -22,7 +22,6 @@
   float: left;
   margin-right: 10px;
   font-size: 20px;
-  font-family: OpenSans-Regular;
   font-weight: 400;
   line-height: 75px;
   color: rgba(30, 130, 23, 1);
@@ -34,7 +33,6 @@
 
 .address_title {
   font-size: 24px;
-  font-family: OpenSans-SemiBold;
   font-weight: 600;
   color: rgba(57, 61, 68, 1);
   line-height: 33px;
@@ -61,7 +59,6 @@
   width: 18px;
   height: 24px;
   font-size: 16px;
-  font-family: OpenSans-SemiBold;
   font-weight: 500;
   color: rgba(155, 155, 155, 1);
   line-height: 33px;
@@ -105,7 +102,6 @@
 }
 
 .address_categories h4 {
-  font-family: OpenSans-SemiBold;
   font-weight: 600;
   color: rgba(57, 61, 68, 1);
   line-height: 30px;
@@ -114,7 +110,6 @@
 }
 
 .address_categories li {
-  font-family: OpenSans-Regular;
   font-weight: 400;
   color: #6AA666;
   line-height: 32px;
@@ -133,7 +128,6 @@
 
 .address_book_click_content li {
   font-size: 16px;
-  font-family: OpenSans-Regular;
   font-weight: 400;
   color: rgba(106, 166, 102, 1);
   line-height: 35px;
@@ -150,7 +144,6 @@
   padding-left: 24px;
   box-sizing: border-box;
   font-size: 20px;
-  font-family: OpenSans-Regular;
   font-weight: 400;
   color: rgba(57, 61, 68, 1);
 
@@ -164,7 +157,6 @@
 .address_book_right ul li:first-child {
   background: #6AA666 !important;
   font-size: 24px;
-  font-family: OpenSans-SemiBold;
   font-weight: 600;
   color: rgba(255, 255, 255, 1);
   padding-left: 16px;
@@ -181,7 +173,6 @@
   border-radius: 20px;
   border: 1px solid rgba(106, 166, 102, 1);
   font-size: 16px;
-  font-family: OpenSans-Regular;
   font-weight: 400;
   color: rgba(106, 166, 102, 1);
   line-height: 40px;
@@ -254,7 +245,6 @@
 
 .user-content h5 {
   font-size: 18px;
-  font-family: OpenSans-Bold;
 
   color: rgba(57, 61, 68, 1);
 
@@ -263,7 +253,6 @@
 .user-content p {
   height: 27px;
   font-size: 16px;
-  font-family: OpenSans-Regular;
   font-weight: 400;
   color: rgba(57, 61, 68, 1);
   line-height: 27px;

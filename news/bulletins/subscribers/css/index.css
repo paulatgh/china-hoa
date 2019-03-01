@@ -6,16 +6,17 @@ body {
 .main {
   margin-bottom: 100px;
 }
-.main-top{
- margin-bottom: 35px;
- height: 100%;
+
+.main-top {
+  margin-bottom: 35px;
+  height: 100%;
 }
+
 .main-left h2 {
   text-align: center;
   height: 120px;
   line-height: 120px;
   font-size: 34px;
-  font-family: SourceHanSansSC-Bold;
   font-weight: bold;
   color: rgba(57, 61, 68, 1);
 }
@@ -29,7 +30,6 @@ body {
   float: left;
   margin-right: 10px;
   font-size: 20px;
-  font-family: OpenSans-Regular;
   font-weight: 400;
   line-height: 75px;
   color: rgba(30, 130, 23, 1);
@@ -42,7 +42,6 @@ body {
 .form_2 li p {
   width: 98%;
   font-size: 16px;
-  font-family: OpenSans-SemiBold;
   font-weight: 400;
   color: rgba(30, 30, 30, 1);
   text-decoration: none;
@@ -72,7 +71,6 @@ body {
   padding: 0 24px;
   box-sizing: border-box;
   font-size: 20px;
-  font-family: OpenSans-Regular;
   font-weight: 400;
   color: rgba(57, 61, 68, 1);
   line-height: 46px;
@@ -84,7 +82,6 @@ body {
   height: 64px;
   background: #6AA666;
   font-size: 30px;
-  font-family: OpenSans-Bold;
   font-weight: bold;
   color: rgba(255, 255, 255, 1);
   line-height: 64px;

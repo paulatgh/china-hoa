@@ -17,7 +17,6 @@ body {
   height: 120px;
   line-height: 120px;
   font-size: 34px;
-  font-family: SourceHanSansSC-Bold;
   font-weight: bold;
   color: rgba(57, 61, 68, 1);
 }
@@ -31,7 +30,6 @@ body {
   float: left;
   margin-right: 10px;
   font-size: 20px;
-  font-family: OpenSans-Regular;
   font-weight: 400;
   line-height: 75px;
   color: rgba(30, 130, 23, 1);
@@ -65,7 +63,6 @@ body {
   padding: 0 24px;
   box-sizing: border-box;
   font-size: 20px;
-  font-family: OpenSans-Regular;
   font-weight: 400;
   color: rgba(57, 61, 68, 1);
   line-height: 54px;
@@ -81,7 +78,6 @@ body {
   height: 64px;
   background: #6AA666;
   font-size: 30px;
-  font-family: OpenSans-Bold;
   font-weight: bold;
   color: rgba(255, 255, 255, 1);
   line-height: 64px;
@@ -101,7 +97,6 @@ body {
   text-align: center;
   border: 1px solid rgba(255, 255, 255, 1);
   font-size: 16px;
-  font-family: OpenSans-Regular;
   font-weight: 400;
   color: rgba(255, 255, 255, 1);
 }
@@ -111,7 +106,6 @@ body {
   width: 80%;
   height: 100%;
   font-size: 20px;
-  font-family: OpenSans-Regular;
   font-weight: 400;
   line-height: 54px;
   color: #393D44;
@@ -127,7 +121,6 @@ body {
   margin-left: 24px;
   box-sizing: border-box;
   font-size: 16px;
-  font-family: OpenSans-Regular;
   font-weight: 400;
   color: rgba(106, 166, 102, 1);
   line-height: 25px;

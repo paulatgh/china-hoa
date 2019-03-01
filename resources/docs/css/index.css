@@ -23,7 +23,6 @@
   color: rgba(30, 130, 23, 1);
   height: 27px;
   font-size: 20px;
-  font-family: OpenSans-Regular;
   font-weight: 400;
   line-height: 27px;
 
@@ -96,7 +95,6 @@
 
 .choose-left h5 {
   font-size: 20px;
-  font-family: OpenSans-Bold;
   font-weight: bold;
   color: rgba(57, 61, 68, 1);
   line-height: 36px;
@@ -113,7 +111,6 @@
 
 .choose-left ul li a {
   font-size: 17px;
-  font-family: OpenSans-Regular;
   font-weight: 400;
   color: rgba(106, 166, 102, 1);
   line-height: 30px;
@@ -124,7 +121,6 @@
 
   height: 22px;
   font-size: 16px;
-  font-family: OpenSans-SemiBold;
   font-weight: 600;
   color: rgba(30, 30, 30, 1);
   line-height: 22px;
@@ -132,7 +128,6 @@
 
 .choose-right>li>div {
   font-size: 16px;
-  font-family: OpenSans-Regular;
   font-weight: 400;
   color: rgba(30, 30, 30, 1);
   line-height: 22px;

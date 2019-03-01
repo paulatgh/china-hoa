@@ -15,7 +15,6 @@
   padding-left: 24px;
   color: #F1F1F1;
   font-size: 20px;
-  font-family: Verdana, Arial, Helvetica;
 }
 
 .profile-table {
@@ -32,7 +31,6 @@
 .profile-table tr td {
   height: 33px;
   font-size: 18px;
-  font-family: OpenSans-Regular;
   font-weight: 400;
   color: rgba(57, 61, 68, 1);
   line-height: 24px;
@@ -44,7 +42,6 @@
 .profile-table tr>td>input {
   width: 180px;
   height: 28px;
-  font-family: Verdana, Arial, Helvetica;
   font-size: 11px;
 
 }
@@ -63,7 +60,6 @@
   border-radius: 19px;
   border: none;
   font-size: 16px;
-  font-family: OpenSans-Regular;
   font-weight: 400;
   color: rgba(255, 255, 255, 1);
   line-height: 22px;
@@ -78,7 +74,6 @@
   border-radius: 19px;
   border: none;
   font-size: 16px;
-  font-family: OpenSans-Regular;
   font-weight: 400;
   color: rgba(255, 255, 255, 1);
   line-height: 22px;
