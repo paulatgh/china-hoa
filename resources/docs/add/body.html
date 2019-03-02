@@ -1,0 +1,71 @@
+<!-- header -->
+<div class="header"></div>
+
+<!-- main body -->
+<div class="main_body">
+    <div class="w1200">
+        <script id="breadcrumbs" type="txt/template">
+        <ul class="breadcrumb">
+            <li><a href="{{_metadata.root_url}}/home" rel="noopener noreferrer">Home</a></li>
+            <li>&nbsp;>&nbsp;</li>
+            <li><a href="{{_metadata.root_url}}/resources" rel="noopener noreferrer"> Resources </a></li>
+            <li>&nbsp;>&nbsp;</li>
+            <li><a href="{{_metadata.root_url}}/resources/docs/" rel="noopener noreferrer"> Docs </a></li>
+        </ul>
+        </script>
+        <div id="content">
+            <div class="main-center">
+                <table class="table-two" border="0">
+                    <tr>
+                        <td class="tda">
+                            <font size="5" face="Verdana, Arial, Helvetica" color="#ffffff">
+                                Add Doc
+                            </font>
+                        </td>
+                    </tr>
+                </table>
+
+                <form method="post" enctype="multipart/form-data">
+                    <table class="adddoc-table" width="90%" border="1" cellpadding="3" cellspacing="0" bordercolor="#6AA666">
+                        <tbody>
+                        <tr>
+                            <td>
+                                Title:
+                            </td>
+                            <td>
+                                <input type="text" size="50" maxlength="50" name="title" class="inta" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                File:
+                            </td>
+                            <td>
+                                <input type="file" maxlength="200" name="file" required>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <table border="0" width="90%">
+                        <tbody>
+                        <tr>
+                            <td width="10%" align="right">
+                                <input type="Submit" value="Save New" name="action" class="continue">
+                                <input type="button" id="cancel-button" value="Cancel" class="cancel">
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </form>
+                <div class="clearfix"></div>`
+            </div>
+        </div>
+    </div>
+</div>
+<!-- footer -->
+<div class="footer">
+    <p>
+        Copyright © 2019 Tellus, Inc. All Rights Reserved.
+    </p>
+</div>

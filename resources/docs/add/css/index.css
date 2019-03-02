@@ -4,7 +4,7 @@
 .w1200{
   height: 100% !important;
 }
-.addalbum-table tr {
+.adddoc-table tr {
   width: 410px;
   height: 54px;
   background: rgba(255, 255, 255, 1);
@@ -22,7 +22,7 @@
   width:564px;
   height:160px;
 }
-.addalbum-table tr td {
+.adddoc-table tr td {
   height: 24px;
   font-size: 18px;
   font-weight: 400;
