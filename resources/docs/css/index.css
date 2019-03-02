@@ -2,6 +2,10 @@
   margin-bottom: 100px;
 }
 
+.investor-pdf {
+  padding-top: 24px;
+}
+
 .main-breadcrumb {
   width: 1200px !important;
   margin: 0 auto !important;
@@ -12,7 +16,6 @@
   border-left: none;
   height: 1051px;
 }
-
 
 .main-breadcrumb {
   width: 1200px;
@@ -25,7 +28,6 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 27px;
-
 }
 
 .pdfa {
@@ -34,7 +36,6 @@
 
 .breadcrumb li a {
   color: rgba(30, 130, 23, 1);
-
 }
 
 .breadcrumb {
@@ -52,7 +53,7 @@
 
 .investor-pdf li {
   width: 185px;
-  height: 40px;
+  height: 262px;
 }
 
 .choose {
@@ -81,7 +82,6 @@
 
 .choose-right ul>li {
   width: 176px;
-  height: 240px;
   background: rgba(241, 241, 241, 1);
   margin-bottom: 10px;
   box-sizing: border-box;
@@ -116,9 +116,7 @@
   line-height: 30px;
 }
 
-
 .choose-right>li>h5 {
-
   height: 22px;
   font-size: 16px;
   font-weight: 600;
@@ -139,4 +137,21 @@
 
 .show {
   display: block;
+}
+
+.admin_actions {
+  width: 90px;
+  height: 40px;
+  background: #6AA666;
+  border-radius: 20px;
+  line-height: 40px;
+  text-align: center;
+  display: none;
+  margin-bottom: 24px;
+}
+
+.admin_actions a {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
 }

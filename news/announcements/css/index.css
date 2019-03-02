@@ -4,12 +4,10 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 27px;
-
 }
 
 .breadcrumb li a {
   color: rgba(30, 130, 23, 1);
-
 }
 
 .breadcrumb {
@@ -23,8 +21,7 @@
 .main-breadcrumb {
   height: 50px;
   width: 1200px;
-  margin: 0 auto"
-
+  margin: 0 auto;
 }
 
 .main-center {
@@ -47,7 +44,6 @@
   height: auto;
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .content-1 p {
@@ -126,7 +122,6 @@
 }
 
 .choose-left h5 {
-
   font-size: 20px;
   font-weight: bold;
   color: rgba(57, 61, 68, 1);
@@ -137,7 +132,6 @@
   width: 260px;
   height: 190px;
   /* border: solid 1px; */
-
 }
 
 .choose-left ul li a {
@@ -145,7 +139,6 @@
   font-weight: 400;
   color: rgba(106, 166, 102, 1);
   line-height: 30px;
-
 }
 
 .choose-left ul li a:hover {
@@ -153,7 +146,6 @@
 }
 
 .choose-right>li>h5 {
-
   height: 22px;
   font-size: 16px;
   font-weight: 600;
@@ -205,7 +197,6 @@
   color: #ffffff;
   font-size: 16px;
   font-weight: 400;
-
 }
 
 .dao:hover {

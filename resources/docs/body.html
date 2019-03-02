@@ -6,16 +6,16 @@
 <div class="investor clearfix">
     <div class="main-breadcrumb">
         <script id="breadcrumbs" type="txt/template">
-            <div class="main-breadcrumb">
-                        <ul class="breadcrumb">
-                            <li><a href="{{_metadata.root_url}}/home">Home</a></li>
-                            <li>&nbsp;>&nbsp;</li>
-                            <li><a href="{{_metadata.root_url}}/resources">Resources</a></li>
-                            <li>&nbsp;>&nbsp;</li>
-                            <li><a href="#?id={{page_title.id}}">{{page_title.title}}</a></li>
-                        </ul>
-                    </div>
-                    </script>
+        <div class="main-breadcrumb">
+            <ul class="breadcrumb">
+                <li><a href="{{_metadata.root_url}}/home">Home</a></li>
+                <li>&nbsp;>&nbsp;</li>
+                <li><a href="{{_metadata.root_url}}/resources">Resources</a></li>
+                <li>&nbsp;>&nbsp;</li>
+                <li><a href="#">Docs</a></li>
+            </ul>
+        </div>
+        </script>
     </div>
     <div class="w1200">
         <div class="w838">
@@ -24,6 +24,13 @@
                     <div class="content-1">
                         <div class="choose">
                             <div class="choose-right">
+                                <div class="admin_actions">
+                                    <script id="actions_template" type="txt/template">
+                                        {{#action_buttons}}
+                                        <a href="{{_metadata.root_url}}{{_metadata.page_path}}/add">Add</a>
+                                        {{/action_buttons}}
+                                    </script>
+                                </div>
                                 <ul id="documents" class="item show">
                                     <script id="documents_template" type="txt/template">
                                         {{#documents}}
@@ -37,6 +44,7 @@
                                                 </div>
                                             </div>
                                             <p>{{title}}</p>
+                                            <p>{{user_friendly_date}}</p>
                                         </li>
                                         {{/documents}}
                                     </script>
