@@ -3,7 +3,7 @@
         <p class="return"><img src="/community/img/Bounced.png" alt="Bounced"></p>
         <h3 class="notes-h3">Leave a Note</h3>
         <form id="rsvp_notes_form" method="post">
-            <textarea name="notes" cols="30" rows="10" required placeholder="Max. 500 characters" maxlength="500"></textarea>
+            <textarea name="notes" cols="30" rows="10" required placeholder="Max. 250 characters" maxlength="250"></textarea>
             <input type="submit" value="Submit">
         </form>
     </div>
@@ -66,6 +66,16 @@
                                 <li>
                                     Event Added By:&nbsp;{{creator}}
                                 </li>
+                                {{#rsvp_status}}
+                                <li>
+                                    Your RSVP: {{rsvp_status}}
+                                </li>
+                                {{/rsvp_status}}
+                                {{#rsvp_note}}
+                                <li>
+                                    Your RSVP note: {{rsvp_note}}
+                                </li>
+                                {{/rsvp_note}}
                                 <li class="tips" style="display: none;">
                                     <ul>
                                         <li><a class="rsvp-yes">Yes</a></li>
