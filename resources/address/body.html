@@ -9,15 +9,15 @@
         <div class="w1200 pr">
             <script id="breadcrumbs" type="txt/template">
                 <div class="main-breadcrumb">
-                            <ul class="breadcrumb">
-                                <li><a href="{{_metadata.root_url}}/home">Home</a></li>
-                                <li>&nbsp;>&nbsp;</li>                                
-                                <li><a href="{{_metadata.root_url}}/resources">Resources</a></li>
-                                <li>&nbsp;>&nbsp;</li>
-                                <li><a href="#?id={{page_title.id}}">{{page_title.title}}</a></li>
-                            </ul>
-                        </div>
-                        </script>
+                <ul class="breadcrumb">
+                    <li><a href="{{_metadata.root_url}}/home">Home</a></li>
+                    <li>&nbsp;>&nbsp;</li>
+                    <li><a href="{{_metadata.root_url}}/resources">Resources</a></li>
+                    <li>&nbsp;>&nbsp;</li>
+                    <li><a href="#">Address Book</a></li>
+                </ul>
+            </div>
+            </script>
             <div class="main-left-one">
                 <div class="address_title" id="page_information_cycle">
                     <script id="page_information" type="txt/template">
@@ -57,7 +57,7 @@
                             <ul id="events_photo">
                                 <li id="{{letter}}-section">{{letter}}</li>
                                 {{#names}}
-                                <li class="user_desc">{{name}}</li>
+                                <li data-id="{{id}}" class="user_desc">{{name}}</li>
                                 {{/names}}
                             </ul>
                         </script>
@@ -72,46 +72,34 @@
         </div>
         <div class="db">
             <div class="user" id="user_information_cycle">
-                <div class="close"></div>
                 <script id="user_information" type="txt/template">
-                    <div class="user-img">
-                        <img src="{{PersonalPhotoUrl}}">
-                    </div>
-                    <div class="user-content">
-                        <h5>{{userContent}}</h5>
-                        <h5>{{name}}</h5>
-                        <p>{{DateOofBirth}}</p>
-                        <p>{{Email}}</p>
-                        <p>{{Phone}}</p>
-                        <p>{{professional}}</p>
-                    </div>
+                <div class="close"></div>
+                <div class="user-content">
+                    <h5>{{name}}</h5>
+                    {{#email}}
+                    <p>{{email}}</p>
+                    {{/email}}
+                    {{#phone}}
+                    <p>{{phone}}</p>
+                    {{/phone}}
+                    {{#employer}}
+                    <p>{{employer}}</p>
+                    {{/employer}}
+                </div>
 
-                    <div class="user-content">
-                        <h5>{{community}}</h5>
-                        <p>{{address}}</p>
-                        <p>{{addressContent}}</p>
-                        <p>{{content}}</p>
-                        <p>{{unit}}</p>
-                    </div>
-                    <div class="user-content">
-                        <h5>{{children}}</h5>
-                        <p>{{FirstChild}}</p>
-                        <p>{{SecondChild}}</p>
-                        <p>{{ThirdChild}}</p>
-                    </div>
-                    <div class="user-content">
-                        <h5>{{HereFrom}}</h5>
-                        <p>{{HereFromContent}}</p>
-                        <h5>{{MoveInDate}}</h5>
-                        <p>{{MoveInDateContent}}</p>
-                        <h5>{{Computer}}</h5>
-                        <p>{{ComputerType}}</p>
-                        <h5>{{Hobbies}}</h5>
-                        <p>{{HobbiesList}},</p>
-                        <p>{{HobbiesList2}}</p>
-                        <h5>{{PersonalWebsite}}</h5>
-                        <p>{{personalUrl}}</p>
-                    </div>
+                {{#address1}}
+                <div class="user-content">
+                    <h5>{{community_name}}</h5>
+                    <p>Address</p>
+                    <p>{{address1}}</p>
+                    {{#address2}}
+                    <p>{{address2}}</p>
+                    {{/address2}}
+                    {{#unit}}
+                    <p>Lot #/Unit #: {{unit}}</p>
+                    {{/unit}}
+                </div>
+                {{/address1}}
                 </script>
             </div>
         </div>
