@@ -1,23 +1,25 @@
 var render = function() {
-  _pre_render();
-  $("#breadcrumbs").after(function() {
-      return Mustache.render($(this).html(), data);
-  });
-  $('#edit-reservation-body').after(function() { return Mustache.render($(this).html(), data.event) });
+    _pre_render();
+    $("#breadcrumbs").after(function() {
+        return Mustache.render($(this).html(), data);
+    });
+    $('#image_template').after(function() { return Mustache.render($(this).html(), data.amenity) });
+    $('#edit-reservation-body').after(function() { return Mustache.render($(this).html(), data) });
+    $('#reservation_fields_template').after(function() { return Mustache.render($(this).html(), data.event) });
 
-  $('#cancel-button').click(function() {
-      window.location = `${data._metadata.root_url}/activities/calendar`;
-  })
+    $('#cancel-button').click(function() {
+        window.location = `${data._metadata.root_url}/activities/calendar`;
+    })
 
-  fillTimes(data.event.starts_at, 'start');
-  fillTimes(data.event.ends_at, 'end');
+    fillTimes(data.event.starts_at, 'start');
+    fillTimes(data.event.ends_at, 'end');
 
-  // Global post render
-  _post_render();
+    // Global post render
+    _post_render();
 
-  // Local post render
+    // Local post render
 
-  addAuthenticityTokenToForms();
+    addAuthenticityTokenToForms();
 }
 
 var fillTimes = function(rawTime, prefix) {

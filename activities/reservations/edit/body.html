@@ -13,22 +13,21 @@
             <li><a href="{{_metadata.root_url}}/activities">Activities</a></li>
             <li><span rel="noopener noreferrer" style="color:rgba(30,130,23,1)"> > </span></li>
             <li><a href="{{_metadata.root_url}}/activities/calendar">Events</a></li>
-            <li><span rel="noopener noreferrer" style="color:rgba(30,130,23,1)"> > </span></li>
-            <li><a href="#?id={{reservations_edit_title.id}}">{{reservations_edit_title.title}}</a></li>
         </ul>
     </script>
-        <table class="table-one"  border="0"  cellpadding="10" cellspacing="0">
+        <table class="table-one" border="0" cellpadding="10" cellspacing="0">
             <table class="table-two" border="0">
                 <tr>
                     <td>
-                        
-                            Edit Reservation Request
-                        
+                        Edit Reservation Request
                     </td>
                 </tr>
             </table>
+            <script id="image_template" type="txt/template">
+            <img class="form-header-image" src="{{img_url}}"/>
+            </script>
             <form id="edit-reservation-form" method="post" enctype="multipart/form-data">
-                <table class="reservation-table" border="1"  cellspacing="0">
+                <table class="reservation-table" border="1" cellspacing="0">
                     <tbody>
                         <script id="edit-reservation-body" type="txt/template">
                         <tr>
@@ -36,8 +35,14 @@
                                 Location
                             </td>
                             <td>
-                                <span>{{location}}</span>
-                                <input type="hidden" name="amenity_id" value="{{amenity_id}}"/>
+                                <span>{{event.location}}</span>
+                                <input type="hidden" name="amenity_id" value="{{event.amenity_id}}"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Rules</td>
+                            <td>
+                                <span style="white-space: pre-wrap;">{{amenity.rules}}</span>
                             </td>
                         </tr>
                         <tr>
@@ -133,6 +138,8 @@
                                 </select>
                             </td>
                         </tr>
+                        </script>
+                        <script id="reservation_fields_template" type="txt/template">
                         {{#reservation_fields}}
                         <tr>
                             <td>{{user_friendly_name}}:</td>

@@ -24,6 +24,9 @@
                     </td>
                 </tr>
             </table>
+            <script id="image_template" type="txt/template">
+            <img class="form-header-image" src="{{img_url}}"/>
+            </script>
             <form id="add-reservation-form" method="post" enctype="multipart/form-data">
                 <table class="reservation-table" border="1" cellspacing="0">
                     <tbody>
@@ -33,8 +36,16 @@
                             </td>
                             <td>
                                 <script id="location_template" type="txt/template">
-                                    <span>{{name}}</span>
+                                <span>{{name}}</span>
                                 <input type="hidden" name="amenity_id" value="{{id}}"/>
+                                </script>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Rules</td>
+                            <td>
+                                <script id="rules_template" type="txt/template">
+                                <span style="white-space: pre-wrap;">{{rules}}</span>
                                 </script>
                             </td>
                         </tr>
@@ -132,7 +143,7 @@
                             </td>
                         </tr>
                         <script id="reservation_fields_template" type="txt/template">
-                            {{#reservation_fields}}
+                        {{#reservation_fields}}
                         <tr>
                             <td>{{user_friendly_name}}:</td>
                             <td>
