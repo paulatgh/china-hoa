@@ -10,3 +10,21 @@ html * {
     color: #000 !important; */
     font-family: OpenSans-Regular /* !important */;
 }
+
+.alert {
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.alert-notice{
+    color: green;
+}
+
+.alert-alert{
+    color: yellow;
+}
+
+.alert-error{
+    color: red;
+}

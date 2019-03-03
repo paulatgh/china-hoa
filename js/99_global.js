@@ -72,39 +72,59 @@ function delete_element(data, index, el, callback) {
 
 function _pre_render() {
     header_html = `
-    <div class="w1200">
-        <a class="logo" href="${data._metadata.root_url}/home">
-            <img src="/community/img/Combined Shape.png" alt="Combined Shape">
-            De Anza Oaks
-        </a>
-        <input type="text" placeholder="Search..." style="width: 188px;height: 37px;position: relative;top: 30px;left:561px;border: solid 1px #393D44;padding-left: 10px;">
-        <div class="btns clearfix">
-            <img src="/community/img/Shape.png" alt="Shape" style="position: relative;left: -140px;top: 40px;z-index: 100000;">
-            <img src="/community/img/dropdown.png" alt="dropdown" style="position: relative;left: -50px;top: 36px;z-index: 100000;">
-            <a class="btns-search" href="javascript:;"> </a>
-            <a class="btns-language" href="javascript:;">Log In</a>
-            <div class="langOv">
-                <div class="profile">
-                    <a href="${data._metadata.root_url}/profile" style="border-bottom: 1px solid white;width: 100%;margin-left: -1px">
-                        My Profile
-                    </a>
-                    <a href="javascript:;" class="logout">Log Out</a>
+        <div>
+            <div class="w1200">
+                <a class="logo" href="${data._metadata.root_url}/home">
+                    <img src="/community/img/Combined Shape.png" alt="Combined Shape">
+                    De Anza Oaks
+                </a>
+                <input type="text" placeholder="Search..." style="width: 188px;height: 37px;position: relative;top: 30px;left:561px;border: solid 1px #393D44;padding-left: 10px;">
+                <div class="btns clearfix">
+                    <img src="/community/img/Shape.png" alt="Shape" style="position: relative;left: -140px;top: 40px;z-index: 100000;">
+                    <img src="/community/img/dropdown.png" alt="dropdown" style="position: relative;left: -50px;top: 36px;z-index: 100000;">
+                    <a class="btns-search" href="javascript:;"> </a>
+                    <a class="btns-language" href="javascript:;">Log In</a>
+                    <div class="langOv">
+                        <div class="profile">
+                            <a href="${data._metadata.root_url}/profile" style="border-bottom: 1px solid white;width: 100%;margin-left: -1px">
+                                My Profile
+                            </a>
+                            <a href="javascript:;" class="logout">Log Out</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li class="curr">
+                            <a class="on jump" href="${data._metadata.root_url}/home">Home</a>
+                        </li>
+                        <li class="curr">
+                            <a class="on" href="${data._metadata.root_url}/aboutus">About Us</a>
+                        </li>
+                    </ul>
+                    <span class="navline"></span>
                 </div>
             </div>
-        </div>
-        <div class="nav">
-            <ul>
-                <li class="curr">
-                    <a class="on jump" href="${data._metadata.root_url}/home">Home</a>
-                </li>
-                <li class="curr">
-                    <a class="on" href="${data._metadata.root_url}/aboutus">About Us</a>
-                </li>
-            </ul>
-            <span class="navline"></span>
-        </div>
-    </div>`;
+        </div>`;
     $('.header').html(header_html);
+    $( ".header" ).after( "<div class='flash'>Test</div>" );
+    flash_list = '';
+    $.each(data._flash, function( index, value ) {
+        var flash_type = value[0];
+        var flash_message = value[1];
+        alert_html = `
+        <div class="w1200">
+            <div class="alert alert-${flash_type}">
+               ${flash_message}
+            </div>
+        </div>
+        `;
+        flash_list += alert_html;
+    });
+    flash_html = `
+    <div>${flash_list}</div>
+    `;
+    $('.flash').html(flash_html);
 
     var username = data._current_user && data._current_user.display_name
     if (username) {
