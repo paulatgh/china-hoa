@@ -210,3 +210,7 @@
 .footer {
   margin-top: 105px;
 }
+
+.announcement-row:hover {
+  cursor: pointer;
+}

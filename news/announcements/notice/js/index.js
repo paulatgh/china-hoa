@@ -7,10 +7,6 @@ var render = function() {
     $.each(data.article, function() {
         $('#article_cycle').append(Mustache.render(article, this));
     });
-    var img = $('#img').html();
-    $.each(data.article, function() {
-        $('#img_cycle').append(Mustache.render(img, this));
-    });
     // Global post render
     _post_render();
 

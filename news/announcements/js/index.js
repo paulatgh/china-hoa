@@ -31,6 +31,9 @@ var render = function() {
     _post_render();
 
     // Local post render
+    $('.announcement-row').click(function() {
+        window.location = this.getAttribute('data-link');
+    });
 
     // admin
     if (data._current_user && data._current_user.is_admin) {

@@ -33,17 +33,15 @@
                     </div>
                     <ul id="news_announcements" class="tab1 item show">
                         <script id="announcements_template" type="txt/template">
-                            <li>
+                            <li class="announcement-row" data-link="{{_metadata.root_url}}{{link}}">
                                 <div class="announcements_permission">
                                     <span>
-                                        <a href="{{_metadata.root_url}}{{edit_link}}?id={{id}}">Edit</a>
+                                        <a href="{{_metadata.root_url}}{{edit_link}}">Edit</a>
                                     </span>
                                     <span class="del" data-action="{{delete_link}}">Delete</span>
                                 </div>
                                 <h5>
-                                    <a href="{{_metadata.root_url}}{{link}}?id={{id}}" class="dao" style="width: 292px">
-                                        {{title}}
-                                    </a>
+                                    {{title}}
                                 </h5>
                                 {{#friendly_date}}
                                 <div>{{friendly_date}}</div>
