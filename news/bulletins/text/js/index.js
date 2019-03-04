@@ -1,8 +1,8 @@
 var render = function() {
     _pre_render();
-    // $("#breadcrumbs").after(function() {
-    //     return Mustache.render($(this).html(), data);
-    // });
+    $("#breadcrumbs").after(function() {
+        return Mustache.render($(this).html(), data);
+    });
     var text_add_title = $('#text_add_title').html();
     Mustache.parse(text_add_title);
     $.each(data.text_add_title, function() {

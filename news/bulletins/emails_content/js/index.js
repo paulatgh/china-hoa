@@ -6,9 +6,9 @@ var render = function() {
     $.each(data.emails_title, function() {
         $('#emails_title_cycle').append(Mustache.render(emails_title, this));
     });
-    // $("#breadcrumbs").after(function() {
-    //     return Mustache.render($(this).html(), data);
-    // });
+    $("#breadcrumbs").after(function() {
+        return Mustache.render($(this).html(), data);
+    });
     $('#cancel-button').click(function() {
         window.location = `${data._metadata.root_url}/news/bulletins`;
     })

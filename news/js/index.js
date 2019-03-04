@@ -5,7 +5,7 @@ var render = function () {
     $.each(data.news, function () {
         $('#news_list').append(Mustache.render(news_template, this));
     });
-    // $("#breadcrumbs").after(function() { return Mustache.render($(this).html(), data); });
+    $("#breadcrumbs").after(function() { return Mustache.render($(this).html(), data); });
     
 
     // Global post render
