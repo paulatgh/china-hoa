@@ -6,11 +6,11 @@
 <!-- main body -->
 <div class="main">
     <script id="breadcrumbs" type="txt/template">
-    <div class="main-breadcrumb">
+        <div class="main-breadcrumb">
         <ul class="breadcrumb" style="float: left">
-            <li><a href="/home">Home</a></li>
+            <li><a href="{{_metadata.root_url}}/home">Home</a></li>
             <li>&nbsp;>&nbsp;</li>
-            <li><a href="/news">News</a></li>
+            <li><a href="{{_metadata.root_url}}/news">News</a></li>
             <li>&nbsp;>&nbsp;</li>
             <li><a href="#">Announcements</a></li>
         </ul>
@@ -32,23 +32,23 @@
                     </div>
                     <ul id="news_announcements" class="tab1 item show">
                         <script id="announcements_template" type="txt/template">
-                            <li class="announcement-row" data-link="{{_metadata.root_url}}{{link}}">
+                            <li class="announcement-row">
                                 <div class="announcements_permission">
                                     <span>
                                         <a href="{{_metadata.root_url}}{{edit_link}}">Edit</a>
                                     </span>
                                     <span class="del" data-action="{{delete_link}}">Delete</span>
                                 </div>
-                                <h5>
+                                <h5 class="title_name" data-link="{{_metadata.root_url}}{{link}}">
                                     {{title}}
                                 </h5>
                                 {{#friendly_date}}
-                                <div>{{friendly_date}}</div>
+                                <div class="friendly">{{friendly_date}}</div>
                                 {{/friendly_date}}
                                 {{^friendly_date}}
                                 <div>(draft)</div>
                                 {{/friendly_date}}
-                                <div style="white-space: pre-wrap;">{{abbreviated_body}}</div>
+                                <div style="white-space: pre-wrap;" class="abbreviated">{{abbreviated_body}}</div>
                             </li>
                         </script>
                     </ul>

@@ -58,7 +58,6 @@
 
 .choose {
   width: 1172px;
-  height: 810px;
   /* border: solid 1px; */
   display: flex;
   position: relative;
@@ -71,11 +70,15 @@
 }
 
 .choose-right {
-  width: 890px;
-  height: 790px;
-  /* border: solid 1px; */
-  overflow: auto;
-  margin-left: 10px;
+  width: 1200px;
+  /* overflow: auto; */
+  /* margin-left: 10px; */
+}
+
+.choose-right ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .choose-right::-webkit-scrollbar {
@@ -83,21 +86,21 @@
 }
 
 .choose-right ul>li {
-  width: 851px;
-  min-height: 100px;
+  width: 536px;
+  height: 350px;
   overflow: hidden;
-  background: rgba(241, 241, 241, 1);
-  margin-bottom: 10px;
   padding: 16px;
-  box-sizing: border-box;
   position: relative;
+  background: #fefefe;
+  box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+  margin-bottom: 20px;
 }
 
 .announcements_permission {
   position: absolute;
-  top: 0;
+  bottom: 0;
   right: 0;
-  width: 16%;
+  width: 100%;
   height: 54px;
   display: none;
 }
@@ -111,15 +114,6 @@
   line-height: 54px;
 }
 
-.choose-right li:nth-child(odd) .announcements_permission a,
-.choose-right li:nth-child(2n) .announcements_permission .del {
-  color: rgba(106, 166, 102, 1);
-}
-
-.choose-right li:nth-child(2n) .announcements_permission a,
-.choose-right li:nth-child(2n) .announcements_permission .del {
-  color: #ffffff;
-}
 
 .choose-left h5 {
   font-size: 20px;
@@ -160,15 +154,6 @@
   line-height: 22px;
 }
 
-.choose-right li:nth-child(2n) {
-  background: rgba(106, 166, 102, 1);
-  color: rgba(255, 255, 255, 1);
-}
-
-.choose-right li:nth-child(2n) a {
-  background: rgba(106, 166, 102, 1);
-  color: rgba(255, 255, 255, 1);
-}
 
 .item {
   display: none;
@@ -207,10 +192,51 @@
   cursor: pointer;
 }
 
-.footer {
-  margin-top: 105px;
+.title_name {
+  margin-top: 10px;
+  margin-bottom: 24px;
+  line-height: 33px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #393D44;
+  cursor: pointer;
 }
 
-.announcement-row:hover {
-  cursor: pointer;
+.announcements_permission span {
+  display: inline-block;
+  width: 90px;
+  height: 38px;
+  border-radius: 20px;
+  font-size: 16px;
+  border: 1px solid #6AA666;
+  color: #6AA666;
+  text-align: center;
+  line-height: 38px;
+  margin-right: 17px;
+}
+
+.announcements_permission span a {
+  color: #6AA666;
+}
+
+.announcements_permission span:nth-child(2) {
+  border: 1px solid #F94B5A;
+  color: #F94B5A;
+}
+
+.friendly {
+  margin-top: 22px;
+  margin-bottom: 24px;
+  line-height: 27px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #393D44;
+}
+
+.abbreviated {
+  line-height: 27px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #393D44;
+  overscroll-behavior-y: hidden;
 }

@@ -31,7 +31,7 @@ var render = function() {
     _post_render();
 
     // Local post render
-    $('.announcement-row').click(function() {
+    $('.title_name').click(function() {
         window.location = this.getAttribute('data-link');
     });
 

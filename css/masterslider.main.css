@@ -805,16 +805,6 @@ only screen and (                -webkit-min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
 
-	.ms-skin-default .ms-slide .ms-slide-vpbtn,
-	.ms-skin-default .ms-video-btn,
-	.ms-skin-default .ms-slide .ms-slide-vcbtn,
-	.ms-skin-default .ms-nav-next,
-	.ms-skin-default .ms-nav-prev,
-	.ms-skin-default .ms-bullet{
-		background-image:url(/community/img/light-skin-1-retina.png);
-		background-size: 152px 225px;
-	}
-
 }
 
 

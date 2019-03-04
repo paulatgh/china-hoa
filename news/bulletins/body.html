@@ -5,14 +5,18 @@
 
 <!-- main -->
 <div class="main">
-        <div class="main-breadcrumb" style="width: 1200px;margin: 0 auto">
-        <ul class="breadcrumb" style="float: left">
-            <li><a href="/home">Home</a></li>
-            <li>&nbsp;>&nbsp;</li>
-            <li><a href="/news">News</a></li>
-            <li>&nbsp;>&nbsp;</li>
-            <li><a href="#">Email Bulletin</a></li>
-        </ul>
+    <div class="main-breadcrumb" style="width: 1200px;margin: 0 auto">
+        <script id="breadcrumbs" type="txt/template">
+            <div class="main-breadcrumb">
+                <ul class="breadcrumb" style="float: left">
+                    <li><a href="{{_metadata.root_url}}/home">Home</a></li>
+                    <li>&nbsp;>&nbsp;</li>
+                    <li><a href="{{_metadata.root_url}}/news">News</a></li>
+                    <li>&nbsp;>&nbsp;</li>
+                    <li><a href="#">Email Bulletin</a></li>
+                </ul>
+            </div>
+        </script>
     </div>
     <div class="main-center">
         <p class="photo-albums" id="the_title_cycle">
