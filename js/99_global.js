@@ -78,7 +78,7 @@ function _pre_render() {
                     <img src="/community/img/Combined Shape.png" alt="Combined Shape">
                     De Anza Oaks
                 </a>
-                <input type="text" placeholder="Search..." style="width: 188px;height: 37px;position: relative;top: 30px;left:561px;border: solid 1px #393D44;padding-left: 10px;">
+                <input type="text" placeholder="Search..." style="width: 188px;height: 37px;position: relative;top: 30px;left:563px;border: solid 1px #393D44;padding-left: 10px;">
                 <div class="btns clearfix">
                     <img src="/community/img/Shape.png" alt="Shape" style="position: relative;left: -146px;top: 40px;z-index: 100000;">
                     <img src="/community/img/dropdown.png" alt="dropdown" style="position: relative;left: -16px;top: 36px;z-index: 100000;">

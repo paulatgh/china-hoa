@@ -19,7 +19,6 @@
 .ms-skin-default .ms-slide .ms-slide-vcbtn {
 	width: 30px;
 	height: 30px;
-	background: url(light-skin-1-1.png)no-repeat -24px -28px;
 	top: 18px;
 	right: 30px;
 }
@@ -53,7 +52,6 @@
 .ms-skin-default .ms-bullet {
 	width: 10px;
 	height: 10px;
-	background: url(light-skin-1-1.png) no-repeat;
 	margin: 4px;
 	background-position: -34px -117px;
 }
