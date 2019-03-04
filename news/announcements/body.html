@@ -6,15 +6,13 @@
 <!-- main body -->
 <div class="main">
     <div class="main-breadcrumb">
-        <script id="breadcrumbs" type="txt/template">
         <ul class="breadcrumb" style="float: left">
-            <li><a href="{{_metadata.root_url}}/home">Home</a></li>
+            <li><a href="/home">Home</a></li>
             <li>&nbsp;>&nbsp;</li>
-            <li><a href="{{_metadata.root_url}}/news">News</a></li>
+            <li><a href="/news">News</a></li>
             <li>&nbsp;>&nbsp;</li>
-            <li><a href="#?id={{announcements_title.id}}">{{announcements_title.title}}</a></li>
+            <li><a href="#">Announcements</a></li>
         </ul>
-    </script>
     </div>
 
     <div class="main-center">
@@ -27,7 +25,7 @@
                     <div class="announcements_add" id="add_cycle">
                         <script id="add" type="txt/template">
                             {{#action_buttons}}
-                            <a href="{{_metadata.root_url}}{{_metadata.page_path}}/add?id={{announcements_title.id}}">Add</a>
+                            <a href="{{_metadata.root_url}}{{_metadata.page_path}}/add">Add</a>
                             {{/action_buttons}}
                         </script>
                     </div>
