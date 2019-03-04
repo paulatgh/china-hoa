@@ -85,7 +85,11 @@ var render = function() {
             }
         });
     });
-
+    $.jqLoadFix = function() {
+        if (this.complete) {
+            var that = this;
+        }
+    }
     $.getScript(`${data._metadata.assets_path}${data._metadata.page_path}/js/jalendar.js`, function() {
         $(function() {
             $('#myId').jalendar({
