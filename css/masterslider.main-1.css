@@ -1,6 +1,6 @@
 /*! 
  * Master Slider WordPress Main CSS File
- * @date May 2015
+ * @date May 2019
  */
 
 
@@ -105,13 +105,11 @@
 
 .ms-grab-cursor {
   cursor: url(grab-1.png)
-    /*tpa=https://www.bgy.com.cn/map_files/common/grab.png*/
     , move;
 }
 
 .ms-grabbing-cursor {
   cursor: url(grabbing-1.png)
-    /*tpa=https://www.bgy.com.cn/map_files/common/grabbing.png*/
     , move;
 }
 
@@ -266,12 +264,6 @@
   -webkit-transform: translateZ(0.4px);
   transform: translateZ(0.4px);
 }
-
-.ms-scroll-parallax .ms-sl-selected .ms-scroll-parallax-cont,
-.ms-scroll-parallax .ms-sl-selected .ms-slide-bgcont {}
-
-.ms-scroll-parallax .ms-slide-bgcont {}
-
 /*-----------------------------------------------------------*/
 .ms-action-layer {
   cursor: pointer;
@@ -390,7 +382,6 @@
   font-size: 0.75em;
   display: inline-block;
   background: url(video-close-btn-1.png)
-    /*tpa=https://www.bgy.com.cn/map_files/common/video-close-btn.png*/
     no-repeat 0px 3px;
   padding-left: 15px;
   height: 15px;
@@ -1102,7 +1093,6 @@ only screen and (min-resolution: 2dppx) {}
   width: 54px;
   height: 54px;
   background: url(black-skin-1-1.png)
-    /*tpa=https://www.bgy.com.cn/map_files/skins/black-skin-1.png*/
     no-repeat -14px -150px;
   top: 50%;
   left: 50%;
@@ -1113,7 +1103,6 @@ only screen and (min-resolution: 2dppx) {}
   width: 27px;
   height: 26px;
   background: url(black-skin-1-1.png)
-    /*tpa=https://www.bgy.com.cn/map_files/skins/black-skin-1.png*/
     no-repeat -24px -29px;
   top: 30px;
   right: 30px;
@@ -1125,7 +1114,6 @@ only screen and (min-resolution: 2dppx) {}
 .ms-skin-black-1 .ms-nav-prev {
   width: 53px;
   background: url(black-skin-1-1.png)
-    /*tpa=https://www.bgy.com.cn/map_files/skins/black-skin-1.png*/
   ;
   background-position: -79px -19px;
   height: 61px;
@@ -1276,7 +1264,6 @@ only screen and (min-resolution: 2dppx) {
   .ms-skin-black-1 .ms-nav-next,
   .ms-skin-black-1 .ms-nav-prev {
     background-image: url(black-skin-1-retina-1.png)
-      /*tpa=https://www.bgy.com.cn/map_files/skins/black-skin-1-retina.png*/
     ;
     background-size: 152px 225px;
   }
@@ -1294,7 +1281,6 @@ only screen and (min-resolution: 2dppx) {
   width: 45px;
   height: 45px;
   background: url(black-skin-2-1.png)
-    /*tpa=https://www.bgy.com.cn/map_files/skins/black-skin-2.png*/
     black no-repeat -16px -103px;
   border: solid 3px rgb(255, 255, 255);
   border-color: rgba(255, 255, 255, 0.4);
@@ -1313,7 +1299,6 @@ only screen and (min-resolution: 2dppx) {
   width: 25px;
   height: 25px;
   background: url(black-skin-2-1.png)
-    /*tpa=https://www.bgy.com.cn/map_files/skins/black-skin-2.png*/
     black no-repeat -27px -36px;
   border: solid 2px white;
   border-color: rgba(255, 255, 255, 0.4);
@@ -1336,7 +1321,6 @@ only screen and (min-resolution: 2dppx) {
   width: 45px;
   height: 45px;
   background: url(black-skin-2-1.png)
-    /*tpa=https://www.bgy.com.cn/map_files/skins/black-skin-2.png*/
     black;
   background-clip: padding-box;
   background-position: -88px -26px;
@@ -1514,7 +1498,6 @@ only screen and (min-resolution: 2dppx) {
   .ms-skin-black-2 .ms-nav-next,
   .ms-skin-black-2 .ms-nav-prev {
     background-image: url(black-skin-2-retina-1.png)
-      /*tpa=https://www.bgy.com.cn/map_files/skins/black-skin-2-retina.png*/
     ;
     background-size: 152px 225px;
   }
@@ -2539,7 +2522,6 @@ only screen and (min-resolution: 2dppx) {}
   width: 16px;
   height: 16px;
   background: url(metro-skin-1.png)
-    /*tpa=https://www.bgy.com.cn/map_files/skins/metro-skin.png*/
     no-repeat;
   background-position: -31px -114px;
   margin: 4px;
@@ -2658,7 +2640,6 @@ only screen and (min-resolution: 2dppx) {
   .ms-skin-metro .ms-nav-prev,
   .ms-skin-metro .ms-bullet {
     background-image: url(metro-skin-retina-1.png)
-      /*tpa=https://www.bgy.com.cn/map_files/skins/metro-skin-retina.png*/
     ;
     background-size: 152px 225px;
   }
@@ -2676,7 +2657,6 @@ only screen and (min-resolution: 2dppx) {
   width: 60px;
   height: 60px;
   background: url(contrast-skin-1.png)
-    /*tpa=https://www.bgy.com.cn/map_files/skins/contrast-skin.png*/
     no-repeat -10px -144px;
   top: 50%;
   left: 50%;
@@ -2687,7 +2667,6 @@ only screen and (min-resolution: 2dppx) {
   width: 24px;
   height: 24px;
   background: url(contrast-skin-1.png)
-    /*tpa=https://www.bgy.com.cn/map_files/skins/contrast-skin.png*/
     no-repeat -27px -30px;
   top: 30px;
   right: 30px;
@@ -2699,7 +2678,6 @@ only screen and (min-resolution: 2dppx) {
 .ms-skin-contrast .ms-nav-prev {
   width: 60px;
   background: url(contrast-skin-1.png)
-    /*tpa=https://www.bgy.com.cn/map_files/skins/contrast-skin.png*/
   ;
   background-position: -76px -17px;
   height: 60px;
@@ -2733,7 +2711,6 @@ only screen and (min-resolution: 2dppx) {
   width: 16px;
   height: 16px;
   background: url(contrast-skin-1.png)
-    /*tpa=https://www.bgy.com.cn/map_files/skins/contrast-skin.png*/
     no-repeat;
   background-position: -31px -114px;
   margin: 4px;
@@ -2853,7 +2830,6 @@ only screen and (min-resolution: 2dppx) {
   .ms-skin-contrast .ms-nav-prev,
   .ms-skin-contrast .ms-bullet {
     background-image: url(contrast-skin-retina-1.png)
-      /*tpa=https://www.bgy.com.cn/map_files/skins/contrast-skin-retina.png*/
     ;
     background-size: 152px 225px;
   }
@@ -2899,7 +2875,6 @@ only screen and (min-resolution: 2dppx) {
 .ms-display-template .ms-nav-prev,
 .ms-display-template .ms-nav-next {
   background: url(device-skin-1.png)
-    /*tpa=https://www.bgy.com.cn/map_files/templates/device-skin.png*/
     no-repeat -11px -9px;
   width: 35px;
   height: 40px;
@@ -2932,7 +2907,6 @@ only screen and (min-resolution: 2dppx) {
   width: 10px;
   height: 10px;
   background: url(device-skin-1.png)
-    /*tpa=https://www.bgy.com.cn/map_files/templates/device-skin.png*/
     no-repeat -112px -25px;
   margin: 4px;
 }
@@ -2958,13 +2932,11 @@ only screen and (min-resolution: 2dppx) {
   float: left;
   cursor: pointer;
   background: url(gallery-btns-1.png)
-    /*tpa=https://www.bgy.com.cn/map_files/templates/gallery-btns.png*/
     no-repeat 6px 6px;
 }
 
 .ms-gallery-template .ms-gal-playbtn.btn-pause {
   background: url(gallery-btns-1.png)
-    /*tpa=https://www.bgy.com.cn/map_files/templates/gallery-btns.png*/
     no-repeat -55px 7px;
 }
 
@@ -2976,13 +2948,11 @@ only screen and (min-resolution: 2dppx) {
   height: 100%;
   cursor: pointer;
   background: url(gallery-btns-1.png)
-    /*tpa=https://www.bgy.com.cn/map_files/templates/gallery-btns.png*/
     no-repeat -53px -41px;
 }
 
 .ms-gallery-template .ms-gal-thumbtoggle.btn-hide {
   background: url(gallery-btns-1.png)
-    /*tpa=https://www.bgy.com.cn/map_files/templates/gallery-btns.png*/
     no-repeat 4px -41px;
 }
 
@@ -3099,7 +3069,6 @@ only screen and (min-resolution: 2dppx) {
 .ms-laptop-template .ms-nav-prev,
 .ms-laptop-template .ms-nav-next {
   background: url(device-skin-1.png)
-    /*tpa=https://www.bgy.com.cn/map_files/templates/device-skin.png*/
     no-repeat -11px -9px;
   width: 35px;
   height: 40px;
@@ -3132,7 +3101,6 @@ only screen and (min-resolution: 2dppx) {
   width: 10px;
   height: 10px;
   background: url(device-skin-1.png)
-    /*tpa=https://www.bgy.com.cn/map_files/templates/device-skin.png*/
     no-repeat -112px -25px;
   margin: 4px;
 }
@@ -3175,7 +3143,6 @@ only screen and (min-resolution: 2dppx) {
 .ms-tablet-template .ms-nav-prev,
 .ms-tablet-template .ms-nav-next {
   background: url(device-skin-1.png)
-    /*tpa=https://www.bgy.com.cn/map_files/templates/device-skin.png*/
     no-repeat -11px -9px;
   width: 35px;
   height: 40px;
@@ -3208,7 +3175,6 @@ only screen and (min-resolution: 2dppx) {
   width: 10px;
   height: 10px;
   background: url(device-skin-1.png)
-    /*tpa=https://www.bgy.com.cn/map_files/templates/device-skin.png*/
     no-repeat -112px -25px;
   margin: 4px;
 }
@@ -3252,7 +3218,6 @@ only screen and (min-resolution: 2dppx) {
 .ms-phone-template .ms-nav-prev,
 .ms-phone-template .ms-nav-next {
   background: url(device-skin-1.png)
-    /*tpa=https://www.bgy.com.cn/map_files/templates/device-skin.png*/
     no-repeat -11px -9px;
   width: 35px;
   height: 40px;
@@ -3285,7 +3250,6 @@ only screen and (min-resolution: 2dppx) {
   width: 10px;
   height: 10px;
   background: url(device-skin-1.png)
-    /*tpa=https://www.bgy.com.cn/map_files/templates/device-skin.png*/
     no-repeat -112px -25px;
   margin: 4px;
 }
@@ -3357,7 +3321,6 @@ only screen and (min-resolution: 2dppx) {
 .ms-staff-carousel .ms-nav-prev,
 .ms-staff-carousel .ms-nav-next {
   background: url(staff-arrows-1.png)
-    /*tpa=https://www.bgy.com.cn/map_files/templates/staff-arrows.png*/
     white no-repeat -7px -57px;
   width: 35px;
   height: 40px;
@@ -3442,7 +3405,6 @@ only screen and (min-resolution: 2dppx) {
   top: 10px;
   left: 50%;
   background: url(vertical-arrows-1.png)
-    /*tpa=https://www.bgy.com.cn/map_files/templates/vertical-arrows.png*/
     no-repeat;
   background-position: -11px -6px;
   width: 40px;
@@ -3465,7 +3427,6 @@ only screen and (min-resolution: 2dppx) {
   height: 15px;
   cursor: pointer;
   background: url(vertical-arrows-1.png)
-    /*tpa=https://www.bgy.com.cn/map_files/templates/vertical-arrows.png*/
     no-repeat;
 
   background-position: 50% -106px;
