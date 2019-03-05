@@ -26,7 +26,9 @@
                 </div>
                 <div class="address_book_left">
                     <div class="search">
-                        <input type="search" name="" id="">
+                        <input class="search_input" name="" id="" onkeyup="selectName(this)" placeholder="Please capitalize the first letter">
+                        <ul class="search_ul">
+                        </ul>
                         <div class="search_img"><img src="/community/img/search2.png" /></div>
                     </div>
 
@@ -73,7 +75,7 @@
         <div class="db">
             <div class="user" id="user_information_cycle">
                 <script id="user_information" type="txt/template">
-                <div class="close"></div>
+                    <div class="close"></div>
                 <div class="user-content">
                     {{#image}}
                         <div class="profile-image" style="background-image: url({{image}});"></div>

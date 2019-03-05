@@ -20,7 +20,7 @@
 
 #w1200-view {
   position: relative;
-  overflow: hidden;
+  overflow: auto;
   height: 233px;
 }
 

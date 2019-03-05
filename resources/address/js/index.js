@@ -57,4 +57,27 @@ var render = function () {
             $('.db').css("display", "none")
         })
     })
+    selectName = function selectName(e){
+        $(".my-li").remove();
+        function srh(str){
+           ///^[A-Z]+$/.test(str)?str.toLowerCase():
+          let cache = []
+          data.names_by_letter.map(function(items,key){
+            items.names.map(function(val,index){
+              if(val.name.indexOf(str)>-1){//全部转小写判断toLowerCase()
+                cache.push(val.name)
+              }
+            })
+          })
+          return cache
+        }
+        if(e.value.length <= 0 || e.value == " "){
+          return false
+        }
+        let resultArr = srh(e.value)
+        for(var i=0;i<resultArr.length;i++){
+          $(".search_ul").append("<li id=li"+i+">"+resultArr[i]+"</li>")
+          $("#li"+i).attr("class",'my-li');
+        }
+      }
 };
