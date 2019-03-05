@@ -26,7 +26,7 @@
                                 </tr>
                             </tbody>
                         </table>
-                        <form method="post">
+                        <form method="post" enctype="multipart/form-data">
                             <script id="form" type="txt/template">
                                 <input type="hidden" name="topsapi_old_address_compare_val" value="" align="center">
                                 <center>
@@ -53,6 +53,21 @@
                                                 <td>
                                                         <font face="Verdana, Arial, Helvetica" size="2" color="#222311">{{_current_user.last_name}}&nbsp;</font>
                                                         <input type="hidden" name="last_name" value="{{members.primary.name.last}}">
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+
+                                                    Image:
+
+                                                </td>
+                                                <td>
+                                                    {{#profile.image}}
+                                                        <div style="height: 120px; width: 120px; background-color: #e3e3e3; background-image: url({{profile.image}}); background-position: center; background-size: cover;"></div>
+                                                    {{/profile.image}}
+
+                                                    <input type="file" value="{{profile.address.zip}}" name="image" size="15" maxlength="15">
                                                 </td>
                                             </tr>
     
@@ -161,6 +176,17 @@
                                                 </td>
                                                 <td>
                                                     <input type="text" value="{{profile.address.zip}}" name="zip" size="15" maxlength="15">
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+
+                                                    Lot #:
+
+                                                </td>
+                                                <td>
+                                                    <input type="text" value="{{profile.address.unit}}" name="unit" size="15" maxlength="15">
                                                 </td>
                                             </tr>
     
