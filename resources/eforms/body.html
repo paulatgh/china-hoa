@@ -18,20 +18,7 @@
                         </div>
                         </script>
             <div class="main-left-one">
-                <div class="form_1">
-                    <div class="form_title" id="eforms_type_cycle">
-                        <script id="eforms_type" type="txt/template">
-                            {{Typename}}
-                        </script>
-
-                    </div>
-
-                    <ul id="eforms_content_cycle">
-                        <script id="eforms_content" type="txt/template">
-                            <li><a href="{{_metadata.root_url}}{{link}}?id={{id}}">{{title}}</a></li>
-                        </script>
-                    </ul>
-                </div>
+            
                 <div class="form_1">
                     <div class="form_title" id="function_buttonname_cycle">
                         <div class="form_title_left" id="eForms_edit_title_cycle">
@@ -48,7 +35,7 @@
                     <ul id="eforms_edit_cycle">
                         <script id="eforms_edit" type="txt/template">
                             <li>
-                                    <div class="form_content_left">{{title}}</div>
+                                    <div class="form_content_left"><a href="{{link}}">{{title}}</a></div>
                                     <div class="form_content_right">
                                         <span class="edi">Edit</span>
                                         <span class="del">Delete</span>
