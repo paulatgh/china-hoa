@@ -30,4 +30,17 @@ var render = function () {
     }, function () {
         $(this).parent().removeClass("hoverItem");
     });
+
+    $('.delete-link').click(function(e) {
+        submitDynamicForm(
+          data._metadata.root_url + data._metadata.page_path + '/delete',
+          'POST',
+          [
+              {
+                  name: 'doc_id',
+                  value: $(this).data('id')
+              }
+          ]
+        )
+    })
 };

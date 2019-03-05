@@ -41,6 +41,11 @@
                                                 </div>
                                                 <div class="investor-pdf-con">
                                                     <a target="_blank" href="{{url}}">View</a>
+                                                    {{#deletable}}
+                                                        {{#_current_user.is_admin}}
+                                                            <a target="_blank" data-id="{{id}}" class="delete-link">Delete</a>
+                                                        {{/_current_user.is_admin}}
+                                                    {{/deletable}}
                                                 </div>
                                             </div>
                                             <p>{{title}}</p>
