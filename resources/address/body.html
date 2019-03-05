@@ -75,6 +75,9 @@
                 <script id="user_information" type="txt/template">
                 <div class="close"></div>
                 <div class="user-content">
+                    {{#image}}
+                        <div class="profile-image" style="background-image: url({{image}});"></div>
+                    {{/image}}
                     <h5>{{name}}</h5>
                     {{#email}}
                     <p>{{email}}</p>
