@@ -4,7 +4,7 @@
 @import url("css/masterslider.main.css");
 @import url("css/ms-skin-sample.css");
 @import url("css/calendar_plugin.css");
-
+@import url("css/normalize.css");
 html * {
     /* font-size: 1em !important;
     color: #000 !important; */
