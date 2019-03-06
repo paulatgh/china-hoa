@@ -36,7 +36,7 @@
                                 </tr>
                             </tbody>
                         </table>
-                        <form method="post" enctype="multipart/form-data">
+                        <form id="profile-form" method="post" enctype="multipart/form-data">
                             <script id="form" type="txt/template">
                                 <input type="hidden" name="topsapi_old_address_compare_val" value="" align="center">
                                 <center>
@@ -274,6 +274,17 @@
                                                 </td>
                                                 <td>
                                                     <input type="text" value="{{profile.organizations}}" name="organizations" size="40" maxlength="200" >
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+
+                                                    Other:
+
+                                                </td>
+                                                <td>
+                                                    <textarea form="profile-form" name="other" class="other-field">{{profile.other}}</textarea>
                                                 </td>
                                             </tr>
     
