@@ -31,6 +31,8 @@ var render = function() {
         $('#article_title_cycle').append(Mustache.render(article_title, this));
     });
 
+    $("#breadcrumbs").after(function() { return Mustache.render($(this).html(), data); });
+
     // Global post render
     _post_render();
 

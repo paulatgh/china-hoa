@@ -22,5 +22,8 @@ var render = function() {
         //TODO: log out user
         logOutUser()
     })
+    
+    $("#breadcrumbs").after(function() { return Mustache.render($(this).html(), data); });
+
     addAuthenticityTokenToForms();
 }

@@ -14,4 +14,6 @@ var render = function() {
         $('.announcements_permission').css('display', 'block')
     }
 
+    $("#breadcrumbs").after(function() { return Mustache.render($(this).html(), data); });
+
 };

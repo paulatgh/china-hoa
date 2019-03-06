@@ -33,7 +33,7 @@ var render = function() {
 
     var event_template7 = $('#function_button_name').html();
     $.each(data.function_button_name, function() {
-        $('#function_buttonname_cycle').append(Mustache.render(event_template7, this));
+        $('#function_buttonname_cycle').append(Mustache.render(event_template7, $.extend({}, this, data._metadata)));
     });
     $("#breadcrumbs").after(function() { return Mustache.render($(this).html(), data); });
 

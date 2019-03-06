@@ -1,8 +1,8 @@
 var render = function() {
     _pre_render();
 
-    $('#page_title').after(function() { return Mustache.render($(this).html(), data.eform); });
-    $('#article_title').after(function() { return Mustache.render($(this).html(), data.eform); });
+    data.eform && $('#page_title').after(function() { return Mustache.render($(this).html(), data.eform); });
+    data.eform && $('#article_title').after(function() { return Mustache.render($(this).html(), data.eform); });
     $("#breadcrumbs").after(function() { return Mustache.render($(this).html(), data); });
     $('#cancel-button').click(function() {
         window.location = `${data._metadata.root_url}/resources/eforms`;

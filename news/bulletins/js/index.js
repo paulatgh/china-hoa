@@ -6,7 +6,7 @@ var render = function() {
     var bulletins_template = $('#bulletins_template').html();
     Mustache.parse(bulletins_template);
     $.each(data.bulletins, function() {
-        $('#news_bulletins').append(Mustache.render(bulletins_template, this));
+        $('#news_bulletins').append(Mustache.render(bulletins_template, $.extend({}, this, data._metadata)));
     });
 
     var the_title = $('#the_title').html();
@@ -16,7 +16,7 @@ var render = function() {
 
     var email_button = $('#email_button').html();
     $.each(data.email_button, function() {
-        $('#email_button_cycle').append(Mustache.render(email_button, this));
+        $('#email_button_cycle').append(Mustache.render(email_button, $.extend({}, this, data._metadata)));
     });
 
     var template = $('#template').html();
