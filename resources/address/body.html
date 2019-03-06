@@ -26,9 +26,16 @@
                 </div>
                 <div class="address_book_left">
                     <div class="search">
-                        <input class="search_input" name="" id="" onkeyup="selectName(this)" placeholder="Please capitalize the first letter">
-                        <ul class="search_ul">
-                        </ul>
+                        <div class="search_input_a">
+                            <input class="search_input" onkeyup="selectName(this)" placeholder="Search for names from A to Z">
+                            <ul class="search_ul">
+                            </ul>
+                        </div>
+                        <div class="street_input_b">
+                            <input class="street_input" onkeyup="streetName(this)" placeholder="Search by street name">
+                            <ul class="search_ul_a">
+                            </ul>
+                        </div>
                         <div class="search_img"><img src="/community/img/search2.png" /></div>
                     </div>
 
@@ -56,8 +63,16 @@
                 <div class="address_book_right">
                     <div id="user_list">
                         <script id="user_list_section_template" type="txt/template">
-                            <ul id="events_photo">
+                            <ul id="events_photo" class="events_photo">
                                 <li id="{{letter}}-section">{{letter}}</li>
+                                {{#names}}
+                                <li data-id="{{id}}" class="user_desc">{{name}}</li>
+                                {{/names}}
+                            </ul>
+                        </script>
+                        <script id="street_name" type="txt/template">
+                            <ul id="street_name_ul" class="street_name_ul">
+                                <li id="{{letter}}">{{letter}}</li>
                                 {{#names}}
                                 <li data-id="{{id}}" class="user_desc">{{name}}</li>
                                 {{/names}}

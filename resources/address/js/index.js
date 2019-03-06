@@ -15,7 +15,7 @@ var render = function () {
     var function_button = $('#function_button').html(); $.each(data.function_button, function () { $('#function_button_cycle').append(Mustache.render(function_button, this)); });
     var category = $('#category').html(); $.each(data.address_book_categories, function () { $('#address').append(Mustache.render(category, this));});
     $("#breadcrumbs").after(function() { return Mustache.render($(this).html(), data); });
-
+    var street_name = $('#street_name').html(); $.each(data.street_name, function() { $('#user_list').append(Mustache.render(street_name, this));});
     // Global post render
     _post_render();
 
@@ -32,14 +32,22 @@ var render = function () {
     $('.address_book_click').click(function () {
         if (show) {
             $(this).text('Click here to list from A to Z')
-            $('.address_book_letter').css('display', 'none')
+            // $('.address_book_letter').css('display', 'none')
+            $(".events_photo").css("display","none")
+            $(".street_name_ul").css("display","block")
+            $(".search_input_a").css("display","none")
+            $(".street_input_b").css("display","block")
             $('.a_z').css('display', 'block')
             $(".a_a").css("display", "none")
             show = false;
 
         } else {
             $(this).text('Click here to list by Street Name')
-            $('.address_book_letter').css('display', 'block')
+            // $('.address_book_letter').css('display', 'block')
+            $(".events_photo").css("display","block")
+            $(".street_name_ul").css("display","none")
+            $(".search_input_a").css("display","block")
+            $(".street_input_b").css("display","none")
             $('.a_z').css('display', 'none')
             $(".a_a").css("display", "block")
             show = true;
@@ -57,14 +65,15 @@ var render = function () {
             $('.db').css("display", "none")
         })
     })
-    selectName = function selectName(e){
+    selectName = function (e){
         $(".my-li").remove();
         function srh(str){
            ///^[A-Z]+$/.test(str)?str.toLowerCase():
+          const sL = str.toLowerCase()
           let cache = []
           data.names_by_letter.map(function(items,key){
             items.names.map(function(val,index){
-              if(val.name.indexOf(str)>-1){//全部转小写判断toLowerCase()
+              if(val.name.toLowerCase().indexOf(sL)> -1 ){
                 cache.push(val.name)
               }
             })
@@ -78,6 +87,29 @@ var render = function () {
         for(var i=0;i<resultArr.length;i++){
           $(".search_ul").append("<li id=li"+i+">"+resultArr[i]+"</li>")
           $("#li"+i).attr("class",'my-li');
+        }
+      }
+
+      streetName = function (e){
+        $(".my-li-a").remove();
+        function srh(str){
+           ///^[A-Z]+$/.test(str)?str.toLowerCase():
+          const sL = str.toLowerCase()
+          let cache = []
+          data.street_name.map(function(items,key){
+              if(items.letter.toLowerCase().indexOf(sL)>-1){
+                cache.push(items.letter)
+              }
+          })
+          return cache
+        }
+        if(e.value.length <= 0 || e.value == " "){
+          return false
+        }
+        let resultArr = srh(e.value)
+        for(var i=0;i<resultArr.length;i++){
+          $(".search_ul_a").append("<li id=li"+i+">"+resultArr[i]+"</li>")
+          $("#li"+i).attr("class",'my-li-a');
         }
       }
 };

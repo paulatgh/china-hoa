@@ -267,6 +267,14 @@
   padding-left: 10px;
 }
 
+.street_input {
+  height: 40px;
+  width: 96%;
+  border: 1px solid rgba(57, 61, 68, 1);
+  padding-left: 10px;
+}
+
+
 .search_ul {
   position: absolute;
   background: white;
@@ -284,4 +292,39 @@
   padding-left: 5px;
   cursor: pointer;
   overflow: hidden;
+}
+
+.search_ul_a {
+  position: absolute;
+  background: white;
+  width: 100%;
+  max-height: 640px;
+  overflow: auto;
+}
+
+.search_ul_a li {
+  box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+  height: 40px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 40px;
+  padding-left: 5px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.street_name_ul {
+  display: none;
+}
+
+.events_photo {
+  display: block;
+}
+
+.search_input_a {
+  display: block;
+}
+
+.street_input_b {
+  display: none;
 }
