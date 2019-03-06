@@ -29,14 +29,14 @@ var render = function () {
     }
 
     var show = true;
-    $('.address_book_click').click(function () {
+    $('.address_book_click').click(function() {
         if (show) {
             $(this).text('Click here to list from A to Z')
             // $('.address_book_letter').css('display', 'none')
-            $(".events_photo").css("display","none")
-            $(".street_name_ul").css("display","block")
-            $(".search_input_a").css("display","none")
-            $(".street_input_b").css("display","block")
+            $(".events_photo").css("display", "none")
+            $(".street_name_ul").css("display", "block")
+            $(".search_input_a").css("display", "none")
+            $(".street_input_b").css("display", "block")
             $('.a_z').css('display', 'block')
             $(".a_a").css("display", "none")
             show = false;
@@ -44,72 +44,102 @@ var render = function () {
         } else {
             $(this).text('Click here to list by Street Name')
             // $('.address_book_letter').css('display', 'block')
-            $(".events_photo").css("display","block")
-            $(".street_name_ul").css("display","none")
-            $(".search_input_a").css("display","block")
-            $(".street_input_b").css("display","none")
+            $(".events_photo").css("display", "block")
+            $(".street_name_ul").css("display", "none")
+            $(".search_input_a").css("display", "block")
+            $(".street_input_b").css("display", "none")
             $('.a_z').css('display', 'none')
             $(".a_a").css("display", "block")
             show = true;
         }
     })
-
-    $('.user_desc, .a_z .user_desc').click(function () {
+    $('.user_desc, .a_z .user_desc').click(function() {
         var userId = this.getAttribute('data-id');
         var userData = data.user_data.find(function(e) {
             return e['id'] == userId
         });
         $('#user_information_cycle').html(Mustache.render(user_information, userData));
         $(".db").css("display", "block")
-        $('.close').click(function () {
+        $('.close').click(function() {
             $('.db').css("display", "none")
         })
     })
-    selectName = function (e){
+    selectName = function(e) {
         $(".my-li").remove();
-        function srh(str){
-           ///^[A-Z]+$/.test(str)?str.toLowerCase():
-          const sL = str.toLowerCase()
-          let cache = []
-          data.names_by_letter.map(function(items,key){
-            items.names.map(function(val,index){
-              if(val.name.toLowerCase().indexOf(sL)> -1 ){
-                cache.push(val.name)
-              }
-            })
-          })
-          return cache
-        }
-        if(e.value.length <= 0 || e.value == " "){
-          return false
-        }
-        let resultArr = srh(e.value)
-        for(var i=0;i<resultArr.length;i++){
-          $(".search_ul").append("<li id=li"+i+">"+resultArr[i]+"</li>")
-          $("#li"+i).attr("class",'my-li');
-        }
-      }
 
-      streetName = function (e){
-        $(".my-li-a").remove();
-        function srh(str){
-           ///^[A-Z]+$/.test(str)?str.toLowerCase():
-          const sL = str.toLowerCase()
-          let cache = []
-          data.street_name.map(function(items,key){
-              if(items.title.toLowerCase().indexOf(sL)>-1){
-                cache.push(items.title)
-              }
-          })
-          return cache
+        function srh(str) {
+            ///^[A-Z]+$/.test(str)?str.toLowerCase():
+            const sL = str.toLowerCase()
+            let cache = []
+            data.names_by_letter.map(function(items, key) {
+                items.names.map(function(val, index) {
+                    if (val.name.toLowerCase().indexOf(sL) > -1) {
+                        cache.push(val.name)
+                    }
+                })
+            })
+            return cache
         }
-        if(e.value.length <= 0 || e.value == " "){
-          return false
+        if (e.value.length <= 0 || e.value == " ") {
+            return false
         }
         let resultArr = srh(e.value)
-        for(var i=0;i<resultArr.length;i++){
-          $(".search_ul_a").append("<li id=li"+i+">"+resultArr[i]+"</li>")
-          $("#li"+i).attr("class",'my-li-a');
+        for (var i = 0; i < resultArr.length; i++) {
+            $(".search_ul").append("<li id=li" + i + ">" + resultArr[i] + "</li>")
+            $("#li" + i).attr("class", 'my-li');
         }
-      }
+        $('.my-li').on('click', function() {
+            var val = $(this).text()
+            $(".search_input").val(val)
+            $(".my-li").css("display", "none")
+            return
+        })
+        $(".my-li").mouseenter(function() {
+            $(".my-li").css("display", "block")
+            return
+        })
+        $(".my-li").mouseleave(function() {
+            $(".my-li").css("display", "none")
+            return
+        })
+    }
+
+    streetName = function(e) {
+        $(".my-li-a").remove();
+
+        function srh(str) {
+            ///^[A-Z]+$/.test(str)?str.toLowerCase():
+            const sL = str.toLowerCase()
+            let cache = []
+            data.street_name.map(function(items, key) {
+                if (items.title.toLowerCase().indexOf(sL) > -1) {
+                    cache.push(items.title)
+                }
+            })
+            return cache
+        }
+        if (e.value.length <= 0 || e.value == " ") {
+            return false
+        }
+        let resultArr = srh(e.value)
+        for (var i = 0; i < resultArr.length; i++) {
+            $(".search_ul_a").append("<li id=li" + i + ">" + resultArr[i] + "</li>")
+            $("#li" + i).attr("class", 'my-li-a');
+        }
+        $('.my-li-a').on('click', function() {
+            var val = $(this).text()
+            $(".street_input").val(val)
+          $(".my-li-a").css("display", "none")
+            return
+        })
+        $(".my-li-a").mouseenter(function() {
+          $(".my-li-a").css("display", "block")
+          return
+      })
+      $(".my-li-a").mouseleave(function() {
+          $(".my-li-a").css("display", "none")
+          return
+      })
+    }
+
 };
