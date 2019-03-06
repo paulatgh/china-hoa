@@ -50,12 +50,17 @@
   margin-left: 8px;
 }
 
-.address_book_letter li:hover {
-  color: #6AA666;
+.address_book_letter li a:hover {
+  width: 25px;
+  text-align: center;
+  border-radius: 50%;
+  color: white;
+  background: #6AA666;
   cursor: pointer;
 }
 
 .address_book_letter li {
+  text-align: center;
   width: 18px;
   height: 24px;
   font-size: 16px;
@@ -63,6 +68,7 @@
   color: rgba(155, 155, 155, 1);
   line-height: 33px;
   margin-bottom: 2px;
+  line-height: 24px;
 }
 
 .address_book_right {

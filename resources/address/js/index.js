@@ -97,8 +97,8 @@ var render = function () {
           const sL = str.toLowerCase()
           let cache = []
           data.street_name.map(function(items,key){
-              if(items.letter.toLowerCase().indexOf(sL)>-1){
-                cache.push(items.letter)
+              if(items.title.toLowerCase().indexOf(sL)>-1){
+                cache.push(items.title)
               }
           })
           return cache
