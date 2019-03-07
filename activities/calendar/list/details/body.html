@@ -1,0 +1,75 @@
+<!-- header -->
+<div class="header"></div>
+<!-- main body -->
+<div class="main">
+    <div class="main-breadcrumb">
+        <script id="breadcrumbs" type="txt/template">
+            <div class="main-breadcrumb">
+                        <ul class="breadcrumb">
+                            <li><a href="{{_metadata.root_url}}/home">Home</a></li>
+                            <li>&nbsp;>&nbsp;</li>
+                            <li><a href="{{_metadata.root_url}}/activities">Activities</a></li>
+                            <li>&nbsp;>&nbsp;</li>
+                            <li><a href="{{_metadata.root_url}}/activities/calendar">Events Calendar</a></li>
+                            <li>&nbsp;>&nbsp;</li>
+                            <li><a href="{{_metadata.root_url}}/activities/calendar/list">Recently Added Events</a></li>
+                            <li>&nbsp;>&nbsp;</li>
+                            <li><a href="#">Event details</a></li>
+                        </ul>
+                    </div>
+                </script>
+    </div>
+    <p class="page_title">
+        <script id="page_title" type="txt/template">
+            {{page_title.title}}
+      </script>
+    </p>
+    <div class="Details_Information">
+        <div class="Information_left">
+            <p class="event">Event</p>
+            <div class="Information_left_p">
+                <div>
+                    <p>Posted At</p>
+                    <p>Date </p>
+                    <p>Description </p>
+                    <p>Creator </p>
+                </div>
+                <div class="Information_left_span">
+                    <script id="Information_left_span" type="txt/template">
+                        <span>{{information_left_span.posted_at}}</span>
+                    <span>{{information_left_span.date}}</span>
+                    <span>{{information_left_span.description}}</span>
+                    <span>{{information_left_span.creator}}</span>
+                </script>
+                </div>
+            </div>
+        </div>
+        <div class="Information_right">
+            <div class="RSVP">
+                <p>Yes</p>
+                <p>No</p>
+                <p>Maybe</p>
+                <p>Note</p>
+            </div>
+            <div id="User_info_cycle">
+                <script id="User_info" type="txt/template">
+                    <div class="User_info">
+                <p><img src="{{img_url}}" alt=""><span>{{yes}}</span></p>
+                <p><img src="{{img_url}}" alt=""><span>{{no}}</span></p>
+                <p><img src="{{img_url}}" alt=""><span>{{maybe}}</span></p>
+                <p>
+                    <img src="{{img_url}}" alt="">
+                    <span class="User_info_span">{{note}}</span>
+                    <span>{{note_content}}</span></p>
+            </div>
+        </script>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- footer -->
+<div class="footer">
+    <p>
+        Copyright © 2019 Tellus, Inc. All Rights Reserved.
+    </p>
+</div>

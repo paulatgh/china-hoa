@@ -83,3 +83,7 @@ td:nth-child(5) {
 .content-1 table tr {
   border-bottom: 1px darkgrey solid;
 }
+
+.details {
+  cursor: pointer;
+}

@@ -16,5 +16,7 @@ var render = function () {
     if (data._current_user && data._current_user.is_admin == true) {
         $('.buttona').css('display', 'none')
     }
-
+    $(".details").click(function(){
+        window.location = `${data._metadata.root_url}/activities/calendar/list/details/`;
+    })
 };
