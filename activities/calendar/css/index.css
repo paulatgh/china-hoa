@@ -1,5 +1,3 @@
-
-
 .main-left {
   width: 100%;
   height: 100%;
@@ -59,13 +57,19 @@
   font-size: 40px;
 }
 
-.calendar-right {
+.calendar-right-FF {
   width: 476px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.calendar-right {
+  width: 492px;
   height: 100%;
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
-  overflow: overlay;
+  overflow-y: auto;
   margin-top: 17px;
 }
 
@@ -165,11 +169,11 @@
 }
 
 .calendar-right .tips {
-  width: 103px;
+  width: 111px;
   height: 100%;
   position: absolute;
   top: 0;
-  right: 0;
+  left: 364px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -284,6 +288,7 @@
   width: 91px;
   float: right;
   display: none;
+  margin-right: 20px;
 }
 
 .calendar-right ul:nth-child(odd) .top-right span {

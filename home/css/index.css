@@ -106,13 +106,19 @@
 }
 
 .calendar-right {
-  width: 478px;
+  width: 495px;
   height: 100%;
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   background: #F1F1F1;
-  overflow: overlay;
+  overflow: auto;
+}
+
+.calendar-right-FF {
+  width: 478px;
+  height: 100%;
+  overflow: hidden;
 }
 
 .calendar-right::-webkit-scrollbar {
@@ -139,6 +145,7 @@
 .calendar-right p a {
   float: right;
   color: #666666;
+  margin-right: 20px;
 }
 
 .calendar-date .item.item-curMonth.active-red {
