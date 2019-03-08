@@ -43,7 +43,7 @@
                         <ul id="featureList">
                             <script id="featureList_template" type="txt/template">
                                 <li class="main-list" animated zoomIn">
-                                    <a data={{link}} href="javascript:;" target="_blank" class="main-list-a jump">
+                                    <a data={{link}} href="javascript:;" class="main-list-a jump">
                                         <p style="background:url('{{img}}') no-repeat  center 50px">{{category}}</p>
                                     </a>
                                 </li>
@@ -119,7 +119,7 @@
     <div class="main-top body-one" id="Reservables_cycle">
         <script id="Reservables" type="txt/template">
             <div class="w1200 pr">
-                <img src="{{img_url}}" alt="Rectangle" style="width:100%;">
+                <img src="{{img_url}}" alt="Rectangle" class="w1200_img">
                     <div class="reservable">
                         <a data="{{reservation_link}}" class="jump" href="javascript:;">
                             <p>
@@ -134,12 +134,14 @@
     </div>
     <div class="main-top body-one" id="birds_eye_view_cycle">
         <script id="birds_eye_view" type="txt/template">
-            <div class="w1200 pr" id="w1200-view">
+            <div class="w1200_FF">
+            <div class="w1200 pr w1200-view" id="">
             <img src="{{img_url}}" alt="Aerial view of the residential area">
             <div class="view-p">
                 <p>
                    {{title}}
                 </p>
+            </div>
             </div>
         </div>
         </script>
