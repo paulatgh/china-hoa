@@ -61,6 +61,7 @@
   width: 476px;
   height: 100%;
   overflow: hidden;
+  margin-top: 18px;
 }
 
 .calendar-right {
@@ -70,7 +71,6 @@
   display: flex;
   flex-wrap: wrap;
   overflow-y: auto;
-  margin-top: 17px;
 }
 
 .calendar-title {
