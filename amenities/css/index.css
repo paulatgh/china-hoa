@@ -52,6 +52,7 @@ body {
   margin-top: 80px;
   padding: 0 0 25px;
   width: fit-content;
+  width: -moz-fit-content;
 }
 
 .section_text {
