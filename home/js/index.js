@@ -94,7 +94,7 @@ var render = function() {
         $(function() {
             $('#myId').jalendar({
                 // customDay: '2017/12/01', // Format: Year/Month/Day
-                // color: '#ed145a', // Unlimited Colors
+                color: '#6AA666', // Unlimited Colors
                 // lang: 'EN' // Format: English — 'EN', Türkçe — 'TR'
             });
         });
@@ -186,17 +186,17 @@ var render = function() {
         var password = $('.login-int-a').val();
 
         submitDynamicForm(
-          data._metadata.root_url + '/session',
-          'POST',
-          [{
-              name: 'session_form[email]',
-              value: email
-          },
-              {
-                  name: 'session_form[password]',
-                  value: password
-              },
-          ]
+            data._metadata.root_url + '/session',
+            'POST',
+            [{
+                    name: 'session_form[email]',
+                    value: email
+                },
+                {
+                    name: 'session_form[password]',
+                    value: password
+                },
+            ]
         );
     }
 
@@ -206,33 +206,33 @@ var render = function() {
             $('.username').css('display', 'block')
             $('.login').css('height', '360')
         } else if ($('.login-int').val() === 'Test' && $('.login-int-a').val() !==
-          '1215' || $('.login-int').val() === 'admin' && $('.login-int-a').val() !==
-          '1215') {
+            '1215' || $('.login-int').val() === 'admin' && $('.login-int-a').val() !==
+            '1215') {
             $('.username').css('display', 'none')
             $('.userp').css('display', 'block')
             $('.login').css('height', '330')
         } else if ($('.login-int-a').val() === '1215' && $('.login-int').val() !==
-          'Test' || $('.login-int-a').val() === '1215' && $('.login-int').val() !==
-          'admin') {
+            'Test' || $('.login-int-a').val() === '1215' && $('.login-int').val() !==
+            'admin') {
             $('.username').css('display', 'block');
             $('.userp').css('display', 'none');
             $('.login').css('height', '330')
         } else if ($('.login-int').val() !== "Test" && $('.login-int-a').val() ===
-          " " || $('.login-int').val() !== "admin" && $('.login-int-a').val() ===
-          " ") {
+            " " || $('.login-int').val() !== "admin" && $('.login-int-a').val() ===
+            " ") {
             $('.login').css('height', '360')
         } else if ($('.login-int').val() !== "Test" && $('.login-int-a').val() !==
-          "1215" || $('.login-int').val() !== "admin" && $('.login-int-a').val() !==
-          "1215") {
+            "1215" || $('.login-int').val() !== "admin" && $('.login-int-a').val() !==
+            "1215") {
             $('.username').css('display', 'block');
             $('.userp').css('display', 'block');
             $('.login').css('height', '360')
         } else if ($('.login-int').val() === " " && $('.login-int-a').val() !==
-          "1215") {
+            "1215") {
             $('.login').css('height', '360')
         } else {
             if ($('.login-int').val() !== 'Test' || $('.login-int').val() !==
-              'admin') {
+                'admin') {
                 $('.username').css('display', 'block')
                 $('.login').css('height', '330')
             } else if ($('.login-int-a').val() !== '1215') {
@@ -243,7 +243,7 @@ var render = function() {
     }
 
     var handleFormEnter = function() {
-        if(!!$('.login-int').val() && !!$('.login-int-a').val()){
+        if (!!$('.login-int').val() && !!$('.login-int-a').val()) {
             if (data._metadata.environment === 'dev') {
                 if (!!$('.login-int').val() && !!$('.login-int-a').val()) {
                     //   TODO: log in user
@@ -277,14 +277,14 @@ var render = function() {
         $('.jump').click(function() {
             var _this = $(this)
             $('body').append(str);
-            $('.login-int').on('keypress',function(e) {
-                if(e.which == 13) {
+            $('.login-int').on('keypress', function(e) {
+                if (e.which == 13) {
                     handleFormEnter();
                 }
             });
 
-            $('.login-int-a').on('keypress',function(e) {
-                if(e.which == 13) {
+            $('.login-int-a').on('keypress', function(e) {
+                if (e.which == 13) {
                     handleFormEnter();
                 }
             });
@@ -307,14 +307,14 @@ var render = function() {
 
         $(".btns-language").click(function() {
             $('body').append(str);
-            $('.login-int').on('keypress',function(e) {
-                if(e.which == 13) {
+            $('.login-int').on('keypress', function(e) {
+                if (e.which == 13) {
                     handleFormEnter();
                 }
             });
 
-            $('.login-int-a').on('keypress',function(e) {
-                if(e.which == 13) {
+            $('.login-int-a').on('keypress', function(e) {
+                if (e.which == 13) {
                     handleFormEnter();
                 }
             });

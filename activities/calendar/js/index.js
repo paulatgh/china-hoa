@@ -33,7 +33,7 @@ var render = function() {
         $(function() {
             $('#myId').jalendar({
                 // customDay: '2017/12/01', // Format: Year/Month/Day
-                // color: '#ed145a', // Unlimited Colors
+                color: '#6AA666', // Unlimited Colors
                 // lang: 'EN' // Format: English — 'EN', Türkçe — 'TR'
             });
         });
@@ -91,19 +91,25 @@ var displayRsvp = function(elem) {
         }, function() {
             $(this).removeClass('tips_hover_yes')
         })
-        actionElems.children('.rsvp-yes').click(function() { submitRsvpAction(actionUrl, 'yes') });
+        actionElems.children('.rsvp-yes').click(function() {
+            submitRsvpAction(actionUrl, 'yes')
+        });
         $('.rsvp-no').hover(function() {
             $(this).addClass('tips_hover_no')
         }, function() {
             $(this).removeClass('tips_hover_no')
         })
-        actionElems.children('.rsvp-no').click(function() { submitRsvpAction(actionUrl, 'no') });
+        actionElems.children('.rsvp-no').click(function() {
+            submitRsvpAction(actionUrl, 'no')
+        });
         $('.rsvp-maybe').hover(function() {
             $(this).addClass('tips_hover_maybe')
         }, function() {
             $(this).removeClass('tips_hover_maybe')
         })
-        actionElems.children('.rsvp-maybe').click(function() { submitRsvpAction(actionUrl, 'maybe') });
+        actionElems.children('.rsvp-maybe').click(function() {
+            submitRsvpAction(actionUrl, 'maybe')
+        });
         $('.rsvp-notes').hover(function() {
             $(this).addClass('tips_hover_notes')
         }, function() {
@@ -128,11 +134,9 @@ var submitRsvpAction = function(actionUrl, status) {
     submitDynamicForm(
         actionUrl,
         'POST',
-        [
-            {
-                name: 'status',
-                value: status,
-            }
-        ]
+        [{
+            name: 'status',
+            value: status,
+        }]
     )
 };
