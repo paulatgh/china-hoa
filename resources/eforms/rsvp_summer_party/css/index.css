@@ -54,33 +54,4 @@
   width: 100%;
   margin: 20px 0;
   text-align: right;
-
-}
-
-.p-input input:nth-child(1) {
-  width: 113px;
-  height: 38px;
-  background: rgba(106, 166, 102, 1);
-  border-radius: 19px;
-  border: none;
-  font-size: 16px;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 1);
-  line-height: 22px;
-  cursor: pointer;
-
-}
-
-.p-input input:nth-child(2) {
-  width: 113px;
-  height: 38px;
-  background: rgba(249, 75, 90, 1);
-  border-radius: 19px;
-  border: none;
-  font-size: 16px;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 1);
-  line-height: 22px;
-  margin-left: 20px;
-  cursor: pointer;
 }

@@ -7,7 +7,7 @@
 <div class="main">
     <div class="w1200">
         <script id="breadcrumbs" type="txt/template">
-        <ul class="breadcrumb">
+            <ul class="breadcrumb">
             <li><a href="{{_metadata.root_url}}/home">Home</a></li>
             <li><span rel="noopener noreferrer" style="color:rgba(30,130,23,1)"> > </span></li>
             <li><a href="{{_metadata.root_url}}/news">News</a></li>
@@ -17,18 +17,18 @@
             <li><a href="#">Add a New Announcement</a></li>
         </ul>
        </script>
-        <table class="table-one"  border="0"  cellpadding="10" cellspacing="0">
+        <table class="table-one" border="0" cellpadding="10" cellspacing="0">
             <table class="table-two" border="0">
                 <tr>
                     <td>
-                        
-                            Add a New Announcement
-                        
+
+                        Add a New Announcement
+
                     </td>
                 </tr>
             </table>
             <form id="add-announcement-form" method="post" enctype="multipart/form-data">
-                <table class="announcement-table" border="1"  cellspacing="0">
+                <table class="announcement-table" border="1" cellspacing="0">
                     <tbody>
                         <tr>
                             <td>
@@ -51,7 +51,7 @@
                                 Header Image
                             </td>
                             <td>
-                                <input type="file" name="photo" accept="image/*"/>
+                                <input type="file" name="photo" accept="image/*" />
                             </td>
                         </tr>
                         <tr>
@@ -59,7 +59,7 @@
                                 Publish
                             </td>
                             <td>
-                                <input class="styled-checkbox" type="checkbox" name="publish"/>
+                                <input class="styled-checkbox" type="checkbox" name="publish" />
                             </td>
                         </tr>
                         <tr>
@@ -67,14 +67,14 @@
                                 Send Notifications When Publishing
                             </td>
                             <td>
-                                <input class="styled-checkbox" type="checkbox" name="send_notifications"/>
+                                <input class="styled-checkbox" type="checkbox" name="send_notifications" />
                             </td>
                         </tr>
                     </tbody>
                 </table>
                 <p class="p-input">
-                    <input type="submit" value="Save New">
-                    <input type="button" id="cancel-button" value="Cancel">
+                    <input type="submit" value="Save New" class="continue">
+                    <input type="button" id="cancel-button" value="Cancel" class="cancel">
                 </p>
             </form>
         </table>

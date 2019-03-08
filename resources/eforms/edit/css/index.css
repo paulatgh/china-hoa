@@ -61,31 +61,6 @@
   height: 160px;
 }
 
-.continue {
-  width: 128px;
-  height: 38px;
-  background: rgba(106, 166, 102, 1);
-  border-radius: 20px;
-  border: none;
-  font-size: 16px;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 1);
-  margin: 24px;
-  cursor: pointer;
-}
-
-.cancel {
-  width: 89px;
-  height: 38px;
-  background: rgba(249, 75, 90, 1);
-  border-radius: 20px;
-  border: none;
-  font-size: 16px;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 1);
-  cursor: pointer;
-}
-
 tr {
   height: 35px;
 }
