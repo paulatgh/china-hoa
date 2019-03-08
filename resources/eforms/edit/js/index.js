@@ -1,11 +1,6 @@
 var render = function() {
     _pre_render();
-
-    var page_title = $('#page_title').html();
-    Mustache.parse(page_title);
-    $.each(data.page_title, function() {
-        $('#page_title_cycle').append(Mustache.render(page_title, this));
-    });
+    $("#page_title").after(function(){return Mustache.render($(this).html(),data);});
     $("#breadcrumbs").after(function() { return Mustache.render($(this).html(), data); });
     $('#cancel-button').click(function() {
         window.location = `${data._metadata.root_url}/resources/eforms`;
