@@ -7,12 +7,14 @@
 
     <div class="w1200">
         <script id="breadcrumbs" type="txt/template">
-        <ul class="breadcrumb">
+            <ul class="breadcrumb">
             <li><a href="{{_metadata.root_url}}/home">Home</a></li>
-            <li><span rel="noopener noreferrer" style="color:rgba(30,130,23,1)"> > </span></li>
+            <li><span rel="noopener noreferrer"> > </span></li>
             <li><a href="{{_metadata.root_url}}/activities">Activities</a></li>
-            <li><span rel="noopener noreferrer" style="color:rgba(30,130,23,1)"> > </span></li>
+            <li><span rel="noopener noreferrer"> > </span></li>
             <li><a href="{{_metadata.root_url}}/activities/calendar">Events</a></li>
+            <li><span rel="noopener noreferrer"> > </span></li>
+            <li><a href="#">Reservation Request</a></li>
         </ul>
     </script>
         <table class="table-one" border="0" cellpadding="10" cellspacing="0">
@@ -24,13 +26,13 @@
                 </tr>
             </table>
             <script id="image_template" type="txt/template">
-            <img class="form-header-image" src="{{img_url}}"/>
+                <img class="form-header-image" src="{{img_url}}"/>
             </script>
             <form id="edit-reservation-form" method="post" enctype="multipart/form-data">
                 <table class="reservation-table" border="1" cellspacing="0">
                     <tbody>
                         <script id="edit-reservation-body" type="txt/template">
-                        <tr>
+                            <tr>
                             <td>
                                 Location
                             </td>
@@ -140,7 +142,7 @@
                         </tr>
                         </script>
                         <script id="reservation_fields_template" type="txt/template">
-                        {{#reservation_fields}}
+                            {{#reservation_fields}}
                         <tr>
                             <td>{{user_friendly_name}}:</td>
                             <td>
