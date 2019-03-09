@@ -5,17 +5,23 @@
 <!-- main body -->
 <div class="investor clearfix">
     <div class="main-breadcrumb">
-        <script id="breadcrumbs" type="txt/template">
             <div class="main-breadcrumb">
             <ul class="breadcrumb">
-                <li><a href="{{_metadata.root_url}}/home">Home</a></li>
-                <li>&nbsp;>&nbsp;</li>
-                <li><a href="{{_metadata.root_url}}/resources">Resources</a></li>
-                <li>&nbsp;>&nbsp;</li>
-                <li><a href="#">Docs</a></li>
+                <script id="breadcrumbs" type="txt/template">
+                    <li><a href="{{_metadata.root_url}}/home">Home</a></li>
+                    <li>&nbsp;>&nbsp;</li>
+                    <li><a href="{{_metadata.root_url}}/resources">Resources</a></li>
+                    <li>&nbsp;>&nbsp;</li>
+                    <li><a href="{{_metadata.root_url}}/resources/docs">Docs</a></li>
+                </script>
+                <script id="path-breadcrumbs" type="txt/template">
+                    {{#pathBreadcrumbs}}
+                        <li>&nbsp;>&nbsp;</li>
+                        <li><a href="{{link}}">{{directoryName}}</a></li>
+                    {{/pathBreadcrumbs}}
+                </script>
             </ul>
         </div>
-        </script>
     </div>
     <div class="w1200">
         <div class="w838">
@@ -24,20 +30,32 @@
                     <div class="content-1">
                         <div class="choose">
                             <div class="choose-right">
-                                <div class="admin_actions">
+                                <div>
                                     <script id="actions_template" type="txt/template">
                                         {{#action_buttons}}
-                                        <a href="{{_metadata.root_url}}{{_metadata.page_path}}/add">Add</a>
+                                            <a style="padding: 8px; background-color: green; display: inline-block; color: white; border-radius: 4px" href="{{_metadata.root_url}}{{link}}">{{action}}</a>
                                         {{/action_buttons}}
                                     </script>
                                 </div>
                                 <ul id="documents" class="item show">
                                     <script id="documents_template" type="txt/template">
+                                        {{#sub_directories}}
+                                            <li>
+                                                <a href="{{_metadata.root_url}}{{link}}">
+                                                    <div class="investor-pdfhov">
+                                                        <div class="investor-pdf-img">
+                                                            <img src="{{assets_path}}/community/img/directory-icon.png" alt="PDF Preview" class="pdfa">
+                                                        </div>
+                                                    </div>
+                                                    <p>{{name}}</p>
+                                                </a>
+                                            </li>
+                                        {{/sub_directories}}
                                         {{#documents}}
                                         <li>
                                             <div class="investor-pdfhov">
                                                 <div class="investor-pdf-img">
-                                                    <img src="{{img}}" alt="PDF Preview" class="pdfa">
+                                                    <img src="{{img}}" class="pdfa">
                                                 </div>
                                                 <div class="investor-pdf-con">
                                                     <a href="{{url}}">View</a>

@@ -35,6 +35,26 @@
                 site_name: 'De Anza Oaks',
                 environment: 'dev',
             },
+              action_buttons: [
+                {
+                  action: 'Add File',
+                  link: "/resources/docs/add?directory_path",
+                },
+                {
+                  action: 'Create Directory',
+                  link: "/resources/docs/directory/add?directory_path",
+                },
+              ],
+            sub_directories: [
+              {
+                id: 111,
+                name: 'Test Directory',
+              },
+              {
+                id: 222,
+                name: 'Test Directory 2',
+              },
+            ],
             documents: [{
                     id: 1,
                     title: 'Homeowners Association',
