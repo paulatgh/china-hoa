@@ -213,16 +213,6 @@
   transform: translate(-50%, -50%)
 }
 
-.close {
-  width: 38px;
-  height: 38px;
-  background: url('/community/img/close-circle.png') no-repeat;
-  position: absolute;
-  top: -19px;
-  right: -19px;
-  cursor: pointer;
-}
-
 .user-img {
   width: 100%;
   height: 207px;
@@ -333,4 +323,32 @@
 
 .street_input_b {
   display: none;
+}
+
+/*Modal Style*/
+.blocker {
+  background-color:  rgba(0,0,0,0.4);
+  z-index: 9999;
+  overflow: auto scroll;
+}
+
+.modal a.close-modal.close {
+  top: -18px;
+  right: -18px;
+  width: 36px;
+  height: 36px;
+  color: #fff;
+  line-height: 1.25;
+  text-align: center;
+  text-decoration: none;
+  text-indent: 0;
+  background: url('/community/img/close-circle.png') no-repeat;
+  border: none;
+  -webkit-border-radius:  26px;
+  -moz-border-radius:     26px;
+  -o-border-radius:       26px;
+  -ms-border-radius:      26px;
+  -moz-box-shadow:    1px 1px 5px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+  box-shadow:         1px 1px 5px rgba(0,0,0,0.5);
 }

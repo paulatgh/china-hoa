@@ -58,11 +58,14 @@ var render = function () {
         var userData = data.user_data.find(function(e) {
             return e['id'] == userId
         });
+
+
+
         $('#user_information_cycle').html(Mustache.render(user_information, userData));
-        $(".db").css("display", "block")
-        $('.close').click(function() {
-            $('.db').css("display", "none")
-        })
+        $("#ex1").modal({
+            closeClass: 'close',
+            closeText: ''
+        });
     })
     selectName = function(e) {
         $(".my-li").remove();

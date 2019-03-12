@@ -87,39 +87,38 @@
                 </ul>
             </div>
         </div>
-        <div class="db">
-            <div class="user" id="user_information_cycle">
+        <div id="ex1" class="modal">
+            <div id="user_information_cycle">
                 <script id="user_information" type="txt/template">
-                    <div class="close"></div>
-                <div class="user-content">
-                    {{#image}}
-                        <div class="profile-image" style="background-image: url({{image}});"></div>
-                    {{/image}}
-                    <h5>{{name}}</h5>
-                    {{#email}}
-                    <p>{{email}}</p>
-                    {{/email}}
-                    {{#phone}}
-                    <p>{{phone}}</p>
-                    {{/phone}}
-                    {{#employer}}
-                    <p>{{employer}}</p>
-                    {{/employer}}
-                </div>
+                    <div class="user-content">
+                        {{#image}}
+                            <div class="profile-image" style="background-image: url({{image}});"></div>
+                        {{/image}}
+                        <h5>{{name}}</h5>
+                        {{#email}}
+                        <p>{{email}}</p>
+                        {{/email}}
+                        {{#phone}}
+                        <p>{{phone}}</p>
+                        {{/phone}}
+                        {{#employer}}
+                        <p>{{employer}}</p>
+                        {{/employer}}
+                    </div>
 
-                {{#address1}}
-                <div class="user-content">
-                    <h5>{{community_name}}</h5>
-                    <p>Address</p>
-                    <p>{{address1}}</p>
-                    {{#address2}}
-                    <p>{{address2}}</p>
-                    {{/address2}}
-                    {{#unit}}
-                    <p>Lot #/Unit #: {{unit}}</p>
-                    {{/unit}}
-                </div>
-                {{/address1}}
+                    {{#address1}}
+                    <div class="user-content">
+                        <h5>{{community_name}}</h5>
+                        <p>Address</p>
+                        <p>{{address1}}</p>
+                        {{#address2}}
+                        <p>{{address2}}</p>
+                        {{/address2}}
+                        {{#unit}}
+                        <p>Lot #/Unit #: {{unit}}</p>
+                        {{/unit}}
+                    </div>
+                    {{/address1}}
                 </script>
             </div>
         </div>
