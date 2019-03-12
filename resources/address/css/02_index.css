@@ -244,6 +244,11 @@
   color: rgba(57, 61, 68, 1);
 }
 
+.user-content h4 {
+  font-size: 28px;
+  color: rgba(57, 61, 68, 1);
+}
+
 .user-content p {
   height: 27px;
   font-size: 16px;

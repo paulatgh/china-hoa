@@ -94,31 +94,90 @@
                         {{#image}}
                             <div class="profile-image" style="background-image: url({{image}});"></div>
                         {{/image}}
-                        <h5>{{name}}</h5>
+                        <h4>{{name}}</h4>
+                    </div>
+
+                    <div class="user-content">
+                        <h5>Contact Details:</h5>
                         {{#email}}
-                        <p>{{email}}</p>
+                            <p>Email: {{email}}</p>
                         {{/email}}
-                        {{#phone}}
-                        <p>{{phone}}</p>
-                        {{/phone}}
+                        {{#home_phone}}
+                            <p>Home: {{home_phone}}</p>
+                        {{/home_phone}}
+                        {{#work_phone}}
+                            <p>Work: {{work_phone}}</p>
+                        {{/work_phone}}
+                        {{#cell_phone}}
+                            <p>Cell: {{cell_phone}}</p>
+                        {{/cell_phone}}
+                        {{#other_phone}}
+                            <p>Other: {{other_phone}}</p>
+                        {{/other_phone}}
                         {{#employer}}
-                        <p>{{employer}}</p>
+                            <p>Employer: {{employer}}</p>
                         {{/employer}}
+                        {{#website}}
+                            <p>Website: {{website}}</p>
+                        {{/website}}
                     </div>
 
                     {{#address1}}
-                    <div class="user-content">
-                        <h5>{{community_name}}</h5>
-                        <p>Address</p>
-                        <p>{{address1}}</p>
-                        {{#address2}}
-                        <p>{{address2}}</p>
-                        {{/address2}}
-                        {{#unit}}
-                        <p>Lot #/Unit #: {{unit}}</p>
-                        {{/unit}}
-                    </div>
+                        <div class="user-content">
+                            <h5>{{community_name}}</h5>
+                            <p>Address: </p>
+                            {{#unit}}
+                                <p>Lot #: {{unit}}</p>
+                            {{/unit}}
+                            <p>{{address1}}</p>
+                            {{#address2}}
+                                <p>{{address2}}</p>
+                            {{/address2}}
+                            <p>
+                                {{#city}}
+                                    {{city}}
+                                {{/city}}
+
+                                {{#state}}
+                                    {{state}}
+                                {{/state}}
+
+                                {{#zip}}
+                                    {{zip}}
+                                {{/zip}}
+                            </p>
+                        </div>
                     {{/address1}}
+
+                    {{#hobbies}}
+                    {{#interests}}
+                    {{#organizations}}
+                    {{#occupation}}
+                    {{#other}}
+                    <div class="user-content">
+                        <h5>Bio:</h5>
+                        {{#hobbies}}
+                            <p>Hobbies: {{hobbies}}</p>
+                        {{/hobbies}}
+                        {{#interests}}
+                            <p>Interests: {{interests}}</p>
+                        {{/interests}}
+                        {{#organizations}}
+                            <p>Organizations: {{organizations}}</p>
+                        {{/organizations}}
+                        {{#occupation}}
+                            <p>Occupation: {{occupation}}</p>
+                        {{/occupation}}
+                        {{#other}}
+                            <p>Other Info: {{other}}</p>
+                        {{/other}}
+                    </div>
+                    {{/other}}
+                    {{/occupation}}
+                    {{/organizations}}
+                    {{/interests}}
+                    {{/hobbies}}
+
                 </script>
             </div>
         </div>
