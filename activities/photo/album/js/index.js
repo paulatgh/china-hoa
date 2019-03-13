@@ -25,4 +25,18 @@ var render = function () {
         $(".upload-photos").css("display", "none")
         $(".bg").css("display", "none")
     })
+    $(".delete-button").click(function (e) {
+        var id = $(e.target).data("id");
+        submitDynamicForm(
+          data._metadata.root_url + data._metadata.page_path + '/delete',
+          'POST',
+          [{
+              name: 'photo_id',
+              value: id
+          }, {
+              name: 'album_id',
+              value: data.album.id
+          }]
+        );
+    })
 };
