@@ -260,21 +260,16 @@ var render = function() {
     }
 
     var username = data._current_user && data._current_user.display_name
-    if (username) {
-        $(".btns-language").click(function(event) {
-            event.preventDefault();
-        })
-        $(".langOv").css("display", "block")
-        $('.jump').click(function() {
-            var arr = $(this).attr('data')
+
+    $('.jump').click(function() {
+        var arr = $(this).attr('data')
+        if (username || ['./city-resources', './amenities'].includes(arr)) {
             if (arr) {
                 window.location.href = `${data._metadata.root_url}/${arr}`;
             } else {
                 window.location.href = `${data._metadata.root_url}/aboutus`;
             }
-        })
-    } else {
-        $('.jump').click(function() {
+        }else{
             var _this = $(this)
             $('body').append(str);
             $('.login-int').on('keypress', function(e) {
@@ -303,8 +298,15 @@ var render = function() {
             $('.return').click(function() {
                 $('.db').remove();
             })
-        })
+        }
+    })
 
+    if (username) {
+        $(".btns-language").click(function(event) {
+            event.preventDefault();
+        })
+        $(".langOv").css("display", "block")
+    } else {
         $(".btns-language").click(function() {
             $('body').append(str);
             $('.login-int').on('keypress', function(e) {
