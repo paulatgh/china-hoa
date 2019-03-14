@@ -1,0 +1,73 @@
+<!-- header -->
+<div class="header">
+
+
+</div>
+
+<!-- main -->
+<div class="investor clearfix">
+    <script id="breadcrumbs" type="txt/template">
+        <div class="main-breadcrumb" style="width: 1200px;margin: 0 auto;">
+            <ul class="breadcrumb">
+                <li><a href="{{_metadata.root_url}}/home">Home</a></li>
+                <li>&nbsp;>&nbsp;</li>
+                <li><a href="#">Members</a></li>
+            </ul>
+        </div>
+    </script>
+
+    <div class="w1200">
+        <table class="table-one"  bborder="0"  cellpadding="10" cellspacing="0">
+            <tbody>
+                <tr>
+                    <td>
+
+                        <table class="table-two">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <script id="header" type="txt/template">
+                                            <font size="4" face="Verdana, Arial, Helvetica" color="#F1F1F1">
+                                                Manage Members
+                                            </font>
+                                        </script>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                            <center>
+                                <table class="profile-table" border="1"  cellspacing="0" >
+                                    <tbody>
+                                        <script id="members" type="txt/template">
+                                            {{#members}}
+                                                <tr>
+                                                    <td>
+                                                        <span>{{name}}</span>
+                                                        -
+                                                        <span>{{email}}</span>
+                                                        <form action="{{_metadata.root_url}}{{_metadata.page_path}}/remove" method="post">
+                                                            <input type="hidden" name="user_id" value="{{user_id}}">
+                                                            <input type="submit" value="Remove">
+                                                        </form>
+                                                    </td>
+                                                </tr>
+                                            {{/members}}
+                                        </script>
+                                    </tbody>
+                                </table>
+                            </center>
+                            <p class="p-input"></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>
+<!-- footer -->
+<div class="footer">
+    <p>
+        Copyright © 2019 Tellus, Inc. All Rights Reserved.
+    </p>
+</div>

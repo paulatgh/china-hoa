@@ -54,13 +54,10 @@
             <div id="User_info_cycle">
                 <script id="User_info" type="txt/template">
                     <div class="User_info">
-                <p><img src="{{img_url}}" alt=""><span>{{yes}}</span></p>
-                <p><img src="{{img_url}}" alt=""><span>{{no}}</span></p>
-                <p><img src="{{img_url}}" alt=""><span>{{maybe}}</span></p>
-                <p>
-                    <img src="{{img_url}}" alt="">
-                    <span class="User_info_span">{{note}}</span>
-                    <span>{{note_content}}</span></p>
+                <p>{{#yes}}<img src="{{img_url}}" alt=""><span>{{name}}</span>{{/yes}}</p>
+                <p>{{#no}}<img src="{{img_url}}" alt=""><span>{{name}}</span>{{/no}}</p>
+                <p>{{#maybe}}<img src="{{img_url}}" alt=""><span>{{name}}</span>{{/maybe}}</p>
+                <p><span>{{note_content}}</span></p>
             </div>
         </script>
             </div>
