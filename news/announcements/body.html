@@ -34,10 +34,12 @@
                         <script id="announcements_template" type="txt/template">
                             <li class="announcement-row">
                                 <div class="announcements_permission">
-                                    <span>
-                                        <a href="{{_metadata.root_url}}{{edit_link}}">Edit</a>
-                                    </span>
-                                    <span class="del" data-action="{{delete_link}}">Delete</span>
+                                    {{#edit_link}}
+                                        <span><a href="{{_metadata.root_url}}{{edit_link}}">Edit</a></span>
+                                    {{/edit_link}}
+                                    {{#delete_link}}
+                                        <span class="del" data-action="{{delete_link}}">Delete</span>
+                                    {{/delete_link}}
                                 </div>
                                 <h5 class="title_name" data-link="{{_metadata.root_url}}{{link}}">
                                     {{title}}
