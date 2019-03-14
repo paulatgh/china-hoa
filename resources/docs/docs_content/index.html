@@ -35,21 +35,43 @@
                 site_name: 'De Anza Oaks',
                 environment: 'dev',
             },
-            action_buttons: [{
-                    action: 'Add File',
-                    link: "/resources/docs/add?directory_path",
+              action_buttons: [
+                {
+                  action: 'Add File',
+                  link: "/resources/docs/add?directory_path",
                 },
                 {
-                    action: 'Create Directory',
-                    link: "/resources/docs/directory/add?directory_path",
+                  action: 'Create Directory',
+                  link: "/resources/docs/directory/add?directory_path",
+                },
+              ],
+            sub_directories: [
+              {
+                id: 111,
+                name: 'Home',
+                imgUrl:'/community/img/yellow-1.png',
+                link:'/resources/docs'
+              },
+            ],
+            documents: [{
+                    id: 1,
+                    title: 'Homeowners Association',
+                    img: '/community/img/Homeowners Association.png',
+                    url: '/community/pdf/8181085daohoa122_cc_rs.pdf',
+                },
+                {
+                    id: 2,
+                    title: 'Homeowners Association (2)',
+                    img: '/community/img/Architectural Satndards.png',
+                    url: '/community/pdf/21112002703_001.pdf',
+                },
+                {
+                    id: 3,
+                    title: 'De Anza Oaks Paint Colors',
+                    img: '/community/img/DE ANZA OAKS PAINT COLORS.png',
+                    url: '/community/pdf/2174420paint_colors_-_2007.pdf',
                 },
             ],
-            sub_directories: [{
-                    id: 111,
-                    name: 'Test Directory',
-                    link: '/resources/docs/docs_content/'
-                },
-            ]
         }
 
     </script>

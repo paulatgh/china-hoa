@@ -44,13 +44,34 @@
                                                 <a href="{{_metadata.root_url}}{{link}}">
                                                     <div class="investor-pdfhov">
                                                         <div class="investor-pdf-img">
-                                                            <img src="{{assets_path}}/community/img/directory-icon.png" alt="PDF Preview" class="pdfa">
+                                                            <img src="{{assets_path}}{{imgUrl}}" alt="PDF Preview" class="pdfas">
                                                         </div>
                                                     </div>
                                                     <p>{{name}}</p>
                                                 </a>
                                             </li>
                                         {{/sub_directories}}
+                                        {{#documents}}
+                                        <li>
+                                            <div class="investor-pdfhov">
+                                                <div class="investor-pdf-img">
+                                                    <img src="{{img}}" class="pdfa">
+                                                </div>
+                                                <div class="investor-pdf-con">
+                                                    <a href="{{url}}">View</a>
+                                                    {{#deletable}}
+                                                        {{#_current_user.is_admin}}
+                                                            <a data-id="{{id}}" class="delete-link">Delete</a>
+                                                        {{/_current_user.is_admin}}
+                                                    {{/deletable}}
+                                                </div>
+                                            </div>
+                                            <p>{{title}}</p>
+                                            {{#user_friendly_date}}
+                                            <p>{{user_friendly_date}}</p>
+                                            {{/user_friendly_date}}
+                                        </li>
+                                        {{/documents}}
                                     </script>
                                 </ul>
                             </div>

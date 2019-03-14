@@ -390,7 +390,7 @@
 .investor-pdf li p{font-size:12px;color:#666666;text-align: center}
 .investor-pdf li .investor-pdf-img{width:154px;height:212px;border:2px #f4f4f4 solid;z-index:5;}
 .investor-pdf li .investor-pdf-img img{width:112%;}
-.investor-pdf li .investor-pdf-con{width:134px;height:129px;padding:106px 18px 0 18px;position:absolute;top:-100%;left:0;z-index:10;border:2px #449F41 solid;background:rgba(0,0,0,0.4) !important; background:#000;filter:Alpha(opacity=40);-webkit-transition:all .4s;-moz-transition:all .4s;-transition:all .4s;}
+.investor-pdf li .investor-pdf-con{width:134px;height:151px;padding:106px 18px 0 18px;position:absolute;top:-100%;left:0;z-index:10;border:2px #449F41 solid;background:rgba(0,0,0,0.4) !important; background:#000;filter:Alpha(opacity=40);-webkit-transition:all .4s;-moz-transition:all .4s;-transition:all .4s;}
 .investor-pdf li .investor-pdf-con a{width:133px;height:42px;line-height:42px; margin-bottom:4px;text-align:center;background:#fff;font-size:14px;color:#449F41;-webkit-transition:all .3s;-moz-transition:all .3s;-transition:all .3s;position:relative;z-index:12;}
 .investor-pdf li .investor-pdf-con a:nth-child(2){width:133px;height:42px;line-height:42px; margin-bottom:4px;text-align:center;background:#fff;font-size:14px;color:white;background:#449F41;-webkit-transition:all .3s;-moz-transition:all .3s;-transition:all .3s;position:relative;z-index:12;}
 .investor-pdf li .investor-pdfhov{width:158px;height:216px;}
