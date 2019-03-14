@@ -89,6 +89,9 @@
                                                 </td>
                                                 <td>
                                                     <input type="text" value="{{profile.phone.home}}" name="home_phone" size="18" maxlength="18">
+                                                    Public?
+                                                    <input type="hidden" name="home_phone_visible" value="false">
+                                                    <input type="checkbox" {{#profile.phone.home_visible}}checked{{/profile.phone.home_visible}} name="home_phone_visible" value="true">
                                                 </td>
                                             </tr>
     
@@ -100,6 +103,9 @@
                                                 </td>
                                                 <td>
                                                     <input type="text" value="{{profile.phone.work}}" name="work_phone" size="18" maxlength="18" >
+                                                    Public?
+                                                    <input type="hidden" name="work_phone_visible" value="false">
+                                                    <input type="checkbox" {{#profile.phone.work_visible}}checked{{/profile.phone.work_visible}} name="work_phone_visible" value="true">
                                                 </td>
                                             </tr>
     
@@ -111,6 +117,9 @@
                                                 </td>
                                                 <td>
                                                     <input type="text" value="{{profile.phone.cell}}" name="cell_phone" size="18" maxlength="18" >
+                                                    Public?
+                                                    <input type="hidden" name="cell_phone_visible" value="false">
+                                                    <input type="checkbox" {{#profile.phone.cell_visible}}checked{{/profile.phone.cell_visible}} name="cell_phone_visible" value="true">
                                                 </td>
                                             </tr>
     
@@ -122,6 +131,9 @@
                                                 </td>
                                                 <td>
                                                     <input type="text" value="{{profile.phone.other}}" name="other_phone" size="18" maxlength="18" >
+                                                    Public?
+                                                    <input type="hidden" name="other_phone_visible" value="false">
+                                                    <input type="checkbox" {{#profile.phone.cell_visible}}checked{{/profile.phone.cell_visible}} name="other_phone_visible" value="true">
                                                 </td>
                                             </tr>
     
