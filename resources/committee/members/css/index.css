@@ -1,0 +1,74 @@
+.investor {
+  margin-bottom: 100px;
+}
+
+.breadcrumb {
+  width: 100%;
+  height: 75px;
+}
+
+.breadcrumb li {
+  float: left;
+  margin-right: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 75px;
+  color: rgba(30, 130, 23, 1);
+}
+
+.breadcrumb li a {
+  color: rgba(30, 130, 23, 1);
+}
+
+.committee-table {
+  width: 90%;
+  border: #6AA666;
+}
+
+.committee-table tr {
+  width: 410px;
+  height: 54px;
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(106, 166, 102, 1);
+}
+
+.committee-table tr td {
+  height: 24px;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(57, 61, 68, 1);
+  line-height: 24px;
+  text-align: left;
+  border-color: "#f1e8c6";
+  padding: 14px 24px;
+}
+
+.text {
+  width: 564px;
+  height: 28px;
+}
+
+.time {
+  width: 180px;
+  height: 28px;
+}
+
+.committee-table tr td textarea {
+  width: 564px;
+  height: 160px;
+}
+
+.committee-table tr>td>span {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(151, 151, 151, 1);
+}
+
+.add_volunteer_title {
+  width: 100%;
+  height: 41px;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgba(57, 61, 68, 1);
+  line-height: 41px;
+}
