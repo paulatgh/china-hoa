@@ -30,45 +30,24 @@
         <div class="tiles">
             <script id="committee_tiles" type="txt/template">
                 {{#committees}}
-                <div class="item">
-                    <div class="committee_title">
-                        {{title}}
+                <a href="{{_metadata.root_url}}{{_metadata.page_path}}/show?committee_id={{id}}">
+                    <div>
+                        <div class="item">
+                            <div class="committee_title">
+                                {{title}}
+                            </div>
+                            <div class="committee_details">
+                                <div>Updated: {{updated}}</div>
+                                <div>{{content}}</div>
+                            </div>
+                            <div class="committee_details">
+                                {{#from}}<div>{{from}}</div>{{/from}}
+                                {{#telephone}}<div>{{telephone}}</div>{{/telephone}}
+                                {{#email}}<div>{{email}}</div>{{/email}}
+                            </div>
+                        </div>
                     </div>
-                    <div class="committee_details">
-                        <div>Updated: {{updated}}</div>
-                        <div>{{content}}</div>
-                    </div>
-                    <div class="committee_details">
-                        {{#from}}
-                        <div>{{from}}</div>
-                        {{/from}}
-                        {{#telephone}}
-                        <div>{{telephone}}</div>
-                        {{/telephone}}
-                        {{#email}}
-                        <div>{{email}}</div>
-                        {{/email}}
-                    </div>
-                    <div class="committee_admin_options">
-                        <span><a href="{{_metadata.root_url}}{{_metadata.page_path}}/edit?committee_id={{id}}">Edit</a></span>
-                        <span><a href="{{_metadata.root_url}}{{_metadata.page_path}}/members/add?committee_id={{id}}">Add</a></span>
-                        <span
-                            onClick="
-                                delete_element(data, null, null, function() {
-                                  submitDynamicForm(
-                                    '{{_metadata.root_url}}{{_metadata.page_path}}/delete',
-                                    'POST',
-                                    [{
-                                      name: 'committee_id',
-                                      value: '{{id}}'
-                                    }]
-                                  )
-                                })
-                            "
-                            class="del"
-                        >Delete</span>
-                    </div>
-                </div>
+                </a>
                 {{/committees}}
             </script>
         </div>

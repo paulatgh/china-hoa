@@ -1,0 +1,111 @@
+<!-- header -->
+<div class="header">
+</div>
+
+<!-- main body -->
+<div class="main">
+    <div class="w1200 pr">
+        <script id="breadcrumbs" type="txt/template">
+            <div class="main-breadcrumb">
+                <ul class="breadcrumb">
+                    <li><a href="{{_metadata.root_url}}/home">Home</a></li>
+                    <li>&nbsp;>&nbsp;</li>
+                    <li><a href="{{_metadata.root_url}}/resources">Resources</a></li>
+                    <li>&nbsp;>&nbsp;</li>
+                    <li><a href="{{_metadata.root_url}}/resources/committee">Board/Committee</a></li>
+                    <li>&nbsp;>&nbsp;</li>
+                    <li><a href="#">{{committee.title}}</a></li>
+                </ul>
+            </div>
+        </script>
+        <script id="committee" type="txt/template">
+            <div class="info">
+
+                <div>
+                    <div class="row">
+                        <h4>{{committee.title}}</h4>
+                        {{#_current_user.is_admin}}
+                            <div class="committee_admin_options">
+                                <span class="button"><a href="{{_metadata.root_url}}/resources/committee/edit?committee_id={{committee.id}}">Edit</a></span>
+                                <span class="button danger" onClick="
+                                        delete_element(data, null, null, function() {
+                                            submitDynamicForm(
+                                                '{{_metadata.root_url}}/resources/committee/delete',
+                                                'POST',
+                                                [{
+                                                    name: 'committee_id',
+                                                    value: '{{committee.id}}'
+                                                }]
+                                            )
+                                        })
+                                    "
+                                      class="del"
+                                >Delete</span>
+                            </div>
+                        {{/_current_user.is_admin}}
+                    </div>
+                    <div class="content-1">
+                        <span>Updated: {{committee.updated}}</span> {{#committee.email}}<span>contact: {{committee.email}}</span>{{/committee.email}}
+                    </div>
+                </div>
+
+
+                <div class="committee_details base-text">
+                    {{committee.content}}
+                </div>
+            </div>
+
+            <div class="members">
+
+                <div class="row">
+                    <h4>Members</h4>
+                    {{#_current_user.is_admin}}
+                        <div class="committee_admin_options">
+                            <span class="button"><a href="{{_metadata.root_url}}/resources/committee/members/add?committee_id={{committee.id}}">Add</a></span>
+                        </div>
+                    {{/_current_user.is_admin}}
+                </div>
+
+                {{#committee.members}}
+                    <div class="member base-text">
+                        <div class="member-name">{{name}}</div>
+                        {{#_current_user.is_admin}}
+                            <div class="member-admin-controls">
+                                <div class="committee_admin_options">
+                                    <span class="button danger" onClick="
+                                        delete_element(data, null, null, function() {
+                                            submitDynamicForm(
+                                                '{{_metadata.root_url}}/resources/committee/members/remove',
+                                                'POST',
+                                                [
+                                                  {
+                                                    name: 'committee_id',
+                                                    value: '{{committee.id}}'
+                                                  },
+                                                  {
+                                                    name: 'user_id',
+                                                    value: '{{id}}'
+                                                  }
+                                                ]
+                                            )
+                                        })
+                                    "
+                                    class="del"
+                                    >Remove</span>
+                                </div>
+                            </div>
+                        {{/_current_user.is_admin}}
+                    </div>
+                {{/committee.members}}
+                </div>
+            </div>
+        </script>
+    </div>
+</div>
+
+<!-- footer -->
+<div class="footer">
+    <p>
+        Copyright © 2019 Tellus, Inc. All Rights Reserved.
+    </p>
+</div>
