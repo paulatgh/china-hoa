@@ -33,24 +33,28 @@
                     <ul id="news_announcements" class="tab1 item show">
                         <script id="announcements_template" type="txt/template">
                             <li class="announcement-row">
+                                <a href="{{_metadata.root_url}}{{link}}">
+                                    <div>
+                                        <h5 class="title_name" data-link="{{_metadata.root_url}}{{link}}">
+                                            {{title}}
+                                        </h5>
+                                        {{#friendly_date}}
+                                        <div class="friendly">{{friendly_date}}</div>
+                                        {{/friendly_date}}
+                                        {{^friendly_date}}
+                                        <div>(draft)</div>
+                                        {{/friendly_date}}
+                                        <div style="white-space: pre-wrap;" class="abbreviated"><p class="abbreviated_body_p">{{abbreviated_body}}</p></div>
+                                    </div>
+                                </a>
                                 <div class="announcements_permission">
                                     {{#edit_link}}
-                                        <span><a href="{{_metadata.root_url}}{{edit_link}}">Edit</a></span>
+                                    <span><a href="{{_metadata.root_url}}{{edit_link}}">Edit</a></span>
                                     {{/edit_link}}
                                     {{#delete_link}}
-                                        <span class="del" data-action="{{delete_link}}">Delete</span>
+                                    <span class="del" data-action="{{delete_link}}">Delete</span>
                                     {{/delete_link}}
                                 </div>
-                                <h5 class="title_name" data-link="{{_metadata.root_url}}{{link}}">
-                                    {{title}}
-                                </h5>
-                                {{#friendly_date}}
-                                <div class="friendly">{{friendly_date}}</div>
-                                {{/friendly_date}}
-                                {{^friendly_date}}
-                                <div>(draft)</div>
-                                {{/friendly_date}}
-                                <div style="white-space: pre-wrap;" class="abbreviated"><p class="abbreviated_body_p">{{abbreviated_body}}</p></div>
                             </li>
                         </script>
                     </ul>
