@@ -143,6 +143,19 @@
                                 <textarea class="intb" wrap="virtual" name="description" required cols="50" rows="5">{{description}}</textarea>
                             </td>
                         </tr>
+                        <tr>
+                            <td>
+                                Cover Image
+                            </td>
+                            <td>
+                                <input class="int" type="file" name="cover_photo" accept="image/*"/>
+                                {{#cover_photo_url}}
+                                <div style="display: inline-block;">
+                                    <a style="color: rgba(30, 130, 23, 1);" href="{{cover_photo_url}}" target="_blank">see currently attached image</a>
+                                </div>
+                                {{/cover_photo_url}}
+                            </td>
+                        </tr>
                         </script>
                     </tbody>
                 </table>
