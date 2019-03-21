@@ -17,7 +17,10 @@ var render = function () {
         $('.buttona').css('display', 'none')
     }
     $(".details").click(function(e){
-        var id = $(e.currentTarget).data('id');
-        window.location = `${data._metadata.root_url}/activities/calendar/list/details?event_id=${id}`;
+        var eventType = $(e.currentTarget).data('event-type');
+        if (eventType == 'event') {
+            var id = $(e.currentTarget).data('id');
+            window.location = `${data._metadata.root_url}/activities/calendar/list/details?event_id=${id}`;
+        }
     })
 };
