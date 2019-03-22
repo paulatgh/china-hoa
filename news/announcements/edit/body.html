@@ -28,12 +28,12 @@
                 <table class="announcement-table" border="1" cellspacing="0">
                     <tbody>
                         <script id="edit-announcement-body" type="txt/template">
-                            <tr>
+                        <tr>
                             <td>
                                 Title
                             </td>
                             <td>
-                                <input type="text" name="title" size="10" maxlength="255" required  value="{{title}}">
+                                <input class="int" type="text" name="title" size="10" maxlength="255" required value="{{title}}">
                             </td>
                         </tr>
                         <tr>
@@ -52,7 +52,7 @@
                                 <input type="file" name="photo" accept="image/*"/>
                                 {{#photo_url}}
                                 <div style="display: inline-block;">
-                                    <a style="color: rgba(30, 130, 23, 1);" href="{{photo_url}}">see currently attached image</a>
+                                    <a style="color: rgba(30, 130, 23, 1);" href="{{photo_url}}" target="_blank">see currently attached image</a>
                                 </div>
                                 {{/photo_url}}
                             </td>

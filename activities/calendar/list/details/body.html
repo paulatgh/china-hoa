@@ -14,7 +14,7 @@
                             <li>&nbsp;>&nbsp;</li>
                             <li><a href="{{_metadata.root_url}}/activities/calendar/list">Recently Added Events</a></li>
                             <li>&nbsp;>&nbsp;</li>
-                            <li><a href="#">Event details</a></li>
+                            <li><a href="#">Event Details</a></li>
                         </ul>
                     </div>
                 </script>
@@ -29,18 +29,20 @@
             <p class="event">Event</p>
             <div class="Information_left_p">
                 <div>
+                    <p>Title</p>
                     <p>Posted At</p>
-                    <p>Date </p>
-                    <p>Description </p>
-                    <p>Creator </p>
+                    <p>Date</p>
+                    <p>Location</p>
+                    <p>Creator</p>
                 </div>
                 <div class="Information_left_span">
                     <script id="Information_left_span" type="txt/template">
+                        <span>{{information_left_span.title}}</span>
                         <span>{{information_left_span.posted_at}}</span>
-                    <span>{{information_left_span.date}}</span>
-                    <span>{{information_left_span.description}}</span>
-                    <span>{{information_left_span.creator}}</span>
-                </script>
+                        <span>{{information_left_span.date}}</span>
+                        <span>{{information_left_span.location}}</span>
+                        <span>{{information_left_span.creator}}</span>
+                    </script>
                 </div>
             </div>
         </div>
@@ -54,12 +56,12 @@
             <div id="User_info_cycle">
                 <script id="User_info" type="txt/template">
                     <div class="User_info">
-                <p>{{#yes}}<img src="{{img_url}}" alt=""><span>{{name}}</span>{{/yes}}</p>
-                <p>{{#no}}<img src="{{img_url}}" alt=""><span>{{name}}</span>{{/no}}</p>
-                <p>{{#maybe}}<img src="{{img_url}}" alt=""><span>{{name}}</span>{{/maybe}}</p>
-                <p><span>{{note_content}}</span></p>
-            </div>
-        </script>
+                        <p>{{#yes}}<img src="{{img_url}}" alt=""><span>{{name}}</span>{{/yes}}</p>
+                        <p>{{#no}}<img src="{{img_url}}" alt=""><span>{{name}}</span>{{/no}}</p>
+                        <p>{{#maybe}}<img src="{{img_url}}" alt=""><span>{{name}}</span>{{/maybe}}</p>
+                        <p><span>{{note_content}}</span></p>
+                    </div>
+                </script>
             </div>
         </div>
     </div>

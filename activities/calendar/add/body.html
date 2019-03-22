@@ -24,7 +24,7 @@
                         </td>
                     </tr>
                 </table>
-                <form method="post">
+                <form method="post" enctype="multipart/form-data">
                     <table class="calendar-table" border="1">
                         <tr>
                             <td>
@@ -158,6 +158,14 @@
                                 Description:
                             </td>
                             <td><textarea class="textarea" wrap="virtual" name="description" cols="50" rows="5"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Cover Image
+                            </td>
+                            <td>
+                                <input class="inputa" type="file" name="cover_photo" accept="image/*" />
+                            </td>
                         </tr>
                     </table>
                     <p class="p-input">

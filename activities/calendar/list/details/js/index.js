@@ -3,6 +3,7 @@ var render = function () {
 
     $("#breadcrumbs").after(function() { return Mustache.render($(this).html(),data);});
     $("#page_title").after(function(){return Mustache.render($(this).html(),data);});
+    $("#event_template").after(function(){return Mustache.render($(this).html(),data.event);});
     $("#Information_left_span").after(function(){return Mustache.render($(this).html(),data);});
 
     var User_info = $('#User_info').html();
