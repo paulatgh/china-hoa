@@ -69,7 +69,17 @@ function delete_element(data, index, el, callback) {
         }
     });
 }
-
+function check_admin() {
+    let str =''
+    if(data._current_user.is_admin){
+        str= `<a href="${data._metadata.root_url}/members" style="border-bottom: 1px solid white;width: 100%;margin-left: -1px">
+        Members
+        </a><a href="${data._metadata.root_url}/invite" style="border-bottom: 1px solid white;width: 100%;margin-left: -1px">
+        Invite
+        </a>`
+    }
+    return str;
+}
 function _pre_render() {
     header_html = `
         <div>
@@ -86,6 +96,7 @@ function _pre_render() {
                     <a class="btns-language" href="javascript:;">Log In</a>
                     <div class="langOv">
                         <div class="profile">
+                            ${check_admin()}
                             <a href="${data._metadata.root_url}/profile" style="border-bottom: 1px solid white;width: 100%;margin-left: -1px">
                                 My Profile
                             </a>
