@@ -21,7 +21,9 @@
     <div class="main-center">
         <script id="album" type="txt/template">
             <p class="photo-albums">{{album.title}}</p>
+            {{#album.desc}}
             <p class="photo-albums">{{album.desc}}</p>
+            {{/album.desc}}
         </script>
 
         <div id="admin_permissions_cycle">
