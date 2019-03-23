@@ -5,11 +5,10 @@
  */
 
 function checkFormUpload(form){
-  console.log(form.getElementsByTagName('input'))
   var inputs = form.getElementsByTagName('input'),len = inputs.length;
   for(var i=0;i<len;i++){
     if(inputs[i].type == "file"){
-      checkUploadType(inputs[i])
+      return checkUploadType(inputs[i])
       break;
     }
   }
@@ -29,6 +28,6 @@ function checkUploadType(file) {
           return true;
       }
   }
-  alert("Does not support " + extension + " format!");
+  alert("Please select an images !");
   return false;
 }
