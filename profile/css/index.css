@@ -30,20 +30,28 @@
 
 .profile-table tr td {
   height: 33px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   color: rgba(57, 61, 68, 1);
   line-height: 24px;
   text-align: left;
-
   padding: 14px 24px;
+  font-family: OpenSans-Regular;
+  color: rgba(57,61,68,1);
+  line-height: 24px;
 }
 
 .profile-table tr>td>input {
   width: 180px;
   height: 28px;
-  font-size: 11px;
-
+  font-size: 14px;
+  background: rgba(255,255,255,1);
+  font-family: OpenSans-Regular;
+  font-weight: 400;
+  color: rgba(57,61,68,1);
+  line-height: 20px;
+  padding-left: 16px;
+  float:left;
 }
 
 .p-input {
@@ -111,4 +119,19 @@
   height: 100px;
   font-size: 11px;
   border-color: #d8d8d8;
+}
+.profile-table tr>td>.profile-check{
+  display:block;
+  width:20px;
+  height:20px;
+  border-radius:4px;
+  background:url(/community/img/profile-none.png) no-repeat;
+  -webkit-appearance:none;
+  outline: none;
+  float:left;
+  margin:4px 18px 4px 128px;
+}
+.profile-table tr>td>.profile-check:checked {
+  background:url(/community/img/profile-yes.png) no-repeat;
+  background-repeat: no-repeat;
 }
