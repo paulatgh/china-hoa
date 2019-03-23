@@ -27,7 +27,7 @@
                         .
                     </tr>
                 </table>
-                <form method="post" enctype="multipart/form-data" onsubmit="return checkFormUpload(this)">
+                <form method="post" enctype="multipart/form-data">
                     <table class="addalbum-table" width="90%" border="1" cellpadding="3" cellspacing="0" bordercolor="#6AA666">
                         <tbody>
                             <tr>
@@ -65,7 +65,7 @@
                                     Main Picture (required):
                                 </td>
                                 <td>
-                                    <input type="file" maxlength="200" name="photo[attachment]">
+                                    <input type="file" maxlength="200" name="photo[attachment]" accept="image/gif, image/jpeg, image/jpg, image/png" >
                                 </td>
                             </tr>
                             <tr>
