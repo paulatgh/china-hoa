@@ -71,7 +71,7 @@ function delete_element(data, index, el, callback) {
 }
 function check_admin() {
     let str =''
-    if(data._current_user.hasOwnProperty('is_admin') && data._current_user.is_admin){
+    if (data._current_user && data._current_user.is_admin) {
         str= `<div class="langOv" style="height:160px;">
         <div class="profile" style="height:160px;"><a href="${data._metadata.root_url}/members" style="border-bottom: 1px solid white;width: 100%;margin-left: -1px">
         Members
@@ -81,7 +81,7 @@ function check_admin() {
         My Profile
         </a><a href="javascript:;" class="logout">Log Out</a></div>
         </div>`
-    }else{
+    } else {
         str = `<div class="langOv">
         <div class="profile"><a href="${data._metadata.root_url}/profile" style="border-bottom: 1px solid white;width: 100%;margin-left: -1px">
         My Profile
