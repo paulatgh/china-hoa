@@ -41,6 +41,7 @@ body {
   height: 50px;
   width: 1200px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .Details_Information {
