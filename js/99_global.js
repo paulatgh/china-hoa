@@ -71,12 +71,22 @@ function delete_element(data, index, el, callback) {
 }
 function check_admin() {
     let str =''
-    if(data._current_user.is_admin){
-        str= `<a href="${data._metadata.root_url}/members" style="border-bottom: 1px solid white;width: 100%;margin-left: -1px">
+    if(data._current_user.hasOwnProperty('is_admin') && data._current_user.is_admin){
+        str= `<div class="langOv" style="height:160px;">
+        <div class="profile" style="height:160px;"><a href="${data._metadata.root_url}/members" style="border-bottom: 1px solid white;width: 100%;margin-left: -1px">
         Members
         </a><a href="${data._metadata.root_url}/invite" style="border-bottom: 1px solid white;width: 100%;margin-left: -1px">
         Invite
-        </a>`
+        </a><a href="${data._metadata.root_url}/profile" style="border-bottom: 1px solid white;width: 100%;margin-left: -1px">
+        My Profile
+        </a><a href="javascript:;" class="logout">Log Out</a></div>
+        </div>`
+    }else{
+        str = `<div class="langOv">
+        <div class="profile"><a href="${data._metadata.root_url}/profile" style="border-bottom: 1px solid white;width: 100%;margin-left: -1px">
+        My Profile
+        </a><a href="javascript:;" class="logout">Log Out</a></div>
+        </div>`
     }
     return str;
 }
@@ -88,21 +98,12 @@ function _pre_render() {
                     <img src="/community/img/Combined Shape.png" alt="Combined Shape">
                     De Anza Oaks
                 </a>
-                <input type="text" placeholder="Search..." style="width: 188px;height: 37px;position: relative;top: 30px;left:563px;border: solid 1px #393D44;padding-left: 10px;">
                 <div class="btns clearfix">
                     <img src="/community/img/Shape.png" alt="Shape" style="position: relative;left: -146px;top: 40px;z-index: 100000;">
                     <img src="/community/img/dropdown.png" alt="dropdown" style="position: relative;left: -16px;top: 36px;z-index: 100000;">
                     <a class="btns-search" href="javascript:;"> </a>
                     <a class="btns-language" href="javascript:;">Log In</a>
-                    <div class="langOv">
-                        <div class="profile">
-                            ${check_admin()}
-                            <a href="${data._metadata.root_url}/profile" style="border-bottom: 1px solid white;width: 100%;margin-left: -1px">
-                                My Profile
-                            </a>
-                            <a href="javascript:;" class="logout">Log Out</a>
-                        </div>
-                    </div>
+                    ${check_admin()}
                 </div>
                 <div class="nav">
                     <ul>
