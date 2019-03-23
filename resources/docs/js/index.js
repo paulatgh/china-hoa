@@ -49,7 +49,11 @@ var render = function () {
           [
               {
                   name: 'doc_id',
-                  value: $(this).data('id')
+                  value: $(this).data('id'),
+              },
+              {
+                  name: 'directory_path',
+                  value: data.directory_path
               }
           ]
         )
