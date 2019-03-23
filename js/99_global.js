@@ -101,7 +101,14 @@ function _pre_render() {
                 <div class="btns clearfix">
                     <img src="/community/img/Shape.png" alt="Shape" style="position: relative;left: -146px;top: 40px;z-index: 100000;">
                     <img src="/community/img/dropdown.png" alt="dropdown" style="position: relative;left: -16px;top: 36px;z-index: 100000;">
-                    <a class="btns-search" href="javascript:;"> </a>
+                    <div style="width: 29px;
+                    height: 29px;
+                    float: left;
+                    margin: 45px 15px 0 0;
+                    position: relative;
+                    top: -15px;
+                    left: 30px;
+                    padding: 5px;"></div>
                     <a class="btns-language" href="javascript:;">Log In</a>
                     ${check_admin()}
                 </div>
