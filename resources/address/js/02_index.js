@@ -59,8 +59,6 @@ var render = function () {
             return e['id'] == userId
         });
 
-
-
         $('#user_information_cycle').html(Mustache.render(user_information, userData));
         $("#ex1").modal({
             closeClass: 'close',
@@ -138,11 +136,11 @@ var render = function () {
         $(".my-li-a").mouseenter(function() {
           $(".my-li-a").css("display", "block")
           return
-      })
-      $(".my-li-a").mouseleave(function() {
-          $(".my-li-a").css("display", "none")
-          return
-      })
+        })
+        $(".my-li-a").mouseleave(function() {
+            $(".my-li-a").css("display", "none")
+            return
+        })
     }
 
 };

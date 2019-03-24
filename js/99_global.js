@@ -73,7 +73,7 @@ function check_admin() {
     let str = '', _c = data._current_user;
 
     if (_c && _c.is_admin) {
-        str= `<div class="langOv" style="height:160px;">
+        str = `<div class="langOv" style="height:160px;">
         <div class="profile" style="height:160px;"><a href="${data._metadata.root_url}/members" style="border-bottom: 1px solid white;width: 100%;margin-left: -1px">
         Members
         </a><a href="${data._metadata.root_url}/invite" style="border-bottom: 1px solid white;width: 100%;margin-left: -1px">
@@ -82,7 +82,7 @@ function check_admin() {
         My Profile
         </a><a href="javascript:;" class="logout">Log Out</a></div>
         </div>`
-    } else {
+    } else if (_c) {
         str = `<div class="langOv">
         <div class="profile"><a href="${data._metadata.root_url}/profile" style="border-bottom: 1px solid white;width: 100%;margin-left: -1px">
         My Profile
@@ -116,7 +116,7 @@ function _pre_render() {
                 <div class="nav">
                     <ul>
                         <li class="curr">
-                            <a class="on jump" href="${data._metadata.root_url}/home">Home</a>
+                            <a class="on" href="${data._metadata.root_url}/home">Home</a>
                         </li>
                         <li class="curr">
                             <a class="on" href="${data._metadata.root_url}/aboutus">About Us</a>
