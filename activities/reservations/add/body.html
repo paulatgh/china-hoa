@@ -143,14 +143,24 @@
                             </td>
                         </tr>
                         <script id="reservation_fields_template" type="txt/template">
-                        {{#reservation_fields}}
+                        {{#text_fields}}
                         <tr>
                             <td>{{user_friendly_name}}:</td>
                             <td>
                                 <input class="intb" type="text" name="fields[{{key}}]" size="10" maxlength="255">
                             </td>
                         </tr>
-                        {{/reservation_fields}}
+                        {{/text_fields}}
+
+                        {{#boolean_fields}}
+                        <tr>
+                            <td>{{user_friendly_name}}:</td>
+                            <td>
+                                <input type="hidden" name="fields[{{key}}]" value="false">
+                                <input type="checkbox" name="fields[{{key}}]" value="true">
+                            </td>
+                        </tr>
+                        {{/boolean_fields}}
                         </script>
                     </tbody>
                 </table>
