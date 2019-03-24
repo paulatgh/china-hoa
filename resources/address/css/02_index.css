@@ -51,7 +51,6 @@
 }
 
 .address_book_letter li a:hover {
-  width: 25px;
   text-align: center;
   border-radius: 50%;
   color: white;
@@ -85,7 +84,7 @@
 }
 
 /* .address_book_left>.search>input {
- 
+
 } */
 
 .search {

@@ -61,6 +61,18 @@ body {
   line-height: 34px;
 }
 
+.section_files {
+  padding: 40px 140px 0;
+  box-sizing: border-box;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 34px;
+}
+
+.section_files a {
+  color: rgba(30, 130, 23, 1);
+}
+
 .section_images {
   width: 922px;
   height: 300px;
