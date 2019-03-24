@@ -29,39 +29,41 @@
                     <script id="volunteer_tiles" type="txt/template">
                         {{#volunteering_events}}
                         <div class="item">
-                            <div class="volunteer_title">
-                                {{title}}
-                            </div>
-                            {{#body}}
-                            <div class="volunteer_body">
-                                <h4>Description:</h4>
-                                <div style="white-space: pre-wrap;">{{body}}</div>
-                            </div>
-                            {{/body}}
-                            {{#description}}
-                            <div class="volunteer_description">
-                                <h4>Description:</h4>
-                                <div>{{description}}</div>
-                            </div>
-                            {{/description}}
-                            {{#when}}
-                            <div class="volunteer_details">
-                                <h4>When:</h4>
-                                <div>{{when}}</div>
-                            </div>
-                            {{/when}}
-                            {{#where}}
-                            <div class="volunteer_details">
-                                <h4>Where:</h4>
-                                <div>{{where}}</div>
-                            </div>
-                            {{/where}}
-                            {{#contact}}
-                            <div class="volunteer_contact">
-                                <h4>Contact:</h4>
-                                <div>{{contact}}</div>
-                            </div>
-                            {{/contact}}
+                            <a href="{{_metadata.root_url}}{{_metadata.page_path}}/show?volunteering_event_id={{id}}">
+                                <div class="volunteer_title">
+                                    {{title}}
+                                </div>
+                                {{#body}}
+                                <div class="volunteer_body">
+                                    <h4>Description:</h4>
+                                    <div style="white-space: pre-wrap;">{{body}}</div>
+                                </div>
+                                {{/body}}
+                                {{#description}}
+                                <div class="volunteer_description">
+                                    <h4>Description:</h4>
+                                    <div>{{description}}</div>
+                                </div>
+                                {{/description}}
+                                {{#when}}
+                                <div class="volunteer_details">
+                                    <h4>When:</h4>
+                                    <div>{{when}}</div>
+                                </div>
+                                {{/when}}
+                                {{#where}}
+                                <div class="volunteer_details">
+                                    <h4>Where:</h4>
+                                    <div>{{where}}</div>
+                                </div>
+                                {{/where}}
+                                {{#contact}}
+                                <div class="volunteer_contact">
+                                    <h4>Contact:</h4>
+                                    <div>{{contact}}</div>
+                                </div>
+                                {{/contact}}
+                            </a>
                             <div class="volunteer_admin_options">
                                 <div class="part-a">
                                     <a class="part-a1" href="{{edit_link}}">Edit</a>
