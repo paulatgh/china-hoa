@@ -52,7 +52,7 @@ p{line-height:22px;max-width: 1190px;}
 .header .btns .langOv .profile{text-align: center;width:100%;height:80px;line-height:40px; position:absolute;top:-100%;left: 0; background:#393D44; filter:Alpha(opacity=50);z-index:100;}
 .header .btns .langOv .profile a{font-size:13px;color:#fff;margin:0 10px;position:relative;}
 .header .btns .langOv .profile a:hover{color:#449F41;}
-.header .nav{float:right;height:100px;position:relative;z-index:10;margin-right: 160px}
+.header .nav{float:right;height:100px;position:relative;z-index:10;}
 .header .nav li{padding:0 17px 0 16px;float:left;height:100px;}
 .header .nav li a{color:#449F41;line-height:100px;font-size:18px;
 	font-weight:600;
