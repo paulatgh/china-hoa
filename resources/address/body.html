@@ -126,9 +126,6 @@
                         <div class="user-content">
                             <h5>{{community_name}}</h5>
                             <p>Address: </p>
-                            {{#unit}}
-                                <p>Lot #: {{unit}}</p>
-                            {{/unit}}
                             <p>{{address1}}</p>
                             {{#address2}}
                                 <p>{{address2}}</p>
@@ -146,6 +143,9 @@
                                     {{zip}}
                                 {{/zip}}
                             </p>
+                            {{#unit}}
+                                <p>Lot #: {{unit}}</p>
+                            {{/unit}}
                         </div>
                     {{/address1}}
 
