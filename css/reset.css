@@ -48,8 +48,8 @@ p{line-height:22px;max-width: 1190px;}
 .header .btns{float:right;height:100px;margin-left:10px;position:relative;}
 .header .btns .btns-language{text-align: center;font-size:14px;line-height:40px;float:left;font-weight:bold;position:relative;cursor: pointer;background: #393D44;height: 40px;margin-top: 30px;width:191px;right: -29px;color: white;}
 .header .btns .btns-search{width:29px;height:29px;float:left; margin:45px 15px 0 0;position:relative;top: -15px;left: 30px;padding: 5px;background:url("/community/img/search2.png") no-repeat center #393D44}
-.header .btns .langOv{width:191px;height:160px;position:absolute;top:71px;left: 83px;;overflow:hidden;z-index:7}
-.header .btns .langOv .profile{text-align: center;width:100%;height:160px;line-height:40px; position:absolute;top:-100%;left: 0; background:#393D44; filter:Alpha(opacity=50);z-index:100;}
+.header .btns .langOv{width:191px;height:80px;position:absolute;top:71px;left: 83px;;overflow:hidden;z-index:7}
+.header .btns .langOv .profile{text-align: center;width:100%;height:80px;line-height:40px; position:absolute;top:-100%;left: 0; background:#393D44; filter:Alpha(opacity=50);z-index:100;}
 .header .btns .langOv .profile a{font-size:13px;color:#fff;margin:0 10px;position:relative;}
 .header .btns .langOv .profile a:hover{color:#449F41;}
 .header .nav{float:right;height:100px;position:relative;z-index:10;margin-right: 160px}

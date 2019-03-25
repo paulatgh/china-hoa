@@ -41,11 +41,31 @@ body {
   height: 50px;
   width: 1200px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
+.Details_Informations {
+  width: 1200px;
+  margin: 0 auto;
+  display: block;
+}
+.D_I_P {
+  float: left;
+  padding: 20px;
+  font-size: 14px;
+}
+.D_I_P p{
+  font-weight: 600;
+  color:#393D44;
+}
+.D_I_P p span{
+  font-weight: 100;
+  padding-left: 20px;
+  color:#393D44;
+}
 .Details_Information {
   width: 1200px;
-  height: 373px;
+  /* height: 373px; */
   border: solid 1px #E8E8E8;
   border-left: 0;
   border-right: 0;
@@ -53,7 +73,6 @@ body {
   margin-top: 30px;
   display: flex;
 }
-
 .Information_left {
   width: 35%;
   border-right: solid 1px #E8E8E8;

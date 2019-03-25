@@ -5,6 +5,7 @@ var render = function () {
     $("#page_title").after(function(){return Mustache.render($(this).html(),data);});
     $("#event_template").after(function(){return Mustache.render($(this).html(),data.event);});
     $("#Information_left_span").after(function(){return Mustache.render($(this).html(),data);});
+    $("#Information_left_span_creator").after(function(){return Mustache.render($(this).html(),data);});
 
     var User_info = $('#User_info').html();
     $.each(data.user_info, function () {

@@ -20,6 +20,7 @@
 .main-breadcrumb {
   width: 1200px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .main-top {

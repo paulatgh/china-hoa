@@ -21,16 +21,58 @@
             <tbody>
                 <tr>
                     <td>
+                        <table class="table-two">
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <font size="4" face="Verdana, Arial, Helvetica" color="#F1F1F1">
+                                        Manage Admins
+                                    </font>
+                                </td>
+
+                            </tr>
+                            </tbody>
+                        </table>
+                        <center>
+                            <table class="profile-table" border="1"  cellspacing="0" >
+                                <tbody>
+                                <script id="admins" type="txt/template">
+                                    {{#admins}}
+                                    <tr>
+                                        <td>
+                                            <div class="member–left"><span>{{name}}</span>-<span>{{email}}</span></div>
+                                                <div class="member–right">
+                                                {{#is_removable}}
+                                                    <form action="{{_metadata.root_url}}{{_metadata.page_path}}/remove" method="post">
+                                                        <input type="hidden" name="user_id" value="{{user_id}}">
+                                                        <input type="submit" value="Remove" class="member–remove-btn">
+                                                    </form>
+                                                {{/is_removable}}
+                                                {{#is_demotable}}
+                                                    <form action="{{_metadata.root_url}}{{_metadata.page_path}}/roles" method="post">
+                                                        <input type="hidden" name="user_id" value="{{user_id}}">
+                                                        {{#proposed_non_admin_roles}}
+                                                            <input type="hidden" name="roles[]" value="{{.}}">
+                                                        {{/proposed_non_admin_roles}}
+                                                        <input type="submit" value="Remove Admin Role" class="member–remove-btn">
+                                                    </form>
+                                                {{/is_demotable}}
+                                                </div>
+                                        </td>
+                                    </tr>
+                                    {{/admins}}
+                                </script>
+                                </tbody>
+                            </table>
+                        </center>
 
                         <table class="table-two">
                             <tbody>
                                 <tr>
                                     <td>
-                                        <script id="header" type="txt/template">
-                                            <font size="4" face="Verdana, Arial, Helvetica" color="#F1F1F1">
-                                                Manage Members
-                                            </font>
-                                        </script>
+                                        <font size="4" face="Verdana, Arial, Helvetica" color="#F1F1F1">
+                                            Manage Members
+                                        </font>
                                     </td>
 
                                 </tr>
@@ -46,8 +88,15 @@
                                                         <div class="member–left"><span>{{name}}</span>-<span>{{email}}</span></div>
                                                         <div class="member–right">
                                                             <form action="{{_metadata.root_url}}{{_metadata.page_path}}/remove" method="post">
-                                                            <input type="hidden" name="user_id" value="{{user_id}}">
-                                                            <input type="submit" value="Remove" class="member–remove-btn">
+                                                                <input type="hidden" name="user_id" value="{{user_id}}">
+                                                                <input type="submit" value="Remove" class="member–remove-btn">
+                                                            </form>
+                                                            <form action="{{_metadata.root_url}}{{_metadata.page_path}}/roles" method="post">
+                                                                <input type="hidden" name="user_id" value="{{user_id}}">
+                                                                {{#proposed_admin_roles}}
+                                                                <input type="hidden" name="roles[]" value="{{.}}">
+                                                                {{/proposed_admin_roles}}
+                                                                <input type="submit" value="Make Admin" class="member–remove-btn">
                                                             </form>
                                                         </div>
                                                     </td>
