@@ -30,6 +30,7 @@
   width: 1200px;
   margin: 0 auto;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .main-center {
@@ -56,15 +57,22 @@
 
 .Events-Calendar {
   width: 282px;
-  height: 272px;
   margin-top: 21px;
   margin-right: 8px;
 }
 
 .Events-Calendar div {
-  width: 282px;
-  height: 272px;
-  margin: 16px auto;
+   width: 260px;
+   height: 260px;
+   margin: 16px auto;
+   background-position: center;
+   background-size: contain;
+   -moz-background-size: contain;
+   background-repeat: no-repeat;
+ }
+
+.Events-Calendar .description {
+  word-break: break-all;
 }
 
 .Events-Calendar h5 {

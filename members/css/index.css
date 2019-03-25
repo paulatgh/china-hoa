@@ -94,6 +94,7 @@
   width: 100%;
   height: 50px;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 .member–left {
   float: left;
