@@ -70,10 +70,10 @@ function delete_element(data, index, el, callback) {
     });
 }
 function check_admin() {
-    let str = '', _c = data._current_user;
-
-    if (_c && _c.is_admin) {
-        str = `<div class="langOv" style="height:160px;">
+    let str ='', _c = data._current_user;
+    
+    if((('is_admin' in _c ) || _c.hasOwnProperty('is_admin')) && _c.is_admin){
+        str= `<div class="langOv" style="height:160px;">
         <div class="profile" style="height:160px;"><a href="${data._metadata.root_url}/members" style="border-bottom: 1px solid white;width: 100%;margin-left: -1px">
         Members
         </a><a href="${data._metadata.root_url}/invite" style="border-bottom: 1px solid white;width: 100%;margin-left: -1px">

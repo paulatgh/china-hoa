@@ -2,11 +2,11 @@
   background-color: #ffffff;
   margin-top: 20px;
   margin-bottom: 50px;
-  width: 100%;
+  width: 1152px;
 }
 
 .table-two {
-  width: 100%;
+  width: 1152px;
   background-color: #6AA666;
 }
 
@@ -30,20 +30,29 @@
 
 .profile-table tr td {
   height: 33px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   color: rgba(57, 61, 68, 1);
   line-height: 24px;
   text-align: left;
-
   padding: 14px 24px;
+  font-family: OpenSans-Regular;
+  color: rgba(57,61,68,1);
+  line-height: 24px;
 }
 
 .profile-table tr>td>input {
   width: 180px;
   height: 28px;
-  font-size: 11px;
-
+  font-size: 14px;
+  background: rgba(255,255,255,1);
+  font-family: OpenSans-Regular;
+  font-weight: 400;
+  color: rgba(57,61,68,1);
+  line-height: 20px;
+  padding-left: 16px;
+  float:left;
+  margin-right:128px;
 }
 
 .p-input {
@@ -111,4 +120,70 @@
   height: 100px;
   font-size: 11px;
   border-color: #d8d8d8;
+}
+.profile-table tr>td>label{
+  float:left;
+}
+.profile-table tr>td>label>.profile-check{
+  display:block;
+  width:20px;
+  height:20px;
+  border-radius:4px;
+  background:url(/community/img/profile-none.png) no-repeat;
+  -webkit-appearance:none;
+  outline: none;
+  float:left;
+  margin:4px 18px 4px 0;
+}
+.profile-table tr>td>label>.profile-check:checked {
+  background:url(/community/img/profile-yes.png) no-repeat;
+  background-repeat: no-repeat;
+}
+.profile-warn{
+  display: none;
+  width:279px;
+  height:32px;
+  font-size:12px;
+  font-family:OpenSans-Regular;
+  font-weight:400;
+  line-height:16px;
+  float:right;
+  color:rgba(57,61,68,1);
+}
+.profile-img{
+  float:left;
+  width:326px;
+  height:36px;
+  margin:4px 0 0 9px;
+}
+.profile-img>img{
+  float:left;
+}
+.profile-img:hover .profile-warn {
+  display: block;
+}
+.profile-option{
+  width:180px;
+  height:28px;
+  background:url(/community/img/profile-background.png) no-repeat;
+}
+.profile-option>input{
+  opacity:0;
+}
+.profile-warn{
+  display: none;
+  width: 350px;
+  height: 32px;
+  font-size: 12px;
+  font-family: OpenSans-Regular;
+  font-weight: 400;
+  line-height: 16px;
+  float: right;
+  color: rgba(57,61,68,1);
+}
+.profile-img{
+  float: left;
+  width: 376px;
+  height: 36px;
+  margin: 4px 0 0 9px;
 }
