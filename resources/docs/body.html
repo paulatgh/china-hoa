@@ -55,7 +55,12 @@
                                         <li>
                                             <div class="investor-pdfhov">
                                                 <div class="investor-pdf-img">
-                                                    <img src="{{img}}" class="pdfa">
+                                                    {{#img}}
+                                                        <img src="{{img}}" class="pdfa">
+                                                    {{/img}}
+                                                    {{^img}}
+                                                        <img src="{{assets_path}}/community/img/file-icon.png" class="pdfa"/>
+                                                    {{/img}}
                                                 </div>
                                                 <div class="investor-pdf-con">
                                                     <a href="{{url}}">View</a>
