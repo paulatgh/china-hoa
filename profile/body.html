@@ -76,10 +76,11 @@
                                                     {{#profile.image}}
                                                         <div style="height: 120px; width: 120px; background-color: #e3e3e3; background-image: url({{profile.image}}); background-position: center; background-size: cover;"></div>
                                                     {{/profile.image}}
-
-                                                    <input type="file" value="{{profile.address.zip}}" name="image" size="15" maxlength="15">
+                                                    <div class="profile-option">
+                                                        <input type="file" value="{{profile.address.zip}}" name="image" size="15" maxlength="15" >
+                                                    </div>
                                                 </td>
-                                            </tr>
+                                            </tr>s
     
                                             <tr>
                                                 <td>
@@ -90,9 +91,16 @@
                                                 <td>
                                                     <input type="text" value="{{profile.phone.home}}" name="home_phone" size="18" maxlength="18"
                                                     <input type="hidden" name="home_phone_visible" value="false">
-                                                    <input type="checkbox" {{#profile.phone.home_visible}}checked{{/profile.phone.home_visible}} name="home_phone_visible" value="true" class="profile-check">
-                                                    Public?
-                                                    <img src="/community/img/profile.png">
+                                                    <label>
+                                                        <input type="checkbox" {{#profile.phone.home_visible}}checked{{/profile.phone.home_visible}} name="home_phone_visible" value="true" class="profile-check">
+                                                        Public?
+                                                    </label>
+                                                    <div class="profile-img">
+                                                        <img src="/community/img/profile.png">
+                                                        <div class="profile-warn">
+                                                            Filling this check box will make the phone detail publicy visible on the your profile
+                                                        </div>
+                                                    </div>
                                                 </td>
                                             </tr>
     
@@ -105,9 +113,16 @@
                                                 <td>
                                                     <input type="text" value="{{profile.phone.work}}" name="work_phone" size="18" maxlength="18" >
                                                     <input type="hidden" name="work_phone_visible" value="false">
-                                                    <input type="checkbox" {{#profile.phone.work_visible}}checked{{/profile.phone.work_visible}} name="work_phone_visible" value="true" class="profile-check">
-                                                    Public?
-                                                    <img src="/community/img/profile.png">
+                                                    <label> 
+                                                        <input type="checkbox" {{#profile.phone.work_visible}}checked{{/profile.phone.work_visible}} name="work_phone_visible" value="true" class="profile-check">
+                                                        Public?
+                                                    </label>
+                                                    <div class="profile-img">
+                                                        <img src="/community/img/profile.png">
+                                                        <div class="profile-warn">
+                                                            Filling this check box will make the phone detail publicy visible on the your profile
+                                                        </div>
+                                                    </div>
                                                 </td>
                                             </tr>
     
@@ -120,9 +135,16 @@
                                                 <td>
                                                     <input type="text" value="{{profile.phone.cell}}" name="cell_phone" size="18" maxlength="18" >
                                                     <input type="hidden" name="cell_phone_visible" value="false">
-                                                    <input type="checkbox" {{#profile.phone.cell_visible}}checked{{/profile.phone.cell_visible}} name="cell_phone_visible" value="true" class="profile-check">
-                                                    Public?
-                                                    <img src="/community/img/profile.png">
+                                                    <label> 
+                                                        <input type="checkbox" {{#profile.phone.cell_visible}}checked{{/profile.phone.cell_visible}} name="cell_phone_visible" value="true" class="profile-check">
+                                                        Public?
+                                                    </label>          
+                                                    <div class="profile-img">
+                                                        <img src="/community/img/profile.png">
+                                                        <div class="profile-warn">
+                                                            Filling this check box will make the phone detail publicy visible on the your profile
+                                                        </div>
+                                                    </div>
                                                 </td>
                                             </tr>
     
@@ -135,9 +157,16 @@
                                                 <td>
                                                     <input type="text" value="{{profile.phone.other}}" name="other_phone" size="18" maxlength="18" >
                                                     <input type="hidden" name="other_phone_visible" value="false">
-                                                    <input type="checkbox" {{#profile.phone.cell_visible}}checked{{/profile.phone.cell_visible}} name="other_phone_visible" value="true" class="profile-check">
-                                                    Public?
-                                                    <img src="/community/img/profile.png">
+                                                    <label>
+                                                        <input type="checkbox" {{#profile.phone.cell_visible}}checked{{/profile.phone.cell_visible}} name="other_phone_visible" value="true" class="profile-check">
+                                                        Public?
+                                                    </label>
+                                                    <div class="profile-img">
+                                                        <img src="/community/img/profile.png">
+                                                        <div class="profile-warn">
+                                                            Filling this check box will make the phone detail publicy visible on the your profile
+                                                        </div>
+                                                    </div>
                                                 </td>
                                             </tr>
     
