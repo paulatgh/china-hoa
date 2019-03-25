@@ -148,7 +148,6 @@
   font-weight:400;
   line-height:16px;
   float:right;
-  margin-right:15px;
   color:rgba(57,61,68,1);
 }
 .profile-img{
@@ -171,4 +170,20 @@
 .profile-option>input{
   opacity:0;
 }
-
+.profile-warn{
+  display: none;
+  width: 350px;
+  height: 32px;
+  font-size: 12px;
+  font-family: OpenSans-Regular;
+  font-weight: 400;
+  line-height: 16px;
+  float: right;
+  color: rgba(57,61,68,1);
+}
+.profile-img{
+  float: left;
+  width: 376px;
+  height: 36px;
+  margin: 4px 0 0 9px;
+}
