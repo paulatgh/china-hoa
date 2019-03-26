@@ -32,14 +32,6 @@ var render = function () {
         $('.admin_actions').css('display', 'block')
     }
 
-    // $('.tabs a').click(function (e) {
-    //     e.preventDefault();
-    //     $('#tabs li').removeClass("current").removeClass("hoverItem");
-    //     $(this).parent().addClass("current");
-    //     $(".choose-right ul").removeClass("show");
-    //     $('.' + $(this).attr('title')).addClass('show');
-    // });
-
     $('.tabs a').hover(function () {
         if (!$(this).parent().hasClass("current")) {
             $(this).parent().addClass("hoverItem");
