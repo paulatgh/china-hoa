@@ -1,9 +1,16 @@
 var render = function () {
     _pre_render()
 
-    $('#documents_template').after(function() { return Mustache.render($(this).html(), data); });
     $("#breadcrumbs").after(function() { return Mustache.render($(this).html(), data); });
     $("#actions_template").after(function() { return Mustache.render($(this).html(), data); });
+    var subdirectories = data.documents;
+    function subFn(){
+        subdirectories.sort((x,y)=>{
+            return x.title[0].localeCompare(y.title[0]);
+        })
+    $('#documents_template').after(function() { return Mustache.render($(this).html(), data); });
+   }
+   subFn()
 
     var currentDirectoryPath = data.directory_path;
     var directoryChain = currentDirectoryPath.split('/').filter(function (i){return !!i});

@@ -197,6 +197,7 @@
   top: 0;
   right: 0;
   background-color: #393D44;
+  cursor: pointer;
 }
 
 .search_img img {

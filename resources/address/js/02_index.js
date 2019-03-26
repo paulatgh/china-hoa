@@ -67,6 +67,23 @@ var render = function () {
             closeText: ''
         });
     })
+// data-id
+    var search_name = data.names_by_letter;
+    $('.search_img').click(function(e){
+        var search_content = $('.search_input').val().toLowerCase();
+        search_name.map(function(items, key) {
+            items.names.map(function(val, index) {
+                // console.log(val.name.toLowerCase().indexOf(search_content))
+                if(val.name.toLowerCase().indexOf(search_content) > -1){
+                        console.log(search_content);
+                        console.log(val)
+                        location.href += '#au-'+ val.id
+                }
+            })
+        })
+    })
+
+
     selectName = function(e) {
         $(".my-li").remove();
 

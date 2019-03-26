@@ -79,8 +79,8 @@
   }
   
   .choose-right {
-    width: 890px;
-    height: 790px;
+    /* width: 890px; */
+    /* height: 790px; */
     /* border: solid 1px; */
     overflow: auto;
     margin-left: 10px;

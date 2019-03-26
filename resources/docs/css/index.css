@@ -75,7 +75,7 @@
 }
 
 .choose-right {
-  width: 890px;
+  /* width: 890px; */
   /* height: 790px; */
   /* border: solid 1px; */
   overflow: auto;
@@ -175,4 +175,19 @@
 
 .action_buttons:hover {
   color: white;
+}
+
+.action_sort{
+  padding: 0 30px;
+    height: 40px;
+    background: rgba(106, 166, 102, 1);
+    border-radius: 20px;
+    text-align: center;
+    color: #ffffff;
+    line-height: 40px;
+    font-size: 16px;
+    margin-bottom: 16px;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 20px;
 }
