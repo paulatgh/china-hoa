@@ -211,3 +211,10 @@ body {
   text-align: right;
   cursor: pointer;
 }
+.volunteer_express{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 10;
+  overflow: hidden;
+  word-break: break-all;
+}

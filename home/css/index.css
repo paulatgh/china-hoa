@@ -286,10 +286,14 @@
 
 .swiper-pagination-bullet {
   opacity: .2;
+  border-radius:50%;
+  outLine:none;
 }
 
 .swiper-pagination-bullet-active {
   opacity: 1;
+  border-radius:50%;
+  outLine:none;
 }
 
 /* calendar */
