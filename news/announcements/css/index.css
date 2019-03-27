@@ -200,6 +200,7 @@
   font-weight: 600;
   color: #393D44;
   cursor: pointer;
+  word-break: break-all;
 }
 
 .announcements_permission span {
@@ -240,8 +241,9 @@
 }
 
 .abbreviated p {
-  width: 100%;
+  width: 530px;
   height: 100%;
+  word-break: break-all;
 }
 
 .abbreviated_body_p {

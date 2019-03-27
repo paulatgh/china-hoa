@@ -107,6 +107,7 @@ body {
 
 .addresses li a {
   text-decoration: underline;
+  display: inline-block;
 }
 
 .addresses {

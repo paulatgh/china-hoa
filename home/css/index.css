@@ -22,25 +22,30 @@
   width: 100%;
   height: 250px;
 }
-
+/* 
 .w1200_FF{
   width: 1200px;
   height: 233px;
   margin: 0 auto;
   overflow: hidden;
   margin-top: 25px;
+} */
+
+.map_img{
+  height: 100%;
 }
 
 .w1200-view {
-  width: 1218px;
-  position: relative;
-  overflow: auto;
-  height: 233px;
+  width: 1200px;
+  /* position: relative; */
+  /* overflow: auto; */
+  /* height: 233px; */
+  margin-top: 25px;
 }
 
 .w1200-view img {
   width: 100%;
-  margin-top: -80px;
+  /* margin-top: -80px; */
 }
 
 .reservable {

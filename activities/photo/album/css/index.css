@@ -47,7 +47,7 @@
 }
 
 .photo-albums {
-  height: 41px;
+  max-width: 1200px;
   font-size: 24px;
   font-weight: 600;
   color: rgba(57, 61, 68, 1);
