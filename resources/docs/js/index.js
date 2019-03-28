@@ -1,10 +1,16 @@
 var render = function () {
     _pre_render()
 
-    $('#documents_template').after(function() { return Mustache.render($(this).html(), data); });
     $("#breadcrumbs").after(function() { return Mustache.render($(this).html(), data); });
     $("#actions_template").after(function() { return Mustache.render($(this).html(), data); });
-
+    var subdirectories = data.sub_directories;
+    function subFn(){
+        subdirectories.sort((x,y)=>{
+            return x.name[0].localeCompare(y.name[0]);
+        })
+    $('#documents_template').after(function() { return Mustache.render($(this).html(), data); });
+   }
+   subFn()
     var currentDirectoryPath = data.directory_path;
     var directoryChain = currentDirectoryPath.split('/').filter(function (i){return !!i});
     var pathBreadcrumbs = $.map( directoryChain, function( val, i ) {
@@ -25,14 +31,6 @@ var render = function () {
     if (data._current_user && data._current_user.is_admin == true) {
         $('.admin_actions').css('display', 'block')
     }
-
-    // $('.tabs a').click(function (e) {
-    //     e.preventDefault();
-    //     $('#tabs li').removeClass("current").removeClass("hoverItem");
-    //     $(this).parent().addClass("current");
-    //     $(".choose-right ul").removeClass("show");
-    //     $('.' + $(this).attr('title')).addClass('show');
-    // });
 
     $('.tabs a').hover(function () {
         if (!$(this).parent().hasClass("current")) {

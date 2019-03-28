@@ -36,7 +36,9 @@
                             <ul class="search_ul_a">
                             </ul>
                         </div>
-                        <div class="search_img"><img src="/community/img/search2.png" /></div>
+                        <div class="search_img">
+                            <img src="/community/img/search2.png" />
+                        </div>
                     </div>
 
                     <div class="address_book_click" id="function_button_cycle">
@@ -66,7 +68,7 @@
                             <ul id="events_photo" class="events_photo">
                                 <li id="{{letter}}-section">{{letter}}</li>
                                 {{#names}}
-                                <li data-id="{{id}}" class="user_desc">{{name}}</li>
+                                <li data-id="{{id}}" class="user_desc">{{name}}<a name="au-{{id}}"></a></li>
                                 {{/names}}
                             </ul>
                         </script>
@@ -140,7 +142,7 @@
 
                                 {{#state}}
                                     {{state}}
-                                {{/state}}
+                 .....................................................................               {{/state}}
 
                                 {{#zip}}
                                     {{zip}}

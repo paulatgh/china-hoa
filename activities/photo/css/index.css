@@ -121,7 +121,9 @@
   top: 232px;
   left: 288px;
 }
-
+.Events-Calendar a p{
+  overflow:hidden;
+}
 .content-1 {
   width: 100%;
   height: auto;
