@@ -35,14 +35,16 @@
         <div class="content-1" id="photo_cycle">
             <script id="photos" type="txt/template">
                 {{#photos}}
-                <div class="Events-Calendar">
-                    <div class="content-img" style="background-image: url('{{img}}');"></div>
-                    {{#title}}
-                        <p class="description">{{title}}</p>
-                    {{/title}}
-                    <!--TODO: Style delete button-->
-                    <a data-id="{{id}}" class="delete-button">Delete</a>
-                </div>
+                    <div class="Events-Calendar">
+                        <div class="content-img" style="background-image: url('{{img}}');"></div>
+                        <div class="content-div">
+                            {{#title}}
+                                <p class="description">{{title}}</p>
+                            {{/title}}
+                            <!--TODO: Style delete button-->
+                            <a data-id="{{id}}" class="delete-button">Delete</a>
+                        </div>
+                    </div>
                 {{/photos}}
             </script>
         </div>

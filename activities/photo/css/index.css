@@ -231,3 +231,13 @@
   margin-top: 13px;
   float: left;
 }
+
+.delete-button{
+  display: inline-block;
+  color: red;
+  float: right;
+  margin-right: 20px;
+}
+.delete-button:hover{
+  color: red;
+}
