@@ -52,7 +52,7 @@
                             <li>{{title}} ({{number}})</li>
                         </script>
                     </ul>
-                    <div class="address_categories" id="address">
+                    <!-- <div class="address_categories" id="address">
                         <script id="category" type="txt/template">
                             <h4>{{title}}</h4>
                         <ul>
@@ -60,7 +60,7 @@
                             <li>{{secondlist}}</li>
                         </ul>
                     </script>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="address_book_right">
                     <div id="user_list">
@@ -74,7 +74,7 @@
                         </script>
                         <script id="street_name" type="txt/template">
                             <ul id="street_name_ul" class="street_name_ul">
-                                <li id="{{letter}}-section">{{title}}</li>
+                                <li id="{{street_name}}-section">{{street_name}}</li>
                                 {{#names}}
                                 <li data-id="{{id}}" class="user_desc">{{name}}</li>
                                 {{/names}}
@@ -128,9 +128,6 @@
                         <div class="user-content">
                             <h5>{{community_name}}</h5>
                             <p>Address: </p>
-                            {{#unit}}
-                                <p>Lot #: {{unit}}</p>
-                            {{/unit}}
                             <p>{{address1}}</p>
                             {{#address2}}
                                 <p>{{address2}}</p>
@@ -148,6 +145,9 @@
                                     {{zip}}
                                 {{/zip}}
                             </p>
+                            {{#unit}}
+                                <p>Lot #: {{unit}}</p>
+                            {{/unit}}
                         </div>
                     {{/address1}}
 

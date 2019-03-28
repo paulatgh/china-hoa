@@ -23,6 +23,7 @@
   width: 1200px;
   margin: 0 auto;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .main-center {
@@ -199,6 +200,7 @@
   font-weight: 600;
   color: #393D44;
   cursor: pointer;
+  word-break: break-all;
 }
 
 .announcements_permission span {
@@ -239,10 +241,32 @@
 }
 
 .abbreviated p {
-  width: 100%;
+  width: 530px;
   height: 100%;
+  word-break: break-all;
 }
 
 .abbreviated_body_p {
   margin-bottom: 55px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 10;
+  overflow: hidden;
+  word-break: break-all;
+  position: relative;
+  line-height: 20px;
+  max-height: 334px;
+  overflow: hidden;
+}
+
+.abbreviated_body_p::after {
+  content: "...";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-left: 40px;
+  background: -webkit-linear-gradient(left, transparent, #fff 55%);
+  background: -o-linear-gradient(right, transparent, #fff 55%);
+  background: -moz-linear-gradient(right, transparent, #fff 55%);
+  background: linear-gradient(to right, transparent, #fff 55%);
 }

@@ -25,33 +25,25 @@ var render = function() {
         logOutUser()
     })
     var str = `<div class="db">
-    <div class="login">
-        <h3 class="login-H3">De Anza Oaks HOA</h3>
-        <p class="return"><img src="/community/img/Bounced.png" alt="Bounced"></p>
-        <input class="login-int" type="text" placeholder="Name"><br />
-        <p class="username">Please enter your user name</p>
-        <input class="login-int-a" type="password" placeholder="Password">
-        <p class="userp">Please enter your password</p>
-        <button class="login-button">Login</button>
-        <div class="login-div">
-            <p class="login-a">Forgot your Password?</p>
+        <div class="login">
+            <h3 class="login-H3">De Anza Oaks HOA</h3>
+            <p class="return"><img src="/community/img/Bounced.png" alt="Bounced"></p>
+            <input class="login-int" type="text" placeholder="Name"><br />
+            <p class="username">Please enter your user name</p>
+            <input class="login-int-a" type="password" placeholder="Password">
+            <p class="userp">Please enter your password</p>
+            <button class="login-button">Login</button>
+            <div class="login-div">
+                <p class="login-a">Forgot your Password?</p>
+            </div>
         </div>
-    </div>
-</div>`;
+    </div>`;
     if (username) {
         $(".btns-language").click(function(event) {
             event.preventDefault();
         })
         $(".btns-language").text(username);
         $(".langOv").css("display", "block")
-        $('.jump').click(function() {
-            var arr = $(this).attr('data')
-            if (arr) {
-                window.location.href = `http://tfire.net/${arr}`;
-            } else {
-                window.location.href = "http://tfire.net/aboutus/aboutus.html";
-            }
-        })
     } else {
         $(".btns-language").text('Login')
         $('.jump').click(function() {
@@ -144,7 +136,7 @@ var render = function() {
                     var password = $('.login-int-a').val();
 
                     submitDynamicForm(
-                        '/hoa/session',
+                        data._metadata.root_url + '/session',
                         'POST',
                         [{
                                 name: 'session_form[email]',

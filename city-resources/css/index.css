@@ -23,6 +23,7 @@ body {
   width: 100%;
   height: 50px;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .main-center p {
@@ -106,6 +107,7 @@ body {
 
 .addresses li a {
   text-decoration: underline;
+  display: inline-block;
 }
 
 .addresses {

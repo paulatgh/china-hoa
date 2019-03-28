@@ -26,6 +26,10 @@ var render = function() {
           member.is_removable = data._current_user.id != member.user_id;
           member.is_demotable = data._current_user.id != member.user_id;
           member.proposed_non_admin_roles = member.roles.filter(function(role){ return role != 'admin'});
+          if (member.proposed_admin_roles == undefined || member.proposed_admin_roles.length == 0) {
+            member.proposed_non_admin_roles = ['member'];
+          }
+
           return member;
       })
       .sort(function (a, b) {
@@ -48,7 +52,7 @@ var render = function() {
     _post_render();
 
     // Local post render
-    
+
     $("#breadcrumbs").after(function() { return Mustache.render($(this).html(), data); });
 
     addAuthenticityTokenToForms();

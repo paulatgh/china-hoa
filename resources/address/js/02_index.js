@@ -2,20 +2,20 @@ var render = function () {
     _pre_render()
 
     var event_template = $('#username-A').html();
-    var according_to_the_street = $('#according_to_the_street').html();
     var user_information = $('#user_information').html();
 
     Mustache.parse(event_template);
     Mustache.parse(user_information);
 
-    var user_list_section_template = $('#user_list_section_template').html(); $.each(data.names_by_letter, function() { $('#user_list').append(Mustache.render(user_list_section_template, this)); });
-    Mustache.parse(according_to_the_street); $.each(data.according_to_the_street, function () { $('#according_to_the_street_cycle').append(Mustache.render(according_to_the_street, this)); });
+    var user_list_section_template = $('#user_list_section_template').html();
+    $.each(data.names_by_letter, function() { $('#user_list').append(Mustache.render(user_list_section_template, this)); });
     var alphabet = $('#alphabet').html(); $.each(data.letter_anchors, function () { $('#alphabet_cycle').append(Mustache.render(alphabet, this)); });
     var page_information = $('#page_information').html(); $.each(data.page_information, function () { $('#page_information_cycle').append(Mustache.render(page_information, this));});
     var function_button = $('#function_button').html(); $.each(data.function_button, function () { $('#function_button_cycle').append(Mustache.render(function_button, this)); });
-    var category = $('#category').html(); $.each(data.address_book_categories, function () { $('#address').append(Mustache.render(category, this));});
+    // var category = $('#category').html(); $.each(data.address_book_categories, function () { $('#address').append(Mustache.render(category, this));});
     $("#breadcrumbs").after(function() { return Mustache.render($(this).html(), data); });
-    var street_name = $('#street_name').html(); $.each(data.street_name, function() { $('#user_list').append(Mustache.render(street_name, this));});
+    var street_name = $('#street_name').html();
+    $.each(data.names_by_street, function() { $('#user_list').append(Mustache.render(street_name, this));});
     // Global post render
     _post_render();
 
@@ -58,8 +58,6 @@ var render = function () {
         var userData = data.user_data.find(function(e) {
             return e['id'] == userId
         });
-
-
 
         $('#user_information_cycle').html(Mustache.render(user_information, userData));
         $("#ex1").modal({
@@ -152,11 +150,11 @@ var render = function () {
         $(".my-li-a").mouseenter(function() {
           $(".my-li-a").css("display", "block")
           return
-      })
-      $(".my-li-a").mouseleave(function() {
-          $(".my-li-a").css("display", "none")
-          return
-      })
+        })
+        $(".my-li-a").mouseleave(function() {
+            $(".my-li-a").css("display", "none")
+            return
+        })
     }
 
 };

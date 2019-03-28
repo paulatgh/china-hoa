@@ -27,6 +27,7 @@ body {
   width: 1200px;
   margin: 0 auto;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .section {
@@ -59,6 +60,18 @@ body {
   font-weight: 400;
   color: rgba(57, 61, 68, 1);
   line-height: 34px;
+}
+
+.section_files {
+  padding: 40px 140px 0;
+  box-sizing: border-box;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 34px;
+}
+
+.section_files a {
+  color: rgba(30, 130, 23, 1);
 }
 
 .section_images {
