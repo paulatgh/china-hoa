@@ -204,6 +204,21 @@
   margin: 14px;
 }
 
+.search_img_b {
+  display: none;
+  width: 45px;
+  height: 41px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #393D44;
+  cursor: pointer;
+}
+
+.search_img_b img {
+  margin: 14px;
+}
+
 .user {
   width: 386px;
   background: #ffffff;

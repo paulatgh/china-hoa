@@ -131,6 +131,7 @@ body {
   font-size: 24px;
   font-weight: 600;
   color: #393D44;
+  width:100%;
 }
 
 .volunteer_admin_options {
@@ -217,4 +218,17 @@ body {
   -webkit-line-clamp: 10;
   overflow: hidden;
   word-break: break-all;
-}
+  position: relative;
+  line-height: 20px;
+  max-height: 200px;
+  overflow: hidden;
+ }
+ 
+ .volunteer_express::after{
+  content: "...";
+  padding-left: 4px;
+  background: -webkit-linear-gradient(left, transparent, #fff 55%);
+  background: -o-linear-gradient(right, transparent, #fff 55%);
+  background: -moz-linear-gradient(right, transparent, #fff 55%);
+  background: #fff;
+ }
