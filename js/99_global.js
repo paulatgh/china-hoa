@@ -100,8 +100,8 @@ function _pre_render() {
                     De Anza Oaks
                 </a>
                 <div class="btns clearfix">
-                    <img src="/community/img/Shape.png" alt="Shape" style="position: relative;left: -146px;top: 40px;z-index: 100000;">
-                    <img src="/community/img/dropdown.png" alt="dropdown" style="position: relative;left: -16px;top: 36px;z-index: 100000;">
+                    <img src="/community/img/Shape.png" alt="Shape" style="position: relative;left: -146px;top: 40px;z-index: 100000;cursor:pointer">
+                    <img src="/community/img/dropdown.png" alt="dropdown" style="position: relative;left: -16px;top: 36px;z-index: 100000;cursor:pointer">
                     <div style="width: 29px;
                     height: 29px;
                     float: left;
