@@ -42,6 +42,7 @@ body {
   width: 1200px;
   margin: 0 auto;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .Details_Informations {
@@ -98,7 +99,6 @@ body {
 }
 
 .Information_left_span {
-  margin-left: 15px;
   width: 280px;
 }
 

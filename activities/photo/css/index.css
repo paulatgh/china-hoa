@@ -36,6 +36,7 @@
   width: 1200px;
   margin: 0 auto;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .main-center {
@@ -229,4 +230,14 @@
   margin-left: 17px;
   margin-top: 13px;
   float: left;
+}
+
+.delete-button{
+  display: inline-block;
+  color: red;
+  float: right;
+  margin-right: 20px;
+}
+.delete-button:hover{
+  color: red;
 }

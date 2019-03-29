@@ -30,6 +30,7 @@
   width: 1200px;
   margin: 0 auto;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .main-center {
@@ -46,7 +47,7 @@
 }
 
 .photo-albums {
-  height: 41px;
+  max-width: 1200px;
   font-size: 24px;
   font-weight: 600;
   color: rgba(57, 61, 68, 1);
@@ -56,15 +57,32 @@
 
 .Events-Calendar {
   width: 282px;
-  height: 272px;
   margin-top: 21px;
-  margin-right: 8px;
+  margin-right: 15px;
+  box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+  background: #fefefe;
 }
 
-.Events-Calendar div {
-  width: 282px;
-  height: 272px;
+.content-div {
+  margin-left: 10px;
+}
+
+.content-img {
+  width: 260px;
+  height: 260px;
   margin: 16px auto;
+  background-position: center;
+  background-size: contain;
+  -moz-background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.Events-Calendar .description {
+  width: 95%;
+  max-height: 70px;
+  overflow: hidden;
+  color: black;
+  word-break: break-all;
 }
 
 .Events-Calendar h5 {
@@ -105,7 +123,6 @@
   height: auto;
   display: flex;
   flex-wrap: wrap;
-
   padding-bottom: 80px;
 }
 
@@ -126,4 +143,14 @@
 
 .admin_option_left a {
   color: white;
+}
+
+.delete-button {
+  color: red;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.delete-button:hover {
+  color: red;
 }
