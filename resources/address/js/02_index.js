@@ -39,8 +39,9 @@ var render = function () {
             $(".street_input_b").css("display", "block")
             $('.a_z').css('display', 'block')
             $(".a_a").css("display", "none")
+            $(".search_img_b").css("display","block")
+            $(".search_img").css("display","none")
             show = false;
-
         } else {
             $(this).text('Click here to list by Street Name')
             // $('.address_book_letter').css('display', 'block')
@@ -50,6 +51,8 @@ var render = function () {
             $(".street_input_b").css("display", "none")
             $('.a_z').css('display', 'none')
             $(".a_a").css("display", "block")
+            $(".search_img_b").css("display","none")
+            $(".search_img").css("display","block")
             show = true;
         }
     })
@@ -72,18 +75,25 @@ var render = function () {
         search_name.map(function(items, key) {
             items.names.map(function(val, index) {
                 if(val.name.toLowerCase().indexOf(search_content) > -1){
-                        location.href = '#au-'+ val.id
+                    location.href = '#au-'+ val.id
                 }
             })
         })
     })
 
+    var street_name = data.street_name;
+    $('.search_img_b').click(function(e){
+        var search_content = $('.street_input').val().toLowerCase();
+        street_name.map(function(val,items, key) {
+            if(val.title.toLowerCase() == search_content){
+                location.href  = '#su-'+ val.id
+            }
+        })
+    })
 
     selectName = function(e) {
         $(".my-li").remove();
-
         function srh(str) {
-            ///^[A-Z]+$/.test(str)?str.toLowerCase():
             const sL = str.toLowerCase()
             let cache = []
             data.names_by_letter.map(function(items, key) {
@@ -120,6 +130,7 @@ var render = function () {
     }
 
     streetName = function(e) {
+        $(".my-li").remove();
         $(".my-li-a").remove();
 
         function srh(str) {
