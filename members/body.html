@@ -1,8 +1,5 @@
 <!-- header -->
-<div class="header">
-
-
-</div>
+<div class="header"></div>
 
 <!-- main -->
 <div class="investor clearfix">
@@ -29,7 +26,6 @@
                                         Manage Admins
                                     </font>
                                 </td>
-
                             </tr>
                             </tbody>
                         </table>
@@ -58,6 +54,7 @@
                                                     </form>
                                                 {{/is_demotable}}
                                                 </div>
+                                            </div>
                                         </td>
                                     </tr>
                                     {{/admins}}
@@ -74,44 +71,42 @@
                                             Manage Members
                                         </font>
                                     </td>
-
                                 </tr>
                             </tbody>
                         </table>
-                            <center>
-                                <table class="profile-table" border="1"  cellspacing="0" >
-                                    <tbody>
-                                        <script id="members" type="txt/template">
-                                            {{#members}}
-                                                <tr>
-                                                    <td>
-                                                        <div class="member–left"><span>{{name}}</span>-<span>{{email}}</span></div>
-                                                        <div class="member–right">
-                                                            <form action="{{_metadata.root_url}}{{_metadata.page_path}}/remove" method="post">
-                                                                <input type="hidden" name="user_id" value="{{user_id}}">
-                                                                <input type="submit" value="Remove" class="member–remove-btn">
-                                                            </form>
-                                                            <form action="{{_metadata.root_url}}{{_metadata.page_path}}/roles" method="post">
-                                                                <input type="hidden" name="user_id" value="{{user_id}}">
-                                                                {{#proposed_admin_roles}}
-                                                                <input type="hidden" name="roles[]" value="{{.}}">
-                                                                {{/proposed_admin_roles}}
-                                                                <input type="submit" value="Make Admin" class="member–remove-btn">
-                                                            </form>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            {{/members}}
-                                        </script>
-                                    </tbody>
-                                </table>
-                            </center>
-                            <p class="p-input"></p>
+                        <center>
+                            <table class="profile-table" border="1"  cellspacing="0" >
+                                <tbody>
+                                    <script id="members" type="txt/template">
+                                        {{#members}}
+                                            <tr>
+                                                <td>
+                                                    <div class="member–left"><span>{{name}}</span>-<span>{{email}}</span></div>
+                                                    <div class="member–right">
+                                                        <form action="{{_metadata.root_url}}{{_metadata.page_path}}/remove" method="post">
+                                                            <input type="hidden" name="user_id" value="{{user_id}}">
+                                                            <input type="submit" value="Remove" class="member–remove-btn">
+                                                        </form>
+                                                        <form action="{{_metadata.root_url}}{{_metadata.page_path}}/roles" method="post">
+                                                            <input type="hidden" name="user_id" value="{{user_id}}">
+                                                            {{#proposed_admin_roles}}
+                                                            <input type="hidden" name="roles[]" value="{{.}}">
+                                                            {{/proposed_admin_roles}}
+                                                            <input type="submit" value="Make Admin" class="member–remove-btn">
+                                                        </form>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        {{/members}}
+                                    </script>
+                                </tbody>
+                            </table>
+                        </center>
+                        <p class="p-input"></p>
                     </td>
                 </tr>
             </tbody>
         </table>
-
     </div>
 </div>
 <!-- footer -->

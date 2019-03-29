@@ -1,7 +1,6 @@
 .investor {
   margin-bottom: 100px;
 }
-
 .investor-pdf {
   padding-top: 24px;
 }
@@ -60,7 +59,6 @@
 
 .choose {
   width: 1172px;
-  height: 810px;
   display: flex;
   position: relative;
 }
@@ -75,10 +73,7 @@
 }
 
 .choose-right {
-  /* width: 890px; */
-  /* height: 790px; */
-  /* border: solid 1px; */
-  overflow: auto;
+  width: 890px;
   margin-left: 10px;
 }
 

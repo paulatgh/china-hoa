@@ -23,6 +23,7 @@
   width: 1200px;
   margin: 0 auto;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .main-center {
@@ -87,7 +88,7 @@
 
 .choose-right ul>li {
   width: 536px;
-  height: 100%;
+  min-height: 360px;
   padding: 16px;
   position: relative;
   background: #fefefe;
@@ -199,6 +200,7 @@
   font-weight: 600;
   color: #393D44;
   cursor: pointer;
+  word-break: break-all;
 }
 
 .announcements_permission span {
@@ -239,10 +241,28 @@
 }
 
 .abbreviated p {
-  width: 100%;
+  width: 530px;
   height: 100%;
+  word-break: break-all;
 }
 
 .abbreviated_body_p {
   margin-bottom: 55px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+  overflow: hidden;
+  word-break: break-all;
+  position: relative;
+  line-height: 20px;
+  max-height: 200px;
+}
+
+.abbreviated_body_p::after {
+  content: "...";
+  padding-left: 4px;
+  background: -webkit-linear-gradient(left, transparent, #fff 55%);
+  background: -o-linear-gradient(right, transparent, #fff 55%);
+  background: -moz-linear-gradient(right, transparent, #fff 55%);
+  background: #fff;
 }
