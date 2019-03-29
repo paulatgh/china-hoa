@@ -132,6 +132,7 @@ var render = function () {
     }
 
     streetName = function(e) {
+        $(".my-li").remove();
         $(".my-li-a").remove();
 
         function srh(str) {
@@ -153,7 +154,9 @@ var render = function () {
             $(".search_ul_a").append("<li id=li" + i + ">" + resultArr[i] + "</li>")
             $("#li" + i).attr("class", 'my-li-a');
         }
+        console.log(222)
         $('.my-li-a').on('click', function() {
+            console.log(1111)
             var val = $(this).text()
             $(".street_input").val(val)
           $(".my-li-a").css("display", "none")
