@@ -33,7 +33,7 @@ body {
   color: rgba(57, 61, 68, 1);
   line-height: 34px;
   text-align: left;
-
+  width:100%;
   margin: 28px 8px;
 }
 
@@ -44,7 +44,7 @@ body {
   color: rgba(57, 61, 68, 1);
   line-height: 34px;
   text-align: left;
-
+  width:100%;
   margin: 28px 8px;
 }
 
@@ -56,6 +56,7 @@ body {
   line-height: 34px;
   text-align: left;
   margin: 28px 8px;
+  width:100%;
 }
 
 .content-1 li:nth-of-type(4) {
