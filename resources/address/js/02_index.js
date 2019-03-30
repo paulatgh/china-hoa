@@ -14,8 +14,7 @@ var render = function () {
     var function_button = $('#function_button').html(); $.each(data.function_button, function () { $('#function_button_cycle').append(Mustache.render(function_button, this)); });
     // var category = $('#category').html(); $.each(data.address_book_categories, function () { $('#address').append(Mustache.render(category, this));});
     $("#breadcrumbs").after(function() { return Mustache.render($(this).html(), data); });
-    var street_name = $('#street_name').html();
-    $.each(data.names_by_street, function() { $('#user_list').append(Mustache.render(street_name, this));});
+    var street_name = $('#street_name').html();$.each(data.street_name, function() { $('#user_list').append(Mustache.render(street_name, this));});
     // Global post render
     _post_render();
 
